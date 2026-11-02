@@ -1,0 +1,40 @@
+name: Bug report
+description: Report a reproducible defect in a learning module, script or academy interface.
+title: "[Bug]: "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: "Do not include patient data, personal identifiers, credentials or confidential institutional information."
+  - type: input
+    id: module
+    attributes:
+      label: Module or file
+      placeholder: e.g. sql_foundations / scripts/example.py
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behaviour
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behaviour and error output
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      placeholder: OS, Python version, module dependencies
+    validations:
+      required: true
