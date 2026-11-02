@@ -97,7 +97,56 @@
   <main class="main">
     <header class="topbar">
       <button class="mobile-menu" id="menuToggle" aria-label="Open navigation">☰</button>
-      <div class="breadcrumb">Learning space <span>/</span> <strong id="crumb">Dashboard</strong></div>
+      <div class="breadcrumb">
+        <div class="space-dropdown">
+          <button class="space-dropdown-btn" id="spaceDropdownTrigger" type="button" aria-expanded="false" aria-haspopup="true">
+            <span>Learning space</span>
+            <span class="dropdown-arrow">▾</span>
+          </button>
+          <div class="space-dropdown-menu" id="spaceDropdownMenu" hidden>
+            <div class="dropdown-group-label">CORE LEARNING SPACES</div>
+            <div class="dropdown-links">
+              <button class="dropdown-link" data-goto="dashboard" type="button">
+                <span class="d-icon">▦</span>
+                <span class="d-text"><strong>Dashboard</strong><small>Clinical radar, progress & volumes</small></span>
+              </button>
+              <button class="dropdown-link" data-goto="curriculum" type="button">
+                <span class="d-icon">▤</span>
+                <span class="d-text"><strong>Curriculum Map</strong><small>8 volumes & chapter reader</small></span>
+              </button>
+              <button class="dropdown-link" data-goto="roadmap" type="button">
+                <span class="d-icon">⌁</span>
+                <span class="d-text"><strong>Learning Roadmap</strong><small>Step-by-step milestone path</small></span>
+              </button>
+              <button class="dropdown-link" data-goto="labs" type="button">
+                <span class="d-icon">⚒</span>
+                <span class="d-text"><strong>Practical Labs</strong><small>Guided healthcare exercises</small></span>
+              </button>
+            </div>
+            <div class="dropdown-group-label">TECHNICAL & CLINICAL STUDIOS</div>
+            <div class="dropdown-links">
+              <button class="dropdown-link" data-goto="sql-mastery" type="button">
+                <span class="d-icon">⌘</span>
+                <span class="d-text"><strong>SQL Query Studio</strong><small>In-browser query playground</small></span>
+              </button>
+              <button class="dropdown-link" data-goto="interoperability-mastery" type="button">
+                <span class="d-icon">⇄</span>
+                <span class="d-text"><strong>FHIR & Interoperability</strong><small>HL7 R4 resource inspector</small></span>
+              </button>
+              <button class="dropdown-link" data-goto="statistics-mastery" type="button">
+                <span class="d-icon">∑</span>
+                <span class="d-text"><strong>Biostatistics & Epidemiology</strong><small>Inference & clinical trials</small></span>
+              </button>
+              <button class="dropdown-link" data-goto="projects" type="button">
+                <span class="d-icon">▣</span>
+                <span class="d-text"><strong>Project Library</strong><small>Case studies & BI dashboards</small></span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <span>/</span>
+        <strong id="crumb">Dashboard</strong>
+      </div>
       <div class="top-actions"><span class="status-pill"><i></i> Offline-ready</span><button class="icon-btn" id="searchFocus" title="Search curriculum">⌕</button></div>
     </header>
     <div class="content">
@@ -106,14 +155,19 @@
           <div class="hero-copy"><div class="eyebrow">YOUR PROFESSIONAL LEARNING PATHWAY</div>
             <h1>Healthcare analytics,<br><span>built step by step.</span></h1>
             <p>A structured, practice-led curriculum designed to connect your Pharm.D foundation with the technical, analytical and professional skills used in healthcare data roles.</p>
-            <button class="primary-btn" id="continueBtn">Explore the curriculum <b>→</b></button>
+            <div class="hero-actions-row">
+              <button class="primary-btn" id="continueBtn">Explore the curriculum <b>→</b></button>
+              <button class="hero-slide-down-btn" id="slideDownToOverview" type="button" title="Slide down to dashboard overview">
+                <span>Slide down to overview</span> <b>↓</b>
+              </button>
+            </div>
           </div>
           <div class="hero-graphic-interactive">
             <div id="clinicalRadarApp"></div>
           </div>
         </div>
         <div class="notice"><span class="notice-icon">i</span><div><strong>Professional learning environment — synthetic training data only.</strong><p>The academy now includes a structured curriculum, practical labs, technical assessments, reproducible portfolio projects and career-readiness workflows. Use the project studios to build evidence; independently validate every clinical, statistical and operational conclusion before publication.</p></div></div>
-        <div class="section-heading"><div><div class="eyebrow">YOUR OVERVIEW</div><h2>Learning dashboard</h2></div><span class="muted small" id="lastSaved">Progress saved on this device</span></div>
+        <div class="section-heading" id="dashboardOverview"><div><div class="eyebrow">YOUR OVERVIEW</div><h2>Learning dashboard</h2></div><span class="muted small" id="lastSaved">Progress saved on this device</span></div>
         <div class="stats-grid">
           <article class="stat-card"><div class="stat-icon blue">▤</div><div class="stat-value" id="volumeCount">8</div><div class="stat-label">Curriculum volumes</div></article>
           <article class="stat-card"><div class="stat-icon teal">☷</div><div class="stat-value" id="chapterCount">0</div><div class="stat-label">Planned chapters</div></article>

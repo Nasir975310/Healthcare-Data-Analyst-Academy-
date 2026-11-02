@@ -493,7 +493,41 @@ document.addEventListener("DOMContentLoaded", async () => {
     }
     navigate(b.dataset.view);
   }));
-  $$("[data-goto]").forEach(b => b.addEventListener("click", () => navigate(b.dataset.goto)));
+  $$("[data-goto]").forEach(b => b.addEventListener("click", () => {
+    navigate(b.dataset.goto);
+    if ($("#spaceDropdownMenu")) {
+      $("#spaceDropdownMenu").hidden = true;
+      $("#spaceDropdownTrigger")?.setAttribute("aria-expanded", "false");
+      $("#spaceDropdownTrigger")?.classList.remove("active");
+    }
+  }));
+
+  // Learning Space Slide-Down Dropdown Menu
+  const spaceTrigger = $("#spaceDropdownTrigger");
+  const spaceMenu = $("#spaceDropdownMenu");
+  if (spaceTrigger && spaceMenu) {
+    spaceTrigger.addEventListener("click", e => {
+      e.stopPropagation();
+      const open = !spaceMenu.hidden;
+      spaceMenu.hidden = open;
+      spaceTrigger.setAttribute("aria-expanded", String(!open));
+      spaceTrigger.classList.toggle("active", !open);
+    });
+
+    document.addEventListener("click", e => {
+      if (!spaceTrigger.contains(e.target) && !spaceMenu.contains(e.target)) {
+        spaceMenu.hidden = true;
+        spaceTrigger.setAttribute("aria-expanded", "false");
+        spaceTrigger.classList.remove("active");
+      }
+    });
+  }
+
+  // Slide down to overview button
+  $("#slideDownToOverview")?.addEventListener("click", () => {
+    $("#dashboardOverview")?.scrollIntoView({ behavior: "smooth" });
+  });
+
   $("#continueBtn").addEventListener("click", () => navigate("curriculum"));
   $("#curriculumSearch").addEventListener("input", e => renderCurriculum(e.target.value));
   $("#glossarySearch").addEventListener("input", e => renderGlossary(e.target.value));
