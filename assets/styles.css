@@ -4372,3 +4372,265 @@ footer {
 .hero-slide-down-btn:hover b {
   transform: translateY(3px);
 }
+
+/* ==========================================================================
+   Survival & Cohort Attrition Studio (Kaplan-Meier & CONSORT)
+   ========================================================================== */
+
+.survival-studio-card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 20px;
+  margin-bottom: 24px;
+  box-shadow: var(--shadow);
+}
+
+.survival-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.survival-tab-group {
+  display: flex;
+  background: var(--surface2);
+  padding: 4px;
+  border-radius: 10px;
+  gap: 4px;
+}
+
+.survival-tab {
+  background: transparent;
+  border: none;
+  padding: 8px 14px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  border-radius: 7px;
+  color: var(--muted);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.survival-tab.active {
+  background: var(--surface);
+  color: var(--text);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.km-toolbar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.km-plot-wrap {
+  background: var(--surface2);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 14px;
+  margin-bottom: 18px;
+}
+
+.km-svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.km-stat-deck {
+  margin-bottom: 18px;
+}
+
+.km-legend-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+  font-size: 0.85rem;
+}
+
+.legend-badge {
+  width: 14px;
+  height: 14px;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+.km-metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 12px;
+}
+
+.km-metric-card {
+  background: var(--surface2);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 12px;
+  text-align: center;
+}
+
+.km-metric-lbl {
+  display: block;
+  font-size: 0.72rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.km-metric-val {
+  display: block;
+  font-size: 1.25rem;
+  font-weight: 800;
+  margin: 3px 0;
+}
+
+.km-sig {
+  color: var(--teal);
+}
+
+.at-risk-table-wrap {
+  margin-bottom: 18px;
+}
+
+.at-risk-table-wrap h4 {
+  margin: 0 0 8px;
+  font-size: 0.88rem;
+}
+
+.at-risk-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.82rem;
+}
+
+.at-risk-table th, .at-risk-table td {
+  padding: 8px 10px;
+  border-bottom: 1px solid var(--line);
+  text-align: left;
+}
+
+.at-risk-table th {
+  background: var(--surface2);
+  font-weight: 700;
+}
+
+/* CONSORT Flowchart */
+.consort-container {
+  padding: 8px 0;
+}
+
+.consort-intro {
+  background: var(--surface2);
+  padding: 12px 14px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  font-size: 0.85rem;
+}
+
+.consort-flow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.consort-node {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+  max-width: 680px;
+}
+
+.consort-box {
+  flex: 1;
+  background: var(--surface);
+  border: 2px solid var(--teal);
+  border-radius: 10px;
+  padding: 14px 16px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
+}
+
+.node-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.88rem;
+  margin-bottom: 8px;
+}
+
+.node-n {
+  font-family: monospace;
+  font-weight: 750;
+  color: var(--teal);
+  font-size: 0.95rem;
+}
+
+.node-progress-track {
+  height: 6px;
+  background: var(--surface2);
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 8px;
+}
+
+.node-progress-fill {
+  height: 100%;
+  background: var(--teal);
+  transition: width 0.4s ease;
+}
+
+.node-footer {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.75rem;
+  color: var(--muted);
+}
+
+.consort-exclusion-branch {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 240px;
+  flex-shrink: 0;
+}
+
+.branch-arrow {
+  font-size: 18px;
+  color: #ef4444;
+}
+
+.exclusion-card {
+  background: rgba(239, 68, 68, 0.08);
+  border: 1px solid rgba(239, 68, 68, 0.25);
+  border-radius: 8px;
+  padding: 8px 10px;
+  font-size: 0.75rem;
+  flex: 1;
+}
+
+.excl-count {
+  display: block;
+  font-weight: 750;
+  color: #b91c1c;
+  margin-bottom: 2px;
+}
+
+.excl-reason {
+  color: var(--text);
+  font-size: 0.72rem;
+  line-height: 1.25;
+}
+
+.consort-connector {
+  font-size: 20px;
+  color: var(--muted);
+  font-weight: 800;
+  margin: -2px 0;
+}
