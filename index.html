@@ -108,7 +108,9 @@
             <p>A structured, practice-led curriculum designed to connect your Pharm.D foundation with the technical, analytical and professional skills used in healthcare data roles.</p>
             <button class="primary-btn" id="continueBtn">Explore the curriculum <b>→</b></button>
           </div>
-          <div class="hero-graphic" aria-hidden="true"><div class="orb orb-one"></div><div class="orb orb-two"></div><div class="graph-card"><div class="graph-head"><span>Learning pathway</span><b>8 volumes</b></div><div class="mini-bars"><i style="height:28%"></i><i style="height:42%"></i><i style="height:56%"></i><i style="height:68%"></i><i style="height:82%"></i><i style="height:96%"></i></div><div class="graph-foot"><span>FOUNDATIONS</span><span>PROFESSIONAL</span></div></div></div>
+          <div class="hero-graphic-interactive">
+            <div id="clinicalRadarApp"></div>
+          </div>
         </div>
         <div class="notice"><span class="notice-icon">i</span><div><strong>Professional learning environment — synthetic training data only.</strong><p>The academy now includes a structured curriculum, practical labs, technical assessments, reproducible portfolio projects and career-readiness workflows. Use the project studios to build evidence; independently validate every clinical, statistical and operational conclusion before publication.</p></div></div>
         <div class="section-heading"><div><div class="eyebrow">YOUR OVERVIEW</div><h2>Learning dashboard</h2></div><span class="muted small" id="lastSaved">Progress saved on this device</span></div>
@@ -136,13 +138,74 @@
         <article class="panel roadmap-note"><strong>Earn-while-learn principle</strong><p>Start producing small, reviewable work early: spreadsheet summaries, documented SQL queries and reproducible descriptive analyses. Apply only to roles whose requirements you can honestly meet. Advanced specializations should follow, not block, the first portfolio milestones.</p></article>
       </section>
       <section class="view" id="view-reader"><div class="reader-toolbar"><button class="back-btn" id="backToCurriculum">← Curriculum</button><span class="status-pill">VOLUME 1 · CHAPTER 1</span></div><div id="lessonContent"></div></section>
-      <section class="view" id="view-labs"><div class="page-heading"><div class="eyebrow">HANDS-ON LABORATORY</div><h1>Practical labs</h1><p>Eight guided, reproducible labs with Linux and Windows instructions, deliverables, acceptance checks, troubleshooting and portfolio evidence. Use synthetic data only.</p></div><div class="search-row"><input id="labSearch" type="search" placeholder="Search labs, tools or skills…" aria-label="Search practical labs"><span id="labCount"></span></div><div id="labList" class="lab-grid"></div></section><section class="view" id="view-assignments"><div class="page-heading"><div class="eyebrow">EMPLOYMENT SIMULATION</div><h1>Job simulations</h1><p>Work through realistic analyst assignments from a business request to a validated deliverable. The datasets are synthetic; each assignment includes a rubric and professional handoff expectations.</p></div><div class="search-row"><input id="assignmentSearch" type="search" placeholder="Search assignments, tools or roles…" aria-label="Search job simulations"><span id="assignmentCount"></span></div><div id="assignmentList" class="lab-grid"></div></section><section class="view" id="view-sql-mastery"><div class="page-heading"><div class="eyebrow">PROGRESSIVE TECHNICAL TRAINING</div><h1>Healthcare SQL mastery</h1><p>Eleven progressive SQLite challenges, from table grain and aggregation to healthcare metrics, CTEs, window functions, data quality and query plans. Attempt each query before revealing hints or solutions.</p></div><div class="sql-mastery-summary"><div><b id="sqlDoneCount">0</b><span>Challenges completed</span></div><div><b>11</b><span>Total challenges</span></div><div><b id="sqlProgressPct">0%</b><span>Progress</span></div></div><div class="search-row"><input id="sqlSearch" type="search" placeholder="Search SQL challenges or concepts…" aria-label="Search SQL challenges"><span id="sqlChallengeCount"></span></div><div class="sql-db-note"><b>Practice database:</b> <code>assignments/healthcare_sql_mastery.db</code><br>Open it in DBeaver (SQLite connection) or use the SQLite command line. The database contains synthetic data only.</div><div id="sqlChallengeList" class="lab-grid"></div></section><section class="view" id="view-glossary"><div class="page-heading"><div class="eyebrow">REFERENCE CENTRE</div><h1>Healthcare analytics glossary</h1><p>Definitions are connected to practical healthcare examples. Search by term or concept.</p></div><div class="search-row"><input id="glossarySearch" type="search" placeholder="Search a term or definition…" aria-label="Search glossary"><span id="glossaryCount"></span></div><div id="glossaryList" class="glossary-grid"></div></section>
+      <section class="view" id="view-labs">
+        <div class="page-heading">
+          <div class="eyebrow">HANDS-ON LABORATORY</div>
+          <h1>Practical labs</h1>
+          <p>Eight guided, reproducible labs with Linux and Windows instructions, deliverables, acceptance checks, troubleshooting and portfolio evidence. Use synthetic data only.</p>
+        </div>
+        <div class="search-row"><input id="labSearch" type="search" placeholder="Search labs, tools or skills…" aria-label="Search practical labs"><span id="labCount"></span></div>
+        <div id="labList" class="lab-grid"></div>
+      </section>
+
+      <section class="view" id="view-assignments">
+        <div class="page-heading">
+          <div class="eyebrow">EMPLOYMENT SIMULATION</div>
+          <h1>Job simulations</h1>
+          <p>Work through realistic analyst assignments from a business request to a validated deliverable. The datasets are synthetic; each assignment includes a rubric and professional handoff expectations.</p>
+        </div>
+        <div class="search-row"><input id="assignmentSearch" type="search" placeholder="Search assignments, tools or roles…" aria-label="Search job simulations"><span id="assignmentCount"></span></div>
+        <div id="assignmentList" class="lab-grid"></div>
+      </section>
+
+      <section class="view" id="view-sql-mastery">
+        <div class="page-heading">
+          <div class="eyebrow">PROGRESSIVE TECHNICAL TRAINING</div>
+          <h1>Healthcare SQL mastery</h1>
+          <p>Eleven progressive SQLite challenges, from table grain and aggregation to healthcare metrics, CTEs, window functions, data quality and query plans. Attempt each query before revealing hints or solutions.</p>
+        </div>
+        <div id="sqlPlaygroundApp"></div>
+        <div class="sql-mastery-summary">
+          <div><b id="sqlDoneCount">0</b><span>Challenges completed</span></div>
+          <div><b>11</b><span>Total challenges</span></div>
+          <div><b id="sqlProgressPct">0%</b><span>Progress</span></div>
+        </div>
+        <div class="search-row"><input id="sqlSearch" type="search" placeholder="Search SQL challenges or concepts…" aria-label="Search SQL challenges"><span id="sqlChallengeCount"></span></div>
+        <div class="sql-db-note"><b>Practice database:</b> <code>assignments/healthcare_sql_mastery.db</code><br>Open it in DBeaver (SQLite connection) or use the SQLite command line. The database contains synthetic data only.</div>
+        <div id="sqlChallengeList" class="lab-grid"></div>
+      </section>
+
+      <section class="view" id="view-glossary">
+        <div class="page-heading">
+          <div class="eyebrow">REFERENCE CENTRE</div>
+          <h1>Healthcare analytics glossary</h1>
+          <p>Definitions are connected to practical healthcare examples. Search by term or concept.</p>
+        </div>
+        <div class="search-row"><input id="glossarySearch" type="search" placeholder="Search a term or definition…" aria-label="Search glossary"><span id="glossaryCount"></span></div>
+        <div id="glossaryList" class="glossary-grid"></div>
+      </section>
       <section class="view" id="view-projects">
         <div class="page-heading"><div class="eyebrow">PRACTICAL LABORATORY · PROJECT DIRECTORY</div><h1>Project library</h1><p>Choose a project folder, read its README, inspect its data dictionary and run its validation steps. Datasets labelled synthetic are fictional training data.</p></div>
         <div class="lab-grid">
+          <article class="lab-card highlight-card">
+            <div class="card-kicker">LIVE INTERACTIVE WEB APP</div>
+            <h3>Clinical Medication Utilization Dashboard</h3>
+            <p>Interactive client-side clinical analytics dashboard with real-time systolic blood pressure distributions, paired t-test subsets, and CSV data export.</p>
+            <div class="card-actions">
+              <a href="interactive_clinical_bi_dashboard_v548/dashboard/index.html" target="_blank" rel="noopener" class="primary-btn-sm">Launch Live Dashboard ↗</a>
+              <a href="interactive_clinical_bi_dashboard_v548/docs/README.md" class="secondary-btn-sm">Documentation</a>
+            </div>
+          </article>
+          <article class="lab-card highlight-card">
+            <div class="card-kicker">INTERACTIVE ROADMAP</div>
+            <h3>Visual Learning & Career Roadmap</h3>
+            <p>Sequenced, dependency-aware interactive roadmap tracking foundation volumes through portfolio delivery and clinical informatics.</p>
+            <div class="card-actions">
+              <a href="ROADMAP.html" target="_blank" rel="noopener" class="primary-btn-sm">Open Visual Roadmap ↗</a>
+            </div>
+          </article>
           <article class="lab-card"><h3>Integrated healthcare analytics portfolio</h3><p>End-to-end data cleaning, analysis, reporting and reproducibility practice.</p><a href="projects/v03_integrated_healthcare_portfolio/README.md">Open project guide</a></article>
           <article class="lab-card"><h3>Clinical medication utilisation</h3><p>Fictional antihypertensive utilisation dataset, statistical analysis and interpretation.</p><a href="clinical_medication_utilization_case_study_v546/README.md">Open project guide</a></article>
-          <article class="lab-card"><h3>Clinical BI dashboard</h3><p>Interactive synthetic clinical dashboard with filters, KPIs and CSV export.</p><a href="interactive_clinical_bi_dashboard_v548/docs/README.md">Open project guide</a></article>
           <article class="lab-card"><h3>Outpatient operations analytics</h3><p>Operational data validation, SQL analysis, metric contracts and reporting.</p><a href="portfolio_publication_candidate_v554/README.md">Open project guide</a></article>
           <article class="lab-card"><h3>Clinical research methods</h3><p>Study design, statistical methods and reproducible research exercises.</p><a href="clinical_research_methods_v524/README.md">Open project guide</a></article>
           <article class="lab-card"><h3>Healthcare data warehouse</h3><p>SQL modelling, curated data, validation and healthcare warehouse concepts.</p><a href="clinical_data_warehouse_sql_engineering_v526/README.md">Open project guide</a></article>
@@ -171,6 +234,7 @@
       </section>
       <section class="view" id="view-interoperability-mastery">
         <div class="page-heading"><div class="eyebrow">HEALTHCARE DATA STANDARDS · V2.7.0</div><h1>Healthcare warehousing and interoperability</h1><p>Twelve practical challenges covering warehouse architecture, HL7 v2, FHIR, terminology systems, clinical data integration, governance and end-to-end reconciliation.</p></div>
+        <div id="fhirInspectorApp"></div>
         <div id="interoperabilityMasteryApp"><div class="empty-state">Loading healthcare interoperability challenges…</div></div>
       </section>
       <section class="view" id="view-employer-assessments">
@@ -919,5 +983,8 @@ python -m pytest -q tests</code></pre><p class="muted">The example uses syntheti
 <script src="assets/real-world-studio.js"></script>
 <script src="assets/portfolio-publication.js"></script>
 <script src="assets/interactive-workbench.js"></script>
+<script src="assets/clinical-radar.js"></script>
+<script src="assets/sql-playground.js"></script>
+<script src="assets/fhir-inspector.js"></script>
 </body>
 </html>

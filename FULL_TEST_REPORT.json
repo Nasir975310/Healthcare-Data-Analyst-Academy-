@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at_utc": "2026-11-02T19:15:14.348887+00:00",
+  "generated_at_utc": "2026-11-02T19:35:55.427432+00:00",
   "root_test_scope": "six maintained career suites via pytest.ini; this report inventories and runs every discovered test directory independently",
   "test_directories_discovered": 68,
   "counts": {
@@ -12,31 +12,31 @@
       "test_directory": "advanced_professional_mastery/tests",
       "status": "passed",
       "return_code": 0,
-      "duration_seconds": 2.89,
-      "output_tail": ".                                                                        [100%]\n1 passed in 2.47s\n"
+      "duration_seconds": 2.87,
+      "output_tail": ".                                                                        [100%]\n1 passed in 2.39s\n"
     },
     {
       "module": "advanced_statistics_execution_v521",
       "test_directory": "advanced_statistics_execution_v521/tests",
       "status": "passed",
       "return_code": 0,
-      "duration_seconds": 4.54,
-      "output_tail": "........                                                                 [100%]\n8 passed in 3.60s\n"
+      "duration_seconds": 4.95,
+      "output_tail": "........                                                                 [100%]\n8 passed in 3.79s\n"
     },
     {
       "module": "application_execution_assessment_lab_v537",
       "test_directory": "application_execution_assessment_lab_v537/tests",
       "status": "passed",
       "return_code": 0,
-      "duration_seconds": 0.54,
-      "output_tail": ".....                                                                    [100%]\n5 passed in 0.10s\n"
+      "duration_seconds": 0.62,
+      "output_tail": ".....                                                                    [100%]\n5 passed in 0.09s\n"
     },
     {
       "module": "application_execution_interview_v557",
       "test_directory": "application_execution_interview_v557/tests",
       "status": "passed",
       "return_code": 0,
-      "duration_seconds": 0.49,
+      "duration_seconds": 0.58,
       "output_tail": "......                                                                   [100%]\n6 passed in 0.05s\n"
     },
     {
@@ -44,55 +44,55 @@
       "test_directory": "application_intelligence_v556/tests",
       "status": "passed",
       "return_code": 0,
-      "duration_seconds": 0.77,
-      "output_tail": ".......                                                                  [100%]\n7 passed in 0.07s\n"
+      "duration_seconds": 0.58,
+      "output_tail": ".......                                                                  [100%]\n7 passed in 0.05s\n"
     },
     {
       "module": "application_performance_career_intelligence_v558",
       "test_directory": "application_performance_career_intelligence_v558/tests",
       "status": "passed",
       "return_code": 0,
-      "duration_seconds": 0.84,
-      "output_tail": "......                                                                   [100%]\n6 passed in 0.13s\n"
+      "duration_seconds": 0.59,
+      "output_tail": "......                                                                   [100%]\n6 passed in 0.05s\n"
     },
     {
       "module": "bi_engineering_v59",
       "test_directory": "bi_engineering_v59/tests",
       "status": "passed",
       "return_code": 0,
-      "duration_seconds": 0.73,
-      "output_tail": ".                                                                        [100%]\n1 passed in 0.16s\n"
+      "duration_seconds": 0.79,
+      "output_tail": ".                                                                        [100%]\n1 passed in 0.26s\n"
     },
     {
       "module": "career_launch_kit_v555",
       "test_directory": "career_launch_kit_v555/tests",
       "status": "passed",
       "return_code": 0,
-      "duration_seconds": 0.59,
-      "output_tail": ".....                                                         [100%]\n5 passed, 11 subtests passed in 0.06s\n"
+      "duration_seconds": 0.6,
+      "output_tail": ".....                                                         [100%]\n5 passed, 11 subtests passed in 0.05s\n"
     },
     {
       "module": "client_delivery_v55",
       "test_directory": "client_delivery_v55/tests",
       "status": "passed",
       "return_code": 0,
-      "duration_seconds": 1.23,
-      "output_tail": ".                                                                        [100%]\n1 passed in 0.76s\n"
+      "duration_seconds": 1.45,
+      "output_tail": ".                                                                        [100%]\n1 passed in 0.90s\n"
     },
     {
       "module": "clinical_analytics_reporting_pack_v547",
       "test_directory": "clinical_analytics_reporting_pack_v547/tests",
       "status": "passed",
       "return_code": 0,
-      "duration_seconds": 0.49,
-      "output_tail": ".....                                                                    [100%]\n5 passed in 0.04s\n"
+      "duration_seconds": 0.6,
+      "output_tail": ".....                                                                    [100%]\n5 passed in 0.06s\n"
     },
     {
       "module": "clinical_data_warehouse_sql_engineering_v526",
       "test_directory": "clinical_data_warehouse_sql_engineering_v526/tests",
       "status": "passed",
       "return_code": 0,
-      "duration_seconds": 0.59,
+      "duration_seconds": 0.65,
       "output_tail": ".....                                                                    [100%]\n5 passed in 0.08s\n"
     },
     {
@@ -100,7 +100,7 @@
       "test_directory": "clinical_evidence_engine_v515/tests",
       "status": "passed",
       "return_code": 0,
-      "duration_seconds": 0.5,
+      "duration_seconds": 0.58,
       "output_tail": ".....                                                                    [100%]\n5 passed in 0.05s\n"
     },
     {
@@ -108,111 +108,111 @@
       "test_directory": "clinical_medication_utilization_case_study_v546/tests",
       "status": "passed",
       "return_code": 0,
-      "duration_seconds": 0.52,
-      "output_tail": "......                                                                   [100%]\n6 passed in 0.07s\n"
+      "duration_seconds": 0.64,
+      "output_tail": "......                                                                   [100%]\n6 passed in 0.08s\n"
     },
     {
       "module": "clinical_research_methods_v524",
       "test_directory": "clinical_research_methods_v524/tests",
       "status": "passed",
       "return_code": 0,
-      "duration_seconds": 5.93,
-      "output_tail": ".........                                                                [100%]\n9 passed in 4.82s\n"
+      "duration_seconds": 7.2,
+      "output_tail": ".........                                                                [100%]\n9 passed in 5.83s\n"
     },
     {
       "module": "dashboard_studio_v53",
       "test_directory": "dashboard_studio_v53/tests",
       "status": "passed",
       "return_code": 0,
-      "duration_seconds": 1.33,
-      "output_tail": ".                                                                        [100%]\n1 passed in 0.82s\n"
+      "duration_seconds": 1.42,
+      "output_tail": ".                                                                        [100%]\n1 passed in 0.88s\n"
     },
     {
       "module": "dashboard_uat_v550",
       "test_directory": "dashboard_uat_v550/tests",
       "status": "passed",
       "return_code": 0,
-      "duration_seconds": 0.66,
-      "output_tail": "...sssss                                                                 [100%]\n3 passed, 5 skipped in 0.05s\n"
+      "duration_seconds": 0.68,
+      "output_tail": "...sssss                                                                 [100%]\n3 passed, 5 skipped in 0.06s\n"
     },
     {
       "module": "data_governance_v56",
       "test_directory": "data_governance_v56/tests",
       "status": "passed",
       "return_code": 0,
-      "duration_seconds": 1.99,
-      "output_tail": "..                                                                       [100%]\n2 passed in 1.48s\n"
+      "duration_seconds": 2.39,
+      "output_tail": "..                                                                       [100%]\n2 passed in 1.76s\n"
     },
     {
       "module": "data_validation_v513",
       "test_directory": "data_validation_v513/tests",
       "status": "passed",
       "return_code": 0,
-      "duration_seconds": 0.56,
-      "output_tail": "...                                                                      [100%]\n3 passed in 0.06s\n"
+      "duration_seconds": 0.66,
+      "output_tail": "...                                                                      [100%]\n3 passed in 0.08s\n"
     },
     {
       "module": "database_engineering_v58",
       "test_directory": "database_engineering_v58/tests",
       "status": "passed",
       "return_code": 0,
-      "duration_seconds": 0.7,
-      "output_tail": ".                                                                        [100%]\n1 passed in 0.17s\n"
+      "duration_seconds": 0.82,
+      "output_tail": ".                                                                        [100%]\n1 passed in 0.22s\n"
     },
     {
       "module": "earning_system_v46",
       "test_directory": "earning_system_v46/tests",
       "status": "passed",
       "return_code": 0,
-      "duration_seconds": 0.47,
-      "output_tail": "...                                                                      [100%]\n3 passed in 0.04s\n"
+      "duration_seconds": 0.65,
+      "output_tail": "...                                                                      [100%]\n3 passed in 0.05s\n"
     },
     {
       "module": "employment_transition_paid_work_v536",
       "test_directory": "employment_transition_paid_work_v536/tests",
       "status": "passed",
       "return_code": 0,
-      "duration_seconds": 0.56,
-      "output_tail": ".....                                                                    [100%]\n5 passed in 0.05s\n"
+      "duration_seconds": 0.65,
+      "output_tail": ".....                                                                    [100%]\n5 passed in 0.06s\n"
     },
     {
       "module": "etl_orchestration_v57",
       "test_directory": "etl_orchestration_v57/tests",
       "status": "passed",
       "return_code": 0,
-      "duration_seconds": 2.65,
-      "output_tail": "..                                                                       [100%]\n2 passed in 2.23s\n"
+      "duration_seconds": 3.21,
+      "output_tail": "..                                                                       [100%]\n2 passed in 2.65s\n"
     },
     {
       "module": "github_portfolio_publication_v542/sample_export",
       "test_directory": "github_portfolio_publication_v542/sample_export/tests",
       "status": "passed",
       "return_code": 0,
-      "duration_seconds": 0.55,
-      "output_tail": "......                                                                   [100%]\n6 passed in 0.06s\n"
+      "duration_seconds": 0.76,
+      "output_tail": "......                                                                   [100%]\n6 passed in 0.11s\n"
     },
     {
       "module": "github_portfolio_publication_v542",
       "test_directory": "github_portfolio_publication_v542/tests",
       "status": "passed",
       "return_code": 0,
-      "duration_seconds": 0.51,
-      "output_tail": "....                                                                     [100%]\n4 passed in 0.07s\n"
+      "duration_seconds": 0.74,
+      "output_tail": "....                                                                     [100%]\n4 passed in 0.12s\n"
     },
     {
       "module": "healthcare_analytics_capstone_employment_v530",
       "test_directory": "healthcare_analytics_capstone_employment_v530/tests",
       "status": "passed",
       "return_code": 0,
-      "duration_seconds": 0.58,
-      "output_tail": ".....                                                                    [100%]\n5 passed in 0.08s\n"
+      "duration_seconds": 0.68,
+      "output_tail": ".....                                                                    [100%]\n5 passed in 0.09s\n"
     },
     {
       "module": "healthcare_analytics_deployment_evidence_v534",
       "test_directory": "healthcare_analytics_deployment_evidence_v534/tests",
       "status": "passed",
       "return_code": 0,
-      "duration_seconds": 0.52,
+      "duration_seconds": 0.56,
       "output_tail": ".....                                                                    [100%]\n5 passed in 0.05s\n"
     },
     {
@@ -220,31 +220,31 @@
       "test_directory": "healthcare_analytics_employer_evaluation_v535/tests",
       "status": "passed",
       "return_code": 0,
-      "duration_seconds": 0.75,
-      "output_tail": ".....                                                                    [100%]\n5 passed in 0.25s\n"
+      "duration_seconds": 0.89,
+      "output_tail": ".....                                                                    [100%]\n5 passed in 0.35s\n"
     },
     {
       "module": "healthcare_analytics_production_validation_v533",
       "test_directory": "healthcare_analytics_production_validation_v533/tests",
       "status": "passed",
       "return_code": 0,
-      "duration_seconds": 0.61,
-      "output_tail": "....                                                                     [100%]\n4 passed in 0.10s\n"
+      "duration_seconds": 0.73,
+      "output_tail": "....                                                                     [100%]\n4 passed in 0.15s\n"
     },
     {
       "module": "healthcare_analytics_real_world_practicum_v532",
       "test_directory": "healthcare_analytics_real_world_practicum_v532/tests",
       "status": "passed",
       "return_code": 0,
-      "duration_seconds": 0.64,
-      "output_tail": "......                                                                   [100%]\n6 passed in 0.13s\n"
+      "duration_seconds": 0.8,
+      "output_tail": "......                                                                   [100%]\n6 passed in 0.10s\n"
     },
     {
       "module": "healthcare_bi_portfolio_delivery_v529",
       "test_directory": "healthcare_bi_portfolio_delivery_v529/tests",
       "status": "passed",
       "return_code": 0,
-      "duration_seconds": 0.54,
+      "duration_seconds": 0.63,
       "output_tail": "..                                                                       [100%]\n2 passed in 0.06s\n"
     },
     {
@@ -252,55 +252,55 @@
       "test_directory": "healthcare_bi_powerbi_production_v528/tests",
       "status": "passed",
       "return_code": 0,
-      "duration_seconds": 0.58,
-      "output_tail": "..                                                                       [100%]\n2 passed in 0.05s\n"
+      "duration_seconds": 0.67,
+      "output_tail": "..                                                                       [100%]\n2 passed in 0.13s\n"
     },
     {
       "module": "healthcare_data_analyst_job_readiness_remote_employment_v531",
       "test_directory": "healthcare_data_analyst_job_readiness_remote_employment_v531/tests",
       "status": "passed",
       "return_code": 0,
-      "duration_seconds": 0.51,
-      "output_tail": "......                                                                   [100%]\n6 passed in 0.06s\n"
+      "duration_seconds": 0.68,
+      "output_tail": "......                                                                   [100%]\n6 passed in 0.07s\n"
     },
     {
       "module": "healthcare_data_engineering_interoperability_v525",
       "test_directory": "healthcare_data_engineering_interoperability_v525/tests",
       "status": "passed",
       "return_code": 0,
-      "duration_seconds": 0.65,
-      "output_tail": ".........                                                                [100%]\n9 passed in 0.17s\n"
+      "duration_seconds": 0.85,
+      "output_tail": ".........                                                                [100%]\n9 passed in 0.21s\n"
     },
     {
       "module": "hiring_assessment_v45",
       "test_directory": "hiring_assessment_v45/tests",
       "status": "passed",
       "return_code": 0,
-      "duration_seconds": 0.46,
-      "output_tail": "....                                                                     [100%]\n4 passed in 0.04s\n"
+      "duration_seconds": 0.67,
+      "output_tail": "....                                                                     [100%]\n4 passed in 0.05s\n"
     },
     {
       "module": "integrated_execution_engine_v520",
       "test_directory": "integrated_execution_engine_v520/tests",
       "status": "passed",
       "return_code": 0,
-      "duration_seconds": 0.64,
-      "output_tail": "........                                                                 [100%]\n8 passed in 0.21s\n"
+      "duration_seconds": 0.94,
+      "output_tail": "........                                                                 [100%]\n8 passed in 0.36s\n"
     },
     {
       "module": "integrated_reporting_visualization_v522",
       "test_directory": "integrated_reporting_visualization_v522/tests",
       "status": "passed",
       "return_code": 0,
-      "duration_seconds": 9.78,
-      "output_tail": "......                                                                   [100%]\n6 passed in 8.62s\n"
+      "duration_seconds": 10.5,
+      "output_tail": "......                                                                   [100%]\n6 passed in 9.38s\n"
     },
     {
       "module": "interactive_clinical_bi_dashboard_v548",
       "test_directory": "interactive_clinical_bi_dashboard_v548/tests",
       "status": "passed",
       "return_code": 0,
-      "duration_seconds": 0.52,
+      "duration_seconds": 0.72,
       "output_tail": ".....                                                                    [100%]\n5 passed in 0.06s\n"
     },
     {
@@ -308,79 +308,79 @@
       "test_directory": "interactive_workbench_v52/tests",
       "status": "passed",
       "return_code": 0,
-      "duration_seconds": 1.35,
-      "output_tail": ".                                                                        [100%]\n1 passed in 0.84s\n"
+      "duration_seconds": 1.79,
+      "output_tail": ".                                                                        [100%]\n1 passed in 1.11s\n"
     },
     {
       "module": "job_search_source_vacancy_verification_v559",
       "test_directory": "job_search_source_vacancy_verification_v559/tests",
       "status": "passed",
       "return_code": 0,
-      "duration_seconds": 0.68,
-      "output_tail": "......                                                                   [100%]\n6 passed in 0.06s\n"
+      "duration_seconds": 0.81,
+      "output_tail": "......                                                                   [100%]\n6 passed in 0.11s\n"
     },
     {
       "module": "platform_roadmap_v511",
       "test_directory": "platform_roadmap_v511/tests",
       "status": "passed",
       "return_code": 0,
-      "duration_seconds": 0.65,
-      "output_tail": "..                                                                       [100%]\n2 passed in 0.05s\n"
+      "duration_seconds": 0.86,
+      "output_tail": "..                                                                       [100%]\n2 passed in 0.08s\n"
     },
     {
       "module": "portfolio_builder_v49",
       "test_directory": "portfolio_builder_v49/tests",
       "status": "passed",
       "return_code": 0,
-      "duration_seconds": 0.54,
-      "output_tail": ".....                                                                    [100%]\n5 passed in 0.06s\n"
+      "duration_seconds": 0.86,
+      "output_tail": ".....                                                                    [100%]\n5 passed in 0.13s\n"
     },
     {
       "module": "portfolio_client_delivery_v518",
       "test_directory": "portfolio_client_delivery_v518/tests",
       "status": "passed",
       "return_code": 0,
-      "duration_seconds": 0.56,
-      "output_tail": ".....                                                                    [100%]\n5 passed in 0.08s\n"
+      "duration_seconds": 0.76,
+      "output_tail": ".....                                                                    [100%]\n5 passed in 0.09s\n"
     },
     {
       "module": "portfolio_employment_v44",
       "test_directory": "portfolio_employment_v44/tests",
       "status": "passed",
       "return_code": 0,
-      "duration_seconds": 0.5,
-      "output_tail": "....                                                                     [100%]\n4 passed in 0.04s\n"
+      "duration_seconds": 0.6,
+      "output_tail": "....                                                                     [100%]\n4 passed in 0.05s\n"
     },
     {
       "module": "portfolio_evidence_pack_v540",
       "test_directory": "portfolio_evidence_pack_v540/tests",
       "status": "passed",
       "return_code": 0,
-      "duration_seconds": 0.48,
-      "output_tail": "..                                                                       [100%]\n2 passed in 0.04s\n"
+      "duration_seconds": 0.59,
+      "output_tail": "..                                                                       [100%]\n2 passed in 0.05s\n"
     },
     {
       "module": "portfolio_execution_reproducibility_v538",
       "test_directory": "portfolio_execution_reproducibility_v538/tests",
       "status": "passed",
       "return_code": 0,
-      "duration_seconds": 0.52,
-      "output_tail": ".....                                                                    [100%]\n5 passed in 0.06s\n"
+      "duration_seconds": 0.61,
+      "output_tail": ".....                                                                    [100%]\n5 passed in 0.07s\n"
     },
     {
       "module": "portfolio_handoff_evidence_v543",
       "test_directory": "portfolio_handoff_evidence_v543/tests",
       "status": "passed",
       "return_code": 0,
-      "duration_seconds": 0.5,
-      "output_tail": "......                                                                   [100%]\n6 passed in 0.05s\n"
+      "duration_seconds": 0.59,
+      "output_tail": "......                                                                   [100%]\n6 passed in 0.06s\n"
     },
     {
       "module": "portfolio_interview_readiness_v545",
       "test_directory": "portfolio_interview_readiness_v545/tests",
       "status": "passed",
       "return_code": 0,
-      "duration_seconds": 0.5,
+      "duration_seconds": 0.59,
       "output_tail": "......                                                                   [100%]\n6 passed in 0.05s\n"
     },
     {
@@ -388,15 +388,15 @@
       "test_directory": "portfolio_presentation_employer_review_v539/tests",
       "status": "passed",
       "return_code": 0,
-      "duration_seconds": 0.51,
-      "output_tail": "....                                                                     [100%]\n4 passed in 0.05s\n"
+      "duration_seconds": 0.6,
+      "output_tail": "....                                                                     [100%]\n4 passed in 0.07s\n"
     },
     {
       "module": "portfolio_publication_candidate_v554",
       "test_directory": "portfolio_publication_candidate_v554/tests",
       "status": "passed",
       "return_code": 0,
-      "duration_seconds": 0.55,
+      "duration_seconds": 0.62,
       "output_tail": "......                                                                   [100%]\n6 passed in 0.07s\n"
     },
     {
@@ -404,23 +404,23 @@
       "test_directory": "portfolio_release_candidate_v544/tests",
       "status": "passed",
       "return_code": 0,
-      "duration_seconds": 0.55,
-      "output_tail": "......                                                                   [100%]\n6 passed in 0.06s\n"
+      "duration_seconds": 0.62,
+      "output_tail": "......                                                                   [100%]\n6 passed in 0.08s\n"
     },
     {
       "module": "portfolio_release_gate_v541",
       "test_directory": "portfolio_release_gate_v541/tests",
       "status": "passed",
       "return_code": 0,
-      "duration_seconds": 0.5,
-      "output_tail": "....                                                                     [100%]\n4 passed in 0.06s\n"
+      "duration_seconds": 0.6,
+      "output_tail": "....                                                                     [100%]\n4 passed in 0.08s\n"
     },
     {
       "module": "postgresql_healthcare_warehouse_operations_v527",
       "test_directory": "postgresql_healthcare_warehouse_operations_v527/tests",
       "status": "passed",
       "return_code": 0,
-      "duration_seconds": 0.52,
+      "duration_seconds": 0.57,
       "output_tail": "......                                                                   [100%]\n6 passed in 0.05s\n"
     },
     {
@@ -428,15 +428,15 @@
       "test_directory": "practicum_v43/tests",
       "status": "passed",
       "return_code": 0,
-      "duration_seconds": 1.17,
-      "output_tail": ".....                                                                    [100%]\n5 passed in 0.55s\n"
+      "duration_seconds": 1.49,
+      "output_tail": ".....                                                                    [100%]\n5 passed in 0.73s\n"
     },
     {
       "module": "production_ops_v510",
       "test_directory": "production_ops_v510/tests",
       "status": "passed",
       "return_code": 0,
-      "duration_seconds": 0.61,
+      "duration_seconds": 0.69,
       "output_tail": "..                                                                       [100%]\n2 passed in 0.08s\n"
     },
     {
@@ -444,112 +444,112 @@
       "test_directory": "professional_simulations/tests",
       "status": "passed",
       "return_code": 0,
-      "duration_seconds": 0.74,
-      "output_tail": ".                                                                        [100%]\n1 passed in 0.23s\n"
+      "duration_seconds": 1.06,
+      "output_tail": ".                                                                        [100%]\n1 passed in 0.38s\n"
     },
     {
       "module": "project_execution_collaboration_v519",
       "test_directory": "project_execution_collaboration_v519/tests",
       "status": "passed",
       "return_code": 0,
-      "duration_seconds": 0.55,
-      "output_tail": ".......                                                                  [100%]\n7 passed in 0.09s\n"
+      "duration_seconds": 0.79,
+      "output_tail": ".......                                                                  [100%]\n7 passed in 0.11s\n"
     },
     {
       "module": "project_execution_v48",
       "test_directory": "project_execution_v48/tests",
       "status": "passed",
       "return_code": 0,
-      "duration_seconds": 4.95,
-      "output_tail": "......                                                                   [100%]\n6 passed in 4.10s\n"
+      "duration_seconds": 6.33,
+      "output_tail": "......                                                                   [100%]\n6 passed in 5.25s\n"
     },
     {
       "module": "project_simulator_v51",
       "test_directory": "project_simulator_v51/tests",
       "status": "passed",
       "return_code": 0,
-      "duration_seconds": 1.45,
-      "output_tail": ".                                                                        [100%]\n1 passed in 0.80s\n"
+      "duration_seconds": 1.73,
+      "output_tail": ".                                                                        [100%]\n1 passed in 1.10s\n"
     },
     {
       "module": "real_world_project_studio/portfolio_publication",
       "test_directory": "real_world_project_studio/portfolio_publication/tests",
       "status": "passed",
       "return_code": 0,
-      "duration_seconds": 0.73,
-      "output_tail": "........                                                                 [100%]\n8 passed in 0.11s\n"
+      "duration_seconds": 0.78,
+      "output_tail": "........                                                                 [100%]\n8 passed in 0.09s\n"
     },
     {
       "module": "report_generator_v54",
       "test_directory": "report_generator_v54/tests",
       "status": "passed",
       "return_code": 0,
-      "duration_seconds": 2.11,
-      "output_tail": ".                                                                        [100%]\n1 passed in 1.67s\n"
+      "duration_seconds": 2.89,
+      "output_tail": ".                                                                        [100%]\n1 passed in 2.18s\n"
     },
     {
       "module": "research_publication_workbench_v517",
       "test_directory": "research_publication_workbench_v517/tests",
       "status": "passed",
       "return_code": 0,
-      "duration_seconds": 2.22,
-      "output_tail": ".....                                                                    [100%]\n5 passed in 1.47s\n"
+      "duration_seconds": 3.2,
+      "output_tail": ".....                                                                    [100%]\n5 passed in 2.07s\n"
     },
     {
       "module": "statistical_engine_v514",
       "test_directory": "statistical_engine_v514/tests",
       "status": "passed",
       "return_code": 0,
-      "duration_seconds": 2.48,
-      "output_tail": "....                                                                     [100%]\n4 passed in 1.70s\n"
+      "duration_seconds": 3.26,
+      "output_tail": "....                                                                     [100%]\n4 passed in 2.24s\n"
     },
     {
       "module": "statistical_validation_engine_v523",
       "test_directory": "statistical_validation_engine_v523/tests",
       "status": "passed",
       "return_code": 0,
-      "duration_seconds": 4.26,
-      "output_tail": "........                                                                 [100%]\n8 passed in 3.22s\n"
+      "duration_seconds": 5.11,
+      "output_tail": "........                                                                 [100%]\n8 passed in 4.01s\n"
     },
     {
       "module": "technical_environment_v47/starter_project",
       "test_directory": "technical_environment_v47/starter_project/tests",
       "status": "passed",
       "return_code": 0,
-      "duration_seconds": 1.07,
-      "output_tail": ".                                                                        [100%]\n1 passed in 0.47s\n"
+      "duration_seconds": 1.51,
+      "output_tail": ".                                                                        [100%]\n1 passed in 0.65s\n"
     },
     {
       "module": "technical_environment_v47",
       "test_directory": "technical_environment_v47/tests",
       "status": "passed",
       "return_code": 0,
-      "duration_seconds": 0.47,
-      "output_tail": ".......                                                                  [100%]\n7 passed in 0.05s\n"
+      "duration_seconds": 0.72,
+      "output_tail": ".......                                                                  [100%]\n7 passed in 0.07s\n"
     },
     {
       "module": "universal_study_workspace_v512",
       "test_directory": "universal_study_workspace_v512/tests",
       "status": "passed",
       "return_code": 0,
-      "duration_seconds": 0.46,
-      "output_tail": "...                                                                      [100%]\n3 passed in 0.05s\n"
+      "duration_seconds": 0.58,
+      "output_tail": "...                                                                      [100%]\n3 passed in 0.06s\n"
     },
     {
       "module": "vacancy_sourcing_evidence_capture_v560",
       "test_directory": "vacancy_sourcing_evidence_capture_v560/tests",
       "status": "passed",
       "return_code": 0,
-      "duration_seconds": 0.44,
-      "output_tail": "......                                                                   [100%]\n6 passed in 0.05s\n"
+      "duration_seconds": 0.61,
+      "output_tail": "......                                                                   [100%]\n6 passed in 0.06s\n"
     },
     {
       "module": "visualization_reporting_studio_v516",
       "test_directory": "visualization_reporting_studio_v516/tests",
       "status": "passed",
       "return_code": 0,
-      "duration_seconds": 5.64,
-      "output_tail": ".....                                                                    [100%]\n5 passed in 5.01s\n"
+      "duration_seconds": 6.02,
+      "output_tail": ".....                                                                    [100%]\n5 passed in 5.22s\n"
     }
   ],
   "interpretation": "A passing test directory does not certify its entire module. Dependency errors, timeouts, and failures remain visible. Modules without tests are not represented as tested."
