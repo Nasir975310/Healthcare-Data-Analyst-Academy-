@@ -30,7 +30,8 @@ def main() -> int:
         print(f"{status:4} {module}: {marker}; expected={expected}")
         if status == "FAIL":
             failed.append((module, output[-4000:]))
-    python_files = list(ROOT.rglob("*.py"))
+    SKIP_PARTS = {'.git', '.venv', 'venv', '__pycache__', 'node_modules'}
+    python_files = [p for p in ROOT.rglob("*.py") if not any(part in SKIP_PARTS for part in p.parts)]
     syntax_errors = []
     for path in python_files:
         try:

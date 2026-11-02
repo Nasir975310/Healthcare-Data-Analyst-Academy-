@@ -19,7 +19,7 @@ def discover_test_dirs():
     for p in ROOT.rglob('tests'):
         if any(part in SKIP_PARTS for part in p.parts):
             continue
-        if p.is_dir() and any(x.is_file() and (x.name.startswith('test_') or x.name.endswith('_test.py')) for x in p.iterdir()):
+        if p.is_dir() and any(x.is_file() and x.suffix == '.py' and (x.name.startswith('test_') or x.name.endswith('_test.py')) for x in p.iterdir()):
             found.append(p)
     return sorted(found)
 
@@ -30,7 +30,7 @@ def run_one(path: Path, timeout: int):
         proc = subprocess.run(
             [sys.executable, '-m', 'pytest', '-q', '--disable-warnings', '--tb=short', '--import-mode=importlib', '-c', os.devnull, str(path)],
             cwd=path.parent, text=True, stdout=subprocess.PIPE, stderr=subprocess.STDOUT,
-            timeout=timeout, env={**os.environ, 'PYTHONDONTWRITEBYTECODE': '1'}
+            timeout=timeout, env={**os.environ, 'PYTHONDONTWRITEBYTECODE': '1', 'PYTHONPATH': f"{ROOT}:{path.parent}:{path.parent / 'src'}:{os.environ.get('PYTHONPATH', '')}".rstrip(':')}
         )
         output = proc.stdout[-6000:]
         if proc.returncode == 0:

@@ -22,4 +22,5 @@ def main():
  assert (d["records_raw"],d["records_valid_for_baseline_description"],d["paired_sbp_denominator"],d["records_with_quality_flags"])==(300,298,297,3)
  assert round(d["mean_change_followup_minus_baseline_mmhg"],2)==-13.96
  print("PASS: dataset counts, SIM-04 quality counts, SIM-05 denominators and summary statistic")
+def test_simulation_fixtures(): main()
 if __name__=="__main__":main()

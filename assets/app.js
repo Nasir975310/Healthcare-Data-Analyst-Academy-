@@ -87,7 +87,16 @@ function renderAssignments(filter=""){
  <h4>Portfolio evidence</h4><p>${esc(a.portfolio)}</p>
  </div></details></article>`).join("")||'<div class="empty-state">No matching assignments.</div>';
 }
-function navigate(view){$$(".view").forEach(x=>x.classList.toggle("active",x.id===`view-${view}`));$$(".nav-item[data-view]").forEach(x=>x.classList.toggle("active",x.dataset.view===view));$("#crumb").textContent=({dashboard:"Dashboard",curriculum:"Curriculum",roadmap:"Learning roadmap",glossary:"Glossary",projects:"Projects",assessments:"Assessments",career:"Career centre",labs:"Practical labs",assignments:"Job simulations", "sql-mastery":"Healthcare SQL mastery",reader:"Chapter reader"})[view]||"Dashboard";$("#sidebar").classList.remove("open");window.scrollTo({top:0,behavior:"smooth"});}
+function navigate(view){
+  $$(".view").forEach(x=>x.classList.toggle("active",x.id===`view-${view}`));
+  $$(".nav-item[data-view]").forEach(x=>x.classList.toggle("active",x.dataset.view===view));
+  const activeBtn = $(`.nav-item[data-view="${view}"]`);
+  const dynamicTitle = activeBtn ? activeBtn.textContent.trim().replace(/^[\s\S]{1,2}\s+/, "") : null;
+  const titles = {dashboard:"Dashboard",curriculum:"Curriculum",roadmap:"Learning roadmap",glossary:"Glossary",projects:"Projects",assessments:"Assessments",career:"Career centre",labs:"Practical labs",assignments:"Job simulations","sql-mastery":"Healthcare SQL mastery",reader:"Chapter reader"};
+  $("#crumb").textContent = titles[view] || dynamicTitle || "Dashboard";
+  $("#sidebar").classList.remove("open");
+  window.scrollTo({top:0,behavior:"smooth"});
+}
 function applyTheme(){document.body.classList.toggle("dark",state.theme==="dark");}
 function exportProgress(){const p={product:"Healthcare Data Analyst Academy",formatVersion:1,exportedAt:new Date().toISOString(),completed:state.completed,theme:state.theme};const blob=new Blob([JSON.stringify(p,null,2)],{type:"application/json"}),url=URL.createObjectURL(blob),a=document.createElement("a");a.href=url;a.download="hda-academy-progress.json";a.click();URL.revokeObjectURL(url);}
 function importProgress(file){const r=new FileReader();r.onload=()=>{try{const x=JSON.parse(r.result);if(!Array.isArray(x.completed))throw Error();const valid=new Set(allChapters().map(c=>key(c.volumeId,c.number)));state.completed=x.completed.filter(k=>valid.has(k));state.theme=x.theme==="dark"?"dark":"light";saveState();applyTheme();renderDashboard();renderCurriculum($("#curriculumSearch").value);alert("Progress imported.");}catch(e){alert("Invalid Academy progress backup.");}};r.readAsText(file);}

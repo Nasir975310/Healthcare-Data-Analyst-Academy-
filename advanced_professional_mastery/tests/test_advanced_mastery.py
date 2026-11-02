@@ -18,4 +18,5 @@ def main():
  assert round(stat["adjusted_treatment_coefficient"],2)==-3.62
  assert stat["adjusted_robust_95ci"][0]<0<stat["crude_robust_95ci"][0] or stat["crude_robust_95ci"][0]>0
  print("PASS: database row counts, 540 orphan orders, statistical cohort denominators and regression outputs")
+def test_advanced_mastery(): main()
 if __name__=="__main__":main()
