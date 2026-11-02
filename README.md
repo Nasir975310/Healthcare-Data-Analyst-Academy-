@@ -4,7 +4,7 @@
 
 A practical course-pack for developing healthcare analytics capability across Excel, SQL, Python, statistics, data quality, ETL, databases, BI, reproducible reporting and career execution.
 
-> **Status:** The cumulative v5.60.3 distribution is the source baseline. The historical test audit is incomplete. Passing maintained tests do not certify every historical module. Browser acceptance on the target workstation is pending.
+> **Repository status:** This GitHub repository currently contains the onboarding/governance scaffold; the complete 1,645-entry v5.60.3 source archive is **not yet imported into the Git tree**. See [repository import status](REPOSITORY_IMPORT_STATUS.md). The historical test audit is incomplete. Passing maintained tests do not certify every historical module. Browser acceptance on the target workstation is pending.
 
 ## Start here
 
