@@ -1,0 +1,62 @@
+[
+  {
+    "id": "q1",
+    "q": "What is an algorithm?",
+    "options": [
+      "A finite ordered method for solving a problem",
+      "A Python package",
+      "A database table",
+      "A chart"
+    ],
+    "correct": 0,
+    "why": "An algorithm describes the steps before or independent of a particular implementation."
+  },
+  {
+    "id": "q2",
+    "q": "Which type represents True or False?",
+    "options": [
+      "bool",
+      "str",
+      "float",
+      "list"
+    ],
+    "correct": 0,
+    "why": "Boolean values represent logical truth values."
+  },
+  {
+    "id": "q3",
+    "q": "What does == do?",
+    "options": [
+      "Compares two values",
+      "Assigns a value",
+      "Defines a function",
+      "Imports a module"
+    ],
+    "correct": 0,
+    "why": "A single equals sign assigns; double equals compares."
+  },
+  {
+    "id": "q4",
+    "q": "Which error commonly occurs when dividing by zero?",
+    "options": [
+      "ZeroDivisionError",
+      "NameError",
+      "KeyError",
+      "SyntaxError"
+    ],
+    "correct": 0,
+    "why": "Python raises ZeroDivisionError for division by zero."
+  },
+  {
+    "id": "q5",
+    "q": "Why define a metric before coding it?",
+    "options": [
+      "To make its population and denominator explicit",
+      "To avoid using functions",
+      "To increase row count",
+      "To remove all missing values"
+    ],
+    "correct": 0,
+    "why": "The code must implement a defensible analytical definition."
+  }
+]

@@ -1,0 +1,12 @@
+# Client handover checklist
+- [ ] Business question, scope, definitions and exclusions approved
+- [ ] Source inventory, owners, refresh cadence and lineage documented
+- [ ] Grain, keys, relationships and aggregation behavior documented
+- [ ] KPI formulas and denominators reviewed by business owner
+- [ ] Reconciliation and data-quality results attached
+- [ ] RLS roles tested for authorized and unauthorized identities
+- [ ] Accessibility, labels, units and mobile layout reviewed
+- [ ] Performance Analyzer results and known limitations recorded
+- [ ] Refresh ownership, failure alerts and support contact agreed
+- [ ] Privacy/security review completed; no PHI in public artifacts
+- [ ] Version, change log and rollback approach recorded

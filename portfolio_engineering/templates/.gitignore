@@ -1,0 +1,26 @@
+# Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ipynb_checkpoints/
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+secrets/
+# Local databases and exports (allow synthetic demo DB explicitly if reviewed)
+*.sqlite
+*.sqlite3
+*.db
+# Generated outputs; selectively force-add reviewed portfolio figures if appropriate
+outputs/
+reports/generated/
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

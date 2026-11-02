@@ -1,0 +1,7 @@
+encounter_id,patient_id,department,admit_date,discharge_date,order_status,drug_class
+E001,P001,Medicine,2026-01-02,2026-01-05,Active,Antihypertensive
+E002,P002,Cardiology,2026-01-03,2026-01-04,Active,Antihypertensive
+E003,P001,Medicine,2026-01-10,2026-01-12,Discontinued,Antihypertensive
+E004,P003,Medicine,2026-01-11,2026-01-13,Active,Antibiotic
+E005,P004,Cardiology,2026-01-12,2026-01-15,Active,Antihypertensive
+E006,P005,Emergency,2026-01-14,2026-01-14,Active,Antihypertensive

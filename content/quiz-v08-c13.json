@@ -1,0 +1,74 @@
+[
+  {
+    "id": "q1",
+    "q": "What supports progression beyond entry-level?",
+    "options": [
+      "Tool collecting",
+      "Reliable ownership, judgement, communication and delivery",
+      "Only job title",
+      "Avoiding feedback"
+    ],
+    "correct": 1,
+    "why": "Progression requires demonstrated responsibility and outcomes."
+  },
+  {
+    "id": "q2",
+    "q": "What does RWE specialisation add?",
+    "options": [
+      "Only chart formatting",
+      "Observational study design, causal inference and real-world data context",
+      "Only VBA",
+      "Only hardware repair"
+    ],
+    "correct": 1,
+    "why": "RWE requires study design and careful interpretation of observational evidence."
+  },
+  {
+    "id": "q3",
+    "q": "When should a new tool be learned?",
+    "options": [
+      "Because it is trending",
+      "When it solves a defined problem or closes a demonstrated skill gap",
+      "Before all fundamentals",
+      "Instead of documenting work"
+    ],
+    "correct": 1,
+    "why": "Tool choices should follow the work."
+  },
+  {
+    "id": "q4",
+    "q": "What is a useful development plan?",
+    "options": [
+      "Unmeasured goals",
+      "Quarterly deliverables with evidence and review",
+      "A list of 100 technologies",
+      "No feedback"
+    ],
+    "correct": 1,
+    "why": "Measurable goals help direct development."
+  },
+  {
+    "id": "q5",
+    "q": "What is a key principle in 'Career progression and specialization'?",
+    "options": [
+      "Prioritise appearance over accuracy",
+      "Use evidence, clear scope and honest limitations",
+      "Invent achievements",
+      "Ignore privacy"
+    ],
+    "correct": 1,
+    "why": "Professional practice depends on evidence, scope and integrity."
+  },
+  {
+    "id": "q6",
+    "q": "How should practical work be completed across operating systems?",
+    "options": [
+      "Assume all commands are identical",
+      "Use separate Linux and PowerShell instructions and verify equivalent outcomes",
+      "Skip one OS",
+      "Copy absolute paths between systems"
+    ],
+    "correct": 1,
+    "why": "OS-specific instructions are required for reproducibility."
+  }
+]

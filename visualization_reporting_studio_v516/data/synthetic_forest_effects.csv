@@ -1,0 +1,6 @@
+study,effect,lower,upper
+Study A,0.72,0.51,1.02
+Study B,0.88,0.69,1.13
+Study C,0.64,0.42,0.98
+Study D,1.04,0.81,1.34
+Pooled estimate,0.80,0.68,0.94

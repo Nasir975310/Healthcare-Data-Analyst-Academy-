@@ -1,0 +1,192 @@
+{
+  "version": "2.2.0",
+  "title": "Advanced Excel and Power Query Laboratory",
+  "description": "Eight progressive healthcare analytics spreadsheet challenges with worked solutions, synthetic source data and a timed client simulation.",
+  "challenges": [
+    {
+      "id": "EX01",
+      "title": "Logical and conditional formulas",
+      "level": "Foundation",
+      "time": "25\u201335 min",
+      "scenario": "The quality lead needs a transparent list of longer-stay encounters and department-level counts.",
+      "tasks": [
+        "Add a Long_Stay_Flag column to the encounter table using IF; use >7 days as a training threshold only.",
+        "Count encounters in each department using COUNTIF or COUNTIFS.",
+        "Use IFERROR to make lookup or division failures explicit rather than hiding them."
+      ],
+      "starter": "=IF([@length_of_stay_days]>7,\"Review\",\"Within threshold\")\n=COUNTIF(tblEncounters[department],A2)\n=IFERROR(numerator/denominator,0)",
+      "hint": "Use structured references inside Excel Tables. Keep the threshold visible and label it as an operational exercise, not a clinical rule.",
+      "solution": "Long-stay flag: =IF([@length_of_stay_days]>7,\"Review\",\"Within threshold\"). Department count: =COUNTIF(tblEncounters[department],A2). Safe ratio: =IFERROR(numerator/denominator,0), but explain why zero is an appropriate fallback; otherwise return NA() or a clear text state.",
+      "expected": "80 encounter rows; mean LOS 3.875 days. Exact long-stay count can be independently checked with COUNTIF against the supplied LOS column.",
+      "acceptance": [
+        "Formula is filled down to all 80 encounters.",
+        "No hard-coded department totals.",
+        "Threshold and denominator are documented.",
+        "Errors are not silently converted into misleading values."
+      ]
+    },
+    {
+      "id": "EX02",
+      "title": "Conditional aggregation with SUMIFS and AVERAGEIFS",
+      "level": "Foundation",
+      "time": "25\u201335 min",
+      "scenario": "An operations analyst needs order quantities by status and mean length of stay by department.",
+      "tasks": [
+        "Calculate total ordered quantity for Active orders with SUMIFS.",
+        "Calculate mean LOS for each department using AVERAGEIFS.",
+        "Add a second criterion, such as payer type, to a department summary."
+      ],
+      "starter": "=SUMIFS(tblRawOrders[quantity],tblRawOrders[order_status],\"Active\")\n=AVERAGEIFS(tblEncounters[length_of_stay_days],tblEncounters[department],A2)",
+      "hint": "Raw status contains inconsistent casing/whitespace. Compare pre-clean and post-clean results, and do not silently exclude records.",
+      "solution": "After normalising status, use =SUMIFS(tblCleanOrders[quantity],tblCleanOrders[order_status],\"Active\"). Mean LOS: =AVERAGEIFS(tblEncounters[length_of_stay_days],tblEncounters[department],A2). Multiple criteria can be appended as criteria_range, criteria pairs.",
+      "expected": "Use Reference_Checks for global controls. Your department/status totals depend on cleaning rules; document them and reconcile row counts before comparing.",
+      "acceptance": [
+        "Uses SUMIFS/AVERAGEIFS rather than manual filtering.",
+        "Documents missing-value treatment and criteria.",
+        "Totals reconcile to the cleaned dataset.",
+        "No confusion between order quantity and administered dose."
+      ]
+    },
+    {
+      "id": "EX03",
+      "title": "XLOOKUP and INDEX/MATCH",
+      "level": "Intermediate",
+      "time": "30\u201340 min",
+      "scenario": "The pharmacy analytics team needs a consistent therapeutic-class mapping from a synthetic reference table.",
+      "tasks": [
+        "Clean drug_name text before matching.",
+        "Return standard_therapeutic_class and reference_unit_cost_inr using XLOOKUP.",
+        "Recreate the class lookup using INDEX/MATCH for compatibility."
+      ],
+      "starter": "=XLOOKUP([@drug_name],tblFormulary[drug_name],tblFormulary[standard_therapeutic_class],\"Not found\",0)\n=IFERROR(INDEX(tblFormulary[standard_therapeutic_class],MATCH([@drug_name],tblFormulary[drug_name],0)),\"Not found\")",
+      "hint": "TRIM removes leading/trailing spaces; CLEAN removes nonprinting characters. Standardise case consistently on both sides or use a case-insensitive exact match (Excel's standard text match is case-insensitive).",
+      "solution": "Create Clean_Drug_Name = TRIM(CLEAN([@drug_name])). Then use =XLOOKUP([@Clean_Drug_Name],tblFormulary[drug_name],tblFormulary[standard_therapeutic_class],\"Not found\",0). INDEX/MATCH equivalent: =IFERROR(INDEX(tblFormulary[standard_therapeutic_class],MATCH([@Clean_Drug_Name],tblFormulary[drug_name],0)),\"Not found\").",
+      "expected": "All formulary-listed drugs should map after text cleaning. Unmatched values remain visibly Not found for investigation.",
+      "acceptance": [
+        "Exact-match lookup used.",
+        "Text cleaned before lookup.",
+        "Unmatched values are retained and reviewed.",
+        "Lookup output does not overwrite source data."
+      ]
+    },
+    {
+      "id": "EX04",
+      "title": "PivotTables and PivotCharts",
+      "level": "Intermediate",
+      "time": "35\u201350 min",
+      "scenario": "A hospital manager wants a compact view of encounter distribution and medication-order mix.",
+      "tasks": [
+        "Build an encounter count PivotTable with department as rows and payer_type as columns.",
+        "Build an order count PivotTable with therapeutic_class as rows and order_status as columns.",
+        "Add a PivotChart and at least one filter/slicer if supported."
+      ],
+      "starter": "Pivot 1: Rows = department; Columns = payer_type; Values = Count of encounter_id.\nPivot 2: Rows = therapeutic_class; Columns = order_status; Values = Count of order_id.",
+      "hint": "Use Count, not Sum, for identifier fields. Refresh PivotTables after Power Query refresh. A PivotTable can only be as trustworthy as its source grain and cleaning steps.",
+      "solution": "Excel: select a cell in the table > Insert > PivotTable > New Worksheet. Drag the specified fields to Rows, Columns and Values. Set Values to Count. Insert PivotChart from the PivotTable. Add slicers for department or status if available. Linux: LibreOffice Data > Pivot Table > Insert/Edit; menus and slicer support differ.",
+      "expected": "Encounter PivotTable grand total should be 80. Raw order PivotTable total should be 151 before deduplication; cleaned total depends on the explicitly documented duplicate rule.",
+      "acceptance": [
+        "Correct fields and Count aggregation.",
+        "Grand totals tie to source or cleaned row counts.",
+        "Chart title, units and filters are clear.",
+        "Refresh behaviour is understood."
+      ]
+    },
+    {
+      "id": "EX05",
+      "title": "Power Query cleaning and transformation",
+      "level": "Intermediate",
+      "time": "45\u201360 min",
+      "scenario": "A monthly extract has inconsistent text, missing fields, a duplicate-like record and an orphan encounter reference.",
+      "tasks": [
+        "Import the three CSVs with Data > Get Data > From Text/CSV.",
+        "Set explicit data types; trim/clean text; standardise order_status casing.",
+        "Identify and remove exact duplicate business rows only after defining the duplicate key.",
+        "Flag missing therapeutic class/unit cost and orphan encounter IDs; do not invent values.",
+        "Load cleaned output to a new table and preserve raw inputs."
+      ],
+      "starter": "Power Query M learning pattern:\nTable.TransformColumns(Source, {{\"drug_name\", each Text.Trim(Text.Clean(_)), type text}})\nText.Upper(Text.Trim([order_status]))\nTable.NestedJoin(Orders, {\"encounter_id\"}, Encounters, {\"encounter_id\"}, \"Encounter\", JoinKind.LeftOuter)",
+      "hint": "Do not deduplicate on order_id alone if order_id is unique by design. Define business duplicate logic (e.g., encounter_id + order_date + drug_name + route + quantity) and review candidate duplicates before removal.",
+      "solution": "Use the supplied `powerquery/clean_orders.m` as a reference pattern. Keep `Raw_Orders` unchanged. Add quality flags for missing class, missing cost and orphan encounter. Deduplicate only after review using a documented business key. The script is a reference and has not been executed in Power Query Desktop.",
+      "expected": "Raw source controls: 151 rows; 1 missing unit cost; 1 blank therapeutic class; 1 orphan encounter reference. One duplicate-like business record is intentionally present under a different source ID.",
+      "acceptance": [
+        "Raw data preserved.",
+        "Types explicit and text normalised.",
+        "Duplicate rule documented and candidates reviewed.",
+        "Missing/orphan values flagged, not silently imputed.",
+        "Refresh steps are reproducible."
+      ]
+    },
+    {
+      "id": "EX06",
+      "title": "Data validation and spreadsheet controls",
+      "level": "Intermediate",
+      "time": "25\u201335 min",
+      "scenario": "A workbook is being handed to a second analyst and needs basic input controls.",
+      "tasks": [
+        "Add a list validation to a controlled status field.",
+        "Highlight missing unit costs and invalid/nonpositive quantities.",
+        "Protect formula cells while leaving designated input cells editable (optional).",
+        "Add a visible data-quality summary."
+      ],
+      "starter": "Data > Data Validation > Allow: List > Source: Active,Discontinued,On Hold\nConditional formatting: =ISBLANK($I2)\nInvalid quantity: =$H2<=0",
+      "hint": "Use a named range or a reference list for maintainability. Validation reduces new entry errors; it does not repair existing data.",
+      "solution": "Create a Status_List range and use it as the validation source. Apply conditional formatting to unit_cost_inr when blank and quantity when <=0. Add counts using COUNTBLANK, COUNTIF and COUNTIFS. Recheck pasted/imported data because validation may be bypassed by paste operations.",
+      "expected": "At minimum, the supplied source has one missing cost and one missing class, and one orphan encounter reference.",
+      "acceptance": [
+        "Input values constrained by a controlled list.",
+        "Quality exceptions are visible.",
+        "Validation rules are documented.",
+        "Existing imported records are separately profiled."
+      ]
+    },
+    {
+      "id": "EX07",
+      "title": "Healthcare operations KPI dashboard",
+      "level": "Advanced",
+      "time": "45\u201360 min",
+      "scenario": "Prepare a one-page monthly operations view for a nontechnical manager.",
+      "tasks": [
+        "Show encounter count and mean LOS.",
+        "Show the supplied 30-day readmission flag proportion with a clear caveat.",
+        "Show order quantity and synthetic order value with units.",
+        "Add department comparison and a trend/category chart where appropriate.",
+        "Add reporting period, source, refresh date and definitions."
+      ],
+      "starter": "Encounter count = COUNTA(tblEncounters[encounter_id])\nMean LOS = AVERAGE(tblEncounters[length_of_stay_days])\nSupplied flag proportion = SUM(tblEncounters[readmission_30d_flag])/COUNTA(tblEncounters[encounter_id])\nOrder quantity = SUM(tblRawOrders[quantity])\nSynthetic value = SUM(tblRawOrders[line_total_inr])",
+      "hint": "Do not call the supplied flag proportion a validated readmission rate. Do not label order quantity as dispensed or administered quantity. Distinguish missing cost from zero cost.",
+      "solution": "Use KPI cards for count, mean LOS, supplied flag proportion, total ordered quantity and synthetic order value. Include a note: `Synthetic training data; readmission flag is supplied and not independently validated; order quantity is not dispensing or administration; costs are synthetic.` Add department bar chart and a PivotTable-backed status mix chart.",
+      "expected": "80 encounters; mean LOS 3.875 days; supplied flag proportion 8.75%; total order quantity 3,038; synthetic order value INR 100,279.75 (missing-cost rows excluded).",
+      "acceptance": [
+        "Every KPI has unit, denominator and definition.",
+        "Caveats visible on dashboard.",
+        "Charts are readable and not misleading.",
+        "Dashboard totals match reference checks."
+      ]
+    },
+    {
+      "id": "EX08",
+      "title": "Excel\u2013SQL reconciliation and timed interview task",
+      "level": "Advanced",
+      "time": "45 min timed + 20 min review",
+      "scenario": "A remote client requests a reproducible department operations summary before a deadline.",
+      "tasks": [
+        "Within 45 minutes, profile the files and identify quality issues.",
+        "Create department-level encounter counts and mean LOS.",
+        "Create therapeutic-class order counts after documented cleaning.",
+        "Reconcile total encounter count and order quantity with SQL/Python reference checks.",
+        "Write a concise handoff with definitions, caveats and unresolved issues."
+      ],
+      "starter": "SQL controls:\nSELECT COUNT(*) AS encounter_rows, AVG(length_of_stay_days) AS mean_los FROM encounters;\nSELECT COUNT(*) AS order_rows, SUM(quantity) AS total_order_quantity FROM medication_orders;",
+      "hint": "Use `healthcare_sql_mastery.db` for encounter/order source counts and SQL comparisons. The Excel-specific source includes additional deliberately imperfect fields; compare like-for-like source versions and cleaning rules.",
+      "solution": "A passing handoff reports 80 encounters, 151 raw order rows, mean LOS 3.875 days, supplied readmission flag 7/80 = 8.75%, raw ordered quantity 3,038 and synthetic value INR 100,279.75. It explicitly reports one missing cost, one blank class and one orphan encounter reference. The duplicate-like row requires a documented business key decision; do not silently delete it.",
+      "expected": "100-point rubric: accuracy 30; cleaning/quality controls 20; formulas/PivotTables 15; reconciliation 15; communication/caveats 10; reproducibility/file hygiene 10. Target >=75; redo any critical denominator or grain error.",
+      "acceptance": [
+        "45-minute timer respected.",
+        "Outputs reconcile to stated source grain.",
+        "Quality issues and caveats are explicit.",
+        "Handoff is concise and reproducible.",
+        "Workbook and source files are organised for client review."
+      ]
+    }
+  ]
+}

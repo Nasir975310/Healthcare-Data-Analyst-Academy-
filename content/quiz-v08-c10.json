@@ -1,0 +1,74 @@
+[
+  {
+    "id": "q1",
+    "q": "What is a useful application tracker field?",
+    "options": [
+      "Favourite colour",
+      "Role eligibility, application date and follow-up",
+      "Password",
+      "Bank OTP"
+    ],
+    "correct": 1,
+    "why": "Track process information, not credentials or secrets."
+  },
+  {
+    "id": "q2",
+    "q": "What is a good follow-up practice?",
+    "options": [
+      "Repeated daily messages",
+      "One concise, respectful follow-up consistent with the employer's process",
+      "Threatening the recruiter",
+      "Contacting unrelated employees repeatedly"
+    ],
+    "correct": 1,
+    "why": "Professional follow-up respects the stated process."
+  },
+  {
+    "id": "q3",
+    "q": "Which is a recruitment scam warning?",
+    "options": [
+      "Official company email",
+      "Request for OTP or upfront job fee",
+      "A technical interview",
+      "A written job description"
+    ],
+    "correct": 1,
+    "why": "Never share OTPs or pay to secure a job."
+  },
+  {
+    "id": "q4",
+    "q": "Why research the employer?",
+    "options": [
+      "To copy their logo",
+      "To understand role, data context and legitimacy",
+      "To avoid reading job requirements",
+      "To invent experience"
+    ],
+    "correct": 1,
+    "why": "Employer research improves fit assessment and scam detection."
+  },
+  {
+    "id": "q5",
+    "q": "What is a key principle in 'Job search system'?",
+    "options": [
+      "Prioritise appearance over accuracy",
+      "Use evidence, clear scope and honest limitations",
+      "Invent achievements",
+      "Ignore privacy"
+    ],
+    "correct": 1,
+    "why": "Professional practice depends on evidence, scope and integrity."
+  },
+  {
+    "id": "q6",
+    "q": "How should practical work be completed across operating systems?",
+    "options": [
+      "Assume all commands are identical",
+      "Use separate Linux and PowerShell instructions and verify equivalent outcomes",
+      "Skip one OS",
+      "Copy absolute paths between systems"
+    ],
+    "correct": 1,
+    "why": "OS-specific instructions are required for reproducibility."
+  }
+]

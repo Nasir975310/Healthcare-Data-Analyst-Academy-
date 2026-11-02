@@ -1,0 +1,74 @@
+[
+  {
+    "id": "q1",
+    "q": "In diagnostic and screening analytics, which action should occur before interpreting results?",
+    "options": [
+      "Define the question, variables and assumptions before analysis",
+      "Select whichever method gives the smallest p-value",
+      "Remove inconvenient observations without documentation",
+      "Interpret every association as causal"
+    ],
+    "correct": 0,
+    "why": "A prespecified question and transparent assumptions reduce analytic flexibility and improve interpretability."
+  },
+  {
+    "id": "q2",
+    "q": "What should accompany a key statistical estimate?",
+    "options": [
+      "Only a p-value",
+      "An effect estimate, uncertainty interval, denominator and context",
+      "Only a chart",
+      "A statement that the result is significant"
+    ],
+    "correct": 1,
+    "why": "Effect magnitude, precision, denominator and context are essential for interpretation."
+  },
+  {
+    "id": "q3",
+    "q": "A dataset contains multiple encounters per patient. What is the main concern?",
+    "options": [
+      "The file cannot be analysed",
+      "Observations may not be independent",
+      "All records must be deleted",
+      "The sample size is always the number of rows"
+    ],
+    "correct": 1,
+    "why": "Repeated encounters from one person can be correlated; methods or summaries must respect the unit of analysis."
+  },
+  {
+    "id": "q4",
+    "q": "Which statement is most defensible for an observational analysis?",
+    "options": [
+      "The exposure caused the outcome",
+      "The exposure was associated with the outcome, subject to confounding and bias",
+      "The p-value proves the hypothesis",
+      "No confounding is possible after regression"
+    ],
+    "correct": 1,
+    "why": "Observational estimates require cautious interpretation and explicit consideration of confounding."
+  },
+  {
+    "id": "q5",
+    "q": "What is the correct response when a key variable has missing values?",
+    "options": [
+      "Replace all missing values with zero",
+      "Delete every record without review",
+      "Quantify, investigate and justify the handling strategy",
+      "Assume missingness is completely random"
+    ],
+    "correct": 2,
+    "why": "Missingness mechanisms and workflow causes should be investigated; the analysis strategy must be justified."
+  },
+  {
+    "id": "q6",
+    "q": "Which is a core reproducibility practice?",
+    "options": [
+      "Manually edit the final output only",
+      "Keep raw data immutable and document executable transformations",
+      "Save only screenshots",
+      "Omit software and data provenance"
+    ],
+    "correct": 1,
+    "why": "A reproducible workflow preserves source data and records transformations, definitions, environment and outputs."
+  }
+]

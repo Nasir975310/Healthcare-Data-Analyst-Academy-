@@ -1,0 +1,74 @@
+[
+  {
+    "id": "q1",
+    "q": "What should be checked first in a remote vacancy?",
+    "options": [
+      "Company logo",
+      "Location eligibility and work authorisation",
+      "Number of emojis",
+      "Whether title sounds senior"
+    ],
+    "correct": 1,
+    "why": "Remote roles may be restricted by country, payroll or time zone."
+  },
+  {
+    "id": "q2",
+    "q": "Which is a seniority signal?",
+    "options": [
+      "Senior title only",
+      "Ownership, governance, mentoring and accountability",
+      "Long list of software",
+      "Number of bullet points"
+    ],
+    "correct": 1,
+    "why": "Responsibilities reveal seniority better than titles."
+  },
+  {
+    "id": "q3",
+    "q": "How should preferred requirements be treated?",
+    "options": [
+      "Always mandatory",
+      "Ignore all requirements",
+      "Evaluate against core tasks and evidence",
+      "Invent equivalent experience"
+    ],
+    "correct": 2,
+    "why": "Preferred requirements can be negotiable, but assess fit honestly."
+  },
+  {
+    "id": "q4",
+    "q": "Which posting request is a red flag?",
+    "options": [
+      "Technical interview",
+      "Upfront payment to secure employment",
+      "Portfolio link",
+      "Time-zone overlap"
+    ],
+    "correct": 1,
+    "why": "Legitimate employers do not require applicants to pay to secure a job."
+  },
+  {
+    "id": "q5",
+    "q": "What is a key principle in 'Job-market literacy'?",
+    "options": [
+      "Prioritise appearance over accuracy",
+      "Use evidence, clear scope and honest limitations",
+      "Invent achievements",
+      "Ignore privacy"
+    ],
+    "correct": 1,
+    "why": "Professional practice depends on evidence, scope and integrity."
+  },
+  {
+    "id": "q6",
+    "q": "How should practical work be completed across operating systems?",
+    "options": [
+      "Assume all commands are identical",
+      "Use separate Linux and PowerShell instructions and verify equivalent outcomes",
+      "Skip one OS",
+      "Copy absolute paths between systems"
+    ],
+    "correct": 1,
+    "why": "OS-specific instructions are required for reproducibility."
+  }
+]

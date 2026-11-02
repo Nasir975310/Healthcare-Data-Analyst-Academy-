@@ -1,0 +1,8 @@
+{
+  "root": "/mnt/data/hda_v535_work/healthcare_data_analyst_academy/healthcare_analytics_real_world_practicum_v532",
+  "files_scanned": 22,
+  "potential_findings": 0,
+  "findings": [],
+  "status": "NO_PATTERN_MATCH",
+  "caveat": "Heuristic scan only; absence of matches does not prove safety. Use a dedicated secret scanner and human review."
+}

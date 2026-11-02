@@ -1,0 +1,62 @@
+[
+  {
+    "id": "q1",
+    "q": "What does a cell address such as C7 identify?",
+    "options": [
+      "A workbook",
+      "A worksheet",
+      "Column C, row 7",
+      "A named table"
+    ],
+    "correct": 2,
+    "why": "Cell addresses identify the intersection of a column and row."
+  },
+  {
+    "id": "q2",
+    "q": "A patient ID repeats in a one-row-per-encounter table. What is the best first interpretation?",
+    "options": [
+      "All repeated IDs are duplicate rows",
+      "A patient may have multiple encounters",
+      "The table is corrupt",
+      "Delete repeated patients"
+    ],
+    "correct": 1,
+    "why": "Patient IDs can repeat when the grain is encounter."
+  },
+  {
+    "id": "q3",
+    "q": "Which field should generally be stored as text if leading zeros matter?",
+    "options": [
+      "Length of stay",
+      "Patient identifier",
+      "Systolic BP",
+      "Age"
+    ],
+    "correct": 1,
+    "why": "Identifiers are labels, not quantities; numeric conversion can remove leading zeros."
+  },
+  {
+    "id": "q4",
+    "q": "Why is sorting a single column alone dangerous?",
+    "options": [
+      "It changes font size",
+      "It can misalign values across records",
+      "It deletes formulas",
+      "It changes file format"
+    ],
+    "correct": 1,
+    "why": "Sort the full table so each row remains an intact record."
+  },
+  {
+    "id": "q5",
+    "q": "What does data validation do?",
+    "options": [
+      "Guarantees source accuracy",
+      "Restricts or guides data entry according to rules",
+      "Encrypts the workbook",
+      "Replaces governance"
+    ],
+    "correct": 1,
+    "why": "Validation can prevent some entry errors but does not guarantee imported data are valid."
+  }
+]

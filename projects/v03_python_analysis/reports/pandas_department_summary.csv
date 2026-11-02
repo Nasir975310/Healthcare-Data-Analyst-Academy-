@@ -1,0 +1,6 @@
+department_name,encounter_n,unique_patients,sbp_nonmissing_n,mean_sbp,sbp_missing_n
+Cardiology,14,14,14,140.0,0
+Emergency,19,18,17,137.7,2
+Endocrinology,16,15,14,141.7,2
+General Medicine,41,31,38,146.0,3
+Nephrology,14,13,13,142.2,1

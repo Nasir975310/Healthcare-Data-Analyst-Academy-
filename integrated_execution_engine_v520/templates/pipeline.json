@@ -1,0 +1,19 @@
+{
+  "input": "data/raw/synthetic_encounters.csv",
+  "output": "data/processed/clean_encounters.csv",
+  "steps": [
+    {
+      "op": "drop_duplicates",
+      "key": "encounter_id"
+    },
+    {
+      "op": "select_columns",
+      "columns": [
+        "encounter_id",
+        "service_line",
+        "readmission_30d",
+        "los_days"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,118 @@
+{
+  "version": "1.0",
+  "variables": [
+    {
+      "name": "participant_id",
+      "label": "Participant identifier",
+      "role": "identifier",
+      "data_type": "string",
+      "unit": null,
+      "definition": "Study-specific pseudonymous participant key.",
+      "sensitivity": "high",
+      "validation": {
+        "required": true,
+        "unique": false
+      }
+    },
+    {
+      "name": "encounter_id",
+      "label": "Encounter identifier",
+      "role": "identifier",
+      "data_type": "string",
+      "unit": null,
+      "definition": "Unique key for an encounter-level record.",
+      "sensitivity": "high",
+      "validation": {
+        "required": true,
+        "unique": true
+      }
+    },
+    {
+      "name": "age_years",
+      "label": "Age",
+      "role": "covariate",
+      "data_type": "integer",
+      "unit": "years",
+      "definition": "Age at the prespecified index date.",
+      "sensitivity": "moderate",
+      "validation": {
+        "min": 0,
+        "max": 120
+      }
+    },
+    {
+      "name": "encounter_date",
+      "label": "Encounter date",
+      "role": "process",
+      "data_type": "date",
+      "unit": "ISO 8601 date",
+      "definition": "Calendar date on which the encounter occurred.",
+      "sensitivity": "moderate",
+      "validation": {
+        "format": "YYYY-MM-DD"
+      }
+    },
+    {
+      "name": "systolic_bp_mmhg",
+      "label": "Systolic blood pressure",
+      "role": "outcome",
+      "data_type": "decimal",
+      "unit": "mmHg",
+      "definition": "Systolic blood pressure measured using the protocol-defined method.",
+      "sensitivity": "moderate",
+      "validation": {
+        "min": 40,
+        "max": 300,
+        "note": "Broad data plausibility screen, not a clinical reference interval."
+      }
+    },
+    {
+      "name": "diastolic_bp_mmhg",
+      "label": "Diastolic blood pressure",
+      "role": "outcome",
+      "data_type": "decimal",
+      "unit": "mmHg",
+      "definition": "Diastolic blood pressure measured using the protocol-defined method.",
+      "sensitivity": "moderate",
+      "validation": {
+        "min": 20,
+        "max": 200,
+        "note": "Broad data plausibility screen, not a clinical reference interval."
+      }
+    },
+    {
+      "name": "exposure_group",
+      "label": "Exposure group",
+      "role": "exposure",
+      "data_type": "category",
+      "unit": null,
+      "definition": "Prespecified exposure classification at the defined time origin.",
+      "sensitivity": "low",
+      "validation": {
+        "allowed_values": [
+          "exposed",
+          "unexposed"
+        ]
+      }
+    },
+    {
+      "name": "primary_outcome",
+      "label": "Primary outcome",
+      "role": "outcome",
+      "data_type": "boolean",
+      "unit": null,
+      "definition": "Whether the protocol-defined primary outcome occurred in its specified window.",
+      "sensitivity": "moderate",
+      "validation": {
+        "allowed_values": [
+          "true",
+          "false",
+          "1",
+          "0",
+          "yes",
+          "no"
+        ]
+      }
+    }
+  ]
+}

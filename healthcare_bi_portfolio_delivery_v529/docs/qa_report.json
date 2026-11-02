@@ -1,0 +1,9 @@
+{
+  "release": "5.29.0",
+  "python_tests": "2 passed",
+  "pipeline": "PASS",
+  "synthetic_source_validation": "PASS",
+  "academy_navigation": "PASS",
+  "power_query_dax_runtime": "NOT_EXECUTED",
+  "pbix_or_service_deployment": "NOT_INCLUDED"
+}

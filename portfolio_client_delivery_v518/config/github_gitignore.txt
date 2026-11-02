@@ -1,0 +1,23 @@
+# Python environments and caches
+.venv/
+venv/
+__pycache__/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Secrets and local configuration
+.env
+.env.*
+*.pem
+*.key
+
+# Databases and raw data (review exceptions explicitly)
+*.sqlite
+*.db
+/data/raw/
+/data/patient_level/
+
+# Generated local outputs
+outputs/
+*.log
+.DS_Store

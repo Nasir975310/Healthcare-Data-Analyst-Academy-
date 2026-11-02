@@ -1,0 +1,74 @@
+[
+  {
+    "id": "q1",
+    "q": "What is a strong portfolio project?",
+    "options": [
+      "Notebook with no README",
+      "Reproducible case study with validation and limitations",
+      "Screenshot without context",
+      "Real patient dataset in public GitHub"
+    ],
+    "correct": 1,
+    "why": "A portfolio should show the full analytical workflow and safe reproducibility."
+  },
+  {
+    "id": "q2",
+    "q": "Which file should usually be excluded from Git?",
+    "options": [
+      "README.md",
+      "requirements.txt",
+      ".env containing secrets",
+      "Public synthetic sample CSV"
+    ],
+    "correct": 2,
+    "why": "Secrets must never be committed."
+  },
+  {
+    "id": "q3",
+    "q": "Why document data grain?",
+    "options": [
+      "It decorates the report",
+      "It prevents incorrect joins and denominator errors",
+      "It replaces validation",
+      "It increases file size"
+    ],
+    "correct": 1,
+    "why": "Grain determines what each row represents and how joins affect counts."
+  },
+  {
+    "id": "q4",
+    "q": "What is a safe public portfolio data choice?",
+    "options": [
+      "Patient export from internship",
+      "Synthetic dataset",
+      "Client file under NDA",
+      "Unredacted screenshots"
+    ],
+    "correct": 1,
+    "why": "Use synthetic or explicitly authorised public-safe data."
+  },
+  {
+    "id": "q5",
+    "q": "What is a key principle in 'Portfolio architecture'?",
+    "options": [
+      "Prioritise appearance over accuracy",
+      "Use evidence, clear scope and honest limitations",
+      "Invent achievements",
+      "Ignore privacy"
+    ],
+    "correct": 1,
+    "why": "Professional practice depends on evidence, scope and integrity."
+  },
+  {
+    "id": "q6",
+    "q": "How should practical work be completed across operating systems?",
+    "options": [
+      "Assume all commands are identical",
+      "Use separate Linux and PowerShell instructions and verify equivalent outcomes",
+      "Skip one OS",
+      "Copy absolute paths between systems"
+    ],
+    "correct": 1,
+    "why": "OS-specific instructions are required for reproducibility."
+  }
+]

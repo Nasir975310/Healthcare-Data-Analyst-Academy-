@@ -1,0 +1,101 @@
+record_id,field_name,issue_type,reported_value,expected_rule,severity
+DQ0001,department,Duplicate candidate,EA9999,Approved vocabulary,High
+DQ0002,age,Orphan reference,EA9999,Required,High
+DQ0003,patient_key,Out of range,,Approved vocabulary,Low
+DQ0004,age,Invalid category,2026-03-01,Allowed range,High
+DQ0005,patient_key,Invalid category,2026-03-01,Required,Low
+DQ0006,encounter_id,Out of range,,Valid parent key,High
+DQ0007,department,Missing,UNKNOWN,Approved vocabulary,Low
+DQ0008,encounter_id,Date inconsistency,UNKNOWN,Unique key,High
+DQ0009,encounter_id,Out of range,2026-03-01,Allowed range,Low
+DQ0010,department,Missing,999,Approved vocabulary,Medium
+DQ0011,department,Invalid category,EA9999,Valid parent key,High
+DQ0012,patient_key,Orphan reference,,Required,High
+DQ0013,patient_key,Out of range,EA9999,Chronology,High
+DQ0014,patient_key,Invalid category,999,Chronology,Low
+DQ0015,department,Missing,,Allowed range,Medium
+DQ0016,date,Missing,UNKNOWN,Approved vocabulary,Medium
+DQ0017,date,Orphan reference,999,Approved vocabulary,Medium
+DQ0018,age,Out of range,duplicate,Allowed range,Medium
+DQ0019,encounter_id,Orphan reference,UNKNOWN,Unique key,Low
+DQ0020,quantity,Missing,999,Allowed range,High
+DQ0021,patient_key,Date inconsistency,duplicate,Valid parent key,High
+DQ0022,encounter_id,Date inconsistency,2026-03-01,Allowed range,High
+DQ0023,department,Duplicate candidate,999,Chronology,Medium
+DQ0024,patient_key,Missing,EA9999,Allowed range,Low
+DQ0025,date,Date inconsistency,UNKNOWN,Allowed range,Low
+DQ0026,date,Date inconsistency,EA9999,Chronology,Low
+DQ0027,age,Out of range,,Required,Medium
+DQ0028,age,Invalid category,UNKNOWN,Allowed range,Low
+DQ0029,encounter_id,Orphan reference,2026-03-01,Allowed range,High
+DQ0030,patient_key,Orphan reference,,Approved vocabulary,Medium
+DQ0031,date,Duplicate candidate,,Required,Medium
+DQ0032,encounter_id,Duplicate candidate,999,Required,Medium
+DQ0033,encounter_id,Out of range,,Allowed range,High
+DQ0034,encounter_id,Duplicate candidate,,Allowed range,High
+DQ0035,date,Duplicate candidate,,Valid parent key,Low
+DQ0036,age,Invalid category,UNKNOWN,Approved vocabulary,Low
+DQ0037,encounter_id,Out of range,UNKNOWN,Allowed range,Low
+DQ0038,quantity,Date inconsistency,999,Unique key,High
+DQ0039,date,Invalid category,duplicate,Valid parent key,High
+DQ0040,patient_key,Out of range,UNKNOWN,Unique key,Medium
+DQ0041,date,Date inconsistency,EA9999,Required,Low
+DQ0042,date,Orphan reference,UNKNOWN,Allowed range,Medium
+DQ0043,department,Date inconsistency,EA9999,Required,Medium
+DQ0044,department,Invalid category,,Valid parent key,High
+DQ0045,quantity,Invalid category,duplicate,Unique key,Low
+DQ0046,department,Out of range,999,Approved vocabulary,Medium
+DQ0047,quantity,Missing,2026-03-01,Allowed range,High
+DQ0048,encounter_id,Missing,,Chronology,Low
+DQ0049,department,Date inconsistency,UNKNOWN,Approved vocabulary,High
+DQ0050,department,Missing,999,Approved vocabulary,Medium
+DQ0051,patient_key,Date inconsistency,EA9999,Allowed range,Low
+DQ0052,quantity,Missing,duplicate,Approved vocabulary,Low
+DQ0053,encounter_id,Orphan reference,,Allowed range,Medium
+DQ0054,encounter_id,Orphan reference,2026-03-01,Required,Low
+DQ0055,encounter_id,Date inconsistency,EA9999,Valid parent key,Medium
+DQ0056,department,Missing,2026-03-01,Valid parent key,Low
+DQ0057,age,Duplicate candidate,UNKNOWN,Required,Medium
+DQ0058,encounter_id,Date inconsistency,duplicate,Unique key,Medium
+DQ0059,quantity,Out of range,duplicate,Allowed range,Medium
+DQ0060,date,Orphan reference,EA9999,Valid parent key,Medium
+DQ0061,quantity,Date inconsistency,999,Chronology,Low
+DQ0062,date,Orphan reference,UNKNOWN,Approved vocabulary,Low
+DQ0063,department,Orphan reference,999,Chronology,Low
+DQ0064,quantity,Invalid category,2026-03-01,Chronology,Low
+DQ0065,quantity,Date inconsistency,999,Chronology,Low
+DQ0066,department,Orphan reference,2026-03-01,Chronology,High
+DQ0067,date,Invalid category,duplicate,Chronology,High
+DQ0068,quantity,Orphan reference,EA9999,Unique key,High
+DQ0069,department,Orphan reference,,Valid parent key,Medium
+DQ0070,department,Date inconsistency,2026-03-01,Chronology,High
+DQ0071,date,Date inconsistency,duplicate,Valid parent key,High
+DQ0072,date,Orphan reference,UNKNOWN,Chronology,Medium
+DQ0073,quantity,Out of range,duplicate,Unique key,High
+DQ0074,quantity,Date inconsistency,2026-03-01,Chronology,High
+DQ0075,encounter_id,Missing,2026-03-01,Unique key,High
+DQ0076,encounter_id,Date inconsistency,EA9999,Required,High
+DQ0077,date,Orphan reference,UNKNOWN,Valid parent key,Medium
+DQ0078,patient_key,Invalid category,EA9999,Valid parent key,Medium
+DQ0079,department,Invalid category,999,Required,High
+DQ0080,patient_key,Date inconsistency,duplicate,Required,High
+DQ0081,department,Duplicate candidate,,Approved vocabulary,High
+DQ0082,date,Duplicate candidate,2026-03-01,Valid parent key,Low
+DQ0083,age,Date inconsistency,2026-03-01,Chronology,Medium
+DQ0084,date,Out of range,2026-03-01,Allowed range,Medium
+DQ0085,encounter_id,Invalid category,999,Required,Medium
+DQ0086,encounter_id,Orphan reference,duplicate,Approved vocabulary,Medium
+DQ0087,quantity,Invalid category,,Unique key,Low
+DQ0088,date,Date inconsistency,999,Approved vocabulary,Medium
+DQ0089,encounter_id,Date inconsistency,,Allowed range,Low
+DQ0090,encounter_id,Duplicate candidate,999,Chronology,Low
+DQ0091,department,Date inconsistency,2026-03-01,Approved vocabulary,High
+DQ0092,encounter_id,Invalid category,,Unique key,Medium
+DQ0093,age,Invalid category,2026-03-01,Approved vocabulary,Low
+DQ0094,date,Orphan reference,999,Valid parent key,Medium
+DQ0095,quantity,Date inconsistency,EA9999,Approved vocabulary,Low
+DQ0096,encounter_id,Out of range,EA9999,Valid parent key,Low
+DQ0097,patient_key,Orphan reference,UNKNOWN,Allowed range,High
+DQ0098,department,Duplicate candidate,2026-03-01,Required,High
+DQ0099,patient_key,Duplicate candidate,EA9999,Unique key,High
+DQ0100,encounter_id,Invalid category,,Unique key,Medium

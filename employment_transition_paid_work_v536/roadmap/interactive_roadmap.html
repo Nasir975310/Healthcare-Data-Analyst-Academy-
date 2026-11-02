@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>v5.36 Employment Transition Roadmap</title>
+<style>
+:root{color-scheme:light dark;font:16px system-ui}body{max-width:980px;margin:2rem auto;padding:0 1rem;line-height:1.5}
+header{padding:1.2rem;border:1px solid #8886;border-radius:14px}h1{margin:.2rem 0}
+.progress{height:12px;background:#8884;border-radius:9px;overflow:hidden}.bar{height:100%;width:0;background:#26856a}
+section{border:1px solid #8886;border-radius:12px;padding:1rem;margin:1rem 0}
+.task{display:flex;gap:.7rem;padding:.45rem 0}.task input{width:1.1rem;height:1.1rem}
+small,.muted{opacity:.75}.tag{font-size:.8rem;border:1px solid #8888;border-radius:20px;padding:.15rem .5rem}
+button{padding:.5rem .8rem;border-radius:8px;border:1px solid #8888;background:transparent;color:inherit}
+</style></head><body>
+<header><span class="tag">Academy v5.36.0</span><h1>Employment transition roadmap</h1>
+<p>Move from course completion to evidence-backed applications and safely scoped paid work.</p>
+<strong id="count">0 / 12 complete</strong><div class="progress"><div class="bar" id="bar"></div></div>
+<p class="muted">Progress is saved in this browser only. Export a copy before clearing browser data.</p><button id="export">Export progress JSON</button> <button id="reset">Reset checklist</button></header>
+<div id="tasks"></div>
+<script>
+const groups=[
+["Evidence and portfolio",["Map every CV claim to an artifact and reproducible check","Complete one synthetic healthcare case study and limitations section","Reproduce the project from a clean clone and record versions","Run privacy and repository hygiene checks"]],
+["Assessment readiness",["Complete the 120-minute SQL/Python take-home without answer-key assistance","Review every failed rubric item and correct the underlying work","Record and score answers to five technical interview questions","Deliver a five-minute project walkthrough"]],
+["Applications and paid work",["Tailor one truthful CV and LinkedIn profile to a target role","Submit 8–12 matched applications and log outcomes","Prepare one narrow freelance statement of work and acceptance criteria","Review scam, privacy, payment and scope risks before accepting work"]]];
+const key="hda-v536-roadmap";let state={};
+try{state=JSON.parse(localStorage.getItem(key)||"{}")}catch(e){state={}}
+const host=document.getElementById("tasks");
+groups.forEach((g,gi)=>{const sec=document.createElement("section");const h=document.createElement("h2");h.textContent=g[0];sec.append(h);
+g[1].forEach((t,i)=>{const id=gi+"-"+i;const label=document.createElement("label");label.className="task";
+const input=document.createElement("input");input.type="checkbox";input.checked=!!state[id];input.addEventListener("change",()=>{state[id]=input.checked;save()});
+const span=document.createElement("span");span.textContent=t;label.append(input,span);sec.append(label)});host.append(sec)});
+function save(){localStorage.setItem(key,JSON.stringify(state));update()}
+function update(){const n=Object.values(state).filter(Boolean).length;document.getElementById("count").textContent=n+" / 12 complete";document.getElementById("bar").style.width=(n/12*100)+"%"}
+document.getElementById("export").onclick=()=>{const a=document.createElement("a");const blob=new Blob([JSON.stringify({version:"5.36.0",state},null,2)],{type:"application/json"});a.href=URL.createObjectURL(blob);a.download="hda-v536-roadmap-progress.json";a.click();URL.revokeObjectURL(a.href)};
+document.getElementById("reset").onclick=()=>{if(confirm("Clear this roadmap's local progress?")){state={};save();location.reload()}};
+update();
+</script></body></html>

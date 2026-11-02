@@ -1,0 +1,10 @@
+{
+  "status": "PENDING",
+  "repository_url": "",
+  "commit_sha": "",
+  "published_at": "",
+  "synthetic_or_licensed_data_confirmed": false,
+  "secret_scan_completed": false,
+  "readme_reproduction_steps_tested": false,
+  "evidence_files": []
+}

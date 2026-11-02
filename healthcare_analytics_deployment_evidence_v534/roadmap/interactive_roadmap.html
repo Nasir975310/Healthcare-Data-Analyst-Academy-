@@ -1,0 +1,25 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>v5.34 Deployment Evidence Roadmap</title>
+<style>
+:root{color-scheme:dark;--bg:#101827;--panel:#1b2940;--text:#edf3fc;--muted:#a9b8cc;--line:#34465f;--accent:#71b7ff}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.5 system-ui}main{max-width:1000px;margin:auto;padding:24px}p{color:var(--muted)}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px}.card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:16px}.task{display:flex;gap:10px;padding:10px 0;border-bottom:1px solid var(--line)}button{background:#263c58;color:var(--text);border:1px solid var(--line);padding:9px 12px;border-radius:8px;margin:4px;cursor:pointer}.stat{font-size:2rem;font-weight:700}.bar{height:10px;background:#34465f;border-radius:9px;overflow:hidden}.bar span{display:block;height:100%;background:var(--accent);width:0}.tag{font-size:.8rem;color:#b8d9ff}input{accent-color:var(--accent);margin-top:5px}
+</style></head><body><main><div class="tag">HEALTHCARE DATA ANALYST ACADEMY · V5.34.0</div><h1>Deployment evidence & reproducibility</h1><p>Browser-local task tracker. Completion is self-reported and is not proof; attach generated evidence to the project.</p>
+<div class="grid"><div class="card"><div class="stat" id="done">0</div>Completed</div><div class="card"><div class="stat" id="pending">0</div>Pending</div><div class="card"><div class="stat" id="pct">0%</div>Progress</div></div><div class="card"><div class="bar"><span id="fill"></span></div><p id="summary"></p></div>
+<div><button data-filter="all">All</button><button data-filter="pending">Pending</button><button data-filter="done">Completed</button></div><div class="grid" id="list"></div>
+<div class="card"><h2>Current build evidence</h2><ul><li>Local Python tests, v5.33 validator and SQLite benchmark: passed in build environment.</li><li>PostgreSQL Docker workflow: not executed here; Docker unavailable.</li><li>Power BI Desktop: pending external Windows/VM runtime.</li><li>GitHub publication: pending user's repository.</li></ul></div>
+<button id="reset">Reset tracker</button></main><script>
+const tasks=[
+["Run local evidence capture","Local · available"],
+["Inspect SHA-256 manifest and validation report","Local · available"],
+["Run PostgreSQL 16 Compose validation on workstation","External · Docker"],
+["Review raw / accepted / rejected reconciliation","Database"],
+["Build actual PBIX and validate DAX against SQL","External · Power BI"],
+["Record PBIX hash, version and performance evidence","External · Power BI"],
+["Run secret and privacy review before staging","Security"],
+["Push sanitized repository and record commit SHA","External · GitHub"],
+["Clone repository cleanly and reproduce pipeline","Reproducibility"],
+["Run release gate and resolve remaining pending checks","Final acceptance"]
+];const key="hda-v534-roadmap";let state={};try{state=JSON.parse(localStorage.getItem(key)||"{}")}catch(e){}let filter="all";
+function render(){let d=tasks.filter((x,i)=>state[i]).length,p=Math.round(d/tasks.length*100);document.getElementById("done").textContent=d;document.getElementById("pending").textContent=tasks.length-d;document.getElementById("pct").textContent=p+"%";document.getElementById("fill").style.width=p+"%";document.getElementById("summary").textContent=d+" of "+tasks.length+" tasks checked.";
+let host=document.getElementById("list");host.innerHTML="";tasks.forEach((x,i)=>{if(filter==="done"&&!state[i]||filter==="pending"&&state[i])return;let card=document.createElement("div");card.className="card";let label=document.createElement("label");label.className="task";let cb=document.createElement("input");cb.type="checkbox";cb.checked=!!state[i];cb.addEventListener("change",()=>{state[i]=cb.checked;localStorage.setItem(key,JSON.stringify(state));render()});let span=document.createElement("span");span.textContent=x[0];label.append(cb,span);let small=document.createElement("div");small.className="tag";small.textContent=x[1];card.append(label,small);host.append(card)})}
+document.querySelectorAll("[data-filter]").forEach(b=>b.addEventListener("click",()=>{filter=b.dataset.filter;render()}));document.getElementById("reset").addEventListener("click",()=>{if(confirm("Reset v5.34 progress?")){state={};localStorage.removeItem(key);render()}});render();
+</script></body></html>

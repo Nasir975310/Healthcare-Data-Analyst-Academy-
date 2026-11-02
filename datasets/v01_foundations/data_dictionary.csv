@@ -1,0 +1,12 @@
+field,definition,type_or_unit,allowed_values_or_checks,notes
+synthetic_patient_id,Synthetic patient key; one per fictional person in this teaching file,Text,Unique within this file,Not a real identifier
+synthetic_encounter_id,Synthetic encounter key; one row per encounter,Text,Unique within this file,Dataset grain is one encounter per row
+age_years,Age in completed years at encounter,Integer,18–110 in this teaching file,Synthetic values only
+sex_recorded,Illustrative recorded category,Categorical nominal,Female; Male,Not a statement about gender identity
+ward_code,Illustrative ward category,Categorical nominal,MED; CARD; SURG,Codes are fictional local labels
+sbp_mmhg,Illustrative systolic blood pressure,Numeric continuous; mmHg,Positive numeric values or missing,Not suitable for clinical decisions
+creatinine_value,Illustrative serum creatinine result,Numeric continuous,Positive numeric values,Teaching data only; no clinical interpretation
+creatinine_unit,Unit attached to creatinine value,Categorical nominal,mg/dL,Only one unit used in this synthetic file
+sbp_status,Status of systolic BP field in this extract,Categorical nominal,Final; Not recorded,Not recorded corresponds to missing sbp_mmhg in this file
+encounter_date,Fictional encounter date,ISO date YYYY-MM-DD,Valid date,No timezone component
+readmitted_30d,Illustrative binary outcome flag,Categorical binary,Yes; No,Synthetic label; no causal interpretation

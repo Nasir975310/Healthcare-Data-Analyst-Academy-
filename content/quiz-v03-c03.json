@@ -1,0 +1,62 @@
+[
+  {
+    "id": "q1",
+    "q": "Which structure stores unique values?",
+    "options": [
+      "set",
+      "list",
+      "tuple",
+      "string"
+    ],
+    "correct": 0,
+    "why": "Sets store unique hashable values."
+  },
+  {
+    "id": "q2",
+    "q": "Which function counts repeated items in a collection?",
+    "options": [
+      "collections.Counter",
+      "pathlib.Path",
+      "json.dump",
+      "enumerate only"
+    ],
+    "correct": 0,
+    "why": "Counter is designed for frequency counting."
+  },
+  {
+    "id": "q3",
+    "q": "What does return do in a function?",
+    "options": [
+      "Sends a value back to the caller",
+      "Only prints text",
+      "Stops the whole operating system",
+      "Imports a package"
+    ],
+    "correct": 0,
+    "why": "Returned values can be reused by calling code."
+  },
+  {
+    "id": "q4",
+    "q": "Why is a mutable default argument risky?",
+    "options": [
+      "The same object can be reused across function calls",
+      "It always creates a syntax error",
+      "It prevents imports",
+      "It converts values to strings"
+    ],
+    "correct": 0,
+    "why": "Mutable defaults are created once when the function is defined."
+  },
+  {
+    "id": "q5",
+    "q": "Why is `if not sbp` not a precise missingness test?",
+    "options": [
+      "It treats numeric zero as false",
+      "It cannot evaluate numbers",
+      "It always raises an error",
+      "It checks a database key"
+    ],
+    "correct": 0,
+    "why": "A valid zero can be misclassified as missing."
+  }
+]

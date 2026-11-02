@@ -1,0 +1,62 @@
+[
+  {
+    "id": "q1",
+    "q": "Which PivotTable area holds the categories listed vertically?",
+    "options": [
+      "Rows",
+      "Columns",
+      "Values",
+      "Filters"
+    ],
+    "correct": 0,
+    "why": "Fields in Rows are displayed vertically."
+  },
+  {
+    "id": "q2",
+    "q": "A PivotTable counts PatientID 120 times, but only 85 unique patients exist. Why?",
+    "options": [
+      "It counts encounter rows",
+      "It counts only missing IDs",
+      "The formula is a median",
+      "It removes repeated patients"
+    ],
+    "correct": 0,
+    "why": "Count counts nonblank rows, not distinct patients."
+  },
+  {
+    "id": "q3",
+    "q": "Which chart is usually appropriate for a time trend?",
+    "options": [
+      "3D pie",
+      "Line chart",
+      "Histogram",
+      "Treemap"
+    ],
+    "correct": 1,
+    "why": "A line chart is appropriate for ordered time intervals."
+  },
+  {
+    "id": "q4",
+    "q": "Why should a KPI chart show numerator and denominator?",
+    "options": [
+      "To decorate the chart",
+      "To communicate scale and stability",
+      "To avoid definitions",
+      "To hide missingness"
+    ],
+    "correct": 1,
+    "why": "A percentage alone can obscure the sample size."
+  },
+  {
+    "id": "q5",
+    "q": "What must happen after adding rows to a PivotTable source?",
+    "options": [
+      "Delete the PivotTable",
+      "Refresh and verify source range",
+      "Convert all values to text",
+      "Sort one column"
+    ],
+    "correct": 1,
+    "why": "Refresh the PivotTable and confirm the source includes the new records."
+  }
+]

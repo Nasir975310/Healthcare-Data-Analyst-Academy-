@@ -1,0 +1,5 @@
+{
+  "status": "NOT_RUN",
+  "reason": "local_run_report.json not found; no local execution evidence was supplied.",
+  "checks": []
+}

@@ -1,0 +1,8 @@
+flowchart LR
+  DD[DimDepartment] --> DE[DimEncounter]
+  DP[DimPayer] --> DE
+  DAD[DimDate - Admission] --> DE
+  DE --> FEM[FactEncounterMetrics]
+  DE --> FMO[FactMedicationOrders]
+  DOD[DimOrderDate - Order] --> FMO
+  DG[DimDrug] --> FMO

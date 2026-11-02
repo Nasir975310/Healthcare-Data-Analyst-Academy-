@@ -1,0 +1,21 @@
+{
+  "resourceType": "MedicationRequest",
+  "id": "medreq-00001",
+  "status": "active",
+  "intent": "order",
+  "subject": {
+    "reference": "Patient/patient-pt0007"
+  },
+  "encounter": {
+    "reference": "Encounter/enc-00001"
+  },
+  "medicationCodeableConcept": {
+    "text": "Amlodipine 5 mg tablet"
+  },
+  "authoredOn": "2025-01-15",
+  "dosageInstruction": [
+    {
+      "text": "Take one tablet once daily"
+    }
+  ]
+}

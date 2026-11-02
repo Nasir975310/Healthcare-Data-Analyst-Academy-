@@ -1,0 +1,60 @@
+[
+  {
+    "id": "q1",
+    "q": "What is a dynamic-array spill range?",
+    "options": [
+      "A protected worksheet",
+      "Cells populated by a formula returning multiple values",
+      "A database index",
+      "A named workbook"
+    ],
+    "correct": 1,
+    "why": "Dynamic-array results spill into adjacent cells."
+  },
+  {
+    "id": "q2",
+    "q": "Which tool traces cells feeding a formula?",
+    "options": [
+      "Trace Precedents",
+      "Freeze Panes",
+      "Data Validation",
+      "Slicer"
+    ],
+    "correct": 0,
+    "why": "Trace Precedents shows input dependencies."
+  },
+  {
+    "id": "q3",
+    "q": "Why separate raw data, calculations and dashboard sheets?",
+    "options": [
+      "To hide formulas",
+      "To improve traceability and reduce accidental overwrites",
+      "To prevent all errors",
+      "To encrypt the file"
+    ],
+    "correct": 1,
+    "why": "Separation makes source, logic and outputs easier to inspect."
+  },
+  {
+    "id": "q4",
+    "q": "Which is a safer zero-denominator strategy?",
+    "options": [
+      "Always return 0",
+      "Define and display a no-denominator status",
+      "Delete the row",
+      "Use IFERROR for every formula"
+    ],
+    "correct": 1,
+    "why": "A zero denominator needs explicit, meaningful handling."
+  },
+  {
+    "id": "q5",
+    "q": "A private Git repository automatically authorizes patient-data storage:",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct": 1,
+    "why": "Private hosting does not establish institutional or legal approval."
+  }
+]

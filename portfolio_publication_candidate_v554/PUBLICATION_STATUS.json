@@ -1,0 +1,19 @@
+{
+  "status": "LOCAL_PUBLICATION_CANDIDATE",
+  "repository_name_suggestion": "synthetic-outpatient-operations-analytics",
+  "visibility_recommendation": "Do not publish until manual privacy/provenance and license review is complete.",
+  "remote_repository_created": false,
+  "remote_ci_run": false,
+  "clean_remote_clone_verified": false,
+  "license_selected": false,
+  "human_review_completed": false,
+  "data_scope": "synthetic fictional records only",
+  "required_next_evidence": [
+    "license decision",
+    "manual file review",
+    "remote repository URL",
+    "remote commit SHA",
+    "passing CI run URL",
+    "clean-clone test log"
+  ]
+}

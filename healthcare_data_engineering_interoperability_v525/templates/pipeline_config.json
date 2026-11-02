@@ -1,0 +1,29 @@
+{
+  "fhir_release": "R4 subset",
+  "cohort": {
+    "name": "Synthetic finished-encounter cohort",
+    "required_encounter_status": [
+      "finished"
+    ]
+  },
+  "terminology": {
+    "mapping_status": "illustrative_not_authoritative",
+    "mappings": {
+      "http://loinc.org|8480-6": {
+        "target_system": "local-demo",
+        "target_display": "Systolic blood pressure (illustrative)"
+      },
+      "http://loinc.org|8462-4": {
+        "target_system": "local-demo",
+        "target_display": "Diastolic blood pressure (illustrative)"
+      }
+    }
+  },
+  "data_dictionary": {
+    "patient_id": "Synthetic Patient resource ID",
+    "encounter_id": "Synthetic Encounter resource ID",
+    "observation_count": "Observation count for patient-encounter",
+    "medication_request_count": "MedicationRequest count",
+    "numeric_observation_mean": "Convenience aggregate; do not interpret across mixed analytes or units"
+  }
+}

@@ -1,0 +1,20 @@
+services:
+  postgres:
+    image: postgres:16
+    container_name: hda-postgres-training
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: hda_training
+      POSTGRES_USER: hda_admin
+      POSTGRES_PASSWORD: ${HDA_PG_ADMIN_PASSWORD:?Set HDA_PG_ADMIN_PASSWORD in your shell}
+    ports:
+      - "127.0.0.1:5432:5432"
+    volumes:
+      - hda_pg_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U hda_admin -d hda_training"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+volumes:
+  hda_pg_data:

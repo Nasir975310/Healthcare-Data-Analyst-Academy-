@@ -1,0 +1,62 @@
+[
+  {
+    "id": "q1",
+    "q": "What does a medication order prove?",
+    "options": [
+      "That an order was recorded",
+      "That the medicine was administered",
+      "That the patient took it",
+      "That it was reimbursed"
+    ],
+    "correct": 0,
+    "why": "Orders are distinct from dispensing and administration."
+  },
+  {
+    "id": "q2",
+    "q": "Why preserve laboratory units?",
+    "options": [
+      "The numeric result needs measurement context",
+      "To increase row count",
+      "To make sorting easier",
+      "Units are optional metadata"
+    ],
+    "correct": 0,
+    "why": "Values without units may be uninterpretable."
+  },
+  {
+    "id": "q3",
+    "q": "What is a source-system identifier?",
+    "options": [
+      "An identifier assigned in an originating system",
+      "Always a global patient identifier",
+      "A chart title",
+      "An SQL alias"
+    ],
+    "correct": 0,
+    "why": "Identifiers may only be unique within one source."
+  },
+  {
+    "id": "q4",
+    "q": "What is event time?",
+    "options": [
+      "When the clinical event occurred",
+      "When the report was exported",
+      "When the table was created",
+      "When a user logged in"
+    ],
+    "correct": 0,
+    "why": "Event time may differ from transaction or recorded time."
+  },
+  {
+    "id": "q5",
+    "q": "What does provenance describe?",
+    "options": [
+      "Origin and transformation history of data",
+      "Only the data type",
+      "Only the row count",
+      "Only the chart style"
+    ],
+    "correct": 0,
+    "why": "Provenance supports traceability."
+  }
+]

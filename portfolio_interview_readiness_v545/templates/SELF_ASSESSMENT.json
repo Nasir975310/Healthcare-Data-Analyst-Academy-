@@ -1,0 +1,44 @@
+{
+  "areas": [
+    {
+      "name": "SQL and data modelling",
+      "score": 0,
+      "evidence": ""
+    },
+    {
+      "name": "Data quality and metric definitions",
+      "score": 0,
+      "evidence": ""
+    },
+    {
+      "name": "Statistics and interpretation",
+      "score": 0,
+      "evidence": ""
+    },
+    {
+      "name": "Python and reproducibility",
+      "score": 0,
+      "evidence": ""
+    },
+    {
+      "name": "Healthcare privacy and governance",
+      "score": 0,
+      "evidence": ""
+    },
+    {
+      "name": "Communication and stakeholder delivery",
+      "score": 0,
+      "evidence": ""
+    },
+    {
+      "name": "Portfolio walkthrough and limitations",
+      "score": 0,
+      "evidence": ""
+    }
+  ],
+  "scale": {
+    "min": 0,
+    "max": 3
+  },
+  "notes": "Score only work you can demonstrate. Evidence should identify a file, query, test, output or completed exercise."
+}

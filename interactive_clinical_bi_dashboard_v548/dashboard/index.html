@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Clinical Medication Utilization Dashboard — Synthetic Case Study</title>
+<style>
+:root{font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;color:#172b4d;background:#f4f7fb}
+*{box-sizing:border-box}body{margin:0}header{background:#102a43;color:#fff;padding:24px clamp(16px,4vw,48px)}
+header h1{margin:0 0 8px;font-size:clamp(1.35rem,3vw,2rem)}header p{margin:0;color:#d9e2ec;max-width:900px}
+main{max-width:1400px;margin:24px auto;padding:0 18px 42px}
+.warning{background:#fff4e5;border:1px solid #f5c27a;border-left:5px solid #b54708;border-radius:8px;padding:12px 16px;margin-bottom:18px}
+.filters,.grid{display:grid;gap:14px}.filters{grid-template-columns:repeat(auto-fit,minmax(170px,1fr));background:#fff;padding:16px;border:1px solid #d9e2ec;border-radius:12px;margin-bottom:16px}
+label{font-size:.83rem;font-weight:650;color:#334e68;display:block}select,button{font:inherit}select{width:100%;padding:9px;margin-top:6px;border:1px solid #bcccdc;border-radius:7px;background:#fff;color:#102a43}
+.actions{display:flex;gap:10px;align-items:end;flex-wrap:wrap}button{padding:10px 13px;border:0;border-radius:7px;background:#176b87;color:white;cursor:pointer;font-weight:650}button.secondary{background:#e6eef5;color:#102a43}button:focus,select:focus{outline:3px solid #8bd3dd;outline-offset:2px}
+.grid.kpis{grid-template-columns:repeat(auto-fit,minmax(150px,1fr));margin-bottom:16px}.card{background:#fff;border:1px solid #d9e2ec;border-radius:12px;padding:16px;min-width:0}.kpi .value{font-size:1.8rem;font-weight:750;margin-top:8px;color:#102a43}.kpi .label{color:#627d98;font-size:.83rem}
+.grid.charts{grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));margin-bottom:16px}.chart{width:100%;height:auto;display:block}.chart text{font-size:12px;fill:#334e68}.chart .axis{stroke:#9fb3c8;stroke-width:1}.chart .bar{fill:#26839a}.chart .bar2{fill:#486581}.chart .ci{stroke:#102a43;stroke-width:2}
+table{border-collapse:collapse;width:100%;font-size:.9rem}th,td{padding:9px 10px;border-bottom:1px solid #e6eef5;text-align:left}th{background:#f0f4f8;color:#334e68}td.num{text-align:right;font-variant-numeric:tabular-nums}.tablewrap{overflow:auto}
+.small{font-size:.82rem;color:#627d98}.pill{display:inline-block;border-radius:30px;padding:3px 8px;background:#e6eef5;color:#334e68;font-size:.75rem}
+footer{margin-top:18px;color:#627d98;font-size:.82rem}
+@media(max-width:560px){main{padding:0 12px 30px}.card{padding:13px}th,td{padding:7px;font-size:.82rem}}
+</style>
+</head>
+<body>
+<header><h1>Clinical Medication Utilization Dashboard</h1><p>Interactive descriptive analysis of a fictional antihypertensive dataset · Academy v5.49.0</p></header>
+<main>
+<div class="warning"><strong>Synthetic-data warning:</strong> All records are fictional. This dashboard is for analytics training only—not clinical evidence, prescribing guidance, or analysis of the user's Pharm.D thesis.</div>
+<section class="filters" aria-label="Dashboard filters">
+<div><label for="drug">Primary drug class</label><select id="drug"><option value="">All classes</option></select></div>
+<div><label for="sex">Sex</label><select id="sex"><option value="">All</option></select></div>
+<div><label for="age">Age band</label><select id="age"><option value="">All</option><option>18–39</option><option>40–59</option><option>60+</option></select></div>
+<div><label for="comorbidity">Comorbidity</label><select id="comorbidity"><option value="">All</option><option value="yes">At least one recorded</option><option value="no">None recorded</option></select></div>
+<div class="actions"><button id="reset" class="secondary" type="button">Reset filters</button><button id="export" type="button">Export filtered CSV</button></div>
+</section>
+<section class="grid kpis" aria-live="polite">
+<div class="card kpi"><div class="label">Filtered records</div><div class="value" id="kRecords">—</div></div>
+<div class="card kpi"><div class="label">Unique record IDs</div><div class="value" id="kUnique">—</div></div>
+<div class="card kpi"><div class="label">Paired SBP records</div><div class="value" id="kPaired">—</div></div>
+<div class="card kpi"><div class="label">Mean baseline SBP</div><div class="value" id="kBase">—</div><div class="small">mmHg · paired subset</div></div>
+<div class="card kpi"><div class="label">Mean follow-up SBP</div><div class="value" id="kFollow">—</div><div class="small">mmHg · paired subset</div></div>
+<div class="card kpi"><div class="label">Mean paired SBP change</div><div class="value" id="kChange">—</div><div class="small">mmHg · baseline minus follow-up</div></div>
+</section>
+<section class="grid charts">
+<div class="card"><h2>Paired SBP change by drug class</h2><p class="small">Mean baseline-minus-follow-up change; positive means lower follow-up SBP. No causal comparison.</p><svg id="classChart" class="chart" viewBox="0 0 620 300" role="img" aria-label="Mean paired systolic blood pressure change by primary drug class"></svg></div>
+<div class="card"><h2>Follow-up SBP distribution</h2><p class="small">Histogram among records with plausible paired SBP values.</p><svg id="histChart" class="chart" viewBox="0 0 620 300" role="img" aria-label="Distribution of follow-up systolic blood pressure"></svg></div>
+</section>
+<section class="card tablewrap"><h2>Drug-class summary</h2><table><thead><tr><th>Primary class</th><th class="num">Paired n</th><th class="num">Baseline mean</th><th class="num">Follow-up mean</th><th class="num">Mean change</th></tr></thead><tbody id="summaryBody"></tbody></table><p class="small">Means use the complete paired subset and the active filters. Units: mmHg.</p></section>
+<section class="grid charts" style="margin-top:16px">
+<div class="card"><h2>Data-quality indicators</h2><table><tbody id="qualityBody"></tbody></table></div>
+<div class="card"><h2>Metric definitions</h2><ul class="small"><li>Paired record: baseline and follow-up SBP both within 70–250 mmHg and primary class present.</li><li>SBP change = baseline SBP − follow-up SBP.</li><li>Comorbidity filter uses available indicator columns; blank values are not assumed to mean absence.</li><li>Duplicate IDs are counted in raw filtered rows but unique IDs are reported separately.</li></ul></div>
+</section>
+<footer>Training dashboard · No patient data · Values may change with filters · Validate all metrics against the Python source before reuse.</footer>
+</main>
+<script>
+"use strict";
+let DATA=[];
+const $=id=>document.getElementById(id);
+const num=v=>typeof v==="number"&&Number.isFinite(v);
+const mean=a=>a.length?a.reduce((s,x)=>s+x,0)/a.length:null;
+const fmt=v=>v===null||!Number.isFinite(v)?"—":v.toFixed(1);
+function ageBand(v){if(!num(v))return null;if(v<40)return "18–39";if(v<60)return "40–59";return "60+"}
+const COMORBIDITY_FIELDS=["diabetes","ckd","ischemic_heart_disease"];
+function binaryFlag(v){if(v===1||v===true||String(v).toLowerCase()==="yes")return true;if(v===0||v===false||String(v).toLowerCase()==="no")return false;return null;}
+function hasComorbidity(r){
+ const flags=COMORBIDITY_FIELDS.map(k=>binaryFlag(r[k]));
+ if(flags.some(v=>v===true))return true;
+ if(flags.every(v=>v===false))return false;
+ return null;
+}
+function validClass(v){return v!==null&&v!==undefined&&String(v).trim()!==""&&String(v).toLowerCase()!=="none";}
+function validSBP(v){return num(v)&&v>=70&&v<=250}
+function filtered(){
+ const drug=$("drug").value,sex=$("sex").value,age=$("age").value,co=$("comorbidity").value;
+ return DATA.filter(r=>{
+  if(drug&&r.primary_drug_class!==drug)return false;
+  if(sex&&String(r.sex??"")!==sex)return false;
+  if(age&&ageBand(Number(r.age_years))!==age)return false;
+  const c=hasComorbidity(r);
+  if(co==="yes"&&c!==true)return false;
+  if(co==="no"&&c!==false)return false;
+  return true;
+ });
+}
+function pairedRows(rows){return rows.filter(r=>validClass(r.primary_drug_class)&&validSBP(Number(r.baseline_sbp_mmhg))&&validSBP(Number(r.followup_sbp_mmhg)));}
+function svgEl(tag,attrs={},txt=""){const e=document.createElementNS("http://www.w3.org/2000/svg",tag);Object.entries(attrs).forEach(([k,v])=>e.setAttribute(k,v));if(txt)e.textContent=txt;return e;}
+function drawBars(rows){
+ const svg=$("classChart");svg.replaceChildren();
+ const groups=[...new Set(rows.map(r=>r.primary_drug_class).filter(validClass))].sort().map(c=>{const g=pairedRows(rows).filter(r=>r.primary_drug_class===c);return {name:c,n:g.length,m:mean(g.map(r=>Number(r.baseline_sbp_mmhg)-Number(r.followup_sbp_mmhg)))};}).filter(x=>x.n);
+ const max=Math.max(1,...groups.map(x=>Math.abs(x.m)));
+ svg.append(svgEl("line",{x1:170,y1:20,x2:170,y2:260,class:"axis"}));
+ groups.forEach((g,i)=>{const y=34+i*45,w=300*g.m/max;svg.append(svgEl("text",{x:4,y:y+14},g.name));svg.append(svgEl("rect",{x:170,y,width:Math.max(1,w),height:22,rx:3,class:"bar"}));svg.append(svgEl("text",{x:Math.min(590,178+w),y:y+15},`${g.m.toFixed(1)} · n=${g.n}`));});
+ if(!groups.length)svg.append(svgEl("text",{x:20,y:40},"No eligible paired records for these filters."));
+}
+function drawHist(rows){
+ const svg=$("histChart");svg.replaceChildren();
+ const vals=pairedRows(rows).map(r=>Number(r.followup_sbp_mmhg));
+ if(!vals.length){svg.append(svgEl("text",{x:20,y:40},"No eligible paired records for these filters."));return;}
+ const min=Math.floor(Math.min(...vals)/10)*10,max=Math.ceil(Math.max(...vals)/10)*10,bins=Math.max(1,Math.ceil((max-min)/10)),counts=Array(bins).fill(0);
+ vals.forEach(v=>counts[Math.min(bins-1,Math.floor((v-min)/10))]++);
+ const peak=Math.max(...counts,1);
+ svg.append(svgEl("line",{x1:42,y1:250,x2:590,y2:250,class:"axis"}));
+ counts.forEach((c,i)=>{const x=48+i*(530/bins),w= Math.max(4,500/bins-4),h=190*c/peak;svg.append(svgEl("rect",{x,y:250-h,width:w,height:h,rx:2,class:"bar2"}));svg.append(svgEl("text",{x:x-2,y:270},String(min+i*10)));});
+ svg.append(svgEl("text",{x:48,y:20},`n=${vals.length} · 10 mmHg bins`));
+}
+function render(){
+ const rows=filtered(),pairs=pairedRows(rows),base=pairs.map(r=>Number(r.baseline_sbp_mmhg)),follow=pairs.map(r=>Number(r.followup_sbp_mmhg)),changes=pairs.map((r,i)=>base[i]-follow[i]);
+ $("kRecords").textContent=rows.length;$("kUnique").textContent=new Set(rows.map(r=>r.record_id)).size;$("kPaired").textContent=pairs.length;
+ $("kBase").textContent=fmt(mean(base));$("kFollow").textContent=fmt(mean(follow));$("kChange").textContent=fmt(mean(changes));
+ drawBars(rows);drawHist(rows);
+ const classes=[...new Set(rows.map(r=>r.primary_drug_class).filter(validClass))].sort();
+ $("summaryBody").replaceChildren(...classes.map(c=>{const g=pairs.filter(r=>r.primary_drug_class===c),b=g.map(r=>Number(r.baseline_sbp_mmhg)),f=g.map(r=>Number(r.followup_sbp_mmhg)),tr=document.createElement("tr");[c,g.length,fmt(mean(b)),fmt(mean(f)),fmt(mean(g.map((r,i)=>b[i]-f[i])))].forEach((v,i)=>{const td=document.createElement("td");td.textContent=v;if(i)td.className="num";tr.append(td)});return tr;}));
+ const dup=rows.length-new Set(rows.map(r=>r.record_id)).size,missingFollow=rows.filter(r=>r.followup_sbp_mmhg===null||r.followup_sbp_mmhg==="").length,invalidFollow=rows.filter(r=>r.followup_sbp_mmhg!==null&&!validSBP(Number(r.followup_sbp_mmhg))).length,missingClass=rows.filter(r=>!validClass(r.primary_drug_class)).length;
+ const qs=[["Duplicate excess rows",dup],["Missing follow-up SBP",missingFollow],["Implausible follow-up SBP",invalidFollow],["Missing primary class",missingClass]];
+ $("qualityBody").replaceChildren(...qs.map(([k,v])=>{const tr=document.createElement("tr"),a=document.createElement("td"),b=document.createElement("td");a.textContent=k;b.textContent=v;b.className="num";tr.append(a,b);return tr;}));
+}
+function csvEscape(v){const s=v===null||v===undefined?"":String(v);return '"'+s.replaceAll('"','""')+'"';}
+function exportCSV(){const rows=filtered();if(!rows.length)return;const keys=Object.keys(rows[0]),csv=[keys.map(csvEscape).join(","),...rows.map(r=>keys.map(k=>csvEscape(r[k])).join(","))].join("\r\n");const blob=new Blob([csv],{type:"text/csv;charset=utf-8"}),url=URL.createObjectURL(blob),a=document.createElement("a");a.href=url;a.download="filtered_synthetic_hypertension_records.csv";a.click();URL.revokeObjectURL(url);}
+async function init(){
+ try{const res=await fetch("data/dashboard_data.json");if(!res.ok)throw new Error("Data file unavailable");DATA=await res.json();
+  const addOptions=(id,vals)=>vals.filter(Boolean).sort().forEach(v=>{const o=document.createElement("option");o.value=v;o.textContent=v;$(id).append(o);});
+  addOptions("drug",[...new Set(DATA.map(r=>r.primary_drug_class))]);addOptions("sex",[...new Set(DATA.map(r=>r.sex))]);
+  ["drug","sex","age","comorbidity"].forEach(id=>$(id).addEventListener("change",render));
+  $("reset").addEventListener("click",()=>{["drug","sex","age","comorbidity"].forEach(id=>$(id).value="");render();});
+  $("export").addEventListener("click",exportCSV);render();
+ }catch(e){document.querySelector("main").prepend(Object.assign(document.createElement("p"),{textContent:"Dashboard data could not load. Open this folder through a local web server, not directly as a file:// page."}));}
+}
+init();
+</script>
+</body></html>

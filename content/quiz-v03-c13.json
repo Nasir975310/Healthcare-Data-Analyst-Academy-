@@ -1,0 +1,74 @@
+[
+  {
+    "id": "q1",
+    "q": "What is a benefit of small reusable functions?",
+    "options": [
+      "They make logic easier to test and maintain",
+      "They eliminate the need for validation",
+      "They hide data definitions",
+      "They prevent errors automatically"
+    ],
+    "correct": 0,
+    "why": "Functions isolate responsibilities and improve testability."
+  },
+  {
+    "id": "q2",
+    "q": "What does argparse provide?",
+    "options": [
+      "Command-line argument parsing",
+      "Statistical tests",
+      "Chart rendering",
+      "Database backups"
+    ],
+    "correct": 0,
+    "why": "argparse is a standard-library CLI parser."
+  },
+  {
+    "id": "q3",
+    "q": "What should a pipeline do when a required validation fails?",
+    "options": [
+      "Fail visibly with a nonzero exit code",
+      "Publish partial output as successful",
+      "Silently skip the check",
+      "Replace invalid values with zero"
+    ],
+    "correct": 0,
+    "why": "Downstream automation must be able to detect failure."
+  },
+  {
+    "id": "q4",
+    "q": "What is idempotency in a batch workflow?",
+    "options": [
+      "Safe rerunning without unintended duplicate effects",
+      "Running only once",
+      "Encrypting all outputs",
+      "Using random filenames"
+    ],
+    "correct": 0,
+    "why": "An idempotent operation has controlled repeat behavior."
+  },
+  {
+    "id": "q5",
+    "q": "Which is an analytical invariant worth testing?",
+    "options": [
+      "Department totals reconcile to cohort encounter count",
+      "The chart uses a preferred color",
+      "The script has a short name",
+      "The CSV is alphabetically sorted"
+    ],
+    "correct": 0,
+    "why": "Reconciliation tests correctness of the analytical output."
+  },
+  {
+    "id": "q6",
+    "q": "What should application logs avoid?",
+    "options": [
+      "Patient identifiers and credentials",
+      "Execution time",
+      "Row counts",
+      "Non-sensitive status"
+    ],
+    "correct": 0,
+    "why": "Logs should support troubleshooting without exposing sensitive data."
+  }
+]

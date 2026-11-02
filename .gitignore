@@ -1,33 +1,35 @@
 # Python
 __pycache__/
 *.py[cod]
+*$py.class
 .pytest_cache/
 .mypy_cache/
 .ruff_cache/
+.coverage
+htmlcov/
+
+# Environments
 .venv/
 venv/
+env/
 .env
 .env.*
+!.env.example
 
-# Jupyter
-.ipynb_checkpoints/
-
-# Local databases and exports
+# Generated data and local databases
 *.sqlite
 *.sqlite3
 *.db
-*.duckdb
-exports/
+*.log
+outputs/
 output/
-reports/generated/
+artifacts/
+_download_archive/
+*.part*
+*.zip
 
-# IDE / OS
+# Editors and OS
 .vscode/
 .idea/
 .DS_Store
 Thumbs.db
-
-# Test and audit outputs (keep committed baselines only when intentionally reviewed)
-.coverage
-htmlcov/
-FULL_TEST_REPORT_EXECUTED.json

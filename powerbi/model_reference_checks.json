@@ -1,0 +1,15 @@
+{
+  "encounter_fact_rows": 80,
+  "distinct_encounters": 80,
+  "medication_order_fact_rows": 151,
+  "distinct_order_ids": 151,
+  "orphan_order_encounter_keys": 1,
+  "missing_unit_cost_rows": 1,
+  "blank_therapeutic_class_rows": 1,
+  "mean_length_of_stay_days": 3.875,
+  "supplied_readmission_flag_count": 7,
+  "supplied_readmission_flag_rate": 0.0875,
+  "order_quantity_sum": 3038,
+  "synthetic_order_value_inr": 100279.75,
+  "date_dimension_rows": 90
+}

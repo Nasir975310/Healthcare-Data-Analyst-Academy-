@@ -1,0 +1,6 @@
+PASS: unique synthetic patient IDs
+PASS: binary outcome domain
+PASS: age range
+PASS: preprocessing is fitted inside scikit-learn pipelines
+PASS: test partition held out from model fitting
+CAUTION: one-row-per-patient synthetic holdout is not external validation

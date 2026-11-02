@@ -1,0 +1,17 @@
+{
+  "release": "5.39.0",
+  "title": "Portfolio Presentation & Employer Review",
+  "base_release": "5.38.0",
+  "synthetic_project_pipeline_executed": true,
+  "new_tests": {
+    "passed": 4,
+    "total": 4
+  },
+  "regression_tests": {
+    "passed": 5,
+    "total": 5
+  },
+  "external_publication_performed": false,
+  "independent_employer_review_performed": false,
+  "power_bi_execution_performed": false
+}

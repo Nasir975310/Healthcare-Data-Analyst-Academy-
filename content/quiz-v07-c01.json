@@ -1,0 +1,74 @@
+[
+  {
+    "id": "q1",
+    "q": "A model is intended to predict readmission at discharge. Which feature is a clear leakage risk?",
+    "options": [
+      "Age at admission",
+      "Discharge disposition recorded after the prediction time",
+      "Admission blood pressure",
+      "Comorbidity count available at admission"
+    ],
+    "correct": 1,
+    "why": "A feature recorded after the index time would not be available when the prediction is made."
+  },
+  {
+    "id": "q2",
+    "q": "Which statement best distinguishes prediction from causal inference?",
+    "options": [
+      "A predictive feature must be causal",
+      "Prediction estimates outcomes for new cases; causal inference estimates effects of interventions",
+      "High AUROC proves treatment benefit",
+      "Feature importance is a causal effect"
+    ],
+    "correct": 1,
+    "why": "Predictive association does not establish that intervening on a feature changes outcomes."
+  },
+  {
+    "id": "q3",
+    "q": "Why define an index time?",
+    "options": [
+      "To choose a chart colour",
+      "To specify when predictions are made and which data are available",
+      "To maximise training accuracy",
+      "To remove all missing values"
+    ],
+    "correct": 1,
+    "why": "Index time anchors eligibility, feature availability and leakage control."
+  },
+  {
+    "id": "q4",
+    "q": "Why establish a baseline model?",
+    "options": [
+      "It guarantees clinical utility",
+      "It provides a simple reference against which added complexity can be judged",
+      "It removes the need for validation",
+      "It proves fairness"
+    ],
+    "correct": 1,
+    "why": "A complex model should demonstrate value beyond simple baselines."
+  },
+  {
+    "id": "q5",
+    "q": "What is the central practical safeguard in 'Advanced analytical problem framing'?",
+    "options": [
+      "Ignore platform differences",
+      "Use explicit assumptions, validation and a reproducible workflow",
+      "Use real patient data on a personal device",
+      "Treat output as clinical advice"
+    ],
+    "correct": 1,
+    "why": "The chapter's workflow must be reproducible, validated and appropriately bounded."
+  },
+  {
+    "id": "q6",
+    "q": "How should the Linux and Windows routes be handled?",
+    "options": [
+      "Run Linux commands in CMD unchanged",
+      "Run PowerShell commands in Fish unchanged",
+      "Use shell-specific instructions and verify equivalent outcomes",
+      "Skip Windows verification"
+    ],
+    "correct": 2,
+    "why": "Shell syntax, paths, permissions and service management differ by OS."
+  }
+]

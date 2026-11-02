@@ -1,0 +1,38 @@
+// Measures assume a star schema: FactEncounter -> DimDate, DimDepartment.
+// Fact grain: one row per encounter. Use single-direction dimension-to-fact filters.
+Encounter Count = COUNTROWS(FactEncounter)
+
+Unique Patients = DISTINCTCOUNT(FactEncounter[PatientKey])
+
+IPD Encounters =
+CALCULATE([Encounter Count], FactEncounter[EncounterType] = "IPD")
+
+OPD Encounters =
+CALCULATE([Encounter Count], FactEncounter[EncounterType] = "OPD")
+
+IPD Share =
+DIVIDE([IPD Encounters], [Encounter Count])
+
+Total Charges (INR) = SUM(FactEncounter[ChargeINR])
+
+Average IPD Length of Stay =
+CALCULATE(AVERAGE(FactEncounter[LOSDays]), FactEncounter[EncounterType] = "IPD")
+
+Previous Month Encounters =
+CALCULATE([Encounter Count], DATEADD(DimDate[Date], -1, MONTH))
+
+MoM Encounter Change =
+[Encounter Count] - [Previous Month Encounters]
+
+MoM Encounter Change % =
+DIVIDE([MoM Encounter Change], [Previous Month Encounters])
+
+YTD Encounters =
+TOTALYTD([Encounter Count], DimDate[Date])
+
+Rolling 3-Month Encounters =
+CALCULATE([Encounter Count], DATESINPERIOD(DimDate[Date], MAX(DimDate[Date]), -3, MONTH))
+
+// RLS role filter expression on DimDepartment:
+-- [DepartmentCode] = USERPRINCIPALNAME() mapping should be implemented
+// Do not use a user-entered department name as a security boundary.

@@ -1,0 +1,211 @@
+[
+  {
+    "id": "SQL-01",
+    "level": "1 · Foundations",
+    "title": "Inspect the tables and establish the grain",
+    "skill": "SELECT, COUNT, DISTINCT",
+    "time": "15 min",
+    "scenario": "Before analysing any healthcare dataset, establish what each row represents and how many records are available.",
+    "task": "Return the row count and distinct key count for both tables. Identify the grain of each table in one sentence.",
+    "requirements": [
+      "Return row_count and distinct_key_count for encounters.",
+      "Return row_count and distinct_key_count for medication_orders.",
+      "Do not assume that the two row counts represent the same unit."
+    ],
+    "starter": "SELECT COUNT(*) AS row_count,\n       COUNT(DISTINCT encounter_id) AS distinct_key_count\nFROM encounters;\n\n-- Repeat for medication_orders using order_id.",
+    "hint": "The encounter table has one row per encounter. The medication table has one row per order.",
+    "solution": "SELECT 'encounters' AS table_name,\n       COUNT(*) AS row_count,\n       COUNT(DISTINCT encounter_id) AS distinct_key_count\nFROM encounters\nUNION ALL\nSELECT 'medication_orders', COUNT(*), COUNT(DISTINCT order_id)\nFROM medication_orders;",
+    "expected": "encounters: 80 rows / 80 unique encounter IDs. medication_orders: 150 rows / 150 unique order IDs.",
+    "check": "Both keys are unique in this teaching dataset. A different result would require investigating duplicate records or the declared grain."
+  },
+  {
+    "id": "SQL-02",
+    "level": "1 · Foundations",
+    "title": "Filter a defined reporting period",
+    "skill": "WHERE, BETWEEN, ORDER BY",
+    "time": "15 min",
+    "scenario": "The operations team requests encounters admitted during the first quarter of 2026.",
+    "task": "Return encounter ID, admission date, department and length of stay for admissions from 1 January through 31 March 2026, ordered from newest to oldest.",
+    "requirements": [
+      "Use an inclusive start date and exclusive next-period boundary.",
+      "Return only the four requested columns.",
+      "Sort by admission_date descending, then encounter_id."
+    ],
+    "starter": "SELECT encounter_id, admission_date, department, length_of_stay_days\nFROM encounters\nWHERE admission_date >= '2026-01-01'\n  AND admission_date < '2026-04-01'\nORDER BY admission_date DESC, encounter_id;",
+    "hint": "ISO-formatted YYYY-MM-DD text sorts chronologically. An exclusive upper bound avoids time-of-day edge cases if the field later becomes a timestamp.",
+    "solution": "SELECT encounter_id, admission_date, department, length_of_stay_days\nFROM encounters\nWHERE admission_date >= '2026-01-01'\n  AND admission_date < '2026-04-01'\nORDER BY admission_date DESC, encounter_id;",
+    "expected": "80 rows. All supplied encounter admissions fall between 2026-01-01 and 2026-03-31.",
+    "check": "Confirm the minimum and maximum admission dates with MIN and MAX. Do not use an unbounded year filter if the requested period is a quarter."
+  },
+  {
+    "id": "SQL-03",
+    "level": "2 · Aggregation",
+    "title": "Build department-level operational metrics",
+    "skill": "GROUP BY, COUNT, AVG, ROUND",
+    "time": "20 min",
+    "scenario": "A department manager wants encounter volume and mean length of stay by department.",
+    "task": "Return one row per department with encounter_count and mean_los_days rounded to two decimals.",
+    "requirements": [
+      "Use encounter-level data only.",
+      "Sort by encounter_count descending and department ascending.",
+      "Label the mean in days."
+    ],
+    "starter": "SELECT department,\n       COUNT(*) AS encounter_count,\n       ROUND(AVG(length_of_stay_days), 2) AS mean_los_days\nFROM encounters\nGROUP BY department;",
+    "hint": "Because encounters is one row per encounter, COUNT(*) is the encounter count in this dataset. This would not be safe after joining to medication_orders.",
+    "solution": "SELECT department,\n       COUNT(*) AS encounter_count,\n       ROUND(AVG(length_of_stay_days), 2) AS mean_los_days\nFROM encounters\nGROUP BY department\nORDER BY encounter_count DESC, department;",
+    "expected": "Emergency 24 / 3.75 days; General Medicine 15 / 3.60; Cardiology 14 / 4.21; Orthopaedics 14 / 4.21; Neurology 13 / 3.69.",
+    "check": "Department encounter counts must sum to 80. The mean is descriptive and does not explain why LOS differs."
+  },
+  {
+    "id": "SQL-04",
+    "level": "2 · Aggregation",
+    "title": "Find therapeutic classes with high order volume",
+    "skill": "GROUP BY, HAVING",
+    "time": "20 min",
+    "scenario": "The pharmacy analytics team wants classes with at least 20 medication-order records.",
+    "task": "Count orders by therapeutic class and return only classes with 20 or more orders.",
+    "requirements": [
+      "Use medication_orders only.",
+      "Count order records, not unique patients or administrations.",
+      "Sort by order_count descending."
+    ],
+    "starter": "SELECT therapeutic_class, COUNT(*) AS order_count\nFROM medication_orders\nGROUP BY therapeutic_class\nHAVING COUNT(*) >= 20;",
+    "hint": "WHERE filters rows before grouping; HAVING filters groups after aggregation.",
+    "solution": "SELECT therapeutic_class, COUNT(*) AS order_count\nFROM medication_orders\nGROUP BY therapeutic_class\nHAVING COUNT(*) >= 20\nORDER BY order_count DESC, therapeutic_class;",
+    "expected": "Calcium-channel blocker 27; Statin 25; ACE inhibitor 23; ARB 21; Antidiabetic 21. (Ties may be sorted alphabetically.)",
+    "check": "The sum of all therapeutic-class counts must equal 150."
+  },
+  {
+    "id": "SQL-05",
+    "level": "3 · Joins",
+    "title": "Join encounters to medication orders safely",
+    "skill": "INNER JOIN, table aliases",
+    "time": "25 min",
+    "scenario": "A clinical analytics colleague asks for order counts by department.",
+    "task": "Return department and medication_order_count, counting orders assigned to encounters in each department.",
+    "requirements": [
+      "Join on encounter_id.",
+      "Use clear aliases.",
+      "Do not call the output encounter count."
+    ],
+    "starter": "SELECT e.department, COUNT(*) AS medication_order_count\nFROM encounters e\nJOIN medication_orders m\n  ON e.encounter_id = m.encounter_id\nGROUP BY e.department;",
+    "hint": "The joined table has one row per matching medication order, not one row per encounter. COUNT(*) is correct here only because the requested measure is order count.",
+    "solution": "SELECT e.department,\n       COUNT(m.order_id) AS medication_order_count\nFROM encounters e\nINNER JOIN medication_orders m\n  ON e.encounter_id = m.encounter_id\nGROUP BY e.department\nORDER BY medication_order_count DESC, e.department;",
+    "expected": "Order counts by department: Emergency 52; Neurology 27; Orthopaedics 26; General Medicine 24; Cardiology 21.",
+    "check": "The department order counts must sum to 150. If asked for encounter count instead, use COUNT(DISTINCT e.encounter_id) or aggregate at encounter grain first."
+  },
+  {
+    "id": "SQL-06",
+    "level": "3 · Joins",
+    "title": "Measure encounter coverage with LEFT JOIN",
+    "skill": "LEFT JOIN, COUNT DISTINCT, COALESCE",
+    "time": "25 min",
+    "scenario": "The team wants to know how many encounters have at least one medication order and how many have none.",
+    "task": "Return each department's total encounters, encounters with at least one order, and encounters with no orders.",
+    "requirements": [
+      "Preserve encounters with no matching orders.",
+      "Avoid multiplying encounter rows in the output.",
+      "Use a pre-aggregated order table or COUNT(DISTINCT)."
+    ],
+    "starter": "WITH order_counts AS (\n  SELECT encounter_id, COUNT(*) AS order_count\n  FROM medication_orders\n  GROUP BY encounter_id\n)\nSELECT ...",
+    "hint": "Aggregate the many-side table to one row per encounter before joining. LEFT JOIN keeps encounter records without orders.",
+    "solution": "WITH order_counts AS (\n  SELECT encounter_id, COUNT(*) AS order_count\n  FROM medication_orders\n  GROUP BY encounter_id\n)\nSELECT e.department,\n       COUNT(*) AS total_encounters,\n       SUM(CASE WHEN COALESCE(o.order_count, 0) > 0 THEN 1 ELSE 0 END) AS encounters_with_orders,\n       SUM(CASE WHEN COALESCE(o.order_count, 0) = 0 THEN 1 ELSE 0 END) AS encounters_without_orders\nFROM encounters e\nLEFT JOIN order_counts o ON e.encounter_id = o.encounter_id\nGROUP BY e.department\nORDER BY e.department;",
+    "expected": "The total_encounters column sums to 80. encounters_with_orders sums to 70; encounters_without_orders sums to 10.",
+    "check": "For every department, with_orders + without_orders must equal total_encounters. The LEFT JOIN is essential to retain zero-order encounters."
+  },
+  {
+    "id": "SQL-07",
+    "level": "4 · CTEs",
+    "title": "Create an encounter-level medication summary",
+    "skill": "CTE, aggregation, COALESCE",
+    "time": "30 min",
+    "scenario": "A quality analyst needs a dataset with one row per encounter and its number of medication orders.",
+    "task": "Create a CTE that aggregates orders by encounter, then join it to encounters. Return encounter ID, department, LOS and order_count, including encounters with zero orders.",
+    "requirements": [
+      "Final output must contain exactly 80 rows.",
+      "Keep one row per encounter.",
+      "Use COALESCE to represent no matching order records as zero."
+    ],
+    "starter": "WITH orders_per_encounter AS (\n  SELECT encounter_id, COUNT(*) AS order_count\n  FROM medication_orders\n  GROUP BY encounter_id\n)\nSELECT ...",
+    "hint": "The CTE collapses the many-side table to at most one row per encounter before the join.",
+    "solution": "WITH orders_per_encounter AS (\n  SELECT encounter_id, COUNT(*) AS order_count\n  FROM medication_orders\n  GROUP BY encounter_id\n)\nSELECT e.encounter_id, e.department, e.length_of_stay_days,\n       COALESCE(o.order_count, 0) AS order_count\nFROM encounters e\nLEFT JOIN orders_per_encounter o\n  ON e.encounter_id = o.encounter_id\nORDER BY e.encounter_id;",
+    "expected": "80 rows. Sum of order_count is 150; 10 encounters have order_count = 0.",
+    "check": "Run SELECT COUNT(*) over the CTE result or wrap this query in a subquery. If it returns more than 80 rows, the many-side aggregation or join key is wrong."
+  },
+  {
+    "id": "SQL-08",
+    "level": "4 · Window functions",
+    "title": "Rank departments by mean length of stay",
+    "skill": "AVG OVER, DENSE_RANK",
+    "time": "30 min",
+    "scenario": "The operations director wants departments ranked by mean length of stay, retaining tied ranks.",
+    "task": "Return department, encounter_count, mean_los_days and rank, with highest mean LOS ranked first.",
+    "requirements": [
+      "Aggregate to one row per department first.",
+      "Use DENSE_RANK so ties share a rank.",
+      "Do not rank individual encounters."
+    ],
+    "starter": "WITH dept_metrics AS (\n  SELECT department, COUNT(*) AS encounter_count,\n         AVG(length_of_stay_days) AS mean_los\n  FROM encounters GROUP BY department\n)\nSELECT ...",
+    "hint": "A window function operates over the already aggregated department rows. Do not use a window rank directly over raw encounter rows for this task.",
+    "solution": "WITH dept_metrics AS (\n  SELECT department,\n         COUNT(*) AS encounter_count,\n         AVG(length_of_stay_days) AS mean_los\n  FROM encounters\n  GROUP BY department\n)\nSELECT department, encounter_count,\n       ROUND(mean_los, 2) AS mean_los_days,\n       DENSE_RANK() OVER (ORDER BY mean_los DESC) AS los_rank\nFROM dept_metrics\nORDER BY los_rank, department;",
+    "expected": "Cardiology and Orthopaedics tie at 4.21 days and share rank 1. Emergency is 3.75; Neurology 3.69; General Medicine 3.60.",
+    "check": "The rank is a descriptive ordering, not a performance judgement. Consider case mix, sample size and clinical context before interpreting differences."
+  },
+  {
+    "id": "SQL-09",
+    "level": "5 · Healthcare metrics",
+    "title": "Calculate the supplied 30-day flag proportion",
+    "skill": "CASE, numerator/denominator, NULL handling",
+    "time": "30 min",
+    "scenario": "A quality team asks for the proportion of encounters marked with the supplied readmission flag.",
+    "task": "Calculate total encounters, flagged encounters and flagged proportion as a percentage. Clearly label this as a supplied synthetic flag.",
+    "requirements": [
+      "Use encounters as the unit of analysis.",
+      "Make numerator and denominator visible.",
+      "Do not call it a validated readmission rate."
+    ],
+    "starter": "SELECT COUNT(*) AS total_encounters,\n       SUM(CASE WHEN readmission_30d_flag = 1 THEN 1 ELSE 0 END) AS flagged_encounters,\n       ... AS flagged_percent\nFROM encounters;",
+    "hint": "Multiply numerator / denominator by 100.0 to avoid integer division. Protect against a zero denominator with NULLIF.",
+    "solution": "SELECT COUNT(*) AS total_encounters,\n       SUM(CASE WHEN readmission_30d_flag = 1 THEN 1 ELSE 0 END) AS flagged_encounters,\n       ROUND(100.0 * SUM(CASE WHEN readmission_30d_flag = 1 THEN 1 ELSE 0 END)\n             / NULLIF(COUNT(*), 0), 2) AS supplied_flag_percent\nFROM encounters;",
+    "expected": "80 total encounters; 7 flagged encounters; 8.75% supplied-flag proportion.",
+    "check": "The flag's derivation, eligibility criteria and 30-day follow-up completeness are not validated. This is not a standardised hospital readmission metric."
+  },
+  {
+    "id": "SQL-10",
+    "level": "5 · Data quality",
+    "title": "Run key, chronology and referential-integrity checks",
+    "skill": "COUNT, EXISTS, date comparisons",
+    "time": "35 min",
+    "scenario": "Before publishing a report, run basic data-quality checks on keys, dates and foreign-key relationships.",
+    "task": "Write queries that identify duplicate encounter IDs, duplicate order IDs, discharge dates before admission dates, and medication orders referencing missing encounters.",
+    "requirements": [
+      "Each check must return the number of violating records.",
+      "A zero result means no issue was found by that specific check.",
+      "Do not silently delete or repair invalid records."
+    ],
+    "starter": "-- Duplicate encounter keys\nSELECT COUNT(*) FROM (\n  SELECT encounter_id FROM encounters\n  GROUP BY encounter_id HAVING COUNT(*) > 1\n);\n\n-- Add the remaining checks.",
+    "hint": "For chronology, compare ISO date strings using discharge_date < admission_date. For orphan orders, use NOT EXISTS or LEFT JOIN ... IS NULL.",
+    "solution": "SELECT COUNT(*) AS duplicate_encounter_keys FROM (\n  SELECT encounter_id FROM encounters GROUP BY encounter_id HAVING COUNT(*) > 1\n);\nSELECT COUNT(*) AS duplicate_order_keys FROM (\n  SELECT order_id FROM medication_orders GROUP BY order_id HAVING COUNT(*) > 1\n);\nSELECT COUNT(*) AS invalid_encounter_chronology\nFROM encounters WHERE discharge_date < admission_date;\nSELECT COUNT(*) AS orphan_orders\nFROM medication_orders m\nWHERE NOT EXISTS (SELECT 1 FROM encounters e WHERE e.encounter_id = m.encounter_id);",
+    "expected": "All four checks return 0 on the current synthetic dataset.",
+    "check": "A passing check only means the tested rule passed. It does not establish overall data quality, clinical validity or completeness."
+  },
+  {
+    "id": "SQL-11",
+    "level": "6 · Performance and interview",
+    "title": "Inspect a query plan and justify an index",
+    "skill": "EXPLAIN QUERY PLAN, indexing",
+    "time": "30 min",
+    "scenario": "A recurring report filters medication orders by therapeutic class and status. You need to explain how SQLite accesses the table.",
+    "task": "Inspect the query plan for a class/status filter. Compare the plan before and after creating an index on (therapeutic_class, order_status).",
+    "requirements": [
+      "Use EXPLAIN QUERY PLAN.",
+      "Create an index only in your local practice database.",
+      "Explain the trade-off: faster reads can add storage and write overhead."
+    ],
+    "starter": "EXPLAIN QUERY PLAN\nSELECT order_id, order_date, drug_name\nFROM medication_orders\nWHERE therapeutic_class = 'Statin'\n  AND order_status = 'Active';",
+    "hint": "SQLite may choose a table scan for a small table even when an index exists. The planner's choice depends on table size, statistics and selectivity.",
+    "solution": "CREATE INDEX IF NOT EXISTS idx_orders_class_status\nON medication_orders(therapeutic_class, order_status);\n\nEXPLAIN QUERY PLAN\nSELECT order_id, order_date, drug_name\nFROM medication_orders\nWHERE therapeutic_class = 'Statin'\n  AND order_status = 'Active';",
+    "expected": "A valid plan is returned. The current Academy database already contains idx_orders_class_status. The planner may still choose a scan because the dataset is small.",
+    "check": "Do not claim an index improved performance unless you measured it on representative data. Index design should follow real query patterns and production workload."
+  }
+]

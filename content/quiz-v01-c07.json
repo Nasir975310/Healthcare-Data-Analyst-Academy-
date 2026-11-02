@@ -1,0 +1,62 @@
+[
+  {
+    "id": "q1",
+    "q": "Which measure of centre is usually most resistant to a few extreme values?",
+    "options": [
+      "Mean",
+      "Median",
+      "Range",
+      "Variance"
+    ],
+    "correct": 1,
+    "why": "The median depends on order rather than the magnitude of every observation."
+  },
+  {
+    "id": "q2",
+    "q": "For a sample, the usual variance denominator is:",
+    "options": [
+      "n",
+      "n−1",
+      "n+1",
+      "√n"
+    ],
+    "correct": 1,
+    "why": "The usual sample variance uses n−1 degrees-of-freedom correction."
+  },
+  {
+    "id": "q3",
+    "q": "Which summary pair is often useful for a skewed continuous variable?",
+    "options": [
+      "Mean and SD only",
+      "Median and IQR",
+      "Mode and range only",
+      "Percentage and ratio"
+    ],
+    "correct": 1,
+    "why": "Median and IQR are resistant to extreme values."
+  },
+  {
+    "id": "q4",
+    "q": "A dataset contains 50 encounters from 35 unique patients. What is the correct interpretation?",
+    "options": [
+      "50 patients",
+      "35 encounters",
+      "50 encounters and 35 unique patients",
+      "15 duplicate rows"
+    ],
+    "correct": 2,
+    "why": "Encounter and patient are distinct units; repeated encounters may occur."
+  },
+  {
+    "id": "q5",
+    "q": "A box-plot 1.5×IQR fence identifies:",
+    "options": [
+      "A confirmed data error",
+      "A clinical danger threshold",
+      "An exploratory value for review",
+      "A reason to delete records automatically"
+    ],
+    "correct": 2,
+    "why": "Fences flag potential outliers; they do not prove error."
+  }
+]

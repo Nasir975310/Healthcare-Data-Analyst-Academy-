@@ -1,0 +1,28 @@
+{
+  "weeks": [
+    {
+      "name": "Week 1",
+      "focus": "CSV quality audit",
+      "deliverable": "Profile, exception report and QA memo",
+      "hours": 6
+    },
+    {
+      "name": "Week 2",
+      "focus": "SQL reconciliation",
+      "deliverable": "Queries, grouped output and validation",
+      "hours": 7
+    },
+    {
+      "name": "Week 3",
+      "focus": "Dashboard KPI QA",
+      "deliverable": "Metric contract and dashboard critique",
+      "hours": 6
+    },
+    {
+      "name": "Week 4",
+      "focus": "Publish one portfolio case",
+      "deliverable": "README, code, tests, synthetic data and limitations",
+      "hours": 8
+    }
+  ]
+}

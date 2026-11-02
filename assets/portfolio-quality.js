@@ -1,0 +1,41 @@
+/* v3.6 Portfolio quality gate — locally persisted self-review */
+(() => {
+"use strict";
+const KEY="hda_portfolio_quality_v36";
+const groups=[
+ {name:"Scope and metric validity",items:["Business/clinical question and audience are explicit","Unit of analysis and table grain are documented","Numerator, denominator, inclusion and exclusion rules are explicit","Medication order, administration, dispensing and adherence are not conflated","Association is not described as causation without a suitable design"]},
+ {name:"Data governance and safety",items:["Data provenance and sharing rights are documented","Synthetic/public/authorised status is explicit","No PHI, patient identifiers, credentials or confidential employer data are shared","Small-cell disclosure and re-identification risks are considered","Repository visibility and licence/sharing terms are intentional"]},
+ {name:"Reproducibility",items:["README provides setup and exact run instructions","Runtime and dependencies are declared or pinned","Inputs and expected schemas are listed","Data dictionary defines fields, units, null meaning and allowed values","Random seeds are set for stochastic workflows","A clean checkout can regenerate the main outputs"]},
+ {name:"Technical quality",items:["Primary keys, duplicates, nulls and ranges are checked","Chronology and referential integrity are checked where relevant","Join cardinality and denominator changes are checked","Statistical assumptions and model diagnostics are reviewed","Dashboard totals reconcile to source queries","Tests and failure modes are documented"]},
+ {name:"Interpretation and communication",items:["Results include units, denominators and uncertainty where appropriate","Findings are distinguished from recommendations","Bias, missingness, limitations and generalisability are explicit","No unsupported clinical recommendations are made","Visuals have titles, labels, units and source notes"]},
+ {name:"Release readiness",items:["Code review is complete","Automated checks pass and warnings are explained","Git working tree and history checked for secrets","Licence/sharing statement is present","A second person can reproduce a key result","Training/synthetic work is clearly labelled in the case study"]}
+];
+const projects=["Hospital Performance Review","Antihypertensive Drug Utilisation Evaluation","Healthcare ETL and Data Quality Pipeline","Clinical Research and Pharmacovigilance","FHIR-to-Warehouse Interoperability","Remote Client Request-to-Handoff","Advanced SQL Healthcare Case Study","Healthcare Statistics and Epidemiology","Employer-Style Technical Assessment"];
+const $=s=>document.querySelector(s), esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+let state={project:projects[0],checks:{},notes:"",reviewer:"",date:new Date().toISOString().slice(0,10),critical:false};
+try{state={...state,...JSON.parse(localStorage.getItem(KEY)||"{}")};}catch{}
+function save(){localStorage.setItem(KEY,JSON.stringify(state));}
+function score(){let total=groups.reduce((n,g)=>n+g.items.length,0),done=Object.values(state.checks).filter(Boolean).length;return {done,total,pct:Math.round(done/total*100)};}
+function render(){
+ let s=score(), html=`<div class="stats-grid"><article class="stat-card"><span>Checklist completion</span><strong>${s.pct}%</strong></article><article class="stat-card"><span>Evidence items</span><strong>${s.done}/${s.total}</strong></article><article class="stat-card"><span>Critical blocker declared</span><strong>${state.critical?"YES":"No"}</strong></article></div>
+ <div class="notice"><b>Publication rule:</b> any exposed PHI/credential, unauthorised dataset, materially invalid metric, unreproducible headline result or unsupported clinical claim blocks release regardless of score. Checklist completion is self-review, not independent certification.</div>
+ <section class="panel"><h2>Project review record</h2><div class="form-grid"><label>Project<select id="pqProject">${projects.map(p=>`<option ${state.project===p?"selected":""}>${esc(p)}</option>`).join("")}</select></label><label>Reviewer<input id="pqReviewer" value="${esc(state.reviewer)}" placeholder="Your name / peer reviewer"></label><label>Review date<input id="pqDate" type="date" value="${esc(state.date)}"></label><label><span>Critical blocker present?</span><input id="pqCritical" type="checkbox" ${state.critical?"checked":""}></label></div></section>`;
+ groups.forEach((g,gi)=>{html+=`<section class="panel"><h2>${gi+1}. ${esc(g.name)}</h2><ul class="checklist">${g.items.map((item,i)=>{let id=`${gi}-${i}`;return `<li><label><input type="checkbox" data-pq="${id}" ${state.checks[id]?"checked":""}> ${esc(item)}</label></li>`;}).join("")}</ul></section>`;});
+ html+=`<section class="panel"><h2>Review findings and release decision</h2><label>Findings, exceptions, evidence links and remediation<textarea id="pqNotes" rows="6" style="width:100%" placeholder="Record evidence, not just pass/fail.">${esc(state.notes)}</textarea></label><div class="button-row"><button class="primary-btn" id="pqExport">Export review report (Markdown)</button><button class="secondary-btn" id="pqBackup">Export v3.6 review backup</button><label class="secondary-btn file-button">Import review backup<input type="file" id="pqImport" accept="application/json"></label></div><p id="pqDecision" class="notice">${decision(s)}</p><p class="muted">Local browser storage only. This review is not a penetration test, privacy assessment, clinical peer review, statistical audit or formal quality-system approval.</p></section>`;
+ $("#portfolioQualityApp").innerHTML=html;
+ $("#pqProject").onchange=e=>{state.project=e.target.value;save();};
+ $("#pqReviewer").onchange=e=>{state.reviewer=e.target.value;save();};
+ $("#pqDate").onchange=e=>{state.date=e.target.value;save();};
+ $("#pqCritical").onchange=e=>{state.critical=e.target.checked;save();render();};
+ $("#pqNotes").onchange=e=>{state.notes=e.target.value;save();};
+ $$("[data-pq]").forEach(el=>el.onchange=()=>{state.checks[el.dataset.pq]=el.checked;save();render();});
+ $("#pqExport").onclick=()=>download("portfolio-release-review.md",report(),"text/markdown");
+ $("#pqBackup").onclick=()=>download("hda-v3.6-quality-review.json",JSON.stringify({module:"portfolio-quality-gate",version:"3.6.0",exportedAt:new Date().toISOString(),state},null,2),"application/json");
+ $("#pqImport").onchange=async e=>{let f=e.target.files[0];if(!f)return;try{let x=JSON.parse(await f.text());if(x.module!=="portfolio-quality-gate"||!x.state||typeof x.state.checks!=="object")throw Error();state={...state,...x.state};save();render();alert("Review backup imported.");}catch{alert("Invalid v3.6 review backup.");}e.target.value="";};
+}
+function decision(s){if(state.critical)return "BLOCK RELEASE — a critical blocker has been declared.";if(s.pct<100)return `NOT YET READY — ${s.total-s.done} checklist item(s) remain. Record evidence and resolve gaps.`;return "CHECKLIST COMPLETE — obtain independent review and verify the underlying code, data rights, security and clinical/statistical claims before publication.";}
+function report(){let s=score();return `# Portfolio Release Review\n\n- Project: ${state.project}\n- Reviewer: ${state.reviewer||"Not supplied"}\n- Date: ${state.date}\n- Checklist: ${s.done}/${s.total} (${s.pct}%)\n- Critical blocker: ${state.critical?"YES":"No"}\n- Decision: ${decision(s)}\n\n${groups.map((g,gi)=>`## ${g.name}\n${g.items.map((x,i)=>`- [${state.checks[`${gi}-${i}`]?"x":" "}] ${x}`).join("\n")}`).join("\n\n")}\n\n## Findings and remediation\n${state.notes||"No findings recorded."}\n\n## Limitation\nThis is a self-review checklist, not independent certification, penetration testing, privacy assessment, clinical peer review or regulatory approval.\n`;}
+function download(n,c,t){let u=URL.createObjectURL(new Blob([c],{type:t})),a=document.createElement("a");a.href=u;a.download=n;a.click();setTimeout(()=>URL.revokeObjectURL(u),1000);}
+const $$=s=>[...document.querySelectorAll(s)];
+document.addEventListener("DOMContentLoaded",()=>{let b=document.querySelector('[data-view="portfolio-quality"]');if(b)b.addEventListener("click",()=>{if(!$("#portfolioQualityApp").dataset.ready){render();$("#portfolioQualityApp").dataset.ready="1";}});});
+})();

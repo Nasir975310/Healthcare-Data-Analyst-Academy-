@@ -1,0 +1,26 @@
+{
+  "synthetic_only": true,
+  "source_counts": {
+    "patients": 80,
+    "encounters": 120,
+    "medication_orders": 180,
+    "lab_observations": 220
+  },
+  "curated_counts": {
+    "encounters": 120,
+    "medication_orders": 180,
+    "lab_observations": 220
+  },
+  "quality_issue_count": 0,
+  "quality_issues": [],
+  "reference_checks": {
+    "encounter_patient_orphans": 0,
+    "child_encounter_orphans": 0
+  },
+  "source_sha256": {
+    "encounters.csv": "3a1a27105ef875b5e7063f4db60fa39e8ad1d5e07daaf503451b7c717da1c082",
+    "lab_observations.csv": "8d63594db76515c2cdc13f1fad27cb51c1b2929a8656be0a7cf8a436f12746cc",
+    "medication_orders.csv": "32dbb6435ca28f9d500acf6516c2caff28773ba89b3b69563a887ebf7697ec67",
+    "patients.csv": "1c07b5872a474feab9bc4e92140f73953706a699dd29c1da2b05cdcf27eca4e5"
+  }
+}

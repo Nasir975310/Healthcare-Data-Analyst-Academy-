@@ -1,0 +1,501 @@
+encounter_id,admit_date,discharge_date,department,payer,admission_type,discharge_disposition,readmit_30d_flag,total_charge_inr
+ENC00001,2026-05-19,2026-05-24,General Medicine,Self-pay,Elective,Home,1,71115.62
+ENC00002,2026-06-14,2026-06-17,Orthopaedics,Public,Elective,LAMA,0,45099.83
+ENC00003,2026-05-25,2026-06-01,Nephrology,Private,Elective,LAMA,0,65459.72
+ENC00004,2026-06-05,2026-06-08,Orthopaedics,Public,Elective,Transfer,0,24544.57
+ENC00005,2026-01-25,2026-01-31,Nephrology,Public,Emergency,Death,0,83798.35
+ENC00006,2026-02-11,2026-02-16,General Medicine,Self-pay,Emergency,LAMA,0,31356.95
+ENC00007,2026-01-10,2026-01-13,Cardiology,Private,Emergency,LAMA,0,3901.94
+ENC00008,2026-02-26,2026-02-28,Cardiology,Public,Emergency,Transfer,0,16172.47
+ENC00009,2026-05-04,2026-05-11,Neurology,Public,Elective,Death,0,35664.34
+ENC00010,2026-03-20,2026-03-22,General Medicine,Public,Emergency,Death,0,76923.24
+ENC00011,2026-02-08,2026-02-12,Orthopaedics,Self-pay,Emergency,LAMA,0,36141.54
+ENC00012,2026-05-22,2026-05-25,Orthopaedics,Private,Elective,LAMA,0,73835.26
+ENC00013,2026-04-13,2026-04-16,General Medicine,Public,Emergency,Transfer,0,79240.98
+ENC00014,2026-03-22,2026-03-23,Cardiology,Public,Elective,Home,0,72949.92
+ENC00015,2026-03-27,2026-03-28,Neurology,Private,Elective,Death,0,62471.74
+ENC00016,2026-04-10,2026-04-12,Orthopaedics,Private,Elective,Death,0,44302.55
+ENC00017,2026-03-23,2026-03-27,General Medicine,Self-pay,Emergency,Transfer,0,75631.35
+ENC00018,2026-03-17,2026-03-23,Cardiology,Private,Emergency,Death,0,40922.43
+ENC00019,2026-01-13,2026-01-17,Cardiology,Public,Elective,Transfer,0,52796.26
+ENC00020,2026-06-09,2026-06-12,Orthopaedics,Public,Elective,LAMA,0,45632.3
+ENC00021,2026-04-06,2026-04-07,Cardiology,Private,Elective,Transfer,0,61911.74
+ENC00022,2026-02-13,2026-02-17,Nephrology,Private,Elective,LAMA,0,68792.23
+ENC00023,2026-03-28,2026-03-30,General Medicine,Public,Elective,Transfer,1,61773.44
+ENC00024,2026-06-21,2026-06-22,Cardiology,Public,Emergency,Home,0,40069.48
+ENC00025,2026-02-17,2026-02-22,General Medicine,Private,Elective,Death,0,75866.66
+ENC00026,2026-05-30,2026-06-04,Orthopaedics,Self-pay,Elective,LAMA,1,80113.07
+ENC00027,2026-04-16,2026-04-19,Orthopaedics,Private,Emergency,Transfer,0,5381.96
+ENC00028,2026-05-01,2026-05-04,Nephrology,Private,Elective,Transfer,1,23466.94
+ENC00029,2026-04-03,2026-04-04,Orthopaedics,Private,Elective,LAMA,0,33389.74
+ENC00030,2026-05-04,2026-05-05,Nephrology,Private,Emergency,Death,0,5229.29
+ENC00031,2026-04-03,2026-04-09,Cardiology,Public,Emergency,LAMA,0,29691.32
+ENC00032,2026-03-19,2026-03-20,Neurology,Self-pay,Emergency,Transfer,0,15820.44
+ENC00033,2026-03-26,2026-03-27,General Medicine,Self-pay,Elective,Home,0,41620.35
+ENC00034,2026-04-23,2026-04-25,Cardiology,Private,Emergency,LAMA,0,26915.2
+ENC00035,2026-06-02,2026-06-07,Cardiology,Private,Emergency,Death,0,38383.94
+ENC00036,2026-03-18,2026-03-23,Orthopaedics,Public,Emergency,Death,0,41992.62
+ENC00037,2026-01-06,2026-01-07,Cardiology,Public,Elective,Death,0,4077.26
+ENC00038,2026-02-10,2026-02-20,Cardiology,Public,Emergency,LAMA,0,82341.58
+ENC00039,2026-06-06,2026-06-08,Orthopaedics,Private,Elective,Transfer,0,38250.85
+ENC00040,2026-01-16,2026-01-19,Orthopaedics,Private,Emergency,LAMA,0,31016.56
+ENC00041,2026-05-30,2026-06-06,Neurology,Self-pay,Emergency,LAMA,0,53952.23
+ENC00042,2026-01-15,2026-01-17,Orthopaedics,Private,Elective,Home,0,4045.12
+ENC00043,2026-03-24,2026-03-29,Orthopaedics,Self-pay,Emergency,Home,0,65054.77
+ENC00044,2026-03-30,2026-04-04,General Medicine,Private,Elective,Death,0,47403.31
+ENC00045,2026-02-20,2026-03-05,Neurology,Self-pay,Emergency,Death,0,24230.11
+ENC00046,2026-05-19,2026-05-21,Cardiology,Public,Emergency,Home,0,61187.22
+ENC00047,2026-03-14,2026-03-18,General Medicine,Public,Emergency,Transfer,0,19953.29
+ENC00048,2026-05-20,2026-05-22,Neurology,Private,Emergency,Home,1,46910.5
+ENC00049,2026-02-19,2026-02-20,Cardiology,Self-pay,Emergency,Death,0,59649.51
+ENC00050,2026-02-15,2026-02-28,Neurology,Self-pay,Elective,Transfer,0,50105.14
+ENC00051,2026-05-17,2026-05-19,Neurology,Self-pay,Emergency,LAMA,0,22970.17
+ENC00052,2026-01-30,2026-02-03,Cardiology,Public,Emergency,Home,0,46213.67
+ENC00053,2026-04-21,2026-04-23,Cardiology,Self-pay,Emergency,Home,0,67275.42
+ENC00054,2026-01-08,2026-01-09,General Medicine,Self-pay,Emergency,Home,0,84545.58
+ENC00055,2026-06-22,2026-06-24,Cardiology,Private,Emergency,Home,0,5093.43
+ENC00056,2026-02-24,2026-02-27,Orthopaedics,Private,Emergency,Transfer,0,56148.29
+ENC00057,2026-02-07,2026-02-10,Nephrology,Self-pay,Elective,Death,0,51456.96
+ENC00058,2026-03-03,2026-03-04,Cardiology,Self-pay,Elective,LAMA,0,49437.64
+ENC00059,2026-03-30,2026-04-03,Orthopaedics,Public,Emergency,LAMA,0,7004.77
+ENC00060,2026-05-27,2026-05-29,Nephrology,Self-pay,Emergency,LAMA,0,24158.52
+ENC00061,2026-02-15,2026-02-17,Orthopaedics,Private,Emergency,Death,0,13418.57
+ENC00062,2026-06-08,2026-06-18,Nephrology,Private,Emergency,LAMA,0,77452.55
+ENC00063,2026-05-24,2026-05-25,Cardiology,Self-pay,Emergency,LAMA,0,11221.6
+ENC00064,2026-03-30,2026-04-02,Orthopaedics,Public,Elective,Death,1,21990.13
+ENC00065,2026-06-26,2026-07-09,General Medicine,Private,Elective,Home,1,64558.29
+ENC00066,2026-05-08,2026-05-09,Neurology,Public,Elective,Home,0,66104.97
+ENC00067,2026-05-10,2026-05-14,Nephrology,Public,Emergency,Death,0,44745.72
+ENC00068,2026-06-01,2026-06-06,Orthopaedics,Self-pay,Emergency,Home,0,77627.85
+ENC00069,2026-03-29,2026-04-01,Nephrology,Self-pay,Emergency,Death,0,59106.63
+ENC00070,2026-06-17,2026-06-24,Cardiology,Public,Elective,LAMA,1,7711.26
+ENC00071,2026-06-04,2026-06-09,General Medicine,Self-pay,Elective,Transfer,0,66519.61
+ENC00072,2026-02-21,2026-02-23,Nephrology,Private,Elective,Transfer,0,23618.61
+ENC00073,2026-03-15,2026-03-18,Orthopaedics,Public,Elective,Death,0,70203.86
+ENC00074,2026-02-21,2026-02-26,Orthopaedics,Private,Emergency,Home,0,30854.59
+ENC00075,2026-01-30,2026-02-01,Nephrology,Self-pay,Elective,Transfer,0,58500.56
+ENC00076,2026-06-20,2026-06-27,Cardiology,Public,Emergency,LAMA,0,72095.26
+ENC00077,2026-01-07,2026-01-10,General Medicine,Public,Emergency,LAMA,0,40619.81
+ENC00078,2026-06-13,2026-06-14,Nephrology,Public,Elective,Transfer,0,34833.39
+ENC00079,2026-03-18,2026-03-21,Neurology,Self-pay,Elective,Transfer,0,84465.61
+ENC00080,2026-06-14,2026-06-15,Cardiology,Public,Elective,Transfer,0,10792.55
+ENC00081,2026-01-19,2026-01-26,General Medicine,Private,Emergency,Transfer,0,56658.3
+ENC00082,2026-05-11,2026-05-19,Orthopaedics,Self-pay,Emergency,LAMA,0,83380.64
+ENC00083,2026-04-26,2026-04-29,General Medicine,Private,Elective,Transfer,0,69125.23
+ENC00084,2026-01-27,2026-01-29,General Medicine,Private,Elective,Home,0,71049.24
+ENC00085,2026-02-27,2026-03-04,Cardiology,Private,Elective,Transfer,0,63842.51
+ENC00086,2026-02-13,2026-02-16,Cardiology,Private,Elective,LAMA,1,38541.97
+ENC00087,2026-05-10,2026-05-17,Orthopaedics,Public,Elective,Home,0,51157.73
+ENC00088,2026-02-20,2026-02-24,Neurology,Self-pay,Elective,Death,0,62031.98
+ENC00089,2026-06-26,2026-07-01,Neurology,Self-pay,Emergency,LAMA,0,63101.09
+ENC00090,2026-04-15,2026-04-21,General Medicine,Private,Elective,Death,0,28235.32
+ENC00091,2026-02-02,2026-02-03,Neurology,Public,Elective,Transfer,0,74732.03
+ENC00092,2026-03-06,2026-03-11,Orthopaedics,Public,Elective,Death,0,28524.96
+ENC00093,2026-01-22,2026-01-25,Nephrology,Private,Emergency,Home,0,19431.27
+ENC00094,2026-01-29,2026-02-04,Cardiology,Self-pay,Emergency,Home,0,19346.09
+ENC00095,2026-01-01,2026-01-03,Cardiology,Self-pay,Emergency,Transfer,0,7548.31
+ENC00096,2026-06-24,2026-06-25,Cardiology,Public,Elective,LAMA,0,76556.9
+ENC00097,2026-05-03,2026-05-05,Cardiology,Private,Emergency,Transfer,0,19814.38
+ENC00098,2026-05-24,2026-05-25,Neurology,Private,Elective,Home,0,64336.43
+ENC00099,2026-01-25,2026-02-02,General Medicine,Public,Emergency,LAMA,0,44092.53
+ENC00100,2026-01-21,2026-01-23,Cardiology,Public,Elective,LAMA,1,54388.77
+ENC00101,2026-05-04,2026-05-07,Orthopaedics,Private,Emergency,LAMA,0,27997.38
+ENC00102,2026-01-12,2026-01-15,General Medicine,Private,Emergency,Death,0,25404.97
+ENC00103,2026-05-15,2026-05-19,Nephrology,Private,Emergency,Home,0,40905.23
+ENC00104,2026-02-25,2026-03-03,Orthopaedics,Public,Emergency,Death,0,56939.52
+ENC00105,2026-03-14,2026-03-18,General Medicine,Self-pay,Elective,LAMA,0,29430.85
+ENC00106,2026-01-02,2026-01-03,Cardiology,Self-pay,Emergency,Death,0,48349.89
+ENC00107,2026-04-22,2026-04-25,Neurology,Private,Elective,Transfer,0,10031.5
+ENC00108,2026-01-26,2026-02-01,Nephrology,Public,Elective,LAMA,0,28095.17
+ENC00109,2026-01-13,2026-01-13,General Medicine,Public,Emergency,Home,0,57232.82
+ENC00110,2026-01-17,2026-01-21,Nephrology,Public,Emergency,Transfer,0,23556.23
+ENC00111,2026-02-08,2026-02-10,Orthopaedics,Self-pay,Emergency,Transfer,0,6246.88
+ENC00112,2026-06-13,2026-06-20,Cardiology,Public,Emergency,LAMA,0,83535.43
+ENC00113,2026-03-15,2026-03-17,General Medicine,Public,Emergency,Transfer,0,17885.25
+ENC00114,2026-05-19,2026-05-25,Nephrology,Private,Elective,Death,0,75673.3
+ENC00115,2026-05-12,2026-05-16,Cardiology,Self-pay,Emergency,LAMA,0,81394.61
+ENC00116,2026-03-28,2026-03-31,Nephrology,Public,Elective,Home,1,7893.85
+ENC00117,2026-02-20,2026-02-23,Cardiology,Public,Emergency,Transfer,0,77075.64
+ENC00118,2026-01-20,2026-01-28,Neurology,Public,Elective,LAMA,0,48755.76
+ENC00119,2026-01-15,2026-01-18,Orthopaedics,Private,Elective,Home,0,78618.94
+ENC00120,2026-03-12,2026-03-15,General Medicine,Self-pay,Emergency,LAMA,0,31357.94
+ENC00121,2026-05-12,2026-05-16,Orthopaedics,Self-pay,Emergency,Death,0,65179.36
+ENC00122,2026-01-15,2026-01-17,Neurology,Private,Elective,Death,0,10569.38
+ENC00123,2026-03-17,2026-03-21,Nephrology,Private,Emergency,Home,0,58290.53
+ENC00124,2026-05-15,2026-05-19,Nephrology,Public,Elective,Home,0,41699.72
+ENC00125,2026-05-25,2026-05-27,General Medicine,Private,Elective,Death,0,53916.82
+ENC00126,2026-05-18,2026-05-24,Nephrology,Public,Emergency,Transfer,0,5643.17
+ENC00127,2026-06-17,2026-06-19,Neurology,Public,Elective,Home,0,64145.73
+ENC00128,2026-02-18,2026-02-21,Orthopaedics,Private,Elective,Home,0,44828.76
+ENC00129,2026-03-23,2026-03-24,General Medicine,Public,Elective,Home,0,65890.86
+ENC00130,2026-05-16,2026-05-20,General Medicine,Public,Elective,Transfer,0,21287.06
+ENC00131,2026-04-25,2026-05-02,Nephrology,Private,Emergency,Home,0,17290.65
+ENC00132,2026-01-28,2026-01-29,Cardiology,Private,Elective,Transfer,0,62689.08
+ENC00133,2026-06-16,2026-06-24,Cardiology,Self-pay,Elective,Home,0,6891.13
+ENC00134,2026-04-20,2026-04-23,General Medicine,Private,Elective,Home,0,35847.87
+ENC00135,2026-02-16,2026-02-18,Cardiology,Public,Elective,Transfer,0,53091.03
+ENC00136,2026-04-16,2026-04-25,Neurology,Self-pay,Emergency,Home,1,84249.82
+ENC00137,2026-05-08,2026-05-15,Orthopaedics,Self-pay,Emergency,Home,0,81243.64
+ENC00138,2026-01-07,2026-01-08,Cardiology,Private,Elective,Death,0,7945.85
+ENC00139,2026-03-30,2026-03-31,Neurology,Self-pay,Emergency,LAMA,0,26388.4
+ENC00140,2026-01-02,2026-01-04,Neurology,Private,Emergency,Death,0,13384.01
+ENC00141,2026-05-08,2026-05-14,General Medicine,Self-pay,Emergency,Home,0,63656.73
+ENC00142,2026-06-19,2026-06-22,General Medicine,Self-pay,Elective,Death,0,44330.0
+ENC00143,2026-06-12,2026-06-20,Nephrology,Self-pay,Emergency,Home,0,37895.9
+ENC00144,2026-02-12,2026-02-17,Neurology,Public,Elective,LAMA,0,81965.5
+ENC00145,2026-03-15,2026-03-16,General Medicine,Private,Emergency,Death,0,38451.46
+ENC00146,2026-02-08,2026-02-15,Nephrology,Private,Emergency,Home,0,53600.07
+ENC00147,2026-03-27,2026-04-01,General Medicine,Private,Emergency,Transfer,0,59525.28
+ENC00148,2026-06-16,2026-06-20,Neurology,Private,Elective,LAMA,0,47977.18
+ENC00149,2026-06-10,2026-06-11,Nephrology,Private,Emergency,Home,0,39687.95
+ENC00150,2026-03-31,2026-04-16,Nephrology,Self-pay,Emergency,Death,0,17310.4
+ENC00151,2026-05-25,2026-05-30,Neurology,Private,Emergency,Home,0,39623.75
+ENC00152,2026-03-14,2026-03-15,Orthopaedics,Public,Emergency,Home,0,37909.61
+ENC00153,2026-06-07,2026-06-09,Nephrology,Public,Elective,Transfer,0,73129.8
+ENC00154,2026-03-07,2026-03-08,Cardiology,Self-pay,Elective,Death,0,21025.59
+ENC00155,2026-01-23,2026-01-24,Nephrology,Self-pay,Emergency,Home,0,51617.6
+ENC00156,2026-04-04,2026-04-07,Orthopaedics,Private,Emergency,Transfer,0,79705.58
+ENC00157,2026-04-01,2026-04-06,Orthopaedics,Self-pay,Emergency,Transfer,0,83859.63
+ENC00158,2026-02-05,2026-02-08,Cardiology,Self-pay,Emergency,LAMA,0,34274.07
+ENC00159,2026-01-01,2026-01-09,Cardiology,Self-pay,Elective,Death,1,68909.64
+ENC00160,2026-01-07,2026-01-11,Cardiology,Self-pay,Emergency,Home,0,8156.51
+ENC00161,2026-02-24,2026-03-01,Orthopaedics,Public,Elective,Death,0,40053.76
+ENC00162,2026-05-05,2026-05-07,Nephrology,Private,Emergency,Home,0,66737.98
+ENC00163,2026-04-15,2026-04-21,General Medicine,Self-pay,Elective,Home,0,50825.39
+ENC00164,2026-06-18,2026-06-24,General Medicine,Private,Emergency,Home,0,27454.76
+ENC00165,2026-03-12,2026-03-15,Orthopaedics,Private,Elective,Death,0,48011.22
+ENC00166,2026-03-15,2026-03-18,General Medicine,Public,Emergency,Transfer,0,77074.23
+ENC00167,2026-03-22,2026-03-23,Cardiology,Private,Elective,Death,0,16301.83
+ENC00168,2026-04-29,2026-04-30,General Medicine,Public,Emergency,Death,0,29799.61
+ENC00169,2026-06-17,2026-06-20,Orthopaedics,Private,Emergency,Death,0,61267.44
+ENC00170,2026-05-04,2026-05-06,Nephrology,Private,Elective,LAMA,0,62456.76
+ENC00171,2026-03-15,2026-03-15,Cardiology,Public,Emergency,Death,0,81147.2
+ENC00172,2026-05-06,2026-05-13,Nephrology,Self-pay,Elective,Transfer,0,28983.31
+ENC00173,2026-04-25,2026-04-29,Orthopaedics,Public,Emergency,Death,0,30781.1
+ENC00174,2026-01-13,2026-01-19,Cardiology,Public,Elective,Death,0,57390.9
+ENC00175,2026-03-17,2026-03-20,General Medicine,Self-pay,Emergency,Home,0,38142.98
+ENC00176,2026-02-19,2026-02-24,General Medicine,Private,Elective,LAMA,0,83186.4
+ENC00177,2026-02-25,2026-02-28,Cardiology,Private,Emergency,LAMA,0,82296.42
+ENC00178,2026-04-15,2026-04-18,Neurology,Private,Emergency,Death,0,18194.83
+ENC00179,2026-02-01,2026-02-03,Nephrology,Public,Elective,Transfer,0,72830.55
+ENC00180,2026-02-19,2026-02-21,General Medicine,Private,Emergency,Home,0,49435.14
+ENC00181,2026-03-13,2026-03-20,Nephrology,Public,Elective,Death,0,40587.33
+ENC00182,2026-01-20,2026-01-23,Cardiology,Private,Elective,LAMA,0,54238.31
+ENC00183,2026-06-23,2026-06-25,Orthopaedics,Private,Emergency,Transfer,1,84345.36
+ENC00184,2026-04-23,2026-04-29,Orthopaedics,Private,Emergency,Home,0,71668.22
+ENC00185,2026-01-17,2026-01-21,Cardiology,Public,Elective,Death,0,51315.3
+ENC00186,2026-01-21,2026-01-22,Cardiology,Self-pay,Emergency,Transfer,1,21217.9
+ENC00187,2026-04-22,2026-04-25,Orthopaedics,Self-pay,Emergency,Transfer,0,46231.78
+ENC00188,2026-02-18,2026-02-24,Cardiology,Self-pay,Elective,Death,0,21316.89
+ENC00189,2026-05-11,2026-05-13,Nephrology,Private,Elective,LAMA,0,73250.76
+ENC00190,2026-03-02,2026-03-05,General Medicine,Private,Elective,Home,0,48528.35
+ENC00191,2026-01-06,2026-01-10,Orthopaedics,Private,Emergency,Home,0,23110.93
+ENC00192,2026-01-23,2026-01-27,Orthopaedics,Public,Emergency,Transfer,1,7812.45
+ENC00193,2026-01-20,2026-01-26,Neurology,Private,Emergency,LAMA,0,48207.13
+ENC00194,2026-06-19,2026-06-21,Neurology,Private,Emergency,Death,0,74697.26
+ENC00195,2026-01-15,2026-01-18,Nephrology,Private,Emergency,LAMA,1,14065.87
+ENC00196,2026-06-11,2026-06-17,General Medicine,Private,Emergency,Death,0,6310.1
+ENC00197,2026-02-13,2026-02-16,Nephrology,Self-pay,Emergency,Death,0,35310.08
+ENC00198,2026-03-23,2026-03-25,Orthopaedics,Public,Emergency,Transfer,0,56550.15
+ENC00199,2026-06-07,2026-06-10,General Medicine,Private,Emergency,Home,0,11176.07
+ENC00200,2026-04-28,2026-05-03,Cardiology,Public,Elective,Transfer,0,56536.05
+ENC00201,2026-02-18,2026-02-22,Neurology,Public,Elective,Death,1,34488.37
+ENC00202,2026-04-27,2026-05-06,Orthopaedics,Public,Emergency,LAMA,1,65461.95
+ENC00203,2026-05-22,2026-05-28,Neurology,Self-pay,Emergency,Home,0,75363.12
+ENC00204,2026-01-23,2026-01-26,Neurology,Self-pay,Elective,Home,0,39565.68
+ENC00205,2026-06-22,2026-06-26,Nephrology,Self-pay,Emergency,Transfer,0,57441.35
+ENC00206,2026-05-17,2026-05-20,Cardiology,Public,Emergency,Death,0,19213.84
+ENC00207,2026-06-03,2026-06-07,Orthopaedics,Self-pay,Elective,Home,0,36664.61
+ENC00208,2026-01-05,2026-01-07,Neurology,Public,Elective,Death,0,53323.47
+ENC00209,2026-05-10,2026-05-11,Cardiology,Public,Elective,Home,0,63735.13
+ENC00210,2026-06-04,2026-06-08,Neurology,Public,Elective,Home,0,43140.17
+ENC00211,2026-02-20,2026-02-27,Orthopaedics,Private,Elective,Death,0,73404.77
+ENC00212,2026-04-29,2026-05-02,Nephrology,Private,Elective,Home,0,16194.36
+ENC00213,2026-04-27,2026-04-29,Neurology,Public,Emergency,Home,0,57113.9
+ENC00214,2026-06-01,2026-06-05,Nephrology,Public,Emergency,Transfer,0,5406.75
+ENC00215,2026-01-14,2026-01-17,Nephrology,Self-pay,Elective,Home,0,79034.94
+ENC00216,2026-01-24,2026-01-26,Orthopaedics,Public,Elective,Transfer,0,24716.65
+ENC00217,2026-02-03,2026-02-05,Orthopaedics,Self-pay,Elective,Death,0,16874.17
+ENC00218,2026-04-25,2026-04-27,Orthopaedics,Private,Elective,LAMA,1,48057.78
+ENC00219,2026-04-18,2026-04-22,Orthopaedics,Private,Elective,Home,0,4182.47
+ENC00220,2026-03-29,2026-04-04,General Medicine,Self-pay,Emergency,LAMA,0,11690.66
+ENC00221,2026-02-06,2026-02-08,Neurology,Public,Emergency,Death,0,29102.14
+ENC00222,2026-01-29,2026-01-30,General Medicine,Public,Emergency,Death,0,72776.78
+ENC00223,2026-05-31,2026-06-01,Orthopaedics,Self-pay,Emergency,Home,0,22911.38
+ENC00224,2026-02-05,2026-02-07,Neurology,Private,Emergency,Home,0,11050.9
+ENC00225,2026-06-11,2026-06-15,Neurology,Self-pay,Emergency,LAMA,0,9219.68
+ENC00226,2026-05-19,2026-05-22,Neurology,Private,Emergency,LAMA,0,78287.73
+ENC00227,2026-02-05,2026-02-08,Neurology,Private,Emergency,Death,1,3891.54
+ENC00228,2026-02-22,2026-02-25,Cardiology,Public,Elective,Death,0,20569.36
+ENC00229,2026-01-08,2026-01-13,Orthopaedics,Public,Emergency,Transfer,0,27322.6
+ENC00230,2026-02-26,2026-03-02,Cardiology,Public,Elective,Home,0,19591.62
+ENC00231,2026-01-18,2026-01-22,Orthopaedics,Public,Elective,Home,0,13517.89
+ENC00232,2026-03-12,2026-03-15,General Medicine,Private,Elective,LAMA,0,24292.41
+ENC00233,2026-03-23,2026-03-28,Cardiology,Public,Emergency,Transfer,0,51767.74
+ENC00234,2026-01-27,2026-02-02,General Medicine,Self-pay,Elective,Home,0,64474.01
+ENC00235,2026-03-15,2026-03-20,Nephrology,Self-pay,Emergency,LAMA,0,24584.4
+ENC00236,2026-06-07,2026-06-10,Nephrology,Private,Elective,Transfer,0,42898.69
+ENC00237,2026-02-27,2026-03-01,Nephrology,Self-pay,Elective,Transfer,0,6220.29
+ENC00238,2026-01-13,2026-01-15,Orthopaedics,Self-pay,Emergency,Transfer,0,4064.33
+ENC00239,2026-01-07,2026-01-13,General Medicine,Public,Emergency,Transfer,0,70473.2
+ENC00240,2026-05-26,2026-06-01,Nephrology,Public,Elective,Home,0,69159.4
+ENC00241,2026-05-19,2026-05-20,General Medicine,Private,Elective,LAMA,0,29261.13
+ENC00242,2026-03-31,2026-04-08,Neurology,Self-pay,Emergency,Transfer,0,7374.4
+ENC00243,2026-01-21,2026-01-23,Nephrology,Public,Emergency,Home,0,28632.57
+ENC00244,2026-03-16,2026-03-22,General Medicine,Self-pay,Emergency,Home,0,52251.69
+ENC00245,2026-02-24,2026-03-02,Nephrology,Self-pay,Elective,LAMA,1,77854.76
+ENC00246,2026-06-26,2026-06-30,General Medicine,Public,Elective,Transfer,0,24193.92
+ENC00247,2026-02-17,2026-02-23,General Medicine,Public,Elective,LAMA,0,39451.21
+ENC00248,2026-01-02,2026-01-08,Neurology,Private,Emergency,Home,0,78156.66
+ENC00249,2026-04-30,2026-05-03,General Medicine,Private,Elective,Home,0,15242.83
+ENC00250,2026-05-28,2026-05-31,Orthopaedics,Public,Emergency,LAMA,0,24410.38
+ENC00251,2026-01-15,2026-01-17,General Medicine,Public,Emergency,Transfer,0,31770.19
+ENC00252,2026-03-31,2026-04-04,Nephrology,Private,Elective,Home,0,33536.74
+ENC00253,2026-03-14,2026-03-25,Nephrology,Self-pay,Emergency,LAMA,0,73288.59
+ENC00254,2026-05-12,2026-05-15,General Medicine,Private,Emergency,Transfer,1,42156.74
+ENC00255,2026-02-28,2026-03-03,Neurology,Self-pay,Elective,Transfer,0,73748.68
+ENC00256,2026-04-16,2026-04-21,General Medicine,Private,Emergency,Transfer,0,63243.39
+ENC00257,2026-05-11,2026-05-19,General Medicine,Self-pay,Elective,LAMA,0,64475.57
+ENC00258,2026-06-11,2026-06-12,Cardiology,Public,Elective,Transfer,0,22450.49
+ENC00259,2026-06-02,2026-06-11,General Medicine,Public,Elective,LAMA,0,68566.79
+ENC00260,2026-04-04,2026-04-10,Nephrology,Public,Elective,Transfer,0,27350.32
+ENC00261,2026-05-27,2026-05-29,Neurology,Private,Emergency,Transfer,0,13345.68
+ENC00262,2026-03-20,2026-03-26,Neurology,Self-pay,Emergency,Death,0,4783.58
+ENC00263,2026-03-03,2026-03-07,Nephrology,Private,Emergency,Death,0,74080.96
+ENC00264,2026-02-24,2026-03-02,Nephrology,Self-pay,Emergency,LAMA,0,60740.06
+ENC00265,2026-04-28,2026-05-02,Orthopaedics,Public,Elective,Death,0,38981.07
+ENC00266,2026-03-28,2026-03-30,Cardiology,Self-pay,Elective,LAMA,0,67337.54
+ENC00267,2026-03-26,2026-04-02,Orthopaedics,Self-pay,Emergency,LAMA,0,29246.75
+ENC00268,2026-04-03,2026-04-06,Cardiology,Public,Elective,Transfer,0,78865.68
+ENC00269,2026-03-18,2026-03-25,Orthopaedics,Private,Emergency,Death,0,26099.33
+ENC00270,2026-03-25,2026-04-02,General Medicine,Private,Elective,Home,0,47014.6
+ENC00271,2026-02-23,2026-03-01,Nephrology,Self-pay,Elective,Transfer,0,5167.33
+ENC00272,2026-01-07,2026-01-10,General Medicine,Self-pay,Emergency,LAMA,0,61475.39
+ENC00273,2026-06-08,2026-06-10,General Medicine,Public,Emergency,Death,0,5456.06
+ENC00274,2026-03-29,2026-04-09,Neurology,Public,Emergency,Transfer,0,15914.9
+ENC00275,2026-04-20,2026-04-23,Orthopaedics,Self-pay,Elective,Death,0,32957.22
+ENC00276,2026-06-13,2026-06-13,General Medicine,Private,Emergency,Home,1,73082.69
+ENC00277,2026-01-09,2026-01-10,Nephrology,Public,Emergency,LAMA,0,22752.44
+ENC00278,2026-03-01,2026-03-02,General Medicine,Public,Emergency,Home,0,59781.6
+ENC00279,2026-04-29,2026-05-02,Orthopaedics,Private,Emergency,LAMA,0,33962.46
+ENC00280,2026-06-10,2026-06-13,Nephrology,Public,Emergency,Death,0,75099.4
+ENC00281,2026-06-16,2026-06-21,General Medicine,Private,Elective,LAMA,0,20978.7
+ENC00282,2026-06-16,2026-06-19,Nephrology,Private,Emergency,Death,0,30502.17
+ENC00283,2026-06-09,2026-06-11,Orthopaedics,Private,Elective,LAMA,0,43222.76
+ENC00284,2026-01-27,2026-01-30,Nephrology,Public,Emergency,Home,0,49264.9
+ENC00285,2026-02-13,2026-02-16,Cardiology,Private,Elective,Home,0,45005.53
+ENC00286,2026-06-20,2026-06-29,Nephrology,Self-pay,Elective,LAMA,0,69644.52
+ENC00287,2026-02-21,2026-02-23,Cardiology,Private,Elective,LAMA,0,57986.24
+ENC00288,2026-03-18,2026-03-19,Cardiology,Public,Elective,Home,0,43474.12
+ENC00289,2026-02-22,2026-02-25,Orthopaedics,Self-pay,Emergency,Transfer,0,42321.12
+ENC00290,2026-05-08,2026-05-13,General Medicine,Self-pay,Emergency,Transfer,0,75734.21
+ENC00291,2026-05-22,2026-05-25,Neurology,Public,Emergency,Death,0,69582.67
+ENC00292,2026-01-02,2026-01-03,Neurology,Private,Elective,Home,0,65325.91
+ENC00293,2026-06-25,2026-07-02,Cardiology,Public,Emergency,LAMA,0,43888.18
+ENC00294,2026-05-23,2026-05-27,Cardiology,Self-pay,Elective,LAMA,0,72175.7
+ENC00295,2026-05-14,2026-05-17,General Medicine,Private,Elective,LAMA,0,67165.39
+ENC00296,2026-04-03,2026-04-08,Orthopaedics,Self-pay,Elective,Death,0,19265.67
+ENC00297,2026-03-26,2026-03-27,Orthopaedics,Private,Emergency,LAMA,0,4140.53
+ENC00298,2026-02-17,2026-02-19,General Medicine,Private,Elective,Death,0,80818.32
+ENC00299,2026-01-10,2026-01-12,Orthopaedics,Private,Elective,Transfer,0,26140.14
+ENC00300,2026-04-03,2026-04-08,Neurology,Public,Emergency,LAMA,0,34387.52
+ENC00301,2026-02-04,2026-02-09,Neurology,Public,Emergency,Transfer,0,27215.78
+ENC00302,2026-03-23,2026-03-31,Orthopaedics,Private,Emergency,Death,0,21022.49
+ENC00303,2026-04-15,2026-04-21,Cardiology,Private,Emergency,LAMA,0,50951.32
+ENC00304,2026-06-13,2026-06-15,Cardiology,Public,Emergency,Death,0,74349.59
+ENC00305,2026-03-20,2026-03-22,Orthopaedics,Public,Elective,LAMA,0,56462.68
+ENC00306,2026-06-07,2026-06-09,Cardiology,Private,Elective,LAMA,1,74711.72
+ENC00307,2026-05-25,2026-05-30,Orthopaedics,Private,Elective,Home,0,61901.58
+ENC00308,2026-06-18,2026-06-20,Neurology,Self-pay,Emergency,Transfer,0,71333.11
+ENC00309,2026-06-01,2026-06-04,Cardiology,Public,Emergency,Home,0,28374.36
+ENC00310,2026-05-20,2026-05-23,Orthopaedics,Private,Elective,Death,0,45982.16
+ENC00311,2026-04-30,2026-05-01,Orthopaedics,Private,Elective,Home,1,50663.5
+ENC00312,2026-05-21,2026-05-22,Cardiology,Public,Elective,Death,0,53524.95
+ENC00313,2026-04-17,2026-04-24,Neurology,Self-pay,Elective,LAMA,0,76477.57
+ENC00314,2026-06-06,2026-06-07,Nephrology,Private,Elective,Transfer,0,46725.59
+ENC00315,2026-05-20,2026-05-27,Cardiology,Private,Emergency,Transfer,0,62118.39
+ENC00316,2026-02-23,2026-02-26,Neurology,Private,Elective,Death,1,81404.69
+ENC00317,2026-05-18,2026-05-21,Orthopaedics,Public,Elective,Home,0,57097.77
+ENC00318,2026-05-19,2026-05-23,Neurology,Private,Elective,Home,0,24968.61
+ENC00319,2026-06-25,2026-06-26,General Medicine,Private,Emergency,Transfer,0,51793.6
+ENC00320,2026-01-21,2026-01-23,Nephrology,Self-pay,Elective,Home,0,39831.71
+ENC00321,2026-03-08,2026-03-09,General Medicine,Private,Emergency,LAMA,1,27311.57
+ENC00322,2026-03-12,2026-03-17,Neurology,Private,Elective,LAMA,0,45959.16
+ENC00323,2026-02-26,2026-03-01,Orthopaedics,Self-pay,Emergency,LAMA,0,30481.39
+ENC00324,2026-06-24,2026-06-29,Neurology,Private,Emergency,Transfer,0,69617.94
+ENC00325,2026-04-22,2026-04-27,Cardiology,Public,Emergency,Transfer,1,43821.3
+ENC00326,2026-01-24,2026-01-26,Neurology,Public,Elective,LAMA,0,84329.45
+ENC00327,2026-05-23,2026-05-29,Nephrology,Public,Elective,Transfer,0,62801.95
+ENC00328,2026-02-06,2026-02-07,General Medicine,Private,Emergency,Death,0,36293.04
+ENC00329,2026-01-16,2026-01-17,General Medicine,Private,Elective,Death,1,66000.69
+ENC00330,2026-03-21,2026-03-22,Cardiology,Private,Emergency,Death,0,69000.18
+ENC00331,2026-01-16,2026-01-23,Nephrology,Private,Elective,LAMA,0,45275.0
+ENC00332,2026-02-03,2026-02-09,Orthopaedics,Private,Emergency,Home,0,44416.55
+ENC00333,2026-04-13,2026-04-14,Orthopaedics,Self-pay,Emergency,LAMA,0,68308.75
+ENC00334,2026-01-26,2026-01-27,Orthopaedics,Private,Elective,LAMA,0,45247.49
+ENC00335,2026-01-06,2026-01-10,Neurology,Self-pay,Elective,Home,0,11492.45
+ENC00336,2026-01-26,2026-01-29,Nephrology,Public,Elective,Death,1,3650.27
+ENC00337,2026-04-11,2026-04-17,Orthopaedics,Self-pay,Elective,Death,0,37410.99
+ENC00338,2026-04-03,2026-04-05,General Medicine,Public,Emergency,Death,0,25111.01
+ENC00339,2026-05-15,2026-05-17,Orthopaedics,Private,Elective,Transfer,0,22750.99
+ENC00340,2026-05-02,2026-05-08,General Medicine,Public,Emergency,LAMA,0,51099.63
+ENC00341,2026-05-03,2026-05-05,Cardiology,Private,Elective,Transfer,0,10577.46
+ENC00342,2026-01-14,2026-01-20,Nephrology,Self-pay,Elective,Home,0,46558.01
+ENC00343,2026-01-28,2026-02-05,Nephrology,Public,Emergency,LAMA,0,72750.25
+ENC00344,2026-04-28,2026-05-01,Cardiology,Private,Elective,LAMA,0,44449.81
+ENC00345,2026-01-16,2026-01-17,Nephrology,Self-pay,Elective,Death,0,5797.74
+ENC00346,2026-01-13,2026-01-15,Nephrology,Public,Elective,Death,0,59923.55
+ENC00347,2026-03-28,2026-03-29,Neurology,Public,Elective,Home,0,33878.53
+ENC00348,2026-05-21,2026-05-24,Neurology,Self-pay,Elective,Death,0,82767.29
+ENC00349,2026-01-03,2026-01-05,Neurology,Private,Emergency,LAMA,0,75189.19
+ENC00350,2026-03-22,2026-03-22,Nephrology,Public,Elective,Home,0,43320.78
+ENC00351,2026-05-16,2026-05-18,Nephrology,Private,Emergency,Home,0,33735.11
+ENC00352,2026-05-14,2026-05-17,Cardiology,Public,Emergency,Death,0,55797.62
+ENC00353,2026-03-10,2026-03-11,Nephrology,Public,Elective,Home,0,63024.05
+ENC00354,2026-06-11,2026-06-14,Neurology,Self-pay,Elective,Transfer,0,70057.42
+ENC00355,2026-03-29,2026-03-31,General Medicine,Private,Elective,Home,1,22579.38
+ENC00356,2026-01-08,2026-01-10,Orthopaedics,Self-pay,Elective,Home,0,43829.2
+ENC00357,2026-03-17,2026-03-19,Nephrology,Public,Elective,Transfer,1,23927.56
+ENC00358,2026-02-16,2026-02-18,Neurology,Self-pay,Emergency,LAMA,0,30326.43
+ENC00359,2026-05-15,2026-05-18,Cardiology,Private,Elective,Death,0,81394.71
+ENC00360,2026-04-07,2026-04-08,Neurology,Public,Elective,Transfer,0,81151.28
+ENC00361,2026-06-13,2026-06-16,General Medicine,Private,Emergency,Transfer,0,61953.31
+ENC00362,2026-01-03,2026-01-13,General Medicine,Self-pay,Elective,Transfer,0,53489.78
+ENC00363,2026-04-24,2026-04-30,Neurology,Self-pay,Elective,Death,1,43613.56
+ENC00364,2026-05-11,2026-05-13,Orthopaedics,Public,Emergency,Death,0,19964.57
+ENC00365,2026-04-17,2026-04-23,Orthopaedics,Private,Emergency,Transfer,0,77528.7
+ENC00366,2026-06-23,2026-06-23,Neurology,Private,Elective,Death,0,65315.95
+ENC00367,2026-05-26,2026-06-04,General Medicine,Public,Elective,Home,0,33133.02
+ENC00368,2026-06-16,2026-06-18,Nephrology,Self-pay,Elective,LAMA,1,63907.18
+ENC00369,2026-03-09,2026-03-12,Neurology,Self-pay,Emergency,Home,0,6519.43
+ENC00370,2026-03-02,2026-03-04,Cardiology,Private,Emergency,LAMA,0,78083.71
+ENC00371,2026-01-19,2026-01-21,Neurology,Private,Elective,Home,0,34290.58
+ENC00372,2026-04-17,2026-04-18,Orthopaedics,Public,Elective,Death,0,73456.94
+ENC00373,2026-01-17,2026-01-25,Neurology,Public,Emergency,Home,0,12427.93
+ENC00374,2026-03-27,2026-03-29,Orthopaedics,Self-pay,Emergency,Home,0,72134.7
+ENC00375,2026-04-05,2026-04-09,Neurology,Public,Elective,LAMA,0,24125.47
+ENC00376,2026-05-20,2026-05-23,General Medicine,Self-pay,Elective,Death,0,14845.71
+ENC00377,2026-01-06,2026-01-06,Orthopaedics,Private,Elective,Death,0,47987.36
+ENC00378,2026-02-02,2026-02-03,General Medicine,Private,Emergency,Death,0,26098.79
+ENC00379,2026-04-30,2026-05-06,Orthopaedics,Private,Elective,Home,0,70079.35
+ENC00380,2026-05-30,2026-06-03,General Medicine,Self-pay,Emergency,Death,0,62519.14
+ENC00381,2026-04-22,2026-04-28,Cardiology,Private,Emergency,Death,0,4471.25
+ENC00382,2026-01-27,2026-02-01,Orthopaedics,Self-pay,Emergency,LAMA,0,79368.65
+ENC00383,2026-01-05,2026-01-07,General Medicine,Private,Emergency,Transfer,0,40558.84
+ENC00384,2026-03-06,2026-03-16,Neurology,Private,Emergency,Transfer,0,7271.21
+ENC00385,2026-04-23,2026-04-25,Cardiology,Self-pay,Emergency,Transfer,0,43635.82
+ENC00386,2026-01-11,2026-01-13,General Medicine,Private,Elective,LAMA,0,18366.83
+ENC00387,2026-02-17,2026-02-21,General Medicine,Public,Emergency,Death,0,84198.8
+ENC00388,2026-06-24,2026-07-05,Neurology,Self-pay,Emergency,Home,0,20821.42
+ENC00389,2026-01-23,2026-01-23,Nephrology,Private,Emergency,Transfer,0,39817.44
+ENC00390,2026-03-01,2026-03-02,Cardiology,Private,Elective,LAMA,0,16623.84
+ENC00391,2026-05-13,2026-05-15,Neurology,Private,Emergency,Home,1,7381.07
+ENC00392,2026-03-10,2026-03-15,Neurology,Public,Emergency,Transfer,0,49338.54
+ENC00393,2026-06-24,2026-07-05,Neurology,Private,Emergency,Transfer,0,51935.03
+ENC00394,2026-02-11,2026-02-17,Neurology,Private,Elective,Transfer,0,57735.24
+ENC00395,2026-02-22,2026-02-25,Cardiology,Private,Emergency,Death,0,24329.88
+ENC00396,2026-03-28,2026-04-02,Cardiology,Public,Emergency,Home,0,70300.66
+ENC00397,2026-01-03,2026-01-06,General Medicine,Self-pay,Elective,Home,0,42991.16
+ENC00398,2026-03-11,2026-03-12,Nephrology,Self-pay,Elective,Transfer,0,6997.49
+ENC00399,2026-05-29,2026-05-30,Cardiology,Self-pay,Emergency,Transfer,0,10219.06
+ENC00400,2026-03-22,2026-03-29,General Medicine,Private,Emergency,Home,0,4923.45
+ENC00401,2026-01-23,2026-01-26,Cardiology,Self-pay,Elective,Transfer,0,44930.26
+ENC00402,2026-06-01,2026-06-06,Cardiology,Private,Emergency,Home,0,44931.59
+ENC00403,2026-03-25,2026-03-28,General Medicine,Private,Elective,Death,0,84819.33
+ENC00404,2026-04-11,2026-04-14,Nephrology,Public,Emergency,LAMA,0,63865.79
+ENC00405,2026-03-04,2026-03-12,Neurology,Private,Elective,Transfer,0,67808.2
+ENC00406,2026-05-22,2026-05-27,Neurology,Public,Emergency,Home,0,42443.14
+ENC00407,2026-05-24,2026-05-27,Neurology,Public,Elective,Home,0,58350.5
+ENC00408,2026-05-28,2026-05-30,Neurology,Self-pay,Emergency,Death,0,77706.08
+ENC00409,2026-05-08,2026-05-09,Nephrology,Private,Emergency,Home,0,30633.6
+ENC00410,2026-01-21,2026-01-23,Neurology,Public,Elective,Transfer,0,65108.6
+ENC00411,2026-04-05,2026-04-08,Neurology,Public,Elective,Death,0,79477.0
+ENC00412,2026-05-10,2026-05-17,Nephrology,Public,Emergency,Transfer,0,75956.85
+ENC00413,2026-01-02,2026-01-04,Cardiology,Private,Emergency,Home,0,16482.29
+ENC00414,2026-06-03,2026-06-09,Nephrology,Public,Elective,Death,0,27602.49
+ENC00415,2026-05-24,2026-05-27,Neurology,Public,Elective,Death,0,52978.55
+ENC00416,2026-06-10,2026-06-12,General Medicine,Self-pay,Elective,Home,0,24846.32
+ENC00417,2026-05-04,2026-05-11,General Medicine,Self-pay,Emergency,LAMA,0,3547.4
+ENC00418,2026-06-14,2026-06-22,General Medicine,Public,Elective,Home,0,72620.88
+ENC00419,2026-04-19,2026-04-21,Nephrology,Public,Elective,Transfer,0,33325.27
+ENC00420,2026-06-17,2026-06-19,Orthopaedics,Public,Elective,Death,0,35022.96
+ENC00421,2026-02-15,2026-02-21,General Medicine,Public,Elective,Death,0,5194.36
+ENC00422,2026-01-20,2026-01-24,Neurology,Public,Elective,LAMA,0,69454.06
+ENC00423,2026-06-29,2026-07-02,Cardiology,Self-pay,Elective,LAMA,0,66955.41
+ENC00424,2026-05-12,2026-05-14,General Medicine,Private,Elective,LAMA,0,82201.03
+ENC00425,2026-04-26,2026-05-04,Nephrology,Public,Emergency,LAMA,0,5905.39
+ENC00426,2026-05-12,2026-05-15,Nephrology,Public,Emergency,LAMA,0,27789.12
+ENC00427,2026-01-25,2026-01-30,Nephrology,Public,Elective,LAMA,0,48372.62
+ENC00428,2026-05-05,2026-05-11,Neurology,Public,Emergency,Transfer,0,75886.02
+ENC00429,2026-06-14,2026-06-16,General Medicine,Self-pay,Elective,LAMA,0,5539.75
+ENC00430,2026-01-23,2026-01-26,Neurology,Self-pay,Elective,Death,0,54303.82
+ENC00431,2026-04-11,2026-04-13,Cardiology,Public,Elective,Transfer,0,42276.61
+ENC00432,2026-05-26,2026-06-01,Nephrology,Public,Elective,Transfer,0,40985.68
+ENC00433,2026-05-06,2026-05-08,Orthopaedics,Self-pay,Emergency,LAMA,0,75492.77
+ENC00434,2026-05-20,2026-05-22,Nephrology,Public,Emergency,LAMA,0,42153.27
+ENC00435,2026-02-25,2026-02-26,Cardiology,Private,Emergency,Death,0,62614.23
+ENC00436,2026-01-10,2026-01-13,General Medicine,Self-pay,Elective,Transfer,0,29920.31
+ENC00437,2026-06-09,2026-06-12,Cardiology,Self-pay,Emergency,Transfer,0,73093.46
+ENC00438,2026-02-22,2026-02-25,General Medicine,Public,Elective,Transfer,0,32953.82
+ENC00439,2026-04-22,2026-04-27,Orthopaedics,Private,Emergency,LAMA,0,76520.97
+ENC00440,2026-03-03,2026-03-06,Cardiology,Self-pay,Elective,Death,0,32830.9
+ENC00441,2026-02-09,2026-02-12,Orthopaedics,Private,Emergency,LAMA,0,38114.45
+ENC00442,2026-03-12,2026-03-15,General Medicine,Public,Emergency,Transfer,0,44694.63
+ENC00443,2026-03-13,2026-03-14,Cardiology,Public,Elective,Home,0,29677.97
+ENC00444,2026-06-07,2026-06-12,Cardiology,Private,Emergency,Transfer,1,60976.25
+ENC00445,2026-06-06,2026-06-10,Nephrology,Self-pay,Emergency,LAMA,0,11858.26
+ENC00446,2026-04-16,2026-04-23,Orthopaedics,Public,Elective,Home,0,35613.33
+ENC00447,2026-02-12,2026-02-15,Neurology,Self-pay,Emergency,LAMA,0,38865.82
+ENC00448,2026-04-06,2026-04-07,Neurology,Self-pay,Emergency,Home,0,24475.36
+ENC00449,2026-03-27,2026-03-31,Neurology,Self-pay,Elective,Home,0,14516.24
+ENC00450,2026-02-07,2026-02-07,Nephrology,Self-pay,Elective,LAMA,0,14093.15
+ENC00451,2026-02-14,2026-02-18,General Medicine,Private,Emergency,Death,0,29878.06
+ENC00452,2026-03-03,2026-03-05,Cardiology,Private,Elective,LAMA,0,64185.16
+ENC00453,2026-01-01,2026-01-03,General Medicine,Public,Emergency,Home,0,50633.47
+ENC00454,2026-05-23,2026-05-25,Nephrology,Private,Emergency,LAMA,0,52228.1
+ENC00455,2026-02-22,2026-02-25,General Medicine,Private,Elective,Transfer,0,21894.73
+ENC00456,2026-04-07,2026-04-10,Nephrology,Private,Elective,Transfer,0,42184.54
+ENC00457,2026-06-05,2026-06-10,Neurology,Public,Emergency,Home,0,27844.37
+ENC00458,2026-06-20,2026-06-23,Cardiology,Private,Emergency,Death,0,22924.34
+ENC00459,2026-04-13,2026-04-18,Cardiology,Public,Elective,Transfer,0,52415.61
+ENC00460,2026-05-17,2026-05-19,Nephrology,Self-pay,Emergency,Death,0,63622.7
+ENC00461,2026-01-15,2026-01-18,Orthopaedics,Self-pay,Emergency,LAMA,0,61572.67
+ENC00462,2026-03-08,2026-03-11,General Medicine,Self-pay,Elective,Death,0,19128.1
+ENC00463,2026-06-20,2026-06-29,Nephrology,Self-pay,Elective,Home,0,73456.41
+ENC00464,2026-04-21,2026-04-23,Nephrology,Self-pay,Emergency,Home,0,53075.98
+ENC00465,2026-06-17,2026-06-18,Orthopaedics,Public,Elective,Death,0,54043.65
+ENC00466,2026-02-15,2026-02-16,Neurology,Self-pay,Emergency,Home,1,71652.64
+ENC00467,2026-03-02,2026-03-07,General Medicine,Public,Emergency,LAMA,0,76382.85
+ENC00468,2026-03-28,2026-03-31,General Medicine,Self-pay,Emergency,LAMA,0,63970.33
+ENC00469,2026-03-19,2026-03-21,General Medicine,Private,Emergency,Death,0,19784.44
+ENC00470,2026-05-28,2026-05-30,Nephrology,Public,Elective,Transfer,0,64651.62
+ENC00471,2026-06-08,2026-06-10,Neurology,Public,Elective,LAMA,0,59622.73
+ENC00472,2026-02-14,2026-02-20,Neurology,Private,Elective,Home,0,59732.96
+ENC00473,2026-04-14,2026-04-20,Neurology,Private,Elective,LAMA,0,18537.75
+ENC00474,2026-04-09,2026-04-17,Nephrology,Private,Emergency,LAMA,0,26488.46
+ENC00475,2026-01-19,2026-01-28,Neurology,Self-pay,Emergency,Home,0,45641.65
+ENC00476,2026-03-28,2026-03-30,Nephrology,Public,Elective,LAMA,0,62172.66
+ENC00477,2026-02-03,2026-02-07,General Medicine,Public,Elective,Home,0,48906.1
+ENC00478,2026-02-19,2026-02-22,Cardiology,Private,Emergency,LAMA,1,59610.65
+ENC00479,2026-04-02,2026-04-12,Cardiology,Public,Emergency,Transfer,0,8015.27
+ENC00480,2026-03-10,2026-03-14,Orthopaedics,Private,Elective,Death,0,13920.65
+ENC00481,2026-03-03,2026-03-09,Neurology,Self-pay,Elective,LAMA,0,82255.15
+ENC00482,2026-01-06,2026-01-13,Neurology,Public,Elective,Transfer,0,55511.82
+ENC00483,2026-04-24,2026-04-29,Nephrology,Public,Elective,Home,0,12816.93
+ENC00484,2026-06-20,2026-06-23,Orthopaedics,Public,Emergency,Death,0,8192.79
+ENC00485,2026-06-29,2026-06-29,Cardiology,Self-pay,Emergency,Home,0,69653.92
+ENC00486,2026-03-02,2026-03-05,Neurology,Private,Elective,Death,0,67093.79
+ENC00487,2026-01-25,2026-01-27,General Medicine,Private,Elective,LAMA,0,38363.14
+ENC00488,2026-06-14,2026-06-19,Orthopaedics,Private,Emergency,LAMA,0,44724.59
+ENC00489,2026-06-12,2026-06-19,Nephrology,Self-pay,Elective,LAMA,0,11946.09
+ENC00490,2026-05-26,2026-05-27,Orthopaedics,Private,Emergency,Home,0,61599.16
+ENC00491,2026-01-15,2026-01-19,Cardiology,Self-pay,Elective,Death,0,35063.34
+ENC00492,2026-02-12,2026-02-13,Orthopaedics,Public,Emergency,Death,0,27090.9
+ENC00493,2026-04-23,2026-04-27,Orthopaedics,Private,Elective,Transfer,0,67413.28
+ENC00494,2026-06-21,2026-06-25,General Medicine,Private,Emergency,Home,0,59707.05
+ENC00495,2026-04-25,2026-05-02,General Medicine,Private,Elective,Transfer,0,80544.96
+ENC00496,2026-02-26,2026-03-02,Orthopaedics,Public,Emergency,Home,0,49831.46
+ENC00497,2026-05-22,2026-05-25,Cardiology,Self-pay,Elective,Death,0,32523.67
+ENC00498,2026-05-27,2026-06-03,General Medicine,Self-pay,Elective,Home,0,21917.41
+ENC00499,2026-01-16,2026-01-22,Cardiology,Self-pay,Elective,Transfer,0,45703.07
+ENC00500,2026-01-22,2026-01-29,Orthopaedics,Private,Elective,Home,0,65134.25

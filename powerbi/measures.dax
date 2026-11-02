@@ -1,0 +1,65 @@
+// Healthcare Data Analyst Academy v2.3.0 — DAX measure library
+// Table names match the supplied star-schema CSV model.
+// Create measures using Modeling > New measure.
+// These measures describe synthetic training records only.
+
+Encounter Count =
+DISTINCTCOUNT ( DimEncounter[encounter_id] )
+
+Mean Length of Stay (days) =
+AVERAGE ( FactEncounterMetrics[length_of_stay_days] )
+
+Supplied Readmission Flags =
+SUM ( FactEncounterMetrics[readmission_30d_flag] )
+
+Supplied Readmission Flag Rate =
+DIVIDE (
+    [Supplied Readmission Flags],
+    COUNTROWS ( FactEncounterMetrics )
+)
+
+Medication Order Count =
+COUNTROWS ( FactMedicationOrders )
+
+Ordered Quantity =
+SUM ( FactMedicationOrders[quantity] )
+
+Synthetic Order Value (INR) =
+SUM ( FactMedicationOrders[line_total_inr] )
+
+Orders with Missing Unit Cost =
+CALCULATE (
+    COUNTROWS ( FactMedicationOrders ),
+    ISBLANK ( FactMedicationOrders[unit_cost_inr] )
+)
+
+Orders with Blank Therapeutic Class =
+CALCULATE (
+    COUNTROWS ( FactMedicationOrders ),
+    FILTER (
+        FactMedicationOrders,
+        ISBLANK ( FactMedicationOrders[therapeutic_class] )
+            || TRIM ( FactMedicationOrders[therapeutic_class] ) = ""
+    )
+)
+
+Orphan Order Encounter References =
+COUNTROWS (
+    FILTER (
+        FactMedicationOrders,
+        NOT CONTAINS (
+            DimEncounter,
+            DimEncounter[encounter_id], FactMedicationOrders[encounter_key]
+        )
+    )
+)
+
+// Optional: average LOS only for completed encounters with nonblank LOS.
+Mean LOS — Nonblank =
+AVERAGEX (
+    FILTER ( FactEncounterMetrics, NOT ISBLANK ( FactEncounterMetrics[length_of_stay_days] ) ),
+    FactEncounterMetrics[length_of_stay_days]
+)
+
+// Important: do not create a readmission "rate" from order rows or sum
+// distinct patient counts across departments. Use the encounter-level denominator.

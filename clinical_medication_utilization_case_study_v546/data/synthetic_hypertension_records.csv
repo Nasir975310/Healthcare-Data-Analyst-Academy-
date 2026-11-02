@@ -1,0 +1,302 @@
+record_id,age_years,sex,diabetes,ckd,ischemic_heart_disease,primary_drug_class,regimen_classes,antihypertensive_count,adherence_category,baseline_sbp_mmhg,baseline_dbp_mmhg,followup_sbp_mmhg,followup_dbp_mmhg,followup_days
+HTN0001,71,Female,0,0,0,ARB,ARB,1,High,174,85,155,79,90
+HTN0002,65,Male,1,1,0,ACE inhibitor,ACE inhibitor,1,High,159,93,138,79,60
+HTN0003,62,Female,0,0,0,Beta blocker,Beta blocker + ARB,2,Moderate,144,92,131,88,60
+HTN0004,64,Male,0,0,0,Beta blocker,Beta blocker,1,High,134,100,112,92,30
+HTN0005,61,Male,1,0,1,ACE inhibitor,ACE inhibitor + Calcium channel blocker,2,High,181,91,168,82,90
+HTN0006,70,Male,0,0,0,ACE inhibitor,ACE inhibitor,1,Low,165,94,162,94,30
+HTN0007,68,Male,0,0,0,Thiazide-like diuretic,Thiazide-like diuretic,1,Low,176,75,175,70,90
+HTN0008,62,Female,1,0,0,ARB,ARB,1,High,158,104,140,91,60
+HTN0009,60,Female,0,0,0,ACE inhibitor,ACE inhibitor,1,High,134,110,119,107,60
+HTN0010,59,Female,0,0,0,Calcium channel blocker,Calcium channel blocker,1,High,149,113,129,106,90
+HTN0011,47,Female,0,0,0,ARB,ARB + Beta blocker,2,Moderate,146,90,,83,120
+HTN0012,63,Female,1,0,0,ARB,ARB + Calcium channel blocker + Thiazide-like diuretic,3,Low,166,95,154,83,120
+HTN0013,47,Male,0,0,0,ACE inhibitor,ACE inhibitor,1,Low,159,80,140,77,60
+HTN0014,66,Female,0,0,0,Thiazide-like diuretic,Thiazide-like diuretic,1,High,144,78,144,73,120
+HTN0015,81,Male,1,0,0,Calcium channel blocker,Calcium channel blocker + ARB,2,High,178,80,151,69,30
+HTN0016,50,Female,0,1,0,Thiazide-like diuretic,Thiazide-like diuretic,1,Moderate,146,90,142,89,60
+HTN0017,62,Male,1,0,1,ARB,ARB + ACE inhibitor + Beta blocker,3,High,154,95,142,92,30
+HTN0018,62,Male,0,0,1,ACE inhibitor,ACE inhibitor + Beta blocker + Thiazide-like diuretic,3,Moderate,167,90,162,88,30
+HTN0019,55,Female,1,1,0,Thiazide-like diuretic,Thiazide-like diuretic + ARB,2,High,165,94,138,85,120
+HTN0020,71,Female,0,0,0,ACE inhibitor,ACE inhibitor + Thiazide-like diuretic,2,High,150,90,133,84,30
+HTN0021,65,Female,0,0,0,ACE inhibitor,ACE inhibitor,1,Moderate,152,98,151,96,120
+HTN0022,66,Male,0,0,1,ACE inhibitor,ACE inhibitor + Thiazide-like diuretic,2,Moderate,169,107,153,95,30
+HTN0023,72,Male,1,1,0,Beta blocker,Beta blocker + ARB,2,Moderate,166,83,160,81,90
+HTN0024,57,Female,0,0,0,Thiazide-like diuretic,Thiazide-like diuretic,1,High,149,89,134,84,120
+HTN0025,47,Female,0,0,0,ACE inhibitor,ACE inhibitor + ARB,2,High,143,79,124,77,60
+HTN0026,86,Female,0,0,0,ACE inhibitor,ACE inhibitor,1,High,167,89,157,84,30
+HTN0027,56,Male,0,0,0,ARB,ARB + Thiazide-like diuretic,2,High,149,86,120,69,90
+HTN0028,49,Female,0,0,0,Thiazide-like diuretic,Thiazide-like diuretic,1,Moderate,178,81,170,83,90
+HTN0029,46,Male,0,0,0,Calcium channel blocker,Calcium channel blocker,1,Moderate,132,98,134,97,120
+HTN0030,65,Male,1,0,0,Calcium channel blocker,Calcium channel blocker + ARB + Beta blocker,3,Moderate,149,76,142,68,90
+HTN0031,46,Female,0,1,0,ARB,ARB,1,High,157,101,151,96,120
+HTN0032,57,Female,0,0,0,Calcium channel blocker,Calcium channel blocker,1,Low,172,107,173,,90
+HTN0033,53,Female,0,0,0,Calcium channel blocker,Calcium channel blocker + ARB,2,High,155,82,132,71,60
+HTN0034,66,Male,0,0,0,ACE inhibitor,ACE inhibitor + Beta blocker,2,Moderate,151,93,145,93,30
+HTN0035,68,Male,1,0,0,ACE inhibitor,ACE inhibitor,1,Low,145,92,139,90,120
+HTN0036,40,Female,0,0,0,ARB,ARB + Thiazide-like diuretic,2,Moderate,137,85,129,80,120
+HTN0037,64,Male,0,0,0,Calcium channel blocker,Calcium channel blocker,1,High,161,78,142,68,30
+HTN0038,64,Male,0,0,0,ARB,ARB,1,Low,149,79,148,75,90
+HTN0039,67,Female,1,0,0,Calcium channel blocker,Calcium channel blocker,1,High,146,92,131,86,120
+HTN0040,69,Female,1,0,0,ARB,ARB + ACE inhibitor,2,Low,154,78,145,79,30
+HTN0041,60,Female,0,0,0,Thiazide-like diuretic,Thiazide-like diuretic,1,Moderate,153,90,130,78,30
+HTN0042,40,Male,0,0,0,Calcium channel blocker,Calcium channel blocker,1,Low,141,83,124,73,60
+HTN0043,74,Female,0,0,0,ARB,ARB,1,High,154,87,135,75,90
+HTN0044,62,Male,1,0,1,ACE inhibitor,ACE inhibitor + Calcium channel blocker,2,High,169,93,155,83,120
+HTN0045,67,Male,0,0,0,ARB,ARB + Calcium channel blocker,2,High,160,93,156,91,90
+HTN0046,79,Male,0,0,0,Calcium channel blocker,Calcium channel blocker + Thiazide-like diuretic,2,High,158,89,152,87,60
+HTN0047,72,Male,0,0,0,ARB,ARB,1,Moderate,153,92,141,88,90
+HTN0048,74,Female,0,0,0,Thiazide-like diuretic,Thiazide-like diuretic + ACE inhibitor,2,High,142,94,131,82,90
+HTN0049,52,Male,0,0,0,Beta blocker,Beta blocker + ARB + Calcium channel blocker,3,Moderate,142,86,132,74,120
+HTN0050,68,Male,0,0,0,ACE inhibitor,ACE inhibitor + ARB,2,High,152,86,133,77,90
+HTN0051,51,Male,1,0,1,ACE inhibitor,ACE inhibitor,1,High,142,97,107,79,120
+HTN0052,73,Female,0,0,0,Thiazide-like diuretic,Thiazide-like diuretic + Beta blocker,2,Moderate,173,87,152,78,60
+HTN0053,75,Male,1,0,0,Thiazide-like diuretic,Thiazide-like diuretic,1,High,149,83,126,72,90
+HTN0054,57,Male,0,0,0,Thiazide-like diuretic,Thiazide-like diuretic,1,Moderate,178,90,158,83,60
+HTN0055,58,Female,0,0,0,Calcium channel blocker,Calcium channel blocker + Thiazide-like diuretic,2,High,164,100,140,94,120
+HTN0056,72,Female,0,0,0,ARB,ARB + Calcium channel blocker,2,Moderate,152,76,139,70,120
+HTN0057,55,Male,0,0,0,ARB,ARB + Calcium channel blocker,2,Moderate,147,94,131,91,90
+HTN0058,50,Female,0,0,0,ARB,ARB,1,Moderate,138,92,127,79,30
+HTN0059,41,Male,0,0,0,Beta blocker,Beta blocker + ACE inhibitor,2,Low,157,72,255,68,90
+HTN0060,67,Male,0,0,1,ARB,ARB,1,Moderate,153,90,134,80,90
+HTN0061,58,Female,0,0,0,Thiazide-like diuretic,Thiazide-like diuretic + Beta blocker,2,High,127,90,113,82,30
+HTN0062,78,Male,0,0,1,ARB,ARB,1,Moderate,149,94,154,95,30
+HTN0063,71,Male,1,0,0,ARB,ARB,1,Moderate,147,96,129,87,60
+HTN0064,64,Female,0,0,0,Calcium channel blocker,Calcium channel blocker + Beta blocker + Thiazide-like diuretic,3,Low,118,102,113,99,120
+HTN0065,59,Male,0,0,0,Calcium channel blocker,Calcium channel blocker + Thiazide-like diuretic,2,High,189,89,165,75,30
+HTN0066,48,Female,0,0,0,Thiazide-like diuretic,Thiazide-like diuretic,1,High,150,84,129,72,30
+HTN0067,48,Male,1,0,0,Thiazide-like diuretic,Thiazide-like diuretic + ARB,2,Moderate,167,93,183,94,30
+HTN0068,71,Male,0,0,0,Calcium channel blocker,Calcium channel blocker,1,Moderate,182,93,157,79,60
+HTN0069,42,Female,0,0,0,Calcium channel blocker,Calcium channel blocker,1,Moderate,152,82,134,73,120
+HTN0070,62,Female,1,0,1,ARB,ARB + Beta blocker + ACE inhibitor,3,High,163,77,160,73,120
+HTN0071,63,Male,1,0,1,Calcium channel blocker,Calcium channel blocker + Beta blocker,2,Moderate,174,93,163,93,90
+HTN0072,52,Female,0,0,0,Beta blocker,Beta blocker + ACE inhibitor + Thiazide-like diuretic,3,Low,129,90,115,88,90
+HTN0073,60,Male,0,0,0,Thiazide-like diuretic,Thiazide-like diuretic,1,Moderate,165,88,152,81,30
+HTN0074,64,Male,1,0,0,ARB,ARB + Thiazide-like diuretic + Calcium channel blocker,3,High,139,78,124,71,60
+HTN0075,68,Male,1,0,0,ACE inhibitor,ACE inhibitor + Beta blocker,2,High,136,87,129,81,90
+HTN0076,50,Male,0,1,0,ARB,ARB,1,Low,145,88,143,88,90
+HTN0077,56,Male,1,0,0,ACE inhibitor,ACE inhibitor,1,Low,177,92,178,93,120
+HTN0078,71,Female,0,0,0,ACE inhibitor,ACE inhibitor + Calcium channel blocker,2,Low,152,88,158,88,30
+HTN0079,73,Female,0,0,0,ARB,ARB + Thiazide-like diuretic,2,High,166,88,137,74,30
+HTN0080,69,Male,0,0,1,Beta blocker,Beta blocker,1,Moderate,140,92,131,91,30
+HTN0081,49,Male,0,0,1,ARB,ARB + Calcium channel blocker,2,High,153,77,132,70,90
+HTN0082,58,Female,0,0,0,Calcium channel blocker,Calcium channel blocker + ARB,2,Moderate,147,93,151,93,30
+HTN0083,65,Female,0,0,0,Calcium channel blocker,Calcium channel blocker,1,Moderate,126,98,101,84,120
+HTN0084,77,Male,1,1,0,ARB,ARB,1,Moderate,147,88,134,85,120
+HTN0085,75,Female,0,0,0,ARB,ARB + Calcium channel blocker + ACE inhibitor,3,High,150,96,132,83,30
+HTN0086,55,Male,0,0,0,Beta blocker,Beta blocker + Calcium channel blocker,2,High,153,94,120,81,90
+HTN0087,51,Female,0,0,1,Thiazide-like diuretic,Thiazide-like diuretic + Calcium channel blocker,2,High,148,86,131,78,60
+HTN0088,46,Female,0,1,0,Calcium channel blocker,Calcium channel blocker + Thiazide-like diuretic,2,Moderate,167,93,155,88,30
+HTN0089,61,Male,1,0,0,Calcium channel blocker,Calcium channel blocker + Thiazide-like diuretic + ARB,3,High,164,80,138,64,90
+HTN0090,66,Male,0,0,0,Thiazide-like diuretic,Thiazide-like diuretic + ARB,2,Low,170,96,161,90,90
+HTN0091,63,Male,1,0,0,Calcium channel blocker,Calcium channel blocker,1,High,159,101,145,93,30
+HTN0092,56,Female,1,0,0,ARB,ARB,1,High,153,87,141,82,90
+HTN0093,65,Female,0,0,0,ARB,ARB + ACE inhibitor,2,High,170,93,140,77,120
+HTN0094,76,Female,1,1,1,Beta blocker,Beta blocker,1,Moderate,147,96,149,94,120
+HTN0095,60,Male,0,0,0,ACE inhibitor,ACE inhibitor + Thiazide-like diuretic,2,High,160,103,135,95,120
+HTN0096,57,Female,1,0,0,ARB,ARB,1,High,161,80,132,65,60
+HTN0097,56,Female,1,0,0,Calcium channel blocker,Calcium channel blocker + Beta blocker,2,Moderate,150,101,133,93,60
+HTN0098,68,Male,0,0,1,ARB,ARB + ACE inhibitor + Thiazide-like diuretic,3,High,147,83,128,75,30
+HTN0099,59,Male,0,0,0,ARB,ARB + Beta blocker,2,High,148,90,128,76,60
+HTN0100,73,Female,1,0,0,ARB,ARB,1,Moderate,167,106,154,100,120
+HTN0101,62,Female,0,0,0,Calcium channel blocker,Calcium channel blocker + Thiazide-like diuretic,2,High,168,94,160,88,90
+HTN0102,51,Female,0,0,0,,ACE inhibitor,1,High,155,91,143,86,90
+HTN0103,75,Female,1,0,0,ARB,ARB + Calcium channel blocker + Beta blocker,3,Moderate,150,98,167,97,60
+HTN0104,77,Female,1,1,0,Calcium channel blocker,Calcium channel blocker,1,Moderate,179,79,169,75,120
+HTN0105,62,Male,0,1,0,Beta blocker,Beta blocker + ARB,2,Moderate,161,88,155,85,90
+HTN0106,69,Male,0,0,1,ACE inhibitor,ACE inhibitor + Calcium channel blocker,2,Low,145,99,142,103,60
+HTN0107,65,Female,1,1,0,Calcium channel blocker,Calcium channel blocker + Thiazide-like diuretic + ARB,3,High,170,80,152,73,120
+HTN0108,59,Female,0,0,0,ARB,ARB,1,Moderate,145,98,147,98,90
+HTN0109,60,Male,1,0,0,Beta blocker,Beta blocker,1,Moderate,150,83,155,79,120
+HTN0110,63,Female,0,0,0,Calcium channel blocker,Calcium channel blocker,1,High,177,105,172,98,90
+HTN0111,70,Male,0,0,0,Calcium channel blocker,Calcium channel blocker,1,Moderate,153,97,141,94,120
+HTN0112,63,Male,0,0,0,ARB,ARB,1,Moderate,159,85,142,77,60
+HTN0113,60,Male,1,1,0,ARB,ARB + ACE inhibitor,2,Moderate,176,86,164,84,30
+HTN0114,67,Male,0,0,0,ACE inhibitor,ACE inhibitor + Beta blocker,2,High,144,99,139,92,60
+HTN0115,40,Female,0,0,0,Beta blocker,Beta blocker,1,High,158,93,137,86,120
+HTN0116,34,Male,1,0,0,ACE inhibitor,ACE inhibitor + Beta blocker,2,High,176,87,146,71,30
+HTN0117,55,Female,1,1,0,Thiazide-like diuretic,Thiazide-like diuretic + ACE inhibitor,2,High,186,99,174,91,60
+HTN0118,77,Female,0,0,0,ARB,ARB + Calcium channel blocker,2,Low,152,90,160,91,90
+HTN0119,60,Male,0,0,0,ARB,ARB,1,Moderate,155,81,126,69,60
+HTN0120,69,Male,0,0,0,ARB,ARB,1,Low,151,107,155,103,120
+HTN0121,63,Female,0,0,0,Thiazide-like diuretic,Thiazide-like diuretic,1,Low,147,89,135,83,90
+HTN0122,56,Female,1,0,1,Beta blocker,Beta blocker + Calcium channel blocker + ACE inhibitor,3,Low,155,86,152,88,90
+HTN0123,68,Male,1,0,0,Calcium channel blocker,Calcium channel blocker + ARB + Thiazide-like diuretic,3,Moderate,154,89,159,93,90
+HTN0124,61,Male,0,1,0,ACE inhibitor,ACE inhibitor,1,High,160,92,139,80,30
+HTN0125,64,Male,1,0,0,ACE inhibitor,ACE inhibitor + ARB,2,Moderate,150,106,132,102,60
+HTN0126,54,Male,0,0,0,Calcium channel blocker,Calcium channel blocker,1,High,151,88,124,75,30
+HTN0127,86,Male,0,0,1,Calcium channel blocker,Calcium channel blocker,1,Low,148,82,127,73,90
+HTN0128,66,Male,0,0,0,Thiazide-like diuretic,Thiazide-like diuretic + Beta blocker,2,High,134,90,118,84,120
+HTN0129,54,Female,0,0,0,ACE inhibitor,ACE inhibitor,1,Low,156,110,169,111,90
+HTN0130,56,Female,0,0,0,Calcium channel blocker,Calcium channel blocker,1,High,154,107,141,102,120
+HTN0131,56,Female,0,0,0,ACE inhibitor,ACE inhibitor,1,Moderate,137,86,141,88,60
+HTN0132,59,Female,0,0,1,Calcium channel blocker,Calcium channel blocker + ACE inhibitor,2,High,146,93,135,88,30
+HTN0133,56,Male,0,0,0,ARB,ARB,1,High,148,77,135,72,120
+HTN0134,46,Female,0,0,0,Beta blocker,Beta blocker + ARB,2,High,176,92,157,82,30
+HTN0135,78,Male,0,0,1,Thiazide-like diuretic,Thiazide-like diuretic + Beta blocker,2,High,188,102,183,99,60
+HTN0136,68,Male,0,0,0,ACE inhibitor,ACE inhibitor,1,Low,165,93,141,84,30
+HTN0137,43,Male,0,0,0,Thiazide-like diuretic,Thiazide-like diuretic + ARB,2,Moderate,147,90,142,85,30
+HTN0138,47,Male,1,0,0,Thiazide-like diuretic,Thiazide-like diuretic,1,High,139,89,107,74,60
+HTN0139,64,Male,1,0,0,Thiazide-like diuretic,Thiazide-like diuretic + Beta blocker,2,High,149,99,123,91,120
+HTN0140,59,Male,0,0,0,ARB,ARB,1,High,147,91,121,79,60
+HTN0141,52,Female,0,0,0,ARB,ARB + Calcium channel blocker,2,Low,137,88,131,84,90
+HTN0142,62,Male,0,0,0,ARB,ARB,1,High,151,94,124,81,60
+HTN0143,45,Male,0,0,0,Calcium channel blocker,Calcium channel blocker + Beta blocker,2,Low,173,106,156,98,30
+HTN0144,65,Female,0,0,1,ACE inhibitor,ACE inhibitor + ARB,2,High,137,85,122,77,120
+HTN0145,61,Male,1,1,0,Calcium channel blocker,Calcium channel blocker + Beta blocker,2,High,160,83,153,82,90
+HTN0146,52,Female,1,0,1,ACE inhibitor,ACE inhibitor + Beta blocker + ARB,3,Low,155,103,142,97,30
+HTN0147,37,Female,0,0,1,ARB,ARB,1,Low,154,90,138,82,30
+HTN0148,81,Female,0,0,1,Calcium channel blocker,Calcium channel blocker + Beta blocker,2,Moderate,152,94,136,87,60
+HTN0149,49,Female,1,0,1,ACE inhibitor,ACE inhibitor + Calcium channel blocker,2,High,161,86,129,74,90
+HTN0150,60,Male,1,0,0,Calcium channel blocker,Calcium channel blocker + Thiazide-like diuretic + ACE inhibitor,3,Low,155,84,147,80,30
+HTN0151,61,Female,0,1,0,Calcium channel blocker,Calcium channel blocker,1,Moderate,171,102,163,99,120
+HTN0152,40,Male,0,0,0,ARB,ARB + ACE inhibitor,2,Moderate,153,69,143,64,90
+HTN0153,66,Female,1,0,0,Calcium channel blocker,Calcium channel blocker + ARB + Beta blocker,3,High,146,90,107,73,60
+HTN0154,62,Male,0,0,0,Beta blocker,Beta blocker + ARB,2,Low,138,92,133,90,90
+HTN0155,58,Male,0,0,1,Beta blocker,Beta blocker,1,Moderate,147,95,137,91,90
+HTN0156,55,Male,1,0,0,ARB,ARB + Beta blocker,2,Moderate,165,95,153,90,90
+HTN0157,62,Male,0,0,1,ACE inhibitor,ACE inhibitor + Calcium channel blocker,2,Moderate,149,105,121,89,120
+HTN0158,56,Male,1,0,0,Beta blocker,Beta blocker + ACE inhibitor + Calcium channel blocker,3,Moderate,173,73,170,72,30
+HTN0159,66,Male,0,0,0,ACE inhibitor,ACE inhibitor,1,High,185,84,173,80,30
+HTN0160,63,Male,0,1,0,Calcium channel blocker,Calcium channel blocker,1,Low,173,98,160,94,90
+HTN0161,55,Female,1,0,0,ARB,ARB + ACE inhibitor + Beta blocker,3,High,152,92,123,75,30
+HTN0162,58,Female,0,0,0,ACE inhibitor,ACE inhibitor,1,High,148,91,109,71,30
+HTN0163,62,Female,1,0,0,ARB,ARB,1,Low,169,97,154,92,90
+HTN0164,49,Female,0,0,0,Calcium channel blocker,Calcium channel blocker + ACE inhibitor,2,Moderate,156,87,143,89,30
+HTN0165,79,Female,0,1,0,ARB,ARB + Beta blocker,2,High,153,84,153,88,120
+HTN0166,62,Female,1,0,0,Beta blocker,Beta blocker + Thiazide-like diuretic,2,High,186,101,170,92,60
+HTN0167,63,Female,1,0,0,Thiazide-like diuretic,Thiazide-like diuretic,1,Low,142,89,151,86,120
+HTN0168,61,Male,1,0,1,Beta blocker,Beta blocker,1,Low,171,81,158,73,90
+HTN0169,77,Female,0,0,0,Thiazide-like diuretic,Thiazide-like diuretic + ARB,2,High,153,83,147,74,30
+HTN0170,56,Male,1,1,0,ARB,ARB + Beta blocker + ACE inhibitor,3,Low,156,80,151,76,30
+HTN0171,61,Male,0,0,0,Thiazide-like diuretic,Thiazide-like diuretic + Calcium channel blocker + Beta blocker,3,High,164,100,147,89,120
+HTN0172,56,Male,0,0,0,ARB,ARB,1,Moderate,155,92,143,87,120
+HTN0173,58,Male,0,0,1,Calcium channel blocker,Calcium channel blocker,1,High,143,85,127,83,120
+HTN0174,66,Male,0,0,0,Calcium channel blocker,Calcium channel blocker + ARB + Beta blocker,3,Moderate,160,87,150,83,120
+HTN0175,75,Male,0,1,0,Calcium channel blocker,Calcium channel blocker,1,High,148,91,141,88,90
+HTN0176,53,Male,1,0,0,Beta blocker,Beta blocker + ARB + ACE inhibitor,3,Moderate,162,103,145,91,60
+HTN0177,56,Male,1,0,0,ARB,ARB + Thiazide-like diuretic,2,High,152,92,128,82,60
+HTN0178,55,Female,0,0,1,ARB,ARB + Thiazide-like diuretic + Calcium channel blocker,3,Moderate,167,86,,83,60
+HTN0179,65,Female,0,0,0,ARB,ARB + Thiazide-like diuretic,2,Moderate,153,90,122,77,90
+HTN0180,60,Male,0,0,0,Thiazide-like diuretic,Thiazide-like diuretic + ARB,2,High,147,93,140,87,60
+HTN0181,65,Male,1,0,0,Thiazide-like diuretic,Thiazide-like diuretic + ACE inhibitor,2,Low,170,96,167,97,60
+HTN0182,89,Female,0,0,0,ACE inhibitor,ACE inhibitor,1,Moderate,155,87,140,79,60
+HTN0183,55,Male,0,1,0,Calcium channel blocker,Calcium channel blocker,1,High,170,100,167,98,120
+HTN0184,56,Female,0,0,0,Calcium channel blocker,Calcium channel blocker + ACE inhibitor,2,High,157,76,142,67,90
+HTN0185,61,Female,0,1,0,Calcium channel blocker,Calcium channel blocker,1,Moderate,159,108,168,108,120
+HTN0186,54,Female,1,0,0,Calcium channel blocker,Calcium channel blocker + ACE inhibitor + Beta blocker,3,High,162,89,132,75,30
+HTN0187,80,Male,0,1,0,Thiazide-like diuretic,Thiazide-like diuretic,1,High,148,91,120,75,30
+HTN0188,89,Female,0,0,0,Calcium channel blocker,Calcium channel blocker,1,Low,170,91,158,78,90
+HTN0189,48,Male,0,0,0,ACE inhibitor,ACE inhibitor + Calcium channel blocker,2,High,151,92,139,86,120
+HTN0190,57,Female,0,0,0,ACE inhibitor,ACE inhibitor + Calcium channel blocker + Thiazide-like diuretic,3,Low,150,97,147,93,90
+HTN0191,70,Male,0,0,0,Beta blocker,Beta blocker + Calcium channel blocker + ARB,3,Moderate,151,92,137,87,90
+HTN0192,71,Female,1,1,0,Beta blocker,Beta blocker,1,Moderate,186,80,185,77,90
+HTN0193,76,Female,0,0,0,ACE inhibitor,ACE inhibitor + Thiazide-like diuretic + Beta blocker,3,Moderate,186,92,177,92,60
+HTN0194,78,Male,0,0,0,ARB,ARB + Calcium channel blocker,2,Moderate,151,87,136,83,60
+HTN0195,63,Male,0,0,0,Thiazide-like diuretic,Thiazide-like diuretic,1,Moderate,162,76,166,74,60
+HTN0196,66,Female,1,0,0,Calcium channel blocker,Calcium channel blocker + ARB,2,Moderate,152,96,145,92,90
+HTN0197,67,Male,0,0,0,Thiazide-like diuretic,Thiazide-like diuretic + ARB + ACE inhibitor,3,High,133,104,132,106,120
+HTN0198,54,Male,0,0,0,Thiazide-like diuretic,Thiazide-like diuretic + ACE inhibitor,2,High,175,97,160,92,90
+HTN0199,75,Male,0,0,0,ARB,ARB,1,High,133,82,117,77,30
+HTN0200,57,Male,1,0,1,ARB,ARB + ACE inhibitor,2,Moderate,153,86,131,78,60
+HTN0201,51,Female,1,0,0,ARB,ARB,1,High,162,102,145,93,120
+HTN0202,63,Male,1,1,0,ARB,ARB + ACE inhibitor + Calcium channel blocker,3,High,172,68,161,61,90
+HTN0203,48,Female,1,0,0,ARB,ARB,1,High,152,86,125,76,120
+HTN0204,53,Male,1,0,0,ACE inhibitor,ACE inhibitor + Thiazide-like diuretic,2,Moderate,186,73,160,64,120
+HTN0205,70,Female,0,0,0,Thiazide-like diuretic,Thiazide-like diuretic,1,High,150,91,131,84,30
+HTN0206,50,Male,1,0,0,Beta blocker,Beta blocker,1,High,132,95,124,98,30
+HTN0207,67,Female,0,0,1,Calcium channel blocker,Calcium channel blocker + ARB,2,High,149,100,132,89,30
+HTN0208,39,Male,0,0,0,Thiazide-like diuretic,Thiazide-like diuretic + ACE inhibitor,2,High,157,87,148,83,120
+HTN0209,61,Male,0,0,0,Calcium channel blocker,Calcium channel blocker,1,High,156,96,152,92,120
+HTN0210,69,Male,0,0,0,ARB,ARB + Calcium channel blocker + Beta blocker,3,Moderate,156,87,151,85,30
+HTN0211,81,Female,0,0,0,Calcium channel blocker,Calcium channel blocker,1,High,141,86,129,85,120
+HTN0212,63,Male,0,0,0,Thiazide-like diuretic,Thiazide-like diuretic + Calcium channel blocker,2,Low,151,81,157,87,30
+HTN0213,56,Male,1,0,1,Thiazide-like diuretic,Thiazide-like diuretic,1,Moderate,165,80,166,80,60
+HTN0214,68,Male,0,0,0,Calcium channel blocker,Calcium channel blocker + Thiazide-like diuretic,2,High,157,82,151,79,120
+HTN0215,53,Female,1,0,0,ACE inhibitor,ACE inhibitor,1,High,140,103,120,96,60
+HTN0216,81,Male,1,0,0,Thiazide-like diuretic,Thiazide-like diuretic,1,High,139,92,122,86,60
+HTN0217,69,Male,1,0,1,ACE inhibitor,ACE inhibitor,1,High,171,92,151,84,30
+HTN0218,70,Female,0,0,0,ARB,ARB,1,Moderate,145,90,142,90,90
+HTN0219,68,Male,0,0,0,ARB,ARB + Calcium channel blocker,2,Moderate,159,97,136,86,120
+HTN0220,67,Male,0,0,0,ARB,ARB + ACE inhibitor,2,Moderate,148,80,134,75,60
+HTN0221,46,Male,0,1,1,Beta blocker,Beta blocker,1,Moderate,151,78,143,67,120
+HTN0222,60,Male,0,0,1,ACE inhibitor,ACE inhibitor + Thiazide-like diuretic,2,High,167,96,143,82,120
+HTN0223,62,Male,1,0,0,Thiazide-like diuretic,Thiazide-like diuretic + Calcium channel blocker,2,High,158,93,147,88,60
+HTN0224,70,Male,0,0,1,Calcium channel blocker,Calcium channel blocker,1,Moderate,139,94,127,90,90
+HTN0225,63,Female,0,1,0,ACE inhibitor,ACE inhibitor,1,Low,149,89,140,77,90
+HTN0226,84,Male,0,0,0,Calcium channel blocker,Calcium channel blocker + ARB,2,Moderate,126,87,115,80,30
+HTN0227,64,Male,0,0,0,ACE inhibitor,ACE inhibitor,1,High,137,97,101,77,90
+HTN0228,54,Male,0,0,0,Beta blocker,Beta blocker + ARB,2,Moderate,163,102,160,102,120
+HTN0229,49,Female,0,0,0,ARB,ARB,1,Moderate,155,96,162,96,60
+HTN0230,66,Female,1,0,0,ARB,ARB + Beta blocker,2,High,160,90,141,83,120
+HTN0231,73,Male,1,1,0,Thiazide-like diuretic,Thiazide-like diuretic + Calcium channel blocker,2,High,181,109,180,109,120
+HTN0232,50,Female,0,1,1,ARB,ARB + Calcium channel blocker,2,Moderate,169,100,164,97,90
+HTN0233,77,Female,0,0,0,Calcium channel blocker,Calcium channel blocker,1,High,169,104,141,92,30
+HTN0234,55,Male,1,0,0,Thiazide-like diuretic,Thiazide-like diuretic + ARB,2,High,175,89,163,82,120
+HTN0235,66,Male,1,0,0,ACE inhibitor,ACE inhibitor + ARB,2,High,156,73,117,54,60
+HTN0236,66,Male,0,0,0,ACE inhibitor,ACE inhibitor,1,High,157,107,128,94,120
+HTN0237,71,Female,0,0,0,ARB,ARB + Thiazide-like diuretic,2,High,122,87,92,72,60
+HTN0238,51,Female,1,0,0,Thiazide-like diuretic,Thiazide-like diuretic,1,High,169,102,151,94,120
+HTN0239,69,Male,1,0,0,ACE inhibitor,ACE inhibitor,1,Moderate,146,88,125,80,90
+HTN0240,78,Male,0,1,1,Beta blocker,Beta blocker,1,Moderate,143,73,134,71,30
+HTN0241,68,Male,1,0,0,Calcium channel blocker,Calcium channel blocker + ARB + Beta blocker,3,Moderate,173,80,172,79,120
+HTN0242,74,Male,0,0,0,ACE inhibitor,ACE inhibitor + Thiazide-like diuretic + Calcium channel blocker,3,High,164,69,150,66,60
+HTN0243,48,Female,1,0,0,Calcium channel blocker,Calcium channel blocker + Thiazide-like diuretic + Beta blocker,3,High,167,93,153,86,90
+HTN0244,58,Female,0,0,0,Thiazide-like diuretic,Thiazide-like diuretic + Calcium channel blocker + Beta blocker,3,Moderate,154,97,155,97,90
+HTN0245,62,Female,0,0,0,ARB,ARB,1,High,161,94,146,91,60
+HTN0246,64,Male,0,0,0,Thiazide-like diuretic,Thiazide-like diuretic + Beta blocker + ARB,3,Low,151,92,133,82,90
+HTN0247,61,Female,0,1,0,Beta blocker,Beta blocker,1,Moderate,137,83,127,79,60
+HTN0248,37,Male,0,0,0,ACE inhibitor,ACE inhibitor,1,High,153,91,140,84,60
+HTN0249,73,Female,0,0,0,ARB,ARB + Calcium channel blocker,2,High,146,100,120,92,60
+HTN0250,65,Male,0,0,0,ARB,ARB,1,Moderate,173,101,154,92,30
+HTN0251,56,Female,0,0,0,Calcium channel blocker,Calcium channel blocker,1,High,157,98,143,88,90
+HTN0252,69,Male,1,0,0,ACE inhibitor,ACE inhibitor,1,High,150,91,129,83,90
+HTN0253,57,Female,0,0,0,ARB,ARB + ACE inhibitor,2,Low,147,101,154,100,60
+HTN0254,42,Male,1,0,0,ARB,ARB + ACE inhibitor,2,High,171,97,154,86,90
+HTN0255,82,Female,0,0,0,Beta blocker,Beta blocker,1,High,155,84,135,71,120
+HTN0256,64,Male,1,0,0,ARB,ARB + Thiazide-like diuretic,2,High,136,90,121,85,30
+HTN0257,37,Male,0,0,0,ACE inhibitor,ACE inhibitor + Thiazide-like diuretic,2,High,152,96,148,92,90
+HTN0258,67,Male,1,1,1,Calcium channel blocker,Calcium channel blocker + ACE inhibitor,2,High,147,91,133,83,30
+HTN0259,76,Male,0,0,0,ACE inhibitor,ACE inhibitor,1,Moderate,157,93,152,91,60
+HTN0260,57,Female,0,0,1,ARB,ARB,1,High,190,89,159,74,120
+HTN0261,67,Male,0,0,0,Calcium channel blocker,Calcium channel blocker + Beta blocker,2,High,142,94,120,89,30
+HTN0262,67,Female,0,1,1,Calcium channel blocker,Calcium channel blocker,1,Moderate,144,93,152,89,60
+HTN0263,63,Male,1,0,0,ARB,ARB,1,High,156,89,138,78,60
+HTN0264,60,Female,0,0,1,Thiazide-like diuretic,Thiazide-like diuretic,1,High,158,87,150,84,120
+HTN0265,52,Female,0,1,0,Calcium channel blocker,Calcium channel blocker + ACE inhibitor,2,High,147,82,124,71,90
+HTN0266,54,Female,0,0,0,Calcium channel blocker,Calcium channel blocker,1,Moderate,133,93,125,85,120
+HTN0267,50,Female,1,0,0,ARB,ARB,1,High,156,87,125,69,90
+HTN0268,64,Female,0,0,0,Calcium channel blocker,Calcium channel blocker,1,Moderate,163,97,144,87,120
+HTN0269,46,Female,1,1,0,Calcium channel blocker,Calcium channel blocker + ACE inhibitor + ARB,3,High,146,96,132,90,90
+HTN0270,49,Female,0,0,0,Thiazide-like diuretic,Thiazide-like diuretic + ARB,2,Moderate,125,89,121,87,60
+HTN0271,36,Male,0,0,0,ARB,ARB,1,High,150,86,145,81,30
+HTN0272,56,Female,0,0,0,ACE inhibitor,ACE inhibitor,1,Moderate,151,89,136,86,30
+HTN0273,66,Male,0,0,0,ACE inhibitor,ACE inhibitor + ARB,2,High,141,77,132,67,60
+HTN0274,66,Female,1,0,0,ARB,ARB + Beta blocker,2,Moderate,193,89,192,90,60
+HTN0275,57,Female,0,0,0,ACE inhibitor,ACE inhibitor + ARB,2,Moderate,157,80,150,75,60
+HTN0276,49,Female,0,0,0,Calcium channel blocker,Calcium channel blocker,1,Moderate,169,92,143,83,90
+HTN0277,58,Male,0,0,0,ARB,ARB,1,Low,170,82,167,85,90
+HTN0278,54,Female,0,0,0,Beta blocker,Beta blocker + ARB,2,Low,143,89,150,88,90
+HTN0279,46,Female,0,0,1,ARB,ARB,1,High,149,90,127,81,120
+HTN0280,59,Female,1,0,0,Beta blocker,Beta blocker + Calcium channel blocker + ARB,3,High,155,90,141,83,90
+HTN0281,71,Male,0,0,0,ARB,ARB + Calcium channel blocker + ACE inhibitor,3,High,166,86,142,73,120
+HTN0282,58,Male,0,0,0,ARB,ARB,1,High,150,92,146,89,30
+HTN0283,44,Female,0,0,0,Calcium channel blocker,Calcium channel blocker + ARB,2,Moderate,148,96,136,92,90
+HTN0284,65,Female,0,0,0,ACE inhibitor,ACE inhibitor + ARB,2,High,135,75,112,67,90
+HTN0285,48,Male,0,0,0,Thiazide-like diuretic,Thiazide-like diuretic,1,Moderate,150,76,124,66,120
+HTN0286,66,Female,0,0,0,Beta blocker,Beta blocker + Calcium channel blocker + Thiazide-like diuretic,3,Moderate,177,92,158,86,60
+HTN0287,49,Male,0,0,0,ACE inhibitor,ACE inhibitor,1,High,156,105,143,101,30
+HTN0288,57,Female,0,0,0,Calcium channel blocker,Calcium channel blocker + ARB,2,High,144,87,130,82,120
+HTN0289,55,Female,0,0,0,ARB,ARB + ACE inhibitor,2,High,123,90,103,82,90
+HTN0290,56,Male,1,0,1,Beta blocker,Beta blocker + Calcium channel blocker,2,Moderate,155,94,132,88,120
+HTN0291,73,Male,1,0,0,Calcium channel blocker,Calcium channel blocker,1,High,149,103,128,94,60
+HTN0292,75,Male,0,0,0,ARB,ARB,1,Low,161,73,150,73,60
+HTN0293,64,Male,0,0,0,Thiazide-like diuretic,Thiazide-like diuretic,1,Low,143,98,151,98,120
+HTN0294,30,Male,0,0,0,Calcium channel blocker,Calcium channel blocker,1,High,172,93,157,84,60
+HTN0295,35,Male,1,0,0,ARB,ARB + Thiazide-like diuretic,2,Moderate,165,84,142,77,60
+HTN0296,44,Female,0,0,0,Calcium channel blocker,Calcium channel blocker + Beta blocker,2,High,143,72,117,60,120
+HTN0297,60,Female,1,0,0,Calcium channel blocker,Calcium channel blocker,1,High,196,88,176,75,60
+HTN0298,43,Female,0,0,1,ARB,ARB,1,Low,160,72,154,75,60
+HTN0299,49,Female,0,0,0,Calcium channel blocker,Calcium channel blocker + ARB,2,High,170,85,148,80,60
+HTN0300,65,Female,0,0,0,Calcium channel blocker,Calcium channel blocker,1,High,138,90,128,87,120
+HTN0006,70,Male,0,0,0,ACE inhibitor,ACE inhibitor,1,Low,165,94,162,94,30

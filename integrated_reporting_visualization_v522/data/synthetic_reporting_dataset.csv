@@ -1,0 +1,21 @@
+patient_id,age,sex,hypertension_stage,baseline_sbp,followup_sbp,group,risk_score,cv_event,followup_days,event
+SYN001,45,Female,Stage 1,148,132,Intervention,0.12,0,365,0
+SYN002,61,Male,Stage 2,168,150,Usual care,0.73,1,120,1
+SYN003,54,Female,Stage 1,152,136,Intervention,0.24,0,365,0
+SYN004,70,Male,Stage 2,174,158,Usual care,0.81,1,90,1
+SYN005,49,Female,Stage 1,146,130,Intervention,0.18,0,300,0
+SYN006,66,Male,Stage 2,170,154,Usual care,0.66,0,250,0
+SYN007,58,Female,Stage 2,162,145,Intervention,0.38,0,365,0
+SYN008,73,Male,Stage 2,180,165,Usual care,0.91,1,60,1
+SYN009,52,Female,Stage 1,150,134,Intervention,0.21,0,365,0
+SYN010,64,Male,Stage 2,172,156,Usual care,0.77,1,180,1
+SYN011,47,Female,Stage 1,144,129,Intervention,0.09,0,365,0
+SYN012,69,Male,Stage 2,176,160,Usual care,0.86,1,45,1
+SYN013,56,Female,Stage 1,154,138,Intervention,0.29,0,365,0
+SYN014,62,Male,Stage 2,166,151,Usual care,0.69,0,200,0
+SYN015,51,Female,Stage 1,149,133,Intervention,0.16,0,365,0
+SYN016,75,Male,Stage 2,182,168,Usual care,0.95,1,30,1
+SYN017,59,Female,Stage 2,160,144,Intervention,0.42,0,365,0
+SYN018,67,Male,Stage 2,171,155,Usual care,0.74,1,150,1
+SYN019,44,Female,Stage 1,142,127,Intervention,0.08,0,365,0
+SYN020,71,Male,Stage 2,178,162,Usual care,0.89,1,75,1

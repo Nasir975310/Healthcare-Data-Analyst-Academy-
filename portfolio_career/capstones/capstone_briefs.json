@@ -1,0 +1,58 @@
+[
+  {
+    "id": "CAP-01",
+    "title": "Hospital operations and pharmacy utilisation review",
+    "audience": "Hospital COO, pharmacy head and finance partner",
+    "question": "How did operational activity, length of stay, supplied readmission flags and medication-order mix vary across departments during the six-month synthetic reporting period?",
+    "deliverables": [
+      "Stakeholder requirements and KPI dictionary",
+      "SQL analysis with explicit grain and join strategy",
+      "Python validation and reproducible outputs",
+      "Three-page dashboard or equivalent static report",
+      "Executive summary with actions, caveats and next steps"
+    ],
+    "critical_cautions": [
+      "A supplied readmission flag is not a validated readmission measure unless cohort logic and follow-up are defined.",
+      "Medication orders are not proof of administration, dispensing or adherence.",
+      "36 orphan order rows must be reviewed; do not silently drop them.",
+      "Do not join encounter-level and order-line tables before aggregating if it causes fan-out."
+    ]
+  },
+  {
+    "id": "CAP-02",
+    "title": "Clinical research and pharmacovigilance review",
+    "audience": "Clinical research manager and drug safety lead",
+    "question": "Can the synthetic trial summary and separate safety case extract be analysed transparently, with appropriate data controls and non-causal interpretation?",
+    "deliverables": [
+      "Trial data dictionary, edit checks and query log",
+      "Descriptive trial summary and uncertainty-aware analysis plan",
+      "ICSR case/event data model and duplicate review workflow",
+      "Product-event screening with limitations",
+      "Safety and clinical research handoff report"
+    ],
+    "critical_cautions": [
+      "Synthetic trial arms are not real randomised evidence.",
+      "Spontaneous-report counts do not provide incidence without exposure denominators.",
+      "Disproportionality is a screening method, not causality.",
+      "No licensed MedDRA content or validated regulatory reporting output is included."
+    ]
+  },
+  {
+    "id": "CAP-03",
+    "title": "Remote analytics client request-to-handoff",
+    "audience": "Remote healthcare analytics client and delivery manager",
+    "question": "A client requests an urgent department performance report and pharmacy utilisation extract. Deliver a reliable, traceable result asynchronously.",
+    "deliverables": [
+      "Clarification questions and written scope confirmation",
+      "Data inventory, access/privacy check and delivery plan",
+      "SQL/Python outputs, QA log and reproducibility instructions",
+      "Versioned deliverable folder and concise client email",
+      "Change log, assumptions, exclusions and handoff checklist"
+    ],
+    "critical_cautions": [
+      "Never use identifiable patient data in a personal portfolio.",
+      "Do not infer clinical meaning from undocumented fields.",
+      "Escalate missing definitions, ambiguous denominators and access issues before publishing."
+    ]
+  }
+]

@@ -1,0 +1,4 @@
+label,estimate,lower,upper
+Intervention A,0.72,0.54,0.96
+Intervention B,0.88,0.70,1.11
+Intervention C,1.14,0.91,1.42

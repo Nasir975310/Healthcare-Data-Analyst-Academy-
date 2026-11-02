@@ -1,0 +1,657 @@
+{
+  "resourceType": "Bundle",
+  "id": "synthetic-hospital-demo",
+  "type": "collection",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "pt001",
+        "gender": "male",
+        "birthDate": "1971-01-15",
+        "name": [
+          {
+            "given": [
+              "Demo1"
+            ],
+            "family": "Synthetic"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "pt002",
+        "gender": "female",
+        "birthDate": "1972-02-15",
+        "name": [
+          {
+            "given": [
+              "Demo2"
+            ],
+            "family": "Synthetic"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "pt003",
+        "gender": "male",
+        "birthDate": "1973-03-15",
+        "name": [
+          {
+            "given": [
+              "Demo3"
+            ],
+            "family": "Synthetic"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "pt004",
+        "gender": "female",
+        "birthDate": "1974-04-15",
+        "name": [
+          {
+            "given": [
+              "Demo4"
+            ],
+            "family": "Synthetic"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "pt005",
+        "gender": "male",
+        "birthDate": "1975-05-15",
+        "name": [
+          {
+            "given": [
+              "Demo5"
+            ],
+            "family": "Synthetic"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "enc001",
+        "status": "finished",
+        "class": {
+          "code": "AMB"
+        },
+        "subject": {
+          "reference": "Patient/pt001"
+        },
+        "period": {
+          "start": "2026-01-02T09:00:00Z",
+          "end": "2026-01-02T09:30:00Z"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "enc002",
+        "status": "finished",
+        "class": {
+          "code": "AMB"
+        },
+        "subject": {
+          "reference": "Patient/pt001"
+        },
+        "period": {
+          "start": "2026-01-08T09:00:00Z",
+          "end": "2026-01-08T09:30:00Z"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "enc003",
+        "status": "finished",
+        "class": {
+          "code": "AMB"
+        },
+        "subject": {
+          "reference": "Patient/pt002"
+        },
+        "period": {
+          "start": "2026-01-04T09:00:00Z",
+          "end": "2026-01-04T09:30:00Z"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "enc004",
+        "status": "in-progress",
+        "class": {
+          "code": "AMB"
+        },
+        "subject": {
+          "reference": "Patient/pt003"
+        },
+        "period": {
+          "start": "2026-01-10T09:00:00Z",
+          "end": "2026-01-10T09:30:00Z"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "enc005",
+        "status": "finished",
+        "class": {
+          "code": "AMB"
+        },
+        "subject": {
+          "reference": "Patient/pt004"
+        },
+        "period": {
+          "start": "2026-01-12T09:00:00Z",
+          "end": "2026-01-12T09:30:00Z"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "enc006",
+        "status": "finished",
+        "class": {
+          "code": "AMB"
+        },
+        "subject": {
+          "reference": "Patient/pt005"
+        },
+        "period": {
+          "start": "2026-01-14T09:00:00Z",
+          "end": "2026-01-14T09:30:00Z"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "obs001",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8480-6",
+              "display": "Systolic blood pressure"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/pt001"
+        },
+        "encounter": {
+          "reference": "Encounter/enc001"
+        },
+        "effectiveDateTime": "2026-01-02T09:10:00Z",
+        "valueQuantity": {
+          "value": 131,
+          "unit": "mmHg",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "obs002",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8462-4",
+              "display": "Diastolic blood pressure"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/pt001"
+        },
+        "encounter": {
+          "reference": "Encounter/enc001"
+        },
+        "effectiveDateTime": "2026-01-02T09:10:00Z",
+        "valueQuantity": {
+          "value": 80,
+          "unit": "mmHg",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "obs003",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8480-6",
+              "display": "Systolic blood pressure"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/pt001"
+        },
+        "encounter": {
+          "reference": "Encounter/enc002"
+        },
+        "effectiveDateTime": "2026-01-08T09:10:00Z",
+        "valueQuantity": {
+          "value": 134,
+          "unit": "mmHg",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "obs004",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8462-4",
+              "display": "Diastolic blood pressure"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/pt001"
+        },
+        "encounter": {
+          "reference": "Encounter/enc002"
+        },
+        "effectiveDateTime": "2026-01-08T09:10:00Z",
+        "valueQuantity": {
+          "value": 82,
+          "unit": "mmHg",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "obs005",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8480-6",
+              "display": "Systolic blood pressure"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/pt002"
+        },
+        "encounter": {
+          "reference": "Encounter/enc003"
+        },
+        "effectiveDateTime": "2026-01-04T09:10:00Z",
+        "valueQuantity": {
+          "value": 137,
+          "unit": "mmHg",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "obs006",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8462-4",
+              "display": "Diastolic blood pressure"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/pt002"
+        },
+        "encounter": {
+          "reference": "Encounter/enc003"
+        },
+        "effectiveDateTime": "2026-01-04T09:10:00Z",
+        "valueQuantity": {
+          "value": 84,
+          "unit": "mmHg",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "obs007",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8480-6",
+              "display": "Systolic blood pressure"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/pt003"
+        },
+        "encounter": {
+          "reference": "Encounter/enc004"
+        },
+        "effectiveDateTime": "2026-01-10T09:10:00Z",
+        "valueQuantity": {
+          "value": 140,
+          "unit": "mmHg",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "obs008",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8462-4",
+              "display": "Diastolic blood pressure"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/pt003"
+        },
+        "encounter": {
+          "reference": "Encounter/enc004"
+        },
+        "effectiveDateTime": "2026-01-10T09:10:00Z",
+        "valueQuantity": {
+          "value": 86,
+          "unit": "mmHg",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "obs009",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8480-6",
+              "display": "Systolic blood pressure"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/pt004"
+        },
+        "encounter": {
+          "reference": "Encounter/enc005"
+        },
+        "effectiveDateTime": "2026-01-12T09:10:00Z",
+        "valueQuantity": {
+          "value": 143,
+          "unit": "mmHg",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "obs010",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8462-4",
+              "display": "Diastolic blood pressure"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/pt004"
+        },
+        "encounter": {
+          "reference": "Encounter/enc005"
+        },
+        "effectiveDateTime": "2026-01-12T09:10:00Z",
+        "valueQuantity": {
+          "value": 88,
+          "unit": "mmHg",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "obs011",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8480-6",
+              "display": "Systolic blood pressure"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/pt005"
+        },
+        "encounter": {
+          "reference": "Encounter/enc006"
+        },
+        "effectiveDateTime": "2026-01-14T09:10:00Z",
+        "valueQuantity": {
+          "value": 146,
+          "unit": "mmHg",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "obs012",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8462-4",
+              "display": "Diastolic blood pressure"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/pt005"
+        },
+        "encounter": {
+          "reference": "Encounter/enc006"
+        },
+        "effectiveDateTime": "2026-01-14T09:10:00Z",
+        "valueQuantity": {
+          "value": 90,
+          "unit": "mmHg",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "med001",
+        "status": "active",
+        "intent": "order",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "local-synthetic-medication-codes",
+              "code": "MED001",
+              "display": "Amlodipine"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/pt001"
+        },
+        "encounter": {
+          "reference": "Encounter/enc001"
+        },
+        "authoredOn": "2026-01-02"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "med002",
+        "status": "active",
+        "intent": "order",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "local-synthetic-medication-codes",
+              "code": "MED002",
+              "display": "Losartan"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/pt001"
+        },
+        "encounter": {
+          "reference": "Encounter/enc002"
+        },
+        "authoredOn": "2026-01-08"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "med003",
+        "status": "active",
+        "intent": "order",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "local-synthetic-medication-codes",
+              "code": "MED003",
+              "display": "Amlodipine"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/pt002"
+        },
+        "encounter": {
+          "reference": "Encounter/enc003"
+        },
+        "authoredOn": "2026-01-04"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "med004",
+        "status": "active",
+        "intent": "order",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "local-synthetic-medication-codes",
+              "code": "MED004",
+              "display": "Telmisartan"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/pt004"
+        },
+        "encounter": {
+          "reference": "Encounter/enc005"
+        },
+        "authoredOn": "2026-01-12"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "med005",
+        "status": "active",
+        "intent": "order",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "local-synthetic-medication-codes",
+              "code": "MED005",
+              "display": "Amlodipine"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/pt005"
+        },
+        "encounter": {
+          "reference": "Encounter/enc006"
+        },
+        "authoredOn": "2026-01-14"
+      }
+    }
+  ]
+}

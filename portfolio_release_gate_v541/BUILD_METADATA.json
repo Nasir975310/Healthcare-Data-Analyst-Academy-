@@ -1,0 +1,14 @@
+{
+  "release": "5.41.0",
+  "base_release": "5.40.0",
+  "v541_tests": "4/4 passed",
+  "v540_tests": "2/2 passed",
+  "v538_tests": "5/5 passed",
+  "python_compile_errors": 0,
+  "roadmap_js": "passed",
+  "html_duplicate_ids": 0,
+  "actual_local_release_gate": "NOT_RUN",
+  "github_publication": false,
+  "power_bi_execution": false,
+  "independent_employer_review": false
+}

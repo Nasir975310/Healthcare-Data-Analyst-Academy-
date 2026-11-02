@@ -1,0 +1,74 @@
+[
+  {
+    "id": "q1",
+    "q": "Where should imputation be fitted in a cross-validation workflow?",
+    "options": [
+      "Before splitting all data",
+      "Inside a pipeline fitted separately within each training fold",
+      "On the final test set",
+      "Only after deployment"
+    ],
+    "correct": 1,
+    "why": "Fitting preprocessing inside each fold prevents validation information leaking into the transformation."
+  },
+  {
+    "id": "q2",
+    "q": "Which split is appropriate when patients have repeated records?",
+    "options": [
+      "Random row split",
+      "Patient-grouped split",
+      "Sort by row number and split",
+      "Duplicate all patients in both sets"
+    ],
+    "correct": 1,
+    "why": "All records for a patient should remain within one partition for patient-level generalisation."
+  },
+  {
+    "id": "q3",
+    "q": "What does cross-validation provide?",
+    "options": [
+      "A guarantee of external validity",
+      "Repeated estimates across training/validation folds",
+      "A replacement for test data in every setting",
+      "A clinical approval"
+    ],
+    "correct": 1,
+    "why": "Cross-validation estimates model performance within the development data and design."
+  },
+  {
+    "id": "q4",
+    "q": "Why record dependency versions?",
+    "options": [
+      "To make charts prettier",
+      "To support reproducibility and troubleshooting",
+      "To eliminate bias",
+      "To avoid data dictionaries"
+    ],
+    "correct": 1,
+    "why": "Versions can change defaults, algorithms and numerical results."
+  },
+  {
+    "id": "q5",
+    "q": "What is the central practical safeguard in 'Machine learning foundations'?",
+    "options": [
+      "Ignore platform differences",
+      "Use explicit assumptions, validation and a reproducible workflow",
+      "Use real patient data on a personal device",
+      "Treat output as clinical advice"
+    ],
+    "correct": 1,
+    "why": "The chapter's workflow must be reproducible, validated and appropriately bounded."
+  },
+  {
+    "id": "q6",
+    "q": "How should the Linux and Windows routes be handled?",
+    "options": [
+      "Run Linux commands in CMD unchanged",
+      "Run PowerShell commands in Fish unchanged",
+      "Use shell-specific instructions and verify equivalent outcomes",
+      "Skip Windows verification"
+    ],
+    "correct": 2,
+    "why": "Shell syntax, paths, permissions and service management differ by OS."
+  }
+]

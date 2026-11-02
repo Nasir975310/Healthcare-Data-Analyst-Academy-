@@ -1,0 +1,45 @@
+{
+  "total_points": 100,
+  "pass_threshold": 80,
+  "criteria": [
+    {
+      "criterion": "Source inventory, architecture and grain definitions",
+      "points": 15
+    },
+    {
+      "criterion": "HL7/FHIR resource and reference interpretation",
+      "points": 15
+    },
+    {
+      "criterion": "Terminology crosswalk quality and explicit unmapped handling",
+      "points": 15
+    },
+    {
+      "criterion": "Reproducible standardisation and source-to-curated reconciliation",
+      "points": 15
+    },
+    {
+      "criterion": "Data quality checks and quarantine/reporting",
+      "points": 15
+    },
+    {
+      "criterion": "Warehouse schema and relationship design",
+      "points": 10
+    },
+    {
+      "criterion": "Security, governance and operational risks",
+      "points": 10
+    },
+    {
+      "criterion": "Client handoff and professional organisation",
+      "points": 5
+    }
+  ],
+  "critical_errors": [
+    "Merging patients on name or date of birth alone",
+    "Treating a MedicationRequest as proof of medication administration or adherence",
+    "Claiming FHIR conformance without profile validation",
+    "Inventing terminology mappings or dropping unmapped records silently",
+    "Including PHI, credentials or secrets in portfolio files"
+  ]
+}

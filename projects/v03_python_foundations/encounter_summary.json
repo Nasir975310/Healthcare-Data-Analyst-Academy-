@@ -1,0 +1,10 @@
+{
+  "record_count": 104,
+  "unique_encounters": 104,
+  "encounter_type_counts": {
+    "IPD": 41,
+    "OPD": 53,
+    "Emergency": 10
+  },
+  "missing_sbp_count": 8
+}

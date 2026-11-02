@@ -1,0 +1,15 @@
+{
+  "name": "HDA Clinical Blue",
+  "dataColors": [
+    "#174D68",
+    "#168C8C",
+    "#6A8CAF",
+    "#D18B45",
+    "#7A6BA8",
+    "#5B9B75",
+    "#B65C68"
+  ],
+  "background": "#F5F8FA",
+  "foreground": "#17324A",
+  "tableAccent": "#174D68"
+}

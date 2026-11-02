@@ -1,0 +1,556 @@
+[
+  {
+    "id": "LAB-01",
+    "volume": "V02–V03",
+    "title": "Create a reproducible Python workspace",
+    "level": "Beginner",
+    "duration": "45–60 min",
+    "tools": "VS Code, Python 3.10+, terminal",
+    "objective": "Create an isolated project environment, install only project dependencies, and prove that the same project can be opened from a terminal and VS Code.",
+    "deliverable": "A working virtual environment and a saved environment manifest (requirements.txt).",
+    "prerequisites": [
+      "Python 3.10 or newer installed",
+      "Academy folder extracted to a writable local directory",
+      "VS Code installed"
+    ],
+    "linux": {
+      "shell": "Fish (Ryoku default)",
+      "commands": [
+        "cd ~/healthcare_data_analyst_academy",
+        "python --version",
+        "python -m venv .venv",
+        "source .venv/bin/activate.fish",
+        "python -m pip install --upgrade pip",
+        "python -m pip install pandas numpy matplotlib",
+        "python -m pip freeze > requirements.txt",
+        "python -c 'import pandas, numpy, matplotlib; print(pandas.__version__, numpy.__version__, matplotlib.__version__)'"
+      ]
+    },
+    "windows": {
+      "shell": "PowerShell 7",
+      "commands": [
+        "Set-Location $HOME\\healthcare_data_analyst_academy",
+        "py --version",
+        "py -m venv .venv",
+        ".\\.venv\\Scripts\\Activate.ps1",
+        "python -m pip install --upgrade pip",
+        "python -m pip install pandas numpy matplotlib",
+        "python -m pip freeze | Set-Content requirements.txt",
+        "python -c \"import pandas, numpy, matplotlib; print(pandas.__version__, numpy.__version__, matplotlib.__version__)\""
+      ]
+    },
+    "steps": [
+      "Open the academy root folder in VS Code, not an individual script file.",
+      "Run the commands for your operating system in order. Do not mix Windows and Linux activation commands.",
+      "In VS Code, open the command palette and choose Python: Select Interpreter. Select the interpreter inside the academy root's .venv directory.",
+      "Create a file named environment_check.py containing: `import sys, pandas, numpy, matplotlib; print(sys.executable); print(pandas.__version__)`. Run it using the selected interpreter.",
+      "Keep `.venv/` out of Git. Keep requirements.txt in the project so another machine can recreate the environment."
+    ],
+    "acceptance": [
+      "The final import command exits without an exception.",
+      "The printed executable path points inside this Academy's .venv.",
+      "requirements.txt exists and lists pandas, numpy and matplotlib."
+    ],
+    "troubleshooting": [
+      [
+        "Linux permission or externally-managed-environment error",
+        "Do not use sudo pip. Confirm the venv is active and the prompt/path points to .venv."
+      ],
+      [
+        "Fish reports unknown command for activation",
+        "Use `source .venv/bin/activate.fish`; the Bash activation file is not for Fish."
+      ],
+      [
+        "PowerShell blocks Activate.ps1",
+        "Use the current-user policy only if permitted by your organisation: `Set-ExecutionPolicy -Scope CurrentUser RemoteSigned`; otherwise run `.\\.venv\\Scripts\\python.exe -m pip ...` without activation."
+      ],
+      [
+        "VS Code imports fail while terminal works",
+        "Select the same .venv interpreter in VS Code and restart the notebook/kernel."
+      ]
+    ],
+    "precautions": [
+      "Do not install packages into Arch's system Python with sudo pip.",
+      "Do not commit .venv, secrets, patient data or credentials.",
+      "The Windows commands are authored for PowerShell; they have not been executed on a Windows host as part of this release."
+    ],
+    "portfolio": "Record Python version, package versions and a short README setup section. This is evidence of reproducible environment management."
+  },
+  {
+    "id": "LAB-02",
+    "volume": "V03",
+    "title": "Profile and validate a healthcare CSV with pandas",
+    "level": "Beginner–Intermediate",
+    "duration": "60–90 min",
+    "tools": "Python, pandas, VS Code",
+    "objective": "Inspect row grain, schema, missingness, duplicate keys, invalid categories and date validity before analysis.",
+    "deliverable": "A profiling report and validation log for the synthetic encounter dataset.",
+    "prerequisites": [
+      "Complete LAB-01",
+      "Use only the synthetic Academy dataset"
+    ],
+    "linux": {
+      "shell": "Fish",
+      "commands": [
+        "cd ~/healthcare_data_analyst_academy",
+        "source .venv/bin/activate.fish",
+        "python projects/v03_python_analysis/data_quality_pipeline.py"
+      ]
+    },
+    "windows": {
+      "shell": "PowerShell 7",
+      "commands": [
+        "Set-Location $HOME\\healthcare_data_analyst_academy",
+        ".\\.venv\\Scripts\\Activate.ps1",
+        "python projects/v03_python_analysis/data_quality_pipeline.py"
+      ]
+    },
+    "steps": [
+      "Read `projects/v03_python_analysis/cleaning_rules.md` before executing transformations.",
+      "Open `projects/v03_python_analysis/data_quality_pipeline.py`; identify input path, declared key, required columns, validation rules and output directory.",
+      "Run the script from the Academy root so relative paths resolve consistently.",
+      "Inspect every generated report in `projects/v03_python_analysis/reports/`. Compare source row count with output row count; investigate every removed or flagged row.",
+      "Add a short QA note describing which checks passed, which failed, and whether each issue was corrected, excluded with justification, or retained."
+    ],
+    "acceptance": [
+      "Script completes without a traceback.",
+      "The report includes source row count, missingness and duplicate/key checks.",
+      "No record is silently deleted solely because it is an outlier or has a missing value.",
+      "Every transformation is documented and the raw synthetic source remains unchanged."
+    ],
+    "troubleshooting": [
+      [
+        "File not found",
+        "Run from the Academy root and verify the dataset and script paths. Do not move only the script out of its project."
+      ],
+      [
+        "Key duplicates detected",
+        "Determine whether the declared key is actually unique at the table's grain; repeated patients may be valid across encounters."
+      ],
+      [
+        "Missing values appear in output",
+        "Missingness is a finding, not automatically an error. Investigate patterns and meaning before imputation."
+      ],
+      [
+        "Pandas import error",
+        "Activate the .venv created in LAB-01 and install requirements from that environment."
+      ]
+    ],
+    "precautions": [
+      "A patient ID is not necessarily unique in an encounter- or order-level table.",
+      "Never interpret missing laboratory values as normal or zero.",
+      "Use synthetic records only; do not copy real hospital data into the Academy."
+    ],
+    "portfolio": "Publish a de-identified methodology note and sample QA report using synthetic data. Include grain, key definition, validation rules and limitations."
+  },
+  {
+    "id": "LAB-03",
+    "volume": "V02",
+    "title": "Answer a prescribing question with SQL",
+    "level": "Beginner–Intermediate",
+    "duration": "60–90 min",
+    "tools": "SQLite, DBeaver, SQL",
+    "objective": "Translate a healthcare question into a reproducible query while preserving table grain and denominators.",
+    "deliverable": "A saved SQL script and a metric-definition note.",
+    "prerequisites": [
+      "DBeaver installed",
+      "SQLite database or CSV import capability",
+      "Read the V02 capstone brief"
+    ],
+    "linux": {
+      "shell": "Fish",
+      "commands": [
+        "cd ~/healthcare_data_analyst_academy",
+        "ls projects/v02_excel_sql_capstone",
+        "dbeaver"
+      ]
+    },
+    "windows": {
+      "shell": "PowerShell 7",
+      "commands": [
+        "Set-Location $HOME\\healthcare_data_analyst_academy",
+        "Get-ChildItem .\\projects\\v02_excel_sql_capstone",
+        "Start-Process dbeaver"
+      ]
+    },
+    "steps": [
+      "Open `projects/v02_excel_sql_capstone/PROJECT_BRIEF.md` and identify the question, population, time period and unit of analysis.",
+      "Open `projects/v02_excel_sql_capstone/capstone_analysis_queries.sql` and read the table names and joins before running any query.",
+      "In DBeaver, create a local SQLite database. Import the workbook's prepared CSV/table data using the column types and keys in the project brief.",
+      "Run the queries individually. For each result, record the row grain and denominator. Compare a row count with a distinct-patient count to confirm they are not being confused.",
+      "Save your final query as `projects/v02_excel_sql_capstone/my_analysis.sql` (create this file) inside a private working copy of the project. Add comments explaining definitions and exclusions."
+    ],
+    "acceptance": [
+      "Every query executes without syntax errors.",
+      "A distinct-patient count is not substituted for order/encounter row count.",
+      "Joins do not unintentionally multiply rows; compare pre- and post-join counts.",
+      "Every percentage or rate has an explicit numerator, denominator and period."
+    ],
+    "troubleshooting": [
+      [
+        "No such table",
+        "Import the source tables first and check exact table names and case."
+      ],
+      [
+        "Unexpectedly inflated counts after join",
+        "Check one-to-many relationships and aggregate at the intended grain before joining."
+      ],
+      [
+        "NULL values disappear from a filter",
+        "Remember SQL three-valued logic; use `IS NULL` or `IS NOT NULL` explicitly."
+      ],
+      [
+        "Date filter excludes records",
+        "Inspect stored date format and use a consistent ISO date representation."
+      ]
+    ],
+    "precautions": [
+      "A prescription order does not prove dispensing, administration or patient adherence.",
+      "Avoid SELECT * for large production datasets; request only required columns.",
+      "Do not connect DBeaver to a live hospital database without written authorisation."
+    ],
+    "portfolio": "Include the business question, SQL, data dictionary, metric definitions and a screenshot/export of synthetic output."
+  },
+  {
+    "id": "LAB-04",
+    "volume": "V04",
+    "title": "Run a defensible biostatistical cohort analysis",
+    "level": "Intermediate",
+    "duration": "90–120 min",
+    "tools": "Python, pandas, SciPy/statsmodels (where installed)",
+    "objective": "Describe a synthetic cohort, quantify missingness and compare groups without overstating statistical or causal evidence.",
+    "deliverable": "Reproducible analysis outputs and a one-page interpretation.",
+    "prerequisites": [
+      "Complete LAB-01",
+      "Read the V04 project brief and data dictionary"
+    ],
+    "linux": {
+      "shell": "Fish",
+      "commands": [
+        "cd ~/healthcare_data_analyst_academy",
+        "source .venv/bin/activate.fish",
+        "python -m pip install scipy statsmodels",
+        "python projects/v04_biostatistics_research_project/analysis/analyze_cohort.py"
+      ]
+    },
+    "windows": {
+      "shell": "PowerShell 7",
+      "commands": [
+        "Set-Location $HOME\\healthcare_data_analyst_academy",
+        ".\\.venv\\Scripts\\Activate.ps1",
+        "python -m pip install scipy statsmodels",
+        "python .\\projects\\v04_biostatistics_research_project\\analysis\\analyze_cohort.py"
+      ]
+    },
+    "steps": [
+      "Read the data dictionary and verify units, coding, missing-value conventions and cohort eligibility.",
+      "Run the analysis script from the Academy root or follow the project's README if its paths are relative to the project directory.",
+      "Inspect outputs in `projects/v04_biostatistics_research_project/outputs/`. Recalculate one summary manually from the CSV to check the code.",
+      "For any group comparison, state the outcome type, independent unit, assumptions, effect estimate and uncertainty. Do not select a test solely because it returns p < 0.05.",
+      "Write a results paragraph that separates descriptive findings from inferential findings and states that this synthetic exercise does not establish causality."
+    ],
+    "acceptance": [
+      "The script validates required columns, unique synthetic patient identifiers and binary coding.",
+      "Group summaries and missingness metrics are present.",
+      "Interpretation names the unit of analysis and reports uncertainty where inferential statistics are used.",
+      "No causal claim is made from an observational comparison."
+    ],
+    "troubleshooting": [
+      [
+        "Missing package",
+        "Install it inside .venv, not system Python."
+      ],
+      [
+        "Unexpected sample size",
+        "Check eligibility filters and missing-data exclusions; document the analysis denominator."
+      ],
+      [
+        "Statistically significant but tiny difference",
+        "Report magnitude and confidence interval; clinical importance is not determined by p-value alone."
+      ],
+      [
+        "Normality assumption questionable",
+        "Inspect distributions and use a method appropriate to design and data; do not treat a normality test as the sole decision rule."
+      ]
+    ],
+    "precautions": [
+      "Do not infer causality from unadjusted observational comparisons.",
+      "Do not run multiple tests and report only significant outcomes.",
+      "The synthetic cohort is for method practice, not clinical decision-making."
+    ],
+    "portfolio": "Submit a reproducible report with cohort flow, descriptive table, missingness, effect estimates, confidence intervals, limitations and code."
+  },
+  {
+    "id": "LAB-05",
+    "volume": "V05",
+    "title": "Build a clinical pharmacy analytics data check",
+    "level": "Intermediate",
+    "duration": "90–120 min",
+    "tools": "Python, pandas, SQL",
+    "objective": "Validate patient, encounter, laboratory and medication tables and produce safe descriptive summaries.",
+    "deliverable": "A validation log and clinical-pharmacy summary report.",
+    "prerequisites": [
+      "Complete LAB-01",
+      "Read the V05 capstone README and project brief"
+    ],
+    "linux": {
+      "shell": "Fish",
+      "commands": [
+        "cd ~/healthcare_data_analyst_academy",
+        "source .venv/bin/activate.fish",
+        "python projects/v05_clinical_pharmacy_analytics_capstone/python/analyze_capstone.py"
+      ]
+    },
+    "windows": {
+      "shell": "PowerShell 7",
+      "commands": [
+        "Set-Location $HOME\\healthcare_data_analyst_academy",
+        ".\\.venv\\Scripts\\Activate.ps1",
+        "python .\\projects\\v05_clinical_pharmacy_analytics_capstone\\python\\analyze_capstone.py"
+      ]
+    },
+    "steps": [
+      "Inspect the data folder and read the data dictionary before joining tables.",
+      "State the grain of each table: patient, encounter, laboratory result or medication order.",
+      "Run the capstone script. Review `reports/outputs/` and the validation report.",
+      "Trace referential-integrity checks: every encounter patient should exist in the patient table; every child record should link to a valid parent where required.",
+      "Review medication and laboratory summaries. Confirm that an order is not labelled as administration and that missing test records are not labelled as normal."
+    ],
+    "acceptance": [
+      "Key uniqueness and referential-integrity checks run.",
+      "Date chronology is checked and invalid chronology is reported.",
+      "Summary counts are explicitly labelled by their grain.",
+      "No laboratory-completion percentage is calculated without an expected-test denominator."
+    ],
+    "troubleshooting": [
+      [
+        "Join duplicates patient rows",
+        "Aggregate child tables to patient/encounter grain before joining or preserve the one-to-many structure."
+      ],
+      [
+        "Date parsing fails",
+        "Inspect raw formats and parse explicitly; retain an invalid-date flag rather than silently coercing without reporting."
+      ],
+      [
+        "No test-completion denominator",
+        "Define eligible encounters and expected tests from a valid protocol before calculating completion."
+      ],
+      [
+        "Medication counts look too high",
+        "Check if counts represent orders, order lines, administrations or unique medicines."
+      ]
+    ],
+    "precautions": [
+      "Use only synthetic data in this project.",
+      "Do not make treatment recommendations from descriptive prescribing patterns alone.",
+      "Reference ranges depend on laboratory method, units, population and clinical context."
+    ],
+    "portfolio": "Document the schema, table grains, validation rules, key metrics and clinical interpretation boundaries."
+  },
+  {
+    "id": "LAB-06",
+    "volume": "V06",
+    "title": "Create a lightweight ETL data mart",
+    "level": "Intermediate",
+    "duration": "90–150 min",
+    "tools": "Python, SQL, SQLite; Docker optional",
+    "objective": "Transform synthetic source tables into validated analytical marts with explicit metric definitions.",
+    "deliverable": "CSV marts, SQL views and an ETL validation log.",
+    "prerequisites": [
+      "Complete LAB-01",
+      "At least 5 GB free disk space recommended; Docker optional"
+    ],
+    "linux": {
+      "shell": "Fish",
+      "commands": [
+        "cd ~/healthcare_data_analyst_academy",
+        "source .venv/bin/activate.fish",
+        "python projects/v06_bi_data_engineering_capstone/python/build_marts.py",
+        "find projects/v06_bi_data_engineering_capstone/reports -maxdepth 2 -type f"
+      ]
+    },
+    "windows": {
+      "shell": "PowerShell 7",
+      "commands": [
+        "Set-Location $HOME\\healthcare_data_analyst_academy",
+        ".\\.venv\\Scripts\\Activate.ps1",
+        "python .\\projects\\v06_bi_data_engineering_capstone\\python\\build_marts.py",
+        "Get-ChildItem .\\projects\\v06_bi_data_engineering_capstone\\reports -Recurse -File"
+      ]
+    },
+    "steps": [
+      "Read the README and schema documentation. Identify source grain and intended mart grain.",
+      "Run the Python mart builder without Docker first; the local path is simpler and uses fewer resources.",
+      "Inspect each generated mart: row count, key uniqueness, nulls, date range and metric totals.",
+      "Open SQL definitions in DBeaver and compare SQL view results with the Python-generated mart. Explain any differences.",
+      "Only if needed, build and run the Docker image using the project's Dockerfile. Stop and remove the container after checking outputs."
+    ],
+    "acceptance": [
+      "The Python ETL completes and writes expected mart outputs.",
+      "Mart grain and primary key are documented.",
+      "Validation checks cover required columns, uniqueness and referential integrity where relevant.",
+      "SQL and Python summaries reconcile or have documented, explained differences."
+    ],
+    "troubleshooting": [
+      [
+        "Docker daemon unavailable",
+        "Skip Docker and use the documented local Python route; check `systemctl status docker` only if Docker is intended."
+      ],
+      [
+        "Out-of-memory or system becomes sluggish",
+        "Stop optional containers and use the local script; avoid running Superset, databases and notebooks concurrently on a 16 GB machine."
+      ],
+      [
+        "Marts have more rows than expected",
+        "Inspect join cardinality and source grain before changing aggregation."
+      ],
+      [
+        "SQL/Python totals differ",
+        "Check NULL handling, date boundaries, duplicate handling and grouping keys."
+      ]
+    ],
+    "precautions": [
+      "Docker is optional, not a prerequisite for learning ETL.",
+      "Do not expose database ports to the public network.",
+      "The generated readmission flag is synthetic teaching data, not a validated readmission measure."
+    ],
+    "portfolio": "Deliver an architecture diagram, source-to-target mapping, SQL, ETL code, validation log and a data dictionary."
+  },
+  {
+    "id": "LAB-07",
+    "volume": "V06",
+    "title": "Publish a small dashboard safely",
+    "level": "Intermediate",
+    "duration": "90–150 min",
+    "tools": "CSV marts, Power BI Desktop on Windows OR Metabase/Superset on Linux",
+    "objective": "Turn a validated mart into a decision-focused dashboard with clear definitions and appropriate visual encodings.",
+    "deliverable": "A one-page dashboard plus metric dictionary and QA checklist.",
+    "prerequisites": [
+      "Complete LAB-06",
+      "Use only validated synthetic mart outputs"
+    ],
+    "linux": {
+      "shell": "Fish",
+      "commands": [
+        "cd ~/healthcare_data_analyst_academy",
+        "ls projects/v06_bi_data_engineering_capstone/reports",
+        "python --version"
+      ]
+    },
+    "windows": {
+      "shell": "PowerShell 7",
+      "commands": [
+        "Set-Location $HOME\\healthcare_data_analyst_academy",
+        "Get-ChildItem .\\projects\\v06_bi_data_engineering_capstone\\reports -Recurse -File",
+        "# Open Power BI Desktop from the Start menu and import the validated CSV mart"
+      ]
+    },
+    "steps": [
+      "Choose one decision and one audience. Define no more than 4–6 primary metrics for the first page.",
+      "Write each metric definition before creating visuals: numerator, denominator, unit, time window, exclusions and refresh date.",
+      "Windows route: open Power BI Desktop, import the validated CSV mart, verify data types and create measures rather than relying on implicit sums.",
+      "Linux route: use a local spreadsheet for a lightweight chart, or deploy Metabase/Superset only if you have sufficient RAM and understand authentication, database access and network exposure. Power BI Desktop is not natively supported on Linux.",
+      "Use trend lines for time, bars for category comparisons and tables for exact values. Avoid 3D charts and truncated axes that exaggerate differences.",
+      "Validate every displayed total against the source mart and add a visible synthetic-data disclaimer."
+    ],
+    "acceptance": [
+      "Each KPI has a documented definition and denominator.",
+      "Dashboard filters do not change the meaning of the metric silently.",
+      "At least one total is reconciled to source data.",
+      "The dashboard labels synthetic data and its refresh/as-of date."
+    ],
+    "troubleshooting": [
+      [
+        "Power BI Desktop unavailable on Linux",
+        "This is expected; use an authorised Windows installation or Linux alternative. Do not assume Wine provides supported compatibility."
+      ],
+      [
+        "Chart totals differ from SQL",
+        "Check relationship cardinality, filter context, implicit aggregation and duplicate rows."
+      ],
+      [
+        "Dashboard too slow on local machine",
+        "Reduce data volume, close unused containers and use CSV extracts; avoid heavy services on 16 GB RAM."
+      ],
+      [
+        "Category order is wrong",
+        "Create an explicit sort column or sort by the intended measure."
+      ]
+    ],
+    "precautions": [
+      "Power BI Desktop is Windows-only; browser access to Power BI Service is not equivalent to Desktop modelling.",
+      "Do not publish identifiable patient data or dashboards to public workspaces.",
+      "Do not use a dashboard as a substitute for clinical review."
+    ],
+    "portfolio": "Publish screenshots and a readme containing audience, decision, metric dictionary, data lineage, QA evidence and limitations."
+  },
+  {
+    "id": "LAB-08",
+    "volume": "V07",
+    "title": "Evaluate a clinical risk prediction model",
+    "level": "Advanced",
+    "duration": "120–180 min",
+    "tools": "Python, pandas, scikit-learn",
+    "objective": "Evaluate a synthetic prediction model with a held-out test set, discrimination, calibration, threshold metrics and subgroup checks.",
+    "deliverable": "A model evaluation report that communicates intended use and limitations.",
+    "prerequisites": [
+      "Complete V04 statistics and V07 model evaluation chapters",
+      "Read the V07 capstone README"
+    ],
+    "linux": {
+      "shell": "Fish",
+      "commands": [
+        "cd ~/healthcare_data_analyst_academy",
+        "source .venv/bin/activate.fish",
+        "python -m pip install scikit-learn",
+        "python projects/v07_predictive_analytics_capstone/scripts/run_capstone.py"
+      ]
+    },
+    "windows": {
+      "shell": "PowerShell 7",
+      "commands": [
+        "Set-Location $HOME\\healthcare_data_analyst_academy",
+        ".\\.venv\\Scripts\\Activate.ps1",
+        "python -m pip install scikit-learn",
+        "python .\\projects\\v07_predictive_analytics_capstone\\scripts\\run_capstone.py"
+      ]
+    },
+    "steps": [
+      "Read the project brief and inspect the synthetic cohort generation process. Identify target, prediction time and feature availability.",
+      "Run the model script and inspect metrics in `projects/v07_predictive_analytics_capstone/reports/`.",
+      "Check for leakage: no feature may contain information recorded after the prediction time or encode the outcome directly.",
+      "Interpret sensitivity, specificity, PPV, NPV, ROC-AUC and calibration together. PPV/NPV depend on prevalence and the chosen threshold.",
+      "Review subgroup performance and uncertainty. Record limitations including synthetic data, sample size, dataset shift and absence of external validation."
+    ],
+    "acceptance": [
+      "Train/test separation is documented and no test data are used for model selection.",
+      "Metrics are labelled with their evaluation split and threshold where relevant.",
+      "At least one calibration assessment and subgroup check is reported where data support it.",
+      "The report explicitly states that the model is not for clinical deployment or patient-level decisions."
+    ],
+    "troubleshooting": [
+      [
+        "AUC looks implausibly high",
+        "Investigate target leakage, duplicated patients across splits and post-outcome variables."
+      ],
+      [
+        "PPV is low despite good sensitivity",
+        "Check outcome prevalence and threshold; PPV is prevalence-dependent."
+      ],
+      [
+        "Subgroup metric is unstable",
+        "Report subgroup sample sizes and uncertainty; do not rank groups on tiny denominators."
+      ],
+      [
+        "Scikit-learn import error",
+        "Install inside the active .venv and confirm VS Code uses that interpreter."
+      ]
+    ],
+    "precautions": [
+      "All cohort data are synthetic.",
+      "A model metric is not proof of clinical utility, fairness, safety or generalisability.",
+      "Do not deploy, prescribe, triage or make patient-level decisions using this educational model."
+    ],
+    "portfolio": "Include model card, intended-use statement, split strategy, metric definitions, calibration, subgroup analysis, error analysis and explicit non-deployment disclaimer."
+  }
+]

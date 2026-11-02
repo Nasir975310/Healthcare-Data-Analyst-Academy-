@@ -1,0 +1,62 @@
+[
+  {
+    "id": "q1",
+    "q": "What does an ndarray shape of (4, 3) mean?",
+    "options": [
+      "Four rows and three columns",
+      "Four dimensions",
+      "Three rows and four files",
+      "Twelve rows"
+    ],
+    "correct": 0,
+    "why": "Shape lists the length of each dimension."
+  },
+  {
+    "id": "q2",
+    "q": "What does dtype describe?",
+    "options": [
+      "The element data type",
+      "Array chart title",
+      "File path",
+      "Number of dimensions"
+    ],
+    "correct": 0,
+    "why": "dtype describes how array elements are represented."
+  },
+  {
+    "id": "q3",
+    "q": "Which operator combines NumPy elementwise Boolean masks?",
+    "options": [
+      "&",
+      "and",
+      "or only",
+      "="
+    ],
+    "correct": 0,
+    "why": "Use parentheses around each comparison when combining masks with & or |."
+  },
+  {
+    "id": "q4",
+    "q": "What does np.nanmean do?",
+    "options": [
+      "Calculates a mean while ignoring NaN values",
+      "Converts all missing values to zero",
+      "Counts rows",
+      "Sorts an array"
+    ],
+    "correct": 0,
+    "why": "It excludes NaN values; report the nonmissing count."
+  },
+  {
+    "id": "q5",
+    "q": "For a 2D array, what does axis=0 aggregate?",
+    "options": [
+      "Down rows, producing one result per column",
+      "Across columns per row",
+      "All files in a folder",
+      "Only missing values"
+    ],
+    "correct": 0,
+    "why": "Axis zero is the row axis; aggregation collapses that axis."
+  }
+]

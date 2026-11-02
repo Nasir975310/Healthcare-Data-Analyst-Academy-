@@ -1,0 +1,198 @@
+[
+  {
+    "id": "PRAC-01",
+    "title": "Hospital performance and operational review",
+    "client": "Hospital COO and quality office",
+    "duration": "5 working days",
+    "objective": "Produce a reproducible monthly performance review using encounter and medication-order extracts.",
+    "business_request": "The COO says General Medicine appears to have longer stays and medication workload is increasing. Confirm what the data show, identify data-quality risks, and recommend what management should investigate next.",
+    "inputs": [
+      "data/encounters.csv",
+      "data/medication_orders.csv"
+    ],
+    "clarifications": [
+      "What is the reporting period and date field?",
+      "Is the encounter row the unit of analysis?",
+      "How is readmission_30d_flag defined and validated?",
+      "Does medication order volume mean unique order lines, active orders, or administrations?",
+      "Should missing cost be excluded or estimated? Never impute without approval."
+    ],
+    "tasks": [
+      "Profile row counts, keys, date ranges, missingness and invalid values.",
+      "Define a metric dictionary with grain, numerator, denominator and exclusions.",
+      "Calculate monthly encounters, mean and median LOS, supplied readmission flag proportion and order lines per encounter.",
+      "Compare departments while describing case-mix and data completeness.",
+      "Reconcile orphan orders and missing unit costs.",
+      "Prepare an executive dashboard specification and one-page findings memo."
+    ],
+    "deliverables": [
+      "Reproducible SQL/Python analysis",
+      "Data-quality and reconciliation log",
+      "Metric dictionary",
+      "Department/month KPI table",
+      "Executive summary and dashboard wireframe",
+      "Limitations and next-step register"
+    ],
+    "acceptance": [
+      "All source rows accounted for; no silent deletion.",
+      "Encounter and order grains explicitly separated.",
+      "Orphan references reported separately.",
+      "Readmission field labelled supplied/unvalidated.",
+      "Every KPI has formula and denominator.",
+      "Findings are descriptive, not causal."
+    ],
+    "rubric": [
+      [
+        "Requirements and metric definitions",
+        15
+      ],
+      [
+        "Data profiling and quality",
+        20
+      ],
+      [
+        "Correct calculations and reproducibility",
+        25
+      ],
+      [
+        "Interpretation and limitations",
+        15
+      ],
+      [
+        "Executive communication",
+        15
+      ],
+      [
+        "Handoff and version control",
+        10
+      ]
+    ]
+  },
+  {
+    "id": "PRAC-02",
+    "title": "Antihypertensive DUE and clinical pharmacy review",
+    "client": "Clinical pharmacy and therapeutics committee",
+    "duration": "5 working days",
+    "objective": "Demonstrate a defensible drug utilisation evaluation using synthetic records.",
+    "business_request": "The committee wants to understand antihypertensive prescribing patterns and whether available blood pressure documentation can support a descriptive review.",
+    "inputs": [
+      "data/encounters.csv",
+      "data/medication_orders.csv"
+    ],
+    "clarifications": [
+      "What constitutes an eligible encounter and antihypertensive order?",
+      "Are repeated encounters from one patient included?",
+      "Are orders active, completed, or discontinued?",
+      "Is SBP baseline/follow-up measured in comparable time windows?",
+      "Which dated guideline and local formulary should be used for concordance? No guideline claims without a source."
+    ],
+    "tasks": [
+      "Define DUE population, unit of analysis and exclusions.",
+      "Filter antihypertensive class; summarise order lines and generic-name patterns.",
+      "Describe single vs multiple order lines only if data support the definition.",
+      "Assess missing baseline/follow-up SBP and calculate paired change only among complete pairs.",
+      "Compare documentation completeness by department.",
+      "Separate prescribing patterns from BP outcomes and state data limitations."
+    ],
+    "deliverables": [
+      "DUE protocol and cohort flow",
+      "Cleaned analytical dataset and reproducible script",
+      "Prescribing pattern tables",
+      "BP documentation and paired-change summary",
+      "Clinical interpretation with references to be added by analyst",
+      "Committee presentation outline"
+    ],
+    "acceptance": [
+      "No claim of administration, dispensing or adherence from order rows.",
+      "Paired SBP analysis uses matched records and reports n.",
+      "No guideline concordance conclusion without dated authoritative criteria.",
+      "Repeated patient encounters acknowledged.",
+      "Missing data and selection limitations reported."
+    ],
+    "rubric": [
+      [
+        "DUE design and cohort definition",
+        20
+      ],
+      [
+        "Medication data handling",
+        20
+      ],
+      [
+        "BP/statistical analysis",
+        20
+      ],
+      [
+        "Clinical interpretation and safeguards",
+        20
+      ],
+      [
+        "Reproducibility and presentation",
+        20
+      ]
+    ]
+  },
+  {
+    "id": "PRAC-03",
+    "title": "Remote client request-to-handoff",
+    "client": "Healthcare analytics vendor project manager",
+    "duration": "3 working days",
+    "objective": "Simulate remote analyst delivery from ambiguous request through scoped, validated handoff.",
+    "business_request": "A client sends a service-ticket export and asks: 'Show whether our support is getting faster and tell us which team is underperforming.'",
+    "inputs": [
+      "data/service_tickets.csv"
+    ],
+    "clarifications": [
+      "What does faster mean: first response, resolution, or time to closure?",
+      "Which timestamp represents receipt and which represents completion?",
+      "How should open tickets be treated?",
+      "Are priority and client type comparable across teams?",
+      "What time zone and business-hours calendar apply?",
+      "What is the minimum cell size for reporting?"
+    ],
+    "tasks": [
+      "Write a concise clarification note and assumptions log.",
+      "Profile timestamp ordering, missing closure times and status consistency.",
+      "Calculate elapsed clock hours for closed tickets; do not label as business hours.",
+      "Summarise median and 90th percentile closure time by priority and client type with counts.",
+      "Report open-ticket backlog separately.",
+      "Draft client-ready summary, limitations and next steps."
+    ],
+    "deliverables": [
+      "Clarification email",
+      "Assumptions and metric definition log",
+      "Reproducible Python/SQL output",
+      "Ticket KPI table",
+      "Client handoff memo and QA checklist"
+    ],
+    "acceptance": [
+      "Open tickets not treated as zero-duration closed tickets.",
+      "Clock hours distinguished from business hours.",
+      "Small groups flagged; no unsupported team blame.",
+      "Metric definition and exclusions explicit.",
+      "Handoff includes files, refresh date, validation and known limitations."
+    ],
+    "rubric": [
+      [
+        "Clarification and scope control",
+        20
+      ],
+      [
+        "Data validation",
+        20
+      ],
+      [
+        "Metric correctness",
+        20
+      ],
+      [
+        "Client communication",
+        20
+      ],
+      [
+        "Handoff quality and privacy",
+        20
+      ]
+    ]
+  }
+]

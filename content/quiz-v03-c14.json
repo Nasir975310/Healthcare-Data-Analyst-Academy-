@@ -1,0 +1,74 @@
+[
+  {
+    "id": "q1",
+    "q": "What is the analysis grain in the integrated capstone?",
+    "options": [
+      "One row per encounter",
+      "One row per patient",
+      "One row per diagnosis",
+      "One row per laboratory result"
+    ],
+    "correct": 0,
+    "why": "The main encounter dataset is encounter-grain."
+  },
+  {
+    "id": "q2",
+    "q": "What is the Q1 2026 date filter used in the project?",
+    "options": [
+      "2026-01-01 inclusive to 2026-04-01 exclusive",
+      "2026-01-01 to 2026-03-31 inclusive only",
+      "Any 90-day period",
+      "2026-04-01 inclusive to 2026-07-01 exclusive"
+    ],
+    "correct": 0,
+    "why": "A half-open interval avoids end-of-day boundary ambiguity."
+  },
+  {
+    "id": "q3",
+    "q": "Why compare Python and R outputs?",
+    "options": [
+      "To identify implementation differences under identical definitions",
+      "Matching outputs prove source accuracy",
+      "To choose the larger result",
+      "To avoid documenting methods"
+    ],
+    "correct": 0,
+    "why": "Cross-tool agreement supports computational consistency, not source validity."
+  },
+  {
+    "id": "q4",
+    "q": "What does SBP completeness use as denominator?",
+    "options": [
+      "All eligible encounter rows",
+      "Only rows with recorded SBP",
+      "Distinct patients only",
+      "Only inpatient encounters"
+    ],
+    "correct": 0,
+    "why": "Completeness is nonmissing SBP divided by all eligible encounter records."
+  },
+  {
+    "id": "q5",
+    "q": "Can this synthetic descriptive project support a causal claim?",
+    "options": [
+      "No",
+      "Yes, because regression is included",
+      "Yes, if charts match",
+      "Only if p<0.05"
+    ],
+    "correct": 0,
+    "why": "Synthetic descriptive records do not establish causal effects."
+  },
+  {
+    "id": "q6",
+    "q": "Which item is essential in a professional handoff?",
+    "options": [
+      "Dependencies, run commands, outputs, tests and limitations",
+      "Only screenshots",
+      "Only a chart",
+      "Personal passwords"
+    ],
+    "correct": 0,
+    "why": "A handoff should let another analyst reproduce and assess the work."
+  }
+]

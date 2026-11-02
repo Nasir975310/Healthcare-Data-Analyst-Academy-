@@ -1,0 +1,154 @@
+[
+  {
+    "id": "SIM-04",
+    "title": "Hospital Operations Incident Review",
+    "role": "Hospital / Healthcare Data Analyst",
+    "duration_minutes": 120,
+    "difficulty": "Intermediate",
+    "scenario": "The hospital operations manager needs a monthly performance pack by department. The source files contain duplicate keys, invalid chronology, negative length of stay, missing dimensions and orphan medication-order references. You must separate valid records from quarantined rows and explain how denominator choices affect KPIs.",
+    "inputs": [
+      "data/encounters_raw.csv",
+      "data/medication_orders_raw.csv"
+    ],
+    "deliverables": [
+      "Data profiling and issue log",
+      "Documented inclusion/exclusion rules",
+      "Department KPI table with encounter denominator",
+      "Medication-order reconciliation summary",
+      "SQL or Python analysis code",
+      "One-page executive handoff with limitations"
+    ],
+    "acceptance": [
+      "Do not silently delete invalid records; quarantine and count them",
+      "Deduplicate using an explicit rule and retain an audit trail",
+      "Exclude invalid chronology and negative LOS from LOS calculations",
+      "Report order-to-encounter orphan count",
+      "Label readmission flag as supplied synthetic flag, not clinically validated readmission"
+    ],
+    "rubric": [
+      [
+        "Scope, grain and metric definitions",
+        15
+      ],
+      [
+        "Data quality and quarantine",
+        20
+      ],
+      [
+        "Correct calculations and reconciliation",
+        25
+      ],
+      [
+        "Reproducibility and code quality",
+        15
+      ],
+      [
+        "Interpretation and limitations",
+        10
+      ],
+      [
+        "Client communication",
+        15
+      ]
+    ]
+  },
+  {
+    "id": "SIM-05",
+    "title": "Antihypertensive DUE Analytical Review",
+    "role": "Clinical Pharmacy / Clinical Data Analyst",
+    "duration_minutes": 150,
+    "difficulty": "Advanced",
+    "scenario": "A clinical pharmacy team requests a descriptive review of a synthetic antihypertensive cohort. Assess follow-up SBP, change from baseline, cohort characteristics, missingness and potential confounding. Avoid causal claims and do not interpret a small synthetic cohort as real clinical evidence.",
+    "inputs": [
+      "data/antihypertensive_due_cohort.csv"
+    ],
+    "deliverables": [
+      "Cohort flow and data-quality summary",
+      "Baseline and follow-up SBP descriptive statistics",
+      "Change-from-baseline summary with denominator",
+      "Stratified summaries by drug class and diabetes status",
+      "A limitations and confounding note",
+      "Reproducible Python or R script and concise report"
+    ],
+    "acceptance": [
+      "Retain and report missing follow-up SBP",
+      "Flag implausible age and follow-up interval",
+      "State paired analysis denominator explicitly",
+      "Do not claim one drug class is superior without appropriate design and adjustment",
+      "Clearly disclose that all records and outcomes are synthetic"
+    ],
+    "rubric": [
+      [
+        "Cohort definition and data quality",
+        20
+      ],
+      [
+        "Descriptive statistics and denominators",
+        25
+      ],
+      [
+        "Stratification and interpretation",
+        15
+      ],
+      [
+        "Bias/confounding/limitations",
+        20
+      ],
+      [
+        "Reproducibility",
+        10
+      ],
+      [
+        "Clinical communication and synthetic disclosure",
+        10
+      ]
+    ]
+  },
+  {
+    "id": "SIM-06",
+    "title": "Remote Client Data Quality Escalation",
+    "role": "Healthcare Vendor / Remote Data Analyst",
+    "duration_minutes": 90,
+    "difficulty": "Intermediate",
+    "scenario": "A remote client reports that the medication dashboard total differs from the monthly extract. You must investigate join fan-out, missing costs, invalid quantities, blank therapeutic classes and orphan references. Prepare a clear clarification request and handoff.",
+    "inputs": [
+      "data/medication_orders_raw.csv",
+      "data/encounters_raw.csv"
+    ],
+    "deliverables": [
+      "Issue register with severity and impact",
+      "Reconciliation showing raw, valid, excluded and orphan counts",
+      "SQL query with safe join grain",
+      "Client clarification message",
+      "Handoff note with unresolved risks"
+    ],
+    "acceptance": [
+      "Do not join raw encounter and order tables without checking cardinality",
+      "Do not treat order rows as dispensing or administration",
+      "Separate missing unit cost from zero cost",
+      "Preserve original raw inputs and create derived clean outputs"
+    ],
+    "rubric": [
+      [
+        "Issue identification and prioritisation",
+        20
+      ],
+      [
+        "Join/cardinality and reconciliation",
+        25
+      ],
+      [
+        "Technical solution",
+        20
+      ],
+      [
+        "Client clarification",
+        15
+      ],
+      [
+        "Handoff and residual risk",
+        20
+      ]
+    ]
+  }
+]

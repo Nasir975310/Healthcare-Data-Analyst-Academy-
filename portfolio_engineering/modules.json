@@ -1,0 +1,183 @@
+[
+  {
+    "id": "PE-01",
+    "title": "Design a reviewer-friendly analytics repository",
+    "level": "Foundation",
+    "time": "2\u20133 hours",
+    "outcomes": [
+      "Separate raw, interim and curated data.",
+      "Make project structure navigable without opening every file.",
+      "Keep generated outputs reproducible and avoid committing environments or secrets."
+    ],
+    "tasks": [
+      "Create a repository with README, data/raw, data/processed, src, sql, reports, tests and docs.",
+      "Add a data dictionary and source provenance note.",
+      "Add .gitignore for virtual environments, caches, credentials and local databases containing sensitive data.",
+      "Keep synthetic sample data small; document where full data comes from."
+    ],
+    "acceptance": [
+      "A reviewer can identify purpose, inputs, outputs and run steps in under two minutes.",
+      "No credentials, PHI, real patient data or environment folders are committed.",
+      "File names and paths are consistent and portable."
+    ]
+  },
+  {
+    "id": "PE-02",
+    "title": "Write an evidence-based README",
+    "level": "Foundation",
+    "time": "90 minutes",
+    "outcomes": [
+      "Describe the business question and audience.",
+      "Document reproducibility and validation.",
+      "Separate findings from assumptions and limitations."
+    ],
+    "tasks": [
+      "Write project title, business context, scope and dataset grain.",
+      "Document setup, exact commands, expected outputs and software versions.",
+      "Include metric definitions, QA checks, key findings, limitations and screenshots/figures where safe.",
+      "Add a synthetic-data/privacy statement and attribution/licensing."
+    ],
+    "acceptance": [
+      "No unsupported impact claims.",
+      "Commands are complete and paths exist.",
+      "Every displayed metric has a definition and denominator.",
+      "Limitations are explicit."
+    ]
+  },
+  {
+    "id": "PE-03",
+    "title": "Git workflow and meaningful commit history",
+    "level": "Foundation",
+    "time": "2 hours",
+    "outcomes": [
+      "Use status, diff, log, branch, commit and remote safely.",
+      "Keep commits small and descriptive.",
+      "Avoid committing secrets or patient information."
+    ],
+    "tasks": [
+      "Initialise a local repository; inspect status before staging.",
+      "Use a feature branch for one improvement.",
+      "Review git diff; stage selected files; commit with imperative message.",
+      "Create a .gitignore; scan staged diff for PHI/secrets before push.",
+      "Use a remote only after reviewing repository visibility and data permissions."
+    ],
+    "acceptance": [
+      "Working tree is understood before each commit.",
+      "No blind git add of sensitive exports.",
+      "Commit history communicates project evolution.",
+      "Remote visibility is intentional."
+    ]
+  },
+  {
+    "id": "PE-04",
+    "title": "Code quality, tests and reproducibility",
+    "level": "Intermediate",
+    "time": "3 hours",
+    "outcomes": [
+      "Separate reusable functions from notebook-only logic.",
+      "Add deterministic checks and data contracts.",
+      "Capture environment and execution evidence."
+    ],
+    "tasks": [
+      "Refactor repeated transformations into functions.",
+      "Add schema, uniqueness, range and reconciliation tests.",
+      "Set random seeds for synthetic demonstrations.",
+      "Record dependency versions and exact run command.",
+      "Capture clean-run logs and expected outputs."
+    ],
+    "acceptance": [
+      "A fresh environment can reproduce results.",
+      "Tests fail when a deliberate defect is introduced.",
+      "Warnings and exceptions are reviewed, not hidden.",
+      "No machine-specific absolute paths."
+    ]
+  },
+  {
+    "id": "PE-05",
+    "title": "Analytical code review and pull-request practice",
+    "level": "Intermediate",
+    "time": "2 hours",
+    "outcomes": [
+      "Review correctness, grain, denominators, missingness and clinical claims.",
+      "Write actionable review comments.",
+      "Respond to feedback with traceable changes."
+    ],
+    "tasks": [
+      "Review a peer's SQL/Python against the checklist.",
+      "Identify one correctness risk, one maintainability issue and one documentation gap.",
+      "Write comments with file/line, impact and suggested correction.",
+      "Revise code and document what changed."
+    ],
+    "acceptance": [
+      "Comments are specific, respectful and reproducible.",
+      "Review distinguishes blocking defects from suggestions.",
+      "Author response closes each issue with evidence."
+    ]
+  },
+  {
+    "id": "PE-06",
+    "title": "Portfolio narrative and project selection",
+    "level": "Intermediate",
+    "time": "2 hours",
+    "outcomes": [
+      "Select projects aligned with role requirements.",
+      "Explain personal contribution and analytical judgement.",
+      "Present evidence without exaggerating experience."
+    ],
+    "tasks": [
+      "Select 2\u20133 strongest projects for a target job family.",
+      "Write a concise case study for each: problem, approach, tools, QA, result, limitations.",
+      "Map every CV claim to an inspectable artefact.",
+      "Prepare a 90-second spoken walkthrough."
+    ],
+    "acceptance": [
+      "Claims match evidence and role level.",
+      "Projects demonstrate different capabilities, not duplicate dashboards.",
+      "Synthetic work is labelled as synthetic."
+    ]
+  },
+  {
+    "id": "PE-07",
+    "title": "Technical interview: SQL, Python and statistics",
+    "level": "Advanced",
+    "time": "3 hours",
+    "outcomes": [
+      "Explain and solve timed analytical tasks.",
+      "Communicate assumptions before coding.",
+      "Validate outputs and discuss alternatives."
+    ],
+    "tasks": [
+      "Complete the supplied timed SQL and Python interview bank.",
+      "Explain join cardinality and denominator choice aloud.",
+      "Interpret uncertainty and avoid causal overreach.",
+      "Review edge cases and propose tests."
+    ],
+    "acceptance": [
+      "Correct answer plus explanation.",
+      "Explicit assumptions and data grain.",
+      "Validation and limitations included."
+    ]
+  },
+  {
+    "id": "PE-08",
+    "title": "Remote client interview and delivery simulation",
+    "level": "Advanced",
+    "time": "2 hours",
+    "outcomes": [
+      "Clarify ambiguous requests.",
+      "Manage scope, risks and deadlines.",
+      "Deliver concise async updates and handoffs."
+    ],
+    "tasks": [
+      "Conduct a mock intake using client prompts.",
+      "Write a scope confirmation and risk escalation.",
+      "Send a midpoint update with blockers and revised ETA.",
+      "Deliver files with reproducibility, QA and limitations."
+    ],
+    "acceptance": [
+      "No silent assumptions on key metrics.",
+      "Risks raised early with options.",
+      "Handoff can be reproduced by another analyst."
+    ]
+  }
+]

@@ -1,0 +1,161 @@
+[
+  {
+    "id": "EMP-01",
+    "title": "SQL: Hospital performance and medication-order reconciliation",
+    "time_limit_minutes": 60,
+    "scenario": "The analytics manager needs a department report for the last 90 days. Encounter and medication-order extracts are supplied separately. Several medication orders reference encounter IDs absent from the encounter file.",
+    "tasks": [
+      "Inspect schema and state grain and primary key for each table.",
+      "Calculate encounter counts and mean length of stay by department.",
+      "Calculate medication-order line counts, quantities and extended cost by drug class.",
+      "Identify orphan medication orders and report their count and value.",
+      "Produce a department-level joined summary without encounter/order fan-out.",
+      "Document date-window, cancelled/discontinued order and readmission-flag assumptions."
+    ],
+    "deliverables": [
+      "SQL file with at least five queries",
+      "Result tables or CSV exports",
+      "QA note with row counts, unique keys, orphan count and join validation",
+      "One-paragraph interpretation and limitations"
+    ],
+    "scoring": {
+      "grain_and_schema": 15,
+      "SQL_correctness": 25,
+      "join_safety": 20,
+      "quality_checks": 20,
+      "communication": 10,
+      "reproducibility": 10
+    },
+    "critical_failures": [
+      "Silently dropping orphan orders",
+      "Joining raw order lines to encounters and reporting duplicated encounter counts",
+      "Calling the supplied readmission flag a validated readmission rate without defining its construction"
+    ]
+  },
+  {
+    "id": "EMP-02",
+    "title": "Python: Data-quality investigation and reproducible pipeline",
+    "time_limit_minutes": 75,
+    "scenario": "A client provides three CSV extracts. Build a repeatable profiling script that validates keys, dates, categories, ranges and referential integrity. Do not mutate raw files.",
+    "tasks": [
+      "Load inputs with explicit data types and parse dates.",
+      "Report row counts, unique keys, missingness and category frequencies.",
+      "Detect negative length of stay, invalid encounter references and unexpected categories.",
+      "Export an issue table with source row, rule, severity and proposed disposition.",
+      "Write a JSON QA summary and exit non-zero when critical checks fail.",
+      "Make execution independent of current working directory."
+    ],
+    "deliverables": [
+      "Python script",
+      "requirements file",
+      "issue CSV and QA JSON",
+      "README with run instructions and known limitations"
+    ],
+    "scoring": {
+      "correctness_and_coverage": 25,
+      "issue_traceability": 20,
+      "reproducibility": 20,
+      "code_quality": 15,
+      "safe_raw_data_handling": 10,
+      "communication": 10
+    },
+    "critical_failures": [
+      "Overwriting raw input",
+      "Dropping invalid records without a quarantine or issue log",
+      "Reporting success when a configured critical integrity check fails"
+    ]
+  },
+  {
+    "id": "EMP-03",
+    "title": "Excel: KPI reconciliation and management pack",
+    "time_limit_minutes": 60,
+    "scenario": "A department head has an Excel workbook with encounter and order extracts. Produce a one-page summary that another analyst can audit.",
+    "tasks": [
+      "Create a data dictionary and KPI definition table.",
+      "Use PivotTables or formula-based summaries for encounter count, mean LOS, order lines, quantity and extended cost.",
+      "Use a lookup/reconciliation method to flag orphan orders.",
+      "Apply data validation and conditional formatting to highlight exceptions.",
+      "Reconcile workbook totals to an independent SQL or Python result."
+    ],
+    "deliverables": [
+      "Workbook with raw, cleaned/derived, KPI and QA sheets",
+      "KPI definitions",
+      "Reconciliation evidence and management summary"
+    ],
+    "scoring": {
+      "formula_accuracy": 25,
+      "KPI_definitions": 20,
+      "reconciliation": 20,
+      "usability": 15,
+      "auditability": 10,
+      "communication": 10
+    },
+    "critical_failures": [
+      "Hard-coded headline metrics without traceable formulas",
+      "No clear definition of denominator or order status inclusion"
+    ]
+  },
+  {
+    "id": "EMP-04",
+    "title": "Healthcare dashboard: executive review",
+    "time_limit_minutes": 75,
+    "scenario": "A hospital operations leader wants a concise dashboard for department activity and pharmacy utilisation.",
+    "tasks": [
+      "Define audience, decision and KPI dictionary before charting.",
+      "Design a two-page dashboard or equivalent report with clear titles, units, date range and data freshness.",
+      "Show department activity and medication-order class mix without implying orders were administered.",
+      "Display quality caveats and orphan-order impact.",
+      "Write three evidence-proportionate recommendations."
+    ],
+    "deliverables": [
+      "Dashboard or equivalent report",
+      "KPI dictionary",
+      "QA checklist",
+      "Executive summary"
+    ],
+    "scoring": {
+      "decision_alignment": 15,
+      "visual_accuracy": 20,
+      "KPI_integrity": 20,
+      "quality_transparency": 20,
+      "accessibility_and_usability": 10,
+      "recommendations": 15
+    },
+    "critical_failures": [
+      "No metric definitions",
+      "Misrepresenting order data as consumption/adherence",
+      "Hiding known data-quality exceptions"
+    ]
+  },
+  {
+    "id": "EMP-05",
+    "title": "Remote client: clarify, negotiate and deliver",
+    "time_limit_minutes": 45,
+    "scenario": "A client asks for a readmission dashboard by tomorrow. The readmission field is undocumented, source refresh time is missing, and orphan order references are present. A senior analyst is unavailable.",
+    "tasks": [
+      "Write concise clarification questions that prioritise definition, population, time window and intended decision.",
+      "Propose a safe interim deliverable and explicitly label provisional measures.",
+      "State what cannot be validated before release and the risk of publishing.",
+      "Send a progress update and final handoff note with next actions."
+    ],
+    "deliverables": [
+      "Clarification message",
+      "Scope and assumptions log",
+      "Risk/issue register",
+      "Interim report outline",
+      "Client handoff message"
+    ],
+    "scoring": {
+      "clarification_quality": 25,
+      "risk_management": 20,
+      "scope_and_prioritisation": 20,
+      "communication": 20,
+      "handoff_quality": 15
+    },
+    "critical_failures": [
+      "Inventing a readmission definition",
+      "Presenting an unvalidated metric as definitive",
+      "Failing to disclose the known data limitations"
+    ]
+  }
+]

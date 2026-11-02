@@ -1,0 +1,74 @@
+[
+  {
+    "id": "q1",
+    "q": "What is the main focus of days 1–30?",
+    "options": [
+      "Change production pipelines",
+      "Understand team, data, access, definitions and governance",
+      "Launch a new model",
+      "Skip stakeholder meetings"
+    ],
+    "correct": 1,
+    "why": "Early onboarding should prioritise context and safe access."
+  },
+  {
+    "id": "q2",
+    "q": "What is a safe early win?",
+    "options": [
+      "Unreviewed production change",
+      "Reproduce an existing report and validate it",
+      "Export all records",
+      "Change metric definitions alone"
+    ],
+    "correct": 1,
+    "why": "Bounded, reviewed work builds trust."
+  },
+  {
+    "id": "q3",
+    "q": "Who should approve data access?",
+    "options": [
+      "Any colleague",
+      "Authorised data owner or designated approver",
+      "The analyst alone",
+      "A public forum"
+    ],
+    "correct": 1,
+    "why": "Follow the organisation's access governance."
+  },
+  {
+    "id": "q4",
+    "q": "What should an acceptance test specify?",
+    "options": [
+      "Only a deadline",
+      "Expected result, quality checks and reviewer",
+      "Personal preference",
+      "Untracked assumptions"
+    ],
+    "correct": 1,
+    "why": "Acceptance criteria make deliverables testable."
+  },
+  {
+    "id": "q5",
+    "q": "What is a key principle in 'First 30/60/90 days'?",
+    "options": [
+      "Prioritise appearance over accuracy",
+      "Use evidence, clear scope and honest limitations",
+      "Invent achievements",
+      "Ignore privacy"
+    ],
+    "correct": 1,
+    "why": "Professional practice depends on evidence, scope and integrity."
+  },
+  {
+    "id": "q6",
+    "q": "How should practical work be completed across operating systems?",
+    "options": [
+      "Assume all commands are identical",
+      "Use separate Linux and PowerShell instructions and verify equivalent outcomes",
+      "Skip one OS",
+      "Copy absolute paths between systems"
+    ],
+    "correct": 1,
+    "why": "OS-specific instructions are required for reproducibility."
+  }
+]

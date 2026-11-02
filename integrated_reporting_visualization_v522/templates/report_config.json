@@ -1,0 +1,54 @@
+{
+  "table1": {
+    "group": "group",
+    "variables": [
+      {
+        "column": "age",
+        "label": "Age (years)",
+        "type": "continuous"
+      },
+      {
+        "column": "sex",
+        "label": "Sex",
+        "type": "categorical"
+      },
+      {
+        "column": "hypertension_stage",
+        "label": "Hypertension stage",
+        "type": "categorical"
+      },
+      {
+        "column": "baseline_sbp",
+        "label": "Baseline SBP (mmHg)",
+        "type": "continuous"
+      }
+    ]
+  },
+  "plots": {
+    "histograms": [
+      "age",
+      "baseline_sbp",
+      "followup_sbp"
+    ],
+    "boxplots": [
+      {
+        "value": "followup_sbp",
+        "group": "group"
+      }
+    ],
+    "forest_plot": {
+      "file": "../data/synthetic_forest_effects.csv"
+    },
+    "regression_coefficients": {
+      "file": "../data/synthetic_coefficients.csv"
+    },
+    "roc": {
+      "outcome": "cv_event",
+      "score": "risk_score"
+    },
+    "kaplan_meier": {
+      "time": "followup_days",
+      "event": "event"
+    }
+  }
+}

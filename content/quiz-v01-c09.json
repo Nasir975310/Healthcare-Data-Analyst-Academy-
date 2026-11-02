@@ -1,0 +1,60 @@
+[
+  {
+    "id": "q1",
+    "q": "A p-value is:",
+    "options": [
+      "Probability H0 is true",
+      "Probability data are correct",
+      "Probability, under H0 and the model, of a result at least as extreme as observed",
+      "Probability the alternative is true"
+    ],
+    "correct": 2,
+    "why": "That is the conditional definition of a p-value."
+  },
+  {
+    "id": "q2",
+    "q": "Type I error means:",
+    "options": [
+      "Failing to reject a false null",
+      "Rejecting a true null",
+      "Correctly rejecting a false null",
+      "Low statistical power"
+    ],
+    "correct": 1,
+    "why": "Type I error is a false positive under the null."
+  },
+  {
+    "id": "q3",
+    "q": "A non-significant result proves equivalence:",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct": 1,
+    "why": "Equivalence requires a design and pre-specified equivalence margin."
+  },
+  {
+    "id": "q4",
+    "q": "Why report an effect estimate and confidence interval?",
+    "options": [
+      "They show magnitude and uncertainty",
+      "They replace data quality checks",
+      "They prove causation",
+      "They remove confounding"
+    ],
+    "correct": 0,
+    "why": "Effect estimates and intervals communicate magnitude and precision."
+  },
+  {
+    "id": "q5",
+    "q": "A study tests 30 outcomes and reports only significant ones. Main concern?",
+    "options": [
+      "No concern if sample is large",
+      "Multiplicity and selective reporting",
+      "The median is invalid",
+      "The sample must be random"
+    ],
+    "correct": 1,
+    "why": "Multiple testing and selective reporting inflate false-positive risk."
+  }
+]

@@ -1,0 +1,1232 @@
+[
+  {
+    "term": "Analytics",
+    "definition": "A systematic process of examining data to answer questions, generate evidence or support decisions.",
+    "healthcare": "Analyzing admission patterns to inform capacity planning.",
+    "caution": "A chart or metric is not automatically a valid analysis."
+  },
+  {
+    "term": "Dataset grain",
+    "definition": "The real-world unit represented by one row in a dataset.",
+    "healthcare": "One row per encounter differs from one row per patient or medication order.",
+    "caution": "Incorrect assumptions about grain cause double-counting."
+  },
+  {
+    "term": "Observation",
+    "definition": "A recorded unit or case on which variables are measured.",
+    "healthcare": "A patient, encounter, laboratory result or prescription, depending on the dataset.",
+    "caution": "Define the observation unit for every analysis."
+  },
+  {
+    "term": "Variable",
+    "definition": "A characteristic that can take different values across observations.",
+    "healthcare": "Age, diagnosis category, medication class or test result.",
+    "caution": "Check units, coding and measurement method."
+  },
+  {
+    "term": "Population",
+    "definition": "The complete group to which a question or inference refers.",
+    "healthcare": "All eligible adult admissions in a specified hospital and period.",
+    "caution": "A target population and an observed sample are not identical."
+  },
+  {
+    "term": "Sample",
+    "definition": "A subset of a population that is observed or analyzed.",
+    "healthcare": "A sample of 300 eligible encounters selected for a review.",
+    "caution": "Selection methods affect representativeness."
+  },
+  {
+    "term": "Denominator",
+    "definition": "The quantity defining the base or population against which a numerator is compared.",
+    "healthcare": "Eligible admissions, patient-days or prescriptions.",
+    "caution": "A denominator must match the question and numerator definition."
+  },
+  {
+    "term": "Descriptive analytics",
+    "definition": "Methods that summarize what was observed.",
+    "healthcare": "Monthly count of inpatient admissions.",
+    "caution": "Description alone does not explain causes."
+  },
+  {
+    "term": "Diagnostic analytics",
+    "definition": "Analysis that investigates patterns and plausible reasons for observed results.",
+    "healthcare": "Stratifying a rise in waiting time by department and shift.",
+    "caution": "Observed differences do not automatically establish causation."
+  },
+  {
+    "term": "Predictive analytics",
+    "definition": "Methods that estimate unknown or future outcomes from available information.",
+    "healthcare": "Estimating readmission probability within 30 days.",
+    "caution": "Prediction is not a treatment recommendation."
+  },
+  {
+    "term": "Prescriptive analytics",
+    "definition": "Methods that compare possible actions under specified objectives and constraints.",
+    "healthcare": "Evaluating staffing scenarios subject to capacity constraints.",
+    "caution": "Results depend on assumptions, objectives and constraints."
+  },
+  {
+    "term": "Data provenance",
+    "definition": "Documented origin, history and transformations of data.",
+    "healthcare": "Recording the source system, extraction date and transformation rules for a clinical dataset.",
+    "caution": "Without provenance, results are difficult to audit or reproduce."
+  },
+  {
+    "term": "Confounding",
+    "definition": "A distortion of an exposure-outcome association by a third variable related to both.",
+    "healthcare": "Severity may influence both treatment choice and outcome.",
+    "caution": "Adjustment requires sound design and assumptions."
+  },
+  {
+    "term": "Missing data",
+    "definition": "Values that are not observed or recorded for one or more variables.",
+    "healthcare": "A laboratory result absent from an extracted encounter record.",
+    "caution": "Missing does not mean normal, negative or zero."
+  },
+  {
+    "term": "EHR",
+    "definition": "Electronic health record: a digital system containing patient-related clinical information across care processes.",
+    "healthcare": "Encounter documentation, orders, observations and medication lists.",
+    "caution": "Coverage and structure vary across organizations and systems."
+  },
+  {
+    "term": "Validation",
+    "definition": "Checks that data, calculations, code or outputs meet defined requirements.",
+    "healthcare": "Reconcile a cohort count against an independently generated source total.",
+    "caution": "A successful software run does not prove analytical validity."
+  },
+  {
+    "term": "Operating system",
+    "definition": "System software that manages hardware, processes, memory, files and application services.",
+    "healthcare": "Linux, Windows and macOS are operating systems.",
+    "caution": "A desktop environment or window manager is not the same as the operating system kernel."
+  },
+  {
+    "term": "RAM",
+    "definition": "Volatile working memory used by running programs and the operating system.",
+    "healthcare": "A large spreadsheet may need substantial RAM while loading and transforming.",
+    "caution": "RAM is not the same as persistent storage."
+  },
+  {
+    "term": "Absolute path",
+    "definition": "A file-system location specified from a root or drive root.",
+    "healthcare": "/home/user/project/data.csv on Linux.",
+    "caution": "Path syntax and case sensitivity differ by operating system."
+  },
+  {
+    "term": "Relative path",
+    "definition": "A location interpreted from the current working directory.",
+    "healthcare": "../data/source.csv.",
+    "caution": "The same relative path can resolve differently if the working directory changes."
+  },
+  {
+    "term": "CSV",
+    "definition": "A text format representing tabular data using delimiters and quoting conventions.",
+    "healthcare": "A synthetic encounter export with rows and columns.",
+    "caution": "CSV does not preserve workbook formulas, multiple sheets or formatting; delimiter and encoding matter."
+  },
+  {
+    "term": "Data dictionary",
+    "definition": "Documentation defining fields, types, units, allowed values, source and derivation.",
+    "healthcare": "A dictionary defining systolic blood pressure in mmHg.",
+    "caution": "A field name alone is not a complete definition."
+  },
+  {
+    "term": "Unit of analysis",
+    "definition": "The entity about which an analysis makes a statement.",
+    "healthcare": "Patient, encounter, prescription or hospital-month.",
+    "caution": "It may differ from the row grain of a source table."
+  },
+  {
+    "term": "Confounder",
+    "definition": "A variable related to both an exposure and outcome that can distort their association.",
+    "healthcare": "Disease severity may influence treatment selection and outcome.",
+    "caution": "Adjustment does not automatically remove all confounding."
+  },
+  {
+    "term": "Selection bias",
+    "definition": "Systematic differences caused by how observations enter an analysis.",
+    "healthcare": "Only patients returning for follow-up have outcome measurements.",
+    "caution": "Observed follow-up patients may not represent all eligible patients."
+  },
+  {
+    "term": "Information bias",
+    "definition": "Systematic error in how information is measured or classified.",
+    "healthcare": "A billing diagnosis code is treated as a confirmed clinical diagnosis.",
+    "caution": "Code purpose and provenance matter."
+  },
+  {
+    "term": "HIS",
+    "definition": "Hospital information system supporting administrative and operational workflows.",
+    "healthcare": "Admission, discharge, transfer and billing records.",
+    "caution": "A hospital may use multiple separate systems rather than one integrated HIS."
+  },
+  {
+    "term": "LIS",
+    "definition": "Laboratory information system managing test orders, specimens and results.",
+    "healthcare": "A potassium test order linked to a verified result.",
+    "caution": "Order, collection, verification and release are separate events."
+  },
+  {
+    "term": "PACS",
+    "definition": "Picture archiving and communication system used to store and distribute medical images.",
+    "healthcare": "Radiology images linked to imaging studies.",
+    "caution": "An imaging report and the image itself are different data objects."
+  },
+  {
+    "term": "LOINC",
+    "definition": "A terminology standard used to identify laboratory and clinical observations.",
+    "healthcare": "A coded laboratory test concept.",
+    "caution": "A display name alone may not capture specimen, method and units."
+  },
+  {
+    "term": "SNOMED CT",
+    "definition": "A clinical terminology for representing clinical concepts.",
+    "healthcare": "A standardized clinical finding or diagnosis concept.",
+    "caution": "Terminology edition, version and mapping must be recorded."
+  },
+  {
+    "term": "FHIR",
+    "definition": "Fast Healthcare Interoperability Resources, a standard for exchanging health information using defined resources and APIs.",
+    "healthcare": "An Observation resource representing a laboratory result.",
+    "caution": "FHIR exchange does not guarantee correct semantics or lawful access."
+  },
+  {
+    "term": "Data lineage",
+    "definition": "A record of where data originated and how they were transformed.",
+    "healthcare": "Documenting source tables, cohort rules and derived metrics for a dashboard.",
+    "caution": "Without lineage, reproducing and auditing results is difficult."
+  },
+  {
+    "term": "Nominal scale",
+    "definition": "A categorical measurement scale without inherent order.",
+    "healthcare": "Blood group or hospital ward.",
+    "caution": "Numeric codes do not create a meaningful order."
+  },
+  {
+    "term": "Ordinal scale",
+    "definition": "A categorical scale with order but not necessarily equal spacing.",
+    "healthcare": "Triage level or pain severity category.",
+    "caution": "The distance between adjacent categories may not be equal."
+  },
+  {
+    "term": "Interval scale",
+    "definition": "A scale with meaningful equal differences but no true zero.",
+    "healthcare": "Temperature in degrees Celsius.",
+    "caution": "Ratios such as 'twice as much' are not meaningful."
+  },
+  {
+    "term": "Ratio scale",
+    "definition": "A scale with equal intervals and a meaningful zero.",
+    "healthcare": "Weight in kilograms or duration in minutes.",
+    "caution": "Check that the measurement process and units support the comparison."
+  },
+  {
+    "term": "Discrete variable",
+    "definition": "A variable taking distinct countable values.",
+    "healthcare": "Number of admissions.",
+    "caution": "Do not assume every integer-valued field is a count; it may be a category code."
+  },
+  {
+    "term": "Continuous variable",
+    "definition": "A measured quantity that can take many values over a range.",
+    "healthcare": "Serum creatinine or body weight.",
+    "caution": "Measurement precision and units still matter."
+  },
+  {
+    "term": "Turnaround time",
+    "definition": "A duration between explicitly defined workflow events.",
+    "healthcare": "Specimen collection to verified laboratory result.",
+    "caution": "The start and end timestamps must match the operational question."
+  },
+  {
+    "term": "Absolute change",
+    "definition": "The arithmetic difference between two values.",
+    "healthcare": "A rise from 40% to 50% is +10 percentage points.",
+    "caution": "Specify whether values are percentages, rates or raw counts."
+  },
+  {
+    "term": "Bayes' theorem",
+    "definition": "A rule for updating a probability using evidence and prior information.",
+    "healthcare": "Prevalence and test characteristics determine post-test probability.",
+    "caution": "Do not treat a positive test as a diagnosis without context."
+  },
+  {
+    "term": "Confidence interval",
+    "definition": "An interval produced by a procedure designed to have a stated long-run coverage under assumptions.",
+    "healthcare": "A 95% CI for a mean difference.",
+    "caution": "Do not interpret a frequentist interval as a 95% posterior probability for a fixed parameter."
+  },
+  {
+    "term": "Effect size",
+    "definition": "A quantitative measure of the magnitude of a difference or association.",
+    "healthcare": "Mean difference in length of stay in days.",
+    "caution": "A small p-value is not an effect size."
+  },
+  {
+    "term": "Interquartile range (IQR)",
+    "definition": "Third quartile minus first quartile; width of the middle 50% of values.",
+    "healthcare": "IQR of length of stay in days.",
+    "caution": "Quartile algorithms can differ across software."
+  },
+  {
+    "term": "Mode",
+    "definition": "The most frequent value or category.",
+    "healthcare": "Most common admission ward.",
+    "caution": "A dataset can have no unique mode or several modes."
+  },
+  {
+    "term": "Null hypothesis",
+    "definition": "A reference hypothesis used to define a statistical test distribution.",
+    "healthcare": "No difference in mean between two groups.",
+    "caution": "Failure to reject does not prove the null."
+  },
+  {
+    "term": "Percentage-point change",
+    "definition": "Difference between two percentages.",
+    "healthcare": "50% minus 40% equals 10 percentage points.",
+    "caution": "Do not confuse with relative percentage change."
+  },
+  {
+    "term": "Power",
+    "definition": "Probability of rejecting the null under a specified alternative and model.",
+    "healthcare": "Power planned for a clinically meaningful difference.",
+    "caution": "Depends on effect, variability, design, alpha and sample size."
+  },
+  {
+    "term": "Predictive value",
+    "definition": "Probability of target status conditional on a test result.",
+    "healthcare": "PPV among positive screens.",
+    "caution": "PPV and NPV depend on prevalence in the tested population."
+  },
+  {
+    "term": "Sampling frame",
+    "definition": "Operational list or mechanism from which sample units are selected.",
+    "healthcare": "Validated admission register.",
+    "caution": "Coverage gaps can create selection bias."
+  },
+  {
+    "term": "Sampling variability",
+    "definition": "Variation in a statistic across repeated samples.",
+    "healthcare": "Different samples produce different sample means.",
+    "caution": "It is distinct from systematic bias."
+  },
+  {
+    "term": "Standard deviation",
+    "definition": "Square root of variance; describes spread of observations around the mean.",
+    "healthcare": "SD of systolic BP measurements.",
+    "caution": "Not the same as standard error."
+  },
+  {
+    "term": "Standard error",
+    "definition": "Estimated standard deviation of a statistic across repeated samples.",
+    "healthcare": "SE of the sample mean.",
+    "caution": "Formula depends on design; clustered data need design-aware methods."
+  },
+  {
+    "term": "Statistical significance",
+    "definition": "A result crossing a pre-specified statistical decision threshold under a test.",
+    "healthcare": "p-value compared with alpha.",
+    "caution": "Does not establish clinical or operational importance."
+  },
+  {
+    "term": "Type I error",
+    "definition": "Rejecting a true null hypothesis.",
+    "healthcare": "False-positive statistical conclusion.",
+    "caution": "The nominal rate depends on test assumptions and multiplicity."
+  },
+  {
+    "term": "Type II error",
+    "definition": "Failing to reject a false null hypothesis.",
+    "healthcare": "Missing a real effect of a specified size.",
+    "caution": "Power is 1 minus Type II error probability for that alternative."
+  },
+  {
+    "term": "Variance",
+    "definition": "Average squared deviation under a defined population or sample formula.",
+    "healthcare": "Sample variance uses n−1 in the usual estimator.",
+    "caution": "Its unit is the squared unit of the original variable."
+  },
+  {
+    "term": "Case definition",
+    "definition": "A set of criteria used to classify whether a person or event counts as a case.",
+    "healthcare": "A defined diagnosis and time window for a surveillance analysis.",
+    "caution": "Changing the definition can change measured incidence or prevalence."
+  },
+  {
+    "term": "Cumulative incidence",
+    "definition": "The proportion of an initially at-risk population that develops an outcome over a specified period.",
+    "healthcare": "One-year risk of a new diagnosis.",
+    "caution": "Requires a suitable baseline at-risk population and follow-up definition."
+  },
+  {
+    "term": "Incidence rate",
+    "definition": "New events divided by accumulated person-time at risk.",
+    "healthcare": "New cases per 1,000 person-years.",
+    "caution": "It is not the same as cumulative incidence or risk."
+  },
+  {
+    "term": "Person-time",
+    "definition": "The sum of time each individual contributes while meeting defined at-risk criteria.",
+    "healthcare": "Patient-years at risk in a cohort.",
+    "caution": "Entry, censoring, outcome and competing-event rules matter."
+  },
+  {
+    "term": "Prevalence",
+    "definition": "The proportion of a population with an existing condition at a specified point or during a period.",
+    "healthcare": "Point prevalence of hypertension in a defined population.",
+    "caution": "It measures burden, not new-case occurrence."
+  },
+  {
+    "term": "Risk",
+    "definition": "The probability of an event over a specified period.",
+    "healthcare": "One-year cumulative incidence.",
+    "caution": "Always state the follow-up period and eligible population."
+  },
+  {
+    "term": "Odds",
+    "definition": "Probability of an event divided by probability of no event.",
+    "healthcare": "Odds = 0.2/0.8 = 0.25.",
+    "caution": "Odds are not the same as probability or risk."
+  },
+  {
+    "term": "Effect modification",
+    "definition": "Variation in an effect across levels of another variable.",
+    "healthcare": "Different treatment association across prespecified strata.",
+    "caution": "It can be an important finding, not merely bias."
+  },
+  {
+    "term": "Sensitivity",
+    "definition": "Proportion of people with the condition who test positive.",
+    "healthcare": "True positives divided by all condition-positive people.",
+    "caution": "Does not equal the probability a positive person has the condition."
+  },
+  {
+    "term": "Specificity",
+    "definition": "Proportion of people without the condition who test negative.",
+    "healthcare": "True negatives divided by all condition-negative people.",
+    "caution": "Depends on reference standard, threshold and study spectrum."
+  },
+  {
+    "term": "Data validation",
+    "definition": "Checks that data conform to defined rules and expectations.",
+    "healthcare": "Timestamp ordering and valid category checks.",
+    "caution": "Passing programmed checks does not prove accuracy."
+  },
+  {
+    "term": "Data grain",
+    "definition": "The level represented by one row in a dataset.",
+    "healthcare": "One row per encounter or one row per prescription.",
+    "caution": "Confusing grain can cause double counting."
+  },
+  {
+    "term": "Indicator",
+    "definition": "A defined measure used to signal performance, quality, burden or change.",
+    "healthcare": "Medication reconciliation completion percentage.",
+    "caution": "Requires a clear numerator, denominator, population and period."
+  },
+  {
+    "term": "Metric specification",
+    "definition": "A formal definition of how a metric is constructed and interpreted.",
+    "healthcare": "Readmission definition, exclusions, period and source.",
+    "caution": "Same label can hide different definitions across teams."
+  },
+  {
+    "term": "Balancing measure",
+    "definition": "A measure used to detect unintended consequences of an improvement.",
+    "healthcare": "Discharge delay after adding a reconciliation step.",
+    "caution": "Improving one target may worsen another outcome."
+  },
+  {
+    "term": "Reproducibility",
+    "definition": "Ability to inspect and rerun an analysis from documented inputs and methods.",
+    "healthcare": "Versioned query, code, data dictionary and run instructions.",
+    "caution": "Different software versions or hidden state can affect results."
+  },
+  {
+    "term": "Version control",
+    "definition": "A system for recording changes to files over time.",
+    "healthcare": "Git commit history for analysis scripts.",
+    "caution": "Never treat a private repository as automatically approved for patient data."
+  },
+  {
+    "term": "Primary endpoint",
+    "definition": "The main prespecified outcome used to address a study objective.",
+    "healthcare": "30-day unplanned readmission.",
+    "caution": "Switching endpoints after seeing results risks selective reporting."
+  },
+  {
+    "term": "Absolute reference",
+    "definition": "A cell reference that fixes both column and row when copied.",
+    "healthcare": "$F$1 can hold a fixed target rate.",
+    "caution": "Confirm whether a formula needs relative, absolute or mixed references."
+  },
+  {
+    "term": "Dynamic array",
+    "definition": "A formula result that spills into multiple adjacent cells.",
+    "healthcare": "FILTER returns all eligible encounters.",
+    "caution": "Spill cells must be clear and the function must be supported by the application version."
+  },
+  {
+    "term": "Excel Table",
+    "definition": "A structured range with headers, filters and expandable rows.",
+    "healthcare": "tblEncounters with one row per encounter.",
+    "caution": "The table's grain and unique key still need to be defined."
+  },
+  {
+    "term": "Formula auditing",
+    "definition": "Methods for tracing formula inputs, outputs and calculation steps.",
+    "healthcare": "Trace precedents for a KPI formula.",
+    "caution": "A formula can be syntactically valid but analytically wrong."
+  },
+  {
+    "term": "PivotTable",
+    "definition": "A spreadsheet tool for grouping and aggregating records.",
+    "healthcare": "Encounter counts by ward and month.",
+    "caution": "Count and distinct count are different; aggregation must match the question."
+  },
+  {
+    "term": "Power Query",
+    "definition": "A data connection and transformation tool using recorded steps.",
+    "healthcare": "Append monthly extracts and standardize categories.",
+    "caution": "Refresh can fail or silently change results if source schema/definitions change."
+  },
+  {
+    "term": "Relative reference",
+    "definition": "A cell reference that adjusts when a formula is copied.",
+    "healthcare": "A2 changes to A3 when copied down one row.",
+    "caution": "Check reference movement when copying formulas."
+  },
+  {
+    "term": "Structured reference",
+    "definition": "A formula reference to an Excel Table or its columns by name.",
+    "healthcare": "tblEncounters[Ward].",
+    "caution": "Field names and table names must match exactly."
+  },
+  {
+    "term": "Unpivot",
+    "definition": "A reshape operation that turns columns into attribute-value rows.",
+    "healthcare": "Monthly columns become Month and Value records.",
+    "caution": "The row grain changes; reconcile totals and row counts."
+  },
+  {
+    "term": "Relational database",
+    "definition": "A database that organizes data into tables connected through defined relationships and keys.",
+    "healthcare": "Patients, encounters and prescriptions can be stored in separate related tables.",
+    "caution": "A relational structure does not guarantee accurate definitions or clean source data."
+  },
+  {
+    "term": "DBMS",
+    "definition": "Database management system: software used to create, query, update, secure and administer databases.",
+    "healthcare": "SQLite and PostgreSQL are database engines used to manage relational data.",
+    "caution": "A DBMS is not the same thing as a spreadsheet application."
+  },
+  {
+    "term": "Primary key",
+    "definition": "A column or set of columns that uniquely identifies each row in a table.",
+    "healthcare": "encounter_id uniquely identifies an encounter record.",
+    "caution": "A primary key should be unique and non-NULL."
+  },
+  {
+    "term": "Foreign key",
+    "definition": "A column or set of columns that references a key in another table and can enforce referential integrity.",
+    "healthcare": "encounters.patient_id references patients.patient_id.",
+    "caution": "Foreign-key enforcement and configuration vary by database engine."
+  },
+  {
+    "term": "Referential integrity",
+    "definition": "The property that references between related tables remain valid.",
+    "healthcare": "An encounter should not reference a patient record that does not exist.",
+    "caution": "Orphaned or invalid references can distort joined analyses."
+  },
+  {
+    "term": "NULL",
+    "definition": "A marker for missing, unknown or unavailable information in SQL; it is not equivalent to zero or an empty string.",
+    "healthcare": "A missing systolic blood pressure may be stored as NULL.",
+    "caution": "Use IS NULL; ordinary equality comparisons do not test NULL correctly."
+  },
+  {
+    "term": "Aggregation",
+    "definition": "Summarizing multiple rows with functions such as COUNT, SUM, AVG, MIN or MAX.",
+    "healthcare": "Calculating encounter counts by department.",
+    "caution": "The output grain and denominator must be explicit."
+  },
+  {
+    "term": "Join fan-out",
+    "definition": "Unintended multiplication of rows when joining tables with multiple matching records on both sides.",
+    "healthcare": "Joining multiple diagnoses and prescriptions directly to encounters can multiply each encounter's child rows.",
+    "caution": "Pre-aggregate child tables to the target grain before joining when appropriate."
+  },
+  {
+    "term": "Common table expression (CTE)",
+    "definition": "A named temporary query result introduced with WITH and available within one SQL statement.",
+    "healthcare": "A CTE can define an inpatient cohort before calculating department summaries.",
+    "caution": "A CTE improves organization but is not automatically faster."
+  },
+  {
+    "term": "Window function",
+    "definition": "A function that calculates across a related set of rows while retaining individual rows in the result.",
+    "healthcare": "ROW_NUMBER can select the latest laboratory result per encounter and test.",
+    "caution": "Partitioning and ordering determine what 'latest' or 'rank' means."
+  },
+  {
+    "term": "Normalization",
+    "definition": "A database-design process that organizes data to reduce redundancy and modification anomalies.",
+    "healthcare": "Store department names in a department table and reference department_id from encounters.",
+    "caution": "Normalization does not define clinical metrics or eliminate the need for governance."
+  },
+  {
+    "term": "Data anomaly",
+    "definition": "An insertion, update or deletion problem caused by a poorly structured or redundant data model.",
+    "healthcare": "A department name copied across many encounter rows can become inconsistent after a rename.",
+    "caution": "Denormalized reporting models can be valid when deliberate and governed."
+  },
+  {
+    "term": "SQLite",
+    "definition": "An embedded relational database engine commonly storing a database in a single file.",
+    "healthcare": "A portable local practice database for SQL learning.",
+    "caution": "Not a server-based multi-user platform in the same way as PostgreSQL."
+  },
+  {
+    "term": "PostgreSQL",
+    "definition": "An open-source client-server relational database management system.",
+    "healthcare": "A shared analytics database supporting multiple users and roles.",
+    "caution": "Do not administer production instances without authorization."
+  },
+  {
+    "term": "Schema",
+    "definition": "A namespace that organizes database objects within a database.",
+    "healthcare": "The academy practice objects are grouped in an academy schema in PostgreSQL.",
+    "caution": "Schema behavior differs in SQLite."
+  },
+  {
+    "term": "View",
+    "definition": "A named database query definition presented like a table.",
+    "healthcare": "A department summary view can standardize repeated reporting logic.",
+    "caution": "A view does not automatically validate metrics or restrict underlying access."
+  },
+  {
+    "term": "Index",
+    "definition": "A data structure used by a database engine to speed up selected data access operations.",
+    "healthcare": "An index on patient_id and admission_date may support patient history queries.",
+    "caution": "Indexes consume storage and can slow writes; add based on evidence."
+  },
+  {
+    "term": "Query plan",
+    "definition": "The database engine's planned or actual strategy for executing a query.",
+    "healthcare": "Use EXPLAIN QUERY PLAN or EXPLAIN to inspect access paths.",
+    "caution": "A sequential scan is not automatically inefficient."
+  },
+  {
+    "term": "Event time",
+    "definition": "The time at which a real-world event occurred.",
+    "healthcare": "The timestamp when a specimen was collected.",
+    "caution": "May differ from the time it was entered into the EHR."
+  },
+  {
+    "term": "Transaction time",
+    "definition": "The time at which a fact was recorded in a system.",
+    "healthcare": "A result entered after the specimen collection time.",
+    "caution": "Do not substitute it for event time without justification."
+  },
+  {
+    "term": "Medication administration",
+    "definition": "A recorded event that a medicine was administered to a patient.",
+    "healthcare": "A dose administration record with time, route and status.",
+    "caution": "An order or dispensing record alone does not prove administration."
+  },
+  {
+    "term": "Least privilege",
+    "definition": "A security principle granting only the permissions required for a defined task.",
+    "healthcare": "A reporting analyst receives read-only access to approved views.",
+    "caution": "Do not use shared accounts or unnecessary superuser rights."
+  },
+  {
+    "term": "Reproducible extract",
+    "definition": "A data output that can be regenerated using recorded source, query, parameters and time context.",
+    "healthcare": "A saved SQL script with cohort dates and extraction timestamp.",
+    "caution": "The same SQL may produce different results if source data changes."
+  },
+  {
+    "term": "Algorithm",
+    "definition": "A finite, ordered set of steps for solving a problem.",
+    "healthcare": "A defined procedure for counting missing measurements.",
+    "caution": "An algorithm must state edge cases and stopping conditions."
+  },
+  {
+    "term": "Interpreter",
+    "definition": "A program that executes source code.",
+    "healthcare": "The Python interpreter runs a data-cleaning script.",
+    "caution": "Different interpreters/environments may have different installed packages."
+  },
+  {
+    "term": "Function",
+    "definition": "A reusable named block of code that can accept inputs and return a result.",
+    "healthcare": "A function calculates SBP completeness from a defined cohort.",
+    "caution": "Document assumptions and avoid hidden global state."
+  },
+  {
+    "term": "Virtual environment",
+    "definition": "An isolated Python environment for project dependencies.",
+    "healthcare": "A `.venv` keeps NumPy separate from system Python.",
+    "caution": "It does not isolate the operating system or secure untrusted code."
+  },
+  {
+    "term": "Package",
+    "definition": "A distributable collection of Python modules and related resources.",
+    "healthcare": "NumPy is a package used for numerical computing.",
+    "caution": "Review package source and version before installing."
+  },
+  {
+    "term": "Notebook",
+    "definition": "An interactive document containing executable code cells and explanatory content.",
+    "healthcare": "A Jupyter notebook explores synthetic encounter data.",
+    "caution": "Out-of-order execution can create hidden state."
+  },
+  {
+    "term": "JSON",
+    "definition": "A text format for nested structured data.",
+    "healthcare": "A Python summary is saved as a JSON object.",
+    "caution": "Valid JSON can still violate an expected schema."
+  },
+  {
+    "term": "NumPy ndarray",
+    "definition": "A multidimensional array object with a defined element dtype.",
+    "healthcare": "A numeric array stores observed SBP values.",
+    "caution": "Check shape, dtype and missing-value behavior before analysis."
+  },
+  {
+    "term": "Vectorization",
+    "definition": "Applying operations to whole arrays rather than explicit Python loops.",
+    "healthcare": "Adding a constant to every SBP array element.",
+    "caution": "Vectorized code still needs validation and clear definitions."
+  },
+  {
+    "term": "Broadcasting",
+    "definition": "NumPy's rules for applying operations to arrays with compatible shapes.",
+    "healthcare": "A column vector can be combined with a row vector to create a matrix.",
+    "caution": "Unexpected shapes can silently produce unintended results."
+  },
+  {
+    "term": "pandas",
+    "definition": "A Python library for labelled tabular and time-series data.",
+    "healthcare": "Use DataFrames to filter and summarize encounter records.",
+    "caution": "Always define row grain and check merge cardinality."
+  },
+  {
+    "term": "Series",
+    "definition": "A one-dimensional labelled pandas array.",
+    "healthcare": "A Series of recorded SBP measurements.",
+    "caution": "Its index labels are not necessarily patient identifiers."
+  },
+  {
+    "term": "DataFrame",
+    "definition": "A two-dimensional labelled table with columns that can have different dtypes.",
+    "healthcare": "An encounter-level analytical dataset.",
+    "caution": "State what one row represents."
+  },
+  {
+    "term": "groupby",
+    "definition": "A pandas operation that splits data into groups for aggregation or transformation.",
+    "healthcare": "Calculate mean SBP by department.",
+    "caution": "Distinguish row counts from nonmissing-value counts."
+  },
+  {
+    "term": "merge",
+    "definition": "A pandas operation that combines DataFrames using keys.",
+    "healthcare": "Join encounter records to a department lookup.",
+    "caution": "Validate relationship cardinality and inspect unmatched rows."
+  },
+  {
+    "term": "Data cleaning",
+    "definition": "A documented process for profiling, correcting, flagging and preparing data.",
+    "healthcare": "Flag malformed dates and missing SBP values.",
+    "caution": "Do not silently delete or impute observations."
+  },
+  {
+    "term": "Outlier",
+    "definition": "An observation unusually distant from the rest of a distribution or a specified rule.",
+    "healthcare": "An unusually high recorded measurement requiring source review.",
+    "caution": "An outlier is not automatically an error."
+  },
+  {
+    "term": "Validation rule",
+    "definition": "A test that checks whether data meet a defined requirement.",
+    "healthcare": "Encounter IDs must be nonmissing and unique at encounter grain.",
+    "caution": "Specify whether failure stops, flags or quarantines a record."
+  },
+  {
+    "term": "Matplotlib",
+    "definition": "A Python library for creating static, animated and interactive visualizations.",
+    "healthcare": "Create SBP histograms and department comparison charts.",
+    "caution": "Charts must state units, denominators and limitations."
+  },
+  {
+    "term": "Histogram",
+    "definition": "A chart showing the frequency or density distribution of numeric values in bins.",
+    "healthcare": "Display the distribution of recorded SBP.",
+    "caution": "Bin width affects visual interpretation."
+  },
+  {
+    "term": "p-value",
+    "definition": "A probability, under a specified null model and assumptions, of a test statistic at least as extreme as observed.",
+    "healthcare": "A p-value from a group comparison.",
+    "caution": "It is not the probability that the null hypothesis is true."
+  },
+  {
+    "term": "Regression",
+    "definition": "A statistical model describing an outcome in relation to one or more predictors.",
+    "healthcare": "Explore association between LOS and other variables.",
+    "caution": "Regression alone does not establish causation."
+  },
+  {
+    "term": "R",
+    "definition": "A programming language and environment for statistical computing and graphics.",
+    "healthcare": "Analyze and visualize clinical research datasets.",
+    "caution": "Record package and R versions for reproducibility."
+  },
+  {
+    "term": "Factor",
+    "definition": "An R data structure for categorical variables with defined levels.",
+    "healthcare": "Represent encounter type categories.",
+    "caution": "Unexpected levels can become missing during conversion."
+  },
+  {
+    "term": "Tidy data",
+    "definition": "A tabular organization where each variable is a column, each observation is a row and each observational unit is represented consistently.",
+    "healthcare": "A laboratory results table has one row per result, not necessarily per encounter.",
+    "caution": "Tidy data does not require merging all clinical entities into one table."
+  },
+  {
+    "term": "dplyr",
+    "definition": "An R package providing a grammar for data manipulation.",
+    "healthcare": "Filter encounters and summarize SBP by department.",
+    "caution": "Check join cardinality and grouping behavior."
+  },
+  {
+    "term": "ggplot2",
+    "definition": "An R package for declarative statistical graphics.",
+    "healthcare": "Create SBP histograms and department comparison charts.",
+    "caution": "Charts still require correct denominators, units and interpretation."
+  },
+  {
+    "term": "Quarto",
+    "definition": "An open-source system for authoring and rendering technical and scientific documents.",
+    "healthcare": "Combine analysis code, tables, figures and narrative in one report.",
+    "caution": "Rendering requires the appropriate CLI and language environment."
+  },
+  {
+    "term": "Provenance",
+    "definition": "The recorded origin and transformation history of data and outputs.",
+    "healthcare": "Record input filename, extraction date, cohort and script revision.",
+    "caution": "Do not expose protected identifiers in provenance logs."
+  },
+  {
+    "term": "Dependency lock",
+    "definition": "A record of exact or constrained software package versions required by a project.",
+    "healthcare": "A requirements lock file or R renv lockfile.",
+    "caution": "A lock file does not capture every OS or hardware dependency."
+  },
+  {
+    "term": "Random seed",
+    "definition": "A value used to initialize a pseudorandom number generator.",
+    "healthcare": "Set a seed for a repeatable simulation exercise.",
+    "caution": "A seed alone does not guarantee identical results across changed algorithms or environments."
+  },
+  {
+    "term": "CLI",
+    "definition": "A command-line interface for running a program with arguments.",
+    "healthcare": "Supply input path and reporting dates to a pipeline.",
+    "caution": "Validate arguments and avoid sensitive values in shell history."
+  },
+  {
+    "term": "Unit test",
+    "definition": "A test of a small function or component in isolation.",
+    "healthcare": "Test that duplicate encounter IDs are rejected.",
+    "caution": "Passing unit tests does not prove the full analysis is valid."
+  },
+  {
+    "term": "Integration test",
+    "definition": "A test that checks connected components working together.",
+    "healthcare": "Test loading, filtering, joining and summary export as a workflow.",
+    "caution": "Use synthetic test fixtures and validate outputs."
+  },
+  {
+    "term": "Idempotency",
+    "definition": "A property where repeating an operation does not cause unintended additional effects.",
+    "healthcare": "Rerunning a report job safely regenerates its output.",
+    "caution": "Define overwrite/versioning behavior explicitly."
+  },
+  {
+    "term": "Exit code",
+    "definition": "A numeric status returned by a process to indicate success or failure.",
+    "healthcare": "A failed data validation returns a nonzero status for a scheduler.",
+    "caution": "Do not return success if required checks fail."
+  },
+  {
+    "term": "Handoff",
+    "definition": "Documentation and artifacts that allow another person to understand and continue work.",
+    "healthcare": "README, run commands, outputs, tests, provenance and limitations.",
+    "caution": "Never include passwords or confidential records in a handoff."
+  },
+  {
+    "term": "Estimand",
+    "definition": "The precise quantity a study aims to estimate, defined by population, conditions, outcome and summary measure.",
+    "healthcare": "A treatment-policy estimand may include outcomes regardless of treatment discontinuation.",
+    "caution": "Do not confuse an estimand with the estimator or the observed estimate."
+  },
+  {
+    "term": "Intention-to-treat",
+    "definition": "An analysis strategy that compares participants according to their randomized assignment, regardless of adherence, according to the prespecified plan.",
+    "healthcare": "Preserves the randomized comparison in a clinical trial.",
+    "caution": "Exact handling of missing outcomes and intercurrent events must follow the protocol."
+  },
+  {
+    "term": "Censoring",
+    "definition": "Incomplete observation of event time, such as a participant leaving follow-up before the event is observed.",
+    "healthcare": "A patient has no recorded readmission before the end of the 30-day window.",
+    "caution": "Censoring assumptions matter; censored does not mean event-free forever."
+  },
+  {
+    "term": "Hazard ratio",
+    "definition": "Ratio of instantaneous event rates among those still event-free at a given time, under a specified model.",
+    "healthcare": "HR 0.70 suggests a 30% lower instantaneous hazard if proportional hazards holds.",
+    "caution": "Not the same as a risk ratio or 30% fewer events."
+  },
+  {
+    "term": "Calibration",
+    "definition": "Agreement between predicted probabilities and observed outcome frequencies.",
+    "healthcare": "Among people assigned 20% predicted risk, approximately 20% experience the outcome in a well-calibrated group.",
+    "caution": "Good discrimination does not guarantee good calibration."
+  },
+  {
+    "term": "Likelihood ratio",
+    "definition": "A ratio describing how much a test result changes the odds of a condition.",
+    "healthcare": "LR+ compares probability of a positive test in condition-positive versus condition-negative people.",
+    "caution": "Interpret in context; pre-test probability is required to obtain post-test probability."
+  },
+  {
+    "term": "MCAR",
+    "definition": "Missing completely at random: missingness is independent of observed and unobserved data.",
+    "healthcare": "A random storage failure unrelated to the patient or value.",
+    "caution": "Rarely safe to assume without process evidence."
+  },
+  {
+    "term": "MAR",
+    "definition": "Missing at random conditional on observed variables included in the analysis.",
+    "healthcare": "Follow-up missingness is explained by observed age and site.",
+    "caution": "MAR is an assumption, not something proven by a test."
+  },
+  {
+    "term": "MNAR",
+    "definition": "Missing not at random: missingness still depends on unobserved values after conditioning on observed data.",
+    "healthcare": "Extremely high readings are less likely to be documented even after measured covariates are considered.",
+    "caution": "Requires sensitivity analysis and substantive assumptions."
+  },
+  {
+    "term": "Collider",
+    "definition": "A common effect of two variables; conditioning on it can induce a noncausal association.",
+    "healthcare": "Selection into a specialist clinic may depend on both severity and access.",
+    "caution": "Adjustment for a collider can introduce bias."
+  },
+  {
+    "term": "Propensity score",
+    "definition": "Probability of receiving a treatment conditional on measured baseline covariates.",
+    "healthcare": "Used for matching or weighting in observational comparisons.",
+    "caution": "Balances measured covariates only; does not remove unmeasured confounding."
+  },
+  {
+    "term": "I-squared",
+    "definition": "A statistic describing the proportion of observed variability in meta-analysis estimates attributed to heterogeneity under its assumptions.",
+    "healthcare": "An I² value is considered alongside tau-squared and clinical differences.",
+    "caution": "Not a measure of clinical importance or the amount of bias."
+  },
+  {
+    "term": "Tau-squared",
+    "definition": "Estimated between-study variance in a random-effects meta-analysis.",
+    "healthcare": "Quantifies dispersion of true effects on the selected scale.",
+    "caution": "Depends on effect scale and model."
+  },
+  {
+    "term": "Verification bias",
+    "definition": "Bias when receipt of the reference standard depends on index-test result or participant characteristics.",
+    "healthcare": "Only screen-positive patients receive confirmatory testing.",
+    "caution": "Can distort diagnostic accuracy estimates."
+  },
+  {
+    "term": "Intention-to-diagnose",
+    "definition": "A diagnostic evaluation principle that retains participants in the analysis according to the intended testing pathway, with transparent handling of indeterminate or missing results.",
+    "healthcare": "Useful when test failures and uninterpretable results occur in practice.",
+    "caution": "Exact denominator rules must be specified."
+  },
+  {
+    "term": "Protocol deviation",
+    "definition": "A departure from the approved clinical trial protocol.",
+    "healthcare": "A visit occurs outside its allowed window.",
+    "caution": "Severity and impact classification should follow protocol and governance rules."
+  },
+  {
+    "term": "Case report form",
+    "definition": "A structured instrument for collecting protocol-required trial data.",
+    "healthcare": "Electronic CRF captures visit measurements and adverse events.",
+    "caution": "CRF data require validation and audit trails."
+  },
+  {
+    "term": "Data lock",
+    "definition": "A controlled state in which the clinical database is considered final for a defined analysis.",
+    "healthcare": "After queries are resolved and lock criteria met, the analysis dataset is released.",
+    "caution": "Corrections after lock require formal, traceable processes."
+  },
+  {
+    "term": "Encounter",
+    "definition": "A bounded episode of healthcare service, such as an outpatient visit or inpatient admission.",
+    "healthcare": "One patient may have multiple encounters.",
+    "caution": "Do not treat encounter count as distinct patient count."
+  },
+  {
+    "term": "ATC",
+    "definition": "Anatomical Therapeutic Chemical classification system for grouping medicines.",
+    "healthcare": "Drug utilisation research and medicine-class summaries.",
+    "caution": "ATC groupings do not define clinical appropriateness."
+  },
+  {
+    "term": "DDD",
+    "definition": "Defined Daily Dose: assumed average adult maintenance dose per day for a medicine's main indication, assigned by the WHO Collaborating Centre.",
+    "healthcare": "Standardised drug utilisation measurement.",
+    "caution": "Not the prescribed dose, recommended dose or proof of adherence."
+  },
+  {
+    "term": "DU90%",
+    "definition": "The set of medicines accounting for the first 90% of cumulative utilisation after ranking by a defined volume measure.",
+    "healthcare": "Describe the concentration of medicine use.",
+    "caution": "Not a quality score; state the utilisation unit."
+  },
+  {
+    "term": "PDC",
+    "definition": "Proportion of days covered: a refill-based estimate of the proportion of an observation period with medicine supply available.",
+    "healthcare": "Medication adherence proxy from dispensing records.",
+    "caution": "Supply availability does not prove ingestion; define overlap and switching rules."
+  },
+  {
+    "term": "ICSR",
+    "definition": "Individual Case Safety Report: structured report of a suspected adverse reaction or safety case.",
+    "healthcare": "Pharmacovigilance case processing and signal review.",
+    "caution": "A report does not prove causality."
+  },
+  {
+    "term": "MedDRA",
+    "definition": "Medical Dictionary for Regulatory Activities, a hierarchical terminology for coding medical information in safety reporting.",
+    "healthcare": "Adverse event and reaction coding.",
+    "caution": "Version and coding conventions affect results."
+  },
+  {
+    "term": "ROR",
+    "definition": "Reporting Odds Ratio, a disproportionality measure comparing reporting odds for a drug-event pair with other reports.",
+    "healthcare": "Exploratory pharmacovigilance signal screening.",
+    "caution": "Not incidence, relative risk or causal effect."
+  },
+  {
+    "term": "OMOP CDM",
+    "definition": "Observational Medical Outcomes Partnership Common Data Model, a standard structure and vocabulary for observational health data.",
+    "healthcare": "Harmonised EHR/claims data for observational research.",
+    "caution": "Standard structure does not guarantee equivalent source meaning."
+  },
+  {
+    "term": "HL7 v2",
+    "definition": "A family of healthcare messaging standards using delimited messages and segments.",
+    "healthcare": "ADT admission/discharge/transfer and laboratory messages.",
+    "caution": "Local interface specifications and message corrections matter."
+  },
+  {
+    "term": "ABDM",
+    "definition": "Ayushman Bharat Digital Mission, an Indian initiative for digital health infrastructure and interoperable health information exchange.",
+    "healthcare": "Digital health identity and consent-based exchange concepts.",
+    "caution": "Check current official specifications; an identifier is not blanket access permission."
+  },
+  {
+    "term": "ABHA",
+    "definition": "Ayushman Bharat Health Account, a digital health identity concept within ABDM.",
+    "healthcare": "Identity and record-linkage workflows where implemented.",
+    "caution": "Identity, consent, purpose and authorisation are separate."
+  },
+  {
+    "term": "Medication reconciliation",
+    "definition": "A structured process of comparing medication information across transitions of care and resolving discrepancies.",
+    "healthcare": "Admission, transfer and discharge medication review.",
+    "caution": "An apparent discrepancy may be an intentional clinical change."
+  },
+  {
+    "term": "Length of stay",
+    "definition": "Elapsed time between defined admission and discharge events.",
+    "healthcare": "Hospital utilisation and operational reporting.",
+    "caution": "Define transfers, observation status, death and same-day stays."
+  },
+  {
+    "term": "Risk adjustment",
+    "definition": "Statistical adjustment for differences in baseline risk when comparing outcomes across groups or providers.",
+    "healthcare": "Hospital outcome comparisons.",
+    "caution": "Poorly specified adjustment can create misleading rankings."
+  },
+  {
+    "term": "Alert fatigue",
+    "definition": "Reduced attention or response caused by excessive, low-value or poorly timed alerts.",
+    "healthcare": "Clinical decision support monitoring.",
+    "caution": "Override rate alone does not explain alert quality."
+  },
+  {
+    "term": "Business intelligence",
+    "definition": "Governed process of transforming operational data into information for decisions.",
+    "healthcare": "A pharmacy inventory dashboard with defined stock and replenishment measures.",
+    "caution": "A dashboard alone is not a complete BI system."
+  },
+  {
+    "term": "Semantic layer",
+    "definition": "Centralised business definitions and calculations that provide consistent meaning across reports.",
+    "healthcare": "A shared readmission metric definition used by several dashboards.",
+    "caution": "Conflicting definitions must be resolved before comparison."
+  },
+  {
+    "term": "DAX",
+    "definition": "Data Analysis Expressions, a formula language used in Power BI tabular models.",
+    "healthcare": "Measures that respond to report filter context.",
+    "caution": "Understand row and filter context before copying formulas."
+  },
+  {
+    "term": "Star schema",
+    "definition": "Analytical model with fact tables linked to descriptive dimensions.",
+    "healthcare": "Encounter fact connected to date, department and patient dimensions.",
+    "caution": "Declare grain and avoid accidental many-to-many relationships."
+  },
+  {
+    "term": "Filter context",
+    "definition": "The set of filters affecting evaluation of a DAX expression.",
+    "healthcare": "A measure recalculates for the selected department and month.",
+    "caution": "Unexpected filters can change denominators."
+  },
+  {
+    "term": "ETL",
+    "definition": "Extract, transform, load: transform data before loading into a target.",
+    "healthcare": "Standardise dates and codes before loading a curated warehouse table.",
+    "caution": "Document transformations and preserve lineage."
+  },
+  {
+    "term": "ELT",
+    "definition": "Extract, load, transform: load raw/staged data before transforming in the target.",
+    "healthcare": "Land source batches then build validated warehouse models.",
+    "caution": "Raw landing still requires security and quality controls."
+  },
+  {
+    "term": "Data contract",
+    "definition": "Agreement defining schema, semantics, ownership, quality and change expectations for data exchange.",
+    "healthcare": "A laboratory feed contract specifies test code, unit, timestamp and status.",
+    "caution": "Schema validity alone does not guarantee clinical meaning."
+  },
+  {
+    "term": "Data warehouse",
+    "definition": "Integrated data store designed for analytical queries and reporting.",
+    "healthcare": "Curated hospital encounter and pharmacy marts.",
+    "caution": "Avoid uncontrolled heavy queries against production EHR systems."
+  },
+  {
+    "term": "Data lake",
+    "definition": "Storage architecture for raw and varied data, often using object storage.",
+    "healthcare": "Landing source extracts and semi-structured messages.",
+    "caution": "A lake without cataloguing and governance becomes difficult to trust."
+  },
+  {
+    "term": "Lakehouse",
+    "definition": "Architecture combining data-lake storage flexibility with warehouse-like management and analytics.",
+    "healthcare": "Curated tables stored in open columnar formats with transaction support.",
+    "caution": "The label does not guarantee ACID, governance or performance."
+  },
+  {
+    "term": "Medallion architecture",
+    "definition": "Layering pattern often described as bronze/raw, silver/validated and gold/serving.",
+    "healthcare": "Raw claims files, conformed claims, executive KPI mart.",
+    "caution": "Each layer needs quality checks and lineage."
+  },
+  {
+    "term": "Slowly changing dimension",
+    "definition": "Method for managing dimension attribute changes over time.",
+    "healthcare": "Preserve historical department names using effective-dated versions.",
+    "caution": "Choose current versus historical labels deliberately."
+  },
+  {
+    "term": "Row-level security",
+    "definition": "Access control that filters records according to user or role.",
+    "healthcare": "A site manager sees only their authorised facility rows.",
+    "caution": "Test data/model/workspace permissions; hidden visuals are not security."
+  },
+  {
+    "term": "DirectQuery",
+    "definition": "Power BI connectivity mode that queries the underlying source at interaction time.",
+    "healthcare": "A report queries a supported database without importing the full model.",
+    "caution": "Performance depends on source, network and supported features."
+  },
+  {
+    "term": "Data freshness",
+    "definition": "How recently the data available to a user reflect source events.",
+    "healthcare": "Dashboard displays latest successful batch timestamp.",
+    "caution": "A successful refresh does not prove source completeness."
+  },
+  {
+    "term": "Data observability",
+    "definition": "Monitoring of pipeline health, quality and data behaviour over time.",
+    "healthcare": "Monitor freshness, null rates, duplicates and schema drift.",
+    "caution": "Thresholds require context and accountable owners."
+  },
+  {
+    "term": "RPO",
+    "definition": "Recovery Point Objective: maximum acceptable data loss measured in time.",
+    "healthcare": "A service can tolerate losing up to a defined interval of updates.",
+    "caution": "Set with business owners and test backup/restore."
+  },
+  {
+    "term": "RTO",
+    "definition": "Recovery Time Objective: target time to restore a service after disruption.",
+    "healthcare": "Restore a reporting service within an agreed period.",
+    "caution": "A target is not evidence that recovery is achievable."
+  },
+  {
+    "term": "IAM",
+    "definition": "Identity and Access Management controls identities and their permissions.",
+    "healthcare": "Grant a service account read access only to approved warehouse tables.",
+    "caution": "Review access and protect privileged identities."
+  },
+  {
+    "term": "Container image",
+    "definition": "Packaged application and dependency layers used to create containers.",
+    "healthcare": "A pinned Python ETL runtime image.",
+    "caution": "Images require patching and security review."
+  },
+  {
+    "term": "Container volume",
+    "definition": "Persistent storage mounted into a container.",
+    "healthcare": "Persist a local BI database beyond container recreation.",
+    "caution": "Mounts may expose sensitive host data."
+  },
+  {
+    "term": "REST API",
+    "definition": "HTTP-based interface for interacting with resources using defined methods and representations.",
+    "healthcare": "Retrieve authorised FHIR Observation resources from a sandbox.",
+    "caution": "Follow API documentation, authorisation and rate limits."
+  },
+  {
+    "term": "Pagination",
+    "definition": "Mechanism for dividing a large API response into multiple pages.",
+    "healthcare": "Follow next links until all eligible records are retrieved.",
+    "caution": "A successful first page is not a complete extraction."
+  },
+  {
+    "term": "Runbook",
+    "definition": "Operational document describing routine execution and incident response.",
+    "healthcare": "Steps to validate and recover a failed nightly dashboard refresh.",
+    "caution": "Do not include passwords or tokens."
+  },
+  {
+    "term": "Data SLA",
+    "definition": "Defined service commitment for data delivery or quality.",
+    "healthcare": "Daily dashboard data available by an agreed time.",
+    "caution": "Measure and report missed commitments transparently."
+  }
+]

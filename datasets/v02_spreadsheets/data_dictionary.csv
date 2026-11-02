@@ -1,0 +1,10 @@
+Field,Definition,Type,Unit / allowed values,Grain / notes
+EncounterID,Synthetic unique encounter identifier,Text,EN + 4 digits,One row per encounter; unique
+PatientID,Synthetic patient identifier,Text,PX + 4 digits,Can repeat across encounters
+Ward,Encounter ward category,Category,"MED, CARD, SURG, ICU, ORTHO",Synthetic ward code
+AdmissionDate,Admission date,Date,YYYY-MM-DD,Synthetic date
+DischargeDate,Discharge date,Date,YYYY-MM-DD,On/after admission
+LengthOfStayDays,Discharge date minus admission date,Integer,Days,Simplified elapsed calendar-day count
+SBP_mmHg,Synthetic systolic blood pressure value,Numeric,mmHg; blank when missing,Educational data only; not clinical interpretation
+Eligible,Whether encounter is eligible for reconciliation metric,Category,Yes / No,Eligibility rule defined in this synthetic dataset
+ReconciliationStatus,Synthetic documentation status,Category,Completed / Pending / Not applicable,Not applicable maps to Eligible=No

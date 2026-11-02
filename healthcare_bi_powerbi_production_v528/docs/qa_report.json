@@ -1,0 +1,25 @@
+{
+  "release": "5.28.0",
+  "source_validation": {
+    "status": "PASS",
+    "counts": {
+      "patients.csv": 6,
+      "encounters.csv": 12,
+      "observations.csv": 24,
+      "medications.csv": 16
+    },
+    "issues": [],
+    "sha256": {
+      "patients.csv": "8e7f83ebc20cdafc54689dbfa1f884b9919dd04d539fa1d0109ae3e1c8432794",
+      "encounters.csv": "81cd261d88fd5757155db250861d4179f8e294340f72637d928e6c1907a305e0",
+      "observations.csv": "fda3236a2ff2c7b4564385197093ac8881edb732425ac798fd44865bfeaa96be",
+      "medications.csv": "c0b7d593738f4018a214e10b10c60cba5480b2d5e4e9bc21177d6272b388e85a"
+    },
+    "synthetic_only": true
+  },
+  "unit_tests": 2,
+  "unit_test_status": "PASS",
+  "python_compile_status": "PASS",
+  "power_query_dax_runtime": "NOT EXECUTED",
+  "pbix": "NOT INCLUDED"
+}

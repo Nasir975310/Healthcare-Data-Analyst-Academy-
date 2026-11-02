@@ -1,0 +1,12 @@
+{
+  "release": "5.40.0",
+  "base_release": "5.39.0",
+  "reference_pipeline_exit_code": 0,
+  "v538_regression_tests": "5/5 passed",
+  "v540_tests": "2/2 passed",
+  "reference_outputs_byte_match": true,
+  "user_workstation_run": false,
+  "github_publication": false,
+  "power_bi_execution": false,
+  "independent_employer_review": false
+}

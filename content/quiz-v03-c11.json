@@ -1,0 +1,74 @@
+[
+  {
+    "id": "q1",
+    "q": "What is tidy data?",
+    "options": [
+      "Each variable is a column, each observation a row, and each observational unit forms a table",
+      "Every dataset has one table",
+      "All missing values are removed",
+      "Every row must be a patient"
+    ],
+    "correct": 0,
+    "why": "Tidy data describes organization; relational systems can contain multiple tables at different grains."
+  },
+  {
+    "id": "q2",
+    "q": "What does dplyr n() count inside a grouped summary?",
+    "options": [
+      "Rows in the current group",
+      "Only nonmissing SBP",
+      "Distinct patients",
+      "Columns"
+    ],
+    "correct": 0,
+    "why": "n() counts group rows."
+  },
+  {
+    "id": "q3",
+    "q": "Which function converts wide data to long form in tidyr?",
+    "options": [
+      "pivot_longer()",
+      "pivot_wider()",
+      "left_join()",
+      "summarise()"
+    ],
+    "correct": 0,
+    "why": "pivot_longer moves selected columns into key/value rows."
+  },
+  {
+    "id": "q4",
+    "q": "Why validate a lookup key before left_join()?",
+    "options": [
+      "To prevent unintended row multiplication",
+      "To fill missing values with zero",
+      "To sort the table",
+      "To change the date format"
+    ],
+    "correct": 0,
+    "why": "A one-to-many or many-to-many join can change grain and inflate counts."
+  },
+  {
+    "id": "q5",
+    "q": "What does ggplot2 geom_histogram() display?",
+    "options": [
+      "Distribution of a numeric variable in bins",
+      "Counts of database tables",
+      "A regression coefficient only",
+      "A relational join"
+    ],
+    "correct": 0,
+    "why": "A histogram displays binned numeric frequencies or density."
+  },
+  {
+    "id": "q6",
+    "q": "What should accompany a department mean SBP chart?",
+    "options": [
+      "Units and nonmissing sample size",
+      "A causal claim",
+      "Only department colors",
+      "A patient identifier"
+    ],
+    "correct": 0,
+    "why": "Units and n make group summaries interpretable."
+  }
+]

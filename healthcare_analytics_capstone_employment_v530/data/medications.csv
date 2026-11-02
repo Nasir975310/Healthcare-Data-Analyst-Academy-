@@ -1,0 +1,17 @@
+medication_id,encounter_id,medication,drug_class,is_active
+RX001,EN001,Amlodipine,CCB,1
+RX002,EN002,Losartan,ARB,1
+RX003,EN002,Amlodipine,CCB,1
+RX004,EN003,Telmisartan,ARB,1
+RX005,EN004,Amlodipine,CCB,1
+RX006,EN005,Amlodipine,CCB,1
+RX007,EN005,Telmisartan,ARB,1
+RX008,EN006,Metoprolol,Beta blocker,1
+RX009,EN007,Losartan,ARB,1
+RX010,EN007,Hydrochlorothiazide,Thiazide,1
+RX011,EN008,Telmisartan,ARB,1
+RX012,EN009,Amlodipine,CCB,1
+RX013,EN010,Losartan,ARB,1
+RX014,EN010,Amlodipine,CCB,1
+RX015,EN011,Telmisartan,ARB,1
+RX016,EN013,Metoprolol,Beta blocker,1

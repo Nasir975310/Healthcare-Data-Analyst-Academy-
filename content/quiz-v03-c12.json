@@ -1,0 +1,74 @@
+[
+  {
+    "id": "q1",
+    "q": "What makes an analysis reproducible?",
+    "options": [
+      "Documented data, code, dependencies, parameters and run instructions",
+      "A screenshot of final chart",
+      "Only a PDF",
+      "A spreadsheet with no formulas"
+    ],
+    "correct": 0,
+    "why": "Reproduction requires traceable inputs and executable workflow."
+  },
+  {
+    "id": "q2",
+    "q": "What is Quarto?",
+    "options": [
+      "A system for authoring and rendering technical documents",
+      "A database server",
+      "A Python-only package",
+      "A spreadsheet formula"
+    ],
+    "correct": 0,
+    "why": "Quarto supports executable documents and multiple output formats."
+  },
+  {
+    "id": "q3",
+    "q": "Why record package versions?",
+    "options": [
+      "To describe the computational environment used",
+      "To guarantee clinical validity",
+      "To remove all warnings",
+      "To replace data provenance"
+    ],
+    "correct": 0,
+    "why": "Package versions help another analyst recreate the environment."
+  },
+  {
+    "id": "q4",
+    "q": "What does a fixed random seed support?",
+    "options": [
+      "Repeatability of random sequences under a defined environment",
+      "Identical results after source data changes",
+      "Causal inference",
+      "Data de-identification"
+    ],
+    "correct": 0,
+    "why": "Seeds do not freeze source data or all software behavior."
+  },
+  {
+    "id": "q5",
+    "q": "What is a handoff note for?",
+    "options": [
+      "Helping another analyst rerun and understand the work",
+      "Hiding methods",
+      "Replacing tests",
+      "Recording passwords"
+    ],
+    "correct": 0,
+    "why": "Handoffs include setup, commands, outputs and limitations."
+  },
+  {
+    "id": "q6",
+    "q": "Why inspect a rendered report after rendering?",
+    "options": [
+      "To verify figures, tables, paths and layout",
+      "A zero exit code proves every visual is correct",
+      "To change source data",
+      "To remove metadata"
+    ],
+    "correct": 0,
+    "why": "Rendering success does not guarantee correct or readable output."
+  }
+]

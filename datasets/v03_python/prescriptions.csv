@@ -1,0 +1,197 @@
+prescription_id,encounter_id,generic_name,drug_class,dose,route,start_date,stop_date
+1,1,Losartan,ARB,20 mg,Oral,2026-01-15,2026-01-26
+2,1,Aspirin,Antiplatelet,10 mg,IV,2026-01-15,2026-01-26
+3,1,Atorvastatin,Statin,5 mg,IV,2026-01-15,2026-01-26
+4,2,Losartan,ARB,5 mg,Oral,2026-01-23,2026-01-28
+5,3,Atorvastatin,Statin,500 mg,IV,2026-02-27,
+6,4,Furosemide,Loop diuretic,500 mg,Oral,2026-01-17,2026-01-18
+7,5,Bisoprolol,Beta blocker,5 mg,IV,2026-01-25,
+8,5,Furosemide,Loop diuretic,10 mg,IV,2026-01-25,
+9,5,Atorvastatin,Statin,20 mg,IV,2026-01-25,
+10,6,Furosemide,Loop diuretic,500 mg,Oral,2026-01-21,2026-01-26
+11,6,Losartan,ARB,5 mg,Oral,2026-01-21,2026-01-26
+12,7,Bisoprolol,Beta blocker,10 mg,Oral,2026-01-25,2026-01-26
+13,7,Metformin,Biguanide,10 mg,IV,2026-01-25,2026-01-26
+14,8,Bisoprolol,Beta blocker,20 mg,Oral,2026-01-27,
+15,8,Atorvastatin,Statin,20 mg,Oral,2026-01-27,
+16,9,Telmisartan,ARB,20 mg,Oral,2026-01-13,
+17,9,Atorvastatin,Statin,20 mg,IV,2026-01-13,
+18,10,Amlodipine,Calcium-channel blocker,10 mg,IV,2026-01-21,
+19,10,Amlodipine,Calcium-channel blocker,500 mg,IV,2026-01-21,
+20,10,Telmisartan,ARB,5 mg,Oral,2026-01-21,
+21,11,Bisoprolol,Beta blocker,5 mg,Oral,2026-02-27,
+22,12,Furosemide,Loop diuretic,10 mg,Oral,2026-01-14,
+23,13,Atorvastatin,Statin,500 mg,Oral,2026-01-22,2026-01-28
+24,13,Furosemide,Loop diuretic,500 mg,IV,2026-01-22,2026-01-28
+25,14,Atorvastatin,Statin,10 mg,IV,2026-02-27,
+26,14,Aspirin,Antiplatelet,500 mg,Oral,2026-02-27,
+27,14,Metformin,Biguanide,10 mg,Oral,2026-02-27,
+28,15,Telmisartan,ARB,20 mg,IV,2026-01-19,
+29,15,Amlodipine,Calcium-channel blocker,20 mg,Oral,2026-01-19,
+30,15,Bisoprolol,Beta blocker,5 mg,Oral,2026-01-19,
+31,16,Furosemide,Loop diuretic,20 mg,IV,2026-01-27,
+32,17,Amlodipine,Calcium-channel blocker,5 mg,Oral,2026-02-27,
+33,17,Aspirin,Antiplatelet,20 mg,IV,2026-02-27,
+34,17,Telmisartan,ARB,10 mg,IV,2026-02-27,
+35,18,Atorvastatin,Statin,500 mg,Oral,2026-01-05,
+36,19,Amlodipine,Calcium-channel blocker,500 mg,Oral,2026-01-20,2026-01-28
+37,19,Atorvastatin,Statin,20 mg,IV,2026-01-20,2026-01-28
+38,19,Aspirin,Antiplatelet,20 mg,Oral,2026-01-20,2026-01-28
+39,20,Telmisartan,ARB,500 mg,Oral,2026-01-27,2026-01-28
+40,20,Amlodipine,Calcium-channel blocker,5 mg,Oral,2026-01-27,2026-01-28
+41,21,Aspirin,Antiplatelet,10 mg,Oral,2026-01-24,
+42,21,Amlodipine,Calcium-channel blocker,500 mg,IV,2026-01-24,
+43,21,Metformin,Biguanide,20 mg,Oral,2026-01-24,
+44,22,Atorvastatin,Statin,500 mg,Oral,2026-01-27,
+45,22,Bisoprolol,Beta blocker,500 mg,Oral,2026-01-27,
+46,23,Metformin,Biguanide,5 mg,IV,2026-01-02,2026-01-07
+47,23,Aspirin,Antiplatelet,500 mg,IV,2026-01-02,2026-01-07
+48,23,Atorvastatin,Statin,10 mg,Oral,2026-01-02,2026-01-07
+49,24,Furosemide,Loop diuretic,500 mg,IV,2026-01-10,
+50,25,Amlodipine,Calcium-channel blocker,5 mg,Oral,2026-01-12,
+51,25,Metformin,Biguanide,10 mg,IV,2026-01-12,
+52,25,Atorvastatin,Statin,10 mg,Oral,2026-01-12,
+53,26,Bisoprolol,Beta blocker,5 mg,IV,2026-01-04,2026-01-06
+54,26,Furosemide,Loop diuretic,5 mg,Oral,2026-01-04,2026-01-06
+55,27,Losartan,ARB,10 mg,IV,2026-01-15,
+56,27,Aspirin,Antiplatelet,10 mg,Oral,2026-01-15,
+57,28,Bisoprolol,Beta blocker,5 mg,IV,2026-01-08,
+58,28,Aspirin,Antiplatelet,10 mg,Oral,2026-01-08,
+59,29,Bisoprolol,Beta blocker,10 mg,IV,2026-01-04,2026-01-12
+60,30,Losartan,ARB,5 mg,IV,2026-01-12,2026-01-21
+61,30,Amlodipine,Calcium-channel blocker,20 mg,Oral,2026-01-12,2026-01-21
+62,30,Furosemide,Loop diuretic,5 mg,IV,2026-01-12,2026-01-21
+63,31,Aspirin,Antiplatelet,500 mg,Oral,2026-01-24,
+64,31,Amlodipine,Calcium-channel blocker,20 mg,IV,2026-01-24,
+65,31,Telmisartan,ARB,20 mg,Oral,2026-01-24,
+66,32,Amlodipine,Calcium-channel blocker,10 mg,Oral,2026-01-08,2026-01-14
+67,32,Atorvastatin,Statin,20 mg,IV,2026-01-08,2026-01-14
+68,32,Aspirin,Antiplatelet,5 mg,IV,2026-01-08,2026-01-14
+69,33,Aspirin,Antiplatelet,20 mg,IV,2026-01-02,2026-01-04
+70,33,Bisoprolol,Beta blocker,10 mg,Oral,2026-01-02,2026-01-04
+71,33,Metformin,Biguanide,20 mg,Oral,2026-01-02,2026-01-04
+72,34,Telmisartan,ARB,5 mg,IV,2026-01-21,2026-01-26
+73,35,Telmisartan,ARB,5 mg,Oral,2026-01-10,2026-01-11
+74,35,Losartan,ARB,500 mg,IV,2026-01-10,2026-01-11
+75,36,Amlodipine,Calcium-channel blocker,10 mg,IV,2026-01-04,
+76,37,Losartan,ARB,500 mg,Oral,2026-01-02,2026-01-06
+77,37,Bisoprolol,Beta blocker,500 mg,Oral,2026-01-02,2026-01-06
+78,37,Furosemide,Loop diuretic,20 mg,IV,2026-01-02,2026-01-06
+79,38,Losartan,ARB,10 mg,IV,2026-01-10,
+80,38,Atorvastatin,Statin,20 mg,Oral,2026-01-10,
+81,39,Losartan,ARB,5 mg,Oral,2026-02-18,
+82,40,Bisoprolol,Beta blocker,500 mg,Oral,2026-01-13,2026-01-18
+83,40,Furosemide,Loop diuretic,5 mg,Oral,2026-01-13,2026-01-18
+84,40,Telmisartan,ARB,10 mg,IV,2026-01-13,2026-01-18
+85,41,Losartan,ARB,500 mg,Oral,2026-01-21,2026-01-27
+86,42,Metformin,Biguanide,5 mg,IV,2026-01-04,
+87,42,Aspirin,Antiplatelet,10 mg,IV,2026-01-04,
+88,42,Metformin,Biguanide,10 mg,Oral,2026-01-04,
+89,43,Amlodipine,Calcium-channel blocker,5 mg,IV,2026-01-12,2026-01-23
+90,43,Amlodipine,Calcium-channel blocker,10 mg,Oral,2026-01-12,2026-01-23
+91,43,Telmisartan,ARB,500 mg,IV,2026-01-12,2026-01-23
+92,44,Bisoprolol,Beta blocker,500 mg,Oral,2026-01-25,
+93,44,Aspirin,Antiplatelet,500 mg,Oral,2026-01-25,
+94,44,Amlodipine,Calcium-channel blocker,20 mg,IV,2026-01-25,
+95,45,Metformin,Biguanide,10 mg,IV,2026-01-05,2026-01-06
+96,45,Bisoprolol,Beta blocker,5 mg,Oral,2026-01-05,2026-01-06
+97,45,Telmisartan,ARB,20 mg,Oral,2026-01-05,2026-01-06
+98,46,Furosemide,Loop diuretic,5 mg,IV,2026-01-09,2026-01-14
+99,46,Losartan,ARB,5 mg,Oral,2026-01-09,2026-01-14
+100,46,Bisoprolol,Beta blocker,500 mg,Oral,2026-01-09,2026-01-14
+101,47,Metformin,Biguanide,5 mg,Oral,2026-01-17,2026-01-21
+102,47,Atorvastatin,Statin,20 mg,Oral,2026-01-17,2026-01-21
+103,48,Telmisartan,ARB,20 mg,IV,2026-02-25,
+104,49,Amlodipine,Calcium-channel blocker,20 mg,Oral,2026-01-03,2026-01-13
+105,49,Bisoprolol,Beta blocker,5 mg,IV,2026-01-03,2026-01-13
+106,50,Bisoprolol,Beta blocker,20 mg,Oral,2026-01-11,2026-01-12
+107,51,Metformin,Biguanide,20 mg,Oral,2026-01-06,
+108,52,Aspirin,Antiplatelet,5 mg,IV,2026-01-14,
+109,52,Losartan,ARB,20 mg,IV,2026-01-14,
+110,52,Atorvastatin,Statin,5 mg,IV,2026-01-14,
+111,53,Furosemide,Loop diuretic,10 mg,IV,2026-02-22,
+112,53,Metformin,Biguanide,10 mg,IV,2026-02-22,
+113,54,Amlodipine,Calcium-channel blocker,20 mg,Oral,2026-01-22,2026-01-28
+114,55,Telmisartan,ARB,10 mg,IV,2026-01-27,
+115,55,Telmisartan,ARB,500 mg,Oral,2026-01-27,
+116,56,Metformin,Biguanide,20 mg,IV,2026-01-02,2026-01-11
+117,57,Bisoprolol,Beta blocker,500 mg,IV,2026-01-10,2026-01-17
+118,58,Losartan,ARB,10 mg,IV,2026-01-10,2026-01-11
+119,58,Bisoprolol,Beta blocker,500 mg,IV,2026-01-10,2026-01-11
+120,59,Bisoprolol,Beta blocker,20 mg,IV,2026-01-18,
+121,60,Telmisartan,ARB,20 mg,IV,2026-02-26,
+122,61,Furosemide,Loop diuretic,5 mg,Oral,2026-01-17,
+123,62,Furosemide,Loop diuretic,20 mg,IV,2026-01-14,
+124,62,Amlodipine,Calcium-channel blocker,500 mg,Oral,2026-01-14,
+125,63,Telmisartan,ARB,500 mg,IV,2026-01-14,2026-01-16
+126,64,Aspirin,Antiplatelet,20 mg,IV,2026-01-22,
+127,65,Furosemide,Loop diuretic,20 mg,Oral,2026-01-17,2026-01-20
+128,65,Atorvastatin,Statin,5 mg,Oral,2026-01-17,2026-01-20
+129,66,Telmisartan,ARB,500 mg,IV,2026-01-24,
+130,66,Metformin,Biguanide,5 mg,Oral,2026-01-24,
+131,67,Bisoprolol,Beta blocker,10 mg,IV,2026-01-27,2026-01-28
+132,68,Furosemide,Loop diuretic,5 mg,IV,2026-01-10,
+133,69,Furosemide,Loop diuretic,5 mg,Oral,2026-01-18,2026-01-25
+134,70,Atorvastatin,Statin,20 mg,Oral,2026-01-10,2026-01-15
+135,70,Furosemide,Loop diuretic,20 mg,IV,2026-01-10,2026-01-15
+136,70,Furosemide,Loop diuretic,10 mg,IV,2026-01-10,2026-01-15
+137,71,Bisoprolol,Beta blocker,5 mg,IV,2026-01-18,
+138,72,Bisoprolol,Beta blocker,500 mg,IV,2026-01-07,
+139,72,Atorvastatin,Statin,10 mg,IV,2026-01-07,
+140,72,Furosemide,Loop diuretic,5 mg,Oral,2026-01-07,
+141,73,Telmisartan,ARB,10 mg,IV,2026-01-15,
+142,74,Atorvastatin,Statin,10 mg,Oral,2026-01-04,
+143,74,Bisoprolol,Beta blocker,500 mg,IV,2026-01-04,
+144,75,Bisoprolol,Beta blocker,20 mg,Oral,2026-01-24,
+145,75,Losartan,ARB,5 mg,IV,2026-01-24,
+146,75,Losartan,ARB,10 mg,IV,2026-01-24,
+147,76,Atorvastatin,Statin,500 mg,IV,2026-01-27,
+148,77,Metformin,Biguanide,20 mg,Oral,2026-02-27,
+149,77,Atorvastatin,Statin,500 mg,IV,2026-02-27,
+150,78,Losartan,ARB,500 mg,Oral,2026-01-03,2026-01-13
+151,78,Losartan,ARB,500 mg,Oral,2026-01-03,2026-01-13
+152,79,Aspirin,Antiplatelet,10 mg,Oral,2026-01-18,2026-01-21
+153,80,Bisoprolol,Beta blocker,20 mg,IV,2026-01-04,
+154,81,Atorvastatin,Statin,500 mg,IV,2026-01-15,
+155,82,Furosemide,Loop diuretic,500 mg,IV,2026-01-23,2026-01-28
+156,83,Amlodipine,Calcium-channel blocker,20 mg,IV,2026-01-02,2026-01-05
+157,83,Furosemide,Loop diuretic,10 mg,IV,2026-01-02,2026-01-05
+158,84,Metformin,Biguanide,20 mg,Oral,2026-01-10,2026-01-14
+159,84,Aspirin,Antiplatelet,5 mg,IV,2026-01-10,2026-01-14
+160,85,Atorvastatin,Statin,10 mg,IV,2026-01-08,2026-01-14
+161,85,Bisoprolol,Beta blocker,500 mg,Oral,2026-01-08,2026-01-14
+162,86,Aspirin,Antiplatelet,20 mg,Oral,2026-01-10,
+163,87,Aspirin,Antiplatelet,20 mg,IV,2026-01-20,
+164,87,Amlodipine,Calcium-channel blocker,500 mg,Oral,2026-01-20,
+165,87,Aspirin,Antiplatelet,10 mg,IV,2026-01-20,
+166,88,Losartan,ARB,20 mg,Oral,2026-01-27,2026-01-28
+167,88,Telmisartan,ARB,10 mg,Oral,2026-01-27,2026-01-28
+168,89,Metformin,Biguanide,20 mg,Oral,2026-01-02,
+169,89,Amlodipine,Calcium-channel blocker,10 mg,IV,2026-01-02,
+170,90,Furosemide,Loop diuretic,5 mg,IV,2026-01-10,
+171,90,Atorvastatin,Statin,500 mg,IV,2026-01-10,
+172,91,Metformin,Biguanide,10 mg,IV,2026-01-02,2026-01-04
+173,92,Losartan,ARB,5 mg,Oral,2026-01-10,
+174,93,Amlodipine,Calcium-channel blocker,500 mg,IV,2026-01-13,
+175,94,Aspirin,Antiplatelet,500 mg,IV,2026-01-04,
+176,94,Aspirin,Antiplatelet,10 mg,Oral,2026-01-04,
+177,95,Bisoprolol,Beta blocker,500 mg,IV,2026-01-12,
+178,96,Atorvastatin,Statin,500 mg,IV,2026-01-21,2026-01-26
+179,96,Telmisartan,ARB,500 mg,Oral,2026-01-21,2026-01-26
+180,96,Losartan,ARB,500 mg,Oral,2026-01-21,2026-01-26
+181,97,Amlodipine,Calcium-channel blocker,5 mg,Oral,2026-01-27,2026-01-28
+182,98,Furosemide,Loop diuretic,5 mg,Oral,2026-02-27,2026-02-28
+183,99,Aspirin,Antiplatelet,10 mg,Oral,2026-01-22,
+184,99,Atorvastatin,Statin,20 mg,IV,2026-01-22,
+185,100,Bisoprolol,Beta blocker,500 mg,Oral,2026-01-17,2026-01-18
+186,100,Amlodipine,Calcium-channel blocker,500 mg,Oral,2026-01-17,2026-01-18
+187,100,Atorvastatin,Statin,5 mg,Oral,2026-01-17,2026-01-18
+188,101,Telmisartan,ARB,10 mg,Oral,2026-01-25,2026-01-27
+189,101,Amlodipine,Calcium-channel blocker,10 mg,IV,2026-01-25,2026-01-27
+190,101,Losartan,ARB,5 mg,IV,2026-01-25,2026-01-27
+191,102,Atorvastatin,Statin,5 mg,Oral,2026-01-02,
+192,102,Metformin,Biguanide,500 mg,IV,2026-01-02,
+193,103,Losartan,ARB,500 mg,IV,2026-01-10,
+194,103,Aspirin,Antiplatelet,10 mg,Oral,2026-01-10,
+195,104,Bisoprolol,Beta blocker,500 mg,IV,2026-01-01,2026-01-08
+196,104,Telmisartan,ARB,20 mg,IV,2026-01-01,2026-01-08

@@ -1,0 +1,62 @@
+[
+  {
+    "id": "v01-c03-q1",
+    "q": "A table contains one row per medication order. What is its grain?",
+    "options": [
+      "One row per patient",
+      "One row per medication-order record",
+      "One row per hospital",
+      "One row per diagnosis"
+    ],
+    "correct": 1,
+    "why": "Grain is the real-world unit represented by one row: a medication-order record."
+  },
+  {
+    "id": "v01-c03-q2",
+    "q": "Which is the strongest first step when asked to 'analyze hypertension patients'?",
+    "options": [
+      "Open Power BI immediately",
+      "Create a pie chart",
+      "Clarify the decision, population, outcome, setting and period",
+      "Run a t-test"
+    ],
+    "correct": 2,
+    "why": "A valid analysis starts with an answerable question and explicit definitions."
+  },
+  {
+    "id": "v01-c03-q3",
+    "q": "A number used to code ward categories 1, 2 and 3 is usually:",
+    "options": [
+      "Ratio-scale numeric data",
+      "Nominal categorical data",
+      "Continuous data",
+      "A time interval"
+    ],
+    "correct": 1,
+    "why": "Numeric labels do not make categories quantitative."
+  },
+  {
+    "id": "v01-c03-q4",
+    "q": "A variable associated with both treatment selection and outcome may distort their observed relationship. It is called:",
+    "options": [
+      "A denominator",
+      "A confounder",
+      "A file extension",
+      "A data type"
+    ],
+    "correct": 1,
+    "why": "Confounding can distort an exposure-outcome association and requires design-aware handling."
+  },
+  {
+    "id": "v01-c03-q5",
+    "q": "Why should the unit of analysis be specified?",
+    "options": [
+      "It determines the computer brand",
+      "It prevents confusing counts of patients, encounters and orders",
+      "It guarantees causality",
+      "It removes missing data"
+    ],
+    "correct": 1,
+    "why": "Different units produce different counts and require different statistical assumptions."
+  }
+]

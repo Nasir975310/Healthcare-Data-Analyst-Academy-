@@ -1,0 +1,501 @@
+encounter_id,patient_id,department,site,admission_date,length_of_stay_days,readmission_30d
+QE00001,Q0111,Cardiology,North,2026-01-12,6.5,0
+QE00002,Q0144,Emergency,North,2026-02-13,2.7,0
+QE00003,Q0028,Nephrology,Central,2026-01-30,0.5,0
+QE00004,Q0084,Endocrinology,North,2026-06-06,8.5,0
+QE00005,Q0100,Cardiology,Central,2026-05-08,0.4,1
+QE00006,Q0050,Nephrology,Central,2026-06-09,2.2,0
+QE00007,Q0092,Nephrology,North,2026-01-28,7.0,0
+QE00008,Q0116,General Medicine,South,2026-04-05,0.8,0
+QE00009,Q0103,Cardiology,South,2026-02-10,6.9,1
+QE00010,Q0007,Cardiology,North,2026-03-30,1.1,0
+QE00011,Q0124,Cardiology,Central,2026-02-14,9.0,1
+QE00012,Q0130,Endocrinology,South,2026-01-20,3.4,0
+QE00013,Q0059,Nephrology,Central,2026-01-23,0.3,0
+QE00014,Q0050,Emergency,Central,2026-02-16,1.5,0
+QE00015,Q0066,Endocrinology,South,2026-03-15,1.6,0
+QE00016,Q0134,Cardiology,South,2026-01-06,1.6,0
+QE00017,Q0097,General Medicine,Central,2026-05-16,0.3,1
+QE00018,Q0126,Emergency,Central,2026-04-23,1.0,0
+QE00019,Q0149,General Medicine,South,2026-02-12,1.0,0
+QE00020,Q0112,Emergency,South,2026-02-23,11.2,0
+QE00021,Q0145,General Medicine,North,2026-01-20,1.9,0
+QE00022,Q0010,Cardiology,North,2026-02-20,7.1,0
+QE00023,Q0109,Cardiology,South,2026-05-01,5.4,1
+QE00024,Q0083,General Medicine,South,2026-01-25,20.6,0
+QE00025,Q0035,Emergency,South,2026-06-23,2.2,0
+QE00026,Q0020,Nephrology,South,2026-03-19,2.2,0
+QE00027,Q0006,Emergency,North,2026-02-12,6.9,1
+QE00028,Q0088,Endocrinology,North,2026-04-26,0.6,0
+QE00029,Q0062,Emergency,Central,2026-01-22,6.5,1
+QE00030,Q0084,General Medicine,North,2026-01-06,0.5,0
+QE00031,Q0054,Endocrinology,North,2026-05-01,9.4,1
+QE00032,Q0065,Nephrology,South,2026-01-17,9.3,0
+QE00033,Q0093,General Medicine,South,2026-06-13,3.4,0
+QE00034,Q0066,Nephrology,North,2026-03-02,3.6,1
+QE00035,Q0018,Emergency,South,2026-02-11,1.2,0
+QE00036,Q0020,Endocrinology,Central,2026-06-03,0.3,1
+QE00037,Q0093,Emergency,North,2026-05-16,8.0,0
+QE00038,Q0068,General Medicine,Central,2026-04-08,0.8,0
+QE00039,Q0115,General Medicine,North,2026-03-10,0.3,1
+QE00040,Q0143,Endocrinology,Central,2026-01-28,1.4,0
+QE00041,Q0111,General Medicine,Central,2026-04-19,6.7,0
+QE00042,Q0110,Endocrinology,Central,2026-04-19,9.8,0
+QE00043,Q0092,Endocrinology,Central,2026-04-23,1.6,0
+QE00044,Q0068,Cardiology,Central,2026-05-27,0.7,0
+QE00045,Q0029,General Medicine,Central,2026-05-05,6.3,0
+QE00046,Q0135,Nephrology,Central,2026-05-12,2.3,0
+QE00047,Q0071,General Medicine,South,2026-04-16,3.2,0
+QE00048,Q0055,Emergency,South,2026-05-03,1.6,1
+QE00049,Q0018,Emergency,South,2026-01-11,6.3,1
+QE00050,Q0119,Endocrinology,Central,2026-02-23,5.6,0
+QE00051,Q0048,Endocrinology,Central,2026-01-07,1.9,1
+QE00052,Q0138,Emergency,South,2026-06-19,7.0,0
+QE00053,Q0050,Cardiology,South,2026-02-02,1.5,0
+QE00054,Q0063,General Medicine,South,2026-03-08,2.3,0
+QE00055,Q0072,Cardiology,North,2026-01-11,7.0,0
+QE00056,Q0045,Endocrinology,South,2026-06-15,5.4,0
+QE00057,Q0034,Emergency,Central,2026-06-26,4.0,0
+QE00058,Q0115,General Medicine,Central,2026-04-21,0.6,1
+QE00059,Q0100,Endocrinology,South,2026-02-09,4.0,0
+QE00060,Q0140,Nephrology,Central,2026-04-01,7.2,0
+QE00061,Q0058,Cardiology,North,2026-01-08,1.7,1
+QE00062,Q0084,Endocrinology,Central,2026-03-10,0.8,1
+QE00063,Q0034,Nephrology,Central,2026-04-18,3.2,0
+QE00064,Q0110,General Medicine,South,2026-04-18,1.8,0
+QE00065,Q0102,Nephrology,North,2026-02-14,3.4,0
+QE00066,Q0091,Cardiology,Central,2026-06-10,7.4,0
+QE00067,Q0091,General Medicine,South,2026-02-24,0.8,0
+QE00068,Q0014,Endocrinology,South,2026-02-11,1.8,0
+QE00069,Q0119,Endocrinology,Central,2026-06-12,3.4,0
+QE00070,Q0102,General Medicine,North,2026-03-08,3.6,1
+QE00071,Q0081,Emergency,South,2026-05-21,4.2,0
+QE00072,Q0108,General Medicine,Central,2026-06-18,2.2,0
+QE00073,Q0073,Cardiology,North,2026-06-10,4.4,0
+QE00074,Q0072,Nephrology,North,2026-03-14,1.3,0
+QE00075,Q0008,Cardiology,North,2026-05-20,0.7,1
+QE00076,Q0106,General Medicine,South,2026-04-04,0.9,1
+QE00077,Q0014,Nephrology,South,2026-05-30,0.5,0
+QE00078,Q0124,Endocrinology,Central,2026-05-15,5.6,0
+QE00079,Q0084,Endocrinology,Central,2026-03-28,3.9,0
+QE00080,Q0012,General Medicine,North,2026-01-25,2.3,0
+QE00081,Q0130,Cardiology,Central,2026-06-25,9.6,1
+QE00082,Q0010,Emergency,South,2026-01-19,1.4,0
+QE00083,Q0022,General Medicine,South,2026-01-04,7.7,1
+QE00084,Q0029,Cardiology,Central,2026-03-10,3.0,0
+QE00085,Q0052,General Medicine,Central,2026-03-19,0.9,0
+QE00086,Q0009,Cardiology,Central,2026-01-22,1.8,0
+QE00087,Q0095,General Medicine,Central,2026-02-15,4.2,0
+QE00088,Q0116,Nephrology,North,2026-06-01,1.9,1
+QE00089,Q0147,Emergency,North,2026-03-30,0.1,0
+QE00090,Q0070,Emergency,Central,2026-05-24,1.9,0
+QE00091,Q0129,Endocrinology,Central,2026-01-08,2.0,0
+QE00092,Q0149,Cardiology,North,2026-05-10,3.8,0
+QE00093,Q0044,General Medicine,North,2026-03-07,1.2,0
+QE00094,Q0091,Emergency,North,2026-05-10,2.4,0
+QE00095,Q0102,Nephrology,North,2026-06-10,0.2,0
+QE00096,Q0051,Nephrology,North,2026-05-03,1.0,0
+QE00097,Q0137,Emergency,North,2026-02-25,1.5,1
+QE00098,Q0015,Endocrinology,North,2026-06-08,0.9,0
+QE00099,Q0024,Nephrology,South,2026-06-24,5.6,0
+QE00100,Q0031,Endocrinology,South,2026-04-18,1.4,0
+QE00101,Q0050,Endocrinology,South,2026-02-25,2.0,0
+QE00102,Q0018,Cardiology,Central,2026-04-27,5.0,0
+QE00103,Q0088,Cardiology,South,2026-05-01,3.4,0
+QE00104,Q0022,Nephrology,North,2026-02-19,0.5,0
+QE00105,Q0144,Emergency,Central,2026-05-06,5.6,1
+QE00106,Q0027,Emergency,Central,2026-03-18,2.7,0
+QE00107,Q0120,Endocrinology,North,2026-06-16,9.7,1
+QE00108,Q0097,Cardiology,North,2026-05-30,0.7,0
+QE00109,Q0052,Endocrinology,Central,2026-02-16,6.7,1
+QE00110,Q0007,General Medicine,North,2026-06-10,5.2,0
+QE00111,Q0068,Emergency,Central,2026-02-20,1.8,0
+QE00112,Q0012,Emergency,Central,2026-06-07,5.1,1
+QE00113,Q0062,Emergency,Central,2026-01-30,3.2,1
+QE00114,Q0094,Cardiology,Central,2026-06-24,3.1,0
+QE00115,Q0068,Emergency,Central,2026-01-19,1.3,0
+QE00116,Q0141,General Medicine,South,2026-02-07,6.8,0
+QE00117,Q0149,Nephrology,Central,2026-03-04,2.5,0
+QE00118,Q0050,Nephrology,Central,2026-01-20,5.2,0
+QE00119,Q0013,Emergency,North,2026-03-29,1.5,0
+QE00120,Q0020,General Medicine,South,2026-03-12,2.6,1
+QE00121,Q0033,Nephrology,South,2026-02-08,0.7,1
+QE00122,Q0018,General Medicine,Central,2026-01-07,0.8,1
+QE00123,Q0150,Nephrology,North,2026-01-31,4.0,0
+QE00124,Q0106,Nephrology,North,2026-02-09,0.2,0
+QE00125,Q0085,General Medicine,North,2026-01-25,8.8,0
+QE00126,Q0029,Cardiology,South,2026-05-03,3.1,0
+QE00127,Q0077,Endocrinology,North,2026-01-01,3.8,1
+QE00128,Q0053,Endocrinology,North,2026-04-01,0.1,0
+QE00129,Q0023,Emergency,North,2026-02-11,5.6,0
+QE00130,Q0098,Emergency,North,2026-04-20,2.4,0
+QE00131,Q0044,General Medicine,Central,2026-06-10,7.7,0
+QE00132,Q0095,Nephrology,North,2026-05-20,7.0,0
+QE00133,Q0030,Endocrinology,North,2026-05-11,3.2,0
+QE00134,Q0031,Cardiology,South,2026-04-27,3.9,0
+QE00135,Q0069,Emergency,North,2026-01-18,0.6,0
+QE00136,Q0113,Emergency,Central,2026-01-18,1.1,0
+QE00137,Q0035,Nephrology,North,2026-04-10,1.8,0
+QE00138,Q0006,General Medicine,South,2026-05-02,2.2,0
+QE00139,Q0092,Emergency,North,2026-06-10,1.5,0
+QE00140,Q0113,General Medicine,South,2026-06-05,13.9,0
+QE00141,Q0080,Emergency,South,2026-01-15,4.8,0
+QE00142,Q0133,Endocrinology,North,2026-02-23,1.4,0
+QE00143,Q0092,General Medicine,South,2026-02-12,1.6,0
+QE00144,Q0076,Endocrinology,North,2026-03-19,0.3,0
+QE00145,Q0069,Nephrology,North,2026-02-19,2.4,0
+QE00146,Q0107,Endocrinology,Central,2026-03-30,4.6,0
+QE00147,Q0057,General Medicine,Central,2026-06-20,6.0,0
+QE00148,Q0011,Emergency,Central,2026-03-12,0.7,1
+QE00149,Q0130,General Medicine,North,2026-02-28,1.3,0
+QE00150,Q0107,General Medicine,North,2026-06-12,9.6,1
+QE00151,Q0020,Endocrinology,North,2026-06-09,2.4,1
+QE00152,Q0111,Cardiology,South,2026-03-25,5.4,0
+QE00153,Q0053,Cardiology,Central,2026-04-05,2.3,0
+QE00154,Q0060,Cardiology,South,2026-05-02,5.2,0
+QE00155,Q0025,Endocrinology,South,2026-01-19,9.5,0
+QE00156,Q0138,Nephrology,Central,2026-01-07,2.0,0
+QE00157,Q0036,General Medicine,South,2026-05-18,1.3,0
+QE00158,Q0031,General Medicine,South,2026-04-17,2.7,0
+QE00159,Q0012,Cardiology,Central,2026-04-24,0.2,0
+QE00160,Q0012,Emergency,North,2026-04-16,1.2,0
+QE00161,Q0108,Endocrinology,Central,2026-01-15,4.8,0
+QE00162,Q0110,General Medicine,Central,2026-05-11,7.0,1
+QE00163,Q0067,Emergency,Central,2026-06-24,0.0,1
+QE00164,Q0069,Endocrinology,Central,2026-03-25,3.3,0
+QE00165,Q0120,Nephrology,North,2026-05-23,1.0,1
+QE00166,Q0029,General Medicine,South,2026-05-11,4.3,1
+QE00167,Q0108,Cardiology,South,2026-04-19,7.0,0
+QE00168,Q0082,Endocrinology,South,2026-05-04,1.9,0
+QE00169,Q0057,Emergency,South,2026-06-19,6.8,0
+QE00170,Q0047,Nephrology,South,2026-05-05,2.1,0
+QE00171,Q0079,Nephrology,Central,2026-01-05,2.7,0
+QE00172,Q0019,Emergency,Central,2026-01-11,1.6,1
+QE00173,Q0048,Emergency,Central,2026-03-04,2.7,1
+QE00174,Q0009,Emergency,Central,2026-02-16,0.3,0
+QE00175,Q0134,Emergency,North,2026-03-05,4.7,1
+QE00176,Q0010,Emergency,South,2026-06-20,1.1,0
+QE00177,Q0031,General Medicine,North,2026-03-23,2.6,1
+QE00178,Q0040,Cardiology,South,2026-05-17,2.7,0
+QE00179,Q0053,Cardiology,North,2026-06-25,3.7,0
+QE00180,Q0089,Emergency,South,2026-03-09,1.6,1
+QE00181,Q0074,Cardiology,North,2026-03-30,0.6,0
+QE00182,Q0103,Endocrinology,South,2026-05-04,4.2,0
+QE00183,Q0102,Cardiology,Central,2026-05-16,3.0,0
+QE00184,Q0138,General Medicine,Central,2026-03-31,1.2,0
+QE00185,Q0015,Endocrinology,South,2026-04-28,5.0,0
+QE00186,Q0082,General Medicine,Central,2026-03-04,2.0,0
+QE00187,Q0123,Endocrinology,South,2026-04-19,3.7,0
+QE00188,Q0124,General Medicine,Central,2026-05-04,3.1,1
+QE00189,Q0016,Endocrinology,South,2026-04-11,0.4,0
+QE00190,Q0049,Nephrology,Central,2026-04-05,4.8,0
+QE00191,Q0032,General Medicine,North,2026-04-16,1.0,1
+QE00192,Q0125,Cardiology,North,2026-05-05,0.2,0
+QE00193,Q0100,Cardiology,Central,2026-02-05,3.2,0
+QE00194,Q0008,Nephrology,North,2026-05-16,1.0,0
+QE00195,Q0005,Emergency,North,2026-03-08,3.8,1
+QE00196,Q0078,General Medicine,North,2026-05-02,4.7,1
+QE00197,Q0014,General Medicine,South,2026-06-22,3.7,0
+QE00198,Q0075,Cardiology,North,2026-05-29,2.5,1
+QE00199,Q0051,Endocrinology,Central,2026-03-24,0.1,0
+QE00200,Q0127,Cardiology,South,2026-01-17,16.1,0
+QE00201,Q0133,Endocrinology,North,2026-05-07,2.2,0
+QE00202,Q0112,General Medicine,Central,2026-06-22,5.6,1
+QE00203,Q0141,Emergency,South,2026-03-08,1.6,0
+QE00204,Q0141,Nephrology,Central,2026-02-27,5.4,0
+QE00205,Q0062,Endocrinology,South,2026-02-23,6.1,0
+QE00206,Q0037,Nephrology,Central,2026-04-04,4.3,0
+QE00207,Q0127,Endocrinology,South,2026-02-19,2.1,0
+QE00208,Q0032,General Medicine,North,2026-01-08,0.5,0
+QE00209,Q0102,Endocrinology,South,2026-05-28,3.8,0
+QE00210,Q0101,Cardiology,Central,2026-03-09,1.5,1
+QE00211,Q0026,Emergency,North,2026-01-07,4.7,0
+QE00212,Q0022,Endocrinology,Central,2026-02-13,2.7,1
+QE00213,Q0059,Emergency,North,2026-01-29,4.6,0
+QE00214,Q0142,Nephrology,South,2026-04-25,11.0,1
+QE00215,Q0119,General Medicine,Central,2026-04-26,10.2,1
+QE00216,Q0088,Emergency,South,2026-06-01,4.5,0
+QE00217,Q0018,Emergency,North,2026-03-20,1.3,1
+QE00218,Q0102,Nephrology,South,2026-01-04,4.8,0
+QE00219,Q0114,Emergency,South,2026-06-07,0.7,1
+QE00220,Q0086,General Medicine,Central,2026-02-07,1.8,0
+QE00221,Q0004,Emergency,North,2026-02-24,5.7,0
+QE00222,Q0059,Endocrinology,North,2026-05-17,0.7,0
+QE00223,Q0015,Cardiology,South,2026-01-17,4.4,0
+QE00224,Q0109,Nephrology,South,2026-04-01,8.7,1
+QE00225,Q0056,Nephrology,North,2026-05-30,4.8,1
+QE00226,Q0105,Nephrology,Central,2026-06-03,1.6,0
+QE00227,Q0052,General Medicine,North,2026-02-13,1.3,1
+QE00228,Q0096,General Medicine,North,2026-06-13,0.9,1
+QE00229,Q0149,Cardiology,North,2026-05-03,0.8,0
+QE00230,Q0030,General Medicine,North,2026-04-24,0.1,0
+QE00231,Q0045,General Medicine,South,2026-05-31,2.4,0
+QE00232,Q0133,Emergency,South,2026-05-01,6.8,1
+QE00233,Q0084,General Medicine,Central,2026-02-05,0.1,0
+QE00234,Q0002,Emergency,Central,2026-06-17,2.3,1
+QE00235,Q0010,General Medicine,Central,2026-06-28,0.9,0
+QE00236,Q0147,Endocrinology,North,2026-02-09,0.8,1
+QE00237,Q0062,General Medicine,South,2026-03-23,0.4,0
+QE00238,Q0098,Endocrinology,South,2026-03-12,19.1,1
+QE00239,Q0119,Nephrology,Central,2026-03-24,0.3,0
+QE00240,Q0089,Endocrinology,North,2026-01-14,7.4,0
+QE00241,Q0140,Endocrinology,North,2026-04-18,0.1,0
+QE00242,Q0121,Cardiology,North,2026-06-07,0.4,1
+QE00243,Q0031,Emergency,Central,2026-05-07,0.4,0
+QE00244,Q0098,Nephrology,South,2026-02-22,0.7,0
+QE00245,Q0146,Emergency,North,2026-01-23,1.4,1
+QE00246,Q0080,Nephrology,Central,2026-03-02,4.8,0
+QE00247,Q0003,Emergency,North,2026-03-11,3.7,0
+QE00248,Q0020,General Medicine,South,2026-01-14,1.0,0
+QE00249,Q0034,Cardiology,Central,2026-04-18,8.5,0
+QE00250,Q0067,Emergency,North,2026-05-23,5.2,0
+QE00251,Q0142,Emergency,Central,2026-02-17,2.7,0
+QE00252,Q0127,Nephrology,North,2026-03-21,5.8,0
+QE00253,Q0020,Endocrinology,South,2026-02-25,1.2,1
+QE00254,Q0050,Nephrology,South,2026-01-18,8.7,0
+QE00255,Q0031,General Medicine,North,2026-04-25,2.0,0
+QE00256,Q0089,General Medicine,North,2026-05-10,0.5,0
+QE00257,Q0099,General Medicine,South,2026-05-21,10.6,0
+QE00258,Q0139,Endocrinology,North,2026-01-17,8.1,0
+QE00259,Q0050,General Medicine,Central,2026-06-12,2.1,0
+QE00260,Q0038,Endocrinology,South,2026-01-12,2.3,1
+QE00261,Q0055,Nephrology,Central,2026-02-11,0.0,0
+QE00262,Q0096,Endocrinology,North,2026-01-22,1.5,0
+QE00263,Q0094,Cardiology,North,2026-05-07,2.7,1
+QE00264,Q0019,Nephrology,North,2026-02-03,0.8,0
+QE00265,Q0079,Emergency,South,2026-04-15,12.2,0
+QE00266,Q0068,Endocrinology,North,2026-04-04,6.4,0
+QE00267,Q0069,General Medicine,North,2026-06-27,5.2,1
+QE00268,Q0053,General Medicine,South,2026-06-09,0.5,0
+QE00269,Q0094,Cardiology,Central,2026-02-28,8.0,0
+QE00270,Q0075,General Medicine,Central,2026-06-22,5.5,0
+QE00271,Q0017,Emergency,Central,2026-02-22,3.9,0
+QE00272,Q0016,General Medicine,North,2026-04-02,1.1,1
+QE00273,Q0008,Nephrology,Central,2026-03-30,0.2,0
+QE00274,Q0121,Nephrology,North,2026-03-20,0.1,0
+QE00275,Q0011,Nephrology,South,2026-04-14,6.3,0
+QE00276,Q0043,Nephrology,North,2026-05-08,4.6,0
+QE00277,Q0003,Nephrology,South,2026-03-14,2.0,0
+QE00278,Q0052,General Medicine,North,2026-06-12,7.2,0
+QE00279,Q0117,Nephrology,South,2026-04-14,6.1,0
+QE00280,Q0028,Emergency,North,2026-05-03,2.1,1
+QE00281,Q0005,Cardiology,Central,2026-05-31,2.4,1
+QE00282,Q0008,Nephrology,North,2026-01-26,6.0,0
+QE00283,Q0033,Endocrinology,Central,2026-03-04,1.4,1
+QE00284,Q0036,General Medicine,North,2026-01-11,0.2,0
+QE00285,Q0041,Cardiology,South,2026-01-20,3.0,0
+QE00286,Q0119,Endocrinology,Central,2026-03-10,0.4,0
+QE00287,Q0116,Endocrinology,Central,2026-02-17,0.5,1
+QE00288,Q0077,Cardiology,North,2026-05-03,1.4,1
+QE00289,Q0076,Emergency,Central,2026-03-07,10.3,0
+QE00290,Q0002,Nephrology,North,2026-06-21,4.1,0
+QE00291,Q0080,General Medicine,South,2026-03-06,2.7,1
+QE00292,Q0107,Endocrinology,Central,2026-05-04,1.2,0
+QE00293,Q0126,Cardiology,North,2026-01-29,2.0,0
+QE00294,Q0065,Cardiology,Central,2026-01-20,9.7,0
+QE00295,Q0049,General Medicine,South,2026-03-08,0.6,0
+QE00296,Q0067,General Medicine,South,2026-03-18,0.8,0
+QE00297,Q0066,Nephrology,South,2026-01-28,2.0,1
+QE00298,Q0062,Emergency,North,2026-01-22,5.9,1
+QE00299,Q0083,Endocrinology,North,2026-02-18,6.0,1
+QE00300,Q0042,General Medicine,North,2026-01-11,0.9,1
+QE00301,Q0107,Emergency,South,2026-03-17,1.6,0
+QE00302,Q0120,Endocrinology,South,2026-04-02,3.2,0
+QE00303,Q0121,Emergency,North,2026-05-10,1.1,0
+QE00304,Q0045,Endocrinology,South,2026-01-29,8.2,1
+QE00305,Q0145,Cardiology,Central,2026-01-05,1.6,0
+QE00306,Q0048,Cardiology,North,2026-04-19,5.9,1
+QE00307,Q0013,General Medicine,North,2026-05-29,6.1,1
+QE00308,Q0138,Emergency,Central,2026-03-27,4.5,0
+QE00309,Q0141,Endocrinology,South,2026-03-26,1.5,0
+QE00310,Q0003,Endocrinology,Central,2026-03-30,6.2,1
+QE00311,Q0037,Nephrology,North,2026-05-27,9.8,0
+QE00312,Q0067,Nephrology,Central,2026-03-15,1.0,0
+QE00313,Q0114,Cardiology,North,2026-04-19,2.9,1
+QE00314,Q0135,Cardiology,Central,2026-05-10,1.9,1
+QE00315,Q0095,Nephrology,North,2026-05-11,4.4,0
+QE00316,Q0143,Emergency,Central,2026-02-17,1.6,0
+QE00317,Q0050,Cardiology,Central,2026-06-20,4.8,0
+QE00318,Q0042,Nephrology,Central,2026-06-21,3.4,1
+QE00319,Q0103,Emergency,North,2026-02-20,6.3,1
+QE00320,Q0093,Emergency,Central,2026-04-16,8.5,0
+QE00321,Q0033,Nephrology,South,2026-04-01,5.1,0
+QE00322,Q0091,General Medicine,North,2026-03-15,0.2,0
+QE00323,Q0052,Emergency,Central,2026-04-05,1.5,0
+QE00324,Q0038,Emergency,South,2026-06-09,6.6,1
+QE00325,Q0011,Endocrinology,North,2026-02-24,0.4,0
+QE00326,Q0074,Nephrology,South,2026-03-19,6.4,0
+QE00327,Q0079,Endocrinology,North,2026-04-24,2.0,0
+QE00328,Q0134,Cardiology,Central,2026-06-23,6.8,0
+QE00329,Q0116,General Medicine,North,2026-01-28,5.1,0
+QE00330,Q0075,Endocrinology,South,2026-03-07,10.4,0
+QE00331,Q0118,General Medicine,Central,2026-01-21,1.5,0
+QE00332,Q0094,Cardiology,North,2026-05-05,2.3,1
+QE00333,Q0021,General Medicine,North,2026-06-27,6.1,0
+QE00334,Q0129,Emergency,North,2026-01-14,3.3,1
+QE00335,Q0055,Emergency,Central,2026-02-26,12.3,0
+QE00336,Q0018,General Medicine,South,2026-04-23,8.8,0
+QE00337,Q0038,General Medicine,North,2026-03-26,1.4,1
+QE00338,Q0061,Emergency,South,2026-02-28,2.2,0
+QE00339,Q0041,Endocrinology,North,2026-01-18,2.4,1
+QE00340,Q0055,Nephrology,North,2026-05-07,2.6,1
+QE00341,Q0122,General Medicine,South,2026-06-21,14.6,1
+QE00342,Q0030,Emergency,North,2026-01-18,1.9,0
+QE00343,Q0029,Emergency,Central,2026-02-07,8.8,1
+QE00344,Q0131,Nephrology,Central,2026-05-28,5.5,1
+QE00345,Q0019,Nephrology,Central,2026-03-15,0.0,0
+QE00346,Q0015,Cardiology,North,2026-04-18,6.5,0
+QE00347,Q0135,Cardiology,Central,2026-06-16,0.6,0
+QE00348,Q0123,Endocrinology,Central,2026-05-16,1.9,0
+QE00349,Q0054,Emergency,South,2026-01-15,5.0,1
+QE00350,Q0146,General Medicine,South,2026-01-21,2.2,0
+QE00351,Q0036,Emergency,South,2026-02-01,3.9,1
+QE00352,Q0036,General Medicine,Central,2026-01-13,2.6,0
+QE00353,Q0098,Endocrinology,North,2026-05-18,2.6,0
+QE00354,Q0040,General Medicine,North,2026-05-14,0.2,0
+QE00355,Q0077,Nephrology,South,2026-03-26,0.8,1
+QE00356,Q0146,Nephrology,Central,2026-02-14,6.7,0
+QE00357,Q0148,Cardiology,South,2026-06-11,6.6,1
+QE00358,Q0041,Cardiology,South,2026-01-31,0.1,0
+QE00359,Q0135,Cardiology,North,2026-04-04,7.3,0
+QE00360,Q0012,Nephrology,North,2026-02-12,0.5,1
+QE00361,Q0018,Nephrology,North,2026-01-18,0.4,0
+QE00362,Q0055,Endocrinology,North,2026-03-20,3.3,0
+QE00363,Q0080,Endocrinology,South,2026-06-19,0.2,0
+QE00364,Q0140,General Medicine,South,2026-05-15,0.2,0
+QE00365,Q0005,Endocrinology,Central,2026-06-03,1.1,1
+QE00366,Q0011,Emergency,South,2026-01-28,11.7,0
+QE00367,Q0074,Nephrology,South,2026-03-16,3.9,0
+QE00368,Q0019,Cardiology,Central,2026-06-28,1.7,0
+QE00369,Q0124,Emergency,South,2026-01-19,1.3,0
+QE00370,Q0118,Cardiology,Central,2026-03-09,16.5,0
+QE00371,Q0068,Cardiology,Central,2026-02-01,7.7,0
+QE00372,Q0029,General Medicine,Central,2026-04-23,9.3,1
+QE00373,Q0100,General Medicine,Central,2026-04-05,3.4,0
+QE00374,Q0015,Cardiology,South,2026-01-25,0.5,0
+QE00375,Q0059,General Medicine,North,2026-05-13,12.9,0
+QE00376,Q0077,General Medicine,North,2026-06-22,2.0,0
+QE00377,Q0025,Cardiology,Central,2026-05-21,5.3,1
+QE00378,Q0117,Nephrology,North,2026-04-26,28.0,0
+QE00379,Q0076,Emergency,Central,2026-02-23,0.8,0
+QE00380,Q0030,Endocrinology,Central,2026-02-24,1.8,1
+QE00381,Q0103,General Medicine,North,2026-03-01,5.1,0
+QE00382,Q0067,General Medicine,South,2026-05-26,6.6,0
+QE00383,Q0039,Emergency,North,2026-02-23,0.4,0
+QE00384,Q0006,Cardiology,South,2026-03-21,3.1,0
+QE00385,Q0011,Endocrinology,Central,2026-04-14,7.9,0
+QE00386,Q0110,Cardiology,North,2026-06-17,3.4,1
+QE00387,Q0054,Emergency,North,2026-01-30,2.8,0
+QE00388,Q0017,Nephrology,Central,2026-01-31,1.2,0
+QE00389,Q0139,Emergency,North,2026-04-03,2.1,0
+QE00390,Q0092,Emergency,South,2026-03-20,4.4,0
+QE00391,Q0118,Nephrology,North,2026-05-31,1.0,0
+QE00392,Q0131,General Medicine,North,2026-02-19,5.0,1
+QE00393,Q0146,Nephrology,South,2026-03-05,0.6,1
+QE00394,Q0058,Nephrology,Central,2026-01-05,4.8,0
+QE00395,Q0058,Emergency,Central,2026-06-14,4.6,0
+QE00396,Q0076,Endocrinology,North,2026-05-20,5.4,0
+QE00397,Q0116,Nephrology,Central,2026-05-13,6.2,0
+QE00398,Q0010,Endocrinology,Central,2026-06-24,0.3,0
+QE00399,Q0107,Cardiology,Central,2026-01-17,2.7,0
+QE00400,Q0032,Nephrology,South,2026-03-09,0.3,0
+QE00401,Q0036,General Medicine,Central,2026-06-28,1.1,0
+QE00402,Q0006,Nephrology,South,2026-06-21,2.3,0
+QE00403,Q0132,General Medicine,Central,2026-06-07,4.5,0
+QE00404,Q0001,General Medicine,South,2026-05-30,17.6,0
+QE00405,Q0094,Emergency,North,2026-01-15,2.5,1
+QE00406,Q0033,Endocrinology,South,2026-06-16,1.6,0
+QE00407,Q0098,Endocrinology,North,2026-05-10,0.3,0
+QE00408,Q0134,General Medicine,South,2026-03-03,5.8,0
+QE00409,Q0074,Cardiology,North,2026-03-06,4.6,0
+QE00410,Q0075,General Medicine,South,2026-01-03,26.2,1
+QE00411,Q0045,General Medicine,North,2026-06-16,4.8,0
+QE00412,Q0064,General Medicine,South,2026-03-17,2.5,0
+QE00413,Q0101,Cardiology,North,2026-02-08,6.7,0
+QE00414,Q0030,Endocrinology,North,2026-03-03,4.2,1
+QE00415,Q0061,Emergency,South,2026-01-03,0.2,0
+QE00416,Q0043,Nephrology,North,2026-04-22,3.3,1
+QE00417,Q0095,Cardiology,South,2026-01-22,2.3,0
+QE00418,Q0104,Nephrology,South,2026-02-14,1.8,0
+QE00419,Q0064,Endocrinology,South,2026-01-16,0.4,1
+QE00420,Q0042,Nephrology,North,2026-03-03,0.0,1
+QE00421,Q0090,Cardiology,North,2026-02-24,5.8,0
+QE00422,Q0130,Emergency,South,2026-02-15,5.6,0
+QE00423,Q0016,Endocrinology,Central,2026-06-26,2.1,1
+QE00424,Q0045,Nephrology,Central,2026-02-19,2.9,0
+QE00425,Q0113,Endocrinology,North,2026-04-15,8.2,1
+QE00426,Q0135,Endocrinology,Central,2026-03-24,1.8,1
+QE00427,Q0001,Endocrinology,South,2026-04-27,1.6,0
+QE00428,Q0039,General Medicine,North,2026-06-15,3.9,1
+QE00429,Q0057,Emergency,Central,2026-03-06,4.1,0
+QE00430,Q0093,Nephrology,South,2026-03-22,11.7,0
+QE00431,Q0128,Emergency,South,2026-03-02,0.8,0
+QE00432,Q0064,Cardiology,North,2026-01-09,0.3,0
+QE00433,Q0079,Cardiology,North,2026-03-25,1.8,0
+QE00434,Q0016,Emergency,North,2026-02-10,11.5,0
+QE00435,Q0053,Cardiology,Central,2026-02-02,0.6,0
+QE00436,Q0005,Nephrology,South,2026-05-06,0.9,0
+QE00437,Q0065,Cardiology,Central,2026-01-10,1.3,0
+QE00438,Q0064,Endocrinology,North,2026-01-09,0.7,0
+QE00439,Q0045,Cardiology,North,2026-04-22,2.6,0
+QE00440,Q0010,General Medicine,North,2026-04-12,0.5,0
+QE00441,Q0012,General Medicine,South,2026-01-04,1.1,0
+QE00442,Q0063,Emergency,North,2026-04-24,1.3,0
+QE00443,Q0140,Cardiology,North,2026-04-22,2.4,0
+QE00444,Q0015,Cardiology,Central,2026-05-26,1.5,0
+QE00445,Q0109,Emergency,Central,2026-05-19,0.9,0
+QE00446,Q0141,General Medicine,Central,2026-01-13,4.3,1
+QE00447,Q0018,General Medicine,North,2026-01-03,1.2,0
+QE00448,Q0020,Cardiology,North,2026-06-15,4.1,0
+QE00449,Q0054,Endocrinology,North,2026-03-25,1.4,0
+QE00450,Q0109,Nephrology,North,2026-04-11,0.7,1
+QE00451,Q0091,Nephrology,South,2026-04-23,9.0,0
+QE00452,Q0036,Emergency,Central,2026-01-27,0.6,0
+QE00453,Q0130,Nephrology,Central,2026-04-17,0.3,0
+QE00454,Q0003,Emergency,Central,2026-03-10,10.7,0
+QE00455,Q0145,General Medicine,South,2026-05-08,2.8,0
+QE00456,Q0087,General Medicine,South,2026-02-18,0.8,0
+QE00457,Q0136,Cardiology,Central,2026-04-04,0.4,1
+QE00458,Q0118,General Medicine,North,2026-01-07,6.2,1
+QE00459,Q0051,Endocrinology,South,2026-05-25,2.0,1
+QE00460,Q0073,Cardiology,North,2026-05-06,0.8,0
+QE00461,Q0051,Endocrinology,South,2026-06-17,0.7,0
+QE00462,Q0058,Endocrinology,South,2026-03-28,8.3,1
+QE00463,Q0107,Cardiology,Central,2026-02-05,0.8,0
+QE00464,Q0133,Nephrology,South,2026-03-11,0.4,1
+QE00465,Q0092,Nephrology,Central,2026-05-14,6.7,0
+QE00466,Q0099,Endocrinology,South,2026-05-28,0.8,0
+QE00467,Q0050,Cardiology,South,2026-06-13,0.2,0
+QE00468,Q0099,Cardiology,North,2026-04-14,3.6,0
+QE00469,Q0149,Emergency,South,2026-04-26,6.1,0
+QE00470,Q0051,Nephrology,South,2026-03-16,2.2,0
+QE00471,Q0082,General Medicine,North,2026-05-08,11.0,0
+QE00472,Q0011,Endocrinology,North,2026-02-04,4.7,1
+QE00473,Q0144,General Medicine,South,2026-02-06,2.2,0
+QE00474,Q0115,Cardiology,North,2026-01-14,11.0,1
+QE00475,Q0072,Nephrology,South,2026-02-24,0.1,0
+QE00476,Q0014,General Medicine,South,2026-03-11,1.3,0
+QE00477,Q0068,General Medicine,North,2026-05-21,1.5,0
+QE00478,Q0006,Emergency,North,2026-06-27,3.9,1
+QE00479,Q0135,Emergency,South,2026-03-14,12.8,0
+QE00480,Q0006,Endocrinology,Central,2026-03-24,13.0,0
+QE00481,Q0071,Endocrinology,Central,2026-03-28,4.2,0
+QE00482,Q0109,Nephrology,North,2026-02-10,0.2,0
+QE00483,Q0145,Cardiology,North,2026-01-22,6.5,1
+QE00484,Q0098,Cardiology,North,2026-05-19,4.3,1
+QE00485,Q0047,General Medicine,Central,2026-02-25,3.1,0
+QE00486,Q0138,Nephrology,Central,2026-01-28,2.5,0
+QE00487,Q0042,Nephrology,South,2026-06-28,4.2,0
+QE00488,Q0039,Nephrology,South,2026-05-11,6.4,0
+QE00489,Q0024,Emergency,South,2026-04-03,10.1,0
+QE00490,Q0090,Emergency,Central,2026-04-05,7.8,1
+QE00491,Q0145,Nephrology,Central,2026-02-28,1.2,0
+QE00492,Q0069,Cardiology,Central,2026-01-30,8.0,0
+QE00493,Q0094,Nephrology,South,2026-05-18,5.2,0
+QE00494,Q0036,Endocrinology,South,2026-06-02,2.6,0
+QE00495,Q0030,Cardiology,Central,2026-01-09,3.5,0
+QE00496,Q0055,Cardiology,Central,2026-03-25,0.8,0
+QE00497,Q0008,Nephrology,North,2026-04-04,5.8,0
+QE00498,Q0081,Cardiology,North,2026-03-05,0.5,0
+QE00499,Q0025,Endocrinology,Central,2026-04-03,3.9,0
+QE00500,Q0005,Cardiology,North,2026-01-12,2.0,0

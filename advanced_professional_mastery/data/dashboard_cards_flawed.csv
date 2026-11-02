@@ -1,0 +1,5 @@
+metric,dashboard_value,unit,issue
+Encounter volume,5000,encounters,Correct value?
+Medication order volume,19460,orders,Orphan orders silently omitted by inner join
+Mean length of stay,6.41,days,Encounter rows duplicated by medication-order join
+Supplied 30-day flag rate,8.85,%,Wrong grain; encounter flag repeated per order

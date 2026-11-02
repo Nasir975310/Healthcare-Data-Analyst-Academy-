@@ -1,0 +1,10 @@
+{
+  "candidate_status": "Pharm.D candidate; update to completed only after award",
+  "skills": {
+    "sql": {"level": "demonstrated", "evidence": ["SQLite SQL queries in synthetic healthcare practicum"], "limitations": ["PostgreSQL deployment not personally verified"]},
+    "python": {"level": "demonstrated", "evidence": ["pandas ETL and data quality scripts in synthetic practicum"], "limitations": ["No production deployment"]},
+    "excel": {"level": "practised", "evidence": ["Academic spreadsheet exercises"], "limitations": ["No employer reporting experience"]},
+    "power bi": {"level": "learning", "evidence": ["Dashboard specification"], "limitations": ["No executed Power BI Desktop artifact"]},
+    "healthcare_domain": {"level": "demonstrated", "evidence": ["Pharm.D academic training"], "limitations": ["Do not imply employed analyst experience"]}
+  }
+}

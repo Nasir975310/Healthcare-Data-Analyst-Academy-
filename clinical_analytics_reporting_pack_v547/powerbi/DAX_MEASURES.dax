@@ -1,0 +1,55 @@
+Raw Rows = COUNTROWS(FactHypertension)
+
+Unique Record IDs = DISTINCTCOUNT(FactHypertension[record_id])
+
+Duplicate Excess Rows =
+[Raw Rows] - [Unique Record IDs]
+
+Missing Follow-up SBP =
+CALCULATE(
+    COUNTROWS(FactHypertension),
+    ISBLANK(FactHypertension[followup_sbp_mmhg])
+)
+
+Invalid Follow-up SBP =
+CALCULATE(
+    COUNTROWS(FactHypertension),
+    NOT ISBLANK(FactHypertension[followup_sbp_mmhg]),
+    FactHypertension[followup_sbp_mmhg] < 70
+        || FactHypertension[followup_sbp_mmhg] > 250
+)
+
+Paired SBP Eligible Rows =
+CALCULATE(
+    COUNTROWS(FactHypertension),
+    FactHypertension[IsPairedSBPEligible] = TRUE()
+)
+
+Mean Baseline SBP (Eligible) =
+CALCULATE(
+    AVERAGE(FactHypertension[baseline_sbp_mmhg]),
+    FactHypertension[IsPairedSBPEligible] = TRUE()
+)
+
+Mean Follow-up SBP (Eligible) =
+CALCULATE(
+    AVERAGE(FactHypertension[followup_sbp_mmhg]),
+    FactHypertension[IsPairedSBPEligible] = TRUE()
+)
+
+Mean Paired SBP Change =
+CALCULATE(
+    AVERAGEX(
+        FILTER(FactHypertension, FactHypertension[IsPairedSBPEligible] = TRUE()),
+        FactHypertension[baseline_sbp_mmhg] - FactHypertension[followup_sbp_mmhg]
+    )
+)
+
+-- Educational display only; not an individualized treatment target.
+Illustrative Follow-up Below 140 over 90 =
+CALCULATE(
+    COUNTROWS(FactHypertension),
+    FactHypertension[IsPairedSBPEligible] = TRUE(),
+    FactHypertension[followup_sbp_mmhg] < 140,
+    FactHypertension[followup_dbp_mmhg] < 90
+)

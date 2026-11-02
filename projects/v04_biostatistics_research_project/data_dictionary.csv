@@ -1,0 +1,9 @@
+variable,type,definition,allowed_values_or_units,missingness
+patient_id,string,Synthetic unique patient identifier,P0001-P0240,none
+age_years,integer,Age at index encounter,years,none
+diabetes,binary,Diabetes status,0=no; 1=yes,none
+regimen_group,categorical,Synthetic regimen category,ACEI_or_ARB; Other_regimen,none
+discharge_sbp,numeric,Simulated discharge systolic blood pressure,mmHg,approximately 4.5% generated missing
+followup_days,integer,Administrative follow-up duration field,days,none
+readmission_30d,binary,Synthetic 30-day readmission indicator,0=no; 1=yes,none
+site,categorical,Synthetic site label,Site_A; Site_B; Site_C,none

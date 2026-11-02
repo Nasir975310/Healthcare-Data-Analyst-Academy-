@@ -1,0 +1,10 @@
+check,status,severity,detail
+deliverables_present,PASS,CRITICAL,All expected deliverables found
+row_reconciliation,PASS,CRITICAL,"raw=91, accepted=90, rejected=1"
+expected_orphan_exception,PASS,CRITICAL,Rejected encounters reported: 1
+monthly_vs_curated,PASS,CRITICAL,monthly total=90; curated=90
+type_vs_curated,PASS,CRITICAL,type total=90; curated=90
+medication_extract_nonempty,PASS,CRITICAL,rows=4
+source_manifest_nonempty,PASS,CRITICAL,Manifest contains source provenance
+quality_report_nonempty,PASS,CRITICAL,Quality report is present
+privacy_safe_scope,PASS,WARN,Synthetic teaching data only; inspect exports before publication

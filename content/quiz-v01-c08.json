@@ -1,0 +1,62 @@
+[
+  {
+    "id": "q1",
+    "q": "P(A|B) means:",
+    "options": [
+      "Probability of B among A",
+      "Probability of A among observations where B is true",
+      "Probability of A and B always",
+      "Probability A is independent of B"
+    ],
+    "correct": 1,
+    "why": "Conditional probability uses B as the reference condition."
+  },
+  {
+    "id": "q2",
+    "q": "Which measure depends strongly on prevalence?",
+    "options": [
+      "Sensitivity",
+      "Specificity",
+      "Positive predictive value",
+      "The test's unit"
+    ],
+    "correct": 2,
+    "why": "PPV changes with prevalence even when sensitivity and specificity remain fixed."
+  },
+  {
+    "id": "q3",
+    "q": "A large convenience sample:",
+    "options": [
+      "Always represents the target population",
+      "Removes selection bias",
+      "Can still be systematically biased",
+      "Guarantees low measurement error"
+    ],
+    "correct": 2,
+    "why": "Large sample size does not correct systematic selection bias."
+  },
+  {
+    "id": "q4",
+    "q": "Standard error of a mean is commonly estimated as:",
+    "options": [
+      "s × n",
+      "s/√n",
+      "√s/n",
+      "n/s"
+    ],
+    "correct": 1,
+    "why": "For independent observations under the usual model, SE(mean)=s/√n."
+  },
+  {
+    "id": "q5",
+    "q": "A 95% frequentist confidence procedure means:",
+    "options": [
+      "95% probability this fixed parameter is in the observed interval",
+      "95% long-run coverage under assumptions",
+      "The null is false with 95% probability",
+      "95% of observations lie in the interval"
+    ],
+    "correct": 1,
+    "why": "The coverage statement refers to repeated sampling performance."
+  }
+]

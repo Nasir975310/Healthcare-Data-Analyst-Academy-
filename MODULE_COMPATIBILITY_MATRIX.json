@@ -1,0 +1,627 @@
+{
+  "generated_for": "v5.60.3",
+  "policy": "Course-pack model: module-local dependencies and execution instructions; central matrix is an inventory, not a compatibility guarantee.",
+  "modules": [
+    {
+      "module": "advanced_professional_mastery",
+      "python_policy": "Not centrally declared; inspect module README/setup files",
+      "dependencies": "Module-specific; inspect requirements*.txt and README",
+      "external_tools": "Module-specific; may include SQLite, PostgreSQL, R, Quarto, Docker, Chromium or Power BI",
+      "test_command": "python -m pytest -q --import-mode=importlib -c /dev/null advanced_professional_mastery/tests",
+      "verification": "Pending full isolated audit",
+      "notes": "A test directory exists; this does not imply all module functionality is tested."
+    },
+    {
+      "module": "advanced_statistics_execution_v521",
+      "python_policy": "Not centrally declared; inspect module README/setup files",
+      "dependencies": "Module-specific; inspect requirements*.txt and README",
+      "external_tools": "Module-specific; may include SQLite, PostgreSQL, R, Quarto, Docker, Chromium or Power BI",
+      "test_command": "python -m pytest -q --import-mode=importlib -c /dev/null advanced_statistics_execution_v521/tests",
+      "verification": "Pending full isolated audit",
+      "notes": "A test directory exists; this does not imply all module functionality is tested."
+    },
+    {
+      "module": "application_execution_assessment_lab_v537",
+      "python_policy": "Not centrally declared; inspect module README/setup files",
+      "dependencies": "Module-specific; inspect requirements*.txt and README",
+      "external_tools": "Module-specific; may include SQLite, PostgreSQL, R, Quarto, Docker, Chromium or Power BI",
+      "test_command": "python -m pytest -q --import-mode=importlib -c /dev/null application_execution_assessment_lab_v537/tests",
+      "verification": "Pending full isolated audit",
+      "notes": "A test directory exists; this does not imply all module functionality is tested."
+    },
+    {
+      "module": "application_execution_interview_v557",
+      "python_policy": "Not centrally declared; inspect module README/setup files",
+      "dependencies": "Module-specific; inspect requirements*.txt and README",
+      "external_tools": "Module-specific; may include SQLite, PostgreSQL, R, Quarto, Docker, Chromium or Power BI",
+      "test_command": "python -m pytest -q --import-mode=importlib -c /dev/null application_execution_interview_v557/tests",
+      "verification": "Pending full isolated audit",
+      "notes": "A test directory exists; this does not imply all module functionality is tested."
+    },
+    {
+      "module": "application_intelligence_v556",
+      "python_policy": "Not centrally declared; inspect module README/setup files",
+      "dependencies": "Module-specific; inspect requirements*.txt and README",
+      "external_tools": "Module-specific; may include SQLite, PostgreSQL, R, Quarto, Docker, Chromium or Power BI",
+      "test_command": "python -m pytest -q --import-mode=importlib -c /dev/null application_intelligence_v556/tests",
+      "verification": "Pending full isolated audit",
+      "notes": "A test directory exists; this does not imply all module functionality is tested."
+    },
+    {
+      "module": "application_performance_career_intelligence_v558",
+      "python_policy": "Not centrally declared; inspect module README/setup files",
+      "dependencies": "Module-specific; inspect requirements*.txt and README",
+      "external_tools": "Module-specific; may include SQLite, PostgreSQL, R, Quarto, Docker, Chromium or Power BI",
+      "test_command": "python -m pytest -q --import-mode=importlib -c /dev/null application_performance_career_intelligence_v558/tests",
+      "verification": "Pending full isolated audit",
+      "notes": "A test directory exists; this does not imply all module functionality is tested."
+    },
+    {
+      "module": "bi_engineering_v59",
+      "python_policy": "Not centrally declared; inspect module README/setup files",
+      "dependencies": "Module-specific; inspect requirements*.txt and README",
+      "external_tools": "Module-specific; may include SQLite, PostgreSQL, R, Quarto, Docker, Chromium or Power BI",
+      "test_command": "python -m pytest -q --import-mode=importlib -c /dev/null bi_engineering_v59/tests",
+      "verification": "Pending full isolated audit",
+      "notes": "A test directory exists; this does not imply all module functionality is tested."
+    },
+    {
+      "module": "career_launch_kit_v555",
+      "python_policy": "Not centrally declared; inspect module README/setup files",
+      "dependencies": "Module-specific; inspect requirements*.txt and README",
+      "external_tools": "Module-specific; may include SQLite, PostgreSQL, R, Quarto, Docker, Chromium or Power BI",
+      "test_command": "python -m pytest -q --import-mode=importlib -c /dev/null career_launch_kit_v555/tests",
+      "verification": "Pending full isolated audit",
+      "notes": "A test directory exists; this does not imply all module functionality is tested."
+    },
+    {
+      "module": "client_delivery_v55",
+      "python_policy": "Not centrally declared; inspect module README/setup files",
+      "dependencies": "Module-specific; inspect requirements*.txt and README",
+      "external_tools": "Module-specific; may include SQLite, PostgreSQL, R, Quarto, Docker, Chromium or Power BI",
+      "test_command": "python -m pytest -q --import-mode=importlib -c /dev/null client_delivery_v55/tests",
+      "verification": "Pending full isolated audit",
+      "notes": "A test directory exists; this does not imply all module functionality is tested."
+    },
+    {
+      "module": "clinical_analytics_reporting_pack_v547",
+      "python_policy": "Not centrally declared; inspect module README/setup files",
+      "dependencies": "Module-specific; inspect requirements*.txt and README",
+      "external_tools": "Module-specific; may include SQLite, PostgreSQL, R, Quarto, Docker, Chromium or Power BI",
+      "test_command": "python -m pytest -q --import-mode=importlib -c /dev/null clinical_analytics_reporting_pack_v547/tests",
+      "verification": "Pending full isolated audit",
+      "notes": "A test directory exists; this does not imply all module functionality is tested."
+    },
+    {
+      "module": "clinical_data_warehouse_sql_engineering_v526",
+      "python_policy": "Not centrally declared; inspect module README/setup files",
+      "dependencies": "Module-specific; inspect requirements*.txt and README",
+      "external_tools": "Module-specific; may include SQLite, PostgreSQL, R, Quarto, Docker, Chromium or Power BI",
+      "test_command": "python -m pytest -q --import-mode=importlib -c /dev/null clinical_data_warehouse_sql_engineering_v526/tests",
+      "verification": "Pending full isolated audit",
+      "notes": "A test directory exists; this does not imply all module functionality is tested."
+    },
+    {
+      "module": "clinical_evidence_engine_v515",
+      "python_policy": "Not centrally declared; inspect module README/setup files",
+      "dependencies": "Module-specific; inspect requirements*.txt and README",
+      "external_tools": "Module-specific; may include SQLite, PostgreSQL, R, Quarto, Docker, Chromium or Power BI",
+      "test_command": "python -m pytest -q --import-mode=importlib -c /dev/null clinical_evidence_engine_v515/tests",
+      "verification": "Pending full isolated audit",
+      "notes": "A test directory exists; this does not imply all module functionality is tested."
+    },
+    {
+      "module": "clinical_medication_utilization_case_study_v546",
+      "python_policy": "Not centrally declared; inspect module README/setup files",
+      "dependencies": "Module-specific; inspect requirements*.txt and README",
+      "external_tools": "Module-specific; may include SQLite, PostgreSQL, R, Quarto, Docker, Chromium or Power BI",
+      "test_command": "python -m pytest -q --import-mode=importlib -c /dev/null clinical_medication_utilization_case_study_v546/tests",
+      "verification": "Pending full isolated audit",
+      "notes": "A test directory exists; this does not imply all module functionality is tested."
+    },
+    {
+      "module": "clinical_research_methods_v524",
+      "python_policy": "Not centrally declared; inspect module README/setup files",
+      "dependencies": "Module-specific; inspect requirements*.txt and README",
+      "external_tools": "Module-specific; may include SQLite, PostgreSQL, R, Quarto, Docker, Chromium or Power BI",
+      "test_command": "python -m pytest -q --import-mode=importlib -c /dev/null clinical_research_methods_v524/tests",
+      "verification": "Pending full isolated audit",
+      "notes": "A test directory exists; this does not imply all module functionality is tested."
+    },
+    {
+      "module": "dashboard_studio_v53",
+      "python_policy": "Not centrally declared; inspect module README/setup files",
+      "dependencies": "Module-specific; inspect requirements*.txt and README",
+      "external_tools": "Module-specific; may include SQLite, PostgreSQL, R, Quarto, Docker, Chromium or Power BI",
+      "test_command": "python -m pytest -q --import-mode=importlib -c /dev/null dashboard_studio_v53/tests",
+      "verification": "Pending full isolated audit",
+      "notes": "A test directory exists; this does not imply all module functionality is tested."
+    },
+    {
+      "module": "dashboard_uat_v550",
+      "python_policy": "Not centrally declared; inspect module README/setup files",
+      "dependencies": "Module-specific; inspect requirements*.txt and README",
+      "external_tools": "Module-specific; may include SQLite, PostgreSQL, R, Quarto, Docker, Chromium or Power BI",
+      "test_command": "python -m pytest -q --import-mode=importlib -c /dev/null dashboard_uat_v550/tests",
+      "verification": "Pending full isolated audit",
+      "notes": "A test directory exists; this does not imply all module functionality is tested."
+    },
+    {
+      "module": "data_governance_v56",
+      "python_policy": "Not centrally declared; inspect module README/setup files",
+      "dependencies": "Module-specific; inspect requirements*.txt and README",
+      "external_tools": "Module-specific; may include SQLite, PostgreSQL, R, Quarto, Docker, Chromium or Power BI",
+      "test_command": "python -m pytest -q --import-mode=importlib -c /dev/null data_governance_v56/tests",
+      "verification": "Pending full isolated audit",
+      "notes": "A test directory exists; this does not imply all module functionality is tested."
+    },
+    {
+      "module": "data_validation_v513",
+      "python_policy": "Not centrally declared; inspect module README/setup files",
+      "dependencies": "Module-specific; inspect requirements*.txt and README",
+      "external_tools": "Module-specific; may include SQLite, PostgreSQL, R, Quarto, Docker, Chromium or Power BI",
+      "test_command": "python -m pytest -q --import-mode=importlib -c /dev/null data_validation_v513/tests",
+      "verification": "Pending full isolated audit",
+      "notes": "A test directory exists; this does not imply all module functionality is tested."
+    },
+    {
+      "module": "database_engineering_v58",
+      "python_policy": "Not centrally declared; inspect module README/setup files",
+      "dependencies": "Module-specific; inspect requirements*.txt and README",
+      "external_tools": "Module-specific; may include SQLite, PostgreSQL, R, Quarto, Docker, Chromium or Power BI",
+      "test_command": "python -m pytest -q --import-mode=importlib -c /dev/null database_engineering_v58/tests",
+      "verification": "Pending full isolated audit",
+      "notes": "A test directory exists; this does not imply all module functionality is tested."
+    },
+    {
+      "module": "earning_system_v46",
+      "python_policy": "Not centrally declared; inspect module README/setup files",
+      "dependencies": "Module-specific; inspect requirements*.txt and README",
+      "external_tools": "Module-specific; may include SQLite, PostgreSQL, R, Quarto, Docker, Chromium or Power BI",
+      "test_command": "python -m pytest -q --import-mode=importlib -c /dev/null earning_system_v46/tests",
+      "verification": "Pending full isolated audit",
+      "notes": "A test directory exists; this does not imply all module functionality is tested."
+    },
+    {
+      "module": "employment_transition_paid_work_v536",
+      "python_policy": "Not centrally declared; inspect module README/setup files",
+      "dependencies": "Module-specific; inspect requirements*.txt and README",
+      "external_tools": "Module-specific; may include SQLite, PostgreSQL, R, Quarto, Docker, Chromium or Power BI",
+      "test_command": "python -m pytest -q --import-mode=importlib -c /dev/null employment_transition_paid_work_v536/tests",
+      "verification": "Pending full isolated audit",
+      "notes": "A test directory exists; this does not imply all module functionality is tested."
+    },
+    {
+      "module": "etl_orchestration_v57",
+      "python_policy": "Not centrally declared; inspect module README/setup files",
+      "dependencies": "Module-specific; inspect requirements*.txt and README",
+      "external_tools": "Module-specific; may include SQLite, PostgreSQL, R, Quarto, Docker, Chromium or Power BI",
+      "test_command": "python -m pytest -q --import-mode=importlib -c /dev/null etl_orchestration_v57/tests",
+      "verification": "Pending full isolated audit",
+      "notes": "A test directory exists; this does not imply all module functionality is tested."
+    },
+    {
+      "module": "github_portfolio_publication_v542/sample_export",
+      "python_policy": "Not centrally declared; inspect module README/setup files",
+      "dependencies": "Module-specific; inspect requirements*.txt and README",
+      "external_tools": "Module-specific; may include SQLite, PostgreSQL, R, Quarto, Docker, Chromium or Power BI",
+      "test_command": "python -m pytest -q --import-mode=importlib -c /dev/null github_portfolio_publication_v542/sample_export/tests",
+      "verification": "Pending full isolated audit",
+      "notes": "A test directory exists; this does not imply all module functionality is tested."
+    },
+    {
+      "module": "github_portfolio_publication_v542",
+      "python_policy": "Not centrally declared; inspect module README/setup files",
+      "dependencies": "Module-specific; inspect requirements*.txt and README",
+      "external_tools": "Module-specific; may include SQLite, PostgreSQL, R, Quarto, Docker, Chromium or Power BI",
+      "test_command": "python -m pytest -q --import-mode=importlib -c /dev/null github_portfolio_publication_v542/tests",
+      "verification": "Pending full isolated audit",
+      "notes": "A test directory exists; this does not imply all module functionality is tested."
+    },
+    {
+      "module": "healthcare_analytics_capstone_employment_v530",
+      "python_policy": "Not centrally declared; inspect module README/setup files",
+      "dependencies": "Module-specific; inspect requirements*.txt and README",
+      "external_tools": "Module-specific; may include SQLite, PostgreSQL, R, Quarto, Docker, Chromium or Power BI",
+      "test_command": "python -m pytest -q --import-mode=importlib -c /dev/null healthcare_analytics_capstone_employment_v530/tests",
+      "verification": "Pending full isolated audit",
+      "notes": "A test directory exists; this does not imply all module functionality is tested."
+    },
+    {
+      "module": "healthcare_analytics_deployment_evidence_v534",
+      "python_policy": "Not centrally declared; inspect module README/setup files",
+      "dependencies": "Module-specific; inspect requirements*.txt and README",
+      "external_tools": "Module-specific; may include SQLite, PostgreSQL, R, Quarto, Docker, Chromium or Power BI",
+      "test_command": "python -m pytest -q --import-mode=importlib -c /dev/null healthcare_analytics_deployment_evidence_v534/tests",
+      "verification": "Pending full isolated audit",
+      "notes": "A test directory exists; this does not imply all module functionality is tested."
+    },
+    {
+      "module": "healthcare_analytics_employer_evaluation_v535",
+      "python_policy": "Not centrally declared; inspect module README/setup files",
+      "dependencies": "Module-specific; inspect requirements*.txt and README",
+      "external_tools": "Module-specific; may include SQLite, PostgreSQL, R, Quarto, Docker, Chromium or Power BI",
+      "test_command": "python -m pytest -q --import-mode=importlib -c /dev/null healthcare_analytics_employer_evaluation_v535/tests",
+      "verification": "Pending full isolated audit",
+      "notes": "A test directory exists; this does not imply all module functionality is tested."
+    },
+    {
+      "module": "healthcare_analytics_production_validation_v533",
+      "python_policy": "Not centrally declared; inspect module README/setup files",
+      "dependencies": "Module-specific; inspect requirements*.txt and README",
+      "external_tools": "Module-specific; may include SQLite, PostgreSQL, R, Quarto, Docker, Chromium or Power BI",
+      "test_command": "python -m pytest -q --import-mode=importlib -c /dev/null healthcare_analytics_production_validation_v533/tests",
+      "verification": "Pending full isolated audit",
+      "notes": "A test directory exists; this does not imply all module functionality is tested."
+    },
+    {
+      "module": "healthcare_analytics_real_world_practicum_v532",
+      "python_policy": "Not centrally declared; inspect module README/setup files",
+      "dependencies": "Module-specific; inspect requirements*.txt and README",
+      "external_tools": "Module-specific; may include SQLite, PostgreSQL, R, Quarto, Docker, Chromium or Power BI",
+      "test_command": "python -m pytest -q --import-mode=importlib -c /dev/null healthcare_analytics_real_world_practicum_v532/tests",
+      "verification": "Pending full isolated audit",
+      "notes": "A test directory exists; this does not imply all module functionality is tested."
+    },
+    {
+      "module": "healthcare_bi_portfolio_delivery_v529",
+      "python_policy": "Not centrally declared; inspect module README/setup files",
+      "dependencies": "Module-specific; inspect requirements*.txt and README",
+      "external_tools": "Module-specific; may include SQLite, PostgreSQL, R, Quarto, Docker, Chromium or Power BI",
+      "test_command": "python -m pytest -q --import-mode=importlib -c /dev/null healthcare_bi_portfolio_delivery_v529/tests",
+      "verification": "Pending full isolated audit",
+      "notes": "A test directory exists; this does not imply all module functionality is tested."
+    },
+    {
+      "module": "healthcare_bi_powerbi_production_v528",
+      "python_policy": "Not centrally declared; inspect module README/setup files",
+      "dependencies": "Module-specific; inspect requirements*.txt and README",
+      "external_tools": "Module-specific; may include SQLite, PostgreSQL, R, Quarto, Docker, Chromium or Power BI",
+      "test_command": "python -m pytest -q --import-mode=importlib -c /dev/null healthcare_bi_powerbi_production_v528/tests",
+      "verification": "Pending full isolated audit",
+      "notes": "A test directory exists; this does not imply all module functionality is tested."
+    },
+    {
+      "module": "healthcare_data_analyst_job_readiness_remote_employment_v531",
+      "python_policy": "Not centrally declared; inspect module README/setup files",
+      "dependencies": "Module-specific; inspect requirements*.txt and README",
+      "external_tools": "Module-specific; may include SQLite, PostgreSQL, R, Quarto, Docker, Chromium or Power BI",
+      "test_command": "python -m pytest -q --import-mode=importlib -c /dev/null healthcare_data_analyst_job_readiness_remote_employment_v531/tests",
+      "verification": "Pending full isolated audit",
+      "notes": "A test directory exists; this does not imply all module functionality is tested."
+    },
+    {
+      "module": "healthcare_data_engineering_interoperability_v525",
+      "python_policy": "Not centrally declared; inspect module README/setup files",
+      "dependencies": "Module-specific; inspect requirements*.txt and README",
+      "external_tools": "Module-specific; may include SQLite, PostgreSQL, R, Quarto, Docker, Chromium or Power BI",
+      "test_command": "python -m pytest -q --import-mode=importlib -c /dev/null healthcare_data_engineering_interoperability_v525/tests",
+      "verification": "Pending full isolated audit",
+      "notes": "A test directory exists; this does not imply all module functionality is tested."
+    },
+    {
+      "module": "hiring_assessment_v45",
+      "python_policy": "Not centrally declared; inspect module README/setup files",
+      "dependencies": "Module-specific; inspect requirements*.txt and README",
+      "external_tools": "Module-specific; may include SQLite, PostgreSQL, R, Quarto, Docker, Chromium or Power BI",
+      "test_command": "python -m pytest -q --import-mode=importlib -c /dev/null hiring_assessment_v45/tests",
+      "verification": "Pending full isolated audit",
+      "notes": "A test directory exists; this does not imply all module functionality is tested."
+    },
+    {
+      "module": "integrated_execution_engine_v520",
+      "python_policy": "Not centrally declared; inspect module README/setup files",
+      "dependencies": "Module-specific; inspect requirements*.txt and README",
+      "external_tools": "Module-specific; may include SQLite, PostgreSQL, R, Quarto, Docker, Chromium or Power BI",
+      "test_command": "python -m pytest -q --import-mode=importlib -c /dev/null integrated_execution_engine_v520/tests",
+      "verification": "Pending full isolated audit",
+      "notes": "A test directory exists; this does not imply all module functionality is tested."
+    },
+    {
+      "module": "integrated_reporting_visualization_v522",
+      "python_policy": "Not centrally declared; inspect module README/setup files",
+      "dependencies": "Module-specific; inspect requirements*.txt and README",
+      "external_tools": "Module-specific; may include SQLite, PostgreSQL, R, Quarto, Docker, Chromium or Power BI",
+      "test_command": "python -m pytest -q --import-mode=importlib -c /dev/null integrated_reporting_visualization_v522/tests",
+      "verification": "Pending full isolated audit",
+      "notes": "A test directory exists; this does not imply all module functionality is tested."
+    },
+    {
+      "module": "interactive_clinical_bi_dashboard_v548",
+      "python_policy": "Not centrally declared; inspect module README/setup files",
+      "dependencies": "Module-specific; inspect requirements*.txt and README",
+      "external_tools": "Module-specific; may include SQLite, PostgreSQL, R, Quarto, Docker, Chromium or Power BI",
+      "test_command": "python -m pytest -q --import-mode=importlib -c /dev/null interactive_clinical_bi_dashboard_v548/tests",
+      "verification": "Pending full isolated audit",
+      "notes": "A test directory exists; this does not imply all module functionality is tested."
+    },
+    {
+      "module": "interactive_workbench_v52",
+      "python_policy": "Not centrally declared; inspect module README/setup files",
+      "dependencies": "Module-specific; inspect requirements*.txt and README",
+      "external_tools": "Module-specific; may include SQLite, PostgreSQL, R, Quarto, Docker, Chromium or Power BI",
+      "test_command": "python -m pytest -q --import-mode=importlib -c /dev/null interactive_workbench_v52/tests",
+      "verification": "Pending full isolated audit",
+      "notes": "A test directory exists; this does not imply all module functionality is tested."
+    },
+    {
+      "module": "job_search_source_vacancy_verification_v559",
+      "python_policy": "Not centrally declared; inspect module README/setup files",
+      "dependencies": "Module-specific; inspect requirements*.txt and README",
+      "external_tools": "Module-specific; may include SQLite, PostgreSQL, R, Quarto, Docker, Chromium or Power BI",
+      "test_command": "python -m pytest -q --import-mode=importlib -c /dev/null job_search_source_vacancy_verification_v559/tests",
+      "verification": "Pending full isolated audit",
+      "notes": "A test directory exists; this does not imply all module functionality is tested."
+    },
+    {
+      "module": "platform_roadmap_v511",
+      "python_policy": "Not centrally declared; inspect module README/setup files",
+      "dependencies": "Module-specific; inspect requirements*.txt and README",
+      "external_tools": "Module-specific; may include SQLite, PostgreSQL, R, Quarto, Docker, Chromium or Power BI",
+      "test_command": "python -m pytest -q --import-mode=importlib -c /dev/null platform_roadmap_v511/tests",
+      "verification": "Pending full isolated audit",
+      "notes": "A test directory exists; this does not imply all module functionality is tested."
+    },
+    {
+      "module": "portfolio_builder_v49",
+      "python_policy": "Not centrally declared; inspect module README/setup files",
+      "dependencies": "Module-specific; inspect requirements*.txt and README",
+      "external_tools": "Module-specific; may include SQLite, PostgreSQL, R, Quarto, Docker, Chromium or Power BI",
+      "test_command": "python -m pytest -q --import-mode=importlib -c /dev/null portfolio_builder_v49/tests",
+      "verification": "Pending full isolated audit",
+      "notes": "A test directory exists; this does not imply all module functionality is tested."
+    },
+    {
+      "module": "portfolio_client_delivery_v518",
+      "python_policy": "Not centrally declared; inspect module README/setup files",
+      "dependencies": "Module-specific; inspect requirements*.txt and README",
+      "external_tools": "Module-specific; may include SQLite, PostgreSQL, R, Quarto, Docker, Chromium or Power BI",
+      "test_command": "python -m pytest -q --import-mode=importlib -c /dev/null portfolio_client_delivery_v518/tests",
+      "verification": "Pending full isolated audit",
+      "notes": "A test directory exists; this does not imply all module functionality is tested."
+    },
+    {
+      "module": "portfolio_employment_v44",
+      "python_policy": "Not centrally declared; inspect module README/setup files",
+      "dependencies": "Module-specific; inspect requirements*.txt and README",
+      "external_tools": "Module-specific; may include SQLite, PostgreSQL, R, Quarto, Docker, Chromium or Power BI",
+      "test_command": "python -m pytest -q --import-mode=importlib -c /dev/null portfolio_employment_v44/tests",
+      "verification": "Pending full isolated audit",
+      "notes": "A test directory exists; this does not imply all module functionality is tested."
+    },
+    {
+      "module": "portfolio_evidence_pack_v540",
+      "python_policy": "Not centrally declared; inspect module README/setup files",
+      "dependencies": "Module-specific; inspect requirements*.txt and README",
+      "external_tools": "Module-specific; may include SQLite, PostgreSQL, R, Quarto, Docker, Chromium or Power BI",
+      "test_command": "python -m pytest -q --import-mode=importlib -c /dev/null portfolio_evidence_pack_v540/tests",
+      "verification": "Pending full isolated audit",
+      "notes": "A test directory exists; this does not imply all module functionality is tested."
+    },
+    {
+      "module": "portfolio_execution_reproducibility_v538",
+      "python_policy": "Not centrally declared; inspect module README/setup files",
+      "dependencies": "Module-specific; inspect requirements*.txt and README",
+      "external_tools": "Module-specific; may include SQLite, PostgreSQL, R, Quarto, Docker, Chromium or Power BI",
+      "test_command": "python -m pytest -q --import-mode=importlib -c /dev/null portfolio_execution_reproducibility_v538/tests",
+      "verification": "Pending full isolated audit",
+      "notes": "A test directory exists; this does not imply all module functionality is tested."
+    },
+    {
+      "module": "portfolio_handoff_evidence_v543",
+      "python_policy": "Not centrally declared; inspect module README/setup files",
+      "dependencies": "Module-specific; inspect requirements*.txt and README",
+      "external_tools": "Module-specific; may include SQLite, PostgreSQL, R, Quarto, Docker, Chromium or Power BI",
+      "test_command": "python -m pytest -q --import-mode=importlib -c /dev/null portfolio_handoff_evidence_v543/tests",
+      "verification": "Pending full isolated audit",
+      "notes": "A test directory exists; this does not imply all module functionality is tested."
+    },
+    {
+      "module": "portfolio_interview_readiness_v545",
+      "python_policy": "Not centrally declared; inspect module README/setup files",
+      "dependencies": "Module-specific; inspect requirements*.txt and README",
+      "external_tools": "Module-specific; may include SQLite, PostgreSQL, R, Quarto, Docker, Chromium or Power BI",
+      "test_command": "python -m pytest -q --import-mode=importlib -c /dev/null portfolio_interview_readiness_v545/tests",
+      "verification": "Pending full isolated audit",
+      "notes": "A test directory exists; this does not imply all module functionality is tested."
+    },
+    {
+      "module": "portfolio_presentation_employer_review_v539",
+      "python_policy": "Not centrally declared; inspect module README/setup files",
+      "dependencies": "Module-specific; inspect requirements*.txt and README",
+      "external_tools": "Module-specific; may include SQLite, PostgreSQL, R, Quarto, Docker, Chromium or Power BI",
+      "test_command": "python -m pytest -q --import-mode=importlib -c /dev/null portfolio_presentation_employer_review_v539/tests",
+      "verification": "Pending full isolated audit",
+      "notes": "A test directory exists; this does not imply all module functionality is tested."
+    },
+    {
+      "module": "portfolio_publication_candidate_v554",
+      "python_policy": "Not centrally declared; inspect module README/setup files",
+      "dependencies": "Module-specific; inspect requirements*.txt and README",
+      "external_tools": "Module-specific; may include SQLite, PostgreSQL, R, Quarto, Docker, Chromium or Power BI",
+      "test_command": "python -m pytest -q --import-mode=importlib -c /dev/null portfolio_publication_candidate_v554/tests",
+      "verification": "Pending full isolated audit",
+      "notes": "A test directory exists; this does not imply all module functionality is tested."
+    },
+    {
+      "module": "portfolio_quality/examples/good_example",
+      "python_policy": "Not centrally declared; inspect module README/setup files",
+      "dependencies": "Module-specific; inspect requirements*.txt and README",
+      "external_tools": "Module-specific; may include SQLite, PostgreSQL, R, Quarto, Docker, Chromium or Power BI",
+      "test_command": "python -m pytest -q --import-mode=importlib -c /dev/null portfolio_quality/examples/good_example/tests",
+      "verification": "Pending full isolated audit",
+      "notes": "A test directory exists; this does not imply all module functionality is tested."
+    },
+    {
+      "module": "portfolio_release_candidate_v544",
+      "python_policy": "Not centrally declared; inspect module README/setup files",
+      "dependencies": "Module-specific; inspect requirements*.txt and README",
+      "external_tools": "Module-specific; may include SQLite, PostgreSQL, R, Quarto, Docker, Chromium or Power BI",
+      "test_command": "python -m pytest -q --import-mode=importlib -c /dev/null portfolio_release_candidate_v544/tests",
+      "verification": "Pending full isolated audit",
+      "notes": "A test directory exists; this does not imply all module functionality is tested."
+    },
+    {
+      "module": "portfolio_release_gate_v541",
+      "python_policy": "Not centrally declared; inspect module README/setup files",
+      "dependencies": "Module-specific; inspect requirements*.txt and README",
+      "external_tools": "Module-specific; may include SQLite, PostgreSQL, R, Quarto, Docker, Chromium or Power BI",
+      "test_command": "python -m pytest -q --import-mode=importlib -c /dev/null portfolio_release_gate_v541/tests",
+      "verification": "Pending full isolated audit",
+      "notes": "A test directory exists; this does not imply all module functionality is tested."
+    },
+    {
+      "module": "postgresql_healthcare_warehouse_operations_v527",
+      "python_policy": "Not centrally declared; inspect module README/setup files",
+      "dependencies": "Module-specific; inspect requirements*.txt and README",
+      "external_tools": "Module-specific; may include SQLite, PostgreSQL, R, Quarto, Docker, Chromium or Power BI",
+      "test_command": "python -m pytest -q --import-mode=importlib -c /dev/null postgresql_healthcare_warehouse_operations_v527/tests",
+      "verification": "Pending full isolated audit",
+      "notes": "A test directory exists; this does not imply all module functionality is tested."
+    },
+    {
+      "module": "practicum_v43",
+      "python_policy": "Not centrally declared; inspect module README/setup files",
+      "dependencies": "Module-specific; inspect requirements*.txt and README",
+      "external_tools": "Module-specific; may include SQLite, PostgreSQL, R, Quarto, Docker, Chromium or Power BI",
+      "test_command": "python -m pytest -q --import-mode=importlib -c /dev/null practicum_v43/tests",
+      "verification": "Pending full isolated audit",
+      "notes": "A test directory exists; this does not imply all module functionality is tested."
+    },
+    {
+      "module": "production_ops_v510",
+      "python_policy": "Not centrally declared; inspect module README/setup files",
+      "dependencies": "Module-specific; inspect requirements*.txt and README",
+      "external_tools": "Module-specific; may include SQLite, PostgreSQL, R, Quarto, Docker, Chromium or Power BI",
+      "test_command": "python -m pytest -q --import-mode=importlib -c /dev/null production_ops_v510/tests",
+      "verification": "Pending full isolated audit",
+      "notes": "A test directory exists; this does not imply all module functionality is tested."
+    },
+    {
+      "module": "professional_simulations",
+      "python_policy": "Not centrally declared; inspect module README/setup files",
+      "dependencies": "Module-specific; inspect requirements*.txt and README",
+      "external_tools": "Module-specific; may include SQLite, PostgreSQL, R, Quarto, Docker, Chromium or Power BI",
+      "test_command": "python -m pytest -q --import-mode=importlib -c /dev/null professional_simulations/tests",
+      "verification": "Pending full isolated audit",
+      "notes": "A test directory exists; this does not imply all module functionality is tested."
+    },
+    {
+      "module": "project_execution_collaboration_v519",
+      "python_policy": "Not centrally declared; inspect module README/setup files",
+      "dependencies": "Module-specific; inspect requirements*.txt and README",
+      "external_tools": "Module-specific; may include SQLite, PostgreSQL, R, Quarto, Docker, Chromium or Power BI",
+      "test_command": "python -m pytest -q --import-mode=importlib -c /dev/null project_execution_collaboration_v519/tests",
+      "verification": "Pending full isolated audit",
+      "notes": "A test directory exists; this does not imply all module functionality is tested."
+    },
+    {
+      "module": "project_execution_v48",
+      "python_policy": "Not centrally declared; inspect module README/setup files",
+      "dependencies": "Module-specific; inspect requirements*.txt and README",
+      "external_tools": "Module-specific; may include SQLite, PostgreSQL, R, Quarto, Docker, Chromium or Power BI",
+      "test_command": "python -m pytest -q --import-mode=importlib -c /dev/null project_execution_v48/tests",
+      "verification": "Pending full isolated audit",
+      "notes": "A test directory exists; this does not imply all module functionality is tested."
+    },
+    {
+      "module": "project_simulator_v51",
+      "python_policy": "Not centrally declared; inspect module README/setup files",
+      "dependencies": "Module-specific; inspect requirements*.txt and README",
+      "external_tools": "Module-specific; may include SQLite, PostgreSQL, R, Quarto, Docker, Chromium or Power BI",
+      "test_command": "python -m pytest -q --import-mode=importlib -c /dev/null project_simulator_v51/tests",
+      "verification": "Pending full isolated audit",
+      "notes": "A test directory exists; this does not imply all module functionality is tested."
+    },
+    {
+      "module": "real_world_project_studio/portfolio_publication",
+      "python_policy": "Not centrally declared; inspect module README/setup files",
+      "dependencies": "Module-specific; inspect requirements*.txt and README",
+      "external_tools": "Module-specific; may include SQLite, PostgreSQL, R, Quarto, Docker, Chromium or Power BI",
+      "test_command": "python -m pytest -q --import-mode=importlib -c /dev/null real_world_project_studio/portfolio_publication/tests",
+      "verification": "Pending full isolated audit",
+      "notes": "A test directory exists; this does not imply all module functionality is tested."
+    },
+    {
+      "module": "report_generator_v54",
+      "python_policy": "Not centrally declared; inspect module README/setup files",
+      "dependencies": "Module-specific; inspect requirements*.txt and README",
+      "external_tools": "Module-specific; may include SQLite, PostgreSQL, R, Quarto, Docker, Chromium or Power BI",
+      "test_command": "python -m pytest -q --import-mode=importlib -c /dev/null report_generator_v54/tests",
+      "verification": "Pending full isolated audit",
+      "notes": "A test directory exists; this does not imply all module functionality is tested."
+    },
+    {
+      "module": "research_publication_workbench_v517",
+      "python_policy": "Not centrally declared; inspect module README/setup files",
+      "dependencies": "Module-specific; inspect requirements*.txt and README",
+      "external_tools": "Module-specific; may include SQLite, PostgreSQL, R, Quarto, Docker, Chromium or Power BI",
+      "test_command": "python -m pytest -q --import-mode=importlib -c /dev/null research_publication_workbench_v517/tests",
+      "verification": "Pending full isolated audit",
+      "notes": "A test directory exists; this does not imply all module functionality is tested."
+    },
+    {
+      "module": "statistical_engine_v514",
+      "python_policy": "Not centrally declared; inspect module README/setup files",
+      "dependencies": "Module-specific; inspect requirements*.txt and README",
+      "external_tools": "Module-specific; may include SQLite, PostgreSQL, R, Quarto, Docker, Chromium or Power BI",
+      "test_command": "python -m pytest -q --import-mode=importlib -c /dev/null statistical_engine_v514/tests",
+      "verification": "Pending full isolated audit",
+      "notes": "A test directory exists; this does not imply all module functionality is tested."
+    },
+    {
+      "module": "statistical_validation_engine_v523",
+      "python_policy": "Not centrally declared; inspect module README/setup files",
+      "dependencies": "Module-specific; inspect requirements*.txt and README",
+      "external_tools": "Module-specific; may include SQLite, PostgreSQL, R, Quarto, Docker, Chromium or Power BI",
+      "test_command": "python -m pytest -q --import-mode=importlib -c /dev/null statistical_validation_engine_v523/tests",
+      "verification": "Pending full isolated audit",
+      "notes": "A test directory exists; this does not imply all module functionality is tested."
+    },
+    {
+      "module": "technical_environment_v47/starter_project",
+      "python_policy": "Not centrally declared; inspect module README/setup files",
+      "dependencies": "Module-specific; inspect requirements*.txt and README",
+      "external_tools": "Module-specific; may include SQLite, PostgreSQL, R, Quarto, Docker, Chromium or Power BI",
+      "test_command": "python -m pytest -q --import-mode=importlib -c /dev/null technical_environment_v47/starter_project/tests",
+      "verification": "Pending full isolated audit",
+      "notes": "A test directory exists; this does not imply all module functionality is tested."
+    },
+    {
+      "module": "technical_environment_v47",
+      "python_policy": "Not centrally declared; inspect module README/setup files",
+      "dependencies": "Module-specific; inspect requirements*.txt and README",
+      "external_tools": "Module-specific; may include SQLite, PostgreSQL, R, Quarto, Docker, Chromium or Power BI",
+      "test_command": "python -m pytest -q --import-mode=importlib -c /dev/null technical_environment_v47/tests",
+      "verification": "Pending full isolated audit",
+      "notes": "A test directory exists; this does not imply all module functionality is tested."
+    },
+    {
+      "module": "universal_study_workspace_v512",
+      "python_policy": "Not centrally declared; inspect module README/setup files",
+      "dependencies": "Module-specific; inspect requirements*.txt and README",
+      "external_tools": "Module-specific; may include SQLite, PostgreSQL, R, Quarto, Docker, Chromium or Power BI",
+      "test_command": "python -m pytest -q --import-mode=importlib -c /dev/null universal_study_workspace_v512/tests",
+      "verification": "Pending full isolated audit",
+      "notes": "A test directory exists; this does not imply all module functionality is tested."
+    },
+    {
+      "module": "vacancy_sourcing_evidence_capture_v560",
+      "python_policy": "Not centrally declared; inspect module README/setup files",
+      "dependencies": "Module-specific; inspect requirements*.txt and README",
+      "external_tools": "Module-specific; may include SQLite, PostgreSQL, R, Quarto, Docker, Chromium or Power BI",
+      "test_command": "python -m pytest -q --import-mode=importlib -c /dev/null vacancy_sourcing_evidence_capture_v560/tests",
+      "verification": "Pending full isolated audit",
+      "notes": "A test directory exists; this does not imply all module functionality is tested."
+    },
+    {
+      "module": "visualization_reporting_studio_v516",
+      "python_policy": "Not centrally declared; inspect module README/setup files",
+      "dependencies": "Module-specific; inspect requirements*.txt and README",
+      "external_tools": "Module-specific; may include SQLite, PostgreSQL, R, Quarto, Docker, Chromium or Power BI",
+      "test_command": "python -m pytest -q --import-mode=importlib -c /dev/null visualization_reporting_studio_v516/tests",
+      "verification": "Pending full isolated audit",
+      "notes": "A test directory exists; this does not imply all module functionality is tested."
+    }
+  ]
+}

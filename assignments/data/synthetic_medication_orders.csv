@@ -1,0 +1,151 @@
+order_id,encounter_id,order_date,drug_name,therapeutic_class,route,order_status,quantity
+ORD0001,ENC0013,2026-03-05,Metoprolol,Beta blocker,IV,Discontinued,30
+ORD0002,ENC0046,2026-02-20,Ramipril,ACE inhibitor,IV,Active,7
+ORD0003,ENC0057,2026-01-19,Amlodipine,Calcium-channel blocker,Oral,Active,7
+ORD0004,ENC0064,2026-03-23,Enalapril,ACE inhibitor,Oral,Completed,14
+ORD0005,ENC0059,2026-01-29,Chlorthalidone,Diuretic,IV,Active,30
+ORD0006,ENC0049,2026-02-04,Telmisartan,ARB,IV,Completed,7
+ORD0007,ENC0037,2026-02-17,Amlodipine,Calcium-channel blocker,Oral,Discontinued,30
+ORD0008,ENC0043,2026-01-26,Losartan,ARB,Oral,Discontinued,28
+ORD0009,ENC0079,2026-02-14,Enalapril,ACE inhibitor,IV,Discontinued,28
+ORD0010,ENC0055,2026-03-13,Cilnidipine,Calcium-channel blocker,IV,Discontinued,28
+ORD0011,ENC0079,2026-02-13,Ramipril,ACE inhibitor,IV,Active,30
+ORD0012,ENC0068,2026-03-02,Chlorthalidone,Diuretic,IV,Active,28
+ORD0013,ENC0073,2026-03-29,Chlorthalidone,Diuretic,Oral,Active,7
+ORD0014,ENC0080,2026-01-18,Sitagliptin,Antidiabetic,IV,Active,7
+ORD0015,ENC0026,2026-03-22,Sitagliptin,Antidiabetic,Oral,Completed,30
+ORD0016,ENC0072,2026-03-04,Chlorthalidone,Diuretic,Oral,Active,28
+ORD0017,ENC0034,2026-03-30,Furosemide,Diuretic,IV,Completed,28
+ORD0018,ENC0029,2026-03-22,Losartan,ARB,Oral,Completed,7
+ORD0019,ENC0022,2026-03-27,Metoprolol,Beta blocker,Oral,Completed,14
+ORD0020,ENC0076,2026-03-17,Telmisartan,ARB,IV,Completed,28
+ORD0021,ENC0046,2026-02-21,Ramipril,ACE inhibitor,Oral,Completed,28
+ORD0022,ENC0059,2026-01-30,Sitagliptin,Antidiabetic,Oral,Discontinued,7
+ORD0023,ENC0005,2026-01-10,Telmisartan,ARB,Oral,Active,7
+ORD0024,ENC0046,2026-02-18,Atorvastatin,Statin,IV,Discontinued,7
+ORD0025,ENC0007,2026-03-30,Enalapril,ACE inhibitor,Oral,Active,30
+ORD0026,ENC0019,2026-02-13,Rosuvastatin,Statin,Oral,Completed,28
+ORD0027,ENC0018,2026-01-12,Amlodipine,Calcium-channel blocker,IV,Discontinued,28
+ORD0028,ENC0010,2026-02-14,Ramipril,ACE inhibitor,Oral,Active,28
+ORD0029,ENC0026,2026-03-24,Losartan,ARB,IV,Active,7
+ORD0030,ENC0056,2026-02-15,Losartan,ARB,IV,Completed,14
+ORD0031,ENC0042,2026-02-09,Cilnidipine,Calcium-channel blocker,IV,Discontinued,7
+ORD0032,ENC0032,2026-03-12,Telmisartan,ARB,Oral,Active,14
+ORD0033,ENC0054,2026-01-25,Carvedilol,Beta blocker,IV,Completed,28
+ORD0034,ENC0027,2026-04-01,Metoprolol,Beta blocker,IV,Completed,28
+ORD0035,ENC0056,2026-02-14,Chlorthalidone,Diuretic,Oral,Completed,14
+ORD0036,ENC0065,2026-01-29,Chlorthalidone,Diuretic,Oral,Completed,28
+ORD0037,ENC0071,2026-03-11,Amlodipine,Calcium-channel blocker,IV,Discontinued,28
+ORD0038,ENC0066,2026-03-25,Atorvastatin,Statin,IV,Active,14
+ORD0039,ENC0069,2026-01-18,Metoprolol,Beta blocker,IV,Discontinued,30
+ORD0040,ENC0048,2026-01-07,Enalapril,ACE inhibitor,IV,Completed,30
+ORD0041,ENC0058,2026-01-08,Losartan,ARB,IV,Discontinued,7
+ORD0042,ENC0065,2026-01-29,Amlodipine,Calcium-channel blocker,Oral,Completed,14
+ORD0043,ENC0006,2026-01-10,Amlodipine,Calcium-channel blocker,Oral,Active,30
+ORD0044,ENC0044,2026-01-21,Metformin,Antidiabetic,Oral,Active,14
+ORD0045,ENC0042,2026-02-10,Atorvastatin,Statin,Oral,Completed,7
+ORD0046,ENC0050,2026-01-18,Ramipril,ACE inhibitor,IV,Completed,14
+ORD0047,ENC0016,2026-03-02,Amlodipine,Calcium-channel blocker,IV,Discontinued,7
+ORD0048,ENC0004,2026-03-30,Ramipril,ACE inhibitor,IV,Discontinued,28
+ORD0049,ENC0012,2026-01-22,Chlorthalidone,Diuretic,IV,Active,7
+ORD0050,ENC0066,2026-03-28,Rosuvastatin,Statin,Oral,Completed,28
+ORD0051,ENC0049,2026-02-04,Rosuvastatin,Statin,Oral,Discontinued,14
+ORD0052,ENC0048,2026-01-07,Sitagliptin,Antidiabetic,Oral,Completed,14
+ORD0053,ENC0006,2026-01-10,Atorvastatin,Statin,IV,Discontinued,28
+ORD0054,ENC0075,2026-03-26,Losartan,ARB,IV,Discontinued,28
+ORD0055,ENC0077,2026-01-17,Carvedilol,Beta blocker,Oral,Completed,30
+ORD0056,ENC0073,2026-03-30,Sitagliptin,Antidiabetic,Oral,Active,14
+ORD0057,ENC0077,2026-01-14,Amlodipine,Calcium-channel blocker,IV,Discontinued,28
+ORD0058,ENC0010,2026-02-16,Enalapril,ACE inhibitor,IV,Completed,28
+ORD0059,ENC0006,2026-01-10,Telmisartan,ARB,Oral,Completed,7
+ORD0060,ENC0004,2026-03-29,Rosuvastatin,Statin,IV,Discontinued,14
+ORD0061,ENC0032,2026-03-13,Ramipril,ACE inhibitor,Oral,Active,7
+ORD0062,ENC0071,2026-03-09,Carvedilol,Beta blocker,Oral,Active,30
+ORD0063,ENC0054,2026-01-23,Amlodipine,Calcium-channel blocker,IV,Completed,14
+ORD0064,ENC0070,2026-02-18,Metformin,Antidiabetic,Oral,Active,14
+ORD0065,ENC0008,2026-02-25,Atorvastatin,Statin,IV,Discontinued,7
+ORD0066,ENC0062,2026-02-20,Amlodipine,Calcium-channel blocker,Oral,Active,30
+ORD0067,ENC0001,2026-03-14,Atorvastatin,Statin,Oral,Discontinued,7
+ORD0068,ENC0055,2026-03-12,Rosuvastatin,Statin,IV,Active,7
+ORD0069,ENC0015,2026-01-09,Enalapril,ACE inhibitor,IV,Active,30
+ORD0070,ENC0009,2026-02-07,Metformin,Antidiabetic,Oral,Completed,30
+ORD0071,ENC0023,2026-02-11,Losartan,ARB,Oral,Discontinued,30
+ORD0072,ENC0052,2026-02-18,Furosemide,Diuretic,Oral,Completed,28
+ORD0073,ENC0038,2026-02-14,Amlodipine,Calcium-channel blocker,Oral,Completed,30
+ORD0074,ENC0076,2026-03-16,Rosuvastatin,Statin,IV,Discontinued,14
+ORD0075,ENC0018,2026-01-13,Atorvastatin,Statin,Oral,Completed,7
+ORD0076,ENC0007,2026-03-31,Telmisartan,ARB,IV,Active,28
+ORD0077,ENC0004,2026-03-30,Carvedilol,Beta blocker,IV,Completed,30
+ORD0078,ENC0016,2026-03-04,Sitagliptin,Antidiabetic,Oral,Discontinued,14
+ORD0079,ENC0017,2026-03-05,Ramipril,ACE inhibitor,IV,Discontinued,14
+ORD0080,ENC0051,2026-01-04,Chlorthalidone,Diuretic,Oral,Completed,7
+ORD0081,ENC0014,2026-01-25,Ramipril,ACE inhibitor,IV,Active,14
+ORD0082,ENC0022,2026-03-26,Telmisartan,ARB,IV,Discontinued,7
+ORD0083,ENC0064,2026-03-21,Ramipril,ACE inhibitor,IV,Discontinued,14
+ORD0084,ENC0019,2026-02-14,Rosuvastatin,Statin,IV,Active,28
+ORD0085,ENC0042,2026-02-10,Metformin,Antidiabetic,IV,Completed,30
+ORD0086,ENC0026,2026-03-25,Enalapril,ACE inhibitor,Oral,Completed,7
+ORD0087,ENC0041,2026-02-01,Cilnidipine,Calcium-channel blocker,IV,Discontinued,14
+ORD0088,ENC0062,2026-02-20,Atorvastatin,Statin,IV,Discontinued,14
+ORD0089,ENC0023,2026-02-09,Cilnidipine,Calcium-channel blocker,IV,Completed,30
+ORD0090,ENC0073,2026-03-28,Telmisartan,ARB,Oral,Completed,30
+ORD0091,ENC0061,2026-03-22,Metoprolol,Beta blocker,Oral,Completed,14
+ORD0092,ENC0066,2026-03-25,Amlodipine,Calcium-channel blocker,Oral,Active,7
+ORD0093,ENC0028,2026-02-06,Amlodipine,Calcium-channel blocker,IV,Discontinued,30
+ORD0094,ENC0022,2026-03-24,Sitagliptin,Antidiabetic,Oral,Completed,28
+ORD0095,ENC0003,2026-01-25,Metoprolol,Beta blocker,Oral,Completed,7
+ORD0096,ENC0036,2026-02-16,Amlodipine,Calcium-channel blocker,Oral,Active,14
+ORD0097,ENC0069,2026-01-20,Atorvastatin,Statin,IV,Discontinued,28
+ORD0098,ENC0076,2026-03-16,Metoprolol,Beta blocker,Oral,Active,30
+ORD0099,ENC0058,2026-01-09,Atorvastatin,Statin,IV,Active,30
+ORD0100,ENC0038,2026-02-17,Metoprolol,Beta blocker,IV,Active,7
+ORD0101,ENC0020,2026-01-23,Amlodipine,Calcium-channel blocker,IV,Active,30
+ORD0102,ENC0066,2026-03-26,Carvedilol,Beta blocker,Oral,Active,7
+ORD0103,ENC0067,2026-01-03,Losartan,ARB,IV,Active,30
+ORD0104,ENC0068,2026-03-03,Telmisartan,ARB,IV,Active,30
+ORD0105,ENC0017,2026-03-07,Sitagliptin,Antidiabetic,Oral,Active,28
+ORD0106,ENC0045,2026-02-08,Chlorthalidone,Diuretic,Oral,Completed,14
+ORD0107,ENC0006,2026-01-10,Sitagliptin,Antidiabetic,Oral,Active,14
+ORD0108,ENC0040,2026-01-19,Rosuvastatin,Statin,IV,Discontinued,14
+ORD0109,ENC0008,2026-02-27,Sitagliptin,Antidiabetic,Oral,Discontinued,30
+ORD0110,ENC0079,2026-02-15,Metoprolol,Beta blocker,Oral,Completed,14
+ORD0111,ENC0038,2026-02-14,Sitagliptin,Antidiabetic,Oral,Completed,7
+ORD0112,ENC0065,2026-01-31,Atorvastatin,Statin,IV,Completed,14
+ORD0113,ENC0038,2026-02-15,Enalapril,ACE inhibitor,Oral,Discontinued,7
+ORD0114,ENC0069,2026-01-19,Metformin,Antidiabetic,IV,Completed,28
+ORD0115,ENC0064,2026-03-22,Rosuvastatin,Statin,Oral,Discontinued,7
+ORD0116,ENC0044,2026-01-22,Sitagliptin,Antidiabetic,Oral,Active,28
+ORD0117,ENC0040,2026-01-19,Rosuvastatin,Statin,Oral,Completed,7
+ORD0118,ENC0001,2026-03-14,Furosemide,Diuretic,IV,Completed,30
+ORD0119,ENC0019,2026-02-16,Cilnidipine,Calcium-channel blocker,IV,Completed,28
+ORD0120,ENC0052,2026-02-15,Rosuvastatin,Statin,IV,Discontinued,28
+ORD0121,ENC0008,2026-02-25,Carvedilol,Beta blocker,IV,Discontinued,7
+ORD0122,ENC0063,2026-03-14,Telmisartan,ARB,IV,Active,30
+ORD0123,ENC0028,2026-02-06,Sitagliptin,Antidiabetic,Oral,Discontinued,28
+ORD0124,ENC0068,2026-03-01,Sitagliptin,Antidiabetic,IV,Discontinued,28
+ORD0125,ENC0011,2026-02-24,Furosemide,Diuretic,IV,Discontinued,14
+ORD0126,ENC0033,2026-01-20,Cilnidipine,Calcium-channel blocker,IV,Discontinued,14
+ORD0127,ENC0021,2026-03-17,Amlodipine,Calcium-channel blocker,IV,Completed,28
+ORD0128,ENC0079,2026-02-15,Atorvastatin,Statin,IV,Active,28
+ORD0129,ENC0034,2026-03-27,Furosemide,Diuretic,IV,Completed,28
+ORD0130,ENC0067,2026-01-04,Atorvastatin,Statin,Oral,Discontinued,14
+ORD0131,ENC0026,2026-03-25,Enalapril,ACE inhibitor,IV,Discontinued,28
+ORD0132,ENC0003,2026-01-24,Ramipril,ACE inhibitor,IV,Active,30
+ORD0133,ENC0042,2026-02-09,Metoprolol,Beta blocker,Oral,Active,28
+ORD0134,ENC0029,2026-03-21,Metoprolol,Beta blocker,IV,Discontinued,30
+ORD0135,ENC0018,2026-01-12,Amlodipine,Calcium-channel blocker,IV,Discontinued,14
+ORD0136,ENC0007,2026-03-28,Cilnidipine,Calcium-channel blocker,IV,Discontinued,28
+ORD0137,ENC0079,2026-02-14,Sitagliptin,Antidiabetic,IV,Completed,30
+ORD0138,ENC0009,2026-02-05,Telmisartan,ARB,Oral,Active,28
+ORD0139,ENC0062,2026-02-19,Atorvastatin,Statin,Oral,Completed,14
+ORD0140,ENC0032,2026-03-11,Carvedilol,Beta blocker,Oral,Completed,14
+ORD0141,ENC0078,2026-03-06,Losartan,ARB,Oral,Active,14
+ORD0142,ENC0017,2026-03-04,Enalapril,ACE inhibitor,Oral,Completed,30
+ORD0143,ENC0007,2026-03-28,Enalapril,ACE inhibitor,IV,Completed,14
+ORD0144,ENC0008,2026-02-25,Amlodipine,Calcium-channel blocker,Oral,Active,28
+ORD0145,ENC0041,2026-01-31,Metformin,Antidiabetic,IV,Discontinued,28
+ORD0146,ENC0020,2026-01-25,Telmisartan,ARB,Oral,Discontinued,7
+ORD0147,ENC0010,2026-02-17,Cilnidipine,Calcium-channel blocker,Oral,Active,30
+ORD0148,ENC0044,2026-01-22,Furosemide,Diuretic,Oral,Active,14
+ORD0149,ENC0008,2026-02-26,Ramipril,ACE inhibitor,IV,Active,28
+ORD0150,ENC0002,2026-02-23,Cilnidipine,Calcium-channel blocker,Oral,Active,14

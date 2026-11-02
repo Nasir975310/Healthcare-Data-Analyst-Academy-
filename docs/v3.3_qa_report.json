@@ -1,0 +1,33 @@
+{
+  "release": "3.3.0",
+  "checks": {
+    "json_files_parsed": 172,
+    "new_js_syntax": "PASS",
+    "html_static_parse": "PASS",
+    "encounters": 600,
+    "medication_orders": 1600,
+    "service_tickets": 120,
+    "orphan_orders": 32,
+    "reference_analysis": "PASS",
+    "analysis_summary": {
+      "encounter_rows": 600,
+      "order_rows": 1600,
+      "orphan_orders": 32,
+      "missing_order_cost": 36,
+      "antihypertensive_order_lines": 316,
+      "complete_paired_sbp": 458,
+      "ticket_rows": 120,
+      "closed_tickets": 115,
+      "open_or_missing_close": 5,
+      "mean_los_days": 4.115166666666666,
+      "supplied_readmission_flags": 42,
+      "supplied_flag_rate": 0.07
+    }
+  },
+  "limitations": [
+    "No browser automation or cross-device QA",
+    "No Windows execution",
+    "No independent clinical peer review",
+    "Training data are synthetic; supplied readmission flag is unvalidated"
+  ]
+}

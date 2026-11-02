@@ -1,0 +1,62 @@
+[
+  {
+    "id": "q1",
+    "q": "What should be checked before query optimization?",
+    "options": [
+      "Analytical correctness and metric definition",
+      "Only query runtime",
+      "Only index count",
+      "Only SQL formatting"
+    ],
+    "correct": 0,
+    "why": "Optimization must preserve correct cohort and output."
+  },
+  {
+    "id": "q2",
+    "q": "Does a sequential scan always mean poor performance?",
+    "options": [
+      "No",
+      "Yes",
+      "Only in SQLite",
+      "Only for small tables"
+    ],
+    "correct": 0,
+    "why": "A scan may be optimal for small tables or broad queries."
+  },
+  {
+    "id": "q3",
+    "q": "What is least privilege?",
+    "options": [
+      "Granting only permissions needed for a task",
+      "Giving all analysts admin access",
+      "Sharing passwords",
+      "Removing audit logs"
+    ],
+    "correct": 0,
+    "why": "Least privilege limits unnecessary access."
+  },
+  {
+    "id": "q4",
+    "q": "What should happen before an authorized UPDATE?",
+    "options": [
+      "Preview target rows with SELECT",
+      "Delete the table",
+      "Disable constraints",
+      "Export all patient data"
+    ],
+    "correct": 0,
+    "why": "The SELECT verifies the predicate and target set."
+  },
+  {
+    "id": "q5",
+    "q": "Which item supports reproducibility?",
+    "options": [
+      "Query version and extraction timestamp",
+      "A screenshot alone",
+      "An unexplained final chart",
+      "A renamed CSV"
+    ],
+    "correct": 0,
+    "why": "Version and extraction metadata support reruns."
+  }
+]

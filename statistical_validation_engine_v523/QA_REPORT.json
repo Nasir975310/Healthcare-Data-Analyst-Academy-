@@ -1,0 +1,51 @@
+{
+  "release": "5.23.0",
+  "v523_tests": {
+    "passed": 8,
+    "failed": 0
+  },
+  "v522_regression": {
+    "passed": 6
+  },
+  "v521_regression": {
+    "passed": 8
+  },
+  "v519_regression": {
+    "passed": 7
+  },
+  "v518_regression": {
+    "passed": 5
+  },
+  "v517_regression": {
+    "passed": 5
+  },
+  "v515_regression": {
+    "passed": 5
+  },
+  "synthetic_demo": {
+    "rows": 20,
+    "group_diagnostics": 1,
+    "bootstrap_intervals": 1,
+    "regression_models": 1,
+    "multiplicity_families": 1
+  },
+  "repository_checks": {
+    "python_files_compiled": 109,
+    "python_errors": 0,
+    "json_files_parsed": 253,
+    "json_errors": 0,
+    "javascript_files_checked": 54,
+    "javascript_errors": 0,
+    "html_ids": 179,
+    "duplicate_ids": 0,
+    "missing_script_assets": 0
+  },
+  "limitations": [
+    "Diagnostics do not prove assumptions or select tests automatically",
+    "Bootstrap percentile interval assumes independent observations",
+    "Linear model inference uses HC3; this does not repair model misspecification or confounding",
+    "Logistic regression has no Firth correction or external validation",
+    "Multiplicity applies only to supplied p-value families",
+    "Complete-case regression may be biased under informative missingness"
+  ]
+}

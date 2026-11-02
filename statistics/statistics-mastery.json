@@ -1,0 +1,115 @@
+{
+  "version": "1.0.0",
+  "title": "Advanced Statistics, Epidemiology and Clinical Research Analytics",
+  "description": "Twelve practical challenges for reproducible clinical data analysis in Python and R.",
+  "challenges": [
+    {
+      "id": "STAT-01",
+      "title": "Descriptive statistics and data distributions",
+      "scenario": "Summarise continuous and categorical clinical variables, inspect skewness and outliers, and distinguish mean/SD from median/IQR.",
+      "tasks": "Create a cohort profile by treatment group. Report n, missingness, mean and SD for approximately symmetric variables, median and IQR for skewed variables, and counts/percentages for categorical variables.",
+      "method": "Use pandas describe, groupby, value_counts and matplotlib histograms/boxplots. Confirm units and plausible ranges before interpreting.",
+      "acceptance": "A table includes denominators and missingness; each summary statistic matches the distribution and measurement scale.",
+      "safety": "Outliers must be investigated, not automatically deleted. A boxplot flag is not proof of an error."
+    },
+    {
+      "id": "STAT-02",
+      "title": "Probability, sampling and confidence intervals",
+      "scenario": "Explain sampling variability, standard error, confidence intervals and the difference between a confidence interval and a prediction interval.",
+      "tasks": "Estimate a mean difference in follow-up SBP between groups with a 95% confidence interval. Interpret the interval in clinical units and explain repeated-sampling meaning.",
+      "method": "Implement an independent-group mean difference and bootstrap percentile interval. Compare with a parametric interval and state assumptions.",
+      "acceptance": "The point estimate, interval, group sizes and units are reproducible; interpretation avoids saying there is a 95% probability that this fixed parameter lies in the observed interval.",
+      "safety": "A narrow interval can still describe biased or non-representative data."
+    },
+    {
+      "id": "STAT-03",
+      "title": "Hypothesis testing and effect sizes",
+      "scenario": "Choose tests based on design, variable type, independence, distribution and expected counts; report effect sizes and uncertainty.",
+      "tasks": "Compare follow-up SBP between two independent groups. Report the mean difference, 95% CI, p-value and standardised effect size. Explain multiplicity and why p<0.05 is not a clinical decision rule.",
+      "method": "Use Welch's t-test, Mann\u2013Whitney U as a sensitivity analysis, and Cohen's d/Hedges' g. State assumptions and the prespecified primary comparison.",
+      "acceptance": "The analysis identifies the test, assumptions, effect estimate, CI and p-value; interpretation does not equate statistical significance with clinical importance.",
+      "safety": "Do not select a test solely from a normality-test p-value. Inspect design and distributions."
+    },
+    {
+      "id": "STAT-04",
+      "title": "Categorical data and association",
+      "scenario": "Use contingency tables, chi-square and Fisher's exact test; quantify association with risk difference, risk ratio and odds ratio.",
+      "tasks": "Compare the synthetic event flag across treatment groups. Construct a 2\u00d72 table and report denominators, proportions and an appropriate association measure.",
+      "method": "Use scipy.stats chi2_contingency or fisher_exact; compute risk difference and risk ratio with confidence intervals where supported.",
+      "acceptance": "Counts reconcile to the source cohort; sparse cells trigger an exact method or justified alternative; reference category is explicit.",
+      "safety": "This simulated binary event is not a validated clinical endpoint."
+    },
+    {
+      "id": "STAT-05",
+      "title": "Correlation and linear regression",
+      "scenario": "Distinguish correlation from causation; fit and diagnose linear regression; interpret coefficients, residuals, confounding and interactions.",
+      "tasks": "Model follow-up SBP using treatment group, baseline SBP, age and diabetes. Interpret adjusted coefficients with units and confidence intervals.",
+      "method": "Fit OLS using statsmodels; inspect residual-versus-fitted and Q-Q plots, multicollinearity indicators and influential observations.",
+      "acceptance": "Model formula, reference levels, N, coefficients, CIs and diagnostics are recorded; limitations and residual assumptions are stated.",
+      "safety": "Adjustment does not remove unmeasured confounding or convert observational associations into causal effects."
+    },
+    {
+      "id": "STAT-06",
+      "title": "Logistic regression and clinical risk modelling",
+      "scenario": "Fit logistic regression, interpret odds ratios, assess calibration and discrimination, and avoid leakage/overfitting.",
+      "tasks": "Model the synthetic event indicator using age, diabetes, CKD and treatment group. Report odds ratios, calibration plot, ROC-AUC and confusion matrix at a prespecified threshold.",
+      "method": "Use statsmodels Logit or sklearn LogisticRegression; split data before fitting preprocessing; report calibration and discrimination separately.",
+      "acceptance": "No leakage from post-outcome variables; outcome prevalence and split strategy stated; performance metrics include uncertainty or caveats.",
+      "safety": "Small event counts make complex models unstable. The 400-row dataset is educational, not for clinical deployment."
+    },
+    {
+      "id": "STAT-07",
+      "title": "Diagnostic test evaluation",
+      "scenario": "Calculate sensitivity, specificity, PPV, NPV, likelihood ratios and prevalence effects from a 2\u00d72 table.",
+      "tasks": "Given a hypothetical screening test and reference standard, calculate all core accuracy measures and explain how PPV/NPV change with prevalence.",
+      "method": "Use a supplied 2\u00d72 case and a prevalence-sensitivity table. Verify formulas independently.",
+      "acceptance": "All four cells and denominators are shown; PPV/NPV are correctly tied to the specified prevalence; confidence intervals or uncertainty caveats included.",
+      "safety": "Do not treat a screening test as a diagnosis; reference-standard imperfections matter."
+    },
+    {
+      "id": "STAT-08",
+      "title": "Epidemiology and study design",
+      "scenario": "Distinguish cross-sectional, case-control, cohort and randomised designs; calculate incidence, prevalence, risk, rate and person-time.",
+      "tasks": "Select measures appropriate to each design. Calculate cumulative incidence and incidence rate from a synthetic cohort; identify selection, information and confounding biases.",
+      "method": "Complete design-selection scenarios and compute risk, risk difference, risk ratio, odds ratio and person-time incidence rate.",
+      "acceptance": "Every measure has a defined numerator, denominator, time frame and unit; design limitations correctly described.",
+      "safety": "Prevalence is not incidence. Odds ratios approximate risk ratios only under specific conditions."
+    },
+    {
+      "id": "STAT-09",
+      "title": "Survival analysis and time-to-event data",
+      "scenario": "Handle censoring, Kaplan\u2013Meier estimates, log-rank comparisons and Cox proportional hazards models.",
+      "tasks": "Estimate event-free survival over time, compare two groups, interpret hazard ratios and assess proportional hazards conceptually.",
+      "method": "Use lifelines if installed or R survival/survminer; document censoring and risk tables. Provide a Kaplan\u2013Meier figure and Cox model summary.",
+      "acceptance": "Time origin, event definition, censoring, at-risk population and follow-up horizon are explicit; hazard ratio interpretation is correct.",
+      "safety": "A hazard ratio is not a risk ratio. Informative censoring and non-proportional hazards can bias interpretation."
+    },
+    {
+      "id": "STAT-10",
+      "title": "Clinical research reporting and reproducibility",
+      "scenario": "Produce a concise analysis report with a prespecified question, cohort flow, methods, results, tables, figures, limitations and reproducible code.",
+      "tasks": "Create a mini statistical analysis plan and report using the synthetic cohort. Include a STROBE-aligned checklist for observational analyses and a reproducibility manifest.",
+      "method": "Run the end-to-end Python script; produce outputs, record software versions and preserve code/data provenance.",
+      "acceptance": "A reviewer can reproduce tables and figures from the supplied data and script; results distinguish planned from exploratory analyses.",
+      "safety": "STROBE is a reporting guideline, not a study-quality scoring tool or proof of validity."
+    },
+    {
+      "id": "STAT-11",
+      "title": "Sample size, power and precision",
+      "scenario": "Understand effect size, alpha, power, variance, allocation ratio, attrition and precision-based planning.",
+      "tasks": "Calculate an illustrative two-group sample size for a continuous outcome under stated assumptions; vary effect size and SD to observe sensitivity.",
+      "method": "Use statsmodels.stats.power or a transparent formula; document two-sided alpha, target power, allocation and attrition inflation.",
+      "acceptance": "Assumptions and units are explicit; the result is labelled illustrative and not a substitute for protocol/statistician review.",
+      "safety": "Do not calculate sample size from a desired p-value or use post-hoc observed power as evidence."
+    },
+    {
+      "id": "STAT-12",
+      "title": "Integrated clinical research client simulation",
+      "scenario": "Deliver an end-to-end observational analysis with cohort description, primary outcome, adjusted model, sensitivity analysis and executive handoff.",
+      "tasks": "In a 2-hour simulation, analyse synthetic blood-pressure follow-up data, define estimand and population, address missingness, model assumptions and clinical interpretation.",
+      "method": "Use client-brief.md, rubric.json, Python/R starter scripts and the synthetic cohort dataset.",
+      "acceptance": "Score at least 80/100 with no critical denominator, leakage, censoring or causal-claim errors.",
+      "safety": "The dataset is synthetic and generated for teaching. No clinical effectiveness claim is supported."
+    }
+  ]
+}

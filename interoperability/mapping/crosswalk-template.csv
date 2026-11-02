@@ -1,0 +1,4 @@
+source_system,source_code,source_display,target_system,target_code,target_display,relationship,confidence,status,version,reviewer,rationale
+LOCAL_LAB,SBP_LOCAL,Systolic BP,LOINC,8480-6,Systolic blood pressure,candidate-equivalent,medium,training-example-review-required,LOINC release to be pinned,Trainee,Example only; confirm method/context and local mapping.
+LOCAL_DRUG,AMLO5TAB,Amlodipine 5 mg tablet,ATC,C08CA01,Amlodipine,broader-classification,medium,training-example-review-required,ATC release to be pinned,Trainee,ATC classification is not a full product-level equivalence.
+LOCAL_DIAG,DM2_LOCAL,Type 2 diabetes mellitus,SNOMED_CT,,,unmapped,none,unmapped-review,SNOMED CT edition to be pinned,Trainee,Do not invent a target concept; select jurisdictionally licensed edition and verify.

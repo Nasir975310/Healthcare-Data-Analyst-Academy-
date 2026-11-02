@@ -1,0 +1,114 @@
+[
+  {
+    "id": "EMPX-01",
+    "title": "Run a timed SQL assessment",
+    "scenario": "Complete EMP-01 in 60 minutes. Save queries, outputs, grain statement, orphan audit and interpretation.",
+    "task": "Save the evidence in your portfolio folder and record the reviewer/date where applicable.",
+    "acceptance": [
+      "Complete the timed task or document why it was not completed.",
+      "Keep raw data unchanged.",
+      "Provide reproducible outputs and a QA log.",
+      "Disclose limitations and critical issues."
+    ],
+    "solution": "Use the simulation brief, SQL/Python references and portfolio review tools in this module. Attempt independently before consulting reference files.",
+    "portfolio": "Include a redacted brief, code, outputs, QA evidence and reviewer feedback; never include confidential employer or patient data."
+  },
+  {
+    "id": "EMPX-02",
+    "title": "Build a reproducible QA pipeline",
+    "scenario": "Complete EMP-02. Run from a clean environment and demonstrate the critical-failure exit condition.",
+    "task": "Save the evidence in your portfolio folder and record the reviewer/date where applicable.",
+    "acceptance": [
+      "Complete the timed task or document why it was not completed.",
+      "Keep raw data unchanged.",
+      "Provide reproducible outputs and a QA log.",
+      "Disclose limitations and critical issues."
+    ],
+    "solution": "Use the simulation brief, SQL/Python references and portfolio review tools in this module. Attempt independently before consulting reference files.",
+    "portfolio": "Include a redacted brief, code, outputs, QA evidence and reviewer feedback; never include confidential employer or patient data."
+  },
+  {
+    "id": "EMPX-03",
+    "title": "Reconcile an Excel management pack",
+    "scenario": "Complete EMP-03 and independently compare a headline metric with SQL or Python.",
+    "task": "Save the evidence in your portfolio folder and record the reviewer/date where applicable.",
+    "acceptance": [
+      "Complete the timed task or document why it was not completed.",
+      "Keep raw data unchanged.",
+      "Provide reproducible outputs and a QA log.",
+      "Disclose limitations and critical issues."
+    ],
+    "solution": "Use the simulation brief, SQL/Python references and portfolio review tools in this module. Attempt independently before consulting reference files.",
+    "portfolio": "Include a redacted brief, code, outputs, QA evidence and reviewer feedback; never include confidential employer or patient data."
+  },
+  {
+    "id": "EMPX-04",
+    "title": "Review a dashboard as a hiring manager",
+    "scenario": "Complete EMP-04. Identify unsupported labels, missing denominators, hidden exceptions and misleading chart scales.",
+    "task": "Save the evidence in your portfolio folder and record the reviewer/date where applicable.",
+    "acceptance": [
+      "Complete the timed task or document why it was not completed.",
+      "Keep raw data unchanged.",
+      "Provide reproducible outputs and a QA log.",
+      "Disclose limitations and critical issues."
+    ],
+    "solution": "Use the simulation brief, SQL/Python references and portfolio review tools in this module. Attempt independently before consulting reference files.",
+    "portfolio": "Include a redacted brief, code, outputs, QA evidence and reviewer feedback; never include confidential employer or patient data."
+  },
+  {
+    "id": "EMPX-05",
+    "title": "Deliver a remote client request",
+    "scenario": "Complete EMP-05. Produce clarification, interim scope, risk register and handoff.",
+    "task": "Save the evidence in your portfolio folder and record the reviewer/date where applicable.",
+    "acceptance": [
+      "Complete the timed task or document why it was not completed.",
+      "Keep raw data unchanged.",
+      "Provide reproducible outputs and a QA log.",
+      "Disclose limitations and critical issues."
+    ],
+    "solution": "Use the simulation brief, SQL/Python references and portfolio review tools in this module. Attempt independently before consulting reference files.",
+    "portfolio": "Include a redacted brief, code, outputs, QA evidence and reviewer feedback; never include confidential employer or patient data."
+  },
+  {
+    "id": "EMPX-06",
+    "title": "Complete an independent portfolio review",
+    "scenario": "Ask a peer to score one project with the 30-point scorecard; record evidence and unresolved critical gates.",
+    "task": "Save the evidence in your portfolio folder and record the reviewer/date where applicable.",
+    "acceptance": [
+      "Complete the timed task or document why it was not completed.",
+      "Keep raw data unchanged.",
+      "Provide reproducible outputs and a QA log.",
+      "Disclose limitations and critical issues."
+    ],
+    "solution": "Use the simulation brief, SQL/Python references and portfolio review tools in this module. Attempt independently before consulting reference files.",
+    "portfolio": "Include a redacted brief, code, outputs, QA evidence and reviewer feedback; never include confidential employer or patient data."
+  },
+  {
+    "id": "EMPX-07",
+    "title": "Defend your project in an interview",
+    "scenario": "Explain the project without slides in five minutes, then answer follow-up questions on data grain, limitations and QA.",
+    "task": "Save the evidence in your portfolio folder and record the reviewer/date where applicable.",
+    "acceptance": [
+      "Complete the timed task or document why it was not completed.",
+      "Keep raw data unchanged.",
+      "Provide reproducible outputs and a QA log.",
+      "Disclose limitations and critical issues."
+    ],
+    "solution": "Use the simulation brief, SQL/Python references and portfolio review tools in this module. Attempt independently before consulting reference files.",
+    "portfolio": "Include a redacted brief, code, outputs, QA evidence and reviewer feedback; never include confidential employer or patient data."
+  },
+  {
+    "id": "EMPX-08",
+    "title": "Repair a failed analysis",
+    "scenario": "Introduce a deliberate join fan-out or invalid date, detect it, document impact and fix the pipeline without changing raw data.",
+    "task": "Save the evidence in your portfolio folder and record the reviewer/date where applicable.",
+    "acceptance": [
+      "Complete the timed task or document why it was not completed.",
+      "Keep raw data unchanged.",
+      "Provide reproducible outputs and a QA log.",
+      "Disclose limitations and critical issues."
+    ],
+    "solution": "Use the simulation brief, SQL/Python references and portfolio review tools in this module. Attempt independently before consulting reference files.",
+    "portfolio": "Include a redacted brief, code, outputs, QA evidence and reviewer feedback; never include confidential employer or patient data."
+  }
+]

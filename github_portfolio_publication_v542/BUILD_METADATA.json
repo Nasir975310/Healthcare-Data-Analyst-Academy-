@@ -1,0 +1,17 @@
+{
+  "release": "5.42.0",
+  "base_release": "5.41.0",
+  "new_tests": "4/4 passed",
+  "sample_project_tests": "5/5 passed",
+  "sample_pipeline_exit_code": 0,
+  "sample_preflight_findings": 0,
+  "publication_scanner_findings_after_cache_cleanup": 0,
+  "python_compile_errors": 0,
+  "roadmap_js": "passed",
+  "html_duplicate_ids": 0,
+  "github_publication": false,
+  "license_selected": false,
+  "live_github_actions": false,
+  "fresh_github_clone": false,
+  "manual_privacy_review": false
+}

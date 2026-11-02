@@ -1,0 +1,73 @@
+{
+  "source_and_distinct_ids": [
+    {
+      "source_rows": 16,
+      "distinct_encounter_ids": 15
+    }
+  ],
+  "status_counts": [
+    {
+      "status": "cancelled",
+      "row_count": 1
+    },
+    {
+      "status": "completed",
+      "row_count": 14
+    },
+    {
+      "status": "no_show",
+      "row_count": 1
+    }
+  ],
+  "department_wait": [
+    {
+      "department": "Cardiology",
+      "completed_rows": 4,
+      "mean_wait_minutes": 21.0
+    },
+    {
+      "department": "General Medicine",
+      "completed_rows": 2,
+      "mean_wait_minutes": 33.0
+    },
+    {
+      "department": "Orthopaedics",
+      "completed_rows": 5,
+      "mean_wait_minutes": 31.0
+    }
+  ],
+  "duplicate_ids": [
+    {
+      "encounter_id": "E015",
+      "row_count": 2
+    }
+  ],
+  "weekly_volume": [
+    {
+      "calendar_week": "2026-40",
+      "completed_encounters": 4
+    },
+    {
+      "calendar_week": "2026-41",
+      "completed_encounters": 6
+    },
+    {
+      "calendar_week": "2026-42",
+      "completed_encounters": 4
+    }
+  ],
+  "invalid_records": [
+    {
+      "encounter_id": "E010",
+      "department": "General Medicine",
+      "encounter_date": "2026-10-14",
+      "wait_minutes": -4.0
+    },
+    {
+      "encounter_id": "E012",
+      "department": null,
+      "encounter_date": "2026-10-15",
+      "wait_minutes": 27.0
+    }
+  ]
+}\n

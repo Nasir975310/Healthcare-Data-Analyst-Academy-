@@ -1,0 +1,25 @@
+observation_id,encounter_id,measure,value,unit
+OB001,EN001,Systolic BP,128,mmHg
+OB002,EN001,Diastolic BP,82,mmHg
+OB003,EN002,Systolic BP,158,mmHg
+OB004,EN002,Diastolic BP,96,mmHg
+OB005,EN003,Systolic BP,136,mmHg
+OB006,EN003,Diastolic BP,86,mmHg
+OB007,EN004,Systolic BP,124,mmHg
+OB008,EN004,Diastolic BP,78,mmHg
+OB009,EN005,Systolic BP,172,mmHg
+OB010,EN005,Diastolic BP,104,mmHg
+OB011,EN006,Systolic BP,132,mmHg
+OB012,EN006,Diastolic BP,84,mmHg
+OB013,EN007,Systolic BP,146,mmHg
+OB014,EN007,Diastolic BP,92,mmHg
+OB015,EN008,Systolic BP,138,mmHg
+OB016,EN008,Diastolic BP,88,mmHg
+OB017,EN009,Systolic BP,126,mmHg
+OB018,EN009,Diastolic BP,80,mmHg
+OB019,EN010,Systolic BP,164,mmHg
+OB020,EN010,Diastolic BP,100,mmHg
+OB021,EN011,Systolic BP,122,mmHg
+OB022,EN011,Diastolic BP,76,mmHg
+OB023,EN013,Systolic BP,151,mmHg
+OB024,EN013,Diastolic BP,94,mmHg

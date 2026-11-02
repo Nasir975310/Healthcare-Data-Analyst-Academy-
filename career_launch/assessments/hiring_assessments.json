@@ -1,0 +1,71 @@
+[
+  {
+    "id": "HIRE-01",
+    "title": "SQL screening test",
+    "duration_minutes": 45,
+    "task": "Using the synthetic hospital operations and pharmacy-order data, calculate department encounter counts and mean length of stay, pharmacy class order-line counts and value, and identify orphan orders. Use safe pre-aggregation to avoid join fan-out.",
+    "deliverable": "One SQL file plus result extracts and a short validation note.",
+    "rubric": {
+      "correct_grain_and_joins": 25,
+      "correct_aggregations": 25,
+      "data_quality_audit": 20,
+      "readability_and_reproducibility": 15,
+      "interpretation_and_limits": 15
+    }
+  },
+  {
+    "id": "HIRE-02",
+    "title": "Excel / reporting test",
+    "duration_minutes": 60,
+    "task": "Create a department summary using PivotTables or equivalent formulas, validate lookup completeness, define three KPIs and produce a one-page operational report.",
+    "deliverable": "Workbook with raw data, calculations, KPI dictionary, checks and summary page.",
+    "rubric": {
+      "formula_or_pivot_accuracy": 25,
+      "data_validation": 20,
+      "kpi_definitions": 20,
+      "report_clarity": 20,
+      "auditability": 15
+    }
+  },
+  {
+    "id": "HIRE-03",
+    "title": "Python data-quality test",
+    "duration_minutes": 60,
+    "task": "Write a pandas script that profiles the supplied datasets, checks unique IDs, ranges, missingness, temporal logic and orphan references, and exports issue tables plus a machine-readable summary.",
+    "deliverable": "Runnable script, requirements file, outputs and execution instructions.",
+    "rubric": {
+      "correct_checks": 30,
+      "issue_retention": 20,
+      "reproducibility": 20,
+      "code_quality": 15,
+      "documentation": 15
+    }
+  },
+  {
+    "id": "HIRE-04",
+    "title": "Healthcare interpretation test",
+    "duration_minutes": 30,
+    "task": "Explain why an order is not administration or adherence, why a supplied readmission flag is not automatically a validated rate, and how denominator and follow-up definitions change interpretation.",
+    "deliverable": "One-page plain-language interpretation for a non-technical stakeholder.",
+    "rubric": {
+      "clinical_concept_accuracy": 35,
+      "denominator_reasoning": 25,
+      "clear_communication": 20,
+      "limitations": 20
+    }
+  },
+  {
+    "id": "HIRE-05",
+    "title": "Remote client simulation",
+    "duration_minutes": 90,
+    "task": "A client asks for a dashboard by tomorrow, but the readmission definition and refresh timestamp are missing and orphan order records are present. Clarify scope, state risks, agree an interim deliverable and write a handoff.",
+    "deliverable": "Clarification message, analysis plan, QA log, interim findings and handoff note.",
+    "rubric": {
+      "clarification_and_scope": 20,
+      "risk_escalation": 20,
+      "technical_plan": 20,
+      "professional_communication": 20,
+      "handoff_and_documentation": 20
+    }
+  }
+]

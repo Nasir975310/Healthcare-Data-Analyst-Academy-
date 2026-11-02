@@ -1,0 +1,53 @@
+{
+  "application_count": 6,
+  "submitted_count": 6,
+  "stage_counts": {
+    "applied": 1,
+    "interview": 1,
+    "offer": 1,
+    "rejected": 2,
+    "screening": 1
+  },
+  "response_count": 5,
+  "interview_count": 2,
+  "offer_count": 1,
+  "response_rate_pct": 83.3,
+  "interview_rate_pct": 33.3,
+  "offer_rate_pct": 16.7,
+  "rejection_reasons": {
+    "Experience requirement": 1,
+    "Role filled": 1
+  },
+  "cv_versions": {
+    "CV-A": {
+      "applications": 2,
+      "responses": 2,
+      "interviews": 0,
+      "offers": 0
+    },
+    "CV-B": {
+      "applications": 3,
+      "responses": 2,
+      "interviews": 2,
+      "offers": 1
+    },
+    "CV-C": {
+      "applications": 1,
+      "responses": 1,
+      "interviews": 0,
+      "offers": 0
+    }
+  },
+  "definitions": {
+    "response_rate_pct": "Applications currently at screening, assessment, interview, offer, rejected or withdrawn divided by non-saved applications. This is a tracker-stage proxy, not an employer response-time metric.",
+    "interview_rate_pct": "Applications currently at interview or offer divided by non-saved applications.",
+    "offer_rate_pct": "Applications currently at offer divided by non-saved applications.",
+    "cv_versions": "Descriptive counts only. CV groups are not randomized or adjusted for role mix, timing or applicant differences."
+  },
+  "limitations": [
+    "Small, self-entered samples are unstable and may be incomplete.",
+    "Current stage is a snapshot; stage history and time-to-response are not modelled.",
+    "CV-version comparisons are observational and do not establish that a CV caused an outcome.",
+    "No personal data, employer legitimacy or vacancy authenticity is verified."
+  ]
+}

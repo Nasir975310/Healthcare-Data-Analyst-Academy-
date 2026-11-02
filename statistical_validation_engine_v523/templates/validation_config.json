@@ -1,0 +1,46 @@
+{
+  "group_diagnostics": [
+    {
+      "outcome": "los_days",
+      "group": "sex"
+    }
+  ],
+  "bootstrap_means": [
+    {
+      "column": "systolic_bp",
+      "replicates": 2000,
+      "confidence": 0.95,
+      "seed": 523
+    }
+  ],
+  "regressions": [
+    {
+      "outcome": "los_days",
+      "predictors": [
+        "age",
+        "systolic_bp"
+      ],
+      "family": "linear"
+    }
+  ],
+  "multiplicity": [
+    {
+      "name": "three pre-specified exploratory group comparisons",
+      "method": "holm",
+      "tests": [
+        {
+          "name": "age_by_sex",
+          "p_value": 0.00040088054995438785
+        },
+        {
+          "name": "los_days_by_sex",
+          "p_value": 0.0005703566691743814
+        },
+        {
+          "name": "systolic_bp_by_sex",
+          "p_value": 0.0009068991845046068
+        }
+      ]
+    }
+  ]
+}

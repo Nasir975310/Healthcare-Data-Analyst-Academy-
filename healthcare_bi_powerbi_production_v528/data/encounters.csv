@@ -1,0 +1,13 @@
+EncounterID,PatientID,EncounterDate,EncounterType,Status
+E001,P001,2026-01-05,Outpatient,Completed
+E002,P002,2026-01-08,Inpatient,Completed
+E003,P003,2026-01-11,Outpatient,Completed
+E004,P001,2026-02-02,Outpatient,Completed
+E005,P004,2026-02-14,Emergency,Completed
+E006,P005,2026-02-20,Outpatient,Completed
+E007,P006,2026-03-01,Inpatient,Completed
+E008,P002,2026-03-07,Outpatient,Completed
+E009,P003,2026-03-10,Outpatient,Completed
+E010,P004,2026-03-15,Inpatient,Completed
+E011,P005,2026-03-21,Outpatient,Completed
+E012,P006,2026-03-28,Emergency,Completed

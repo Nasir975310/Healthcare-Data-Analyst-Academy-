@@ -1,0 +1,16 @@
+{
+  "status": "PENDING",
+  "application": "Power BI Desktop",
+  "application_version": "",
+  "pbix_file_sha256": "",
+  "validated_by": "",
+  "validated_at": "",
+  "checks": {
+    "model_relationships_reviewed": false,
+    "dax_reconciled_to_sql": false,
+    "refresh_completed": false,
+    "performance_analyzer_reviewed": false,
+    "privacy_and_export_reviewed": false
+  },
+  "evidence_files": []
+}

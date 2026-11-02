@@ -1,0 +1,103 @@
+{
+  "version": "5.31.0",
+  "title": "Junior Healthcare Data Analyst Readiness Assessment",
+  "synthetic_training_material": true,
+  "sections": [
+    {
+      "id": "excel",
+      "name": "Excel & data handling",
+      "weight": 15,
+      "max_score": 100,
+      "criteria": [
+        "cleaning and type handling",
+        "lookup and conditional aggregation",
+        "pivot tables and charts",
+        "reconciliation and error checks"
+      ]
+    },
+    {
+      "id": "sql",
+      "name": "SQL & databases",
+      "weight": 20,
+      "max_score": 100,
+      "criteria": [
+        "SELECT, filtering and aggregation",
+        "joins and grain awareness",
+        "CTEs and window functions",
+        "null, duplicate and referential checks"
+      ]
+    },
+    {
+      "id": "python",
+      "name": "Python analytics",
+      "weight": 15,
+      "max_score": 100,
+      "criteria": [
+        "pandas ingestion and profiling",
+        "clean transformations",
+        "reproducible functions and scripts",
+        "validation and exception handling"
+      ]
+    },
+    {
+      "id": "bi",
+      "name": "Power BI & reporting",
+      "weight": 15,
+      "max_score": 100,
+      "criteria": [
+        "star schema and relationships",
+        "Power Query transformations",
+        "DAX measures and filter context",
+        "dashboard usability and RLS concepts"
+      ]
+    },
+    {
+      "id": "clinical",
+      "name": "Healthcare domain literacy",
+      "weight": 10,
+      "max_score": 100,
+      "criteria": [
+        "clinical terminology and data grain",
+        "units and reference-range caution",
+        "privacy and governance",
+        "interpretation boundaries"
+      ]
+    },
+    {
+      "id": "statistics",
+      "name": "Statistics & research methods",
+      "weight": 10,
+      "max_score": 100,
+      "criteria": [
+        "descriptive statistics",
+        "test selection and assumptions",
+        "effect sizes and uncertainty",
+        "bias, confounding and limitations"
+      ]
+    },
+    {
+      "id": "communication",
+      "name": "Communication & client delivery",
+      "weight": 10,
+      "max_score": 100,
+      "criteria": [
+        "requirements clarification",
+        "executive summaries",
+        "documenting caveats",
+        "handover and stakeholder communication"
+      ]
+    },
+    {
+      "id": "professional",
+      "name": "Remote-work professionalism",
+      "weight": 5,
+      "max_score": 100,
+      "criteria": [
+        "task estimation and updates",
+        "version control and documentation",
+        "data security",
+        "reliable independent delivery"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+[
+  {
+    "id": "q1",
+    "q": "Which clause filters individual source rows?",
+    "options": [
+      "WHERE",
+      "HAVING",
+      "ORDER BY",
+      "LIMIT"
+    ],
+    "correct": 0,
+    "why": "WHERE applies before grouping."
+  },
+  {
+    "id": "q2",
+    "q": "What does DISTINCT do?",
+    "options": [
+      "Removes duplicate output combinations",
+      "Sorts rows",
+      "Deletes source duplicates",
+      "Fills NULL values"
+    ],
+    "correct": 0,
+    "why": "DISTINCT affects query output, not stored rows."
+  },
+  {
+    "id": "q3",
+    "q": "How should NULL be tested?",
+    "options": [
+      "IS NULL",
+      "= NULL",
+      "= 'NULL'",
+      "<> 0"
+    ],
+    "correct": 0,
+    "why": "Use IS NULL."
+  },
+  {
+    "id": "q4",
+    "q": "Why use a tie-breaker in ORDER BY?",
+    "options": [
+      "To make ordering deterministic when values tie",
+      "To speed every query",
+      "To remove duplicates",
+      "To change stored data"
+    ],
+    "correct": 0,
+    "why": "A stable secondary key provides deterministic ordering."
+  },
+  {
+    "id": "q5",
+    "q": "What does COUNT(systolic_bp) count?",
+    "options": [
+      "Non-NULL SBP values",
+      "All rows",
+      "Unique patients",
+      "Zero values only"
+    ],
+    "correct": 0,
+    "why": "COUNT(column) ignores NULL."
+  }
+]

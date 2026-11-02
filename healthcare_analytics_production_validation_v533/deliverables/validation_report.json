@@ -1,0 +1,61 @@
+{
+  "module": "v5.33 production validation",
+  "checks": [
+    {
+      "check": "deliverables_present",
+      "status": "PASS",
+      "severity": "CRITICAL",
+      "detail": "All expected deliverables found"
+    },
+    {
+      "check": "row_reconciliation",
+      "status": "PASS",
+      "severity": "CRITICAL",
+      "detail": "raw=91, accepted=90, rejected=1"
+    },
+    {
+      "check": "expected_orphan_exception",
+      "status": "PASS",
+      "severity": "CRITICAL",
+      "detail": "Rejected encounters reported: 1"
+    },
+    {
+      "check": "monthly_vs_curated",
+      "status": "PASS",
+      "severity": "CRITICAL",
+      "detail": "monthly total=90; curated=90"
+    },
+    {
+      "check": "type_vs_curated",
+      "status": "PASS",
+      "severity": "CRITICAL",
+      "detail": "type total=90; curated=90"
+    },
+    {
+      "check": "medication_extract_nonempty",
+      "status": "PASS",
+      "severity": "CRITICAL",
+      "detail": "rows=4"
+    },
+    {
+      "check": "source_manifest_nonempty",
+      "status": "PASS",
+      "severity": "CRITICAL",
+      "detail": "Manifest contains source provenance"
+    },
+    {
+      "check": "quality_report_nonempty",
+      "status": "PASS",
+      "severity": "CRITICAL",
+      "detail": "Quality report is present"
+    },
+    {
+      "check": "privacy_safe_scope",
+      "status": "PASS",
+      "severity": "WARN",
+      "detail": "Synthetic teaching data only; inspect exports before publication"
+    }
+  ],
+  "passed": 9,
+  "failed": 0
+}

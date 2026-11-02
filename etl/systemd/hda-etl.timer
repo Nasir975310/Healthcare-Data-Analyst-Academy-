@@ -1,0 +1,10 @@
+[Unit]
+Description=Run HDA synthetic ETL daily
+
+[Timer]
+OnCalendar=*-*-* 06:30:00
+Persistent=true
+Unit=hda-etl.service
+
+[Install]
+WantedBy=timers.target

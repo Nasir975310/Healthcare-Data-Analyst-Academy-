@@ -1,0 +1,42 @@
+{
+  "release": "5.24.0",
+  "v524_tests": {
+    "passed": 9,
+    "failed": 0
+  },
+  "regression_tests": {
+    "v523": 8,
+    "v522": 6,
+    "v521": 8,
+    "legacy_v519_v518_v517_v515_combined": 22,
+    "total_passed": 53
+  },
+  "synthetic_demo": {
+    "rows": 120,
+    "nonparametric_analyses": 1,
+    "paired_analyses": 1,
+    "repeated_measures_analyses": 1,
+    "cross_validated_prediction_analyses": 1,
+    "power_calculations": 1,
+    "missingness_assessments": 1
+  },
+  "repository_checks": {
+    "python_files_compiled": 111,
+    "python_errors": 0,
+    "json_files_parsed": 257,
+    "json_errors": 0,
+    "javascript_files_checked": 55,
+    "javascript_errors": 0,
+    "html_ids": 180,
+    "duplicate_ids": 0,
+    "missing_script_assets": 0
+  },
+  "limitations": [
+    "No multiple imputation",
+    "No nested cross-validation or external validation",
+    "CV AUC and calibration are internal estimates without confidence intervals",
+    "Friedman post-hoc contrasts not included",
+    "Power calculation covers independent two-sample means only",
+    "Missingness summaries cannot identify MCAR, MAR or MNAR"
+  ]
+}

@@ -1,0 +1,82 @@
+[
+  {
+    "role": "Healthcare Data Analyst",
+    "skills": [
+      "SQL",
+      "Excel/BI",
+      "KPI and data quality",
+      "Healthcare operations",
+      "Communication"
+    ],
+    "evidence": [
+      "Operations KPI pack",
+      "Metric contract",
+      "SQL cohort analysis",
+      "Dashboard with limitations"
+    ]
+  },
+  {
+    "role": "Clinical Data Analyst",
+    "skills": [
+      "Python/R",
+      "Clinical cohorts",
+      "Biostatistics",
+      "Clinical terminology",
+      "Reproducibility"
+    ],
+    "evidence": [
+      "DUE cohort analysis",
+      "Cohort flow",
+      "Statistical plan",
+      "Clinical interpretation"
+    ]
+  },
+  {
+    "role": "Pharmacovigilance Data Analyst",
+    "skills": [
+      "Case data quality",
+      "Duplicate/chronology review",
+      "Seriousness/severity",
+      "SQL/Python",
+      "Safety documentation"
+    ],
+    "evidence": [
+      "Synthetic case review",
+      "Duplicate queue",
+      "Chronology checks",
+      "Audit trail"
+    ]
+  },
+  {
+    "role": "RWE / HEOR Analyst",
+    "skills": [
+      "Epidemiology",
+      "Confounding",
+      "SQL/Python/R",
+      "Outcome/exposure definitions",
+      "Uncertainty"
+    ],
+    "evidence": [
+      "Observational cohort",
+      "Confounding demonstration",
+      "Analysis plan",
+      "Bias assessment"
+    ]
+  },
+  {
+    "role": "BI / SQL Analyst",
+    "skills": [
+      "Advanced SQL",
+      "Data modelling",
+      "ETL",
+      "Dashboard QA",
+      "Client delivery"
+    ],
+    "evidence": [
+      "Star schema",
+      "SQL performance",
+      "Dashboard QA",
+      "ETL tests"
+    ]
+  }
+]

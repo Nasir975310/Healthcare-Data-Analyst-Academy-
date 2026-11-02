@@ -1,0 +1,37 @@
+{
+  "checked_on": "2026-11-02",
+  "scope": "Publicly indexed job postings and role descriptions; illustrative snapshot, not a complete labour-market census.",
+  "observations": [
+    {
+      "finding": "A trainee clinical data analyst listing from Parexel describes an India-remote six-month role for pharmacy/life-science graduates, but the surfaced posting specified 2024/2025 pass-outs. Eligibility must be checked against the live employer listing.",
+      "source": "https://jobs.weekday.works/parexel-trainee-clinical-data-analyst",
+      "ref": "turn688581search0"
+    },
+    {
+      "finding": "Labcorp's Clinical Data Analyst I listing in Bengaluru focuses on resolving data discrepancies between sponsors, CROs, investigators and internal databases, with GCP context. The surfaced posting had an October 30, 2026 deadline, so it may now be closed.",
+      "source": "https://labcorp.wd1.myworkdayjobs.com/en-US/External/job/Clinical-Data-Analyst-I-_2636674",
+      "ref": "turn688581search1"
+    },
+    {
+      "finding": "A healthcare data analyst posting in India listed SQL, Excel/BI, Python/R, healthcare data standards, privacy and stakeholder communication; experience requirement shown as 2\u20135 years.",
+      "source": "https://in.linkedin.com/jobs/view/healthcare-data-analyst-at-iconsultera-4483655041",
+      "ref": "turn688581search4"
+    },
+    {
+      "finding": "An India health-sector job-posting aggregator reported SQL, Python and Power BI as frequently requested skills, but only a minority of postings as remote or hybrid in its sampled period. Aggregator methodology and sample are not independently audited here.",
+      "source": "https://getuhired.co/insights/roles/data-analyst/industries/health/markets/in/",
+      "ref": "turn688581search2"
+    },
+    {
+      "finding": "A remote India product analyst listing required 1\u20133 years and SQL, Power BI, Excel, Python, APIs and US healthcare data. This is not a realistic immediate fresher target without relevant experience.",
+      "source": "https://remoote.app/jobs/6183905-product-analyst",
+      "ref": "turn688581search3"
+    }
+  ],
+  "conclusion": [
+    "Remote-only entry-level healthcare analytics roles appear more constrained than the broad healthcare data analyst title suggests.",
+    "Apply across adjacent entry routes: clinical data management, drug safety data, hospital reporting, healthcare vendor analytics and internships/trainee roles.",
+    "Use Pharm.D as domain context, but demonstrate technical execution through reproducible SQL, Excel/BI and Python artifacts.",
+    "Verify current eligibility, work mode, experience, employer identity and closing date on the official employer career site before applying."
+  ]
+}

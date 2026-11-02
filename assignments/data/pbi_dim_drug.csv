@@ -1,0 +1,15 @@
+drug_key,drug_name,therapeutic_class,route
+AMLODIPINE,Amlodipine,Calcium-channel blocker,Oral
+ATORVASTATIN,Atorvastatin,Statin,IV
+CARVEDILOL,Carvedilol,Beta blocker,IV
+CHLORTHALIDONE,Chlorthalidone,Diuretic,IV
+CILNIDIPINE,Cilnidipine,Calcium-channel blocker,IV
+ENALAPRIL,Enalapril,ACE inhibitor,Oral
+FUROSEMIDE,Furosemide,Diuretic,IV
+LOSARTAN,Losartan,ARB,Oral
+METFORMIN,Metformin,Antidiabetic,Oral
+METOPROLOL,Metoprolol,Beta blocker,IV
+RAMIPRIL,Ramipril,ACE inhibitor,IV
+ROSUVASTATIN,Rosuvastatin,Statin,Oral
+SITAGLIPTIN,Sitagliptin,Antidiabetic,IV
+TELMISARTAN,Telmisartan,ARB,IV

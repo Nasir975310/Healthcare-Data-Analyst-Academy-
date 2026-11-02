@@ -1,0 +1,7 @@
+PatientID,Gender,BirthDate,Residence,Region
+P001,Female,1980-04-12,Urban,North
+P002,Male,1968-09-03,Rural,South
+P003,Female,1992-01-25,Urban,East
+P004,Male,1955-11-19,Rural,West
+P005,Female,1974-06-07,Urban,North
+P006,Male,1988-02-14,Urban,South

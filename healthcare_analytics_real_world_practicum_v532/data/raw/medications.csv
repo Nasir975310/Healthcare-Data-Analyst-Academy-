@@ -1,0 +1,130 @@
+medication_id,encounter_id,medication,drug_class,is_active
+RX00001,E0002,Metoprolol,Beta blocker,1
+RX00002,E0002,Amlodipine,CCB,1
+RX00003,E0003,Hydrochlorothiazide,Thiazide,1
+RX00004,E0004,Hydrochlorothiazide,Thiazide,1
+RX00005,E0004,Losartan,ARB,1
+RX00006,E0004,Telmisartan,ARB,1
+RX00007,E0005,Amlodipine,CCB,1
+RX00008,E0006,Amlodipine,CCB,1
+RX00009,E0007,Hydrochlorothiazide,Thiazide,1
+RX00010,E0007,Amlodipine,CCB,1
+RX00011,E0008,Telmisartan,ARB,1
+RX00012,E0009,Amlodipine,CCB,1
+RX00013,E0009,Telmisartan,ARB,1
+RX00014,E0011,Losartan,ARB,1
+RX00015,E0012,Hydrochlorothiazide,Thiazide,1
+RX00016,E0013,Losartan,ARB,1
+RX00017,E0014,Losartan,ARB,1
+RX00018,E0015,Telmisartan,ARB,1
+RX00019,E0015,Telmisartan,ARB,1
+RX00020,E0016,Telmisartan,ARB,1
+RX00021,E0016,Metoprolol,Beta blocker,1
+RX00022,E0017,Amlodipine,CCB,1
+RX00023,E0019,Amlodipine,CCB,1
+RX00024,E0019,Losartan,ARB,1
+RX00025,E0020,Amlodipine,CCB,1
+RX00026,E0021,Metoprolol,Beta blocker,1
+RX00027,E0021,Metoprolol,Beta blocker,1
+RX00028,E0022,Hydrochlorothiazide,Thiazide,1
+RX00029,E0023,Amlodipine,CCB,1
+RX00030,E0023,Hydrochlorothiazide,Thiazide,1
+RX00031,E0023,Telmisartan,ARB,1
+RX00032,E0024,Amlodipine,CCB,1
+RX00033,E0025,Telmisartan,ARB,1
+RX00034,E0026,Telmisartan,ARB,1
+RX00035,E0027,Metoprolol,Beta blocker,1
+RX00036,E0028,Telmisartan,ARB,1
+RX00037,E0029,Telmisartan,ARB,1
+RX00038,E0031,Losartan,ARB,1
+RX00039,E0032,Metoprolol,Beta blocker,1
+RX00040,E0033,Amlodipine,CCB,1
+RX00041,E0033,Metoprolol,Beta blocker,1
+RX00042,E0034,Telmisartan,ARB,1
+RX00043,E0034,Telmisartan,ARB,1
+RX00044,E0034,Metoprolol,Beta blocker,1
+RX00045,E0035,Losartan,ARB,1
+RX00046,E0036,Telmisartan,ARB,1
+RX00047,E0037,Losartan,ARB,1
+RX00048,E0038,Amlodipine,CCB,1
+RX00049,E0038,Metoprolol,Beta blocker,1
+RX00050,E0038,Amlodipine,CCB,1
+RX00051,E0039,Telmisartan,ARB,1
+RX00052,E0039,Hydrochlorothiazide,Thiazide,1
+RX00053,E0040,Losartan,ARB,1
+RX00054,E0040,Losartan,ARB,1
+RX00055,E0041,Losartan,ARB,1
+RX00056,E0042,Metoprolol,Beta blocker,1
+RX00057,E0043,Metoprolol,Beta blocker,1
+RX00058,E0044,Telmisartan,ARB,1
+RX00059,E0044,Amlodipine,CCB,1
+RX00060,E0045,Hydrochlorothiazide,Thiazide,1
+RX00061,E0045,Amlodipine,CCB,1
+RX00062,E0045,Losartan,ARB,1
+RX00063,E0046,Losartan,ARB,1
+RX00064,E0046,Hydrochlorothiazide,Thiazide,1
+RX00065,E0046,Telmisartan,ARB,1
+RX00066,E0047,Hydrochlorothiazide,Thiazide,1
+RX00067,E0048,Telmisartan,ARB,1
+RX00068,E0049,Hydrochlorothiazide,Thiazide,1
+RX00069,E0050,Losartan,ARB,1
+RX00070,E0050,Losartan,ARB,1
+RX00071,E0051,Losartan,ARB,1
+RX00072,E0051,Amlodipine,CCB,1
+RX00073,E0051,Losartan,ARB,1
+RX00074,E0052,Amlodipine,CCB,1
+RX00075,E0053,Hydrochlorothiazide,Thiazide,1
+RX00076,E0054,Hydrochlorothiazide,Thiazide,1
+RX00077,E0054,Amlodipine,CCB,1
+RX00078,E0054,Metoprolol,Beta blocker,1
+RX00079,E0055,Losartan,ARB,1
+RX00080,E0055,Metoprolol,Beta blocker,1
+RX00081,E0056,Telmisartan,ARB,1
+RX00082,E0057,Losartan,ARB,1
+RX00083,E0058,Metoprolol,Beta blocker,1
+RX00084,E0058,Hydrochlorothiazide,Thiazide,1
+RX00085,E0059,Telmisartan,ARB,1
+RX00086,E0060,Hydrochlorothiazide,Thiazide,1
+RX00087,E0061,Telmisartan,ARB,1
+RX00088,E0062,Amlodipine,CCB,1
+RX00089,E0062,Hydrochlorothiazide,Thiazide,1
+RX00090,E0062,Amlodipine,CCB,1
+RX00091,E0063,Losartan,ARB,1
+RX00092,E0063,Telmisartan,ARB,1
+RX00093,E0064,Metoprolol,Beta blocker,1
+RX00094,E0064,Metoprolol,Beta blocker,1
+RX00095,E0065,Amlodipine,CCB,1
+RX00096,E0066,Telmisartan,ARB,1
+RX00097,E0066,Hydrochlorothiazide,Thiazide,1
+RX00098,E0067,Losartan,ARB,1
+RX00099,E0068,Hydrochlorothiazide,Thiazide,1
+RX00100,E0069,Metoprolol,Beta blocker,1
+RX00101,E0070,Metoprolol,Beta blocker,1
+RX00102,E0071,Telmisartan,ARB,1
+RX00103,E0072,Amlodipine,CCB,1
+RX00104,E0073,Amlodipine,CCB,1
+RX00105,E0074,Amlodipine,CCB,1
+RX00106,E0074,Losartan,ARB,1
+RX00107,E0075,Hydrochlorothiazide,Thiazide,1
+RX00108,E0076,Amlodipine,CCB,1
+RX00109,E0077,Amlodipine,CCB,1
+RX00110,E0077,Amlodipine,CCB,1
+RX00111,E0078,Metoprolol,Beta blocker,1
+RX00112,E0078,Metoprolol,Beta blocker,1
+RX00113,E0079,Amlodipine,CCB,1
+RX00114,E0080,Amlodipine,CCB,1
+RX00115,E0081,Hydrochlorothiazide,Thiazide,1
+RX00116,E0082,Metoprolol,Beta blocker,1
+RX00117,E0083,Losartan,ARB,1
+RX00118,E0083,Metoprolol,Beta blocker,1
+RX00119,E0083,Metoprolol,Beta blocker,1
+RX00120,E0084,Telmisartan,ARB,1
+RX00121,E0084,Telmisartan,ARB,1
+RX00122,E0084,Amlodipine,CCB,1
+RX00123,E0085,Telmisartan,ARB,1
+RX00124,E0085,Amlodipine,CCB,1
+RX00125,E0087,Hydrochlorothiazide,Thiazide,1
+RX00126,E0088,Hydrochlorothiazide,Thiazide,1
+RX00127,E0089,Hydrochlorothiazide,Thiazide,1
+RX00128,E0090,Telmisartan,ARB,1
+RX00129,E0090,Losartan,ARB,1

@@ -1,0 +1,43 @@
+{
+  "dataset": "synthetic_clinical_cohort.csv",
+  "n": 400,
+  "event_count": 30,
+  "event_fraction": 0.075,
+  "followup_sbp_difference_enhanced_minus_standard_mmhg": -6.6819191919192065,
+  "welch_t_p_value": 0.0017452383524246566,
+  "bootstrap_95pct_ci_mmhg": [
+    -10.872844696969727,
+    -2.3652234848484954
+  ],
+  "cohens_d": -0.31553753149241587,
+  "ols_r_squared": 0.6593856681172987,
+  "logistic_holdout_auc": 0.7012288786482335,
+  "logistic_holdout_brier": 0.06428405446185936,
+  "logistic_holdout_confusion_matrix_tn_fp_fn_tp": [
+    [
+      93,
+      0
+    ],
+    [
+      7,
+      0
+    ]
+  ],
+  "logistic_threshold": 0.5,
+  "logistic_threshold_note": "At this threshold the rare-event model may predict no positive cases; inspect sensitivity/precision-recall and calibration rather than treating accuracy as adequate.",
+  "hypothetical_diagnostic_test": {
+    "tp": 82,
+    "fp": 18,
+    "fn": 28,
+    "tn": 872,
+    "sensitivity": 0.7454545454545455,
+    "specificity": 0.9797752808988764,
+    "ppv": 0.82,
+    "npv": 0.9688888888888889
+  },
+  "software": {
+    "python": "3.13.5",
+    "pandas": "2.2.3",
+    "numpy": "2.3.5"
+  }
+}

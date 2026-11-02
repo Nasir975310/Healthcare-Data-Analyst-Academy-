@@ -1,0 +1,53 @@
+{
+  "study_title": "Example: longitudinal service outcome evaluation",
+  "study_design": "observational_cohort",
+  "research_question": "Among eligible service users, is baseline programme exposure associated with a later service outcome?",
+  "disease_or_domain": "Generic service evaluation",
+  "setting": "Synthetic teaching example",
+  "population": {
+    "target_population": "Eligible service users",
+    "inclusion_criteria": [
+      "Meets prespecified criteria",
+      "Has a valid index date"
+    ],
+    "exclusion_criteria": [
+      "Outside observation period"
+    ]
+  },
+  "time": {
+    "index_date": "First eligible encounter",
+    "lookback": "365 days before index",
+    "follow_up": "180 days after index"
+  },
+  "variables": [
+    {
+      "name": "participant_key",
+      "role": "identifier",
+      "data_type": "string",
+      "definition": "Pseudonymous teaching identifier"
+    },
+    {
+      "name": "exposure_group",
+      "role": "exposure",
+      "data_type": "category",
+      "definition": "Baseline exposure classification",
+      "allowed_values": [
+        "exposed",
+        "unexposed"
+      ]
+    },
+    {
+      "name": "outcome_event",
+      "role": "outcome",
+      "data_type": "boolean",
+      "definition": "Whether the prespecified event occurred"
+    },
+    {
+      "name": "age_years",
+      "role": "covariate",
+      "data_type": "integer",
+      "unit": "years",
+      "definition": "Age at index date"
+    }
+  ]
+}

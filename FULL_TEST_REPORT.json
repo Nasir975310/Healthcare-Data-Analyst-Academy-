@@ -1,0 +1,565 @@
+{
+  "schema_version": "1.0",
+  "generated_at_utc": "2026-11-02T14:41:07.697961+00:00",
+  "root_test_scope": "six maintained career suites via pytest.ini; this report inventories and runs every discovered test directory independently",
+  "test_directories_discovered": 69,
+  "counts": {
+    "not_run": 69
+  },
+  "results": [
+    {
+      "module": "advanced_professional_mastery",
+      "test_directory": "advanced_professional_mastery/tests",
+      "status": "not_run",
+      "return_code": null,
+      "duration_seconds": 0,
+      "output_tail": ""
+    },
+    {
+      "module": "advanced_statistics_execution_v521",
+      "test_directory": "advanced_statistics_execution_v521/tests",
+      "status": "not_run",
+      "return_code": null,
+      "duration_seconds": 0,
+      "output_tail": ""
+    },
+    {
+      "module": "application_execution_assessment_lab_v537",
+      "test_directory": "application_execution_assessment_lab_v537/tests",
+      "status": "not_run",
+      "return_code": null,
+      "duration_seconds": 0,
+      "output_tail": ""
+    },
+    {
+      "module": "application_execution_interview_v557",
+      "test_directory": "application_execution_interview_v557/tests",
+      "status": "not_run",
+      "return_code": null,
+      "duration_seconds": 0,
+      "output_tail": ""
+    },
+    {
+      "module": "application_intelligence_v556",
+      "test_directory": "application_intelligence_v556/tests",
+      "status": "not_run",
+      "return_code": null,
+      "duration_seconds": 0,
+      "output_tail": ""
+    },
+    {
+      "module": "application_performance_career_intelligence_v558",
+      "test_directory": "application_performance_career_intelligence_v558/tests",
+      "status": "not_run",
+      "return_code": null,
+      "duration_seconds": 0,
+      "output_tail": ""
+    },
+    {
+      "module": "bi_engineering_v59",
+      "test_directory": "bi_engineering_v59/tests",
+      "status": "not_run",
+      "return_code": null,
+      "duration_seconds": 0,
+      "output_tail": ""
+    },
+    {
+      "module": "career_launch_kit_v555",
+      "test_directory": "career_launch_kit_v555/tests",
+      "status": "not_run",
+      "return_code": null,
+      "duration_seconds": 0,
+      "output_tail": ""
+    },
+    {
+      "module": "client_delivery_v55",
+      "test_directory": "client_delivery_v55/tests",
+      "status": "not_run",
+      "return_code": null,
+      "duration_seconds": 0,
+      "output_tail": ""
+    },
+    {
+      "module": "clinical_analytics_reporting_pack_v547",
+      "test_directory": "clinical_analytics_reporting_pack_v547/tests",
+      "status": "not_run",
+      "return_code": null,
+      "duration_seconds": 0,
+      "output_tail": ""
+    },
+    {
+      "module": "clinical_data_warehouse_sql_engineering_v526",
+      "test_directory": "clinical_data_warehouse_sql_engineering_v526/tests",
+      "status": "not_run",
+      "return_code": null,
+      "duration_seconds": 0,
+      "output_tail": ""
+    },
+    {
+      "module": "clinical_evidence_engine_v515",
+      "test_directory": "clinical_evidence_engine_v515/tests",
+      "status": "not_run",
+      "return_code": null,
+      "duration_seconds": 0,
+      "output_tail": ""
+    },
+    {
+      "module": "clinical_medication_utilization_case_study_v546",
+      "test_directory": "clinical_medication_utilization_case_study_v546/tests",
+      "status": "not_run",
+      "return_code": null,
+      "duration_seconds": 0,
+      "output_tail": ""
+    },
+    {
+      "module": "clinical_research_methods_v524",
+      "test_directory": "clinical_research_methods_v524/tests",
+      "status": "not_run",
+      "return_code": null,
+      "duration_seconds": 0,
+      "output_tail": ""
+    },
+    {
+      "module": "dashboard_studio_v53",
+      "test_directory": "dashboard_studio_v53/tests",
+      "status": "not_run",
+      "return_code": null,
+      "duration_seconds": 0,
+      "output_tail": ""
+    },
+    {
+      "module": "dashboard_uat_v550",
+      "test_directory": "dashboard_uat_v550/tests",
+      "status": "not_run",
+      "return_code": null,
+      "duration_seconds": 0,
+      "output_tail": ""
+    },
+    {
+      "module": "data_governance_v56",
+      "test_directory": "data_governance_v56/tests",
+      "status": "not_run",
+      "return_code": null,
+      "duration_seconds": 0,
+      "output_tail": ""
+    },
+    {
+      "module": "data_validation_v513",
+      "test_directory": "data_validation_v513/tests",
+      "status": "not_run",
+      "return_code": null,
+      "duration_seconds": 0,
+      "output_tail": ""
+    },
+    {
+      "module": "database_engineering_v58",
+      "test_directory": "database_engineering_v58/tests",
+      "status": "not_run",
+      "return_code": null,
+      "duration_seconds": 0,
+      "output_tail": ""
+    },
+    {
+      "module": "earning_system_v46",
+      "test_directory": "earning_system_v46/tests",
+      "status": "not_run",
+      "return_code": null,
+      "duration_seconds": 0,
+      "output_tail": ""
+    },
+    {
+      "module": "employment_transition_paid_work_v536",
+      "test_directory": "employment_transition_paid_work_v536/tests",
+      "status": "not_run",
+      "return_code": null,
+      "duration_seconds": 0,
+      "output_tail": ""
+    },
+    {
+      "module": "etl_orchestration_v57",
+      "test_directory": "etl_orchestration_v57/tests",
+      "status": "not_run",
+      "return_code": null,
+      "duration_seconds": 0,
+      "output_tail": ""
+    },
+    {
+      "module": "github_portfolio_publication_v542/sample_export",
+      "test_directory": "github_portfolio_publication_v542/sample_export/tests",
+      "status": "not_run",
+      "return_code": null,
+      "duration_seconds": 0,
+      "output_tail": ""
+    },
+    {
+      "module": "github_portfolio_publication_v542",
+      "test_directory": "github_portfolio_publication_v542/tests",
+      "status": "not_run",
+      "return_code": null,
+      "duration_seconds": 0,
+      "output_tail": ""
+    },
+    {
+      "module": "healthcare_analytics_capstone_employment_v530",
+      "test_directory": "healthcare_analytics_capstone_employment_v530/tests",
+      "status": "not_run",
+      "return_code": null,
+      "duration_seconds": 0,
+      "output_tail": ""
+    },
+    {
+      "module": "healthcare_analytics_deployment_evidence_v534",
+      "test_directory": "healthcare_analytics_deployment_evidence_v534/tests",
+      "status": "not_run",
+      "return_code": null,
+      "duration_seconds": 0,
+      "output_tail": ""
+    },
+    {
+      "module": "healthcare_analytics_employer_evaluation_v535",
+      "test_directory": "healthcare_analytics_employer_evaluation_v535/tests",
+      "status": "not_run",
+      "return_code": null,
+      "duration_seconds": 0,
+      "output_tail": ""
+    },
+    {
+      "module": "healthcare_analytics_production_validation_v533",
+      "test_directory": "healthcare_analytics_production_validation_v533/tests",
+      "status": "not_run",
+      "return_code": null,
+      "duration_seconds": 0,
+      "output_tail": ""
+    },
+    {
+      "module": "healthcare_analytics_real_world_practicum_v532",
+      "test_directory": "healthcare_analytics_real_world_practicum_v532/tests",
+      "status": "not_run",
+      "return_code": null,
+      "duration_seconds": 0,
+      "output_tail": ""
+    },
+    {
+      "module": "healthcare_bi_portfolio_delivery_v529",
+      "test_directory": "healthcare_bi_portfolio_delivery_v529/tests",
+      "status": "not_run",
+      "return_code": null,
+      "duration_seconds": 0,
+      "output_tail": ""
+    },
+    {
+      "module": "healthcare_bi_powerbi_production_v528",
+      "test_directory": "healthcare_bi_powerbi_production_v528/tests",
+      "status": "not_run",
+      "return_code": null,
+      "duration_seconds": 0,
+      "output_tail": ""
+    },
+    {
+      "module": "healthcare_data_analyst_job_readiness_remote_employment_v531",
+      "test_directory": "healthcare_data_analyst_job_readiness_remote_employment_v531/tests",
+      "status": "not_run",
+      "return_code": null,
+      "duration_seconds": 0,
+      "output_tail": ""
+    },
+    {
+      "module": "healthcare_data_engineering_interoperability_v525",
+      "test_directory": "healthcare_data_engineering_interoperability_v525/tests",
+      "status": "not_run",
+      "return_code": null,
+      "duration_seconds": 0,
+      "output_tail": ""
+    },
+    {
+      "module": "hiring_assessment_v45",
+      "test_directory": "hiring_assessment_v45/tests",
+      "status": "not_run",
+      "return_code": null,
+      "duration_seconds": 0,
+      "output_tail": ""
+    },
+    {
+      "module": "integrated_execution_engine_v520",
+      "test_directory": "integrated_execution_engine_v520/tests",
+      "status": "not_run",
+      "return_code": null,
+      "duration_seconds": 0,
+      "output_tail": ""
+    },
+    {
+      "module": "integrated_reporting_visualization_v522",
+      "test_directory": "integrated_reporting_visualization_v522/tests",
+      "status": "not_run",
+      "return_code": null,
+      "duration_seconds": 0,
+      "output_tail": ""
+    },
+    {
+      "module": "interactive_clinical_bi_dashboard_v548",
+      "test_directory": "interactive_clinical_bi_dashboard_v548/tests",
+      "status": "not_run",
+      "return_code": null,
+      "duration_seconds": 0,
+      "output_tail": ""
+    },
+    {
+      "module": "interactive_workbench_v52",
+      "test_directory": "interactive_workbench_v52/tests",
+      "status": "not_run",
+      "return_code": null,
+      "duration_seconds": 0,
+      "output_tail": ""
+    },
+    {
+      "module": "job_search_source_vacancy_verification_v559",
+      "test_directory": "job_search_source_vacancy_verification_v559/tests",
+      "status": "not_run",
+      "return_code": null,
+      "duration_seconds": 0,
+      "output_tail": ""
+    },
+    {
+      "module": "platform_roadmap_v511",
+      "test_directory": "platform_roadmap_v511/tests",
+      "status": "not_run",
+      "return_code": null,
+      "duration_seconds": 0,
+      "output_tail": ""
+    },
+    {
+      "module": "portfolio_builder_v49",
+      "test_directory": "portfolio_builder_v49/tests",
+      "status": "not_run",
+      "return_code": null,
+      "duration_seconds": 0,
+      "output_tail": ""
+    },
+    {
+      "module": "portfolio_client_delivery_v518",
+      "test_directory": "portfolio_client_delivery_v518/tests",
+      "status": "not_run",
+      "return_code": null,
+      "duration_seconds": 0,
+      "output_tail": ""
+    },
+    {
+      "module": "portfolio_employment_v44",
+      "test_directory": "portfolio_employment_v44/tests",
+      "status": "not_run",
+      "return_code": null,
+      "duration_seconds": 0,
+      "output_tail": ""
+    },
+    {
+      "module": "portfolio_evidence_pack_v540",
+      "test_directory": "portfolio_evidence_pack_v540/tests",
+      "status": "not_run",
+      "return_code": null,
+      "duration_seconds": 0,
+      "output_tail": ""
+    },
+    {
+      "module": "portfolio_execution_reproducibility_v538",
+      "test_directory": "portfolio_execution_reproducibility_v538/tests",
+      "status": "not_run",
+      "return_code": null,
+      "duration_seconds": 0,
+      "output_tail": ""
+    },
+    {
+      "module": "portfolio_handoff_evidence_v543",
+      "test_directory": "portfolio_handoff_evidence_v543/tests",
+      "status": "not_run",
+      "return_code": null,
+      "duration_seconds": 0,
+      "output_tail": ""
+    },
+    {
+      "module": "portfolio_interview_readiness_v545",
+      "test_directory": "portfolio_interview_readiness_v545/tests",
+      "status": "not_run",
+      "return_code": null,
+      "duration_seconds": 0,
+      "output_tail": ""
+    },
+    {
+      "module": "portfolio_presentation_employer_review_v539",
+      "test_directory": "portfolio_presentation_employer_review_v539/tests",
+      "status": "not_run",
+      "return_code": null,
+      "duration_seconds": 0,
+      "output_tail": ""
+    },
+    {
+      "module": "portfolio_publication_candidate_v554",
+      "test_directory": "portfolio_publication_candidate_v554/tests",
+      "status": "not_run",
+      "return_code": null,
+      "duration_seconds": 0,
+      "output_tail": ""
+    },
+    {
+      "module": "portfolio_quality/examples/good_example",
+      "test_directory": "portfolio_quality/examples/good_example/tests",
+      "status": "not_run",
+      "return_code": null,
+      "duration_seconds": 0,
+      "output_tail": ""
+    },
+    {
+      "module": "portfolio_release_candidate_v544",
+      "test_directory": "portfolio_release_candidate_v544/tests",
+      "status": "not_run",
+      "return_code": null,
+      "duration_seconds": 0,
+      "output_tail": ""
+    },
+    {
+      "module": "portfolio_release_gate_v541",
+      "test_directory": "portfolio_release_gate_v541/tests",
+      "status": "not_run",
+      "return_code": null,
+      "duration_seconds": 0,
+      "output_tail": ""
+    },
+    {
+      "module": "postgresql_healthcare_warehouse_operations_v527",
+      "test_directory": "postgresql_healthcare_warehouse_operations_v527/tests",
+      "status": "not_run",
+      "return_code": null,
+      "duration_seconds": 0,
+      "output_tail": ""
+    },
+    {
+      "module": "practicum_v43",
+      "test_directory": "practicum_v43/tests",
+      "status": "not_run",
+      "return_code": null,
+      "duration_seconds": 0,
+      "output_tail": ""
+    },
+    {
+      "module": "production_ops_v510",
+      "test_directory": "production_ops_v510/tests",
+      "status": "not_run",
+      "return_code": null,
+      "duration_seconds": 0,
+      "output_tail": ""
+    },
+    {
+      "module": "professional_simulations",
+      "test_directory": "professional_simulations/tests",
+      "status": "not_run",
+      "return_code": null,
+      "duration_seconds": 0,
+      "output_tail": ""
+    },
+    {
+      "module": "project_execution_collaboration_v519",
+      "test_directory": "project_execution_collaboration_v519/tests",
+      "status": "not_run",
+      "return_code": null,
+      "duration_seconds": 0,
+      "output_tail": ""
+    },
+    {
+      "module": "project_execution_v48",
+      "test_directory": "project_execution_v48/tests",
+      "status": "not_run",
+      "return_code": null,
+      "duration_seconds": 0,
+      "output_tail": ""
+    },
+    {
+      "module": "project_simulator_v51",
+      "test_directory": "project_simulator_v51/tests",
+      "status": "not_run",
+      "return_code": null,
+      "duration_seconds": 0,
+      "output_tail": ""
+    },
+    {
+      "module": "real_world_project_studio/portfolio_publication",
+      "test_directory": "real_world_project_studio/portfolio_publication/tests",
+      "status": "not_run",
+      "return_code": null,
+      "duration_seconds": 0,
+      "output_tail": ""
+    },
+    {
+      "module": "report_generator_v54",
+      "test_directory": "report_generator_v54/tests",
+      "status": "not_run",
+      "return_code": null,
+      "duration_seconds": 0,
+      "output_tail": ""
+    },
+    {
+      "module": "research_publication_workbench_v517",
+      "test_directory": "research_publication_workbench_v517/tests",
+      "status": "not_run",
+      "return_code": null,
+      "duration_seconds": 0,
+      "output_tail": ""
+    },
+    {
+      "module": "statistical_engine_v514",
+      "test_directory": "statistical_engine_v514/tests",
+      "status": "not_run",
+      "return_code": null,
+      "duration_seconds": 0,
+      "output_tail": ""
+    },
+    {
+      "module": "statistical_validation_engine_v523",
+      "test_directory": "statistical_validation_engine_v523/tests",
+      "status": "not_run",
+      "return_code": null,
+      "duration_seconds": 0,
+      "output_tail": ""
+    },
+    {
+      "module": "technical_environment_v47/starter_project",
+      "test_directory": "technical_environment_v47/starter_project/tests",
+      "status": "not_run",
+      "return_code": null,
+      "duration_seconds": 0,
+      "output_tail": ""
+    },
+    {
+      "module": "technical_environment_v47",
+      "test_directory": "technical_environment_v47/tests",
+      "status": "not_run",
+      "return_code": null,
+      "duration_seconds": 0,
+      "output_tail": ""
+    },
+    {
+      "module": "universal_study_workspace_v512",
+      "test_directory": "universal_study_workspace_v512/tests",
+      "status": "not_run",
+      "return_code": null,
+      "duration_seconds": 0,
+      "output_tail": ""
+    },
+    {
+      "module": "vacancy_sourcing_evidence_capture_v560",
+      "test_directory": "vacancy_sourcing_evidence_capture_v560/tests",
+      "status": "not_run",
+      "return_code": null,
+      "duration_seconds": 0,
+      "output_tail": ""
+    },
+    {
+      "module": "visualization_reporting_studio_v516",
+      "test_directory": "visualization_reporting_studio_v516/tests",
+      "status": "not_run",
+      "return_code": null,
+      "duration_seconds": 0,
+      "output_tail": ""
+    }
+  ],
+  "interpretation": "A passing test directory does not certify its entire module. Dependency errors, timeouts, and failures remain visible. Modules without tests are not represented as tested.",
+  "execution_note": "Inventory-only report generated for this release. Attempts to execute all historical test directories within the build time budget did not complete; therefore historical suites remain not_run in this release report. Run the command documented in README on a normal development machine to populate actual outcomes."
+}

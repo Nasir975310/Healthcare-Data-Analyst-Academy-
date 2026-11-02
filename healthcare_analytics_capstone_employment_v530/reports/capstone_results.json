@@ -1,0 +1,31 @@
+{
+  "synthetic_data": true,
+  "quality": {
+    "patient_primary_key_unique": true,
+    "encounter_primary_key_unique": true,
+    "observation_primary_key_unique": true,
+    "medication_primary_key_unique": true,
+    "encounters_with_unknown_patient": [
+      "EN013"
+    ],
+    "observations_with_unknown_encounter": [],
+    "medications_with_unknown_encounter": [],
+    "missing_patient_region": []
+  },
+  "kpis": {
+    "patient_count": 8,
+    "encounter_count": 13,
+    "completed_encounters": 12,
+    "cancelled_encounters": 1,
+    "medication_orders": 16,
+    "unique_medications": 5,
+    "mean_systolic_bp": 141.42,
+    "mean_diastolic_bp": 88.33,
+    "systolic_readings_ge_140": 5
+  },
+  "sqlite": {
+    "integrity_check": "ok",
+    "foreign_key_violations": 0,
+    "rejected_encounter_rows": 1
+  }
+}

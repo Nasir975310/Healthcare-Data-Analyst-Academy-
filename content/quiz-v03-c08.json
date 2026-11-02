@@ -1,0 +1,74 @@
+[
+  {
+    "id": "q1",
+    "q": "Which chart is suitable for a continuous measurement distribution?",
+    "options": [
+      "Histogram",
+      "Pie chart",
+      "Network graph",
+      "Stacked area by default"
+    ],
+    "correct": 0,
+    "why": "Histograms show the distribution of numeric values."
+  },
+  {
+    "id": "q2",
+    "q": "What is the Figure in Matplotlib?",
+    "options": [
+      "The overall canvas containing axes",
+      "The data dictionary",
+      "A CSV reader",
+      "The legend only"
+    ],
+    "correct": 0,
+    "why": "A Figure can contain one or more Axes."
+  },
+  {
+    "id": "q3",
+    "q": "Why label a mean SBP chart with units?",
+    "options": [
+      "So the measure is interpretable",
+      "To increase sample size",
+      "To hide missingness",
+      "To force normality"
+    ],
+    "correct": 0,
+    "why": "A numeric value without units can be ambiguous."
+  },
+  {
+    "id": "q4",
+    "q": "Why display nonmissing n beside department means?",
+    "options": [
+      "To show how much data supports each mean",
+      "To make bars equal height",
+      "To infer causality",
+      "To remove outliers"
+    ],
+    "correct": 0,
+    "why": "Group sizes and missingness affect interpretation."
+  },
+  {
+    "id": "q5",
+    "q": "What is a limitation of a line chart?",
+    "options": [
+      "It can imply continuity across missing time periods",
+      "It cannot show dates",
+      "It only works for categories",
+      "It proves trends are causal"
+    ],
+    "correct": 0,
+    "why": "Time gaps and irregular intervals should be made visible."
+  },
+  {
+    "id": "q6",
+    "q": "What does a scatter plot establish?",
+    "options": [
+      "A visual pattern or association",
+      "Causation automatically",
+      "Randomization",
+      "Clinical effectiveness"
+    ],
+    "correct": 0,
+    "why": "Association alone does not establish causality."
+  }
+]

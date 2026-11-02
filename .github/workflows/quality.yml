@@ -1,0 +1,44 @@
+name: Academy quality checks
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+jobs:
+  maintained-release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install maintained test runner
+        run: python -m pip install pytest
+      - name: Maintained career release suites
+        run: python -B -m pytest -q
+      - name: Full academy isolated test-directory audit
+        run: python -B scripts/verify_full_academy.py --timeout 90
+      - name: Python syntax validation
+        run: python -B scripts/verify_release.py
+      - name: Changelog and placeholder validation
+        run: python -B scripts/validate_release_docs.py
+      - name: Secret and PHI pattern scan
+        run: python -B scripts/scan_sensitive_patterns.py
+      - name: Root HTML link validation
+        run: python -B scripts/verify_local_links.py
+      - name: Upload machine-readable audit
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: academy-quality-evidence
+          path: FULL_TEST_REPORT.json
+          if-no-files-found: warn
+  browser-uat:
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Browser UAT requires optional Playwright and Chromium setup
+        run: echo 'Manual/optional browser acceptance is tracked separately; this job does not claim a pass.'

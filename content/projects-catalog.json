@@ -1,0 +1,155 @@
+[
+  {
+    "id": "v02_excel_sql_capstone",
+    "name": "Volume 02 Excel Sql Capstone",
+    "description": "# Integrated Excel\u2013SQL Healthcare Analytics Portfolio Project\n\n## Scenario\nYou are a junior healthcare data analyst asked to prepare a descriptive operational summary for a fictional teaching hospital. The source is the academy's synthetic SQLite database. Your task is to create a traceable extract, reconcile it, analyze it and communicate limitations.\n\n## Scope and assumptions\n- Reporting window: 1 January 2026 through 31 March 2026 inclusive.\n- Primary grain: one row per encounter.\n- Patient counts must use distinct patient identifiers.\n- All included data is synthetic; no real patient data is present.\n- This is a descriptive exercise, not a clinical audit or validated hospital performance report.\n\n## Required workflow\n1. Inspect the schema and data dictionary. Record the grain of every table.\n2. Define the cohort with a half-open date interval: admission_date >= '2026-01-01' AND admission_date < '2026-04-01'.\n3. Run the SQL in `capstone_analysis_queries.sql` and save the SQL script with your submission.\n4. Export the query outputs from DBeaver as CSV files. Record the extraction timestamp and source database version.\n5. Open `healthcare_excel_sql_capstone_workbook.xlsx`. Use its source sheets and report template to reconcile counts and create a concise dashboard/report.\n6. Verify every KPI's numerator, denominator, eligibility rules and missing-data handling.\n7. Write a 400\u2013700 word interpretation with at least three findings, two limitations and one data-quality recommendation.\n\n## Required deliverables\n- Saved SQL script with comments and documented date window.\n- Completed `Report_Template` sheet.\n- Completed `Data_Quality_Log` sheet.\n- One summary chart (encounter type or department) and one data-quality visualization.\n- Short narrative with scope, findings, limi",
+    "files": [
+      "projects/v02_excel_sql_capstone/healthcare_excel_sql_capstone_workbook.xlsx",
+      "projects/v02_excel_sql_capstone/PROJECT_BRIEF.md",
+      "projects/v02_excel_sql_capstone/capstone_analysis_queries.sql"
+    ]
+  },
+  {
+    "id": "v03_integrated_healthcare_portfolio",
+    "name": "Volume 03 Integrated Healthcare Portfolio",
+    "description": "# Integrated Healthcare Analytics Portfolio\n\nThis project combines Python, R, SQL and reproducible reporting using only the Academy's synthetic hospital encounter data.\n\n## Folder map\n- `automation/healthcare_pipeline.py` \u2014 command-line Python pipeline.\n- `automation/test_pipeline.py` \u2014 seven unit tests.\n- `r_analysis.R` \u2014 independent R summary.\n- `r_visualizations.R` \u2014 optional ggplot2 charts.\n- `sql_reference_capstone_queries.sql` \u2014 SQL reference queries from Volume 2.\n- `healthcare_analytics_report.qmd` \u2014 Quarto report source.\n- `reports/` \u2014 generated summaries and run metadata.\n- `figures/` \u2014 figures created by the R visualization script.\n- `requirements.txt` \u2014 Python dependencies.\n- `PROJECT_BRIEF.md` \u2014 assignment, definitions and acceptance criteria.\n\n## Setup (Fish shell on Arch-based Linux)\nFrom the Academy root:\n\n```bash\npython -m venv projects/v03_integrated_healthcare_portfolio/.venv\n```\n\nActivate:\n\n```fish\nsource projects/v03_integrated_healthcare_portfolio/.venv/bin/activate.fish\n```\n\nInstall dependencies:\n\n```bash\npython -m pip install --upgrade pip\npython -m pip install -r projects/v03_integrated_healthcare_portfolio/requirements.txt\n```\n\nSelect this environment in VS Code. Do not use `sudo pip` or modify system-managed Python packages.\n\n## Run the pipeline\nFrom the Academy root:\n\n```bash\npython projects/v03_integrated_healthcare_portfolio/automation/healthcare_pipeline.py \\\n  --input datasets/v03_python/encounters.csv \\\n  --output-dir projects/v03_integrated_healthcare_portfolio/reports/python_run \\\n  --start-date 2026-01-01 \\\n  --end-date 2026-04-01\n```\n\nExpected high-level results for the supplied dataset:\n- 104 eligible encounters\n- 60 distinct synthetic patients\n- 96 nonmissing SBP values\n- 8 missing SBP values\n- 0 unmatched department keys\n- Departm",
+    "files": [
+      "projects/v03_integrated_healthcare_portfolio/r_visualizations.R",
+      "projects/v03_integrated_healthcare_portfolio/requirements.txt",
+      "projects/v03_integrated_healthcare_portfolio/HANDOFF.md",
+      "projects/v03_integrated_healthcare_portfolio/PROJECT_BRIEF.md",
+      "projects/v03_integrated_healthcare_portfolio/healthcare_analytics_report.qmd",
+      "projects/v03_integrated_healthcare_portfolio/sql_reference_capstone_queries.sql",
+      "projects/v03_integrated_healthcare_portfolio/README.md",
+      "projects/v03_integrated_healthcare_portfolio/r_analysis.R",
+      "projects/v03_integrated_healthcare_portfolio/reports/portfolio_report.md",
+      "projects/v03_integrated_healthcare_portfolio/automation/test_pipeline.py",
+      "projects/v03_integrated_healthcare_portfolio/automation/healthcare_pipeline.py",
+      "projects/v03_integrated_healthcare_portfolio/reports/python_run/department_summary.csv",
+      "projects/v03_integrated_healthcare_portfolio/reports/python_run/run_metrics.json"
+    ]
+  },
+  {
+    "id": "v03_python_analysis",
+    "name": "Volume 03 Python Analysis",
+    "description": "# Volume 3 Python analysis practicals\n\nRun scripts from the academy root, using the virtual environment described in the main README.\n\n```bash\npython projects/v03_python_analysis/pandas_fundamentals.py\npython projects/v03_python_analysis/data_quality_pipeline.py\npython projects/v03_python_analysis/visualize_healthcare_data.py\npython projects/v03_python_analysis/statistical_analysis_demo.py\n```\n\nThe visualization script writes four PNG files to `projects/v03_python_analysis/reports/`. The pandas script writes a department summary CSV. The data-quality script writes a JSON report and row-level flags. The statistical script prints descriptive summaries, a Welch comparison and an exploratory OLS model.\n\nInstall dependencies in the active virtual environment:\n\n```bash\npython -m pip install pandas numpy matplotlib scipy statsmodels\n```\n\nR script: `r_foundations_analysis.R`. Run it from the academy root in R/RStudio. It uses base R only.\n\nAll data is fictional. Statistical outputs are demonstrations, not clinical findings. Repeated encounters may belong to the same synthetic patient, so independence assumptions require scrutiny.\n",
+    "files": [
+      "projects/v03_python_analysis/data_quality_pipeline.py",
+      "projects/v03_python_analysis/cleaning_rules.md",
+      "projects/v03_python_analysis/r_foundations_analysis.R",
+      "projects/v03_python_analysis/statistical_analysis_demo.py",
+      "projects/v03_python_analysis/pandas_fundamentals.py",
+      "projects/v03_python_analysis/README.md",
+      "projects/v03_python_analysis/visualize_healthcare_data.py",
+      "projects/v03_python_analysis/reports/sbp_distribution.png",
+      "projects/v03_python_analysis/reports/data_quality_report.json",
+      "projects/v03_python_analysis/reports/sbp_completeness_by_department.png",
+      "projects/v03_python_analysis/reports/monthly_encounters.png",
+      "projects/v03_python_analysis/reports/encounters_quality_flags.csv",
+      "projects/v03_python_analysis/reports/pandas_department_summary.csv",
+      "projects/v03_python_analysis/reports/ols_diagnostics_data.csv",
+      "projects/v03_python_analysis/reports/mean_sbp_by_department.png"
+    ]
+  },
+  {
+    "id": "v03_python_foundations",
+    "name": "Volume 03 Python Foundations",
+    "description": "# Volume 3 Python foundations practice project\n\n1. Keep this project folder and the academy `datasets/v03_python` folder in the same academy root.\n2. Open the academy root in VS Code.\n3. Run the starter with `python projects/v03_python_foundations/starter/inspect_encounters.py`.\n4. Complete the TODOs, then compare with `solutions/inspect_encounters_solution.py`.\n5. For Chapter 5, install NumPy in a virtual environment and run the array exercises.\n\nThe first four chapters use the Python standard library. NumPy is introduced in Chapter 5. Do not install packages globally merely to complete this course.\n",
+    "files": [
+      "projects/v03_python_foundations/python_foundations_lab.ipynb",
+      "projects/v03_python_foundations/requirements.txt",
+      "projects/v03_python_foundations/encounter_summary.json",
+      "projects/v03_python_foundations/README.md",
+      "projects/v03_python_foundations/solutions/numpy_sbp_solution.py",
+      "projects/v03_python_foundations/solutions/inspect_encounters_solution.py",
+      "projects/v03_python_foundations/solutions/json_summary_solution.py",
+      "projects/v03_python_foundations/starter/inspect_encounters.py"
+    ]
+  },
+  {
+    "id": "v04_biostatistics_research_project",
+    "name": "Volume 04 Biostatistics Research Project",
+    "description": "# Volume 4 project files\n\nRun from this folder after installing pandas:\n\n```bash\npython -m pip install pandas\npython analysis/analyze_cohort.py\n```\n\nOutputs are written to `outputs/`. The script validates required columns, unique synthetic patient identifiers and binary coding, then creates group summaries, missingness metrics and a validation log. The exercise is descriptive; it deliberately does not claim a causal treatment effect.\n",
+    "files": [
+      "projects/v04_biostatistics_research_project/data_dictionary.csv",
+      "projects/v04_biostatistics_research_project/PROJECT_BRIEF.md",
+      "projects/v04_biostatistics_research_project/README.md",
+      "projects/v04_biostatistics_research_project/analysis/analyze_cohort.py",
+      "projects/v04_biostatistics_research_project/outputs/validation.txt",
+      "projects/v04_biostatistics_research_project/outputs/missingness.csv",
+      "projects/v04_biostatistics_research_project/outputs/group_summary.csv",
+      "projects/v04_biostatistics_research_project/data/synthetic_biostatistics_cohort.csv"
+    ]
+  },
+  {
+    "id": "v05_clinical_pharmacy_analytics_capstone",
+    "name": "Volume 05 Clinical Pharmacy Analytics Capstone",
+    "description": "# V05 capstone\n\nRequirements: Python 3.10+ and pandas.\n\nFrom this project directory:\n```bash\npython -m pip install pandas\npython python/analyze_capstone.py\n```\nOutputs are created in `reports/outputs/`. The script checks key uniqueness, referential integrity and date chronology before generating summaries. It intentionally does not calculate laboratory completion because no expected-test denominator exists.\n",
+    "files": [
+      "projects/v05_clinical_pharmacy_analytics_capstone/PROJECT_BRIEF.md",
+      "projects/v05_clinical_pharmacy_analytics_capstone/README.md",
+      "projects/v05_clinical_pharmacy_analytics_capstone/sql/analytics_examples.sql",
+      "projects/v05_clinical_pharmacy_analytics_capstone/python/analyze_capstone.py",
+      "projects/v05_clinical_pharmacy_analytics_capstone/data/encounters.csv",
+      "projects/v05_clinical_pharmacy_analytics_capstone/data/laboratory_results.csv",
+      "projects/v05_clinical_pharmacy_analytics_capstone/data/patients.csv",
+      "projects/v05_clinical_pharmacy_analytics_capstone/data/medication_orders.csv",
+      "projects/v05_clinical_pharmacy_analytics_capstone/docs/metric_dictionary.md",
+      "projects/v05_clinical_pharmacy_analytics_capstone/docs/data_dictionary.md",
+      "projects/v05_clinical_pharmacy_analytics_capstone/reports/outputs/laboratory_profile.csv",
+      "projects/v05_clinical_pharmacy_analytics_capstone/reports/outputs/medication_class_summary.csv",
+      "projects/v05_clinical_pharmacy_analytics_capstone/reports/outputs/validation.txt",
+      "projects/v05_clinical_pharmacy_analytics_capstone/reports/outputs/department_summary.csv"
+    ]
+  },
+  {
+    "id": "v06_bi_data_engineering_capstone",
+    "name": "Volume 06 Bi Data Engineering Capstone",
+    "description": "# V06 BI and data engineering capstone\n\n## Purpose\nBuild a small, reproducible BI data mart from synthetic patient, encounter and medication-order data. It demonstrates dimensional grain, ETL validation, aggregation, metric definitions and a Linux-friendly execution path.\n\n## Run locally\nFrom this project folder:\n```bash\npython -m pip install -r requirements.txt\npython python/build_marts.py\n```\n\n## Run with Docker\n```bash\ndocker build -t healthcare-bi-capstone .\ndocker run --rm healthcare-bi-capstone\n```\n\n## Power BI and Linux\nPower BI Desktop is a Windows desktop product and is not natively supported on CachyOS/Ryoku Linux. This project provides portable CSV marts and SQL definitions that can be imported into Power BI from an authorised Windows environment. For local Linux dashboard practice, use a supported browser-based BI deployment such as Metabase or Apache Superset after reviewing its installation, security and resource requirements. A browser-hosted Power BI Service account does not necessarily provide the full Desktop modelling workflow.\n\n## Data caution\nAll rows are synthetic. The readmission flag is generated for teaching and is not a validated hospital readmission measure. No clinical, quality or causal conclusion is supported.\n",
+    "files": [
+      "projects/v06_bi_data_engineering_capstone/requirements.txt",
+      "projects/v06_bi_data_engineering_capstone/README.md",
+      "projects/v06_bi_data_engineering_capstone/sql/warehouse_views.sql",
+      "projects/v06_bi_data_engineering_capstone/python/build_marts.py",
+      "projects/v06_bi_data_engineering_capstone/reports/validation.txt",
+      "projects/v06_bi_data_engineering_capstone/reports/medication_mart.csv",
+      "projects/v06_bi_data_engineering_capstone/reports/department_mart.csv",
+      "projects/v06_bi_data_engineering_capstone/docker/Dockerfile",
+      "projects/v06_bi_data_engineering_capstone/data/encounters.csv",
+      "projects/v06_bi_data_engineering_capstone/data/patients.csv",
+      "projects/v06_bi_data_engineering_capstone/data/medication_orders.csv",
+      "projects/v06_bi_data_engineering_capstone/docs/metric_dictionary.md",
+      "projects/v06_bi_data_engineering_capstone/docs/data_model.md"
+    ]
+  },
+  {
+    "id": "v07_predictive_analytics_capstone",
+    "name": "Volume 07 Predictive Analytics Capstone",
+    "description": "# V07 Predictive Analytics Capstone\n\n**Educational synthetic-data project only. Not a clinical decision-support system.**\n\n## What it does\n- Generates a synthetic patient-level cohort with a binary 30-day readmission-like outcome.\n- Validates identifiers, outcome domain and age range.\n- Uses a stratified patient-level holdout split (one row per synthetic patient).\n- Fits preprocessing inside scikit-learn pipelines.\n- Compares logistic regression and random forest.\n- Writes metrics, run metadata and validation notes.\n\nThe outcome is generated from an artificial formula. It does not represent real clinical risk, and model metrics must not be interpreted as evidence of clinical validity.\n\n## Linux (Bash/Zsh)\nFrom this directory:\n```bash\npython3 -m venv .venv\nsource .venv/bin/activate\npython -m pip install --upgrade pip\npython -m pip install -r requirements.txt\npython scripts/run_capstone.py\n```\nFor Fish:\n```fish\npython3 -m venv .venv\nsource .venv/bin/activate.fish\npython -m pip install --upgrade pip\npython -m pip install -r requirements.txt\npython scripts/run_capstone.py\n```\nOn Arch-based systems, use the distribution package manager for system tools; do not use `sudo pip` to modify system Python.\n\n## Windows (PowerShell 7)\nFrom this directory:\n```powershell\npy -m venv .venv\n.\\.venv\\Scripts\\Activate.ps1\npy -m pip install --upgrade pip\npy -m pip install -r requirements.txt\npy scripts\\run_capstone.py\n```\nIf PowerShell blocks environment activation, do not weaken the machine-wide execution policy. You can run without activation:\n```powershell\npy -m pip --python .venv\\Scripts\\python.exe install -r requirements.txt\n.\\.venv\\Scripts\\python.exe scripts\\run_capstone.py\n```\nIf the `--python` pip option is unavailable in your pip version, invoke `.venv\\Scripts\\python.exe -m pip insta",
+    "files": [
+      "projects/v07_predictive_analytics_capstone/requirements.txt",
+      "projects/v07_predictive_analytics_capstone/.gitignore",
+      "projects/v07_predictive_analytics_capstone/README.md",
+      "projects/v07_predictive_analytics_capstone/reports/run_summary.json",
+      "projects/v07_predictive_analytics_capstone/reports/validation.txt",
+      "projects/v07_predictive_analytics_capstone/reports/model_metrics.csv",
+      "projects/v07_predictive_analytics_capstone/scripts/run_capstone.py",
+      "projects/v07_predictive_analytics_capstone/data/synthetic_patient_cohort.csv"
+    ]
+  },
+  {
+    "id": "v08_career_launch_toolkit",
+    "name": "Volume 08 Career Launch Toolkit",
+    "description": "# V08 Career Launch Toolkit\n\nTemplates are intentionally blank. Keep job-search records private; do not commit personal identity documents, passwords, recruiter private correspondence or client information to public repositories.\n\n## Contents\n- `job_application_tracker.csv` \u2014 private application pipeline.\n- `skills_evidence_matrix.csv` \u2014 map job requirements to demonstrated evidence.\n- `90_day_plan.csv` \u2014 onboarding and development plan.\n- `portfolio_review_checklist.csv` \u2014 public-safe project quality review.\n- `proposal_template.md` \u2014 bounded consulting proposal structure.\n- `mock_interview_bank.md` \u2014 technical, clinical and behavioural practice.\n- `final_readiness_scorecard.md` \u2014 evidence-based competency review.\n\n## Linux and Windows\nOpen CSV/Markdown files in LibreOffice/OnlyOffice/Microsoft Excel or a text editor. Use your file manager, or terminal:\n- Linux Bash/Zsh: `ls -la`; Fish supports `ls -la`.\n- Windows PowerShell: `Get-ChildItem -Force`.\nDo not store private job-search records in a public Git repository. If you version public portfolio templates, inspect staged files before committing.\n",
+    "files": [
+      "projects/v08_career_launch_toolkit/job_application_tracker.csv",
+      "projects/v08_career_launch_toolkit/portfolio_review_checklist.csv",
+      "projects/v08_career_launch_toolkit/mock_interview_bank.md",
+      "projects/v08_career_launch_toolkit/proposal_template.md",
+      "projects/v08_career_launch_toolkit/90_day_plan.csv",
+      "projects/v08_career_launch_toolkit/skills_evidence_matrix.csv",
+      "projects/v08_career_launch_toolkit/final_readiness_scorecard.md",
+      "projects/v08_career_launch_toolkit/README.md"
+    ]
+  }
+]

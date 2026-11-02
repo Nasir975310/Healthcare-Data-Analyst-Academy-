@@ -1,0 +1,4 @@
+job_requirement,evidence_level,artifact_path,reproducible_check,cv_wording,remaining_gap
+SQL joins and aggregation,Demonstrated,projects/v03_integrated_healthcare_portfolio/sql_reference_capstone_queries.sql,Run queries against documented fixture,Practised SQL joins and aggregation in an academic synthetic-data project,Need evidence on target database engine
+Power BI dashboarding,Learning,,Not yet executed in Power BI Desktop,Currently learning Power BI; dashboard specification prepared,Build and test a PBIX/PBIP artifact
+Healthcare domain,Demonstrated,Pharm.D education and academic work,Verify education and project records,Pharm.D domain foundation with healthcare analytics projects,Do not imply hospital analyst employment

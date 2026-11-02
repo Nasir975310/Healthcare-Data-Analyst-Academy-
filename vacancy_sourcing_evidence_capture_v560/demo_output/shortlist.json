@@ -1,0 +1,151 @@
+{
+  "review_date": "2026-11-02",
+  "vacancy_count": 3,
+  "duplicate_groups": [
+    [
+      "S-001",
+      "S-003"
+    ]
+  ],
+  "active_count": 3,
+  "shortlist_count": 1,
+  "items": [
+    {
+      "vacancy_id": "S-003",
+      "employer": "Example Health Analytics",
+      "role": "Junior Healthcare Data Analyst",
+      "source_url": "https://careers.example.org/jobs/123",
+      "captured_at": "2026-11-01T13:00:00+00:00",
+      "deadline": "2026-11-30",
+      "expired": false,
+      "status": "new",
+      "source_evidence_sha256": "",
+      "match": {
+        "detected_skill_topics": [
+          "SQL",
+          "Python",
+          "Excel",
+          "Healthcare"
+        ],
+        "profile_skill_matches": [
+          "Excel",
+          "Healthcare"
+        ],
+        "potential_skill_gaps": [
+          "SQL",
+          "Python"
+        ],
+        "required_skills": [
+          "SQL",
+          "Excel",
+          "Healthcare"
+        ],
+        "required_skills_not_in_profile": [
+          "SQL"
+        ],
+        "experience_requirement_years": 0.0,
+        "profile_years_experience": 0.0,
+        "experience_gap_signal": false,
+        "priority_score": 80,
+        "priority_label": "Review",
+        "score_caution": "Heuristic prioritisation aid only; not an ATS score, qualification judgement or hiring probability."
+      }
+    },
+    {
+      "vacancy_id": "S-001",
+      "employer": "Example Health Analytics",
+      "role": "Junior Healthcare Data Analyst",
+      "source_url": "https://careers.example.org/jobs/123?utm_source=demo",
+      "captured_at": "2026-11-01T10:00:00+00:00",
+      "deadline": "2026-11-30",
+      "expired": false,
+      "status": "shortlisted",
+      "source_evidence_sha256": "demo-hash-not-a-real-integrity-hash",
+      "match": {
+        "detected_skill_topics": [
+          "SQL",
+          "Python",
+          "Excel",
+          "Power BI",
+          "Healthcare",
+          "Data quality",
+          "Communication"
+        ],
+        "profile_skill_matches": [
+          "Excel",
+          "Healthcare"
+        ],
+        "potential_skill_gaps": [
+          "SQL",
+          "Python",
+          "Power BI",
+          "Data quality",
+          "Communication"
+        ],
+        "required_skills": [
+          "SQL",
+          "Excel",
+          "Healthcare"
+        ],
+        "required_skills_not_in_profile": [
+          "SQL"
+        ],
+        "experience_requirement_years": 0.0,
+        "profile_years_experience": 0.0,
+        "experience_gap_signal": false,
+        "priority_score": 74,
+        "priority_label": "Review",
+        "score_caution": "Heuristic prioritisation aid only; not an ATS score, qualification judgement or hiring probability."
+      }
+    },
+    {
+      "vacancy_id": "S-002",
+      "employer": "Example Clinical Research",
+      "role": "Clinical Data Coordinator",
+      "source_url": "https://jobs.example.net/clinical-data-coordinator",
+      "captured_at": "2026-11-01T12:00:00+00:00",
+      "deadline": "2026-11-10",
+      "expired": false,
+      "status": "new",
+      "source_evidence_sha256": "",
+      "match": {
+        "detected_skill_topics": [
+          "SQL",
+          "Excel",
+          "Healthcare",
+          "Research",
+          "Communication"
+        ],
+        "profile_skill_matches": [
+          "Excel",
+          "Healthcare",
+          "Research"
+        ],
+        "potential_skill_gaps": [
+          "SQL",
+          "Communication"
+        ],
+        "required_skills": [
+          "Excel",
+          "Clinical Research"
+        ],
+        "required_skills_not_in_profile": [
+          "Clinical Research"
+        ],
+        "experience_requirement_years": 2.0,
+        "profile_years_experience": 0.0,
+        "experience_gap_signal": true,
+        "priority_score": 63,
+        "priority_label": "Consider",
+        "score_caution": "Heuristic prioritisation aid only; not an ATS score, qualification judgement or hiring probability."
+      }
+    }
+  ],
+  "limitations": [
+    "Vacancies must be collected by the user from external sources; this tool does not browse or fetch live listings.",
+    "Source evidence is only as reliable as the excerpt/file supplied and does not establish that the vacancy remains open.",
+    "Duplicate groups are heuristic; different URLs or changed job titles can evade detection.",
+    "Priority scores are transparent heuristics, not hiring probabilities or verified qualification assessments.",
+    "Keep personal application information and confidential communications out of public repositories."
+  ]
+}

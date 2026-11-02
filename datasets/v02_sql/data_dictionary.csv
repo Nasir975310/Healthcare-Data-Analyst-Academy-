@@ -1,0 +1,7 @@
+table,key_field,key_type,grain_and_notes
+departments,department_id,Primary key,One row per department
+patients,patient_id,Primary key,One row per fictional person; synthetic_patient_code is unique
+encounters,encounter_id,Primary key,One row per care encounter; patient_id links to patients
+diagnoses,diagnosis_id,Primary key,One row per diagnosis attached to an encounter
+prescriptions,prescription_id,Primary key,One row per prescribed medication per encounter
+laboratory_results,result_id,Primary key,One row per test result per encounter

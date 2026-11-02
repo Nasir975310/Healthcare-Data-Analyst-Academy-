@@ -1,0 +1,241 @@
+case_id,patient_age_years,suspect_drug,event_term,event_onset_day,report_received_day,serious_flag,outcome,duplicate_candidate_flag
+PV0001,21,Drug C,Hypoglycaemia,68,80,0,Unknown,0
+PV0002,82,Drug D,GI bleeding,242,258,0,Unknown,0
+PV0003,43,Drug D,Hypoglycaemia,152,163,0,Unknown,0
+PV0004,43,Drug A,Dizziness,241,245,0,Not recovered,0
+PV0005,21,Drug B,Headache,228,231,1,Recovering,0
+PV0006,51,Drug A,Hypoglycaemia,11,23,1,Unknown,0
+PV0007,31,Drug D,GI bleeding,71,80,0,Recovered,0
+PV0008,88,Drug B,Rash,279,295,0,Not recovered,0
+PV0009,31,Drug C,Dizziness,192,203,0,Recovering,0
+PV0010,33,Drug C,Cough,39,54,0,Recovering,0
+PV0011,50,Drug C,Cough,194,196,0,Not recovered,0
+PV0012,63,Drug D,GI bleeding,337,348,0,Recovering,0
+PV0013,79,Drug B,Dizziness,59,71,0,Recovering,0
+PV0014,30,Drug B,Cough,4,12,0,Recovered,0
+PV0015,85,Drug A,Rash,206,209,0,Not recovered,0
+PV0016,67,Drug D,Cough,260,264,0,Not recovered,0
+PV0017,24,Drug A,GI bleeding,282,297,0,Recovered,0
+PV0018,63,Drug D,Hypoglycaemia,84,99,0,Recovered,0
+PV0019,68,Drug B,Rash,230,235,0,Recovered,1
+PV0020,39,Drug C,Cough,199,202,0,Unknown,0
+PV0021,55,Drug A,GI bleeding,200,215,0,Recovered,0
+PV0022,53,Drug C,Headache,151,160,0,Recovered,0
+PV0023,62,Drug C,Dizziness,72,76,1,Unknown,0
+PV0024,80,Drug B,GI bleeding,252,268,0,Recovering,0
+PV0025,18,Drug D,GI bleeding,180,195,1,Unknown,0
+PV0026,33,Drug D,Hypoglycaemia,308,326,0,Unknown,0
+PV0027,32,Drug C,Cough,101,118,0,Unknown,0
+PV0028,78,Drug A,Headache,160,172,0,Recovered,0
+PV0029,82,Drug C,Headache,52,53,0,Recovering,0
+PV0030,77,Drug D,Hypoglycaemia,232,246,0,Unknown,0
+PV0031,53,Drug B,Cough,183,198,0,Recovering,0
+PV0032,85,Drug C,GI bleeding,277,281,0,Unknown,0
+PV0033,62,Drug B,GI bleeding,222,228,0,Unknown,0
+PV0034,22,Drug A,Hypoglycaemia,226,244,1,Recovering,0
+PV0035,70,Drug D,Cough,53,69,0,Not recovered,0
+PV0036,64,Drug A,GI bleeding,252,267,1,Unknown,0
+PV0037,78,Drug B,Headache,172,181,0,Unknown,0
+PV0038,68,Drug C,Cough,29,41,0,Not recovered,0
+PV0039,50,Drug B,GI bleeding,234,246,0,Recovering,0
+PV0040,74,Drug D,GI bleeding,178,193,0,Recovered,0
+PV0041,46,Drug D,Cough,233,234,0,Recovering,0
+PV0042,32,Drug D,Rash,290,297,0,Recovered,0
+PV0043,56,Drug A,Hypoglycaemia,173,185,1,Recovered,0
+PV0044,41,Drug C,GI bleeding,130,140,0,Unknown,0
+PV0045,41,Drug B,GI bleeding,188,195,0,Recovered,0
+PV0046,63,Drug A,Rash,26,36,0,Unknown,0
+PV0047,32,Drug B,Headache,152,161,1,Not recovered,0
+PV0048,81,Drug A,Headache,125,130,0,Recovering,0
+PV0049,47,Drug A,Hypoglycaemia,231,249,0,Recovering,0
+PV0050,48,Drug C,Rash,134,148,0,Recovering,0
+PV0051,23,Drug C,Headache,153,160,1,Recovering,0
+PV0052,21,Drug A,Hypoglycaemia,257,264,0,Unknown,0
+PV0053,29,Drug C,Headache,34,44,0,Recovered,0
+PV0054,72,Drug B,Dizziness,302,318,0,Not recovered,0
+PV0055,38,Drug A,Cough,38,44,0,Recovering,0
+PV0056,54,Drug B,Hypoglycaemia,9,24,0,Unknown,0
+PV0057,45,Drug B,Hypoglycaemia,238,255,0,Not recovered,0
+PV0058,73,Drug D,Hypoglycaemia,256,270,0,Unknown,0
+PV0059,34,Drug A,Cough,18,27,0,Recovering,0
+PV0060,90,Drug C,Cough,286,299,0,Recovering,0
+PV0061,61,Drug B,Cough,189,204,0,Recovering,0
+PV0062,80,Drug B,Dizziness,326,331,1,Unknown,0
+PV0063,64,Drug B,Hypoglycaemia,237,255,0,Not recovered,0
+PV0064,64,Drug D,GI bleeding,290,303,0,Not recovered,0
+PV0065,47,Drug C,Hypoglycaemia,197,207,0,Not recovered,0
+PV0066,36,Drug C,Dizziness,238,248,0,Not recovered,0
+PV0067,57,Drug D,Headache,111,119,0,Unknown,0
+PV0068,55,Drug A,Rash,167,184,0,Unknown,0
+PV0069,39,Drug B,Rash,142,147,0,Recovering,0
+PV0070,34,Drug C,Rash,145,147,0,Not recovered,0
+PV0071,64,Drug B,GI bleeding,51,64,0,Not recovered,0
+PV0072,71,Drug B,Cough,114,118,0,Recovered,0
+PV0073,53,Drug D,GI bleeding,300,307,0,Recovering,0
+PV0074,28,Drug D,Hypoglycaemia,26,38,1,Unknown,0
+PV0075,77,Drug C,Cough,207,213,0,Not recovered,0
+PV0076,39,Drug D,Rash,30,42,0,Recovering,0
+PV0077,47,Drug A,Cough,301,302,0,Not recovered,0
+PV0078,67,Drug D,Cough,283,286,0,Not recovered,0
+PV0079,64,Drug A,Cough,96,114,0,Recovered,0
+PV0080,80,Drug A,Dizziness,216,222,0,Recovering,0
+PV0081,48,Drug A,Dizziness,163,176,0,Recovered,0
+PV0082,83,Drug B,GI bleeding,257,271,0,Recovered,0
+PV0083,83,Drug C,Hypoglycaemia,20,38,0,Not recovered,0
+PV0084,65,Drug D,Headache,104,116,0,Not recovered,0
+PV0085,18,Drug A,Cough,312,320,0,Recovered,0
+PV0086,33,Drug D,Rash,248,251,0,Unknown,0
+PV0087,55,Drug B,Hypoglycaemia,106,123,0,Recovered,0
+PV0088,67,Drug D,Headache,218,226,0,Unknown,1
+PV0089,48,Drug C,GI bleeding,76,78,0,Unknown,0
+PV0090,59,Drug C,Rash,172,190,0,Recovered,0
+PV0091,38,Drug C,Hypoglycaemia,195,200,0,Unknown,0
+PV0092,29,Drug C,Headache,13,19,0,Recovering,0
+PV0093,65,Drug C,Rash,92,96,0,Recovered,0
+PV0094,39,Drug B,Headache,118,131,1,Recovering,0
+PV0095,31,Drug C,Hypoglycaemia,149,162,0,Unknown,0
+PV0096,69,Drug D,Hypoglycaemia,254,271,1,Recovered,0
+PV0097,21,Drug D,GI bleeding,317,325,0,Recovering,0
+PV0098,26,Drug C,Hypoglycaemia,56,60,0,Unknown,0
+PV0099,63,Drug C,Dizziness,78,81,0,Unknown,0
+PV0100,57,Drug D,Cough,301,307,1,Unknown,0
+PV0101,31,Drug B,Cough,80,95,0,Unknown,0
+PV0102,77,Drug A,Headache,93,106,0,Recovering,0
+PV0103,78,Drug A,Rash,280,287,0,Recovered,0
+PV0104,63,Drug A,Hypoglycaemia,43,56,0,Recovering,0
+PV0105,66,Drug D,Headache,7,10,0,Recovering,0
+PV0106,44,Drug D,Rash,41,51,0,Recovering,0
+PV0107,67,Drug C,Hypoglycaemia,67,78,0,Not recovered,0
+PV0108,25,Drug A,Rash,199,209,1,Not recovered,0
+PV0109,57,Drug B,GI bleeding,252,254,0,Not recovered,0
+PV0110,88,Drug C,Dizziness,3,11,0,Recovering,0
+PV0111,52,Drug C,Hypoglycaemia,204,220,0,Recovering,0
+PV0112,41,Drug A,GI bleeding,33,47,0,Recovered,0
+PV0113,66,Drug B,Rash,161,179,0,Recovered,0
+PV0114,65,Drug A,Cough,127,143,0,Recovering,0
+PV0115,66,Drug B,Dizziness,284,288,0,Recovered,0
+PV0116,68,Drug C,Hypoglycaemia,228,245,1,Recovered,0
+PV0117,70,Drug B,Cough,52,53,0,Not recovered,0
+PV0118,88,Drug C,GI bleeding,9,11,1,Unknown,0
+PV0119,50,Drug D,Cough,59,68,0,Not recovered,0
+PV0120,59,Drug A,Cough,264,281,0,Not recovered,0
+PV0121,35,Drug A,GI bleeding,117,124,0,Unknown,0
+PV0122,39,Drug A,Hypoglycaemia,102,114,1,Recovering,0
+PV0123,26,Drug B,Dizziness,78,94,0,Recovered,0
+PV0124,35,Drug C,Headache,189,204,1,Recovered,0
+PV0125,78,Drug B,Hypoglycaemia,115,117,1,Recovering,0
+PV0126,78,Drug A,Dizziness,143,145,0,Unknown,0
+PV0127,89,Drug D,Dizziness,243,256,0,Recovering,0
+PV0128,21,Drug D,GI bleeding,330,342,0,Recovering,0
+PV0129,36,Drug B,Dizziness,15,23,0,Recovering,0
+PV0130,86,Drug B,Dizziness,6,17,0,Recovered,0
+PV0131,85,Drug C,Rash,26,34,0,Recovered,0
+PV0132,46,Drug C,Dizziness,230,246,0,Recovering,0
+PV0133,39,Drug B,Dizziness,104,110,0,Recovering,0
+PV0134,76,Drug C,Cough,203,215,0,Recovered,0
+PV0135,88,Drug B,Headache,5,19,0,Recovering,0
+PV0136,75,Drug C,Hypoglycaemia,270,271,0,Recovering,0
+PV0137,59,Drug B,Dizziness,277,286,0,Recovering,0
+PV0138,52,Drug C,Cough,127,141,1,Not recovered,0
+PV0139,89,Drug C,Cough,336,352,0,Not recovered,0
+PV0140,60,Drug B,Hypoglycaemia,198,208,1,Unknown,0
+PV0141,54,Drug C,Dizziness,278,295,0,Recovering,0
+PV0142,36,Drug A,Rash,103,121,1,Unknown,0
+PV0143,65,Drug C,GI bleeding,151,165,0,Recovering,0
+PV0144,45,Drug C,Hypoglycaemia,174,183,0,Not recovered,0
+PV0145,37,Drug B,Cough,225,235,0,Recovering,0
+PV0146,44,Drug C,Cough,238,241,0,Unknown,0
+PV0147,78,Drug B,GI bleeding,188,191,0,Recovering,0
+PV0148,68,Drug D,GI bleeding,287,293,0,Recovered,0
+PV0149,24,Drug B,GI bleeding,54,67,0,Recovering,0
+PV0150,67,Drug D,Hypoglycaemia,332,342,1,Recovering,0
+PV0151,27,Drug A,Cough,332,345,1,Recovering,0
+PV0152,46,Drug A,Headache,123,138,0,Recovering,0
+PV0153,68,Drug C,Dizziness,186,191,0,Not recovered,0
+PV0154,25,Drug D,Dizziness,55,67,0,Not recovered,0
+PV0155,32,Drug B,Hypoglycaemia,300,318,0,Recovered,0
+PV0156,78,Drug C,GI bleeding,29,39,0,Not recovered,0
+PV0157,28,Drug B,Hypoglycaemia,73,82,0,Recovering,0
+PV0158,31,Drug A,Hypoglycaemia,151,165,0,Recovered,0
+PV0159,52,Drug C,Cough,317,326,0,Recovered,0
+PV0160,84,Drug C,Dizziness,5,14,0,Recovering,0
+PV0161,54,Drug A,Dizziness,196,200,0,Recovered,0
+PV0162,25,Drug C,Rash,323,339,0,Recovered,0
+PV0163,84,Drug A,Hypoglycaemia,172,178,0,Not recovered,0
+PV0164,72,Drug A,Hypoglycaemia,253,266,0,Recovering,0
+PV0165,44,Drug A,GI bleeding,229,246,1,Recovered,0
+PV0166,46,Drug D,Dizziness,144,149,0,Recovered,0
+PV0167,89,Drug A,Rash,308,318,0,Unknown,0
+PV0168,66,Drug B,Headache,35,46,0,Not recovered,0
+PV0169,66,Drug A,Hypoglycaemia,116,127,0,Recovered,0
+PV0170,34,Drug D,Cough,180,181,0,Recovered,0
+PV0171,28,Drug B,Dizziness,91,108,0,Recovered,1
+PV0172,40,Drug A,Rash,119,121,0,Recovering,0
+PV0173,90,Drug A,Headache,227,233,1,Not recovered,0
+PV0174,49,Drug A,GI bleeding,161,167,0,Recovered,0
+PV0175,61,Drug D,Headache,221,229,0,Recovered,0
+PV0176,79,Drug D,Dizziness,300,312,0,Recovered,0
+PV0177,60,Drug B,Dizziness,35,48,0,Not recovered,0
+PV0178,74,Drug A,Headache,61,74,0,Unknown,0
+PV0179,85,Drug D,Rash,11,18,0,Unknown,0
+PV0180,84,Drug A,Hypoglycaemia,138,155,0,Recovering,0
+PV0181,75,Drug C,Rash,10,11,0,Recovering,0
+PV0182,63,Drug C,Dizziness,179,191,0,Not recovered,0
+PV0183,89,Drug B,GI bleeding,49,66,1,Not recovered,0
+PV0184,74,Drug A,Rash,29,36,0,Unknown,0
+PV0185,29,Drug C,Dizziness,64,81,0,Unknown,0
+PV0186,47,Drug D,Rash,91,98,0,Recovered,0
+PV0187,25,Drug D,Dizziness,258,262,0,Unknown,0
+PV0188,83,Drug B,Dizziness,290,305,0,Not recovered,0
+PV0189,47,Drug D,Cough,324,327,0,Not recovered,0
+PV0190,45,Drug C,Headache,71,80,0,Not recovered,0
+PV0191,76,Drug B,Cough,17,20,0,Recovering,0
+PV0192,51,Drug A,Headache,108,116,0,Not recovered,0
+PV0193,48,Drug B,GI bleeding,110,123,0,Recovered,0
+PV0194,25,Drug C,Hypoglycaemia,31,39,0,Recovering,0
+PV0195,29,Drug D,GI bleeding,103,107,0,Recovering,0
+PV0196,57,Drug C,Cough,295,308,0,Recovering,0
+PV0197,30,Drug A,Cough,37,52,0,Not recovered,0
+PV0198,18,Drug A,Cough,163,181,0,Unknown,0
+PV0199,53,Drug A,Hypoglycaemia,157,159,0,Recovered,0
+PV0200,28,Drug B,Rash,119,121,0,Unknown,0
+PV0201,68,Drug D,Dizziness,173,185,0,Recovered,0
+PV0202,81,Drug B,Hypoglycaemia,67,76,0,Not recovered,0
+PV0203,19,Drug D,Headache,265,282,0,Recovering,0
+PV0204,75,Drug A,GI bleeding,254,266,0,Recovered,0
+PV0205,66,Drug C,Rash,219,220,0,Unknown,0
+PV0206,25,Drug D,Cough,66,83,0,Not recovered,0
+PV0207,45,Drug A,GI bleeding,143,158,0,Recovering,0
+PV0208,53,Drug A,GI bleeding,157,159,0,Not recovered,0
+PV0209,68,Drug B,GI bleeding,39,41,0,Not recovered,0
+PV0210,42,Drug B,Cough,129,146,0,Not recovered,0
+PV0211,48,Drug D,Hypoglycaemia,224,239,0,Recovering,0
+PV0212,47,Drug C,Cough,227,245,0,Not recovered,0
+PV0213,37,Drug C,Hypoglycaemia,176,190,1,Unknown,0
+PV0214,43,Drug A,GI bleeding,295,310,0,Unknown,0
+PV0215,37,Drug C,Cough,131,143,0,Unknown,0
+PV0216,50,Drug A,Hypoglycaemia,139,146,0,Recovering,0
+PV0217,88,Drug C,Headache,273,283,1,Recovered,0
+PV0218,27,Drug B,Hypoglycaemia,305,311,0,Recovering,0
+PV0219,54,Drug D,Dizziness,200,209,0,Not recovered,0
+PV0220,53,Drug D,Hypoglycaemia,252,268,0,Recovering,0
+PV0221,31,Drug D,Hypoglycaemia,47,63,0,Recovering,0
+PV0222,39,Drug B,Dizziness,294,299,0,Recovering,0
+PV0223,26,Drug B,Dizziness,5,8,1,Unknown,0
+PV0224,48,Drug D,Rash,285,288,0,Not recovered,0
+PV0225,21,Drug C,Dizziness,30,37,0,Recovered,0
+PV0226,33,Drug A,Rash,235,242,0,Unknown,0
+PV0227,72,Drug B,Hypoglycaemia,77,84,0,Unknown,0
+PV0228,73,Drug D,Hypoglycaemia,68,81,0,Not recovered,0
+PV0229,83,Drug B,Dizziness,212,217,0,Recovering,0
+PV0230,52,Drug C,Cough,136,144,0,Not recovered,0
+PV0231,41,Drug C,Hypoglycaemia,240,244,0,Not recovered,0
+PV0232,82,Drug A,Headache,324,341,0,Recovered,0
+PV0233,54,Drug C,Dizziness,3,11,0,Not recovered,0
+PV0234,42,Drug B,Rash,318,323,0,Recovered,0
+PV0235,50,Drug C,Dizziness,152,164,0,Not recovered,0
+PV0236,60,Drug D,Headache,93,97,0,Not recovered,0
+PV0237,78,Drug B,Dizziness,338,347,0,Not recovered,0
+PV0238,34,Drug B,GI bleeding,314,323,0,Unknown,0
+PV0239,78,Drug B,Hypoglycaemia,216,218,0,Recovered,0
+PV0240,28,Drug B,Headache,106,113,0,Recovered,0

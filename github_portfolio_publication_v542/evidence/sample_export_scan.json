@@ -1,0 +1,6 @@
+{
+  "scanned_text_files": 15,
+  "finding_count": 0,
+  "findings": [],
+  "caveat": "Heuristic only: can miss secrets/PHI and flag synthetic examples. Manual review remains mandatory."
+}

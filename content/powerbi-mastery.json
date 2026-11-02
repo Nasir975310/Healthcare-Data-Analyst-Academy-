@@ -1,0 +1,200 @@
+{
+  "version": "2.3.0",
+  "title": "Power BI and Healthcare Dashboard Laboratory",
+  "description": "Eight applied labs for dimensional modelling, DAX, KPI design, Power Query ETL, dashboard construction, validation and client handoff.",
+  "challenges": [
+    {
+      "id": "PBI01",
+      "title": "Power BI Desktop setup and data import",
+      "level": "Foundation",
+      "time": "30\u201340 min",
+      "scenario": "You receive a folder of synthetic hospital encounter and medication-order extracts. Prepare a reproducible Power BI project.",
+      "tasks": [
+        "Install/open Power BI Desktop on Windows.",
+        "Import all supplied pbi_*.csv files from assignments/data.",
+        "Set data types explicitly, especially dates, whole numbers, decimals and text keys.",
+        "Rename queries to match the supplied model specification.",
+        "Disable load for temporary staging queries if you create any."
+      ],
+      "starter": "Files: pbi_dim_date.csv, pbi_dim_department.csv, pbi_dim_payer.csv, pbi_dim_drug.csv, pbi_dim_encounter.csv, pbi_fact_encounter_metrics.csv, pbi_fact_medication_orders.csv.",
+      "hint": "Use Get Data > Text/CSV or Folder. Avoid relying on automatic type detection for IDs and dates. Keep encounter IDs as text.",
+      "solution": "Import each CSV, verify preview, set types, and load. Use `powerbi/import_fact_medication_orders.m` as a reference for the order fact query; adapt the path. Import the remaining files with corresponding types from the model documentation.",
+      "expected": "Eight model CSVs. FactEncounterMetrics has 80 rows; FactMedicationOrders has 151 rows; DimEncounter has 80 rows; each role-playing date dimension has 90 rows.",
+      "acceptance": [
+        "All seven files imported.",
+        "IDs retained as text.",
+        "Dates and numeric fields typed correctly.",
+        "Query names match the relationship specification."
+      ]
+    },
+    {
+      "id": "PBI02",
+      "title": "Star schema and relationship modelling",
+      "level": "Intermediate",
+      "time": "40\u201355 min",
+      "scenario": "The report must slice encounter and order measures by department, payer, date and drug without multiplying counts.",
+      "tasks": [
+        "Create the relationships in MODEL_RELATIONSHIPS.md.",
+        "Use single-direction filtering unless a documented need exists.",
+        "Check unique keys on every one-side table.",
+        "Verify department filters flow to encounter and medication-order views through DimEncounter.",
+        "Do not directly join the two fact tables."
+      ],
+      "starter": "DimDepartment \u2192 DimEncounter\nDimPayer \u2192 DimEncounter\nDimEncounter \u2192 FactEncounterMetrics (1:1)\nDimEncounter \u2192 FactMedicationOrders (1:many)\nDimDrug \u2192 FactMedicationOrders\nDimDate \u2192 DimEncounter (admission_date)\nDimDate \u2192 FactMedicationOrders (order_date)",
+      "hint": "Use separate role-playing date dimensions for admission date and order date. Otherwise an active direct date path and an indirect path through DimEncounter can create ambiguity.",
+      "solution": "Follow the supplied relationship specification, including separate DimDate and DimOrderDate tables. Validate uniqueness with Power Query Group By or DAX counts. Keep relationships single-direction and test each date slicer separately.",
+      "expected": "DimEncounter has 80 unique encounter IDs. FactEncounterMetrics has 80 rows. FactMedicationOrders has 151 rows, including one orphan encounter reference. Do not delete the orphan before reporting it.",
+      "acceptance": [
+        "No unintended many-to-many relationship.",
+        "No direct fact-to-fact join.",
+        "Department and payer filters propagate as intended.",
+        "Orphan record remains detectable."
+      ]
+    },
+    {
+      "id": "PBI03",
+      "title": "DAX measures and filter context",
+      "level": "Intermediate",
+      "time": "45\u201360 min",
+      "scenario": "A manager needs reusable measures that respond correctly to report filters.",
+      "tasks": [
+        "Create Encounter Count using DISTINCTCOUNT.",
+        "Create Mean Length of Stay using AVERAGE.",
+        "Create supplied readmission flag count and rate using an encounter-level denominator.",
+        "Create Medication Order Count and Ordered Quantity.",
+        "Create synthetic order value and data-quality exception measures."
+      ],
+      "starter": "Encounter Count = DISTINCTCOUNT(DimEncounter[encounter_id])\nMean Length of Stay (days) = AVERAGE(FactEncounterMetrics[length_of_stay_days])\nSupplied Readmission Flag Rate = DIVIDE([Supplied Readmission Flags], COUNTROWS(FactEncounterMetrics))\nMedication Order Count = COUNTROWS(FactMedicationOrders)",
+      "hint": "A measure is evaluated in filter context. Avoid calculated columns for values that should recalculate with slicers. Use DIVIDE to avoid unhandled divide-by-zero errors.",
+      "solution": "Use the full measure set in `powerbi/measures.dax`. Keep the supplied readmission flag rate label exact; do not present it as a validated readmission rate. The denominator is rows in the encounter metric fact table in the current filter context.",
+      "expected": "Unfiltered controls: 80 encounters; mean LOS 3.875 days; supplied flag count 7; supplied flag proportion 8.75%; 151 order rows; ordered quantity 3,038; synthetic order value INR 100,279.75.",
+      "acceptance": [
+        "Measures return correct unfiltered values.",
+        "Department/payer/date slicers change numerator and denominator consistently.",
+        "No rate is computed from medication-order rows.",
+        "Measure names and units are clear."
+      ]
+    },
+    {
+      "id": "PBI04",
+      "title": "Healthcare KPI definitions and visual selection",
+      "level": "Intermediate",
+      "time": "35\u201345 min",
+      "scenario": "Design a report for hospital operations and pharmacy stakeholders with distinct analytical questions.",
+      "tasks": [
+        "Use REPORT_BLUEPRINT.md to define KPI cards and chart purposes.",
+        "Choose a bar chart for department comparison and monthly trend for encounter volume.",
+        "Label supplied readmission flag as a data field, not validated outcome.",
+        "Distinguish order count, ordered quantity and synthetic order value.",
+        "Write metric definitions and denominators in a report glossary."
+      ],
+      "starter": "KPI dictionary:\nEncounter Count = distinct encounter IDs\nMean LOS = average supplied length_of_stay_days\nSupplied flag proportion = supplied flag sum / encounter metric rows\nMedication Order Count = order rows\nOrdered Quantity = sum(quantity)\nSynthetic Order Value = sum(quantity \u00d7 synthetic unit cost)",
+      "hint": "KPI design starts with the decision and population, not the chart type. Keep count, rate, average and currency measures distinct.",
+      "solution": "Use five headline cards on page 1, department comparison and admission-month trend below. Put medication utilisation on page 2 and quality exceptions on page 3. Include units, denominator, source grain and caveat beside each relevant metric.",
+      "expected": "A report with three pages, consistent definitions and no duplicated views that add no new analytical value.",
+      "acceptance": [
+        "Each KPI has definition, unit and denominator.",
+        "Visual type fits the comparison.",
+        "Caveats are visible and precise.",
+        "No unsupported targets or clinical thresholds."
+      ]
+    },
+    {
+      "id": "PBI05",
+      "title": "Power Query ETL and refresh controls",
+      "level": "Advanced",
+      "time": "45\u201360 min",
+      "scenario": "A monthly extract must be repeatably transformed before reporting.",
+      "tasks": [
+        "Create staging queries for each CSV.",
+        "Apply explicit data types and text cleaning.",
+        "Flag missing unit cost, blank therapeutic class and orphan encounter references.",
+        "Preserve source data and create transformed output queries.",
+        "Document refresh path and expected source file structure."
+      ],
+      "starter": "Reference: `powerbi/import_fact_medication_orders.m`.\nPower Query pattern: Source \u2192 Promoted Headers \u2192 Changed Type \u2192 Clean Text \u2192 Quality Flags \u2192 Output.",
+      "hint": "Keep raw source query separate from transformed output. Do not silently replace missing cost with zero or delete orphan records.",
+      "solution": "Adapt the supplied M script to your path and query names. Build matching typed queries for the other six CSVs. Add flags as separate columns and reconcile row counts before and after transformation. The M script is a reference and was not executed in Power BI Desktop during package QA.",
+      "expected": "151 medication order rows; one missing unit cost; one blank therapeutic class; one orphan encounter reference. Keep the 151-row grain unless an explicit business rule justifies deduplication.",
+      "acceptance": [
+        "Transformations are repeatable.",
+        "Raw source remains intact.",
+        "Exceptions are flagged rather than hidden.",
+        "Refresh succeeds after path is updated."
+      ]
+    },
+    {
+      "id": "PBI06",
+      "title": "Build the three-page healthcare report",
+      "level": "Advanced",
+      "time": "60\u201390 min",
+      "scenario": "Deliver an executive overview, medication utilisation analysis and data-quality page.",
+      "tasks": [
+        "Build Page 1 with encounter KPIs, department comparisons and admission-month trend.",
+        "Build Page 2 with order volume, therapeutic class and status/location breakdowns.",
+        "Build Page 3 with quality exception cards and an exception table.",
+        "Add page-specific slicers and a reset-filters bookmark.",
+        "Apply the supplied HDA Clinical Blue theme and report blueprint."
+      ],
+      "starter": "Theme: `powerbi/hda_powerbi_theme.json`\nLayout: `powerbi/REPORT_BLUEPRINT.md`",
+      "hint": "Do not overload the executive page. Keep medication order measures separate from encounter measures. Use synced slicers only when the filter meaning is identical across pages.",
+      "solution": "Follow the three-page blueprint. Use cards only for the most important top-line measures. Use sorted horizontal bars for therapeutic classes and department comparisons. Place exception records in a table on the data-quality page.",
+      "expected": "Three usable pages with clearly labelled filters, units, source date range and data limitations.",
+      "acceptance": [
+        "Three distinct report pages.",
+        "Visuals respond to relevant slicers.",
+        "No duplicated or misleading totals.",
+        "Theme, accessibility and layout reviewed."
+      ]
+    },
+    {
+      "id": "PBI07",
+      "title": "Validate totals, relationships and report behaviour",
+      "level": "Advanced",
+      "time": "40\u201355 min",
+      "scenario": "Before a report is shared, a reviewer checks whether the visuals are numerically and semantically trustworthy.",
+      "tasks": [
+        "Reconcile headline measures with model_reference_checks.json.",
+        "Test department, payer, date and drug filters.",
+        "Check that order counts do not multiply when encounter attributes are added.",
+        "Inspect orphan and missing-value exceptions.",
+        "Test blank handling, totals, drill-through and reset filters."
+      ],
+      "starter": "Reference file: `powerbi/model_reference_checks.json`\nControls: 80 encounters; 151 orders; 3,038 ordered quantity; INR 100,279.75 synthetic order value; 1 orphan; 1 missing cost; 1 blank class.",
+      "hint": "A correct grand total does not prove every filtered subtotal is correct. Test a few individual departments and confirm the numerator and denominator grain.",
+      "solution": "Compare all unfiltered controls first. Then filter one department and compare filtered order records against the source using encounter keys. Validate date filters separately for admission date and order date. Investigate any duplicated rows or ambiguous filter paths.",
+      "expected": "A completed QA log with exact reconciliation results, filter tests and unresolved limitations.",
+      "acceptance": [
+        "Headline values reconcile.",
+        "Filtered results checked at correct grain.",
+        "No silent row loss or duplication.",
+        "QA log records actual tests and failures."
+      ]
+    },
+    {
+      "id": "PBI08",
+      "title": "Timed client brief and professional handoff",
+      "level": "Professional",
+      "time": "90 min timed + 30 min review",
+      "scenario": "A remote hospital client requests a three-page monthly operations and medication utilisation report, with a short written explanation.",
+      "tasks": [
+        "Build the report from supplied files in 90 minutes.",
+        "Provide a one-page executive summary with key measures and limitations.",
+        "Provide a metric dictionary and source-to-report lineage.",
+        "Include refresh instructions, known issues and QA evidence.",
+        "Package source extracts, PBIX, PDF export and handoff note."
+      ],
+      "starter": "100-point rubric: Metric accuracy 25; model quality 20; visual hierarchy 15; filter behaviour 10; data-quality controls 10; accessibility/usability 5; handoff/reproducibility 15.",
+      "hint": "A professional handoff explains what the report can and cannot support. Do not describe a supplied synthetic flag as a validated clinical outcome.",
+      "solution": "Deliver the PBIX and PDF, a one-page summary, metric dictionary, relationship diagram, refresh steps and QA log. State that the supplied readmission flag is not independently validated, medication orders do not prove administration or adherence, and costs are synthetic. Target \u226580/100; any incorrect grain or denominator requires remediation.",
+      "expected": "A reproducible three-page report with a 100-point self-assessment and explicit data limitations.",
+      "acceptance": [
+        "PBIX opens and refreshes on another Windows machine after paths are set.",
+        "PDF matches the PBIX report state.",
+        "Metric definitions and denominators included.",
+        "QA and limitations disclosed.",
+        "No real patient-identifiable information included."
+      ]
+    }
+  ]
+}

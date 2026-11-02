@@ -1,0 +1,75 @@
+{
+  "severity_defaults": {
+    "missing_required": "error",
+    "duplicate_key": "error",
+    "invalid_type": "error",
+    "out_of_range": "warning",
+    "unknown_category": "error",
+    "invalid_date": "error",
+    "temporal_logic": "error",
+    "cross_field": "warning"
+  },
+  "date_columns": [
+    "encounter_date",
+    "index_date",
+    "follow_up_end"
+  ],
+  "unique_columns": [
+    "encounter_id"
+  ],
+  "required_columns": [
+    "participant_id",
+    "encounter_id",
+    "encounter_date"
+  ],
+  "numeric_ranges": {
+    "age_years": {
+      "min": 0,
+      "max": 120
+    },
+    "systolic_bp_mmhg": {
+      "min": 40,
+      "max": 300
+    },
+    "diastolic_bp_mmhg": {
+      "min": 20,
+      "max": 200
+    }
+  },
+  "categorical_values": {
+    "exposure_group": [
+      "exposed",
+      "unexposed"
+    ],
+    "primary_outcome": [
+      "true",
+      "false",
+      "1",
+      "0",
+      "yes",
+      "no"
+    ]
+  },
+  "cross_field_rules": [
+    {
+      "id": "diastolic_not_above_systolic",
+      "when_columns": [
+        "systolic_bp_mmhg",
+        "diastolic_bp_mmhg"
+      ],
+      "rule": "diastolic_lte_systolic",
+      "severity": "warning",
+      "message": "Diastolic value exceeds systolic value; review measurement, units and mapping."
+    }
+  ],
+  "temporal_rules": [
+    {
+      "id": "followup_after_index",
+      "start_column": "index_date",
+      "end_column": "follow_up_end",
+      "rule": "end_on_or_after_start",
+      "severity": "error",
+      "message": "Follow-up end precedes index date."
+    }
+  ]
+}

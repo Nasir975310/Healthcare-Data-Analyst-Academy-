@@ -1,0 +1,16 @@
+{
+  ".github/workflows/python-tests.yml": "0e9d0188480203e555f9ef7d458fea9056faac0d88d6ab998308385f843f8d4e",
+  ".gitignore": "25cb6b23f237b4fb5f9500dc6856784a5b866d00ddeb3c7b74ccbabe3f3eb79e",
+  "CASE_STUDY.md": "30a8eb72cd53cfcc5718abc5f4560066264fd8325c20e9c5559b37ec6b94a240",
+  "QA_REPORT.md": "5fe13ee326f18a00f13029b4548d541c54527ce661056b6d0736ebfd277a4ecb",
+  "README.md": "8a79794d86a30a0d26f187588a680be44e7be4edf940c93b75335a9293e66a25",
+  "data/synthetic_outpatient_encounters.csv": "1c2070ab069d114186fb592ab963340d83179a47bee364e2125b53497d2b86a2",
+  "docs/data_dictionary.md": "e71de507d774bfcf0496f0b179e11947515661c7b576147635c319473095e426",
+  "docs/metric_contract.md": "75171c0fc6b4cc063b6b21fa99c7e9b298f9d2bc0fba5a6583eacb7647a9e250",
+  "docs/reference_results.md": "2b59d223cb50e0f38af22f362823b1280b35f5e40393f60d05e689dfa95f0fdf",
+  "docs/reproduction_and_review.md": "9ab69c4bdd83dbeea6bc9941dd40ea1c18e95e60ad2aad2aa7ada8d3c2b5b2c7",
+  "scripts/repository_preflight.py": "a4cd541de0a7613f1ef93a303311494ac8be3486861260d02b40e9cd7496975b",
+  "sql/analysis.sql": "ef56a66da603475aecaa6353fdf8f7c1b58e1d7cdbc263d1c34674d7d486da2f",
+  "src/run_project.py": "7269af1911c540ee12e33f5023e8a37f9614b780a10315ece97e961e933e4943",
+  "tests/test_project.py": "49a39c6de000b057010c981c18b8a99cfe66119bd59ec27cf9723c0882e5ee4c"
+}

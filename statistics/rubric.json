@@ -1,0 +1,49 @@
+{
+  "total_points": 100,
+  "pass_threshold": 80,
+  "criteria": [
+    {
+      "criterion": "Research question, population, estimand and design limitations defined",
+      "points": 15
+    },
+    {
+      "criterion": "Cohort profile, missingness and data-quality checks",
+      "points": 10
+    },
+    {
+      "criterion": "Correct primary effect estimate and confidence interval",
+      "points": 15
+    },
+    {
+      "criterion": "Appropriate model specification and diagnostics",
+      "points": 15
+    },
+    {
+      "criterion": "Diagnostic/performance metrics interpreted correctly",
+      "points": 10
+    },
+    {
+      "criterion": "Time-to-event/censoring concepts correctly handled",
+      "points": 10
+    },
+    {
+      "criterion": "Reproducible code, environment and provenance",
+      "points": 10
+    },
+    {
+      "criterion": "Clinical interpretation and communication",
+      "points": 10
+    },
+    {
+      "criterion": "Professional organisation and PHI-safe practice",
+      "points": 5
+    }
+  ],
+  "critical_errors": [
+    "Claiming causality from the synthetic observational comparison",
+    "Calling the simulated event a validated clinical endpoint",
+    "Using post-outcome information as predictors",
+    "Confusing hazard ratio with risk ratio",
+    "Reporting PPV/NPV without stating prevalence/context"
+  ]
+}

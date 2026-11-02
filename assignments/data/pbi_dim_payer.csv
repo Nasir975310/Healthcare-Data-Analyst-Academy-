@@ -1,0 +1,4 @@
+payer_key,payer_type
+PRIVATE,Private
+PUBLIC,Public
+SELF_PAY,Self-pay

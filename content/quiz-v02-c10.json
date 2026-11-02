@@ -1,0 +1,62 @@
+[
+  {
+    "id": "q1",
+    "q": "What does 1NF generally require?",
+    "options": [
+      "Atomic values at the declared grain",
+      "No primary keys",
+      "All data in one table",
+      "No NULL values"
+    ],
+    "correct": 0,
+    "why": "1NF avoids repeating groups and multi-valued fields."
+  },
+  {
+    "id": "q2",
+    "q": "What is an update anomaly?",
+    "options": [
+      "The same fact must be changed in multiple duplicated rows",
+      "A query is slow",
+      "A key is unique",
+      "A transaction commits"
+    ],
+    "correct": 0,
+    "why": "Redundant copies can become inconsistent."
+  },
+  {
+    "id": "q3",
+    "q": "Where should department names normally live in a normalized design?",
+    "options": [
+      "A department reference table",
+      "Repeated in every encounter row",
+      "In a comma-separated field",
+      "Only in a report"
+    ],
+    "correct": 0,
+    "why": "Store each department fact once and reference its key."
+  },
+  {
+    "id": "q4",
+    "q": "Why use a junction table?",
+    "options": [
+      "To represent a many-to-many relationship",
+      "To replace every primary key",
+      "To store charts",
+      "To encrypt data"
+    ],
+    "correct": 0,
+    "why": "A junction table records associations between entities."
+  },
+  {
+    "id": "q5",
+    "q": "Does normalization alone define a valid readmission metric?",
+    "options": [
+      "No; metric definitions and governance are still required",
+      "Yes, automatically",
+      "Only if SQL uses DISTINCT",
+      "Only with an index"
+    ],
+    "correct": 0,
+    "why": "Schema structure cannot define clinical or operational rules."
+  }
+]

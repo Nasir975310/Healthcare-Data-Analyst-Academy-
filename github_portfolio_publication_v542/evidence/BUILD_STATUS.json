@@ -1,0 +1,9 @@
+{
+  "release": "5.42.0",
+  "local_export_builder_tests": "pending",
+  "actual_github_publication": false,
+  "license_selected": false,
+  "live_github_actions": false,
+  "fresh_clone_test": false,
+  "manual_privacy_review": false
+}

@@ -1,0 +1,70 @@
+[
+  {
+    "version": "0.1.0",
+    "note": "Initial synthetic training baseline",
+    "created_utc": "2026-11-02T09:43:56.756315+00:00",
+    "file_count": 12,
+    "files": [
+      {
+        "path": ".gitignore",
+        "sha256": "fbae8ab6cbaa4e153b37374cbf47800fe5ee871d2db49bc707a80e896624b85c",
+        "bytes": 111
+      },
+      {
+        "path": "README.md",
+        "sha256": "890d618b874172223917d9c30bba3b7cf964a10c9136b9b02398d7b5f7616348",
+        "bytes": 276
+      },
+      {
+        "path": "docs/PROJECT_PLAN.md",
+        "sha256": "bf4ff10c33a468addd9820d13885dc0844be11ff257d7a4366c6acdf2304f0ea",
+        "bytes": 500
+      },
+      {
+        "path": "governance/activity_log.jsonl",
+        "sha256": "e16fa1b6a3cb898f01ed9c5d7525baee2f958402049c43f6909fa03498896f40",
+        "bytes": 186
+      },
+      {
+        "path": "governance/change_requests.json",
+        "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "bytes": 2
+      },
+      {
+        "path": "governance/review_feedback.json",
+        "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "bytes": 2
+      },
+      {
+        "path": "governance/tasks.json",
+        "sha256": "36bcf9017823221a8999781d87e0c2ca91d8fbc989e822af3c15bae4b57af034",
+        "bytes": 980
+      },
+      {
+        "path": "project.json",
+        "sha256": "1e6f8af42ee7bca63297bd5658f417a2f12b98a5c7d20777062059761841f843",
+        "bytes": 205
+      },
+      {
+        "path": "src/python/analysis.py",
+        "sha256": "a3ccd72c3e5d8a2b4b304c5e05ddd522c726423963db9ccc4cb2b400d1a8d311",
+        "bytes": 252
+      },
+      {
+        "path": "src/r/analysis.R",
+        "sha256": "e51fdda94165d7cd2470c61c9f0d8acee40c5971baebe575032f8e39993b44c8",
+        "bytes": 89
+      },
+      {
+        "path": "src/sql/analysis.sql",
+        "sha256": "6cdca1067218d655fb966c4bbba0ba4527b407d9e2c906405311a4aa335a91ce",
+        "bytes": 196
+      },
+      {
+        "path": "tests/README.md",
+        "sha256": "4b420f528e147fb79166c38f8f51ed05d6dac55376ea90b6d5e8bc44c5d6f247",
+        "bytes": 139
+      }
+    ]
+  }
+]

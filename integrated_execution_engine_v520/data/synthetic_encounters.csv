@@ -1,0 +1,6 @@
+encounter_id,service_line,readmission_30d,los_days
+SYN001,Medicine,false,3
+SYN002,Cardiology,true,8
+SYN003,Medicine,false,2
+SYN004,Orthopedics,false,5
+SYN005,Cardiology,true,7

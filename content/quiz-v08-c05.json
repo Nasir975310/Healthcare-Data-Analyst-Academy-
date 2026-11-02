@@ -1,0 +1,74 @@
+[
+  {
+    "id": "q1",
+    "q": "Why explain data grain before a SQL join?",
+    "options": [
+      "To select colours",
+      "To detect row multiplication and inflated aggregates",
+      "To avoid writing SQL",
+      "To skip validation"
+    ],
+    "correct": 1,
+    "why": "Joining tables at incompatible grains can multiply rows."
+  },
+  {
+    "id": "q2",
+    "q": "What does PPV depend on?",
+    "options": [
+      "Sensitivity only",
+      "Specificity only",
+      "Prevalence as well as sensitivity and specificity",
+      "Sample ID format"
+    ],
+    "correct": 2,
+    "why": "Positive predictive value changes with prevalence."
+  },
+  {
+    "id": "q3",
+    "q": "What should be done after a technical test?",
+    "options": [
+      "Submit without checking",
+      "Validate counts, assumptions and outputs",
+      "Hide uncertainty",
+      "Optimise only for speed"
+    ],
+    "correct": 1,
+    "why": "Quality checks are part of the task."
+  },
+  {
+    "id": "q4",
+    "q": "What is a good interview habit?",
+    "options": [
+      "Guess silently",
+      "Explain assumptions and reasoning",
+      "Claim all results are causal",
+      "Avoid clarifying questions"
+    ],
+    "correct": 1,
+    "why": "Clear reasoning helps interviewers assess judgement."
+  },
+  {
+    "id": "q5",
+    "q": "What is a key principle in 'Technical interview preparation'?",
+    "options": [
+      "Prioritise appearance over accuracy",
+      "Use evidence, clear scope and honest limitations",
+      "Invent achievements",
+      "Ignore privacy"
+    ],
+    "correct": 1,
+    "why": "Professional practice depends on evidence, scope and integrity."
+  },
+  {
+    "id": "q6",
+    "q": "How should practical work be completed across operating systems?",
+    "options": [
+      "Assume all commands are identical",
+      "Use separate Linux and PowerShell instructions and verify equivalent outcomes",
+      "Skip one OS",
+      "Copy absolute paths between systems"
+    ],
+    "correct": 1,
+    "why": "OS-specific instructions are required for reproducibility."
+  }
+]

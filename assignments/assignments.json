@@ -1,0 +1,269 @@
+[
+  {
+    "id": "SIM-01",
+    "title": "Hospital operations monthly review",
+    "track": "Excel and reporting",
+    "level": "Beginner–Intermediate",
+    "time": "3–4 hours",
+    "role": "Junior Healthcare Data Analyst",
+    "scenario": "The hospital operations manager needs a concise review of activity for January–March 2026. They want to understand encounter volume, length of stay and 30-day readmission flags by department. A separate pharmacy lead wants a count of medication orders by therapeutic class and order status.",
+    "business_question": "What do the supplied synthetic records show about activity, length of stay, recorded 30-day readmission flags and medication-order mix during the stated period?",
+    "data": [
+      "assignments/data/synthetic_encounters.csv — 80 encounter records; one row per encounter.",
+      "assignments/data/synthetic_medication_orders.csv — 150 medication-order records; one row per order.",
+      "assignments/starter/healthcare_operations_assignment.xlsx — Excel workbook with raw data sheets and task instructions."
+    ],
+    "requirements": [
+      "Keep the raw sheets unchanged; perform analysis in new sheets or PivotTables.",
+      "Calculate encounter count, mean length of stay, number flagged for 30-day readmission and the proportion flagged.",
+      "Summarise encounter count and mean length of stay by department.",
+      "Summarise medication-order counts by therapeutic class and order status.",
+      "Create one management-facing chart and a short written interpretation.",
+      "State the denominator, period, unit of analysis and at least three limitations."
+    ],
+    "steps": [
+      "Open the starter workbook in Excel, LibreOffice Calc or ONLYOFFICE. Confirm both data sheets have the expected row counts.",
+      "Convert or retain each range as a structured table. Check date columns are dates and numeric columns are numeric.",
+      "Create a KPI area. Use COUNTA for encounter IDs, AVERAGE for length of stay, COUNTIF for readmission flags and divide flagged encounters by total eligible encounters.",
+      "Build a department summary using a PivotTable or equivalent SUM/COUNT/AVERAGE formulas.",
+      "Build a medication class by order status summary. Do not call orders administrations or dispensed medicines.",
+      "Choose a chart that answers a defined management question. Add a descriptive title, axis labels and reporting period.",
+      "Write a 150–250 word management note with findings, definitions, limitations and a recommended next validation step."
+    ],
+    "linux": {
+      "tools": "LibreOffice Calc or ONLYOFFICE; CSV import",
+      "commands": [
+        "cd ~/healthcare_data_analyst_academy",
+        "libreoffice assignments/starter/healthcare_operations_assignment.xlsx"
+      ]
+    },
+    "windows": {
+      "tools": "Microsoft Excel, LibreOffice Calc or ONLYOFFICE",
+      "commands": [
+        "Set-Location $HOME\\healthcare_data_analyst_academy",
+        "Start-Process .\\assignments\\starter\\healthcare_operations_assignment.xlsx"
+      ]
+    },
+    "deliverables": [
+      "Completed workbook with formulas/PivotTables and chart.",
+      "One-page management note (PDF or DOCX).",
+      "QA note listing row counts, date range, duplicate-key check and metric definitions."
+    ],
+    "rubric": [
+      [
+        "Metric correctness and denominators",
+        25
+      ],
+      [
+        "Pivot summaries and correct grain",
+        20
+      ],
+      [
+        "Chart clarity and decision relevance",
+        15
+      ],
+      [
+        "QA and validation",
+        20
+      ],
+      [
+        "Interpretation and limitations",
+        20
+      ]
+    ],
+    "acceptance": [
+      "Encounter source has 80 records and unique encounter IDs.",
+      "Medication-order source has 150 records and unique order IDs.",
+      "Readmission proportion uses encounter-level denominator and is labelled as a recorded flag, not a causal outcome.",
+      "Order counts are labelled as orders, not administrations or dispensing events.",
+      "All reported totals reconcile to the supplied source data."
+    ],
+    "pitfalls": [
+      "Do not average patient age or LOS across order rows after a one-to-many join; that would weight encounters by number of orders.",
+      "A 30-day readmission flag in a synthetic file is not a validated readmission measure.",
+      "Do not infer medication adherence, administration or clinical appropriateness from an order record."
+    ],
+    "portfolio": "A polished workbook, short management note, metric dictionary and QA log. Remove any personal file paths and ensure only synthetic data are included."
+  },
+  {
+    "id": "SIM-02",
+    "title": "SQL prescribing and encounter analysis",
+    "track": "SQL and databases",
+    "level": "Intermediate",
+    "time": "3–5 hours",
+    "role": "Healthcare SQL Analyst",
+    "scenario": "A pharmacy analytics team asks for a reproducible extract showing encounter volume by department and medication-order mix. They need class-level order counts and a cross-check of whether a join between encounters and orders changes the unit of analysis.",
+    "business_question": "How many encounters occurred by department, and how are medication orders distributed by therapeutic class and order status?",
+    "data": [
+      "assignments/data/synthetic_encounters.csv",
+      "assignments/data/synthetic_medication_orders.csv",
+      "assignments/starter/analysis_starter.sql"
+    ],
+    "requirements": [
+      "Load both CSV files into SQLite using DBeaver or sqlite tooling.",
+      "Document table grain, primary key and foreign key relationship.",
+      "Write queries for row counts, distinct encounters, encounter count by department, order count by class and status, and encounters with at least one order.",
+      "Use a LEFT JOIN for encounter coverage and demonstrate how one-to-many joins affect row counts.",
+      "Use a CTE or subquery to aggregate orders before joining to encounter-level summaries.",
+      "Save executable SQL and a short findings note."
+    ],
+    "steps": [
+      "Create a local SQLite database named healthcare_simulation.db.",
+      "Import each CSV as a table named encounters and medication_orders; preserve column names.",
+      "Run the starter script's schema checks and confirm key uniqueness.",
+      "Write each required query separately and compare count(*) with count(distinct encounter_id).",
+      "Build a CTE that aggregates medication orders per encounter before joining to the encounter table.",
+      "Save final SQL in your own solution file and export the result tables as CSV."
+    ],
+    "linux": {
+      "tools": "DBeaver Community or sqlite3",
+      "commands": [
+        "cd ~/healthcare_data_analyst_academy",
+        "dbeaver",
+        "sqlite3 assignments/healthcare_simulation.db"
+      ]
+    },
+    "windows": {
+      "tools": "DBeaver Community or SQLite command-line tools",
+      "commands": [
+        "Set-Location $HOME\\healthcare_data_analyst_academy",
+        "Start-Process dbeaver",
+        "sqlite3 .\\assignments\\healthcare_simulation.db"
+      ]
+    },
+    "deliverables": [
+      "SQL script with comments and named queries.",
+      "CSV exports of summary tables.",
+      "Data dictionary and grain/relationship note.",
+      "Short findings and limitations memo."
+    ],
+    "rubric": [
+      [
+        "SQL correctness and reproducibility",
+        30
+      ],
+      [
+        "Grain, joins and cardinality reasoning",
+        25
+      ],
+      [
+        "Metric definitions and denominators",
+        20
+      ],
+      [
+        "Validation and reconciliation",
+        15
+      ],
+      [
+        "Readable documentation",
+        10
+      ]
+    ],
+    "acceptance": [
+      "Both source tables load with 80 and 150 records respectively.",
+      "Encounter IDs are unique in encounters and order IDs are unique in medication_orders.",
+      "A join result with multiple order rows is not described as encounter count.",
+      "Encounter coverage is calculated from distinct encounter IDs.",
+      "SQL outputs reconcile with Excel summaries from SIM-01."
+    ],
+    "pitfalls": [
+      "A one-to-many join duplicates encounter attributes across order rows.",
+      "COUNT(*) after joining does not count unique encounters.",
+      "LEFT JOIN filters placed in WHERE may unintentionally convert the result into an inner join.",
+      "A medication order is not proof of administration, dispensing or adherence."
+    ],
+    "portfolio": "Publish a README, commented SQL, result extracts generated from synthetic data, and a short explanation of join cardinality and validation."
+  },
+  {
+    "id": "SIM-03",
+    "title": "Client request to final analytical handoff",
+    "track": "End-to-end client simulation",
+    "level": "Intermediate",
+    "time": "1–2 days",
+    "role": "Remote Healthcare Data Analyst",
+    "scenario": "A remote quality-improvement coordinator sends an incomplete request: 'Please analyse readmissions and medication patterns and send something useful by Friday.' You must clarify the scope, define the metrics, identify what the supplied data can support, produce a reproducible analysis and hand off findings professionally.",
+    "business_question": "What can be responsibly answered from the supplied synthetic encounter and medication-order files, and what additional data or definitions are required before making a quality-improvement claim?",
+    "data": [
+      "The synthetic encounter and medication-order CSV files from SIM-01 and SIM-02.",
+      "A blank request clarification template and handoff template in assignments/starter/."
+    ],
+    "requirements": [
+      "Write five to eight clarification questions before analysis.",
+      "Create a concise analysis plan with population, period, unit of analysis, outcomes and exclusions.",
+      "Use Excel or SQL to create validated descriptive summaries.",
+      "Create a one-page dashboard or report with a metric dictionary.",
+      "Prepare an email-style handoff stating findings, limitations, unresolved questions and next steps.",
+      "Create a reproducibility README so another analyst can rerun the work."
+    ],
+    "steps": [
+      "Clarify whether readmission means all-cause unplanned inpatient readmission within 30 days, which index discharges qualify, and how transfers/deaths are handled.",
+      "Ask whether medication patterns mean orders, administrations, dispensing or reconciliation records; the supplied data only contain orders.",
+      "Define the population and period; confirm whether all 80 encounters are eligible and whether follow-up is complete.",
+      "Write a data assessment: grain, keys, missingness, duplicates, date validity and data lineage.",
+      "Perform descriptive summaries and independently reconcile at least two key metrics.",
+      "Prepare a decision-oriented report; do not use causal language or claim medication effectiveness.",
+      "Draft a client handoff with what is known, what is not known, caveats, and an actionable request for additional data."
+    ],
+    "linux": {
+      "tools": "VS Code, Python, DBeaver, LibreOffice/ONLYOFFICE",
+      "commands": [
+        "cd ~/healthcare_data_analyst_academy",
+        "code assignments",
+        "dbeaver",
+        "libreoffice assignments/starter/healthcare_operations_assignment.xlsx"
+      ]
+    },
+    "windows": {
+      "tools": "VS Code, Python, DBeaver, Excel/ONLYOFFICE",
+      "commands": [
+        "Set-Location $HOME\\healthcare_data_analyst_academy",
+        "code .\\assignments",
+        "Start-Process dbeaver",
+        "Start-Process .\\assignments\\starter\\healthcare_operations_assignment.xlsx"
+      ]
+    },
+    "deliverables": [
+      "Scope and clarification note.",
+      "Analysis plan and metric dictionary.",
+      "Reproducible SQL or workbook and output extracts.",
+      "One-page report/dashboard.",
+      "Client handoff note and README."
+    ],
+    "rubric": [
+      [
+        "Scope clarification and requirement management",
+        20
+      ],
+      [
+        "Data assessment and metric design",
+        20
+      ],
+      [
+        "Analytical correctness and reproducibility",
+        25
+      ],
+      [
+        "Communication and visual design",
+        15
+      ],
+      [
+        "Limitations, privacy and professional judgement",
+        20
+      ]
+    ],
+    "acceptance": [
+      "The analysis explicitly separates encounters from medication orders.",
+      "Readmission definition and follow-up completeness are identified as unresolved unless supplied by the requester.",
+      "Medication orders are never described as administrations or adherence.",
+      "At least two key outputs are reconciled independently.",
+      "The handoff contains limitations, unresolved questions and next steps."
+    ],
+    "pitfalls": [
+      "The brief is intentionally ambiguous; do not silently invent definitions.",
+      "The provided readmission flag is synthetic and its derivation is not validated.",
+      "Do not imply medication exposure caused readmission.",
+      "Do not send a dashboard without explaining the metrics and their limitations."
+    ],
+    "portfolio": "This is the strongest early portfolio piece: include the original brief, clarification questions, analysis plan, code/workbook, final report and handoff. Show the workflow, not just screenshots."
+  }
+]

@@ -1,0 +1,83 @@
+{
+  "generated_at_utc": "2026-11-02T11:20:32Z",
+  "python": "3.13.5",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "checks": {
+    "unit_tests": {
+      "command": "/opt/pyvenv/bin/python -m unittest discover -s /mnt/data/hda_v535_work/healthcare_data_analyst_academy/healthcare_analytics_deployment_evidence_v534/tests -v",
+      "return_code": 0,
+      "stdout_tail": "",
+      "stderr_tail": " line 32861, in bring_to_front\n  File \"/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/rpc/remote.py\", line 764, in __call__\n  File \"/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/rpc/client.py\", line 175, in call\nartifact_tool.rpc.client.RemoteError: Element ordering requires an owning element collection.\ntest_compose_is_loopback_bound (test_deployment.DeploymentTests.test_compose_is_loopback_bound) ... ok\ntest_evidence_templates_are_pending (test_deployment.DeploymentTests.test_evidence_templates_are_pending) ... ok\ntest_postgres_curates_orphans_as_exceptions (test_deployment.DeploymentTests.test_postgres_curates_orphans_as_exceptions) ... ok\ntest_raw_mount_is_read_only (test_deployment.DeploymentTests.test_raw_mount_is_read_only) ... ok\ntest_release_gate_requires_external_evidence (test_deployment.DeploymentTests.test_release_gate_requires_external_evidence) ... ok\n\n----------------------------------------------------------------------\nRan 5 tests in 0.001s\n\nOK\n"
+    },
+    "practicum_validator": {
+      "command": "/opt/pyvenv/bin/python /mnt/data/hda_v535_work/healthcare_data_analyst_academy/healthcare_analytics_production_validation_v533/scripts/validate_practicum.py",
+      "return_code": 0,
+      "stdout_tail": "{\n  \"module\": \"v5.33 production validation\",\n  \"checks\": [\n    {\n      \"check\": \"deliverables_present\",\n      \"status\": \"PASS\",\n      \"severity\": \"CRITICAL\",\n      \"detail\": \"All expected deliverables found\"\n    },\n    {\n      \"check\": \"row_reconciliation\",\n      \"status\": \"PASS\",\n      \"severity\": \"CRITICAL\",\n      \"detail\": \"raw=91, accepted=90, rejected=1\"\n    },\n    {\n      \"check\": \"expected_orphan_exception\",\n      \"status\": \"PASS\",\n      \"severity\": \"CRITICAL\",\n      \"detail\": \"Rejected encounters reported: 1\"\n    },\n    {\n      \"check\": \"monthly_vs_curated\",\n      \"status\": \"PASS\",\n      \"severity\": \"CRITICAL\",\n      \"detail\": \"monthly total=90; curated=90\"\n    },\n    {\n      \"check\": \"type_vs_curated\",\n      \"status\": \"PASS\",\n      \"severity\": \"CRITICAL\",\n      \"detail\": \"type total=90; curated=90\"\n    },\n    {\n      \"check\": \"medication_extract_nonempty\",\n      \"status\": \"PASS\",\n      \"severity\": \"CRITICAL\",\n      \"detail\": \"rows=4\"\n    },\n    {\n      \"check\": \"source_manifest_nonempty\",\n      \"status\": \"PASS\",\n      \"severity\": \"CRITICAL\",\n      \"detail\": \"Manifest contains source provenance\"\n    },\n    {\n      \"check\": \"quality_report_nonempty\",\n      \"status\": \"PASS\",\n      \"severity\": \"CRITICAL\",\n      \"detail\": \"Quality report is present\"\n    },\n    {\n      \"check\": \"privacy_safe_scope\",\n      \"status\": \"PASS\",\n      \"severity\": \"WARN\",\n      \"detail\": \"Synthetic teaching data only; inspect exports before publication\"\n    }\n  ],\n  \"passed\": 9,\n  \"failed\": 0\n}\n",
+      "stderr_tail": "k (most recent call last):\n  File \"/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/patches/warm_spreadsheet_runtime_on_startup.py\", line 26, in warm_spreadsheet_runtime_on_startup\n  File \"/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py\", line 785, in warm_spreadsheet_runtime\n  File \"/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py\", line 718, in _warm_feature_flows\n  File \"/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py\", line 509, in _warm_drawing_and_image_flows\n  File \"/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/generated/interface/models.py\", line 32861, in bring_to_front\n  File \"/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/rpc/remote.py\", line 764, in __call__\n  File \"/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/rpc/client.py\", line 175, in call\nartifact_tool.rpc.client.RemoteError: Element ordering requires an owning element collection.\n"
+    },
+    "sqlite_benchmark": {
+      "command": "/opt/pyvenv/bin/python /mnt/data/hda_v535_work/healthcare_data_analyst_academy/healthcare_analytics_production_validation_v533/scripts/benchmark_sqlite.py",
+      "return_code": 0,
+      "stdout_tail": "[\n  {\n    \"test\": \"table_counts\",\n    \"seconds\": 0.000396,\n    \"rows\": 5,\n    \"error\": null\n  },\n  {\n    \"test\": \"integrity\",\n    \"seconds\": 0.000225,\n    \"rows\": 1,\n    \"error\": null\n  },\n  {\n    \"test\": \"encounter_aggregation\",\n    \"seconds\": 1.7e-05,\n    \"rows\": 1,\n    \"error\": null\n  }\n]\n",
+      "stderr_tail": "k (most recent call last):\n  File \"/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/patches/warm_spreadsheet_runtime_on_startup.py\", line 26, in warm_spreadsheet_runtime_on_startup\n  File \"/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py\", line 785, in warm_spreadsheet_runtime\n  File \"/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py\", line 718, in _warm_feature_flows\n  File \"/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py\", line 509, in _warm_drawing_and_image_flows\n  File \"/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/generated/interface/models.py\", line 32861, in bring_to_front\n  File \"/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/rpc/remote.py\", line 764, in __call__\n  File \"/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/rpc/client.py\", line 175, in call\nartifact_tool.rpc.client.RemoteError: Element ordering requires an owning element collection.\n"
+    }
+  },
+  "external_integrations": {
+    "postgresql": "PENDING_UNTIL_DOCKER_WORKFLOW_RUNS",
+    "power_bi": "PENDING_EXTERNAL_DESKTOP_EVIDENCE",
+    "github": "PENDING_USER_REPOSITORY_PUSH"
+  },
+  "source_and_deliverable_hashes": [
+    {
+      "path": "healthcare_analytics_real_world_practicum_v532/data/raw/encounters.csv",
+      "bytes": 4002,
+      "sha256": "f006befeb31383000b220d6f195e7cbc34ef9c8b8ea3752c82e1bbc0d7df57e5"
+    },
+    {
+      "path": "healthcare_analytics_real_world_practicum_v532/data/raw/medications.csv",
+      "bytes": 4697,
+      "sha256": "e9ee3072ed585a8b58a2faba9dd3f65c727607bcf476353bf65a44eb4230c45c"
+    },
+    {
+      "path": "healthcare_analytics_real_world_practicum_v532/data/raw/observations.csv",
+      "bytes": 6006,
+      "sha256": "e564a99b497329c46dc726619fdfa745b39d5f4e4f97758e9791f19d26532779"
+    },
+    {
+      "path": "healthcare_analytics_real_world_practicum_v532/data/raw/patients.csv",
+      "bytes": 1084,
+      "sha256": "0f0bae10b39ed3482a9031810c45af5812eda4bb92c514195e9bcf0775685323"
+    },
+    {
+      "path": "healthcare_analytics_real_world_practicum_v532/deliverables/data_quality_report.json",
+      "bytes": 774,
+      "sha256": "7356a77333da6b634696c53e1c6dfb348790307b3b44568c5e917dddc7110623"
+    },
+    {
+      "path": "healthcare_analytics_real_world_practicum_v532/deliverables/encounters_by_type.csv",
+      "bytes": 70,
+      "sha256": "f8c357e6008b38dc56459c9bf5b846b47d83278e8dbe3818cd440f68ee0d0aa1"
+    },
+    {
+      "path": "healthcare_analytics_real_world_practicum_v532/deliverables/kpi_summary.json",
+      "bytes": 252,
+      "sha256": "c5b58f02b0be664d40fe0b00819056eb83d368f6d55575e351f67ff193894e82"
+    },
+    {
+      "path": "healthcare_analytics_real_world_practicum_v532/deliverables/medication_class_utilization.csv",
+      "bytes": 65,
+      "sha256": "b9c4c9c17f465d35b8a923feb25a275424519844bb321a12c82809ff5aab3462"
+    },
+    {
+      "path": "healthcare_analytics_real_world_practicum_v532/deliverables/monthly_encounters.csv",
+      "bytes": 129,
+      "sha256": "0e5ebb448c097637da252ac18f1f6d862d38851f1bd082a9f2d7ce13688dda45"
+    },
+    {
+      "path": "healthcare_analytics_real_world_practicum_v532/deliverables/source_manifest.json",
+      "bytes": 355,
+      "sha256": "ee3b9f8fc86f202ff3a46759d73b9b263666988d6152567a5fe95e1b7212820c"
+    }
+  ],
+  "local_status": "PASS"
+}

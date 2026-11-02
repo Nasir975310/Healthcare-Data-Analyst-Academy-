@@ -1,0 +1,74 @@
+[
+  {
+    "id": "SQL-ADV-01",
+    "title": "Table grain and key audit",
+    "task": "Profile row counts, distinct keys and duplicate keys across all three fact tables.",
+    "hint": "Compare COUNT(*) with COUNT(DISTINCT key)."
+  },
+  {
+    "id": "SQL-ADV-02",
+    "title": "Orphan anti-join",
+    "task": "Find medication orders whose encounter key is absent.",
+    "hint": "Use LEFT JOIN ... IS NULL or NOT EXISTS."
+  },
+  {
+    "id": "SQL-ADV-03",
+    "title": "Safe fact aggregation",
+    "task": "Produce department encounter and order metrics without fan-out.",
+    "hint": "Aggregate encounter and order facts independently before joining."
+  },
+  {
+    "id": "SQL-ADV-04",
+    "title": "Window ranking",
+    "task": "Rank departments by encounter volume and explain ties.",
+    "hint": "Use DENSE_RANK() OVER."
+  },
+  {
+    "id": "SQL-ADV-05",
+    "title": "First encounter cohort",
+    "task": "Select first encounter per patient and calculate supplied flag proportion.",
+    "hint": "Use ROW_NUMBER() with deterministic tie-break."
+  },
+  {
+    "id": "SQL-ADV-06",
+    "title": "Monthly utilisation",
+    "task": "Produce monthly orders, encounters with orders and quantity totals.",
+    "hint": "Use month grain and COUNT(DISTINCT encounter_id)."
+  },
+  {
+    "id": "SQL-ADV-07",
+    "title": "Latest clinical observation",
+    "task": "Find latest SBP per encounter and summarise it.",
+    "hint": "Use ROW_NUMBER() by encounter ordered by date and stable ID."
+  },
+  {
+    "id": "SQL-ADV-08",
+    "title": "Data-quality audit",
+    "task": "Count non-positive quantity, missing cost and missing class.",
+    "hint": "Use CASE expressions and explicit null handling."
+  },
+  {
+    "id": "SQL-ADV-09",
+    "title": "Index and query plan",
+    "task": "Inspect lookup plan before/after composite index.",
+    "hint": "Use EXPLAIN QUERY PLAN; describe observed plan, not assumed speed."
+  },
+  {
+    "id": "SQL-ADV-10",
+    "title": "Cross-domain cohort",
+    "task": "Count encounters with both SBP observation and medication order.",
+    "hint": "Use distinct encounter key sets to avoid multiplication."
+  },
+  {
+    "id": "SQL-ADV-11",
+    "title": "Pre-aggregated join",
+    "task": "Join encounter-level mean SBP and order count safely.",
+    "hint": "Aggregate each source to encounter grain before joining."
+  },
+  {
+    "id": "SQL-ADV-12",
+    "title": "Metric contract",
+    "task": "Write numerator, denominator, grain, exclusions and caveats for a readmission-like metric.",
+    "hint": "Treat supplied flag as unvalidated synthetic field; do not claim validated readmission."
+  }
+]

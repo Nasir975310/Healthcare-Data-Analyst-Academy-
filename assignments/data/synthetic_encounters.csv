@@ -1,0 +1,81 @@
+encounter_id,patient_id,admission_date,discharge_date,age_years,department,payer_type,length_of_stay_days,discharge_disposition,readmission_30d_flag
+ENC0001,SYN0001,2026-03-14,2026-03-23,38,General Medicine,Self-pay,9,Home,0
+ENC0002,SYN0002,2026-02-21,2026-02-27,84,Emergency,Public,6,Against medical advice,0
+ENC0003,SYN0003,2026-01-24,2026-01-28,74,Emergency,Public,4,Against medical advice,0
+ENC0004,SYN0004,2026-03-27,2026-03-29,82,General Medicine,Public,2,Against medical advice,0
+ENC0005,SYN0005,2026-01-10,2026-01-11,18,General Medicine,Self-pay,1,Against medical advice,0
+ENC0006,SYN0006,2026-01-09,2026-01-13,73,Emergency,Self-pay,4,Home,0
+ENC0007,SYN0007,2026-03-28,2026-03-28,30,Neurology,Self-pay,0,Against medical advice,0
+ENC0008,SYN0008,2026-02-25,2026-03-01,33,Neurology,Self-pay,4,Home,0
+ENC0009,SYN0009,2026-02-04,2026-02-08,20,Orthopaedics,Self-pay,4,Against medical advice,0
+ENC0010,SYN0010,2026-02-14,2026-02-19,61,Emergency,Private,5,Home,0
+ENC0011,SYN0011,2026-02-21,2026-02-27,52,Neurology,Private,6,Home,1
+ENC0012,SYN0012,2026-01-21,2026-01-26,51,Cardiology,Private,5,Transfer,0
+ENC0013,SYN0013,2026-03-05,2026-03-07,29,General Medicine,Public,2,Home,0
+ENC0014,SYN0014,2026-01-23,2026-01-27,60,Cardiology,Private,4,Transfer,0
+ENC0015,SYN0015,2026-01-06,2026-01-08,55,Emergency,Self-pay,2,Transfer,0
+ENC0016,SYN0016,2026-03-02,2026-03-08,73,Neurology,Private,6,Against medical advice,0
+ENC0017,SYN0017,2026-03-04,2026-03-04,82,General Medicine,Private,0,Home,0
+ENC0018,SYN0018,2026-01-10,2026-01-16,20,Orthopaedics,Public,6,Transfer,0
+ENC0019,SYN0019,2026-02-13,2026-02-15,66,Orthopaedics,Public,2,Home,0
+ENC0020,SYN0020,2026-01-23,2026-01-26,18,Emergency,Self-pay,3,Transfer,0
+ENC0021,SYN0021,2026-03-16,2026-03-20,63,Neurology,Public,4,Against medical advice,0
+ENC0022,SYN0022,2026-03-24,2026-03-26,61,Orthopaedics,Private,2,Against medical advice,0
+ENC0023,SYN0023,2026-02-09,2026-02-13,69,Emergency,Private,4,Against medical advice,0
+ENC0024,SYN0024,2026-03-23,2026-03-26,57,Neurology,Private,3,Home,0
+ENC0025,SYN0025,2026-03-23,2026-03-26,43,General Medicine,Public,3,Transfer,0
+ENC0026,SYN0026,2026-03-22,2026-03-28,62,General Medicine,Private,6,Against medical advice,0
+ENC0027,SYN0027,2026-03-31,2026-04-02,73,General Medicine,Public,2,Against medical advice,1
+ENC0028,SYN0028,2026-02-06,2026-02-09,39,Emergency,Public,3,Against medical advice,0
+ENC0029,SYN0029,2026-03-20,2026-03-22,75,Cardiology,Private,2,Transfer,0
+ENC0030,SYN0030,2026-02-26,2026-03-07,45,Orthopaedics,Self-pay,9,Against medical advice,0
+ENC0031,SYN0031,2026-03-31,2026-04-03,72,General Medicine,Public,3,Transfer,0
+ENC0032,SYN0032,2026-03-10,2026-03-15,89,General Medicine,Self-pay,5,Transfer,0
+ENC0033,SYN0033,2026-01-17,2026-01-22,60,Cardiology,Self-pay,5,Transfer,0
+ENC0034,SYN0034,2026-03-27,2026-04-02,51,Neurology,Private,6,Against medical advice,0
+ENC0035,SYN0035,2026-01-25,2026-01-28,83,Cardiology,Self-pay,3,Against medical advice,0
+ENC0036,SYN0036,2026-02-13,2026-02-20,60,Cardiology,Public,7,Against medical advice,0
+ENC0037,SYN0037,2026-02-17,2026-02-22,74,Cardiology,Self-pay,5,Against medical advice,0
+ENC0038,SYN0038,2026-02-14,2026-02-17,31,Emergency,Public,3,Transfer,0
+ENC0039,SYN0039,2026-03-31,2026-04-01,18,Cardiology,Public,1,Home,0
+ENC0040,SYN0040,2026-01-16,2026-01-16,23,Orthopaedics,Private,0,Home,0
+ENC0041,SYN0041,2026-01-31,2026-02-01,19,Emergency,Public,1,Transfer,0
+ENC0042,SYN0042,2026-02-09,2026-02-13,42,Cardiology,Private,4,Home,0
+ENC0043,SYN0043,2026-01-25,2026-02-02,80,General Medicine,Private,8,Against medical advice,1
+ENC0044,SYN0044,2026-01-19,2026-01-23,74,Cardiology,Public,4,Home,0
+ENC0045,SYN0045,2026-02-05,2026-02-11,71,Emergency,Public,6,Home,0
+ENC0046,SYN0046,2026-02-18,2026-02-22,73,Emergency,Private,4,Against medical advice,0
+ENC0047,SYN0047,2026-02-25,2026-02-28,56,General Medicine,Public,3,Against medical advice,0
+ENC0048,SYN0048,2026-01-04,2026-01-10,55,Cardiology,Public,6,Against medical advice,0
+ENC0049,SYN0049,2026-02-01,2026-02-03,73,Neurology,Self-pay,2,Transfer,0
+ENC0050,SYN0050,2026-01-17,2026-01-22,71,Cardiology,Private,5,Home,0
+ENC0051,SYN0051,2026-01-03,2026-01-07,86,Orthopaedics,Self-pay,4,Home,0
+ENC0052,SYN0052,2026-02-15,2026-02-17,54,Emergency,Private,2,Home,0
+ENC0053,SYN0053,2026-01-12,2026-01-12,32,General Medicine,Private,0,Against medical advice,0
+ENC0054,SYN0054,2026-01-22,2026-01-24,45,Emergency,Self-pay,2,Against medical advice,0
+ENC0055,SYN0055,2026-03-11,2026-03-13,66,Emergency,Public,2,Against medical advice,1
+ENC0056,SYN0056,2026-02-13,2026-02-17,73,Emergency,Self-pay,4,Against medical advice,0
+ENC0057,SYN0057,2026-01-18,2026-01-23,38,Emergency,Public,5,Transfer,0
+ENC0058,SYN0058,2026-01-08,2026-01-14,32,Emergency,Private,6,Transfer,0
+ENC0059,SYN0059,2026-01-27,2026-01-31,84,General Medicine,Private,4,Home,0
+ENC0060,SYN0060,2026-03-07,2026-03-14,73,Orthopaedics,Private,7,Transfer,0
+ENC0061,SYN0061,2026-03-21,2026-03-27,70,Neurology,Private,6,Home,0
+ENC0062,SYN0062,2026-02-17,2026-02-21,43,Emergency,Public,4,Transfer,0
+ENC0063,SYN0063,2026-03-14,2026-03-16,43,Orthopaedics,Self-pay,2,Home,0
+ENC0064,SYN0064,2026-03-21,2026-03-24,55,Neurology,Private,3,Home,0
+ENC0065,SYN0065,2026-01-28,2026-02-02,74,Neurology,Self-pay,5,Transfer,0
+ENC0066,SYN0066,2026-03-25,2026-03-29,29,Orthopaedics,Private,4,Against medical advice,0
+ENC0067,SYN0067,2026-01-02,2026-01-08,73,Orthopaedics,Public,6,Against medical advice,0
+ENC0068,SYN0068,2026-03-01,2026-03-07,27,Cardiology,Public,6,Transfer,0
+ENC0069,SYN0069,2026-01-18,2026-01-22,73,Orthopaedics,Public,4,Home,0
+ENC0070,SYN0070,2026-02-17,2026-02-19,69,Emergency,Self-pay,2,Home,1
+ENC0071,SYN0071,2026-03-08,2026-03-12,64,Orthopaedics,Self-pay,4,Transfer,1
+ENC0072,SYN0072,2026-03-01,2026-03-06,37,Emergency,Private,5,Transfer,0
+ENC0073,SYN0073,2026-03-27,2026-04-02,34,General Medicine,Public,6,Home,0
+ENC0074,SYN0074,2026-01-28,2026-02-02,64,Orthopaedics,Private,5,Against medical advice,0
+ENC0075,SYN0075,2026-03-23,2026-03-26,46,Neurology,Self-pay,3,Home,1
+ENC0076,SYN0076,2026-03-14,2026-03-18,23,Emergency,Private,4,Transfer,0
+ENC0077,SYN0077,2026-01-14,2026-01-14,64,Neurology,Public,0,Against medical advice,0
+ENC0078,SYN0078,2026-03-06,2026-03-10,26,Emergency,Public,4,Home,0
+ENC0079,SYN0079,2026-02-13,2026-02-18,82,Emergency,Public,5,Transfer,0
+ENC0080,SYN0080,2026-01-18,2026-01-20,80,Cardiology,Self-pay,2,Transfer,0

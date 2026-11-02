@@ -1,0 +1,57 @@
+{
+  "release": "5.22.0",
+  "v522_tests": {
+    "passed": 6,
+    "failed": 0
+  },
+  "synthetic_demo": {
+    "rows": 20,
+    "figures": 8,
+    "output_validation": true
+  },
+  "publication_handoff": {
+    "completed": true,
+    "files_copied": 13
+  },
+  "regression_tests": {
+    "v519": {
+      "passed": 7
+    },
+    "v518": {
+      "passed": 5
+    },
+    "v517": {
+      "passed": 5
+    },
+    "v515": {
+      "passed": 5
+    },
+    "v521": {
+      "status": "not counted; exceeded execution window"
+    },
+    "v520": {
+      "status": "not counted; exceeded execution window"
+    },
+    "v516": {
+      "status": "not counted; exceeded execution window"
+    }
+  },
+  "repository_checks": {
+    "python_files_compiled": 107,
+    "python_errors": 0,
+    "json_files_parsed": 249,
+    "json_errors": 0,
+    "javascript_files_checked": 53,
+    "javascript_errors": 0,
+    "html_ids": 178,
+    "duplicate_ids": 0,
+    "missing_script_assets": 0
+  },
+  "limitations": [
+    "Apparent ROC only; no predictive validation",
+    "Descriptive Kaplan-Meier only; no CI/log-rank/Cox/competing risk",
+    "Forest plot is display-only; no pooling",
+    "Coefficient plot displays supplied values; no model fitting",
+    "Table 1 descriptive only; no automatic p-values or equivalence claims"
+  ]
+}

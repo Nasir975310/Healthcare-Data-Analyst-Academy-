@@ -1,0 +1,9 @@
+skill,current_evidence,evidence_level,next_demonstration,proof_artifact,status
+Excel,Academic thesis analysis and workbook use,Used in academic work,Build a clean pivot/report exercise with documented formulas,Excel workbook and QA notes,To strengthen
+SQL,SQL analysis in synthetic outpatient portfolio,Portfolio demonstrated,"Add joins, CTEs, window functions and NULL/duplicate exercises",SQL scripts and test cases,In progress
+Python,Synthetic ETL and reporting projects,Portfolio demonstrated,"Explain functions, exceptions, data structures and tests independently",Repository and walkthrough,In progress
+Statistics,Academic research and synthetic statistical analysis,Academic + portfolio,"Explain test selection, assumptions, effect size and limitations",Analysis report,In progress
+Power BI,Model/DAX specification and dashboard learning,Learning/specification,Build and validate a working PBIX with documented measures,PBIX and screenshots/report,Not yet evidenced
+Clinical data quality,Thesis and synthetic data-quality rules,Academic + portfolio,"Create validation rules, query log and reconciliation example",Validation report,In progress
+Git/GitHub,Local repository preparation and CI workflow configuration,Learning/portfolio prep,Publish reviewed repository and verify remote CI/clean clone,Public repo URL and CI run,Pending
+Communication,Written project documentation and case-study report,Portfolio demonstrated,Deliver a five-minute walkthrough and stakeholder summary,Recorded/demo walkthrough,To practice

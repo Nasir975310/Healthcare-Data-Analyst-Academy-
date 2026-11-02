@@ -1,0 +1,12 @@
+.venv/
+venv/
+__pycache__/
+.pytest_cache/
+.env
+*.pem
+*.key
+data/raw/
+data/patient_level/
+*.sqlite
+*.db
+outputs/

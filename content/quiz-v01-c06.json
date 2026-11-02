@@ -1,0 +1,62 @@
+[
+  {
+    "id": "q1",
+    "q": "Which statement correctly distinguishes a proportion from a rate?",
+    "options": [
+      "A proportion's numerator is part of its denominator; a rate includes an exposure or time dimension",
+      "A rate is always a percentage",
+      "A proportion must include person-time",
+      "They are interchangeable"
+    ],
+    "correct": 0,
+    "why": "A proportion is part/whole. A rate relates events to exposure, often person-time."
+  },
+  {
+    "id": "q2",
+    "q": "A completion percentage rises from 40% to 50%. What is the absolute change?",
+    "options": [
+      "10% relative change",
+      "10 percentage points",
+      "25 percentage points",
+      "50 percentage points"
+    ],
+    "correct": 1,
+    "why": "50% − 40% = 10 percentage points. Relative change is 25%."
+  },
+  {
+    "id": "q3",
+    "q": "Which unit remains after multiplying 2 hours by 60 minutes/hour?",
+    "options": [
+      "Hours",
+      "Hours squared",
+      "Minutes",
+      "No unit"
+    ],
+    "correct": 2,
+    "why": "Hours cancel, leaving minutes."
+  },
+  {
+    "id": "q4",
+    "q": "A rate is 6 events per 1,000 patient-days across 5,000 patient-days. How many events does this represent?",
+    "options": [
+      "3",
+      "30",
+      "300",
+      "6,000"
+    ],
+    "correct": 1,
+    "why": "6 × 5,000 / 1,000 = 30 events."
+  },
+  {
+    "id": "q5",
+    "q": "Why should analysts retain precision until the final result?",
+    "options": [
+      "To make results look more significant",
+      "To avoid cumulative rounding error",
+      "To eliminate missing data",
+      "To increase sample size"
+    ],
+    "correct": 1,
+    "why": "Intermediate rounding can accumulate error, especially across chained calculations."
+  }
+]

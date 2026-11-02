@@ -1,0 +1,115 @@
+{
+  "version": "1.0.0",
+  "title": "Healthcare Data Warehousing, Interoperability and Clinical Data Standards",
+  "description": "Twelve progressive challenges connecting hospital source systems, HL7, FHIR, terminology, warehouse modelling, governance and integration.",
+  "challenges": [
+    {
+      "id": "INT-01",
+      "title": "Healthcare data warehouse architecture",
+      "scenario": "Distinguish operational systems, integration layers, staging, standardised clinical stores, dimensional marts and semantic/reporting layers.",
+      "tasks": "Draw a source-to-report architecture for an outpatient medication utilisation dashboard. Identify data owners, refresh cadence, lineage, access boundaries and failure handling.",
+      "method": "Use architecture.md and the Mermaid diagram. Identify OLTP vs OLAP workloads, fact grain, conformed dimensions, slowly changing dimensions and data lineage.",
+      "acceptance": "Architecture identifies source, ingestion, staging, standardisation, warehouse/mart, BI and governance controls; each layer has a clear responsibility.",
+      "safety": "Do not assume a warehouse is a direct copy of the EHR. Retain provenance and source meaning."
+    },
+    {
+      "id": "INT-02",
+      "title": "HL7 v2 message fundamentals",
+      "scenario": "Read HL7 v2 segments, fields, components, delimiters, message types and control identifiers.",
+      "tasks": "Parse a synthetic ADT^A01 admission message and identify MSH, EVN, PID, PV1 and message control ID. Explain acknowledgement and interface error handling.",
+      "method": "Use the supplied HL7 v2 fixture and annotated walkthrough. Identify delimiters and segment boundaries.",
+      "acceptance": "Correctly identify message type, sending/receiving application, patient identifier, visit identifier and admission event.",
+      "safety": "HL7 v2 is event/message oriented; local implementation guides and profiles govern actual field use."
+    },
+    {
+      "id": "INT-03",
+      "title": "FHIR resources and REST basics",
+      "scenario": "Understand FHIR resources, resource identity, references, bundles, profiles, extensions and REST interactions.",
+      "tasks": "Inspect Patient, Encounter, MedicationRequest and Observation JSON examples. Trace references and explain why resource IDs differ from business identifiers.",
+      "method": "Use FHIR R4 JSON fixtures and resource-reference map. Validate required fields conceptually and inspect Bundle entries.",
+      "acceptance": "Resource types and references are correctly interpreted; no assumption that a resource is a flat table row.",
+      "safety": "FHIR version and implementation guide must be known. The training examples are simplified and not a conformance claim."
+    },
+    {
+      "id": "INT-04",
+      "title": "FHIR search, bundles and pagination",
+      "scenario": "Read FHIR search parameters, Bundle.total, next links, paging and server-side filtering.",
+      "tasks": "Design a paginated extraction plan for encounters and observations. Preserve full next URLs, rate limits, retries and provenance.",
+      "method": "Use API extraction design worksheet and mock Bundle fixtures. Contrast searchset and transaction bundles.",
+      "acceptance": "Extraction plan handles pagination, duplicate resources, continuation tokens, failures and safe re-runs.",
+      "safety": "Never assume one Bundle contains all matches. Follow server-provided paging links unchanged."
+    },
+    {
+      "id": "INT-05",
+      "title": "Clinical terminology systems",
+      "scenario": "Differentiate ICD-10, SNOMED CT, LOINC, RxNorm and ATC and identify their appropriate use cases.",
+      "tasks": "Map diagnosis concepts, laboratory observations, medication concepts and drug classes to the correct terminology family. Explain code, display, system URI and version.",
+      "method": "Use terminology-reference.md and the local sample mapping table. Inspect code system URI and concept status.",
+      "acceptance": "Each code is associated with the correct system and purpose; local labels are not presented as standard codes.",
+      "safety": "Terminology licensing, jurisdictional editions, release versions and value sets matter. Do not invent mappings."
+    },
+    {
+      "id": "INT-06",
+      "title": "Terminology mapping and value sets",
+      "scenario": "Create a governed crosswalk with source concept, target concept, mapping relationship, confidence, reviewer and version.",
+      "tasks": "Review supplied sample crosswalk entries. Flag unverified local drug labels and ambiguous laboratory labels; separate exact, broader, narrower and unmapped cases.",
+      "method": "Use mapping/crosswalk-template.csv and mapping-review-guide.md.",
+      "acceptance": "All mappings carry provenance, version, status and review trail; unmapped records remain visible rather than silently forced.",
+      "safety": "The supplied ATC/LOINC examples are teaching fixtures and require verification against authoritative terminology releases before clinical use."
+    },
+    {
+      "id": "INT-07",
+      "title": "Clinical data integration and reconciliation",
+      "scenario": "Integrate patients, encounters, medication requests and observations while preserving keys, timestamps, status and source lineage.",
+      "tasks": "Build a curated dataset from synthetic CSV source tables. Check referential integrity, duplicate identifiers, date chronology and terminology coverage.",
+      "method": "Run scripts/standardise_clinical_data.py and inspect the generated curated CSVs and quality report.",
+      "acceptance": "Expected source counts reconcile: 80 patients, 120 encounters, 180 orders and 220 observations; all reference checks are documented.",
+      "safety": "Do not merge patients on name or date of birth alone. This synthetic lab uses source IDs only."
+    },
+    {
+      "id": "INT-08",
+      "title": "FHIR-to-warehouse mapping",
+      "scenario": "Translate FHIR resources into staging and dimensional tables with defined grain and reference handling.",
+      "tasks": "Design fact tables for encounters, medication requests and observations; create patient, date, department and terminology dimensions.",
+      "method": "Use sql/warehouse_schema.sql and fhir-to-warehouse-map.md. Load the curated outputs into SQLite for the exercise.",
+      "acceptance": "Each fact table has a declared grain and stable source key; dimensions are conformed and duplicate facts are prevented.",
+      "safety": "FHIR resource cardinality and lifecycle updates may require upsert/version handling, not simple append-only loads."
+    },
+    {
+      "id": "INT-09",
+      "title": "Interoperability security and governance",
+      "scenario": "Apply least privilege, minimum necessary access, audit logging, transport security and data minimisation.",
+      "tasks": "Write a data access and integration risk checklist for a remote analytics workflow. Identify PHI exposure points, secrets, logs and export controls.",
+      "method": "Use governance-checklist.md and compare a safe vs unsafe integration design.",
+      "acceptance": "Checklist covers authentication, authorisation, encryption, audit, retention, consent/legal basis as applicable, and incident response.",
+      "safety": "Legal obligations depend on jurisdiction and organisation. Training notes are not legal advice."
+    },
+    {
+      "id": "INT-10",
+      "title": "Data quality and semantic validation",
+      "scenario": "Validate units, value sets, status, dates, references, duplicate resources, terminology system URIs and missingness.",
+      "tasks": "Run quality checks and classify issues as structural, referential, temporal, semantic or workflow-related. Prioritise by impact and likelihood.",
+      "method": "Use supplied intentionally imperfect fixture rows and quality script outputs.",
+      "acceptance": "Report quantifies each issue type, retains rejected/quarantined rows and documents corrective action.",
+      "safety": "A value can be syntactically valid but clinically implausible; automated checks do not replace domain review."
+    },
+    {
+      "id": "INT-11",
+      "title": "End-to-end hospital interoperability project",
+      "scenario": "Build a small reproducible source-to-warehouse pipeline from synthetic source files and FHIR-like resources.",
+      "tasks": "Ingest, standardise, map, validate, load curated tables, produce audit outputs and document the lineage from source row to analytics fact.",
+      "method": "Follow project-brief.md and run scripts/standardise_clinical_data.py; load schema into SQLite.",
+      "acceptance": "All source counts, curated counts, quality findings and rejected records reconcile; project has README, data dictionary and limitations.",
+      "safety": "This is a local educational pipeline, not a certified FHIR server or production interface engine."
+    },
+    {
+      "id": "INT-12",
+      "title": "Timed interoperability client simulation",
+      "scenario": "Respond to a hospital request to integrate medication and laboratory information for an analytics dashboard.",
+      "tasks": "In 120 minutes, deliver a source inventory, mapping decisions, data quality summary, curated extracts, warehouse schema and client handoff.",
+      "method": "Use client-brief.md and rubric.json. Include assumptions, unresolved terminology, operational risks and acceptance evidence.",
+      "acceptance": "Minimum 80/100 with no critical identity, terminology, grain or PHI-safety errors.",
+      "safety": "Do not claim full FHIR or HL7 conformance based on these simplified fixtures."
+    }
+  ]
+}

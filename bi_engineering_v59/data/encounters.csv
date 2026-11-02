@@ -1,0 +1,21 @@
+encounter_id,patient_id,department_id,department_name,encounter_date,encounter_type,discharge_status,los_days,charge_inr
+E0001,P001,D01,General Medicine,2026-01-03,OPD,Discharged,0,450
+E0002,P002,D02,Cardiology,2026-01-05,IPD,Discharged,3,12400
+E0003,P003,D03,Endocrinology,2026-01-09,OPD,Discharged,0,650
+E0004,P001,D02,Cardiology,2026-02-02,IPD,Discharged,5,19800
+E0005,P004,D01,General Medicine,2026-02-11,OPD,Discharged,0,500
+E0006,P005,D04,Pharmacy,2026-02-14,Medication Review,Completed,0,300
+E0007,P006,D01,General Medicine,2026-03-01,IPD,Transferred,7,25400
+E0008,P002,D03,Endocrinology,2026-03-12,OPD,Discharged,0,700
+E0009,P007,D04,Pharmacy,2026-03-17,Medication Review,Completed,0,350
+E0010,P008,D02,Cardiology,2026-03-22,IPD,Discharged,2,9800
+E0011,P009,D01,General Medicine,2026-04-04,OPD,Discharged,0,480
+E0012,P003,D03,Endocrinology,2026-04-15,IPD,Discharged,4,16800
+E0013,P010,D04,Pharmacy,2026-04-19,Medication Review,Completed,0,320
+E0014,P011,D02,Cardiology,2026-04-27,IPD,Discharged,6,22100
+E0015,P012,D01,General Medicine,2026-05-03,OPD,Discharged,0,520
+E0016,P004,D03,Endocrinology,2026-05-12,OPD,Discharged,0,680
+E0017,P005,D02,Cardiology,2026-05-20,IPD,Discharged,2,11000
+E0018,P013,D04,Pharmacy,2026-05-29,Medication Review,Completed,0,310
+E0019,P014,D01,General Medicine,2026-06-02,IPD,Discharged,3,13200
+E0020,P015,D02,Cardiology,2026-06-18,OPD,Discharged,0,550

@@ -1,0 +1,15 @@
+.
+!.gitignore
+.venv/
+venv/
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+.env
+*.sqlite
+*.db
+data/processed/*
+!data/processed/.gitkeep
+reports/generated/*
+!reports/generated/.gitkeep

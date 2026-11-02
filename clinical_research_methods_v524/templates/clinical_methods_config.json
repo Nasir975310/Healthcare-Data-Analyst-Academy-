@@ -1,0 +1,58 @@
+{
+  "nonparametric": [
+    {
+      "outcome": "followup_sbp",
+      "group": "group",
+      "bootstrap_replicates": 1500,
+      "seed": 524
+    }
+  ],
+  "paired": [
+    {
+      "before": "biomarker_before",
+      "after": "biomarker_after",
+      "bootstrap_replicates": 1500,
+      "seed": 524
+    }
+  ],
+  "repeated_measures": [
+    {
+      "subject": "study_id",
+      "conditions": [
+        "measurement_t0",
+        "measurement_t1",
+        "measurement_t2"
+      ]
+    }
+  ],
+  "prediction": [
+    {
+      "outcome": "cv_event",
+      "predictors": [
+        "age",
+        "baseline_sbp"
+      ],
+      "folds": 5,
+      "repeats": 3,
+      "seed": 524
+    }
+  ],
+  "power": [
+    {
+      "effect_size": 0.5,
+      "alpha": 0.05,
+      "power": 0.8,
+      "allocation_ratio": 1
+    }
+  ],
+  "missingness": [
+    {
+      "columns": [
+        "baseline_sbp",
+        "biomarker_after",
+        "age",
+        "cv_event"
+      ]
+    }
+  ]
+}

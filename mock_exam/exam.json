@@ -1,0 +1,172 @@
+[
+  {
+    "type": "MCQ",
+    "question": "A table has one row per medication order. What is its grain?",
+    "options": [
+      "One medication order line",
+      "One patient",
+      "One admission",
+      "One administration"
+    ],
+    "answer": "A",
+    "rationale": "Grain describes the entity represented by each row; an order line is not administration.",
+    "skill": "Healthcare analytics fundamentals"
+  },
+  {
+    "type": "MCQ",
+    "question": "Which join most safely retains encounters with no medication orders?",
+    "options": [
+      "INNER JOIN",
+      "LEFT JOIN from encounters",
+      "CROSS JOIN",
+      "RIGHT JOIN from orders"
+    ],
+    "answer": "B",
+    "rationale": "LEFT JOIN preserves every row from the left-side encounter table.",
+    "skill": "Healthcare analytics fundamentals"
+  },
+  {
+    "type": "MCQ",
+    "question": "A 30-day readmission flag is supplied but its definition is undocumented. Best action?",
+    "options": [
+      "Treat as validated outcome",
+      "Use it as a descriptive supplied field and flag definition limitation",
+      "Delete all flagged rows",
+      "Call it preventable readmission"
+    ],
+    "answer": "B",
+    "rationale": "An undocumented supplied field cannot be relabelled as a validated outcome.",
+    "skill": "Healthcare analytics fundamentals"
+  },
+  {
+    "type": "MCQ",
+    "question": "Which is the preferred monthly timestamp filter?",
+    "options": [
+      "BETWEEN month start and 23:59:59",
+      "date=month name",
+      "timestamp >= start AND timestamp < next_month_start",
+      "LIKE '%January%'"
+    ],
+    "answer": "C",
+    "rationale": "Half-open intervals avoid missing fractional seconds and simplify adjacent periods.",
+    "skill": "Healthcare analytics fundamentals"
+  },
+  {
+    "type": "MCQ",
+    "question": "PDC is best described as:",
+    "options": [
+      "Medication ingestion",
+      "Proportion of days covered by available supply during eligible observation",
+      "Clinical response",
+      "Prescription count"
+    ],
+    "answer": "B",
+    "rationale": "PDC is an availability/possession proxy, not proof of ingestion.",
+    "skill": "Healthcare analytics fundamentals"
+  },
+  {
+    "type": "MCQ",
+    "question": "What does a high ROC-AUC establish?",
+    "options": [
+      "Calibration",
+      "Causal effect",
+      "Ranking discrimination across thresholds",
+      "Clinical utility at every threshold"
+    ],
+    "answer": "C",
+    "rationale": "AUC measures discrimination; calibration and utility require separate assessment.",
+    "skill": "Healthcare analytics fundamentals"
+  },
+  {
+    "type": "MCQ",
+    "question": "A p-value of 0.04 means:",
+    "options": [
+      "There is a 4% chance null is true",
+      "The result is clinically important",
+      "Under model assumptions, data at least this extreme have probability 0.04 under null",
+      "Treatment works"
+    ],
+    "answer": "C",
+    "rationale": "A p-value is not the probability the null is true or a measure of clinical importance.",
+    "skill": "Healthcare analytics fundamentals"
+  },
+  {
+    "type": "MCQ",
+    "question": "Best way to handle duplicate candidate rows?",
+    "options": [
+      "Delete automatically",
+      "Retain, investigate business key and audit before resolution",
+      "Keep first by row order",
+      "Average all columns"
+    ],
+    "answer": "B",
+    "rationale": "Duplicate-like records may be legitimate repeat orders; review before mutation.",
+    "skill": "Healthcare analytics fundamentals"
+  },
+  {
+    "type": "MCQ",
+    "question": "An orphan order has no matching encounter. First step?",
+    "options": [
+      "Drop it silently",
+      "Quarantine/report and investigate source key/reference",
+      "Assign random encounter",
+      "Treat as outpatient"
+    ],
+    "answer": "B",
+    "rationale": "Preserve evidence and investigate before exclusion or remapping.",
+    "skill": "Healthcare analytics fundamentals"
+  },
+  {
+    "type": "MCQ",
+    "question": "What is the safest public portfolio data?",
+    "options": [
+      "De-identified hospital extract without approval",
+      "Synthetic or explicitly authorised data",
+      "Screenshots from EHR",
+      "Patient-level data with names removed only"
+    ],
+    "answer": "B",
+    "rationale": "Synthetic data avoids disclosure risk; de-identification still requires governance.",
+    "skill": "Healthcare analytics fundamentals"
+  },
+  {
+    "type": "SQL",
+    "question": "Find departments with at least 20 encounters.",
+    "options": [],
+    "answer": "SELECT department, COUNT(*) n FROM encounters GROUP BY department HAVING COUNT(*) >= 20;",
+    "rationale": "A grouped filter belongs in HAVING after aggregation.",
+    "skill": "SQL query"
+  },
+  {
+    "type": "SQL",
+    "question": "Return one latest encounter per patient using ROW_NUMBER.",
+    "options": [],
+    "answer": "WITH x AS (SELECT *, ROW_NUMBER() OVER(PARTITION BY patient_id ORDER BY admission_date DESC, encounter_id DESC) rn FROM encounters) SELECT * FROM x WHERE rn=1;",
+    "rationale": "Partition defines patient groups; deterministic ordering resolves ties.",
+    "skill": "SQL query"
+  },
+  {
+    "type": "INTERPRET",
+    "question": "A dashboard shows order lines increasing 20% but encounter volume is flat. Give two checks.",
+    "options": [],
+    "answer": "Check whether order-line grain, duplicate/repeat order patterns, coding changes, and data completeness changed; stratify by drug/class and department.",
+    "rationale": "Volume per encounter can rise without patient count rising; validate source and workflow changes.",
+    "skill": "Written interpretation"
+  },
+  {
+    "type": "INTERPRET",
+    "question": "A logistic model has AUC 0.70 but predicts no positives at threshold 0.5. Explain.",
+    "options": [],
+    "answer": "Rare outcome/base rate and threshold can produce no positive predictions despite ranking discrimination; inspect calibration, PR curve, threshold trade-offs and decision costs.",
+    "rationale": "AUC does not guarantee useful classification at a chosen threshold.",
+    "skill": "Written interpretation"
+  },
+  {
+    "type": "INTERPRET",
+    "question": "An observational treatment cohort has better outcomes after propensity matching. What limitation remains?",
+    "options": [],
+    "answer": "Residual/unmeasured confounding, selection bias, positivity and measurement issues remain; matching is not randomisation.",
+    "rationale": "State assumptions and avoid causal certainty.",
+    "skill": "Written interpretation"
+  }
+]

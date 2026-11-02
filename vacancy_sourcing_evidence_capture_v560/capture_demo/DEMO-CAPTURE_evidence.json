@@ -1,0 +1,10 @@
+{
+  "vacancy_id": "DEMO-CAPTURE",
+  "source_name": "Fictional demo page",
+  "source_url": "https://example.org/jobs/demo",
+  "captured_at": "2026-11-02T13:53:52+00:00",
+  "excerpt_file": "DEMO-CAPTURE_source_excerpt.txt",
+  "sha256": "ddfb8c2a9eb0f406e75ecf14184dcd61153b61de00c23a63bb0e113ad8444af5",
+  "capture_method": "user-supplied text excerpt; no network retrieval performed",
+  "limitations": "A hash proves file integrity after capture, not source authenticity, completeness or continued availability."
+}

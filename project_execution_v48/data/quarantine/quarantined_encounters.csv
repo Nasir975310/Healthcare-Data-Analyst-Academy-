@@ -1,0 +1,11 @@
+encounter_id,patient_token,admission_date,department,length_of_stay_days,discharge_disposition,age_band,source_row,parsed_date,quality_issues
+PRJ0010,SYN-0021,2026-03-24,,4,Home,30-44,11,2026-03-24,invalid_department
+PRJ0025,SYN-0179,2026-06-19,Orthopaedics,-3,Transfer,60-74,26,2026-06-19,invalid_length_of_stay
+PRJ0039,SYN-0003,2026-19-45,General Medicine,4,Home,60-74,40,,invalid_date
+PRJ0055,SYN-0155,2026-03-04,General Medicine,2,Unknown,60-74,56,2026-03-04,invalid_disposition
+PRJ0070,,2026-05-31,Neurology,5,Home,30-44,71,2026-05-31,missing_patient_token
+PRJ0085,SYN-0161,2026-06-24,Neurology,0,Home,30-44,86,2026-06-24,invalid_length_of_stay
+PRJ0100,SYN-0081,2026-05-29,Cardiologgy,4,Expired,75+,101,2026-05-29,invalid_department
+PRJ0120,SYN-0179,,Pulmonology,2,Home,45-59,121,,invalid_date
+PRJ0140,SYN-0097,2026-03-13,Neurology,3,Expired,90-120,141,2026-03-13,invalid_age_band
+PRJ0006,SYN-0144,2026-03-01,Pulmonology,5,Expired,60-74,242,2026-03-01,duplicate_encounter_id

@@ -1,0 +1,62 @@
+[
+  {
+    "id": "q1",
+    "q": "What does a virtual environment provide?",
+    "options": [
+      "An isolated project package environment",
+      "A separate operating system",
+      "A cloud database",
+      "A spreadsheet"
+    ],
+    "correct": 0,
+    "why": "Virtual environments isolate dependencies from system Python and other projects."
+  },
+  {
+    "id": "q2",
+    "q": "Which command installs NumPy into the active interpreter's environment?",
+    "options": [
+      "python -m pip install numpy",
+      "sudo pip install numpy",
+      "pacman -R numpy",
+      "python numpy install"
+    ],
+    "correct": 0,
+    "why": "Using python -m pip ties pip to the selected interpreter."
+  },
+  {
+    "id": "q3",
+    "q": "Why avoid global pip installs on Arch Linux?",
+    "options": [
+      "System Python packages are managed by the distribution",
+      "Python cannot install packages",
+      "NumPy only works in venv",
+      "VS Code requires global packages"
+    ],
+    "correct": 0,
+    "why": "Use venv for project dependencies to avoid conflicting with pacman-managed Python."
+  },
+  {
+    "id": "q4",
+    "q": "What should be done before sharing a notebook?",
+    "options": [
+      "Restart kernel and run all cells top-to-bottom",
+      "Run only the last cell",
+      "Delete all markdown",
+      "Change the file extension"
+    ],
+    "correct": 0,
+    "why": "This checks that outputs do not depend on hidden execution state."
+  },
+  {
+    "id": "q5",
+    "q": "What does requirements.txt record?",
+    "options": [
+      "Project dependencies",
+      "Patient identifiers",
+      "Only Python source code",
+      "Operating system boot settings"
+    ],
+    "correct": 0,
+    "why": "It records package requirements, though Python and OS versions should also be documented."
+  }
+]

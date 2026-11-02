@@ -1,0 +1,11 @@
+drug_name,standard_therapeutic_class,standard_route,formulary_active,reference_unit_cost_inr
+Amlodipine,Calcium-channel blocker,Oral,True,12.5
+Ramipril,ACE inhibitor,Oral,True,9.75
+Metoprolol,Beta blocker,Oral,True,11.2
+Losartan,ARB,Oral,True,10.4
+Hydrochlorothiazide,Thiazide diuretic,Oral,True,4.25
+Furosemide,Loop diuretic,Oral,True,5.1
+Atorvastatin,Statin,Oral,True,7.8
+Insulin regular,Insulin,Subcutaneous,True,22.0
+Ceftriaxone,Antibiotic,IV,True,35.0
+Pantoprazole,Proton-pump inhibitor,Oral,True,6.4

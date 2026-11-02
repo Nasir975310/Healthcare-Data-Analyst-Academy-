@@ -1,0 +1,24 @@
+{
+  "outlier_columns": [
+    "age",
+    "los_days",
+    "systolic_bp"
+  ],
+  "group_comparison": {
+    "outcome": "los_days",
+    "group": "sex",
+    "test": "welch"
+  },
+  "categorical_test": {
+    "row": "sex",
+    "column": "readmission_30d"
+  },
+  "regression": {
+    "outcome": "readmission_30d",
+    "predictors": [
+      "age",
+      "systolic_bp"
+    ],
+    "family": "logistic"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "pipeline_name": "healthcare_encounter_reference_pipeline",
+  "schema_version": "1.0",
+  "required_columns": [
+    "encounter_id",
+    "patient_id",
+    "department_id",
+    "encounter_date",
+    "encounter_type",
+    "discharge_status",
+    "los_days",
+    "charge_inr"
+  ],
+  "allowed_encounter_types": [
+    "OPD",
+    "IPD",
+    "Medication Review"
+  ],
+  "date_format": "%Y-%m-%d",
+  "quality_rules": {
+    "non_negative_los": true,
+    "non_negative_charges": true,
+    "unique_encounter_id": true
+  },
+  "outputs": {
+    "database": "output/curated_warehouse.sqlite",
+    "run_manifest": "output/run_manifest.json",
+    "quality_report": "output/quality_report.html"
+  }
+}

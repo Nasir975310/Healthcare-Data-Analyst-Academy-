@@ -1,0 +1,14 @@
+{
+  "resourceType": "Patient",
+  "id": "patient-pt0007",
+  "identifier": [
+    {
+      "use": "usual",
+      "system": "https://training.example.org/patient-id",
+      "value": "PT-0007"
+    }
+  ],
+  "active": true,
+  "gender": "female",
+  "birthDate": "1979-01-15"
+}

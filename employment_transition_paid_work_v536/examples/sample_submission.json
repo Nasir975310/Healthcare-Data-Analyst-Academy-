@@ -1,0 +1,11 @@
+{
+  "grain": "One row per eligible completed encounter.",
+  "inclusion_rules": ["status equals completed", "encounter date is within the reporting period"],
+  "exclusion_rules": ["cancelled encounters are excluded from completed-visit wait-time median"],
+  "sql": "WITH dedup AS (SELECT *, ROW_NUMBER() OVER (PARTITION BY encounter_id ORDER BY source_updated_at DESC) rn FROM encounters) SELECT strftime('%Y-%W', encounter_date) AS week, department, COUNT(*) FROM dedup WHERE rn = 1 GROUP BY week, department;",
+  "python": "missing = df.isna().sum(); duplicate_count = df.duplicated(subset=['encounter_id']).sum()",
+  "row_count_reconciliation": "Source rows = 120; deduplicated rows = 118; excluded cancelled = 7; eligible completed = 111. Reconcile each transition in QA output.",
+  "limitations": ["Synthetic sample; no external validity.", "Wait-time completeness and operational context require confirmation."],
+  "qa_checks": ["encounter_id unique after deduplication", "wait_minutes is nonnegative", "eligible completed rows have encounter_date"],
+  "data_privacy": "Synthetic teaching data only; no patient-identifiable information."
+}

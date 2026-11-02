@@ -1,0 +1,98 @@
+[
+  {
+    "id": "q1",
+    "q": "Which statement best defines healthcare data analytics?",
+    "options": [
+      "Entering patient data into a computer",
+      "Turning healthcare data into validated evidence for a defined decision",
+      "Creating charts regardless of the question",
+      "Replacing clinical judgment with algorithms"
+    ],
+    "correct": 1,
+    "why": "Analytics begins with a question and requires fit-for-purpose data, appropriate methods, validation and responsible interpretation."
+  },
+  {
+    "id": "q2",
+    "q": "A monthly report counts emergency visits. Which category is this primarily?",
+    "options": [
+      "Descriptive",
+      "Diagnostic",
+      "Predictive",
+      "Prescriptive"
+    ],
+    "correct": 0,
+    "why": "It summarizes what happened. It does not, by itself, explain the change or forecast future visits."
+  },
+  {
+    "id": "q3",
+    "q": "A dataset has one row per medication order. What does counting rows directly measure?",
+    "options": [
+      "Unique patients",
+      "Administrations",
+      "Medication-order records",
+      "Patients who took the medicine"
+    ],
+    "correct": 2,
+    "why": "The row count measures records at the dataset grain. It cannot be interpreted as patients or administrations without additional logic and evidence."
+  },
+  {
+    "id": "q4",
+    "q": "Which statement about a predictive model is correct?",
+    "options": [
+      "It proves the cause of an outcome",
+      "It guarantees the best treatment",
+      "It estimates outcomes under defined data and validation conditions",
+      "It removes the need for clinical review"
+    ],
+    "correct": 2,
+    "why": "Prediction estimates outcomes. Causal effects and treatment decisions require separate evidence, context and governance."
+  },
+  {
+    "id": "q5",
+    "q": "Which is the safest interpretation of a missing laboratory result?",
+    "options": [
+      "The result was normal",
+      "The result was zero",
+      "The patient did not need the test",
+      "The value is not observed in this dataset and its reason needs investigation"
+    ],
+    "correct": 3,
+    "why": "Missingness can arise for many reasons. It must not be silently converted to normal, zero or a negative result."
+  },
+  {
+    "id": "q6",
+    "q": "Which sequence best represents a responsible analytics workflow?",
+    "options": [
+      "Chart → conclusion → find data",
+      "Question → definitions → data assessment → analysis → validation → interpretation",
+      "Download everything → run a model → publish",
+      "Select a result → search for supporting data"
+    ],
+    "correct": 1,
+    "why": "The workflow should be question-led, explicit, validated and documented."
+  },
+  {
+    "id": "q7",
+    "q": "A medicine was prescribed. What can you conclude from the prescription record alone?",
+    "options": [
+      "It was administered",
+      "The patient took it",
+      "A prescription order was recorded",
+      "The patient benefited"
+    ],
+    "correct": 2,
+    "why": "Prescription, dispensing, administration and actual use are distinct events."
+  },
+  {
+    "id": "q8",
+    "q": "Two quarters have different raw counts of medicine administrations. What is essential before comparing utilization?",
+    "options": [
+      "Use the larger count as the higher rate",
+      "Define comparable populations, event definitions, periods and denominators",
+      "Ignore data completeness",
+      "Assume patient volume was unchanged"
+    ],
+    "correct": 1,
+    "why": "Rates or proportions require appropriate denominators and comparable definitions; data capture and case mix may also change."
+  }
+]

@@ -1,0 +1,13 @@
+{
+  "cohort_encounters": 104,
+  "unique_patients": 60,
+  "sbp_nonmissing": 96,
+  "sbp_missing": 8,
+  "unmatched_departments": 0,
+  "department_encounter_sum": 104,
+  "source_file": "encounters.csv",
+  "reporting_start_inclusive": "2026-01-01",
+  "reporting_end_exclusive": "2026-04-01",
+  "source_rows": 104,
+  "cohort_unique_encounters": 104
+}

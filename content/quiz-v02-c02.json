@@ -1,0 +1,62 @@
+[
+  {
+    "id": "q1",
+    "q": "Which reference remains fixed when a formula is copied?",
+    "options": [
+      "A1",
+      "$A$1",
+      "A$1 only fixes row",
+      "$A1 only fixes column"
+    ],
+    "correct": 1,
+    "why": "Dollar signs before both column and row make an absolute reference."
+  },
+  {
+    "id": "q2",
+    "q": "Which function counts records meeting multiple criteria?",
+    "options": [
+      "COUNT",
+      "COUNTIFS",
+      "AVERAGE",
+      "LEFT"
+    ],
+    "correct": 1,
+    "why": "COUNTIFS applies multiple criteria ranges."
+  },
+  {
+    "id": "q3",
+    "q": "What is the main risk of IFERROR(formula,0)?",
+    "options": [
+      "It increases precision",
+      "It can hide unexpected errors as zero",
+      "It removes duplicates",
+      "It fixes all lookup keys"
+    ],
+    "correct": 1,
+    "why": "Unexpected errors may be disguised as valid zero values."
+  },
+  {
+    "id": "q4",
+    "q": "Which function is designed for exact-key lookup in current Excel versions?",
+    "options": [
+      "XLOOKUP",
+      "TODAY",
+      "TRIM",
+      "STDEV.S"
+    ],
+    "correct": 0,
+    "why": "XLOOKUP supports exact matching and a not-found result."
+  },
+  {
+    "id": "q5",
+    "q": "What does COUNTA count?",
+    "options": [
+      "Only numeric cells",
+      "Non-empty cells",
+      "Only dates",
+      "Only formulas"
+    ],
+    "correct": 1,
+    "why": "COUNTA counts non-empty cells, including text."
+  }
+]

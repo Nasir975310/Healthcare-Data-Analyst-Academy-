@@ -1,0 +1,181 @@
+ticket_id,request_type,priority,received_date,completed_date,status,requester_team,rework_flag
+TKT0001,Data extract,Medium,2026-05-09,2026-05-23,Completed,Operations,0
+TKT0002,Access request,Critical,2026-01-20,2026-01-29,Cancelled,Operations,0
+TKT0003,Access request,High,2026-03-19,2026-03-22,In progress,Finance,0
+TKT0004,Ad hoc analysis,Medium,2026-06-23,2026-07-02,Cancelled,Finance,0
+TKT0005,Access request,Low,2026-01-24,2026-01-31,Cancelled,Clinical,0
+TKT0006,Quality investigation,Critical,2026-02-23,2026-03-06,Completed,Finance,0
+TKT0007,Dashboard,Medium,2026-03-15,2026-03-25,Cancelled,Finance,0
+TKT0008,Quality investigation,High,2026-01-03,2026-01-13,In progress,Pharmacy,0
+TKT0009,Data extract,Critical,2026-04-21,2026-04-28,Cancelled,Operations,0
+TKT0010,Quality investigation,High,2026-03-07,2026-03-20,Completed,Operations,0
+TKT0011,Dashboard,Medium,2026-06-11,2026-06-15,Completed,Pharmacy,0
+TKT0012,Dashboard,High,2026-01-10,2026-01-14,In progress,Finance,0
+TKT0013,Access request,Critical,2026-01-10,2026-01-16,In progress,Finance,0
+TKT0014,Ad hoc analysis,Low,2026-06-26,2026-07-10,Cancelled,Clinical,0
+TKT0015,Access request,Critical,2026-05-03,2026-05-03,Cancelled,Finance,0
+TKT0016,Access request,High,2026-02-17,2026-02-24,Cancelled,Clinical,1
+TKT0017,Quality investigation,Low,2026-03-17,2026-03-23,In progress,Operations,0
+TKT0018,Dashboard,Critical,2026-06-23,2026-06-27,Completed,Pharmacy,0
+TKT0019,Quality investigation,Medium,2026-04-24,2026-05-02,In progress,Finance,0
+TKT0020,Data extract,Low,2026-05-12,2026-05-22,Cancelled,Clinical,0
+TKT0021,Dashboard,High,2026-04-24,2026-05-01,Cancelled,Finance,0
+TKT0022,Data extract,High,2026-05-19,2026-05-25,In progress,Pharmacy,0
+TKT0023,Dashboard,Critical,2026-05-04,2026-05-16,Completed,Finance,0
+TKT0024,Quality investigation,High,2026-05-04,2026-05-06,Cancelled,Clinical,0
+TKT0025,Quality investigation,Low,2026-02-13,2026-02-25,Completed,Operations,0
+TKT0026,Access request,Critical,2026-04-11,2026-04-15,In progress,Operations,0
+TKT0027,Ad hoc analysis,Critical,2026-06-07,2026-06-12,Cancelled,Clinical,0
+TKT0028,Quality investigation,Medium,2026-01-12,2026-01-12,In progress,Pharmacy,0
+TKT0029,Data extract,Low,2026-03-16,2026-03-16,In progress,Pharmacy,0
+TKT0030,Ad hoc analysis,Medium,2026-01-01,2026-01-13,In progress,Finance,1
+TKT0031,Quality investigation,Medium,2026-03-04,2026-03-17,In progress,Pharmacy,0
+TKT0032,Quality investigation,Medium,2026-03-01,2026-03-01,Completed,Operations,1
+TKT0033,Quality investigation,Medium,2026-04-26,2026-05-01,Completed,Finance,0
+TKT0034,Quality investigation,Critical,2026-03-25,2026-04-08,Completed,Clinical,1
+TKT0035,Dashboard,Low,2026-02-09,2026-02-10,In progress,Pharmacy,0
+TKT0036,Quality investigation,Medium,2026-04-14,2026-04-25,Cancelled,Clinical,1
+TKT0037,Ad hoc analysis,Medium,2026-01-27,2026-02-09,Cancelled,Clinical,0
+TKT0038,Data extract,Medium,2026-01-02,2026-01-16,Completed,Clinical,0
+TKT0039,Access request,High,2026-02-22,2026-02-28,In progress,Pharmacy,0
+TKT0040,Ad hoc analysis,Low,2026-03-01,2026-03-01,Completed,Pharmacy,0
+TKT0041,Quality investigation,High,2026-01-23,2026-02-03,In progress,Clinical,1
+TKT0042,Ad hoc analysis,Medium,2026-02-28,2026-03-10,Completed,Pharmacy,1
+TKT0043,Ad hoc analysis,High,2026-01-28,2026-01-28,Cancelled,Pharmacy,0
+TKT0044,Quality investigation,Critical,2026-02-22,2026-02-22,Cancelled,Pharmacy,0
+TKT0045,Access request,Low,2026-05-01,2026-05-07,Cancelled,Operations,0
+TKT0046,Dashboard,Low,2026-03-03,2026-03-11,In progress,Pharmacy,0
+TKT0047,Quality investigation,Low,2026-03-12,2026-03-26,In progress,Operations,0
+TKT0048,Access request,Critical,2026-02-05,2026-02-12,Cancelled,Pharmacy,0
+TKT0049,Dashboard,Medium,2026-06-29,2026-07-09,Completed,Clinical,0
+TKT0050,Ad hoc analysis,Medium,2026-04-08,2026-04-18,Cancelled,Operations,0
+TKT0051,Access request,Critical,2026-04-26,2026-04-26,Cancelled,Finance,0
+TKT0052,Access request,High,2026-02-23,2026-03-08,Completed,Operations,0
+TKT0053,Quality investigation,Low,2026-01-11,2026-01-13,Cancelled,Pharmacy,0
+TKT0054,Ad hoc analysis,High,2026-05-26,2026-06-09,In progress,Pharmacy,0
+TKT0055,Quality investigation,Low,2026-02-23,2026-03-07,In progress,Clinical,0
+TKT0056,Dashboard,Low,2026-02-05,2026-02-06,Completed,Finance,0
+TKT0057,Ad hoc analysis,Medium,2026-02-08,2026-02-16,Cancelled,Finance,0
+TKT0058,Quality investigation,Medium,2026-04-29,2026-04-29,Cancelled,Clinical,0
+TKT0059,Data extract,High,2026-03-10,2026-03-19,In progress,Operations,0
+TKT0060,Ad hoc analysis,High,2026-04-01,2026-04-14,Completed,Pharmacy,0
+TKT0061,Quality investigation,Critical,2026-04-12,2026-04-15,Completed,Operations,0
+TKT0062,Access request,Critical,2026-05-01,2026-05-11,Cancelled,Operations,0
+TKT0063,Access request,Medium,2026-02-23,2026-03-06,Completed,Pharmacy,0
+TKT0064,Dashboard,Low,2026-05-02,2026-05-08,In progress,Finance,1
+TKT0065,Dashboard,Low,2026-05-16,2026-05-23,Completed,Operations,0
+TKT0066,Ad hoc analysis,Critical,2026-03-31,2026-04-14,In progress,Operations,0
+TKT0067,Data extract,Low,2026-02-15,2026-02-22,In progress,Pharmacy,0
+TKT0068,Access request,Critical,2026-03-15,2026-03-16,In progress,Finance,0
+TKT0069,Data extract,High,2026-03-19,2026-03-31,In progress,Pharmacy,0
+TKT0070,Data extract,Critical,2026-03-30,2026-04-06,In progress,Clinical,0
+TKT0071,Dashboard,Medium,2026-06-28,2026-07-01,In progress,Operations,0
+TKT0072,Ad hoc analysis,Low,2026-02-01,2026-02-08,Cancelled,Finance,0
+TKT0073,Dashboard,Critical,2026-05-12,2026-05-15,Completed,Clinical,0
+TKT0074,Ad hoc analysis,Medium,2026-02-10,2026-02-23,In progress,Pharmacy,0
+TKT0075,Quality investigation,Critical,2026-06-21,2026-07-02,Cancelled,Pharmacy,0
+TKT0076,Quality investigation,Medium,2026-01-23,2026-01-31,Cancelled,Finance,0
+TKT0077,Ad hoc analysis,Low,2026-06-01,2026-06-12,In progress,Operations,0
+TKT0078,Quality investigation,Critical,2026-02-15,2026-02-20,In progress,Operations,0
+TKT0079,Ad hoc analysis,Critical,2026-01-17,2026-01-23,Cancelled,Operations,0
+TKT0080,Access request,High,2026-04-05,2026-04-06,Completed,Finance,0
+TKT0081,Dashboard,Critical,2026-05-21,2026-06-03,Completed,Pharmacy,0
+TKT0082,Quality investigation,Medium,2026-02-15,2026-02-16,Completed,Pharmacy,0
+TKT0083,Data extract,High,2026-05-12,2026-05-23,Cancelled,Finance,0
+TKT0084,Quality investigation,High,2026-01-07,2026-01-09,Completed,Pharmacy,0
+TKT0085,Quality investigation,High,2026-03-24,2026-03-30,In progress,Operations,1
+TKT0086,Quality investigation,High,2026-03-24,2026-03-29,Completed,Clinical,1
+TKT0087,Dashboard,High,2026-01-14,2026-01-24,In progress,Pharmacy,0
+TKT0088,Ad hoc analysis,Medium,2026-04-21,2026-05-01,In progress,Pharmacy,0
+TKT0089,Quality investigation,Low,2026-02-26,2026-03-12,In progress,Pharmacy,1
+TKT0090,Quality investigation,Critical,2026-06-18,2026-06-21,Cancelled,Clinical,0
+TKT0091,Access request,Critical,2026-03-22,2026-03-29,Completed,Clinical,0
+TKT0092,Dashboard,Critical,2026-02-07,2026-02-20,In progress,Operations,0
+TKT0093,Ad hoc analysis,Medium,2026-03-14,2026-03-16,Completed,Finance,1
+TKT0094,Quality investigation,High,2026-02-26,2026-03-03,Completed,Operations,0
+TKT0095,Quality investigation,Medium,2026-02-13,2026-02-23,In progress,Pharmacy,0
+TKT0096,Dashboard,Critical,2026-04-11,2026-04-13,Cancelled,Finance,0
+TKT0097,Data extract,High,2026-05-31,2026-06-07,Completed,Clinical,0
+TKT0098,Dashboard,High,2026-06-06,2026-06-18,In progress,Finance,0
+TKT0099,Data extract,Low,2026-01-10,2026-01-13,In progress,Operations,0
+TKT0100,Ad hoc analysis,Low,2026-04-27,2026-04-29,Cancelled,Pharmacy,0
+TKT0101,Quality investigation,Medium,2026-04-26,2026-05-09,Cancelled,Operations,0
+TKT0102,Ad hoc analysis,High,2026-05-09,2026-05-19,Completed,Operations,0
+TKT0103,Data extract,High,2026-05-29,2026-05-30,In progress,Clinical,0
+TKT0104,Access request,Critical,2026-06-17,2026-06-18,Completed,Clinical,0
+TKT0105,Ad hoc analysis,Critical,2026-03-24,2026-03-31,Cancelled,Clinical,1
+TKT0106,Dashboard,Critical,2026-03-15,2026-03-29,Cancelled,Pharmacy,0
+TKT0107,Quality investigation,Medium,2026-05-30,2026-06-11,Completed,Finance,0
+TKT0108,Ad hoc analysis,Medium,2026-06-13,2026-06-24,In progress,Clinical,0
+TKT0109,Access request,Low,2026-03-17,2026-03-28,Cancelled,Finance,0
+TKT0110,Data extract,Critical,2026-05-31,2026-06-05,In progress,Pharmacy,0
+TKT0111,Dashboard,High,2026-01-25,2026-02-04,In progress,Operations,1
+TKT0112,Access request,Low,2026-05-25,2026-06-01,Cancelled,Pharmacy,0
+TKT0113,Quality investigation,High,2026-02-16,2026-03-01,Completed,Clinical,1
+TKT0114,Quality investigation,Critical,2026-03-19,2026-03-22,In progress,Clinical,0
+TKT0115,Ad hoc analysis,Critical,2026-02-25,2026-02-27,In progress,Finance,0
+TKT0116,Quality investigation,Medium,2026-03-13,2026-03-14,In progress,Clinical,0
+TKT0117,Ad hoc analysis,Low,2026-02-04,2026-02-12,Cancelled,Pharmacy,0
+TKT0118,Quality investigation,High,2026-03-24,2026-04-01,In progress,Finance,0
+TKT0119,Ad hoc analysis,Low,2026-03-15,2026-03-25,In progress,Pharmacy,1
+TKT0120,Data extract,Critical,2026-03-24,2026-04-06,Cancelled,Operations,0
+TKT0121,Data extract,Low,2026-05-27,2026-05-29,Completed,Pharmacy,0
+TKT0122,Access request,High,2026-02-26,2026-03-05,In progress,Clinical,0
+TKT0123,Quality investigation,Low,2026-06-09,2026-06-19,Cancelled,Finance,1
+TKT0124,Access request,Critical,2026-04-06,2026-04-06,In progress,Clinical,0
+TKT0125,Quality investigation,Medium,2026-01-19,2026-01-25,Cancelled,Finance,1
+TKT0126,Access request,Low,2026-06-02,2026-06-06,In progress,Operations,0
+TKT0127,Ad hoc analysis,Medium,2026-02-18,2026-02-23,In progress,Finance,0
+TKT0128,Dashboard,Medium,2026-04-09,2026-04-17,Completed,Clinical,1
+TKT0129,Dashboard,Medium,2026-01-12,2026-01-17,In progress,Finance,0
+TKT0130,Dashboard,Low,2026-01-05,2026-01-08,Cancelled,Finance,1
+TKT0131,Ad hoc analysis,High,2026-01-05,2026-01-06,Cancelled,Clinical,0
+TKT0132,Access request,High,2026-03-30,2026-04-04,In progress,Operations,0
+TKT0133,Ad hoc analysis,High,2026-05-13,2026-05-21,Cancelled,Operations,0
+TKT0134,Data extract,Critical,2026-02-12,2026-02-25,Completed,Operations,1
+TKT0135,Dashboard,Critical,2026-01-10,2026-01-21,Completed,Pharmacy,0
+TKT0136,Quality investigation,Low,2026-01-27,2026-01-27,Cancelled,Finance,0
+TKT0137,Quality investigation,Low,2026-04-19,2026-04-19,Cancelled,Clinical,0
+TKT0138,Ad hoc analysis,Medium,2026-01-10,2026-01-21,Completed,Finance,0
+TKT0139,Access request,Medium,2026-02-01,2026-02-05,In progress,Operations,0
+TKT0140,Access request,Low,2026-02-22,2026-03-03,Completed,Clinical,0
+TKT0141,Ad hoc analysis,High,2026-02-26,2026-03-11,In progress,Operations,0
+TKT0142,Ad hoc analysis,Low,2026-03-10,2026-03-11,Cancelled,Finance,0
+TKT0143,Ad hoc analysis,Low,2026-01-31,2026-02-02,Cancelled,Clinical,0
+TKT0144,Quality investigation,Low,2026-05-10,2026-05-18,Completed,Finance,0
+TKT0145,Data extract,High,2026-06-20,2026-06-28,In progress,Operations,0
+TKT0146,Quality investigation,Low,2026-04-23,2026-04-24,In progress,Pharmacy,0
+TKT0147,Access request,High,2026-01-08,2026-01-09,In progress,Operations,0
+TKT0148,Access request,Low,2026-01-25,2026-01-31,Completed,Finance,1
+TKT0149,Data extract,Medium,2026-05-28,2026-06-02,Cancelled,Finance,0
+TKT0150,Access request,Medium,2026-03-11,2026-03-14,Cancelled,Pharmacy,0
+TKT0151,Dashboard,Low,2026-06-08,2026-06-18,In progress,Pharmacy,0
+TKT0152,Access request,Medium,2026-04-13,2026-04-18,Completed,Clinical,0
+TKT0153,Quality investigation,Low,2026-04-06,2026-04-13,In progress,Operations,0
+TKT0154,Quality investigation,Low,2026-05-15,2026-05-27,In progress,Pharmacy,0
+TKT0155,Quality investigation,High,2026-01-27,2026-02-08,Completed,Operations,0
+TKT0156,Dashboard,Critical,2026-01-04,2026-01-09,Cancelled,Pharmacy,0
+TKT0157,Access request,Low,2026-05-17,2026-05-18,Completed,Operations,0
+TKT0158,Ad hoc analysis,High,2026-03-22,2026-03-29,Completed,Finance,0
+TKT0159,Quality investigation,Low,2026-02-25,2026-03-01,Cancelled,Operations,0
+TKT0160,Access request,Critical,2026-05-10,2026-05-13,Completed,Operations,0
+TKT0161,Data extract,High,2026-02-18,2026-02-22,Cancelled,Finance,0
+TKT0162,Dashboard,Critical,2026-01-19,2026-01-31,Completed,Clinical,0
+TKT0163,Access request,High,2026-04-10,2026-04-18,Cancelled,Operations,0
+TKT0164,Data extract,Low,2026-06-14,2026-06-19,Cancelled,Finance,0
+TKT0165,Access request,Medium,2026-01-24,2026-01-25,Cancelled,Clinical,1
+TKT0166,Data extract,Low,2026-05-15,2026-05-18,Completed,Finance,0
+TKT0167,Data extract,Medium,2026-04-21,2026-04-26,Completed,Pharmacy,0
+TKT0168,Data extract,Low,2026-01-01,2026-01-01,Completed,Operations,0
+TKT0169,Access request,Critical,2026-06-05,2026-06-10,Completed,Operations,0
+TKT0170,Dashboard,Low,2026-06-07,2026-06-16,Completed,Finance,0
+TKT0171,Quality investigation,Critical,2026-05-30,2026-06-06,Completed,Clinical,0
+TKT0172,Dashboard,Critical,2026-03-12,2026-03-21,In progress,Operations,0
+TKT0173,Data extract,Critical,2026-04-09,2026-04-17,In progress,Finance,0
+TKT0174,Dashboard,Low,2026-01-09,2026-01-10,Cancelled,Finance,0
+TKT0175,Ad hoc analysis,Medium,2026-02-07,2026-02-14,In progress,Pharmacy,0
+TKT0176,Quality investigation,Medium,2026-02-04,2026-02-13,In progress,Finance,0
+TKT0177,Ad hoc analysis,Low,2026-04-21,2026-04-28,In progress,Pharmacy,0
+TKT0178,Access request,High,2026-02-17,2026-02-28,Cancelled,Pharmacy,0
+TKT0179,Data extract,High,2026-06-16,2026-06-28,In progress,Operations,0
+TKT0180,Access request,Low,2026-06-21,2026-07-05,Cancelled,Clinical,0

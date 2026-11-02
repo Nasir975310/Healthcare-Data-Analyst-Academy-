@@ -1,0 +1,217 @@
+{
+  "mock_interview_bank.md": "# Healthcare Data Analyst mock interview bank\n\nUse these as practice prompts. Answer with a structured explanation and, where possible, a small worked example.\n\n## SQL and data quality\n1. Two tables contain patient and encounter records. How do you prevent row multiplication when joining them?\n2. Explain the difference between COUNT(*), COUNT(column) and COUNT(DISTINCT patient_id).\n3. How would you investigate a sudden 25% fall in monthly encounter volume?\n4. How would you validate a medication table with repeated orders and cancelled prescriptions?\n\n## Statistics and clinical context\n5. Explain confidence interval versus p-value to a non-statistician.\n6. Why can PPV change when prevalence changes even if sensitivity and specificity remain constant?\n7. Describe confounding and why an association between a drug and an outcome is not automatically causal.\n8. What checks would you perform before comparing two departments?\n\n## Python and BI\n9. Describe a reproducible pandas data-cleaning workflow.\n10. How do you handle missing values without hiding the missingness pattern?\n11. What makes a dashboard metric definition auditable?\n12. How would you investigate a discrepancy between a dashboard and a SQL extract?\n\n## Professional practice\n13. Tell me about a time you found an error and how you handled it.\n14. How do you clarify an ambiguous stakeholder request?\n15. How do you work asynchronously across time zones?\n16. What would you do if a client sent patient data to your personal email?\n\n## Case exercise\nA hospital manager asks for a dashboard showing medication utilisation by department. Clarify the metric, define the data grain, identify required tables, plan validation, state privacy safeguards, and propose a concise handoff. Do not assume that a prescription equals administration or consumption.\n",
+  "proposal_template.md": "# Small healthcare analytics project proposal template\n\n## 1. Client problem\n- What decision or operational question needs support?\n- Who will use the deliverable?\n\n## 2. Scope\n- Dataset(s), record grain, size and format:\n- Permitted data and approved processing environment:\n- Analysis and transformations included:\n- Deliverables and file formats:\n\n## 3. Exclusions\nState what is not included: clinical recommendations, regulatory submissions, production deployment, unlimited revisions, unsupported data sources, or work outside agreed competence.\n\n## 4. Assumptions and dependencies\nList data access, data dictionary, stakeholder availability, software, approvals and client responsibilities.\n\n## 5. Timeline and milestones\n| Milestone | Deliverable | Review/acceptance criteria | Target date |\n|---|---|---|---|\n| Discovery | Confirmed requirements | Written scope approval | |\n| Build | Draft analysis | Agreed checks pass | |\n| Review | Revised output | One agreed review cycle | |\n| Handoff | Final files and README | Client confirms receipt | |\n\n## 6. Fees and payment\nState fixed fee or rate, estimate assumptions, payment milestones, currency, platform fees and late-payment terms. Verify applicable tax and legal obligations with a qualified adviser.\n\n## 7. Privacy, security and ownership\nDo not accept identifiable health data until lawful authority, client permissions, approved systems, access controls, retention, deletion and contractual terms are confirmed. Define ownership and permitted reuse of code and deliverables.\n\n## 8. Change control\nDescribe how additional datasets, changed definitions, extra revisions or scope expansion will be estimated and approved.\n\n## 9. Acceptance\nDefine the objective checks by which the client accepts each deliverable.\n",
+  "final_readiness_scorecard.md": "# Final professional readiness scorecard\n\nScore each domain from 0 to 3 using evidence, not confidence.\n\n| Score | Meaning |\n|---|---|\n| 0 | Cannot yet perform; no evidence |\n| 1 | Can explain concepts; needs substantial guidance |\n| 2 | Can complete a bounded task with review |\n| 3 | Can complete, validate, document and explain independently within scope |\n\n## Competency domains\n- Excel/spreadsheet analysis\n- SQL querying, joins and reconciliation\n- Python/pandas data preparation\n- Statistics and interpretation\n- Healthcare data concepts and terminology\n- Data quality and governance\n- BI/dashboard communication\n- Git and reproducibility\n- Linux execution and troubleshooting\n- Windows PowerShell execution and troubleshooting\n- Written communication and stakeholder clarification\n- Privacy, security and professional ethics\n- Portfolio presentation and interview readiness\n\n## Evidence rule\nFor every score of 2 or 3, attach a project, test result, reviewed deliverable or practical demonstration. Do not award a 3 solely for watching lessons or completing a quiz.\n\n## Suggested decision\n- Any 0 in privacy, data quality or core SQL/Python: prioritise remediation before claiming job readiness.\n- Mostly 1s: continue guided practice and complete portfolio projects.\n- Mostly 2s: apply to appropriately scoped junior roles while improving.\n- Consistent 3s with reviewed evidence: pursue roles requiring independent ownership within the demonstrated scope.\n\nThis scorecard is a self-assessment aid, not an accredited qualification or guarantee of employment.\n",
+  "README.md": "# V08 Career Launch Toolkit\n\nTemplates are intentionally blank. Keep job-search records private; do not commit personal identity documents, passwords, recruiter private correspondence or client information to public repositories.\n\n## Contents\n- `job_application_tracker.csv` \u2014 private application pipeline.\n- `skills_evidence_matrix.csv` \u2014 map job requirements to demonstrated evidence.\n- `90_day_plan.csv` \u2014 onboarding and development plan.\n- `portfolio_review_checklist.csv` \u2014 public-safe project quality review.\n- `proposal_template.md` \u2014 bounded consulting proposal structure.\n- `mock_interview_bank.md` \u2014 technical, clinical and behavioural practice.\n- `final_readiness_scorecard.md` \u2014 evidence-based competency review.\n\n## Linux and Windows\nOpen CSV/Markdown files in LibreOffice/OnlyOffice/Microsoft Excel or a text editor. Use your file manager, or terminal:\n- Linux Bash/Zsh: `ls -la`; Fish supports `ls -la`.\n- Windows PowerShell: `Get-ChildItem -Force`.\nDo not store private job-search records in a public Git repository. If you version public portfolio templates, inspect staged files before committing.\n",
+  "job_application_tracker.csv": [],
+  "skills_evidence_matrix.csv": [
+    {
+      "Skill": "Excel / spreadsheets",
+      "Category": "Core analyst",
+      "Target evidence": "Clean a structured dataset; formulas, pivots, lookup logic, charts and reconciled summary"
+    },
+    {
+      "Skill": "SQL",
+      "Category": "Core analyst",
+      "Target evidence": "Documented joins, filters, aggregation, CTEs and validation queries"
+    },
+    {
+      "Skill": "Data quality",
+      "Category": "Core analyst",
+      "Target evidence": "Completeness, validity, uniqueness, consistency and referential-integrity report"
+    },
+    {
+      "Skill": "Statistics",
+      "Category": "Analytical",
+      "Target evidence": "Descriptive statistics, confidence intervals, hypothesis tests and interpretation"
+    },
+    {
+      "Skill": "Python / pandas",
+      "Category": "Programming",
+      "Target evidence": "Reproducible cleaning and analysis pipeline with tests and documented outputs"
+    },
+    {
+      "Skill": "R",
+      "Category": "Programming",
+      "Target evidence": "Reproducible statistical analysis and publication-quality visualisation"
+    },
+    {
+      "Skill": "Power BI / BI",
+      "Category": "Reporting",
+      "Target evidence": "Modelled dashboard with measures, filters, definitions and limitations"
+    },
+    {
+      "Skill": "Healthcare domain",
+      "Category": "Domain",
+      "Target evidence": "Correct interpretation of encounters, diagnoses, medications, labs and clinical workflow"
+    },
+    {
+      "Skill": "Research methods",
+      "Category": "Domain",
+      "Target evidence": "Protocol-aware cohort definition, bias assessment and transparent methods"
+    },
+    {
+      "Skill": "Communication",
+      "Category": "Professional",
+      "Target evidence": "Concise analytical report, chart commentary and stakeholder handoff"
+    },
+    {
+      "Skill": "Git / reproducibility",
+      "Category": "Engineering",
+      "Target evidence": "Version-controlled project, README, environment file and reproducible run steps"
+    },
+    {
+      "Skill": "Privacy / governance",
+      "Category": "Professional",
+      "Target evidence": "Safe synthetic-data workflow, access controls and documented data limitations"
+    }
+  ],
+  "90_day_plan.csv": [
+    {
+      "period": "Days 1\u201315",
+      "objective": "Set up a reliable analysis workflow and refresh core data skills",
+      "deliverable": "Local project repository; spreadsheet cleaning exercise; SQL basics",
+      "acceptance_criteria": "Re-run the work from a clean folder; explain every transformation",
+      "stakeholders": "Self / peer reviewer",
+      "risks_or_dependencies": "Study schedule and environment setup",
+      "status": "Not started",
+      "evidence": ""
+    },
+    {
+      "period": "Days 16\u201330",
+      "objective": "Build first reviewable healthcare analysis",
+      "deliverable": "Synthetic healthcare dataset quality report and SQL analysis",
+      "acceptance_criteria": "Documented data dictionary, validation checks, query outputs and limitations",
+      "stakeholders": "Self / mentor",
+      "risks_or_dependencies": "Dataset understanding",
+      "status": "Not started",
+      "evidence": ""
+    },
+    {
+      "period": "Days 31\u201345",
+      "objective": "Create reproducible Python or R analysis",
+      "deliverable": "Cleaned data, descriptive analysis, visualisations and report",
+      "acceptance_criteria": "Code runs end-to-end; outputs reconcile; interpretation is defensible",
+      "stakeholders": "Self / reviewer",
+      "risks_or_dependencies": "Programming fundamentals",
+      "status": "Not started",
+      "evidence": ""
+    },
+    {
+      "period": "Days 46\u201360",
+      "objective": "Develop a portfolio capstone",
+      "deliverable": "Clinical or pharmacy analytics project with SQL and Python/R",
+      "acceptance_criteria": "Clear question, cohort definition, validation, reproducible outputs and caveats",
+      "stakeholders": "Self / reviewer",
+      "risks_or_dependencies": "Scope control and synthetic data",
+      "status": "Not started",
+      "evidence": ""
+    },
+    {
+      "period": "Days 61\u201375",
+      "objective": "Prepare professional evidence and applications",
+      "deliverable": "Role-targeted CV, GitHub portfolio, project summaries and application tracker",
+      "acceptance_criteria": "Every skill claim links to evidence; no invented experience or credentials",
+      "stakeholders": "Self / recruiter / mentor",
+      "risks_or_dependencies": "Portfolio completeness",
+      "status": "Not started",
+      "evidence": ""
+    },
+    {
+      "period": "Days 76\u201390",
+      "objective": "Apply, practise interviews and improve from feedback",
+      "deliverable": "Targeted applications, mock interview responses and revised portfolio",
+      "acceptance_criteria": "Track role requirements, outcomes, feedback and next actions",
+      "stakeholders": "Self / hiring teams",
+      "risks_or_dependencies": "Market availability; no job guarantee",
+      "status": "Not started",
+      "evidence": ""
+    }
+  ],
+  "portfolio_review_checklist.csv": [
+    {
+      "check": "Clear question and intended audience",
+      "pass_fail": "",
+      "evidence": "",
+      "action_required": ""
+    },
+    {
+      "check": "Data grain and data dictionary documented",
+      "pass_fail": "",
+      "evidence": "",
+      "action_required": ""
+    },
+    {
+      "check": "Synthetic or explicitly authorised data only",
+      "pass_fail": "",
+      "evidence": "",
+      "action_required": ""
+    },
+    {
+      "check": "Data quality checks included",
+      "pass_fail": "",
+      "evidence": "",
+      "action_required": ""
+    },
+    {
+      "check": "Method and assumptions documented",
+      "pass_fail": "",
+      "evidence": "",
+      "action_required": ""
+    },
+    {
+      "check": "Metrics and denominators defined",
+      "pass_fail": "",
+      "evidence": "",
+      "action_required": ""
+    },
+    {
+      "check": "Interpretation separated from causal claims",
+      "pass_fail": "",
+      "evidence": "",
+      "action_required": ""
+    },
+    {
+      "check": "Limitations and uncertainty stated",
+      "pass_fail": "",
+      "evidence": "",
+      "action_required": ""
+    },
+    {
+      "check": "Linux setup and execution documented",
+      "pass_fail": "",
+      "evidence": "",
+      "action_required": ""
+    },
+    {
+      "check": "Windows PowerShell setup and execution documented",
+      "pass_fail": "",
+      "evidence": "",
+      "action_required": ""
+    },
+    {
+      "check": "Dependencies and versions recorded",
+      "pass_fail": "",
+      "evidence": "",
+      "action_required": ""
+    },
+    {
+      "check": "No secrets or PHI in repository",
+      "pass_fail": "",
+      "evidence": "",
+      "action_required": ""
+    },
+    {
+      "check": "README reproduces workflow",
+      "pass_fail": "",
+      "evidence": "",
+      "action_required": ""
+    },
+    {
+      "check": "Outputs reviewed for identifiers and metadata",
+      "pass_fail": "",
+      "evidence": "",
+      "action_required": ""
+    }
+  ]
+}

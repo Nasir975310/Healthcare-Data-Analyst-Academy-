@@ -1,0 +1,31 @@
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:      followup_sbp_mmhg   R-squared:                       0.659
+Model:                            OLS   Adj. R-squared:                  0.655
+Method:                 Least Squares   F-statistic:                     152.5
+Date:                Mon, 02 Nov 2026   Prob (F-statistic):           8.10e-90
+Time:                        03:00:27   Log-Likelihood:                -1577.2
+No. Observations:                 400   AIC:                             3166.
+Df Residuals:                     394   BIC:                             3190.
+Df Model:                           5                                         
+Covariance Type:            nonrobust                                         
+=======================================================================================================
+                                          coef    std err          t      P>|t|      [0.025      0.975]
+-------------------------------------------------------------------------------------------------------
+Intercept                               0.1757      6.003      0.029      0.977     -11.626      11.977
+C(treatment_group)[T.Standard care]     4.2423      1.271      3.338      0.001       1.743       6.741
+baseline_sbp_mmhg                       0.9663      0.036     26.977      0.000       0.896       1.037
+age_years                              -0.0498      0.044     -1.138      0.256      -0.136       0.036
+diabetes                                0.2751      1.366      0.201      0.841      -2.411       2.961
+ckd                                     0.6666      1.892      0.352      0.725      -3.052       4.386
+==============================================================================
+Omnibus:                        3.281   Durbin-Watson:                   1.917
+Prob(Omnibus):                  0.194   Jarque-Bera (JB):                3.702
+Skew:                          -0.045   Prob(JB):                        0.157
+Kurtosis:                       3.463   Cond. No.                     1.54e+03
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large, 1.54e+03. This might indicate that there are
+strong multicollinearity or other numerical problems.

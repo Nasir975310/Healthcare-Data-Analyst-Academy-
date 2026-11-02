@@ -1,0 +1,62 @@
+[
+  {
+    "id": "q1",
+    "q": "Which study design is commonly used to estimate point prevalence?",
+    "options": [
+      "Case-control",
+      "Cross-sectional",
+      "Randomized trial only",
+      "Case report"
+    ],
+    "correct": 1,
+    "why": "Cross-sectional designs can estimate prevalence with suitable sampling and case definitions."
+  },
+  {
+    "id": "q2",
+    "q": "A study selects participants based on outcome status and then assesses prior exposure. This is:",
+    "options": [
+      "Cohort",
+      "Case-control",
+      "Ecological only",
+      "Randomized trial"
+    ],
+    "correct": 1,
+    "why": "Case-control studies sample cases and controls by outcome status."
+  },
+  {
+    "id": "q3",
+    "q": "Why pre-specify a primary endpoint?",
+    "options": [
+      "To guarantee significance",
+      "To reduce selective outcome switching and clarify the analysis",
+      "To eliminate all bias",
+      "To avoid collecting data"
+    ],
+    "correct": 1,
+    "why": "Pre-specification improves transparency and supports design and analysis planning."
+  },
+  {
+    "id": "q4",
+    "q": "Which is an example of a surrogate endpoint?",
+    "options": [
+      "All-cause mortality",
+      "Patient-reported pain",
+      "A biomarker used instead of a direct clinical outcome",
+      "Hospital admission"
+    ],
+    "correct": 2,
+    "why": "A surrogate substitutes for a direct outcome and may not predict patient benefit."
+  },
+  {
+    "id": "q5",
+    "q": "A reporting checklist:",
+    "options": [
+      "Guarantees low risk of bias",
+      "Replaces protocol review",
+      "Improves reporting transparency but does not guarantee sound methods",
+      "Makes randomization unnecessary"
+    ],
+    "correct": 2,
+    "why": "Reporting quality and methodological quality are related but not identical."
+  }
+]

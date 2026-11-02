@@ -1,0 +1,62 @@
+[
+  {
+    "id": "q1",
+    "q": "Why use `with open(...)`?",
+    "options": [
+      "It ensures the file is closed when the block exits",
+      "It encrypts the file",
+      "It converts CSV to SQL",
+      "It removes duplicate rows"
+    ],
+    "correct": 0,
+    "why": "Context managers handle file closing reliably."
+  },
+  {
+    "id": "q2",
+    "q": "What is a common use of JSON?",
+    "options": [
+      "Represent nested structured data",
+      "Store only formulas",
+      "Replace every database",
+      "Render charts"
+    ],
+    "correct": 0,
+    "why": "JSON supports objects, arrays and scalar values."
+  },
+  {
+    "id": "q3",
+    "q": "Which exception is appropriate for a missing input file?",
+    "options": [
+      "FileNotFoundError",
+      "ZeroDivisionError",
+      "ImportError always",
+      "StopIteration"
+    ],
+    "correct": 0,
+    "why": "Opening a nonexistent path commonly raises FileNotFoundError."
+  },
+  {
+    "id": "q4",
+    "q": "Why avoid `except: pass`?",
+    "options": [
+      "It hides failures and can allow invalid outputs",
+      "It speeds up all code",
+      "It validates schemas",
+      "It closes notebooks"
+    ],
+    "correct": 0,
+    "why": "Broadly swallowing exceptions prevents transparent error handling."
+  },
+  {
+    "id": "q5",
+    "q": "Where should API tokens be stored?",
+    "options": [
+      "Approved environment variables or a secrets manager",
+      "Hard-coded in source code",
+      "In a public notebook",
+      "In a Git commit"
+    ],
+    "correct": 0,
+    "why": "Credentials should not be committed or exposed in notebook outputs."
+  }
+]

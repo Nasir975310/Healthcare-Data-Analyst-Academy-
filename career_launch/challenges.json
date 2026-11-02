@@ -1,0 +1,182 @@
+[
+  {
+    "id": "JOB-01",
+    "title": "Choose target role family",
+    "scenario": "Compare healthcare analyst, clinical data management, PV data operations, and RWE roles against degree eligibility, skills, experience and preferred work mode.",
+    "task": "Create the evidence artifact and record its completion in your career-launch folder.",
+    "acceptance": [
+      "Use a real employer vacancy only after confirming it on the official career site.",
+      "State verified skills and experience accurately.",
+      "Attach evidence from a reproducible project or assessment.",
+      "Record the next action and any unresolved gap."
+    ],
+    "hint": "Prioritise vacancies with realistic experience requirements and no hard eligibility mismatch.",
+    "solution": "Use the role matrix, application scorecard, CV and portfolio templates, timed hiring assessments and scam/privacy checks supplied in this module.",
+    "portfolio": "Retain a redacted copy of the tailored CV, job scorecard and assessment evidence. Never publish personal identifiers or employer-confidential content."
+  },
+  {
+    "id": "JOB-02",
+    "title": "Audit one live job description",
+    "scenario": "Use the scorecard to extract hard eligibility gates, required tools, healthcare domain, years of experience and application route.",
+    "task": "Create the evidence artifact and record its completion in your career-launch folder.",
+    "acceptance": [
+      "Use a real employer vacancy only after confirming it on the official career site.",
+      "State verified skills and experience accurately.",
+      "Attach evidence from a reproducible project or assessment.",
+      "Record the next action and any unresolved gap."
+    ],
+    "hint": "Prioritise vacancies with realistic experience requirements and no hard eligibility mismatch.",
+    "solution": "Use the role matrix, application scorecard, CV and portfolio templates, timed hiring assessments and scam/privacy checks supplied in this module.",
+    "portfolio": "Retain a redacted copy of the tailored CV, job scorecard and assessment evidence. Never publish personal identifiers or employer-confidential content."
+  },
+  {
+    "id": "JOB-03",
+    "title": "Tailor the CV honestly",
+    "scenario": "Create a one-page role-specific CV that separates education, clinical experience, projects, employment and training.",
+    "task": "Create the evidence artifact and record its completion in your career-launch folder.",
+    "acceptance": [
+      "Use a real employer vacancy only after confirming it on the official career site.",
+      "State verified skills and experience accurately.",
+      "Attach evidence from a reproducible project or assessment.",
+      "Record the next action and any unresolved gap."
+    ],
+    "hint": "Prioritise vacancies with realistic experience requirements and no hard eligibility mismatch.",
+    "solution": "Use the role matrix, application scorecard, CV and portfolio templates, timed hiring assessments and scam/privacy checks supplied in this module.",
+    "portfolio": "Retain a redacted copy of the tailored CV, job scorecard and assessment evidence. Never publish personal identifiers or employer-confidential content."
+  },
+  {
+    "id": "JOB-04",
+    "title": "Build a proof-first portfolio",
+    "scenario": "Select two strongest projects and attach code, data dictionary, QA evidence, limitations and a concise report.",
+    "task": "Create the evidence artifact and record its completion in your career-launch folder.",
+    "acceptance": [
+      "Use a real employer vacancy only after confirming it on the official career site.",
+      "State verified skills and experience accurately.",
+      "Attach evidence from a reproducible project or assessment.",
+      "Record the next action and any unresolved gap."
+    ],
+    "hint": "Prioritise vacancies with realistic experience requirements and no hard eligibility mismatch.",
+    "solution": "Use the role matrix, application scorecard, CV and portfolio templates, timed hiring assessments and scam/privacy checks supplied in this module.",
+    "portfolio": "Retain a redacted copy of the tailored CV, job scorecard and assessment evidence. Never publish personal identifiers or employer-confidential content."
+  },
+  {
+    "id": "JOB-05",
+    "title": "Write a targeted application note",
+    "scenario": "Explain the Pharm.D-to-analytics connection and cite one directly relevant project without claiming experience you do not have.",
+    "task": "Create the evidence artifact and record its completion in your career-launch folder.",
+    "acceptance": [
+      "Use a real employer vacancy only after confirming it on the official career site.",
+      "State verified skills and experience accurately.",
+      "Attach evidence from a reproducible project or assessment.",
+      "Record the next action and any unresolved gap."
+    ],
+    "hint": "Prioritise vacancies with realistic experience requirements and no hard eligibility mismatch.",
+    "solution": "Use the role matrix, application scorecard, CV and portfolio templates, timed hiring assessments and scam/privacy checks supplied in this module.",
+    "portfolio": "Retain a redacted copy of the tailored CV, job scorecard and assessment evidence. Never publish personal identifiers or employer-confidential content."
+  },
+  {
+    "id": "JOB-06",
+    "title": "Complete a timed SQL assessment",
+    "scenario": "Finish HIRE-01 under the time limit; save query, outputs, assumptions and QA evidence.",
+    "task": "Create the evidence artifact and record its completion in your career-launch folder.",
+    "acceptance": [
+      "Use a real employer vacancy only after confirming it on the official career site.",
+      "State verified skills and experience accurately.",
+      "Attach evidence from a reproducible project or assessment.",
+      "Record the next action and any unresolved gap."
+    ],
+    "hint": "Prioritise vacancies with realistic experience requirements and no hard eligibility mismatch.",
+    "solution": "Use the role matrix, application scorecard, CV and portfolio templates, timed hiring assessments and scam/privacy checks supplied in this module.",
+    "portfolio": "Retain a redacted copy of the tailored CV, job scorecard and assessment evidence. Never publish personal identifiers or employer-confidential content."
+  },
+  {
+    "id": "JOB-07",
+    "title": "Complete a Python assessment",
+    "scenario": "Finish HIRE-03; ensure the script retains issues and returns a non-zero status for configured critical failures.",
+    "task": "Create the evidence artifact and record its completion in your career-launch folder.",
+    "acceptance": [
+      "Use a real employer vacancy only after confirming it on the official career site.",
+      "State verified skills and experience accurately.",
+      "Attach evidence from a reproducible project or assessment.",
+      "Record the next action and any unresolved gap."
+    ],
+    "hint": "Prioritise vacancies with realistic experience requirements and no hard eligibility mismatch.",
+    "solution": "Use the role matrix, application scorecard, CV and portfolio templates, timed hiring assessments and scam/privacy checks supplied in this module.",
+    "portfolio": "Retain a redacted copy of the tailored CV, job scorecard and assessment evidence. Never publish personal identifiers or employer-confidential content."
+  },
+  {
+    "id": "JOB-08",
+    "title": "Practise healthcare interpretation",
+    "scenario": "Explain denominators, data grain, clinical proxies and the distinction between association and causation.",
+    "task": "Create the evidence artifact and record its completion in your career-launch folder.",
+    "acceptance": [
+      "Use a real employer vacancy only after confirming it on the official career site.",
+      "State verified skills and experience accurately.",
+      "Attach evidence from a reproducible project or assessment.",
+      "Record the next action and any unresolved gap."
+    ],
+    "hint": "Prioritise vacancies with realistic experience requirements and no hard eligibility mismatch.",
+    "solution": "Use the role matrix, application scorecard, CV and portfolio templates, timed hiring assessments and scam/privacy checks supplied in this module.",
+    "portfolio": "Retain a redacted copy of the tailored CV, job scorecard and assessment evidence. Never publish personal identifiers or employer-confidential content."
+  },
+  {
+    "id": "JOB-09",
+    "title": "Practise remote client communication",
+    "scenario": "Complete HIRE-05 and write a concise clarification, blocker update and final handoff.",
+    "task": "Create the evidence artifact and record its completion in your career-launch folder.",
+    "acceptance": [
+      "Use a real employer vacancy only after confirming it on the official career site.",
+      "State verified skills and experience accurately.",
+      "Attach evidence from a reproducible project or assessment.",
+      "Record the next action and any unresolved gap."
+    ],
+    "hint": "Prioritise vacancies with realistic experience requirements and no hard eligibility mismatch.",
+    "solution": "Use the role matrix, application scorecard, CV and portfolio templates, timed hiring assessments and scam/privacy checks supplied in this module.",
+    "portfolio": "Retain a redacted copy of the tailored CV, job scorecard and assessment evidence. Never publish personal identifiers or employer-confidential content."
+  },
+  {
+    "id": "JOB-10",
+    "title": "Run a structured mock interview",
+    "scenario": "Answer the project, SQL, healthcare, data-quality and remote-work questions using concise examples.",
+    "task": "Create the evidence artifact and record its completion in your career-launch folder.",
+    "acceptance": [
+      "Use a real employer vacancy only after confirming it on the official career site.",
+      "State verified skills and experience accurately.",
+      "Attach evidence from a reproducible project or assessment.",
+      "Record the next action and any unresolved gap."
+    ],
+    "hint": "Prioritise vacancies with realistic experience requirements and no hard eligibility mismatch.",
+    "solution": "Use the role matrix, application scorecard, CV and portfolio templates, timed hiring assessments and scam/privacy checks supplied in this module.",
+    "portfolio": "Retain a redacted copy of the tailored CV, job scorecard and assessment evidence. Never publish personal identifiers or employer-confidential content."
+  },
+  {
+    "id": "JOB-11",
+    "title": "Set up an application pipeline",
+    "scenario": "Track role, employer, official URL, eligibility, CV version, status, follow-up and next action.",
+    "task": "Create the evidence artifact and record its completion in your career-launch folder.",
+    "acceptance": [
+      "Use a real employer vacancy only after confirming it on the official career site.",
+      "State verified skills and experience accurately.",
+      "Attach evidence from a reproducible project or assessment.",
+      "Record the next action and any unresolved gap."
+    ],
+    "hint": "Prioritise vacancies with realistic experience requirements and no hard eligibility mismatch.",
+    "solution": "Use the role matrix, application scorecard, CV and portfolio templates, timed hiring assessments and scam/privacy checks supplied in this module.",
+    "portfolio": "Retain a redacted copy of the tailored CV, job scorecard and assessment evidence. Never publish personal identifiers or employer-confidential content."
+  },
+  {
+    "id": "JOB-12",
+    "title": "Review the funnel and improve",
+    "scenario": "After each 10\u201320 well-matched applications, identify whether the bottleneck is eligibility, CV, screening, assessment or interview.",
+    "task": "Create the evidence artifact and record its completion in your career-launch folder.",
+    "acceptance": [
+      "Use a real employer vacancy only after confirming it on the official career site.",
+      "State verified skills and experience accurately.",
+      "Attach evidence from a reproducible project or assessment.",
+      "Record the next action and any unresolved gap."
+    ],
+    "hint": "Prioritise vacancies with realistic experience requirements and no hard eligibility mismatch.",
+    "solution": "Use the role matrix, application scorecard, CV and portfolio templates, timed hiring assessments and scam/privacy checks supplied in this module.",
+    "portfolio": "Retain a redacted copy of the tailored CV, job scorecard and assessment evidence. Never publish personal identifiers or employer-confidential content."
+  }
+]

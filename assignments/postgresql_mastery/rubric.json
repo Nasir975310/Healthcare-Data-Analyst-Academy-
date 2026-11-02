@@ -1,0 +1,44 @@
+{
+  "total_points": 100,
+  "criteria": [
+    {
+      "criterion": "Grain, cohort and denominator are explicitly defined",
+      "points": 20
+    },
+    {
+      "criterion": "Department summary reconciles and preserves encounter grain",
+      "points": 15
+    },
+    {
+      "criterion": "No-order encounter anti-join is correct",
+      "points": 10
+    },
+    {
+      "criterion": "Therapeutic class ranking and interpretation are correct",
+      "points": 10
+    },
+    {
+      "criterion": "Data-quality checks are reproducible and correctly scoped",
+      "points": 15
+    },
+    {
+      "criterion": "SQL is readable, parameter-safe where applicable and reproducible",
+      "points": 10
+    },
+    {
+      "criterion": "Handoff communicates assumptions and limitations",
+      "points": 15
+    },
+    {
+      "criterion": "Professional file organisation and evidence",
+      "points": 5
+    }
+  ],
+  "critical_errors": [
+    "Encounter counts inflated by order-level joins without DISTINCT or pre-aggregation",
+    "Order count described as medication administration or adherence",
+    "Synthetic readmission flag described as validated clinical outcome",
+    "PHI or credentials committed to portfolio repository"
+  ],
+  "pass_threshold": 80
+}

@@ -1,0 +1,13 @@
+Junior Healthcare Data Analyst — Example Teaching Hospital (fictional job post)
+Responsibilities:
+- Prepare recurring operational reports and validate source data.
+- Use SQL joins, filtering and aggregation.
+- Clean and summarize datasets with Excel or Python.
+- Communicate metric definitions and limitations to clinical operations stakeholders.
+- Maintain documentation and protect confidential information.
+Requirements:
+- Graduate in pharmacy, life sciences, statistics or related discipline.
+- Basic SQL and spreadsheet skills.
+- Python or Power BI exposure preferred.
+- Clear written communication.
+- 0–2 years of experience; training provided.

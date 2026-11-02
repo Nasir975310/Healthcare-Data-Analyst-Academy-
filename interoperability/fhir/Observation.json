@@ -1,0 +1,38 @@
+{
+  "resourceType": "Observation",
+  "id": "obs-00001",
+  "status": "final",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "Laboratory"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "8480-6",
+        "display": "Systolic blood pressure"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/patient-pt0007"
+  },
+  "encounter": {
+    "reference": "Encounter/enc-00001"
+  },
+  "effectiveDateTime": "2025-01-15T09:10:00+05:30",
+  "valueQuantity": {
+    "value": 142,
+    "unit": "mm[Hg]",
+    "system": "http://unitsofmeasure.org",
+    "code": "mm[Hg]"
+  }
+}

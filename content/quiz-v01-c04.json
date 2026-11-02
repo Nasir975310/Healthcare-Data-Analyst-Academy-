@@ -1,0 +1,62 @@
+[
+  {
+    "id": "v01-c04-q1",
+    "q": "A prescription order exists in the system. What does this alone establish?",
+    "options": [
+      "The patient took the medicine",
+      "The dose was administered",
+      "A prescription order was recorded",
+      "The medicine improved the outcome"
+    ],
+    "correct": 2,
+    "why": "Orders, dispensing, administration and actual use are distinct events."
+  },
+  {
+    "id": "v01-c04-q2",
+    "q": "Which timestamp should be used for a collection-to-result turnaround measure?",
+    "options": [
+      "Any available timestamp",
+      "A clearly defined specimen collection event and the chosen result event",
+      "Patient birth date",
+      "Database backup time"
+    ],
+    "correct": 1,
+    "why": "The start and end timestamps must represent the workflow interval being measured."
+  },
+  {
+    "id": "v01-c04-q3",
+    "q": "Which standard is primarily associated with laboratory and clinical observation identifiers?",
+    "options": [
+      "LOINC",
+      "Git",
+      "CSV",
+      "ATC only"
+    ],
+    "correct": 0,
+    "why": "LOINC provides identifiers for many laboratory and clinical observations."
+  },
+  {
+    "id": "v01-c04-q4",
+    "q": "Two systems exchange a field called 'test result' but use different units. Which interoperability issue remains?",
+    "options": [
+      "Only technical connectivity",
+      "Semantic consistency",
+      "Keyboard layout",
+      "File compression"
+    ],
+    "correct": 1,
+    "why": "Semantic interoperability requires consistent meaning, including units, codes and context."
+  },
+  {
+    "id": "v01-c04-q5",
+    "q": "Why may a hospital patient identifier not be unique across a health network?",
+    "options": [
+      "Identifiers are always random",
+      "It may be scoped to one facility or local system",
+      "Patient identifiers are measurements",
+      "All systems use one global identifier"
+    ],
+    "correct": 1,
+    "why": "Identifier scope must be understood before records are linked across systems."
+  }
+]

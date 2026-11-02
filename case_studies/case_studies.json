@@ -1,0 +1,74 @@
+[
+  {
+    "id": "CASE-01",
+    "title": "Inpatient operations and throughput",
+    "role": "Hospital operations analyst",
+    "scenario": "A hospital asks whether one department has deteriorating throughput. Analyse 90-day encounter volume, mean/median LOS, discharge destination and supplied readmission flags by department and month.",
+    "approach": "Define encounter grain; validate date range and LOS; stratify by department and month; show counts and uncertainty; investigate case-mix; write a one-page executive summary.",
+    "deliverables": "Encounter-level monthly KPI table; dashboard wireframe; 5-slide narrative; limitations register.",
+    "guardrails": "Do not label association as performance causation; supplied readmission flags are not validated outcomes."
+  },
+  {
+    "id": "CASE-02",
+    "title": "Antihypertensive drug utilisation evaluation",
+    "role": "Clinical pharmacy / Pharm.D analyst",
+    "scenario": "A tertiary-care pharmacy team wants a synthetic DUE review of antihypertensive prescribing, combinations, comorbidities and BP documentation.",
+    "approach": "Define inclusion/exclusion; map generic names/classes; assess monotherapy/combination patterns; check dose/route/frequency completeness; summarise baseline/follow-up BP; separate prescribing indicators from clinical outcomes.",
+    "deliverables": "DUE protocol; cleaned synthetic dataset; prescribing indicator table; 2-page clinical interpretation.",
+    "guardrails": "Order records do not prove administration/adherence; do not infer guideline concordance without patient-specific context and dated guideline."
+  },
+  {
+    "id": "CASE-03",
+    "title": "Pharmacovigilance signal triage",
+    "role": "Drug safety data analyst",
+    "scenario": "Safety team receives spontaneous case reports and requests a screening-priority summary.",
+    "approach": "Deduplicate case IDs; classify seriousness separately from severity; inspect missingness and chronology; compute descriptive counts and disproportionality screening only when comparator data are valid.",
+    "deliverables": "Case reconciliation log; signal-screening table; narrative triage memo.",
+    "guardrails": "ROR/PRR are screening measures, not causality; no regulatory conclusion from synthetic reports."
+  },
+  {
+    "id": "CASE-04",
+    "title": "Claims-based adherence proxy",
+    "role": "RWE analyst",
+    "scenario": "Payer asks for a descriptive antihypertensive medication availability measure.",
+    "approach": "Define eligible continuous enrolment; construct days-supply coverage; define refill overlap and allowable gap; compute PDC; conduct sensitivity analyses.",
+    "deliverables": "Cohort flow; PDC distribution; exclusions; sensitivity table.",
+    "guardrails": "Claims-based possession is not ingestion; days supply assumptions and enrollment completeness matter."
+  },
+  {
+    "id": "CASE-05",
+    "title": "Real-world evidence cohort design",
+    "role": "RWE / HEOR analyst",
+    "scenario": "Research team wants to compare two treatment initiation cohorts using observational data.",
+    "approach": "Specify target population, new-user design, index date, baseline lookback, follow-up, outcomes, censoring and confounders; create a DAG; assess positivity and balance.",
+    "deliverables": "Protocol synopsis; cohort specification; baseline table; analysis plan.",
+    "guardrails": "Propensity score adjustment does not remove unmeasured confounding; avoid causal wording without assumptions."
+  },
+  {
+    "id": "CASE-06",
+    "title": "Clinical trial data quality",
+    "role": "Clinical data analyst",
+    "scenario": "A study manager reports inconsistent dates, duplicate subjects and out-of-range observations.",
+    "approach": "Check subject uniqueness, visit windows, missingness, range checks, cross-field logic and query ageing; distinguish source correction from derived correction.",
+    "deliverables": "Data-cleaning plan; issue log; query metrics; reproducible QC script.",
+    "guardrails": "Never silently overwrite source values; maintain audit trail and protocol context."
+  },
+  {
+    "id": "CASE-07",
+    "title": "Emergency department flow",
+    "role": "Hospital BI analyst",
+    "scenario": "ED leadership wants to understand arrival-to-provider and arrival-to-disposition delays.",
+    "approach": "Validate timestamp ordering/time zones; calculate intervals; stratify by triage acuity and shift; report median and upper quantiles; identify missing timestamps.",
+    "deliverables": "Metric dictionary; timestamp QC report; flow dashboard concept.",
+    "guardrails": "Do not rank teams without case-mix and timestamp completeness assessment."
+  },
+  {
+    "id": "CASE-08",
+    "title": "Laboratory turnaround time",
+    "role": "Laboratory data analyst",
+    "scenario": "Lab director wants order-to-collection, collection-to-result and total turnaround by test and priority.",
+    "approach": "Define timestamp events; remove/flag impossible sequences; separate cancelled tests; calculate median and 90th percentile; stratify by priority.",
+    "deliverables": "TAT metric table; exception report; operational recommendations.",
+    "guardrails": "A result timestamp is not equivalent to clinician acknowledgement or treatment."
+  }
+]

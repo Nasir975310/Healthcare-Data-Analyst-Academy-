@@ -1,0 +1,1 @@
+pandas>=2.0\nnumpy>=1.24\nscipy>=1.10\n

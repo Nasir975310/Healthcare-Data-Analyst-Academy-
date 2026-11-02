@@ -1,0 +1,96 @@
+---
+title: "Synthetic Hospital Encounter Analytics"
+subtitle: "Quarter 1 2026 — reproducible portfolio report"
+author: "Healthcare Data Analyst Academy"
+date: today
+format:
+  html:
+    toc: true
+    number-sections: true
+execute:
+  echo: true
+  warning: false
+  message: false
+---
+
+## Executive summary
+
+This report demonstrates an end-to-end descriptive analysis using fictional encounter records. It is a programming and reporting exercise, not a clinical quality assessment.
+
+## Data and cohort
+
+The analysis unit is one encounter. Include admission dates from 1 January 2026 inclusive to 1 April 2026 exclusive. The department lookup must contain one row per department identifier. Blank systolic blood pressure (SBP) values remain missing and are excluded only from SBP-specific summaries.
+
+```{python}
+from pathlib import Path
+import pandas as pd
+import matplotlib.pyplot as plt
+
+academy_root = Path.cwd()
+data_dir = academy_root / "datasets" / "v03_python"
+enc = pd.read_csv(data_dir / "encounters.csv",
+                  dtype={"encounter_id":"string","patient_id":"string","department_id":"string"})
+dept = pd.read_csv(data_dir / "departments.csv", dtype={"department_id":"string"})
+enc["admission_date"] = pd.to_datetime(enc["admission_date"], errors="coerce")
+enc["systolic_bp"] = pd.to_numeric(enc["systolic_bp"], errors="coerce")
+assert enc["encounter_id"].is_unique
+cohort = enc.loc[
+    (enc.admission_date >= "2026-01-01") &
+    (enc.admission_date < "2026-04-01")
+].copy()
+joined = cohort.merge(dept[["department_id","department_name"]],
+                      on="department_id", how="left",
+                      validate="many_to_one", indicator=True)
+assert len(joined) == len(cohort)
+```
+
+## Data-quality summary
+
+```{python}
+quality = pd.DataFrame({
+    "Check": ["Encounter rows", "Unique encounter IDs", "Distinct patients",
+              "Missing SBP", "Unmatched department keys"],
+    "Result": [len(cohort), cohort.encounter_id.nunique(),
+               cohort.patient_id.nunique(), cohort.systolic_bp.isna().sum(),
+               (joined["_merge"] != "both").sum()]
+})
+quality
+```
+
+## Department summary
+
+```{python}
+summary = (joined.groupby("department_name", dropna=False)
+    .agg(encounter_n=("encounter_id","size"),
+         unique_patients=("patient_id","nunique"),
+         sbp_nonmissing_n=("systolic_bp","count"),
+         mean_sbp=("systolic_bp","mean"),
+         median_sbp=("systolic_bp","median"))
+    .reset_index())
+summary["sbp_missing_n"] = summary.encounter_n - summary.sbp_nonmissing_n
+summary["sbp_completeness_pct"] = 100 * summary.sbp_nonmissing_n / summary.encounter_n
+summary.round(2)
+```
+
+## Visualization
+
+```{python}
+fig, ax = plt.subplots(figsize=(8, 5))
+joined.systolic_bp.dropna().plot.hist(ax=ax, bins=12, edgecolor="black")
+ax.set(title="Recorded systolic blood pressure distribution",
+       xlabel="Systolic blood pressure (mmHg)", ylabel="Encounter count")
+plt.tight_layout()
+plt.show()
+```
+
+## Interpretation and limitations
+
+- The records are synthetic and are not representative clinical evidence.
+- Encounter-level records may repeat a patient; inferential methods must account for within-patient correlation where relevant.
+- Missing SBP is not imputed. Department means use nonmissing observations only.
+- Department differences are descriptive and must not be interpreted as rankings, treatment effects or causal relationships.
+- The dataset is small and was created for learning; no clinical or operational conclusions about a real hospital are justified.
+
+## Reproducibility
+
+Record the Python version, package versions, execution date, input filenames, cohort dates and code revision. Run the project tests before rendering. The separate R scripts independently reproduce the summary and optional figures; compare their output tables with the Python and SQL outputs.

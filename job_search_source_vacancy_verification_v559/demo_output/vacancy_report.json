@@ -1,0 +1,88 @@
+{
+  "review_date": "2026-11-02",
+  "vacancy_count": 3,
+  "duplicate_url_groups": [
+    [
+      "V-001",
+      "V-002"
+    ]
+  ],
+  "expired_count": 1,
+  "manual_review_complete_count": 1,
+  "eligible_for_human_final_review_count": 1,
+  "assessments": [
+    {
+      "vacancy_id": "V-001",
+      "employer": "Example Health Analytics",
+      "role": "Junior Healthcare Data Analyst",
+      "source_url": "https://careers.example.org/jobs/123?utm_source=mail",
+      "canonical_source_url": "https://careers.example.org/jobs/123",
+      "deadline": "2026-11-20",
+      "expired_as_of_review_date": false,
+      "checks_yes": 5,
+      "checks_total": 5,
+      "checks_unknown_or_na": [],
+      "checks_no": [],
+      "manual_review_complete": true,
+      "eligible_for_human_final_review": true,
+      "warnings": [],
+      "disclaimer": "Checklist completion is not proof of legitimacy, employment eligibility or vacancy authenticity. Independently verify through official channels."
+    },
+    {
+      "vacancy_id": "V-002",
+      "employer": "Example Health Analytics",
+      "role": "Junior Healthcare Data Analyst",
+      "source_url": "https://careers.example.org/jobs/123",
+      "canonical_source_url": "https://careers.example.org/jobs/123",
+      "deadline": "2026-11-20",
+      "expired_as_of_review_date": false,
+      "checks_yes": 4,
+      "checks_total": 5,
+      "checks_unknown_or_na": [
+        "recruiter_identity_checked"
+      ],
+      "checks_no": [],
+      "manual_review_complete": false,
+      "eligible_for_human_final_review": false,
+      "warnings": [
+        "Verification remains incomplete: recruiter_identity_checked"
+      ],
+      "disclaimer": "Checklist completion is not proof of legitimacy, employment eligibility or vacancy authenticity. Independently verify through official channels."
+    },
+    {
+      "vacancy_id": "V-003",
+      "employer": "Example Clinical Services",
+      "role": "Clinical Data Coordinator",
+      "source_url": "https://jobs.invalid.example/role/77",
+      "canonical_source_url": "https://jobs.invalid.example/role/77",
+      "deadline": "2026-10-25",
+      "expired_as_of_review_date": true,
+      "checks_yes": 0,
+      "checks_total": 5,
+      "checks_unknown_or_na": [
+        "employer_domain_checked",
+        "recruiter_identity_checked",
+        "privacy_request_checked"
+      ],
+      "checks_no": [
+        "vacancy_on_official_site",
+        "no_upfront_fee_confirmed"
+      ],
+      "manual_review_complete": false,
+      "eligible_for_human_final_review": false,
+      "warnings": [
+        "Deadline is before the selected review date.",
+        "One or more verification checks are marked NO: vacancy_on_official_site, no_upfront_fee_confirmed",
+        "Verification remains incomplete: employer_domain_checked, recruiter_identity_checked, privacy_request_checked"
+      ],
+      "disclaimer": "Checklist completion is not proof of legitimacy, employment eligibility or vacancy authenticity. Independently verify through official channels."
+    }
+  ],
+  "limitations": [
+    "No network access is used; URLs, domains, employers and vacancies are not verified.",
+    "Duplicate detection compares normalised source URLs only; same vacancy on different URLs may not be detected.",
+    "A complete checklist is not a guarantee of legitimacy or safety.",
+    "Review date is supplied by the user; deadline status depends on its accuracy.",
+    "Do not submit credentials, OTPs, passwords, banking details or unnecessary identity documents."
+  ]
+}

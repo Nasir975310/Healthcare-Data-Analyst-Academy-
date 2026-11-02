@@ -1,0 +1,182 @@
+[
+  {
+    "id": "PF-01",
+    "title": "Translate a vague request",
+    "scenario": "Turn a stakeholder request into an analytical question, population, grain, period, denominator and decision.",
+    "task": "Produce a concise evidence artifact and add it to the relevant capstone folder.",
+    "acceptance": [
+      "Show assumptions and definitions.",
+      "Provide reproducible evidence, not screenshots alone.",
+      "Include QA and limitations.",
+      "Explain the business or clinical decision supported."
+    ],
+    "hint": "Write the decision question and definition before opening the dataset.",
+    "solution": "Use the supplied capstone brief, data dictionary, SQL and Python outputs. Have another person reproduce at least one key metric from raw data before describing the work as validated.",
+    "portfolio": "Commit the brief, code, SQL, data dictionary, output and QA log. Use synthetic data only."
+  },
+  {
+    "id": "PF-02",
+    "title": "Write a KPI dictionary",
+    "scenario": "Define numerator, denominator, exclusions, unit, time window, source, owner and refresh cadence.",
+    "task": "Produce a concise evidence artifact and add it to the relevant capstone folder.",
+    "acceptance": [
+      "Show assumptions and definitions.",
+      "Provide reproducible evidence, not screenshots alone.",
+      "Include QA and limitations.",
+      "Explain the business or clinical decision supported."
+    ],
+    "hint": "Write the decision question and definition before opening the dataset.",
+    "solution": "Use the supplied capstone brief, data dictionary, SQL and Python outputs. Have another person reproduce at least one key metric from raw data before describing the work as validated.",
+    "portfolio": "Commit the brief, code, SQL, data dictionary, output and QA log. Use synthetic data only."
+  },
+  {
+    "id": "PF-03",
+    "title": "Profile and assess data",
+    "scenario": "Check schema, key uniqueness, missingness, duplicates, ranges, referential integrity and temporal logic.",
+    "task": "Produce a concise evidence artifact and add it to the relevant capstone folder.",
+    "acceptance": [
+      "Show assumptions and definitions.",
+      "Provide reproducible evidence, not screenshots alone.",
+      "Include QA and limitations.",
+      "Explain the business or clinical decision supported."
+    ],
+    "hint": "Write the decision question and definition before opening the dataset.",
+    "solution": "Use the supplied capstone brief, data dictionary, SQL and Python outputs. Have another person reproduce at least one key metric from raw data before describing the work as validated.",
+    "portfolio": "Commit the brief, code, SQL, data dictionary, output and QA log. Use synthetic data only."
+  },
+  {
+    "id": "PF-04",
+    "title": "Build safe SQL",
+    "scenario": "Use CTEs, explicit joins, pre-aggregation, date logic and explainable filters; preserve unmatched records.",
+    "task": "Produce a concise evidence artifact and add it to the relevant capstone folder.",
+    "acceptance": [
+      "Show assumptions and definitions.",
+      "Provide reproducible evidence, not screenshots alone.",
+      "Include QA and limitations.",
+      "Explain the business or clinical decision supported."
+    ],
+    "hint": "Write the decision question and definition before opening the dataset.",
+    "solution": "Use the supplied capstone brief, data dictionary, SQL and Python outputs. Have another person reproduce at least one key metric from raw data before describing the work as validated.",
+    "portfolio": "Commit the brief, code, SQL, data dictionary, output and QA log. Use synthetic data only."
+  },
+  {
+    "id": "PF-05",
+    "title": "Reproduce with Python",
+    "scenario": "Create a script that reads raw inputs, validates assumptions, generates outputs and exits non-zero on critical failures.",
+    "task": "Produce a concise evidence artifact and add it to the relevant capstone folder.",
+    "acceptance": [
+      "Show assumptions and definitions.",
+      "Provide reproducible evidence, not screenshots alone.",
+      "Include QA and limitations.",
+      "Explain the business or clinical decision supported."
+    ],
+    "hint": "Write the decision question and definition before opening the dataset.",
+    "solution": "Use the supplied capstone brief, data dictionary, SQL and Python outputs. Have another person reproduce at least one key metric from raw data before describing the work as validated.",
+    "portfolio": "Commit the brief, code, SQL, data dictionary, output and QA log. Use synthetic data only."
+  },
+  {
+    "id": "PF-06",
+    "title": "Interpret uncertainty",
+    "scenario": "Distinguish descriptive metrics, estimates, confidence intervals, association and causal claims.",
+    "task": "Produce a concise evidence artifact and add it to the relevant capstone folder.",
+    "acceptance": [
+      "Show assumptions and definitions.",
+      "Provide reproducible evidence, not screenshots alone.",
+      "Include QA and limitations.",
+      "Explain the business or clinical decision supported."
+    ],
+    "hint": "Write the decision question and definition before opening the dataset.",
+    "solution": "Use the supplied capstone brief, data dictionary, SQL and Python outputs. Have another person reproduce at least one key metric from raw data before describing the work as validated.",
+    "portfolio": "Commit the brief, code, SQL, data dictionary, output and QA log. Use synthetic data only."
+  },
+  {
+    "id": "PF-07",
+    "title": "Design a decision dashboard",
+    "scenario": "Use a clear question-led layout, consistent definitions, filters, accessibility and visible data freshness.",
+    "task": "Produce a concise evidence artifact and add it to the relevant capstone folder.",
+    "acceptance": [
+      "Show assumptions and definitions.",
+      "Provide reproducible evidence, not screenshots alone.",
+      "Include QA and limitations.",
+      "Explain the business or clinical decision supported."
+    ],
+    "hint": "Write the decision question and definition before opening the dataset.",
+    "solution": "Use the supplied capstone brief, data dictionary, SQL and Python outputs. Have another person reproduce at least one key metric from raw data before describing the work as validated.",
+    "portfolio": "Commit the brief, code, SQL, data dictionary, output and QA log. Use synthetic data only."
+  },
+  {
+    "id": "PF-08",
+    "title": "Write an executive narrative",
+    "scenario": "State finding, magnitude, implication, recommendation, caveat and requested decision.",
+    "task": "Produce a concise evidence artifact and add it to the relevant capstone folder.",
+    "acceptance": [
+      "Show assumptions and definitions.",
+      "Provide reproducible evidence, not screenshots alone.",
+      "Include QA and limitations.",
+      "Explain the business or clinical decision supported."
+    ],
+    "hint": "Write the decision question and definition before opening the dataset.",
+    "solution": "Use the supplied capstone brief, data dictionary, SQL and Python outputs. Have another person reproduce at least one key metric from raw data before describing the work as validated.",
+    "portfolio": "Commit the brief, code, SQL, data dictionary, output and QA log. Use synthetic data only."
+  },
+  {
+    "id": "PF-09",
+    "title": "Prepare a portfolio repository",
+    "scenario": "Organise README, data dictionary, synthetic data, scripts, SQL, outputs, QA, screenshots and licence/privacy note.",
+    "task": "Produce a concise evidence artifact and add it to the relevant capstone folder.",
+    "acceptance": [
+      "Show assumptions and definitions.",
+      "Provide reproducible evidence, not screenshots alone.",
+      "Include QA and limitations.",
+      "Explain the business or clinical decision supported."
+    ],
+    "hint": "Write the decision question and definition before opening the dataset.",
+    "solution": "Use the supplied capstone brief, data dictionary, SQL and Python outputs. Have another person reproduce at least one key metric from raw data before describing the work as validated.",
+    "portfolio": "Commit the brief, code, SQL, data dictionary, output and QA log. Use synthetic data only."
+  },
+  {
+    "id": "PF-10",
+    "title": "Run a peer review",
+    "scenario": "Use a checklist for calculations, joins, source lineage, definitions, visual integrity and claim support.",
+    "task": "Produce a concise evidence artifact and add it to the relevant capstone folder.",
+    "acceptance": [
+      "Show assumptions and definitions.",
+      "Provide reproducible evidence, not screenshots alone.",
+      "Include QA and limitations.",
+      "Explain the business or clinical decision supported."
+    ],
+    "hint": "Write the decision question and definition before opening the dataset.",
+    "solution": "Use the supplied capstone brief, data dictionary, SQL and Python outputs. Have another person reproduce at least one key metric from raw data before describing the work as validated.",
+    "portfolio": "Commit the brief, code, SQL, data dictionary, output and QA log. Use synthetic data only."
+  },
+  {
+    "id": "PF-11",
+    "title": "Handle client change requests",
+    "scenario": "Assess scope, impact, priority, timeline, dependencies and version control; obtain approval for material changes.",
+    "task": "Produce a concise evidence artifact and add it to the relevant capstone folder.",
+    "acceptance": [
+      "Show assumptions and definitions.",
+      "Provide reproducible evidence, not screenshots alone.",
+      "Include QA and limitations.",
+      "Explain the business or clinical decision supported."
+    ],
+    "hint": "Write the decision question and definition before opening the dataset.",
+    "solution": "Use the supplied capstone brief, data dictionary, SQL and Python outputs. Have another person reproduce at least one key metric from raw data before describing the work as validated.",
+    "portfolio": "Commit the brief, code, SQL, data dictionary, output and QA log. Use synthetic data only."
+  },
+  {
+    "id": "PF-12",
+    "title": "Interview and job simulation",
+    "scenario": "Explain one project end-to-end, debug a query, interpret a KPI and communicate a limitation under time pressure.",
+    "task": "Produce a concise evidence artifact and add it to the relevant capstone folder.",
+    "acceptance": [
+      "Show assumptions and definitions.",
+      "Provide reproducible evidence, not screenshots alone.",
+      "Include QA and limitations.",
+      "Explain the business or clinical decision supported."
+    ],
+    "hint": "Write the decision question and definition before opening the dataset.",
+    "solution": "Use the supplied capstone brief, data dictionary, SQL and Python outputs. Have another person reproduce at least one key metric from raw data before describing the work as validated.",
+    "portfolio": "Commit the brief, code, SQL, data dictionary, output and QA log. Use synthetic data only."
+  }
+]

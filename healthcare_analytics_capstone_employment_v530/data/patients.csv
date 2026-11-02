@@ -1,0 +1,9 @@
+patient_id,gender,birth_date,region
+PT001,Female,1978-03-12,North
+PT002,Male,1965-08-21,South
+PT003,Female,1990-11-02,East
+PT004,Male,1954-05-17,West
+PT005,Female,1982-01-09,North
+PT006,Male,1971-07-30,South
+PT007,Female,1995-09-14,East
+PT008,Male,1960-12-04,West

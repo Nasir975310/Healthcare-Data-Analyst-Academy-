@@ -1,0 +1,130 @@
+diagnosis_id,encounter_id,diagnosis_code,diagnosis_label,diagnosis_role
+1,1,E11,Type 2 diabetes mellitus,Primary
+2,2,I25,Ischaemic heart disease,Primary
+3,3,I50,Heart failure,Primary
+4,3,N18,Chronic kidney disease,Secondary
+5,4,N18,Chronic kidney disease,Primary
+6,4,J18,Pneumonia,Secondary
+7,5,I50,Heart failure,Primary
+8,6,J18,Pneumonia,Primary
+9,7,I50,Heart failure,Primary
+10,8,E11,Type 2 diabetes mellitus,Primary
+11,8,I10,Essential hypertension,Secondary
+12,9,E11,Type 2 diabetes mellitus,Primary
+13,9,N18,Chronic kidney disease,Secondary
+14,10,J18,Pneumonia,Primary
+15,11,N18,Chronic kidney disease,Primary
+16,11,N18,Chronic kidney disease,Secondary
+17,12,I10,Essential hypertension,Primary
+18,13,I10,Essential hypertension,Primary
+19,13,I25,Ischaemic heart disease,Secondary
+20,14,I50,Heart failure,Primary
+21,14,I50,Heart failure,Secondary
+22,15,I25,Ischaemic heart disease,Primary
+23,16,I25,Ischaemic heart disease,Primary
+24,17,I10,Essential hypertension,Primary
+25,18,N18,Chronic kidney disease,Primary
+26,19,I10,Essential hypertension,Primary
+27,19,I25,Ischaemic heart disease,Secondary
+28,20,I25,Ischaemic heart disease,Primary
+29,21,N18,Chronic kidney disease,Primary
+30,22,J18,Pneumonia,Primary
+31,23,J18,Pneumonia,Primary
+32,24,I25,Ischaemic heart disease,Primary
+33,25,I10,Essential hypertension,Primary
+34,26,I10,Essential hypertension,Primary
+35,26,I10,Essential hypertension,Secondary
+36,27,I10,Essential hypertension,Primary
+37,28,I10,Essential hypertension,Primary
+38,29,J18,Pneumonia,Primary
+39,30,I25,Ischaemic heart disease,Primary
+40,31,I25,Ischaemic heart disease,Primary
+41,31,I25,Ischaemic heart disease,Secondary
+42,32,E11,Type 2 diabetes mellitus,Primary
+43,33,I50,Heart failure,Primary
+44,33,E11,Type 2 diabetes mellitus,Secondary
+45,34,J18,Pneumonia,Primary
+46,35,I25,Ischaemic heart disease,Primary
+47,36,I25,Ischaemic heart disease,Primary
+48,36,I10,Essential hypertension,Secondary
+49,37,N18,Chronic kidney disease,Primary
+50,38,J18,Pneumonia,Primary
+51,39,E11,Type 2 diabetes mellitus,Primary
+52,40,N18,Chronic kidney disease,Primary
+53,41,E11,Type 2 diabetes mellitus,Primary
+54,42,I25,Ischaemic heart disease,Primary
+55,42,I10,Essential hypertension,Secondary
+56,43,I50,Heart failure,Primary
+57,44,N18,Chronic kidney disease,Primary
+58,45,I50,Heart failure,Primary
+59,46,J18,Pneumonia,Primary
+60,47,N18,Chronic kidney disease,Primary
+61,48,I25,Ischaemic heart disease,Primary
+62,49,N18,Chronic kidney disease,Primary
+63,50,N18,Chronic kidney disease,Primary
+64,51,N18,Chronic kidney disease,Primary
+65,52,N18,Chronic kidney disease,Primary
+66,52,J18,Pneumonia,Secondary
+67,53,I50,Heart failure,Primary
+68,54,E11,Type 2 diabetes mellitus,Primary
+69,54,J18,Pneumonia,Secondary
+70,55,I50,Heart failure,Primary
+71,56,E11,Type 2 diabetes mellitus,Primary
+72,57,I50,Heart failure,Primary
+73,58,N18,Chronic kidney disease,Primary
+74,59,E11,Type 2 diabetes mellitus,Primary
+75,60,J18,Pneumonia,Primary
+76,61,I50,Heart failure,Primary
+77,62,E11,Type 2 diabetes mellitus,Primary
+78,63,N18,Chronic kidney disease,Primary
+79,63,I50,Heart failure,Secondary
+80,64,N18,Chronic kidney disease,Primary
+81,65,N18,Chronic kidney disease,Primary
+82,66,N18,Chronic kidney disease,Primary
+83,67,J18,Pneumonia,Primary
+84,68,I50,Heart failure,Primary
+85,69,I50,Heart failure,Primary
+86,69,J18,Pneumonia,Secondary
+87,70,I25,Ischaemic heart disease,Primary
+88,70,I25,Ischaemic heart disease,Secondary
+89,71,I25,Ischaemic heart disease,Primary
+90,72,I50,Heart failure,Primary
+91,73,E11,Type 2 diabetes mellitus,Primary
+92,74,J18,Pneumonia,Primary
+93,75,J18,Pneumonia,Primary
+94,76,J18,Pneumonia,Primary
+95,77,N18,Chronic kidney disease,Primary
+96,77,I25,Ischaemic heart disease,Secondary
+97,78,I50,Heart failure,Primary
+98,79,I25,Ischaemic heart disease,Primary
+99,80,I10,Essential hypertension,Primary
+100,80,N18,Chronic kidney disease,Secondary
+101,81,N18,Chronic kidney disease,Primary
+102,82,I25,Ischaemic heart disease,Primary
+103,82,J18,Pneumonia,Secondary
+104,83,I25,Ischaemic heart disease,Primary
+105,84,E11,Type 2 diabetes mellitus,Primary
+106,84,I50,Heart failure,Secondary
+107,85,N18,Chronic kidney disease,Primary
+108,86,I10,Essential hypertension,Primary
+109,87,N18,Chronic kidney disease,Primary
+110,87,I10,Essential hypertension,Secondary
+111,88,I25,Ischaemic heart disease,Primary
+112,89,I25,Ischaemic heart disease,Primary
+113,89,J18,Pneumonia,Secondary
+114,90,J18,Pneumonia,Primary
+115,91,J18,Pneumonia,Primary
+116,92,I10,Essential hypertension,Primary
+117,93,I50,Heart failure,Primary
+118,94,N18,Chronic kidney disease,Primary
+119,94,I25,Ischaemic heart disease,Secondary
+120,95,N18,Chronic kidney disease,Primary
+121,96,J18,Pneumonia,Primary
+122,97,I50,Heart failure,Primary
+123,98,I50,Heart failure,Primary
+124,99,I50,Heart failure,Primary
+125,100,I50,Heart failure,Primary
+126,101,J18,Pneumonia,Primary
+127,102,N18,Chronic kidney disease,Primary
+128,103,I10,Essential hypertension,Primary
+129,104,I50,Heart failure,Primary

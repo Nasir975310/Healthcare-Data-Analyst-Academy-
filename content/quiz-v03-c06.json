@@ -1,0 +1,74 @@
+[
+  {
+    "id": "q1",
+    "q": "What is a pandas DataFrame?",
+    "options": [
+      "A two-dimensional labelled table",
+      "A database server",
+      "A single scalar",
+      "A plotting canvas"
+    ],
+    "correct": 0,
+    "why": "A DataFrame contains labelled rows and columns."
+  },
+  {
+    "id": "q2",
+    "q": "What does df.count() do for a column?",
+    "options": [
+      "Counts nonmissing values",
+      "Counts all rows regardless of missingness",
+      "Counts unique IDs only",
+      "Counts columns"
+    ],
+    "correct": 0,
+    "why": "count excludes missing values."
+  },
+  {
+    "id": "q3",
+    "q": "Which merge validation fits many encounters to one department row?",
+    "options": [
+      "many_to_one",
+      "one_to_one",
+      "one_to_many",
+      "many_to_many"
+    ],
+    "correct": 0,
+    "why": "The department lookup key should be unique."
+  },
+  {
+    "id": "q4",
+    "q": "What does groupby().size() count?",
+    "options": [
+      "Rows in each group",
+      "Only nonmissing values in one column",
+      "Unique patients only",
+      "Columns"
+    ],
+    "correct": 0,
+    "why": "size counts rows; count excludes missing values."
+  },
+  {
+    "id": "q5",
+    "q": "Why check row count after a merge?",
+    "options": [
+      "To detect unintended row multiplication or loss",
+      "To choose chart colors",
+      "To change data types",
+      "To remove the index"
+    ],
+    "correct": 0,
+    "why": "Join cardinality affects the grain and metric."
+  },
+  {
+    "id": "q6",
+    "q": "What does melt() commonly do?",
+    "options": [
+      "Reshapes wide data into long form",
+      "Sorts rows",
+      "Drops missing values",
+      "Creates a database index"
+    ],
+    "correct": 0,
+    "why": "melt unpivots selected columns into variable/value rows."
+  }
+]

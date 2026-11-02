@@ -1,0 +1,62 @@
+[
+  {
+    "id": "q1",
+    "q": "Which clause filters grouped results?",
+    "options": [
+      "HAVING",
+      "WHERE",
+      "FROM",
+      "LIMIT"
+    ],
+    "correct": 0,
+    "why": "HAVING filters after aggregation."
+  },
+  {
+    "id": "q2",
+    "q": "What does COUNT(DISTINCT patient_id) return?",
+    "options": [
+      "Unique non-NULL patient IDs",
+      "Encounter rows",
+      "All diagnoses",
+      "Missing IDs"
+    ],
+    "correct": 0,
+    "why": "DISTINCT counts unique values."
+  },
+  {
+    "id": "q3",
+    "q": "What does a LEFT JOIN preserve?",
+    "options": [
+      "All rows from the left table",
+      "Only matching rows",
+      "Only right-side rows",
+      "Only duplicates"
+    ],
+    "correct": 0,
+    "why": "Unmatched left-side rows remain with NULL right-side fields."
+  },
+  {
+    "id": "q4",
+    "q": "What is join fan-out?",
+    "options": [
+      "Row multiplication caused by multiple matches",
+      "A query timeout",
+      "An index type",
+      "A missing table"
+    ],
+    "correct": 0,
+    "why": "Multiple child matches can multiply joined rows."
+  },
+  {
+    "id": "q5",
+    "q": "Best way to avoid child-table fan-out when adding counts?",
+    "options": [
+      "Aggregate each child to the target grain before joining",
+      "Join all raw tables and sum",
+      "Use SELECT *",
+      "Remove unmatched rows"
+    ],
+    "correct": 0,
+    "why": "Pre-aggregation prevents cross-multiplication."
+  }
+]

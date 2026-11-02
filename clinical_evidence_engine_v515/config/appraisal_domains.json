@@ -1,0 +1,69 @@
+{
+  "frameworks": {
+    "randomized_trial": {
+      "name": "RoB 2 concept map",
+      "domains": [
+        "Randomization process",
+        "Deviations from intended interventions",
+        "Missing outcome data",
+        "Measurement of the outcome",
+        "Selection of the reported result"
+      ],
+      "judgments": [
+        "Low risk",
+        "Some concerns",
+        "High risk"
+      ]
+    },
+    "observational": {
+      "name": "ROBINS-I concept map",
+      "domains": [
+        "Confounding",
+        "Selection of participants",
+        "Classification of interventions",
+        "Deviations from intended interventions",
+        "Missing data",
+        "Measurement of outcomes",
+        "Selection of the reported result"
+      ],
+      "judgments": [
+        "Low",
+        "Moderate",
+        "Serious",
+        "Critical",
+        "No information"
+      ]
+    },
+    "diagnostic": {
+      "name": "QUADAS-2 concept map",
+      "domains": [
+        "Patient selection",
+        "Index test",
+        "Reference standard",
+        "Flow and timing"
+      ],
+      "judgments": [
+        "Low risk",
+        "High risk",
+        "Unclear"
+      ]
+    },
+    "certainty": {
+      "name": "GRADE evidence certainty domains",
+      "domains": [
+        "Risk of bias",
+        "Inconsistency",
+        "Indirectness",
+        "Imprecision",
+        "Publication bias"
+      ],
+      "judgments": [
+        "Not serious",
+        "Serious",
+        "Very serious",
+        "Not assessed"
+      ]
+    }
+  },
+  "notice": "Educational domain prompts only. This is not an official implementation of RoB 2, ROBINS-I, QUADAS-2 or GRADE and does not generate validated ratings."
+}

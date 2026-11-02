@@ -1,0 +1,5 @@
+card,reported_value,unit,definition
+Encounter volume,1200.0,encounters,Raw encounter rows
+Medication order count,1800.0,orders,Order rows joined to encounters
+Mean length of stay,4.0,days,Mean after encounter-order join
+Readmission flag rate,0.1,proportion,Supplied synthetic flag; validation not established

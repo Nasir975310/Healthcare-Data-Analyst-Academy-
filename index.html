@@ -1,0 +1,896 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Healthcare Data Analyst Academy — an offline-first learning platform and textbook series.">
+<title>Healthcare Data Analyst Academy</title>
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+<div class="app-shell">
+  <aside class="sidebar" id="sidebar">
+    <div class="brand"><div class="brand-mark">H<span>+</span></div><div><strong>HDA Academy</strong><small>Healthcare Data Analyst</small></div></div>
+    <div class="sidebar-label">LEARNING SPACE</div>
+    <button class="nav-item active" data-view="dashboard"><span>▦</span> Dashboard</button>
+    <button class="nav-item" data-view="curriculum"><span>▤</span> Curriculum</button>
+    <button class="nav-item" data-view="roadmap"><span>⌁</span> Learning roadmap</button>
+    <div class="sidebar-label">REFERENCE CENTRE</div>
+    <button class="nav-item" data-view="glossary"><span>≡</span> Glossary</button>
+    <button class="nav-item" data-view="projects"><span>▣</span> Project library</button>
+    <button class="nav-item" data-view="labs"><span>⚒</span> Practical labs</button><button class="nav-item" data-view="sql-mastery"><span>⌘</span> SQL mastery</button><button class="nav-item" data-view="postgresql-mastery"><span>▤</span> PostgreSQL engineering</button><button class="nav-item" data-view="statistics-mastery"><span>∑</span> Statistics & epidemiology</button><button class="nav-item" data-view="interoperability-mastery"><span>⇄</span> Healthcare interoperability</button><button class="nav-item" data-view="excel-mastery"><span>▦</span> Excel mastery</button><button class="nav-item" data-view="powerbi-mastery"><span>▥</span> Power BI mastery</button><button class="nav-item" data-view="etl-mastery"><span>⇄</span> Data engineering</button><button class="nav-item" data-view="assignments"><span>▣</span> Job simulations</button><button class="nav-item" data-view="assessments"><span>✓</span> Assessments</button>
+    <button class="nav-item" data-view="employer-assessments"><span>✓</span> Employer assessments</button>
+    <button class="nav-item" data-view="career-launch"><span>↗</span> Career launch system</button>
+    <button class="nav-item" data-view="portfolio-career-mastery"><span>▣</span> Portfolio & job readiness</button>
+    <button class="nav-item" data-view="portfolio-engineering"><span>⌘</span> Portfolio engineering & interviews</button>
+    <button class="nav-item" data-view="professional-practicum"><span>▣</span> Professional practicum</button>
+    <button class="nav-item" data-view="advanced-sql-cases"><span>⌘</span> Advanced SQL & case exam</button>
+    <button class="nav-item" data-view="clinical-research-mastery"><span>⚕</span> Clinical research & RWE</button>
+    <button class="nav-item" data-view="career-command"><span>◈</span> Portfolio & career command centre</button>
+    <button class="nav-item" data-view="data-validation-v513"><span>✓</span> Data validation v5.13</button>
+    <button class="nav-item" data-view="statistical-engine-v514"><span>∑</span> Statistical analysis v5.14</button>
+    <button class="nav-item" data-view="clinical-evidence-v515"><span>⚕</span> Clinical evidence v5.15</button>
+    <button class="nav-item" data-view="visualization-studio-v516"><span>▥</span> Visualization studio v5.16</button>
+    <button class="nav-item" data-view="publication-workbench-v517"><span>▤</span> Publication workbench v5.17</button>
+    <button class="nav-item" data-view="portfolio-delivery-v518"><span>▣</span> Portfolio & client delivery v5.18</button>
+    <button class="nav-item" data-view="project-execution-v519"><span>⌘</span> Project execution v5.19</button>
+    <button class="nav-item" data-view="execution-engine-v520"><span>▶</span> Execution engine v5.20</button>
+    <button class="nav-item" data-view="healthcare-data-engineering-v525"><span>⇄</span> Healthcare data engineering v5.25</button>
+    <button class="nav-item" data-view="clinical-warehouse-v526"><span>▤</span> Clinical data warehouse v5.26</button>
+    <button class="nav-item" data-view="postgresql-operations-v527"><span>⌘</span> PostgreSQL operations v5.27</button>
+    <button class="nav-item" data-view="portfolio-delivery-v529"><span>▣</span> BI portfolio & client delivery v5.29</button>
+    <button class="nav-item" data-view="healthcare-capstone-v530"><span>◆</span> Healthcare capstone v5.30</button>
+    <button class="nav-item" data-view="job-readiness-v531"><span>◎</span> Job readiness v5.31</button>
+    <button class="nav-item" data-view="real-world-practicum-v532"><span>◈</span> Real-world practicum v5.32</button>
+    <button class="nav-item" data-view="production-validation-v533"><span>✓</span> Production validation v5.33</button>
+    <button class="nav-item" data-view="deployment-evidence-v534"><span>▣</span> Deployment evidence v5.34</button>
+    <button class="nav-item" data-view="employer-evaluation-v535"><span>★</span> Employer evaluation v5.35</button>
+    <a class="nav-item" href="employment_transition_paid_work_v536/roadmap/interactive_roadmap.html" target="_blank" rel="noopener"><span>↗</span> Employment launch v5.36</a>
+    <a class="nav-item" href="application_execution_assessment_lab_v537/roadmap/interactive_roadmap.html" target="_blank" rel="noopener"><span>↗</span> Application execution v5.37</a>\n    <a class="nav-item" href="portfolio_execution_reproducibility_v538/roadmap/interactive_roadmap.html" target="_blank" rel="noopener"><span>↗</span> Portfolio execution v5.38</a>
+    <a class="nav-item" href="portfolio_presentation_employer_review_v539/roadmap/interactive_roadmap.html" target="_blank" rel="noopener"><span>↗</span> Employer review v5.39</a>
+    <a class="nav-item" href="portfolio_evidence_pack_v540/roadmap/interactive_roadmap.html" target="_blank" rel="noopener"><span>↗</span> Portfolio evidence v5.40</a>
+    <a class="nav-item" href="portfolio_release_gate_v541/roadmap/interactive_roadmap.html" target="_blank" rel="noopener"><span>↗</span> Release gate v5.41</a>
+    <a class="nav-item" href="github_portfolio_publication_v542/roadmap/interactive_roadmap.html" target="_blank" rel="noopener"><span>↗</span> GitHub publication v5.42</a>
+    <a class="nav-item" href="portfolio_handoff_evidence_v543/roadmap/interactive_roadmap.html" target="_blank" rel="noopener"><span>↗</span> Portfolio handoff v5.43</a>
+    <a class="nav-item" href="portfolio_release_candidate_v544/roadmap/interactive_roadmap.html" target="_blank" rel="noopener"><span>↗</span> Portfolio release candidate v5.44</a>
+    <a class="nav-item" href="portfolio_interview_readiness_v545/roadmap/interactive_roadmap.html" target="_blank" rel="noopener"><span>↗</span> Interview readiness v5.45</a>
+    <button class="nav-item" data-view="clinical-methods-v524"><span>⚕</span> Clinical research methods v5.24</button>
+    <button class="nav-item" data-view="statistical-validation-v523"><span>✓</span> Statistical validation v5.23</button>
+    <button class="nav-item" data-view="integrated-reporting-v522"><span>▤</span> Reporting & visualization v5.22</button>
+    <button class="nav-item" data-view="statistical-execution-v521"><span>∑</span> Statistical execution v5.21</button>
+    <button class="nav-item" data-view="study-workspace-v512"><span>⚕</span> Universal study workspace v5.12</button>
+    <button class="nav-item" data-view="platform-roadmap-v511"><span>◈</span> Platform roadmap v5.11</button>
+    <button class="nav-item" data-view="production-ops-v510"><span>⚙</span> Production operations v5.10</button>
+    <button class="nav-item" data-view="bi-engineering-v59"><span>▥</span> BI engineering v5.9</button>
+    <button class="nav-item" data-view="database-engineering-v58"><span>▤</span> Database engineering v5.8</button>
+    <button class="nav-item" data-view="etl-orchestration-v57"><span>⇄</span> ETL orchestration v5.7</button>
+    <button class="nav-item" data-view="data-governance-v56"><span>✓</span> Data governance v5.6</button>
+    <button class="nav-item" data-view="client-delivery-v55"><span>▣</span> Client delivery v5.5</button>
+    <button class="nav-item" data-view="dashboard-studio-v53"><span>▥</span> Healthcare dashboard studio v5.3</button>
+    <button class="nav-item" data-view="interactive-workbench-v52"><span>▦</span> Interactive analytics workbench v5.2</button>
+    <button class="nav-item" data-view="project-simulator-v51"><span>◈</span> Interactive project simulator v5.1</button>
+    <button class="nav-item" data-view="professional-simulation-v50"><span>◈</span> Professional simulation v5.0</button>
+    <button class="nav-item" data-view="portfolio-quality"><span>✓</span> Portfolio quality gate & reproducibility</button>
+    <button class="nav-item" data-view="professional-simulations"><span>▣</span> Professional simulation environment</button>
+    <button class="nav-item" data-view="advanced-mastery"><span>⌘</span> Advanced professional mastery</button>
+    <button class="nav-item" data-view="real-world-studio"><span>▣</span> Real-world project studio</button>
+    <button class="nav-item" data-view="portfolio-publication"><span>▧</span> Portfolio publication suite</button>
+    <button class="nav-item" data-view="interactive-workbench"><span>▦</span> Interactive analytics workbench</button>
+    <button class="nav-item" data-view="portfolio-v49"><span>▤</span> Portfolio publication builder</button>
+    <button class="nav-item" data-view="project-v48"><span>▣</span> Practical project engine</button>
+    <button class="nav-item" data-view="technical-v47"><span>⚙</span> Technical environment</button>
+    <button class="nav-item" data-view="earning-v46"><span>↗</span> Learning-to-earning system</button>
+    <button class="nav-item" data-view="hiring-v45"><span>▣</span> Hiring assessment centre</button>
+    <button class="nav-item" data-view="employment-v44"><span>↗</span> Portfolio-to-employment pipeline</button>
+    <button class="nav-item" data-view="practicum-v43"><span>▣</span> Structured healthcare practicum</button>
+    <button class="nav-item" data-view="competency"><span>◎</span> Skills assessment & competency</button>
+    <button class="nav-item" data-view="career"><span>↗</span> Career centre <em>Planned</em></button>
+    <div class="sidebar-bottom">
+      <div class="offline-indicator"><i></i><span>Local learning environment</span></div>
+      <button class="nav-item" id="themeToggle"><span>◐</span> Toggle appearance</button>
+      <button class="nav-item" id="exportProgress"><span>⇩</span> Export progress</button>
+      <label class="nav-item import-label"><span>⇧</span> Import progress<input type="file" id="importProgress" accept="application/json"></label>
+    </div>
+  </aside>
+  <main class="main">
+    <header class="topbar">
+      <button class="mobile-menu" id="menuToggle" aria-label="Open navigation">☰</button>
+      <div class="breadcrumb">Learning space <span>/</span> <strong id="crumb">Dashboard</strong></div>
+      <div class="top-actions"><span class="status-pill"><i></i> Offline-ready</span><button class="icon-btn" id="searchFocus" title="Search curriculum">⌕</button></div>
+    </header>
+    <div class="content">
+      <section class="view active" id="view-dashboard">
+        <div class="hero">
+          <div class="hero-copy"><div class="eyebrow">YOUR PROFESSIONAL LEARNING PATHWAY</div>
+            <h1>Healthcare analytics,<br><span>built step by step.</span></h1>
+            <p>A structured, practice-led curriculum designed to connect your Pharm.D foundation with the technical, analytical and professional skills used in healthcare data roles.</p>
+            <button class="primary-btn" id="continueBtn">Explore the curriculum <b>→</b></button>
+          </div>
+          <div class="hero-graphic" aria-hidden="true"><div class="orb orb-one"></div><div class="orb orb-two"></div><div class="graph-card"><div class="graph-head"><span>Learning pathway</span><b>8 volumes</b></div><div class="mini-bars"><i style="height:28%"></i><i style="height:42%"></i><i style="height:56%"></i><i style="height:68%"></i><i style="height:82%"></i><i style="height:96%"></i></div><div class="graph-foot"><span>FOUNDATIONS</span><span>PROFESSIONAL</span></div></div></div>
+        </div>
+        <div class="notice"><span class="notice-icon">i</span><div><strong>Professional learning environment — synthetic training data only.</strong><p>The academy now includes a structured curriculum, practical labs, technical assessments, reproducible portfolio projects and career-readiness workflows. Use the project studios to build evidence; independently validate every clinical, statistical and operational conclusion before publication.</p></div></div>
+        <div class="section-heading"><div><div class="eyebrow">YOUR OVERVIEW</div><h2>Learning dashboard</h2></div><span class="muted small" id="lastSaved">Progress saved on this device</span></div>
+        <div class="stats-grid">
+          <article class="stat-card"><div class="stat-icon blue">▤</div><div class="stat-value" id="volumeCount">8</div><div class="stat-label">Curriculum volumes</div></article>
+          <article class="stat-card"><div class="stat-icon teal">☷</div><div class="stat-value" id="chapterCount">0</div><div class="stat-label">Planned chapters</div></article>
+          <article class="stat-card"><div class="stat-icon amber">✓</div><div class="stat-value" id="completedCount">0</div><div class="stat-label">Chapters completed</div></article>
+          <article class="stat-card"><div class="stat-icon violet">◷</div><div class="stat-value" id="completionRate">0%</div><div class="stat-label">Recorded completion</div></article>
+        </div>
+        <div class="section-heading"><div><div class="eyebrow">THE COMPLETE PATH</div><h2>Eight connected volumes</h2></div><button class="text-btn" data-goto="curriculum">View all volumes →</button></div>
+        <div class="volume-grid" id="dashboardVolumes"></div>
+        <div class="bottom-grid">
+          <article class="panel"><div class="panel-title"><div><div class="eyebrow">HOW TO USE THIS ACADEMY</div><h3>Learn → practise → demonstrate</h3></div></div><ol class="process-list"><li><b>Understand</b><span>Study concepts, terminology and worked examples.</span></li><li><b>Practise</b><span>Work through guided exercises and realistic datasets.</span></li><li><b>Validate</b><span>Check calculations, code, assumptions and interpretation.</span></li><li><b>Demonstrate</b><span>Turn completed work into credible portfolio evidence.</span></li></ol></article>
+          <article class="panel profile-panel"><div class="eyebrow">LEARNING PRINCIPLE</div><h3>Clinical knowledge is an asset.</h3><p>Your Pharm.D background can help you understand medication use, clinical workflows, outcomes and research questions. Technical methods will be taught from first principles, without assuming programming experience.</p><div class="tag-row"><span>Clinical context</span><span>Technical skill</span><span>Evidence-based work</span></div></article>
+        </div>
+      </section>
+      <section class="view" id="view-curriculum">
+        <div class="page-heading"><div class="eyebrow">MASTER CURRICULUM</div><h1>Curriculum map</h1><p>Eight progressive volumes. Each volume has a defined purpose, learning scope and chapter sequence.</p></div>
+        <div class="search-row"><input id="curriculumSearch" type="search" placeholder="Search volumes, chapters or topics…" aria-label="Search curriculum"><span id="searchCount">All volumes</span></div>
+        <div id="curriculumList" class="curriculum-list"></div>
+      </section>
+      <section class="view" id="view-roadmap">
+        <div class="page-heading"><div class="eyebrow">SEQUENCED DEVELOPMENT</div><h1>Learning roadmap</h1><p>Use this as a dependency-aware sequence, not a rigid calendar. Move forward when you can demonstrate the competency.</p></div>
+        <div class="roadmap" id="roadmap"></div>
+        <article class="panel roadmap-note"><strong>Earn-while-learn principle</strong><p>Start producing small, reviewable work early: spreadsheet summaries, documented SQL queries and reproducible descriptive analyses. Apply only to roles whose requirements you can honestly meet. Advanced specializations should follow, not block, the first portfolio milestones.</p></article>
+      </section>
+      <section class="view" id="view-reader"><div class="reader-toolbar"><button class="back-btn" id="backToCurriculum">← Curriculum</button><span class="status-pill">VOLUME 1 · CHAPTER 1</span></div><div id="lessonContent"></div></section>
+      <section class="view" id="view-labs"><div class="page-heading"><div class="eyebrow">HANDS-ON LABORATORY</div><h1>Practical labs</h1><p>Eight guided, reproducible labs with Linux and Windows instructions, deliverables, acceptance checks, troubleshooting and portfolio evidence. Use synthetic data only.</p></div><div class="search-row"><input id="labSearch" type="search" placeholder="Search labs, tools or skills…" aria-label="Search practical labs"><span id="labCount"></span></div><div id="labList" class="lab-grid"></div></section><section class="view" id="view-assignments"><div class="page-heading"><div class="eyebrow">EMPLOYMENT SIMULATION</div><h1>Job simulations</h1><p>Work through realistic analyst assignments from a business request to a validated deliverable. The datasets are synthetic; each assignment includes a rubric and professional handoff expectations.</p></div><div class="search-row"><input id="assignmentSearch" type="search" placeholder="Search assignments, tools or roles…" aria-label="Search job simulations"><span id="assignmentCount"></span></div><div id="assignmentList" class="lab-grid"></div></section><section class="view" id="view-sql-mastery"><div class="page-heading"><div class="eyebrow">PROGRESSIVE TECHNICAL TRAINING</div><h1>Healthcare SQL mastery</h1><p>Eleven progressive SQLite challenges, from table grain and aggregation to healthcare metrics, CTEs, window functions, data quality and query plans. Attempt each query before revealing hints or solutions.</p></div><div class="sql-mastery-summary"><div><b id="sqlDoneCount">0</b><span>Challenges completed</span></div><div><b>11</b><span>Total challenges</span></div><div><b id="sqlProgressPct">0%</b><span>Progress</span></div></div><div class="search-row"><input id="sqlSearch" type="search" placeholder="Search SQL challenges or concepts…" aria-label="Search SQL challenges"><span id="sqlChallengeCount"></span></div><div class="sql-db-note"><b>Practice database:</b> <code>assignments/healthcare_sql_mastery.db</code><br>Open it in DBeaver (SQLite connection) or use the SQLite command line. The database contains synthetic data only.</div><div id="sqlChallengeList" class="lab-grid"></div></section><section class="view" id="view-glossary"><div class="page-heading"><div class="eyebrow">REFERENCE CENTRE</div><h1>Healthcare analytics glossary</h1><p>Definitions are connected to practical healthcare examples. Search by term or concept.</p></div><div class="search-row"><input id="glossarySearch" type="search" placeholder="Search a term or definition…" aria-label="Search glossary"><span id="glossaryCount"></span></div><div id="glossaryList" class="glossary-grid"></div></section>
+      <section class="view" id="view-projects">
+        <div class="page-heading"><div class="eyebrow">PRACTICAL LABORATORY · PROJECT DIRECTORY</div><h1>Project library</h1><p>Choose a project folder, read its README, inspect its data dictionary and run its validation steps. Datasets labelled synthetic are fictional training data.</p></div>
+        <div class="lab-grid">
+          <article class="lab-card"><h3>Integrated healthcare analytics portfolio</h3><p>End-to-end data cleaning, analysis, reporting and reproducibility practice.</p><a href="projects/v03_integrated_healthcare_portfolio/README.md">Open project guide</a></article>
+          <article class="lab-card"><h3>Clinical medication utilisation</h3><p>Fictional antihypertensive utilisation dataset, statistical analysis and interpretation.</p><a href="clinical_medication_utilization_case_study_v546/README.md">Open project guide</a></article>
+          <article class="lab-card"><h3>Clinical BI dashboard</h3><p>Interactive synthetic clinical dashboard with filters, KPIs and CSV export.</p><a href="interactive_clinical_bi_dashboard_v548/docs/README.md">Open project guide</a></article>
+          <article class="lab-card"><h3>Outpatient operations analytics</h3><p>Operational data validation, SQL analysis, metric contracts and reporting.</p><a href="portfolio_publication_candidate_v554/README.md">Open project guide</a></article>
+          <article class="lab-card"><h3>Clinical research methods</h3><p>Study design, statistical methods and reproducible research exercises.</p><a href="clinical_research_methods_v524/README.md">Open project guide</a></article>
+          <article class="lab-card"><h3>Healthcare data warehouse</h3><p>SQL modelling, curated data, validation and healthcare warehouse concepts.</p><a href="clinical_data_warehouse_sql_engineering_v526/README.md">Open project guide</a></article>
+        </div>
+      </section>
+      <section class="view" id="view-assessments"><div class="page-heading"><div class="eyebrow">COMPETENCY CHECKS</div><h1>Chapter assessment</h1><p>Volume 1, Chapter 1 · Eight questions with answer explanations. Retake the assessment to improve your understanding.</p></div><div class="assessment-meta"><span>8 questions</span><span>Suggested pass mark: 75%</span><span>Unlimited practice attempts</span></div><div id="quizContainer"></div></section>
+      <section class="view" id="view-excel-mastery">
+        <div class="page-heading"><div class="eyebrow">SPREADSHEET & ETL LABORATORY · V2.2.0</div><h1>Advanced Excel and Power Query</h1><p>Eight applied challenges covering formulas, lookups, PivotTables, data cleaning, validation, KPI dashboards and Excel–SQL reconciliation. Work from the supplied synthetic workbook and CSVs.</p></div>
+        <div id="excelMasteryApp"><div class="empty-state">Loading Excel mastery challenges…</div></div>
+      </section>
+      <section class="view" id="view-powerbi-mastery">
+        <div class="page-heading"><div class="eyebrow">BUSINESS INTELLIGENCE LABORATORY · V2.3.0</div><h1>Power BI and healthcare dashboards</h1><p>Eight practical challenges covering data import, dimensional modelling, DAX, KPI definitions, Power Query, report construction, validation and client handoff.</p></div>
+        <div id="powerbiMasteryApp"><div class="empty-state">Loading Power BI mastery challenges…</div></div>
+      </section>
+      <section class="view" id="view-etl-mastery">
+        <div class="page-heading"><div class="eyebrow">DATA ENGINEERING LABORATORY · V2.4.0</div><h1>Healthcare data engineering and ETL</h1><p>Eight practical challenges covering data contracts, batch ingestion, paginated APIs, data quality, database loading, idempotency, scheduling and professional handoff.</p></div>
+        <div id="etlMasteryApp"><div class="empty-state">Loading ETL mastery challenges…</div></div>
+      </section>
+      <section class="view" id="view-postgresql-mastery">
+        <div class="page-heading"><div class="eyebrow">DATABASE ENGINEERING LABORATORY · V2.5.0</div><h1>Advanced SQL and PostgreSQL engineering</h1><p>Ten progressive challenges covering PostgreSQL setup, relational design, advanced healthcare queries, query performance, database objects, transactions, security, backup and client delivery.</p></div>
+        <div id="postgresqlMasteryApp"><div class="empty-state">Loading PostgreSQL mastery challenges…</div></div>
+      </section>
+      <section class="view" id="view-statistics-mastery">
+        <div class="page-heading"><div class="eyebrow">CLINICAL RESEARCH ANALYTICS · V2.6.0</div><h1>Advanced statistics, epidemiology and clinical research</h1><p>Twelve practical challenges covering inference, regression, diagnostic accuracy, epidemiology, survival analysis, sample size and reproducible clinical reporting.</p></div>
+        <div id="statisticsMasteryApp"><div class="empty-state">Loading statistics and epidemiology challenges…</div></div>
+      </section>
+      <section class="view" id="view-interoperability-mastery">
+        <div class="page-heading"><div class="eyebrow">HEALTHCARE DATA STANDARDS · V2.7.0</div><h1>Healthcare warehousing and interoperability</h1><p>Twelve practical challenges covering warehouse architecture, HL7 v2, FHIR, terminology systems, clinical data integration, governance and end-to-end reconciliation.</p></div>
+        <div id="interoperabilityMasteryApp"><div class="empty-state">Loading healthcare interoperability challenges…</div></div>
+      </section>
+      <section class="view" id="view-employer-assessments">
+        <div class="page-heading"><div class="eyebrow">HIRING SIMULATIONS · PORTFOLIO REVIEW · V3.1.0</div><h1>Employer-style technical assessments</h1><p>Timed SQL, Python, Excel, dashboard and remote-client simulations, with explicit scoring rubrics and portfolio review tools.</p></div>
+        <div id="employerAssessmentsApp"><div class="empty-state">Loading employer assessments…</div></div>
+      </section>
+      <section class="view" id="view-career-launch">
+        <div class="page-heading"><div class="eyebrow">CAREER LAUNCH · JOB READINESS · V3.0.0</div><h1>Career launch system</h1><p>Role targeting, CV and LinkedIn positioning, job-description scoring, hiring simulations, application tracking and a 30-day execution plan.</p></div>
+        <div id="careerLaunchApp"><div class="empty-state">Loading career launch system…</div></div>
+      </section>
+      <section class="view" id="view-portfolio-career-mastery">
+        <div class="page-heading"><div class="eyebrow">PROFESSIONAL PRACTICE · PORTFOLIO · V2.9.0</div><h1>Portfolio capstones and professional job readiness</h1><p>Three end-to-end client capstones, twelve professional execution challenges, interview preparation and reproducible portfolio standards.</p></div>
+        <div id="portfolioCareerMasteryApp"><div class="empty-state">Loading portfolio and career challenges…</div></div>
+      </section>
+      <section class="view" id="view-clinical-research-mastery">
+        <div class="page-heading"><div class="eyebrow">CLINICAL RESEARCH · PHARMACOVIGILANCE · RWE · V2.8.0</div><h1>Clinical data management, pharmacovigilance and real-world evidence</h1><p>Fifteen applied challenges covering trial operations, CDISC concepts, ICSR processing, safety signal screening, RWD source assessment, cohort design, adherence measurement and propensity scores.</p></div>
+        <div id="clinicalResearchMasteryApp"><div class="empty-state">Loading clinical research challenges…</div></div>
+      </section>
+      <section class="view" id="view-advanced-mastery">
+        <div class="page-heading"><div class="eyebrow">ADVANCED SQL · STATISTICAL VALIDATION · BI QA · V3.8.0</div><h1>Advanced professional mastery</h1><p>Investigate larger synthetic datasets, validate adjusted analyses, reconcile dashboard metrics and demonstrate advanced analytical judgement.</p></div>
+        <div id="advancedMasteryApp"><div class="empty-state">Loading advanced mastery…</div></div>
+      </section>
+      <section class="view" id="view-professional-simulations">
+        <div class="page-heading"><div class="eyebrow">EMPLOYER SIMULATIONS · TIMED PRACTICALS · V3.7.0</div><h1>Professional simulation environment</h1><p>Work through realistic healthcare analytics requests using synthetic datasets. Record deliverables, evidence, time spent and self-assessed performance.</p></div>
+        <div id="professionalSimulationsApp"><div class="empty-state">Loading professional simulations…</div></div>
+      </section>
+      <section class="view" id="view-portfolio-quality">
+        <div class="page-heading"><div class="eyebrow">REPRODUCIBILITY · TECHNICAL QA · V3.6.0</div><h1>Portfolio quality gate & reproducibility</h1><p>Assess whether a healthcare analytics project can be independently understood, rerun, checked and safely shared. This is a structured review aid, not a security certification or clinical validation.</p></div>
+        <div id="portfolioQualityApp"><div class="empty-state">Loading portfolio quality gate…</div></div>
+      </section>
+      <section class="view" id="view-career-command">
+        <div class="page-heading"><div class="eyebrow">PORTFOLIO SHOWCASE · CAREER OPERATIONS · V3.5.0</div><h1>Portfolio & career command centre</h1><p>Turn completed work into defensible evidence, target roles, manage applications and prepare for interviews. All records are stored locally in this browser.</p></div>
+        <div id="careerCommandApp"><div class="empty-state">Loading career command centre…</div></div>
+      </section>
+
+      <section class="view" id="view-real-world-studio">
+        <div class="section-heading"><div><div class="eyebrow">V3.9.0 · PORTFOLIO ENGAGEMENTS</div><h2>Real-world Healthcare Analytics Project Studio</h2><p class="muted">Three end-to-end synthetic client engagements. Track evidence, execute locally, and prepare stakeholder-ready handoffs.</p></div></div>
+        <div id="realWorldStudioApp"></div>
+      </section>
+
+      <section class="view" id="view-portfolio-publication">
+        <div class="section-heading"><div><div class="eyebrow">V4.0.0 · PORTFOLIO RELEASE ENGINEERING</div><h2>Portfolio Publication Suite</h2><p class="muted">Publishable case studies, standalone dashboards, reproducibility checks and Git repository controls.</p></div></div>
+        <div id="portfolioPublicationApp"></div>
+      </section>
+
+      <section class="view" id="view-interactive-workbench">
+        <div class="section-heading"><div><div class="eyebrow">V4.1.0 · EXPLORATION AND METRIC VALIDATION</div><h2>Interactive Healthcare Analytics Workbench</h2><p class="muted">Explore synthetic cohorts, calculate metrics, compare groups and inspect data quality in your browser.</p></div></div>
+        <div id="interactiveWorkbenchApp"></div>
+      </section>
+      <section class="view" id="view-portfolio-v49">
+        <div class="section-heading"><div><div class="eyebrow">V4.9.0 · PORTFOLIO EVIDENCE AND PUBLICATION QUALITY</div><h2>Professional Project Portfolio Builder</h2><p class="muted">Turn completed project work into structured documentation, evidence-backed CV material and interview preparation.</p></div></div>
+        <div id="portfolioV49App"></div>
+      </section>
+      <section class="view" id="view-project-v48">
+        <div class="section-heading"><div><div class="eyebrow">V4.8.0 · END-TO-END PORTFOLIO PROJECT</div><h2>Practical Project Execution Engine</h2><p class="muted">Complete a reproducible healthcare analytics assignment from raw data to portfolio-ready evidence.</p></div></div>
+        <div id="projectV48App"></div>
+      </section>
+      <section class="view" id="view-technical-v47">
+        <div class="section-heading"><div><div class="eyebrow">V4.7.0 · REPRODUCIBLE LOCAL DEVELOPMENT</div><h2>Healthcare Analytics Technical Environment</h2><p class="muted">Set up the same starter project on Linux and Windows, validate your environment, and work with synthetic data in Python and SQL.</p></div></div>
+        <div id="technicalV47App"></div>
+      </section>
+      <section class="view" id="view-earning-v46">
+        <div class="section-heading"><div><div class="eyebrow">V4.6.0 · WEEKLY EXECUTION AND FIRST REVENUE READINESS</div><h2>Learning-to-Earning Execution System</h2><p class="muted">Convert skills into evidence, safe starter services, client conversations and targeted job applications.</p></div></div>
+        <div id="earningV46App"></div>
+      </section>
+      <section class="view" id="view-hiring-v45">
+        <div class="section-heading"><div><div class="eyebrow">V4.5.0 · EMPLOYER-STYLE PRACTICE</div><h2>Healthcare Analytics Hiring Assessment Centre</h2><p class="muted">Seven-stage simulated hiring process: screening, technical tests, healthcare interpretation, take-home work and hiring-manager review.</p></div></div>
+        <div id="hiringV45App"></div>
+      </section>
+      <section class="view" id="view-employment-v44">
+        <div class="section-heading"><div><div class="eyebrow">V4.4.0 · CAREER EXECUTION</div><h2>Portfolio-to-Employment Pipeline</h2><p class="muted">Turn verified project work into role-specific portfolio evidence, CV achievements, applications and interview stories.</p></div></div>
+        <div id="employmentV44App"></div>
+      </section>
+      <section class="view" id="view-practicum-v43">
+        <div class="section-heading"><div><div class="eyebrow">V4.3.0 · CLIENT ENGAGEMENT SIMULATIONS</div><h2>Structured Healthcare Analytics Practicum</h2><p class="muted">Five synthetic client engagements with deliverables, acceptance criteria, evidence tracking and reviewer-style scoring.</p></div></div>
+        <div id="practicumV43App"></div>
+      </section>
+      <section class="view" id="view-competency">
+        <div class="section-heading"><div><div class="eyebrow">V4.2.0 · EVIDENCE-BASED READINESS</div><h2>Healthcare Analytics Skills Assessment</h2><p class="muted">Measure knowledge, practical judgement and evidence separately. Scores are formative, not a credential or hiring guarantee.</p></div></div>
+        <div id="competencyApp"></div>
+      </section>
+      <section class="view" id="view-career"><div class="page-heading"><div class="eyebrow">PROFESSIONAL DEVELOPMENT</div><h1>Career centre</h1><p>Career preparation will cover role selection, portfolio evidence, applications, interviews and remote-work practice.</p></div><div class="empty-state"><b>Career centre is planned.</b><span>Recommendations will distinguish verified requirements from advice and market-dependent information.</span></div></section>
+      <section class="view" id="view-advanced-sql-cases">
+        <div class="page-heading"><div class="eyebrow">ADVANCED PRACTICE · RELEASE 3.2.0</div><h1>Advanced SQL, case studies & mock exam</h1><p>Interview-level SQL, healthcare case analysis and a timed, certification-style assessment. All datasets are synthetic; completion is a learning record, not an accredited credential.</p></div>
+        <div class="upgrade-stat-grid" id="v32Stats"></div>
+        <div class="module-toolbar"><input id="v32Search" type="search" placeholder="Search challenges and case studies"><select id="v32Mode"><option value="sql">Advanced SQL bank</option><option value="cases">Healthcare case studies</option><option value="exam">Mock examination</option></select></div>
+        <div id="v32Content"></div>
+        <article class="panel module-note"><b>Progress and backup</b><p>Challenge and exam completion is stored in this browser. Use the Academy-wide Export progress control to create a backup; this module also offers a separate JSON export for its own records.</p><button class="secondary-small" id="v32Export">Export v3.2 progress</button></article>
+      </section>
+      <section class="view" id="view-professional-practicum">
+        <div class="page-heading"><div class="eyebrow">CLIENT DELIVERY · RELEASE 3.3.0</div><h1>Professional practicum</h1><p>Three end-to-end client engagements. Clarify the request, define metrics, validate data, analyse, review and hand off reproducible work.</p></div>
+        <div class="upgrade-stat-grid" id="practicumStats"></div>
+        <div class="module-toolbar"><input id="practicumSearch" type="search" placeholder="Search projects, deliverables or skills"><select id="practicumStatus"><option value="all">All statuses</option><option>Not started</option><option>In progress</option><option>Submitted</option><option>Validated</option><option>Portfolio ready</option></select></div>
+        <div id="practicumProjects"></div>
+        <article class="panel module-note"><h2>Professional delivery templates</h2><p>Use the included scope, data-quality sign-off, client communication, handoff and portfolio evidence templates. Run the reference analysis locally; the Academy browser does not execute Python or SQL.</p><p><code>python practicum/solutions/run_practicum_analysis.py</code></p><button class="secondary-small" id="practicumExport">Export practicum progress</button></article>
+      </section>
+
+
+
+
+
+
+
+      <section class="view" id="view-postgresql-operations-v527">
+        <div class="page-heading"><div class="eyebrow">POSTGRESQL & DATABASE OPERATIONS · RELEASE 5.27.0</div><h1>PostgreSQL Healthcare Warehouse Operations</h1><p>Move the clinical warehouse into PostgreSQL with transactional ETL, idempotent upserts, patient history and database operations.</p></div>
+        <div class="stats-grid">
+          <article class="stat-card"><span>Warehouse engine</span><strong>PostgreSQL</strong><small>15+ recommended</small></article>
+          <article class="stat-card"><span>ETL behavior</span><strong>UPSERT</strong><small>Transactional resource loading</small></article>
+          <article class="stat-card"><span>Patient history</span><strong>SCD Type 2</strong><small>Versioned patient attributes</small></article>
+        </div>
+        <div class="lab-grid">
+          <article class="panel"><div class="panel-header"><h2>Deployment workflow</h2><span class="tag">Requires PostgreSQL</span></div>
+            <ol><li>Run the v5.25 FHIR ETL to generate the four source CSV files.</li><li>Apply <code>sql/migrations/001_schema.sql</code> using <code>psql</code>.</li><li>Install the optional psycopg 3 dependency.</li><li>Set <code>HDA_PG_DSN</code> securely in your shell environment.</li><li>Run the loader and inspect row counts and mart outputs.</li></ol>
+            <pre><code>psql "$HDA_PG_DSN" -v ON_ERROR_STOP=1 -f postgresql_healthcare_warehouse_operations_v527/sql/migrations/001_schema.sql
+python -m pip install -r postgresql_healthcare_warehouse_operations_v527/requirements.txt
+python postgresql_healthcare_warehouse_operations_v527/scripts/load_postgresql.py --source-dir healthcare_data_engineering_interoperability_v525/outputs/demo</code></pre>
+          </article>
+          <article class="panel"><div class="panel-header"><h2>Database engineering</h2></div>
+            <ul><li>PostgreSQL schema and relational constraints.</li><li>Parameterized psycopg 3 operations and transaction handling.</li><li>Idempotent upserts using stable resource identifiers.</li><li>Indexes for patient/date, terminology/date and encounter lookups.</li><li>Materialized encounter summary and patient cohort mart.</li></ul>
+          </article>
+          <article class="panel"><div class="panel-header"><h2>Historical patient tracking</h2></div>
+            <p>Patient demographic changes are hashed and compared with the current dimension row. Changed attributes close the prior version and insert a new current version; unchanged reruns do not create new versions.</p>
+            <p>Test with multiple synthetic snapshots before using this pattern in a production warehouse.</p>
+          </article>
+          <article class="panel"><div class="panel-header"><h2>Security and performance</h2></div>
+            <ul><li>Separate analyst and loader group roles.</li><li>Keep credentials in environment variables or a secret manager.</li><li>Use <code>EXPLAIN (ANALYZE, BUFFERS)</code> with representative data.</li><li>Measure index benefit; do not infer performance from tiny synthetic tables.</li></ul>
+            <p><strong>Execution status:</strong> SQL and helper tests are checked, but no live PostgreSQL server was available for end-to-end integration.</p>
+            <button class="secondary-small" id="pgV527Review">Mark module reviewed</button><span id="pgV527Status" class="muted"></span>
+          </article>
+        </div>
+      </section>
+
+      <section class="view" id="view-clinical-warehouse-v526">
+        <div class="page-heading"><div class="eyebrow">DATA WAREHOUSING & SQL ENGINEERING · RELEASE 5.26.0</div><h1>Clinical Data Warehouse & Advanced SQL Engineering</h1><p>Transform interoperable clinical resources into dimensional models, governed facts and analysis-ready data marts.</p></div>
+        <div class="stats-grid">
+          <article class="stat-card"><span>Warehouse dimensions</span><strong>4</strong><small>Date · Patient · Encounter · Terminology</small></article>
+          <article class="stat-card"><span>Fact tables</span><strong>2</strong><small>Observation · MedicationRequest</small></article>
+          <article class="stat-card"><span>Data marts</span><strong>2</strong><small>Encounter summary · Patient cohort</small></article>
+        </div>
+        <div class="lab-grid">
+          <article class="panel"><div class="panel-header"><h2>Build the warehouse</h2><span class="tag">Local Python + SQLite</span></div>
+            <p>First run the v5.25 FHIR ETL pipeline, then execute:</p>
+            <pre><code>python clinical_data_warehouse_sql_engineering_v526/scripts/build_warehouse.py --input-dir healthcare_data_engineering_interoperability_v525/outputs/demo --output-db clinical_data_warehouse_sql_engineering_v526/outputs/hospital_warehouse.sqlite --cohort-status finished</code></pre>
+            <p>Creates dimensional tables, fact tables, analytical marts, integrity checks and a SHA-256 manifest.</p>
+          </article>
+          <article class="panel"><div class="panel-header"><h2>Warehouse model</h2></div>
+            <ul><li><strong>Dimensions:</strong> date, patient, encounter, terminology.</li><li><strong>Facts:</strong> one row per Observation and MedicationRequest.</li><li><strong>Marts:</strong> one row per Encounter and one row per qualifying Patient.</li><li><strong>SQL:</strong> window functions, cohort summaries and trend analysis.</li></ul>
+          </article>
+          <article class="panel"><div class="panel-header"><h2>Data engineering principles</h2></div>
+            <ul><li>Declare table grain before designing joins.</li><li>Aggregate separate one-to-many facts before joining to avoid fanout.</li><li>Preserve analyte, unit, terminology and date keys.</li><li>Reconcile source counts, foreign keys and database integrity.</li></ul>
+          </article>
+          <article class="panel"><div class="panel-header"><h2>Slowly changing dimensions</h2></div>
+            <p>Introduces Type 1 versus Type 2 dimension strategies. This release uses one synthetic patient snapshot and Type 1 loading; it does not claim a tested historical Type 2 pipeline.</p>
+            <p>SQL examples are in <code>clinical_data_warehouse_sql_engineering_v526/sql/analytics_examples.sql</code>.</p>
+            <button class="secondary-small" id="warehouseV526Review">Mark module reviewed</button><span id="warehouseV526Status" class="muted"></span>
+          </article>
+        </div>
+      </section>
+
+      <section class="view" id="view-healthcare-data-engineering-v525">
+        <div class="page-heading"><div class="eyebrow">HEALTHCARE DATA ENGINEERING · RELEASE 5.25.0</div><h1>Healthcare Data Engineering & Clinical Data Interoperability</h1><p>Build a reproducible path from FHIR resources to governed, analysis-ready clinical datasets.</p></div>
+        <div class="stats-grid">
+          <article class="stat-card"><span>FHIR resource types</span><strong>4</strong><small>Patient · Encounter · Observation · MedicationRequest</small></article>
+          <article class="stat-card"><span>Pipeline outputs</span><strong>10+</strong><small>CSV · SQLite · JSON · SHA-256 evidence</small></article>
+          <article class="stat-card"><span>Analytical grain</span><strong>1 row</strong><small>Per patient-encounter; child rows aggregated</small></article>
+        </div>
+        <div class="lab-grid">
+          <article class="panel"><div class="panel-header"><h2>Run the synthetic hospital ETL project</h2><span class="tag">Local Python</span></div>
+            <p>From the Academy root, run:</p>
+            <pre><code>python healthcare_data_engineering_interoperability_v525/scripts/fhir_analytics_etl.py --input healthcare_data_engineering_interoperability_v525/data/synthetic_hospital_fhir_bundle.json --config healthcare_data_engineering_interoperability_v525/templates/pipeline_config.json --output healthcare_data_engineering_interoperability_v525/outputs/demo</code></pre>
+            <p>The workflow validates a limited FHIR subset, flattens resources, applies local illustrative terminology labels, reconciles references, creates a patient-encounter dataset and cohort flow, then exports CSV, SQLite and provenance files.</p>
+          </article>
+          <article class="panel"><div class="panel-header"><h2>Interoperability and terminology</h2></div>
+            <ul><li><strong>FHIR R4:</strong> resource ingestion and profile-limited structural checks.</li><li><strong>ICD-10:</strong> diagnosis classification and reporting context.</li><li><strong>SNOMED CT:</strong> clinical concepts and semantic representation.</li><li><strong>LOINC:</strong> observations, measurements and laboratory identifiers.</li></ul>
+            <p>Terminology examples are illustrative only. No authoritative crosswalk or live terminology service is included.</p>
+          </article>
+          <article class="panel"><div class="panel-header"><h2>Data quality and cohort design</h2></div>
+            <ul><li>Duplicate IDs and unresolved patient/encounter references.</li><li>Missing or unmapped observation coding and values.</li><li>Explicit cohort inclusion criteria and screened/eligible counts.</li><li>Separate resource-level fact tables to preserve data grain.</li></ul>
+          </article>
+          <article class="panel"><div class="panel-header"><h2>Project files</h2></div>
+            <p><code>healthcare_data_engineering_interoperability_v525/</code></p>
+            <ul><li><code>scripts/fhir_analytics_etl.py</code> — reproducible pipeline</li><li><code>data/</code> — synthetic FHIR Bundle</li><li><code>templates/</code> — mapping and cohort configuration</li><li><code>tests/</code> — validation and regression tests</li><li><code>docs/methods.md</code> — scope and limitations</li></ul>
+            <p>All records are synthetic. This module is educational and is not a full FHIR validator or clinical decision-support system.</p>
+            <button class="secondary-small" id="fhirV525Progress">Mark module reviewed</button><span id="fhirV525Status" class="muted"></span>
+          </article>
+        </div>
+      </section>
+
+      <section class="view" id="view-clinical-methods-v524">
+        <div class="page-heading"><div class="eyebrow">CLINICAL RESEARCH METHODS · RELEASE 5.24.0</div><h1>Clinical Research Methods & Advanced Modelling</h1><p>Move beyond basic tests into effect sizes, paired and repeated-measures methods, internally validated prediction and study planning.</p></div>
+        <div class="stats-grid">
+          <article class="stat-card"><span>Nonparametric</span><strong>Cliff's δ</strong><small>Mann–Whitney + effect size CI</small></article>
+          <article class="stat-card"><span>Repeated data</span><strong>Wilcoxon / Friedman</strong><small>Paired and multi-condition methods</small></article>
+          <article class="stat-card"><span>Prediction</span><strong>Stratified CV</strong><small>ROC AUC, Brier and calibration</small></article>
+        </div>
+        <article class="panel"><div class="panel-header"><h2>Run the integrated clinical methods workflow</h2><span class="tag">Local Python</span></div>
+          <pre><code>python -m pip install -r clinical_research_methods_v524/requirements.txt
+python clinical_research_methods_v524/scripts/clinical_methods.py --input clinical_research_methods_v524/data/synthetic_clinical_methods.csv --config clinical_research_methods_v524/templates/clinical_methods_config.json --output clinical_research_methods_v524/outputs/demo</code></pre>
+        </article>
+        <div class="lab-grid">
+          <article class="panel"><div class="panel-header"><h2>Research methods</h2></div><ul>
+            <li>Mann–Whitney U with Cliff's delta and bootstrap confidence interval.</li>
+            <li>Paired Wilcoxon signed-rank with a separately labelled mean-change interval.</li>
+            <li>Friedman repeated-measures test and Kendall's W.</li>
+            <li>Power/sample-size planning for two independent means.</li>
+            <li>Descriptive missingness pattern assessment.</li>
+          </ul></article>
+          <article class="panel"><div class="panel-header"><h2>Predictive validation</h2></div><ul>
+            <li>Repeated stratified K-fold cross-validation.</li>
+            <li>Out-of-fold ROC AUC and Brier score.</li>
+            <li>Calibration intercept and slope.</li>
+            <li>Imputation and scaling fitted inside each training fold.</li>
+          </ul></article>
+        </div>
+        <article class="panel"><div class="panel-header"><h2>Interpretation safeguards</h2></div><ul>
+          <li>Mann–Whitney U and Cliff's delta are related but distinct summaries.</li>
+          <li>The paired Wilcoxon test and mean-change bootstrap interval target different estimands.</li>
+          <li>Friedman is complete-case; post-hoc contrasts are not automatic.</li>
+          <li>Cross-validation is internal validation, not external validation; nested CV is not included.</li>
+          <li>Descriptive missingness patterns cannot identify MCAR, MAR or MNAR.</li>
+          <li>Multiple imputation is not included. All included demo data are synthetic.</li>
+        </ul></article>
+      </section>
+
+      <section class="view" id="view-statistical-validation-v523">
+        <div class="page-heading"><div class="eyebrow">STATISTICAL VALIDATION · RELEASE 5.23.0</div><h1>Advanced Clinical Research & Statistical Validation</h1><p>Evaluate assumptions, regression diagnostics, bootstrap uncertainty and multiple testing with reproducible local Python workflows.</p></div>
+        <div class="stats-grid">
+          <article class="stat-card"><span>Assumptions</span><strong>Shapiro–Wilk</strong><small>Levene variance diagnostics</small></article>
+          <article class="stat-card"><span>Regression</span><strong>HC3 + VIF</strong><small>Residuals, influence and heteroscedasticity</small></article>
+          <article class="stat-card"><span>Inference</span><strong>Bootstrap</strong><small>Holm, BH-FDR and Bonferroni</small></article>
+        </div>
+        <article class="panel"><div class="panel-header"><h2>Run the validation workflow</h2><span class="tag">Local Python</span></div>
+          <pre><code>python -m pip install -r statistical_validation_engine_v523/requirements.txt
+python statistical_validation_engine_v523/scripts/validation_engine.py --input advanced_statistics_execution_v521/data/synthetic_healthcare_dataset.csv --config statistical_validation_engine_v523/templates/validation_config.json --output statistical_validation_engine_v523/outputs/demo</code></pre>
+        </article>
+        <div class="lab-grid">
+          <article class="panel"><div class="panel-header"><h2>Diagnostics and methods</h2></div><ul>
+            <li>Group-level Shapiro–Wilk and median-centred Levene diagnostics.</li>
+            <li>Linear model: Breusch–Pagan, residual normality, HC3 robust standard errors, Cook's distance, leverage and VIF.</li>
+            <li>Seeded percentile bootstrap confidence intervals.</li>
+            <li>Holm family-wise error, Benjamini–Hochberg FDR and Bonferroni correction.</li>
+          </ul></article>
+          <article class="panel"><div class="panel-header"><h2>Outputs</h2></div><ul>
+            <li><code>validation_results.json</code> — machine-readable results</li>
+            <li><code>validation_report.md</code> — human-readable interpretation</li>
+            <li><code>validation_manifest.json</code> — SHA-256 output provenance</li>
+          </ul><p>Use v5.22 Integrated Reporting to assemble validated outputs with figures and publication tables.</p></article>
+        </div>
+        <article class="panel"><div class="panel-header"><h2>Interpretation safeguards</h2></div><ul>
+          <li>Diagnostics inform statistical judgement; they do not prove that assumptions hold or automatically select a test.</li>
+          <li>HC3 robust standard errors do not fix confounding, dependence, nonlinearity or misspecification.</li>
+          <li>Bootstrap resampling assumes independent observations; clustered or paired designs need an appropriate resampling scheme.</li>
+          <li>Multiplicity correction applies only to the explicitly defined family of tests.</li>
+          <li>Logistic regression can fail or be unstable with sparse data or separation; Firth correction is not included.</li>
+          <li>The Academy view is instructional. Statistical execution occurs in local Python, not inside the browser.</li>
+        </ul></article>
+      </section>
+
+      <section class="view" id="view-integrated-reporting-v522">
+        <div class="page-heading"><div class="eyebrow">INTEGRATED REPORTING · RELEASE 5.22.0</div><h1>Healthcare Analytics Reporting & Visualization</h1><p>Turn configured analysis data into publication-style tables, figures, technical documentation and an inspectable evidence package.</p></div>
+        <div class="stats-grid">
+          <article class="stat-card"><span>Table 1</span><strong>Descriptive</strong><small>Mean ± SD; n (%)</small></article>
+          <article class="stat-card"><span>Visual outputs</span><strong>6 types</strong><small>Distribution, group, forest, coefficients, ROC, KM</small></article>
+          <article class="stat-card"><span>Reproducibility</span><strong>SHA-256</strong><small>Input and output manifest</small></article>
+        </div>
+        <article class="panel"><div class="panel-header"><h2>Run the integrated pipeline locally</h2><span class="tag">Python execution</span></div>
+          <pre><code>python -m pip install -r integrated_reporting_visualization_v522/requirements.txt
+python integrated_reporting_visualization_v522/scripts/integrated_reporting.py --input integrated_reporting_visualization_v522/data/synthetic_reporting_dataset.csv --config integrated_reporting_visualization_v522/templates/report_config.json --output integrated_reporting_visualization_v522/outputs/demo</code></pre>
+        </article>
+        <div class="lab-grid">
+          <article class="panel"><div class="panel-header"><h2>Generated evidence package</h2></div><ul>
+            <li><code>table1.csv</code> — descriptive baseline characteristics</li>
+            <li><code>figures/</code> — 300 dpi PNG figures</li>
+            <li><code>roc_summary.json</code> and <code>kaplan_meier_summary.json</code></li>
+            <li><code>executive_summary.md</code> and <code>technical_report.md</code></li>
+            <li><code>report_config.json</code> and <code>evidence_manifest.json</code></li>
+          </ul></article>
+          <article class="panel"><div class="panel-header"><h2>Research publication workflow</h2></div><p>Use the generated Table 1 and figures as inputs to the v5.17 Research & Publication Workbench. The v5.22 pipeline is a separate orchestrator; it does not overwrite v5.17 files automatically.</p><p><strong>Suggested handoff:</strong> review the Table 1 labels and denominators, verify figure captions and model definitions, then assemble the manuscript package in v5.17.</p></article>
+        </div>
+        <article class="panel"><div class="panel-header"><h2>Interpretation safeguards</h2></div><ul>
+          <li>ROC is apparent/resubstitution performance, not validated prediction.</li>
+          <li>Kaplan–Meier is descriptive; no confidence intervals, log-rank test, Cox model or competing-risk analysis.</li>
+          <li>Forest plots display supplied estimates; no meta-analytic pooling is performed.</li>
+          <li>Regression coefficient plots display supplied estimates and intervals; they do not fit a model.</li>
+          <li>Table 1 is descriptive; no p-values are automatically used to claim group equivalence.</li>
+          <li>The browser Academy view is instructional. Python generation occurs in your local terminal.</li>
+        </ul></article>
+      </section>
+
+      <section class="view" id="view-statistical-execution-v521">
+        <div class="page-heading"><div class="eyebrow">STATISTICAL EXECUTION · RELEASE 5.21.0</div><h1>Advanced Statistical Execution Environment</h1><p>Run reproducible descriptive, comparative and regression analyses using Python scientific libraries.</p></div>
+        <div class="stats-grid">
+          <article class="stat-card"><span>Core stack</span><strong>pandas + NumPy</strong><small>Data preparation and computation</small></article>
+          <article class="stat-card"><span>Statistical tests</span><strong>SciPy</strong><small>Welch, Mann–Whitney and chi-square</small></article>
+          <article class="stat-card"><span>Regression</span><strong>statsmodels</strong><small>OLS and binary logistic</small></article>
+          <article class="stat-card"><span>Outputs</span><strong>4 files</strong><small>JSON, CSV profiles and Markdown report</small></article>
+        </div>
+        <div class="lab-grid">
+          <article class="panel"><div class="panel-header"><h2>Run the synthetic example</h2><span class="tag">Local Python</span></div>
+            <pre><code>python -m pip install -r advanced_statistics_execution_v521/requirements.txt
+python advanced_statistics_execution_v521/scripts/statistical_engine.py --input advanced_statistics_execution_v521/data/synthetic_healthcare_dataset.csv --config advanced_statistics_execution_v521/templates/analysis_config.json --output advanced_statistics_execution_v521/outputs/my_analysis</code></pre>
+          </article>
+          <article class="panel"><div class="panel-header"><h2>Available analysis</h2></div>
+            <ul><li>Descriptive statistics and missingness profile</li><li>Exploratory 1.5 × IQR outlier flags</li><li>Welch t-test and Mann–Whitney U</li><li>Pearson chi-square with expected-cell diagnostics</li><li>Linear OLS and binary logistic regression</li><li>Confidence intervals, p-values and model metadata</li></ul>
+          </article>
+        </div>
+        <article class="panel"><h2>Interpretation safeguards</h2><ul><li>Outlier flags are not automatic exclusion rules.</li><li>Welch mean-difference confidence intervals are not confidence intervals for Mann–Whitney estimands.</li><li>Chi-square expected-cell counts must be reviewed; sparse tables may need exact methods.</li><li>Regression uses complete cases and requires assumption, specification and convergence checks.</li><li>Associations do not establish causation; p-values do not establish clinical importance.</li><li>Multiplicity adjustment, imputation, survival analysis, clustered models and external validation are not included.</li></ul></article>
+        <article class="panel warning-panel"><h2>Clinical data boundary</h2><p>The bundled dataset is synthetic. Do not use this module to make patient-care decisions without a prespecified protocol, validated data, appropriate statistical review and institutional governance.</p></article>
+      </section>
+      <section class="view" id="view-execution-engine-v520">
+        <div class="page-heading"><div class="eyebrow">ANALYTICAL EXECUTION · RELEASE 5.20.0</div><h1>Healthcare Analytics Integrated Execution Engine</h1><p>Run trusted local Python scripts, load CSV data into SQLite, execute read-only SQL and apply reproducible CSV transformations.</p></div>
+        <div class="stats-grid">
+          <article class="stat-card"><span>Execution</span><strong>Python</strong><small>Timeout + captured logs</small></article>
+          <article class="stat-card"><span>Database</span><strong>SQLite</strong><small>CSV ingestion + read-only queries</small></article>
+          <article class="stat-card"><span>ETL</span><strong>4 operations</strong><small>Declarative CSV pipeline</small></article>
+          <article class="stat-card"><span>SQL guard</span><strong>100k rows</strong><small>Read-only query result cap</small></article>
+        </div>
+        <div class="lab-grid">
+          <article class="panel"><div class="panel-header"><h2>1. Execute Python</h2><span class="tag">Trusted local code</span></div>
+            <pre><code>python scripts/execution_engine.py run-python --project ./my_project --script src/python/analysis.py --timeout 120</code></pre>
+            <p>Captures standard output, standard error, exit status, elapsed time and a source-file hash in local run records.</p>
+          </article>
+          <article class="panel"><div class="panel-header"><h2>2. Load CSV and query</h2></div>
+            <pre><code>python scripts/execution_engine.py load-csv --project ./my_project --input data/raw/encounters.csv --table encounters
+python scripts/execution_engine.py query-sql --project ./my_project --sql "SELECT service_line, COUNT(*) AS n FROM encounters GROUP BY service_line"</code></pre>
+            <p>Imports columns as TEXT. Query interface accepts one SELECT/WITH statement and writes a CSV result.</p>
+          </article>
+          <article class="panel"><div class="panel-header"><h2>3. Run a transformation pipeline</h2></div>
+            <p>Supported steps: remove duplicates, filter exact values, rename fields and select columns. Configuration is stored in JSON for review and reuse.</p>
+            <pre><code>python scripts/execution_engine.py run-pipeline --project ./my_project --config pipeline.json</code></pre>
+          </article>
+          <article class="panel"><div class="panel-header"><h2>4. Inspect execution records</h2></div>
+            <pre><code>python scripts/execution_engine.py runs --project ./my_project</code></pre>
+            <p>Run records and logs are stored within the project workspace. Browser UI documents commands; it does not execute Python or SQL.</p>
+          </article>
+        </div>
+        <article class="panel"><h2>Execution boundaries</h2><ul><li>Python scripts execute with your local user permissions; only run trusted code. This is not a sandbox.</li><li>SQLite SQL is read-only and capped at 100,000 rows.</li><li>CSV import stores source values as TEXT; explicit type conversion and validation remain part of analysis.</li><li>PostgreSQL, R, DAX and Power Query execution are not included in this release.</li><li>Logs are local records, not a tamper-proof audit trail.</li></ul></article>
+        <article class="panel warning-panel"><h2>Patient-data handling</h2><p>Use synthetic or appropriately authorized data. Keep patient-level data, credentials and client-confidential material out of public Git repositories. Confirm institutional approval, access controls and retention requirements before processing real healthcare data.</p></article>
+      </section>
+      <section class="view" id="view-project-execution-v519">
+        <div class="page-heading"><div class="eyebrow">PROJECT OPERATIONS · RELEASE 5.19.0</div><h1>Project Execution & Collaboration Environment</h1><p>A structured local workspace for analysis tasks, review, change control and reproducible release snapshots.</p></div>
+        <div class="stats-grid">
+          <article class="stat-card"><span>Languages</span><strong>Python · SQL · R</strong><small>Starter entry points</small></article>
+          <article class="stat-card"><span>Governance</span><strong>4 registers</strong><small>Tasks, reviews, changes, activity</small></article>
+          <article class="stat-card"><span>Versioning</span><strong>SHA-256</strong><small>File-level release snapshots</small></article>
+          <article class="stat-card"><span>Readiness</span><strong>10 checks</strong><small>Heuristic project gate</small></article>
+        </div>
+        <div class="lab-grid">
+          <article class="panel"><div class="panel-header"><h2>Initialize a project</h2><span class="tag">Python CLI</span></div>
+            <pre><code>python scripts/workspace.py init --path ./my_project --title "Hypertension prescribing audit" --owner "Analytics team"</code></pre>
+            <h3>Track execution</h3><pre><code>python scripts/workspace.py task --path ./my_project --id T-001 --status in_progress
+python scripts/workspace.py feedback --path ./my_project --reviewer "Clinical reviewer" --item "Cohort definition" --status revision_required
+python scripts/workspace.py change --path ./my_project --title "Revise cohort window" --impact high</code></pre>
+          </article>
+          <article class="panel"><div class="panel-header"><h2>Baseline and validate</h2></div>
+            <pre><code>python scripts/workspace.py snapshot --path ./my_project --version 0.1.0 --note "Baseline"
+python scripts/workspace.py validate --path ./my_project
+python scripts/workspace.py status --path ./my_project</code></pre>
+            <ul><li>Project scaffold with Python, SQL and R</li><li>Task register and activity log</li><li>Reviewer feedback and change requests</li><li>Release snapshots with SHA-256 hashes</li><li>Readiness report and structural validation</li></ul>
+          </article>
+        </div>
+        <article class="panel"><h2>Readiness model</h2><p>Ten checks cover scope, source governance, cohort definition, code, tests, peer review, change control, task completion, release snapshot and handover. The score is a heuristic progress indicator—not clinical, privacy, regulatory or client acceptance certification.</p></article>
+        <article class="panel warning-panel"><h2>Collaboration and audit limitations</h2><p>This is a local-first single-user coordination tool, not a multi-user collaboration server. Its append-only activity log is not tamper-proof or a regulated audit trail. It does not execute arbitrary analysis scripts, synchronize users, or enforce permissions. Use approved Git hosting and access controls; never commit PHI or credentials.</p></article>
+      </section>
+      <section class="view" id="view-portfolio-delivery-v518">
+        <div class="page-heading"><div class="eyebrow">PORTFOLIO ENGINEERING · RELEASE 5.18.0</div><h1>Healthcare Analytics Portfolio & Client Delivery</h1><p>Package analysis work into a reproducible, reviewable client handover.</p></div>
+        <div class="stats-grid">
+          <article class="stat-card"><span>Provenance</span><strong>SHA-256</strong><small>Input fingerprint</small></article>
+          <article class="stat-card"><span>Documentation</span><strong>2 reports</strong><small>Executive + technical</small></article>
+          <article class="stat-card"><span>Delivery QA</span><strong>15 gates</strong><small>Explicit acceptance checks</small></article>
+          <article class="stat-card"><span>Portfolio</span><strong>Case study</strong><small>Evidence-first narrative</small></article>
+        </div>
+        <div class="lab-grid">
+          <article class="panel"><div class="panel-header"><h2>Delivery workflow</h2><span class="tag">Local Python tool</span></div>
+            <ol><li>Prepare an authorized, appropriately de-identified CSV.</li><li>Run the delivery builder from the module directory.</li><li>Inspect the manifest, data dictionary, and privacy warnings.</li><li>Replace report templates only with validated results.</li><li>Complete every acceptance gate and generate the handover ZIP.</li></ol>
+            <pre><code>python scripts/delivery_builder.py --input data/synthetic_encounter_profile.csv --output outputs/demo_delivery --title "30-day readmission profile" --audience "Hospital quality team" --objective "Describe aggregate readmission patterns" --owner "Analytics team"</code></pre>
+          </article>
+          <article class="panel"><div class="panel-header"><h2>Included deliverables</h2></div>
+            <ul><li>Project manifest with source SHA-256</li><li>Data dictionary in JSON and CSV</li><li>Environment manifest and lockfile guidance</li><li>Executive summary and technical report templates</li><li>Portfolio case-study template</li><li>QA acceptance checklist and client handover guide</li><li>GitHub-oriented ignore template</li></ul>
+          </article>
+        </div>
+        <article class="panel"><div class="panel-header"><h2>Acceptance gate preview</h2><span class="tag">15 checks</span></div>
+          <div id="delivery-checklist-v518" class="checklist-grid">
+            <label><input type="checkbox"> Scope confirmed</label><label><input type="checkbox"> Source authorized</label><label><input type="checkbox"> Data classification reviewed</label><label><input type="checkbox"> Identifiers reviewed</label><label><input type="checkbox"> Definitions approved</label><label><input type="checkbox"> Transformations reproducible</label><label><input type="checkbox"> Code versioned</label><label><input type="checkbox"> Results reproduced</label><label><input type="checkbox"> Denominators checked</label><label><input type="checkbox"> Outputs labelled</label><label><input type="checkbox"> Limitations documented</label><label><input type="checkbox"> Executive report reviewed</label><label><input type="checkbox"> Technical report reviewed</label><label><input type="checkbox"> Client acceptance recorded</label><label><input type="checkbox"> Handover controls confirmed</label>
+          </div><p class="muted">This in-page checklist is a visual aid; the generated JSON checklist is the handover record. Browser controls do not execute Python.</p>
+        </article>
+        <article class="panel warning-panel"><h2>Governance boundary</h2><p>Automated field-name scanning is not de-identification. Do not upload patient-level data, identifiers, credentials, or client-confidential material to a public repository. This tool does not certify clinical validity, statistical correctness, privacy, regulatory compliance, or client acceptance.</p></article>
+      </section>
+      <section class="view" id="view-publication-workbench-v517">
+        <div class="page-heading"><div class="eyebrow">RESEARCH OUTPUTS · RELEASE 5.17.0</div><h1>Healthcare analytics research & publication workbench</h1><p>Assemble baseline characteristics, participant-flow drafts, reporting checklists and reference exports from reproducible study inputs.</p></div>
+        <div class="metric-grid">
+          <article class="metric"><span>Output formats</span><strong>CSV · HTML</strong><small>Editable publication tables</small></article>
+          <article class="metric"><span>Flow diagrams</span><strong>CONSORT · PRISMA</strong><small>Count-validated drafts</small></article>
+          <article class="metric"><span>Reporting prompts</span><strong>3</strong><small>Trial, observational, review</small></article>
+          <article class="metric"><span>References</span><strong>RIS → BibTeX</strong><small>Basic bibliographic import</small></article>
+        </div>
+        <div class="panel"><div class="eyebrow">TABLE 1 — BASELINE CHARACTERISTICS</div><h2>Generated synthetic study table</h2><p class="muted">The example is generated from an 18-row synthetic dataset. P-values are exploratory and should not be used as a default baseline-comparison practice.</p>
+          <iframe title="Baseline characteristics table preview" src="research_publication_workbench_v517/outputs/table1_baseline_characteristics.html" style="width:100%;height:430px;border:1px solid var(--border,#d9e0e7);border-radius:8px;background:white"></iframe>
+          <p><a href="research_publication_workbench_v517/outputs/table1_baseline_characteristics.csv" download>Download Table 1 CSV</a> · <a href="research_publication_workbench_v517/outputs/table1_baseline_characteristics.html" target="_blank" rel="noopener">Open HTML table</a></p>
+        </div>
+        <div class="panel"><div class="eyebrow">PARTICIPANT FLOW</div><h2>CONSORT and PRISMA draft diagrams</h2><p>These examples use demonstration counts. Replace them with reconciled source-record counts and include detailed exclusion and loss reasons before publication.</p>
+          <div class="flow-preview"><figure><img src="research_publication_workbench_v517/outputs/consort_flow.svg" alt="Draft CONSORT participant flow diagram"><figcaption>CONSORT-style trial flow</figcaption></figure><figure><img src="research_publication_workbench_v517/outputs/prisma_flow.svg" alt="Draft PRISMA systematic review flow diagram"><figcaption>PRISMA-style review flow</figcaption></figure></div>
+        </div>
+        <div class="panel"><div class="eyebrow">REPORTING CHECKLISTS</div><h2>Review the relevant reporting standard</h2><label>Checklist<select id="reporting-standard-v517"><option value="CONSORT_2010">CONSORT — randomized trials</option><option value="STROBE_cohort">STROBE — observational cohort</option><option value="PRISMA_2020">PRISMA 2020 — systematic reviews</option></select></label>
+          <div id="reporting-checklist-v517" class="checklist-grid" aria-live="polite"></div><p class="muted">These are concise planning prompts, not complete official checklists or an automated compliance certification. Download and complete the current official checklist for your study type.</p>
+        </div>
+        <div class="panel"><div class="eyebrow">REFERENCE MANAGEMENT</div><h2>RIS import and citation exports</h2><p>Import a RIS file with the Python workflow. The example reference exports are provided for format demonstration only.</p>
+          <p><a href="research_publication_workbench_v517/outputs/references.csv" download>Download references CSV</a> · <a href="research_publication_workbench_v517/outputs/references.bib" download>Download BibTeX</a></p>
+        </div>
+        <div class="panel"><div class="eyebrow">REPRODUCIBLE GENERATION</div><h2>Run the publication workbench</h2><pre><code>cd research_publication_workbench_v517
+python -m pip install -r requirements.txt
+python scripts/publication_workbench.py \
+  --input data/synthetic_publication_dataset.csv \
+  --outdir outputs \
+  --consort-counts 80 40 40 38 39 35 36 36 37 \
+  --prisma-counts 500 80 420 350 70 25 45 \
+  --ris data/sample_references.ris</code></pre><p class="muted">All participant counts and reference metadata are synthetic examples. Verify every value and reference before use.</p>
+        </div>
+        <div class="panel"><div class="eyebrow">SUBMISSION QUALITY GATE</div><h2>Final manuscript checks</h2><ul><li>Reconcile every number across abstract, text, tables, figures and supplements.</li><li>Confirm denominators, units, effect directions, confidence intervals and decimal precision.</li><li>Ensure participant flow and analysis populations match source records.</li><li>Complete ethics, consent, registration, funding and conflicts-of-interest statements.</li><li>Verify references, DOI metadata, journal style and permissions.</li><li>Obtain clinical, statistical and editorial review before submission.</li></ul></div>
+      </section>
+      <section class="view" id="view-visualization-studio-v516">
+        <div class="page-heading"><div class="eyebrow">STATISTICAL COMMUNICATION · RELEASE 5.16.0</div><h1>Healthcare data visualization & reporting studio</h1><p>Explore distribution, group comparison, diagnostic performance, survival patterns and study-level effect estimates using reproducible figure outputs.</p></div>
+        <div class="metric-grid">
+          <article class="metric"><span>Figure families</span><strong>5</strong><small>Distribution to evidence synthesis</small></article>
+          <article class="metric"><span>Generated figures</span><strong>10</strong><small>From the included synthetic study</small></article>
+          <article class="metric"><span>Report formats</span><strong>3</strong><small>PNG, Markdown and HTML</small></article>
+          <article class="metric"><span>Data lineage</span><strong>SHA-256</strong><small>Input file fingerprint recorded</small></article>
+        </div>
+        <div class="panel"><div class="eyebrow">FIGURE EXPLORER</div><h2>Generated research figures</h2><p class="muted">These are generated example outputs from synthetic data. Use the filter to inspect each figure family.</p>
+          <label>Figure category<select id="viz-filter-v516"><option value="all">All figures</option><option value="histogram">Distributions</option><option value="group">Group comparison</option><option value="roc">Diagnostic performance</option><option value="kaplan">Time-to-event</option><option value="forest">Evidence synthesis</option></select></label>
+          <div id="viz-gallery-v516" class="viz-gallery">
+            <figure data-kind="histogram"><img src="visualization_reporting_studio_v516/outputs/histogram_age.png" alt="Age distribution histogram"><figcaption>Age distribution</figcaption></figure>
+            <figure data-kind="histogram"><img src="visualization_reporting_studio_v516/outputs/histogram_baseline_sbp.png" alt="Baseline systolic blood pressure distribution"><figcaption>Baseline systolic blood pressure</figcaption></figure>
+            <figure data-kind="histogram"><img src="visualization_reporting_studio_v516/outputs/histogram_followup_sbp.png" alt="Follow-up systolic blood pressure distribution"><figcaption>Follow-up systolic blood pressure</figcaption></figure>
+            <figure data-kind="histogram"><img src="visualization_reporting_studio_v516/outputs/histogram_biomarker_score.png" alt="Biomarker score distribution"><figcaption>Biomarker score distribution</figcaption></figure>
+            <figure data-kind="group"><img src="visualization_reporting_studio_v516/outputs/group_boxplot.png" alt="Follow-up blood pressure by study group box plot"><figcaption>Group comparison: follow-up SBP</figcaption></figure>
+            <figure data-kind="roc"><img src="visualization_reporting_studio_v516/outputs/roc_curve.png" alt="Receiver operating characteristic curve"><figcaption>ROC curve — apparent AUC</figcaption></figure>
+            <figure data-kind="kaplan"><img src="visualization_reporting_studio_v516/outputs/kaplan_meier.png" alt="Kaplan Meier survival curve by group"><figcaption>Kaplan–Meier learning curve</figcaption></figure>
+            <figure data-kind="forest"><img src="visualization_reporting_studio_v516/outputs/forest_plot.png" alt="Forest plot of study estimates and confidence intervals"><figcaption>Forest plot — supplied estimates</figcaption></figure>
+          </div>
+        </div>
+        <div class="panel"><div class="eyebrow">REPRODUCIBLE FIGURE GENERATION</div><h2>Run with your own governed dataset</h2><p>Use the included Python script to create figures and a report. The browser gallery only displays already-generated outputs; it does not execute Python.</p><pre><code>cd visualization_reporting_studio_v516
+python -m pip install -r requirements.txt
+python scripts/visualize_study.py \
+  --input data/synthetic_visualization_study.csv \
+  --outdir outputs \
+  --forest-csv data/synthetic_forest_effects.csv</code></pre><p>Outputs include PNG images, descriptive CSV, ROC and Kaplan–Meier JSON summaries, plus Markdown and HTML reports.</p></div>
+        <div class="panel"><div class="eyebrow">INTERPRETATION & QUALITY GATES</div><h2>Before publication</h2><ul>
+          <li>Histograms and box plots are descriptive, not proof of model assumptions.</li>
+          <li>ROC AUC here is apparent performance on the same synthetic dataset; it is not validated model performance.</li>
+          <li>Kaplan–Meier curves are descriptive. This release does not calculate log-rank tests, confidence bands, competing-risk models or adjusted Cox models.</li>
+          <li>Forest plots display supplied estimates. This release does not pool studies or calculate heterogeneity.</li>
+          <li>Report sample size, missingness, units, endpoint definitions, follow-up and data exclusions.</li>
+          <li>Retain source data, analysis code, package versions and provenance for reproducibility.</li>
+        </ul></div>
+      </section>
+      <section class="view" id="view-clinical-evidence-v515">
+        <div class="page-heading"><div class="eyebrow">CLINICAL RESEARCH · RELEASE 5.15.0</div><h1>Clinical research interpretation & evidence engine</h1><p>Translate study results into absolute effects, diagnostic accuracy and structured critical appraisal—without confusing statistical significance with clinical importance.</p></div>
+        <div class="metric-grid">
+          <article class="metric"><span>Effect measures</span><strong>RR · OR</strong><small>Risk difference and absolute effects</small></article>
+          <article class="metric"><span>Clinical translation</span><strong>NNT · NNH</strong><small>With stated time horizon</small></article>
+          <article class="metric"><span>Diagnostic metrics</span><strong>6+</strong><small>Sensitivity through likelihood ratios</small></article>
+          <article class="metric"><span>Appraisal prompts</span><strong>4</strong><small>RoB 2, ROBINS-I, QUADAS-2, GRADE domains</small></article>
+        </div>
+        <div class="panel"><div class="eyebrow">TREATMENT EFFECT CALCULATOR</div><h2>Compare event risks</h2><p>Enter event counts and total participants. The risk difference is intervention minus control; negative values indicate fewer events in the intervention arm.</p>
+          <div class="form-grid">
+            <label>Intervention events<input id="ev-t-v515" type="number" min="0" step="1" value="18"></label>
+            <label>Intervention total<input id="n-t-v515" type="number" min="1" step="1" value="120"></label>
+            <label>Control events<input id="ev-c-v515" type="number" min="0" step="1" value="30"></label>
+            <label>Control total<input id="n-c-v515" type="number" min="1" step="1" value="120"></label>
+          </div><label class="inline-check"><input id="cc-v515" type="checkbox"> Apply explicit 0.5 continuity correction to ratio measures if a cell is zero</label>
+          <button class="btn btn-primary" id="calc-effects-v515" type="button">Calculate treatment effects</button><div id="effects-result-v515" class="result-box" aria-live="polite"></div>
+        </div>
+        <div class="panel"><div class="eyebrow">DIAGNOSTIC ACCURACY CALCULATOR</div><h2>2 × 2 diagnostic table</h2>
+          <div class="form-grid">
+            <label>True positives<input id="tp-v515" type="number" min="0" step="1" value="82"></label><label>False negatives<input id="fn-v515" type="number" min="0" step="1" value="18"></label>
+            <label>False positives<input id="fp-v515" type="number" min="0" step="1" value="24"></label><label>True negatives<input id="tn-v515" type="number" min="0" step="1" value="176"></label>
+            <label>Target prevalence (0–1, optional)<input id="prev-v515" type="number" min="0.001" max="0.999" step="0.001" placeholder="e.g. 0.10"></label>
+          </div><button class="btn btn-primary" id="calc-diagnostic-v515" type="button">Calculate diagnostic metrics</button><div id="diagnostic-result-v515" class="result-box" aria-live="polite"></div>
+        </div>
+        <div class="panel"><div class="eyebrow">CRITICAL APPRAISAL</div><h2>Choose an evidence framework</h2>
+          <label>Study / evidence type<select id="appraisal-type-v515"><option value="randomized_trial">Randomized trial — RoB 2 domains</option><option value="observational">Non-randomized intervention — ROBINS-I domains</option><option value="diagnostic">Diagnostic accuracy — QUADAS-2 domains</option><option value="certainty">Body of evidence — GRADE considerations</option></select></label>
+          <div id="appraisal-checklist-v515" class="result-box"></div><p class="muted">This is an educational domain checklist, not an official tool implementation. It does not generate validated risk-of-bias or certainty ratings.</p>
+        </div>
+        <div class="panel"><div class="eyebrow">INTERPRETATION RULES</div><h2>What a result does—and does not—tell you</h2><ul>
+          <li>Relative effects need baseline risk context; a large relative reduction may correspond to a small absolute reduction.</li>
+          <li>NNT and NNH depend on outcome definition and follow-up duration. If the risk-difference interval crosses zero, a single NNT can conceal benefit and harm uncertainty.</li>
+          <li>Odds ratios are not risk ratios, particularly when outcomes are common.</li>
+          <li>PPV and NPV change with prevalence. Sensitivity and specificity may also vary across populations and thresholds.</li>
+          <li>Statistical significance is not clinical importance. Examine effect magnitude, precision, bias and applicability.</li>
+          <li>Do not treat an observational association as causal without a defensible causal design and assumptions.</li>
+        </ul></div>
+        <div class="panel"><div class="eyebrow">REFERENCE</div><h2>Clinical evidence guide</h2><p>Read <code>clinical_evidence_engine_v515/docs/critical_appraisal_guide.md</code> in the release for definitions, appraisal framework domains and a reporting template. Run the Python CLI for reproducible calculations.</p></div>
+      </section>
+      <section class="view" id="view-statistical-engine-v514">
+        <div class="page-heading"><div class="eyebrow">RESEARCH METHODS · RELEASE 5.14.0</div><h1>Universal statistical analysis & research engine</h1><p>Plan defensible analyses, understand assumptions and run reproducible Python workflows on synthetic or appropriately governed study data.</p></div>
+        <div class="metric-grid">
+          <article class="metric"><span>Analysis families</span><strong>8</strong><small>Descriptive through regression</small></article>
+          <article class="metric"><span>Core methods</span><strong>10+</strong><small>Parametric and rank-based</small></article>
+          <article class="metric"><span>Reproducibility</span><strong>SHA-256</strong><small>Input file lineage recorded</small></article>
+          <article class="metric"><span>Execution</span><strong>Python CLI</strong><small>Browser is a planner, not a compute engine</small></article>
+        </div>
+        <div class="panel">
+          <div class="eyebrow">INTERACTIVE ANALYSIS PLANNER</div><h2>Choose the question before choosing the test</h2>
+          <div class="form-grid">
+            <label>Study design<select id="stat-design-v514"><option value="cohort">Observational cohort</option><option value="cross">Cross-sectional</option><option value="rct">Randomized controlled trial</option><option value="casecontrol">Case-control</option><option value="paired">Paired / pre-post</option><option value="diagnostic">Diagnostic accuracy</option></select></label>
+            <label>Outcome type<select id="stat-outcome-v514"><option value="continuous">Continuous</option><option value="binary">Binary</option><option value="categorical">Categorical</option><option value="ordinal">Ordinal</option><option value="time">Time-to-event</option></select></label>
+            <label>Comparison structure<select id="stat-structure-v514"><option value="two-independent">Two independent groups</option><option value="paired">Paired / repeated</option><option value="one">One sample / descriptive</option><option value="association">Association / prediction</option></select></label>
+            <label>Primary objective<select id="stat-objective-v514"><option value="difference">Estimate a difference</option><option value="association">Measure association</option><option value="prediction">Prediction / adjustment</option><option value="description">Describe a population</option></select></label>
+          </div>
+          <button class="btn btn-primary" id="stat-plan-btn-v514" type="button">Generate analysis plan</button>
+          <div id="stat-plan-result-v514" class="result-box" aria-live="polite"><p class="muted">Select the design and question, then generate a candidate plan. A statistician must confirm it against the protocol and data structure.</p></div>
+        </div>
+        <div class="panel"><div class="eyebrow">METHOD REFERENCE</div><h2>Methods and assumptions</h2><div class="table-wrap"><table><thead><tr><th>Method</th><th>Typical use</th><th>Key assumption / caution</th></tr></thead><tbody>
+          <tr><td>Welch t-test</td><td>Two independent means</td><td>Independent observations; robust to unequal variances, not severe design violations</td></tr>
+          <tr><td>Paired t-test</td><td>Within-person mean change</td><td>Analyse paired differences; pairs independent of other pairs</td></tr>
+          <tr><td>Mann–Whitney U</td><td>Two independent distributions</td><td>Rank/distribution comparison; not automatically a median test</td></tr>
+          <tr><td>Chi-square / Fisher</td><td>Categorical association</td><td>Independent counts; sparse cells need exact methods</td></tr>
+          <tr><td>Pearson / Spearman</td><td>Continuous association</td><td>Linear vs monotonic relationship; outlier sensitivity</td></tr>
+          <tr><td>Linear regression / ANCOVA</td><td>Adjusted continuous outcome</td><td>Linearity, residuals, homoscedasticity, influence, confounding</td></tr>
+          <tr><td>Logistic regression</td><td>Binary outcome</td><td>Events per parameter, separation, calibration and confounding</td></tr>
+          <tr><td>Kaplan–Meier / Cox</td><td>Time-to-event</td><td>Censoring and proportional-hazards assumptions</td></tr>
+        </tbody></table></div></div>
+        <div class="panel"><div class="eyebrow">REPRODUCIBLE WORKFLOW</div><h2>Run the included synthetic study</h2><p>Use the Python CLI to calculate results and generate JSON, CSV and HTML outputs. The browser planner does not execute Python/R.</p><pre><code>cd statistical_engine_v514
+python -m pip install -r requirements.txt
+python scripts/analyze_study.py --input data/synthetic_bp_study.csv --outdir outputs
+python -m pytest -q tests</code></pre><p class="muted">The example uses synthetic blood-pressure values. It is a programming and methods exercise—not clinical evidence or a treatment-effect estimate.</p></div>
+        <div class="panel"><div class="eyebrow">INTERPRETATION CHECKLIST</div><h2>Before reporting a result</h2><ul><li>State the estimand, population, outcome, contrast, time point and analysis population.</li><li>Report missingness and data exclusions; never silently code missing values as zero.</li><li>Inspect distributions, outliers, model residuals and influential observations.</li><li>Report effect estimates and confidence intervals alongside p-values.</li><li>Prespecify primary outcomes and address multiplicity; label exploratory work.</li><li>Separate statistical significance from clinical or operational importance.</li><li>Do not infer causality from an observational association.</li></ul></div>
+      </section>
+      <section class="view" id="view-data-validation-v513">
+        <div class="page-heading"><div class="eyebrow">DATA QUALITY ENGINEERING · RELEASE 5.13.0</div><h1>Universal data dictionary & study validation engine</h1><p>Reusable variable definitions, configurable quality rules, deterministic checks and auditable reports.</p></div>
+        <div id="dataValidationV513"></div>
+      </section>
+      <section class="view" id="view-study-workspace-v512">
+        <div class="page-heading"><div class="eyebrow">UNIVERSAL STUDY WORKSPACE · RELEASE 5.12.0</div><h1>Universal study design & protocol workspace</h1><p>Plan studies across disease areas and research designs using configurable population, time, endpoint and variable definitions.</p></div>
+        <div id="studyWorkspaceV512"></div>
+      </section>
+      <section class="view" id="view-platform-roadmap-v511">
+        <div class="page-heading"><div class="eyebrow">PLATFORM ROADMAP · RELEASE 5.11.0</div><h1>Healthcare Data Analyst Academy — platform roadmap</h1><p>Completed work, pending capabilities, architectural risks and the future product direction.</p></div>
+        <div id="platformRoadmapV511"></div>
+      </section>
+      <section class="view" id="view-production-ops-v510">
+        <div class="page-heading"><div class="eyebrow">PRODUCTION OPERATIONS · RELEASE 5.10.0</div><h1>Healthcare analytics deployment, automation & production operations</h1><p>Operationalise a repeatable pipeline with validation, quarantine, lineage, reconciliation and deployment controls.</p></div>
+        <div id="productionOpsV510"></div>
+      </section>
+      <section class="view" id="view-bi-engineering-v59">
+        <div class="page-heading"><div class="eyebrow">BI ENGINEERING · RELEASE 5.9.0</div><h1>Healthcare analytics BI engineering & semantic modelling</h1><p>Build governed star schemas, DAX measures, Power Query transformations, RLS and audience-specific dashboards.</p></div>
+        <div id="biEngineeringV59"></div>
+      </section>
+      <section class="view" id="view-database-engineering-v58">
+        <div class="page-heading"><div class="eyebrow">DATABASE ENGINEERING · RELEASE 5.8.0</div><h1>Healthcare analytics database engineering & SQL production lab</h1><p>Practice relational modelling, dimensional schemas, constraints, transactions, indexes, query plans and window functions.</p></div>
+        <div id="databaseEngineeringV58"></div>
+      </section>
+      <section class="view" id="view-etl-orchestration-v57">
+        <div class="page-heading"><div class="eyebrow">ETL ORCHESTRATION · RELEASE 5.8.0</div><h1>Healthcare analytics data engineering & ETL orchestration</h1><p>Explore ingestion, schema validation, quarantine and reconciliation, then run the Python-to-SQLite pipeline locally.</p></div>
+        <div id="etlOrchestrationV57"></div>
+      </section>
+      <section class="view" id="view-data-governance-v56">
+        <div class="page-heading"><div class="eyebrow">DATA GOVERNANCE · RELEASE 5.8.0</div><h1>Healthcare analytics data governance & QA centre</h1><p>Run transparent validation rules, classify issues, inspect missingness, record lineage and preserve reproducibility evidence.</p></div>
+        <div id="dataGovernanceV56"></div>
+      </section>
+      <section class="view" id="view-client-delivery-v55">
+        <div class="page-heading"><div class="eyebrow">CLIENT DELIVERY · RELEASE 5.8.0</div><h1>Healthcare analytics client delivery & evidence pack</h1><p>Prepare a traceable handoff with source profiling, artifact inventory, QA attestations, limitations and reproducibility evidence.</p></div>
+        <div id="clientDeliveryV55"></div>
+      </section>
+      <section class="view" id="view-report-generator-v54">
+        <div class="page-heading"><div class="eyebrow">REPORT GENERATOR · RELEASE 5.8.0</div><h1>Healthcare analytics report generator</h1><p>Convert a permitted CSV extract into a structured descriptive report with methods, data-quality evidence and limitations.</p></div>
+        <div id="reportGeneratorV54"></div>
+      </section>
+      <section class="view" id="view-dashboard-studio-v53">
+        <div class="page-heading"><div class="eyebrow">DASHBOARD STUDIO · RELEASE 5.3.0</div><h1>Healthcare analytics dashboard studio</h1><p>Build filtered dashboard views, compare healthcare metrics, review dashboard quality and export a standalone HTML snapshot.</p></div>
+        <div id="dashboardStudioV53"></div>
+      </section>
+      <section class="view" id="view-interactive-workbench-v52">
+        <div class="page-heading"><div class="eyebrow">LOCAL ANALYSIS WORKBENCH · RELEASE 5.2.0</div><h1>Interactive healthcare analytics workbench</h1><p>Load a CSV, inspect its quality, preview cleaning rules, calculate KPIs and descriptive statistics, and prepare SQL for execution in DBeaver or SQLite.</p></div>
+        <div id="interactiveWorkbenchV52"></div>
+      </section>
+      <section class="view" id="view-project-simulator-v51">
+        <div class="page-heading"><div class="eyebrow">CLIENT PROJECT SIMULATOR · RELEASE 5.1.0</div><h1>Interactive healthcare analytics project simulator</h1><p>Respond to evolving client requirements, make defensible data decisions and execute a reproducible synthetic hospital analytics project.</p></div>
+        <div id="projectSimulatorV51"></div>
+      </section>
+      <section class="view" id="view-professional-simulation-v50">
+        <div class="page-heading"><div class="eyebrow">CAPSTONE ASSESSMENT · RELEASE 5.0.0</div><h1>Healthcare analytics professional simulation</h1><p>Employer-style case assignments, transparent scoring, model answers and local SQL/Python practical evidence.</p></div>
+        <div id="professionalSimulationV50"></div>
+      </section>
+      <section class="view" id="view-portfolio-engineering">
+        <div class="page-heading"><div class="eyebrow">REPOSITORY QUALITY · RELEASE 3.4.0</div><h1>Portfolio engineering & interview readiness</h1><p>Build projects that another analyst can inspect, reproduce, review and discuss in a technical interview.</p></div>
+        <div class="upgrade-stat-grid" id="portfolioEngStats"></div>
+        <div class="module-toolbar"><input id="portfolioEngSearch" type="search" placeholder="Search modules or interview topics"><select id="portfolioEngMode"><option value="modules">Portfolio engineering modules</option><option value="interviews">Interview bank</option></select></div>
+        <div id="portfolioEngContent"></div>
+        <article class="panel module-note"><b>Practical tools</b><p>Use the repository templates, Git safety preflight scripts, repository audit and review checklists in <code>portfolio_engineering/</code>. Security audit scripts only flag patterns; they are not DLP or security certification.</p><button class="secondary-small" id="portfolioEngExport">Export module progress</button></article>
+      </section>
+    </div>
+    <footer><span>HDA Academy · Academy release 5.27.0</span><span>Educational resource · Not a clinical decision-support system</span></footer>
+  
+<section class="view" id="view-healthcare-capstone-v530">
+  <div class="page-heading"><div><p class="eyebrow">VOLUME 6 · CAPSTONE</p><h1>Healthcare Analytics Capstone & Employment Assessment</h1><p>End-to-end synthetic hospital analytics project, from source profiling to client handover.</p></div></div>
+  <div class="card-grid">
+    <article class="lab-card"><h2>Client brief</h2><p>Build a reproducible monthly operations and pharmacy-utilization report. Identify source-data defects before dashboard publication.</p><a href="healthcare_analytics_capstone_employment_v530/assessment/CLIENT_BRIEF.md">Open client brief</a></article>
+    <article class="lab-card"><h2>Run the capstone</h2><p>Execute the Python standard-library pipeline, create a SQLite warehouse, and generate KPI and data-quality outputs.</p><code>python src/run_capstone.py</code></article>
+    <article class="lab-card"><h2>Employer assessment</h2><p>Submit the required artifacts and score your work against the 100-point rubric.</p><a href="healthcare_analytics_capstone_employment_v530/assessment/SCORING_RUBRIC.md">Open scoring rubric</a></article>
+  </div>
+  <div class="lab-card"><h2>Required deliverables</h2><ol><li>Data profiling and quality report</li><li>Relational model and SQL analysis</li><li>KPI dictionary and dashboard specification</li><li>Executive summary and limitations</li><li>Technical handover checklist</li></ol></div>
+  <div class="notice"><strong>Data governance:</strong> All records are synthetic. The dataset deliberately contains an orphan encounter for quality-control practice. Blood-pressure summaries are descriptive only and must not be presented as diagnosis, control rates, or treatment recommendations.</div>
+</section>
+
+<section class="view" id="view-job-readiness-v531">
+  <div class="page-heading"><div><p class="eyebrow">VOLUME 8 · CAREER LAUNCH</p><h1>Healthcare Data Analyst Job Readiness</h1><p>Role targeting, technical assessments, portfolio review, interview practice and remote-client delivery.</p></div></div>
+  <div class="card-grid">
+    <article class="lab-card"><h2>Choose target roles</h2><p>Compare junior healthcare, clinical research, pharmacy utilization, pharmacovigilance and BI analyst role profiles.</p><a href="healthcare_data_analyst_job_readiness_remote_employment_v531/job_descriptions/role_profiles.md">Explore role profiles</a></article>
+    <article class="lab-card"><h2>Technical assessment</h2><p>Practice Excel, SQL, Python, Power BI, statistics and healthcare-domain questions with answer guidance.</p><a href="healthcare_data_analyst_job_readiness_remote_employment_v531/assessments/technical_question_bank.md">Open question bank</a></article>
+    <article class="lab-card"><h2>Readiness scoring</h2><p>Score eight competency domains using the weighted rubric and Python scoring utility.</p><a href="healthcare_data_analyst_job_readiness_remote_employment_v531/data/assessment_rubric.json">View assessment rubric</a></article>
+    <article class="lab-card"><h2>Interview preparation</h2><p>Practice technical discussion, STAR answers and questions to ask employers.</p><a href="healthcare_data_analyst_job_readiness_remote_employment_v531/interviews/structured_interview.md">Open interview guide</a></article>
+    <article class="lab-card"><h2>Portfolio and resume</h2><p>Audit project evidence and prepare a truthful entry-level analytics resume.</p><a href="healthcare_data_analyst_job_readiness_remote_employment_v531/portfolio/portfolio_review_checklist.md">Portfolio checklist</a></article>
+    <article class="lab-card"><h2>Remote client delivery</h2><p>Scope, estimate, validate and hand over analytics work with appropriate data safeguards.</p><a href="healthcare_data_analyst_job_readiness_remote_employment_v531/freelance/client_workflow.md">Client workflow</a></article>
+  </div>
+  <div class="lab-card"><h2>90-day execution plan</h2><p>Move from skills audit to portfolio repair, interview practice, targeted applications and iterative improvement.</p><a href="healthcare_data_analyst_job_readiness_remote_employment_v531/docs/90_day_job_search_plan.md">Open 90-day plan</a></div>
+  <div class="notice"><strong>Important:</strong> Job descriptions are fictional practice examples, not live vacancies. Assessment scores are self-assessment only. Do not publish patient data or claim experience you have not performed.</div>
+</section>
+
+<section class="view" id="view-employer-evaluation-v535">
+  <div class="page-heading"><div><p class="eyebrow">VOLUME 8 · CAREER LAUNCH</p><h1>Portfolio Completion & Employer Evaluation</h1><p>Turn the synthetic hospital practicum into an explainable portfolio and assess practical readiness for junior analyst roles.</p></div></div>
+  <div class="card-grid">
+    <article class="lab-card"><h2>Timed technical challenge</h2><p>120-minute SQL, Python, BI and communication assessment.</p><a href="healthcare_analytics_employer_evaluation_v535/assessments/TECHNICAL_CHALLENGE.md">Open challenge</a></article>
+    <article class="lab-card"><h2>Employer scoring rubric</h2><p>100-point assessment with privacy and integrity hard gates.</p><a href="healthcare_analytics_employer_evaluation_v535/assessments/SCORING_RUBRIC.md">Open rubric</a></article>
+    <article class="lab-card"><h2>Automated assessment</h2><p>Check SQLite warehouse structure, reconciliation, orphan handling and integrity.</p><code>python scripts/run_assessment.py</code></article>
+    <article class="lab-card"><h2>Portfolio hygiene audit</h2><p>Heuristic scan for possible credentials; findings require manual review.</p><code>python scripts/portfolio_audit.py ../</code></article>
+    <article class="lab-card"><h2>Interview preparation</h2><p>28 junior healthcare analytics questions across SQL, Python, statistics and delivery.</p><a href="healthcare_analytics_employer_evaluation_v535/interview_bank/INTERVIEW_QUESTIONS.md">Open question bank</a></article>
+    <article class="lab-card"><h2>Job application tracker</h2><p>Track role fit, application stage, follow-up dates and outcomes.</p><a href="healthcare_analytics_employer_evaluation_v535/templates/JOB_APPLICATION_TRACKER.csv">Open CSV template</a></article>
+    <article class="lab-card"><h2>Employer review guide</h2><p>Five-minute project tour, reviewer questions and portfolio red flags.</p><a href="healthcare_analytics_employer_evaluation_v535/docs/EMPLOYER_REVIEW_GUIDE.md">Open guide</a></article>
+    <article class="lab-card"><h2>Interactive roadmap</h2><p>Track twelve practical assessment and job-search tasks.</p><a href="healthcare_analytics_employer_evaluation_v535/roadmap/interactive_roadmap.html">Open roadmap</a></article>
+  </div>
+  <div class="notice"><strong>Integrity boundary:</strong> This is a self-directed educational project using synthetic data. The assessment is not a certification or guarantee of employment. External platform work must be evidenced separately.</div>
+</section>
+
+<section class="view" id="view-deployment-evidence-v534">
+  <div class="page-heading"><div><p class="eyebrow">VOLUME 8 · DEPLOYMENT EVIDENCE</p><h1>Deployment Evidence & Reproducibility Workbench</h1><p>Run a containerized PostgreSQL validation, capture local evidence, and enforce a release gate without claiming unverified integrations.</p></div></div>
+  <div class="card-grid">
+    <article class="lab-card"><h2>Local evidence capture</h2><p>Runs unit tests, practicum validation and SQLite benchmark; hashes source and output files.</p><code>python scripts/capture_local_evidence.py</code></article>
+    <article class="lab-card"><h2>PostgreSQL 16 container</h2><p>Loads synthetic CSVs, curates valid records and records orphan exceptions.</p><code>bash scripts/run_postgres_validation.sh</code></article>
+    <article class="lab-card"><h2>Release acceptance gate</h2><p>Separates local PASS results from pending Power BI and GitHub evidence.</p><code>python scripts/release_gate.py</code></article>
+    <article class="lab-card"><h2>GitHub CI workflow</h2><p>Automates reproducibility and test checks on push and pull request.</p><a href=".github/workflows/quality.yml">Open workflow</a></article>
+    <article class="lab-card"><h2>Evidence protocol</h2><p>Defines provenance requirements and how to prove external application work.</p><a href="healthcare_analytics_deployment_evidence_v534/docs/REPRODUCIBILITY_AND_EVIDENCE.md">Open protocol</a></article>
+    <article class="lab-card"><h2>Release checklist</h2><p>Review privacy, PBIX, GitHub, reproducibility and final acceptance.</p><a href="healthcare_analytics_deployment_evidence_v534/portfolio/RELEASE_CHECKLIST.md">Open checklist</a></article>
+    <article class="lab-card"><h2>Interactive roadmap</h2><p>Track ten deployment and acceptance tasks locally in this browser.</p><a href="healthcare_analytics_deployment_evidence_v534/roadmap/interactive_roadmap.html">Open roadmap</a></article>
+  </div>
+  <div class="notice"><strong>Safety:</strong> The Compose database is a disposable local practice environment bound to localhost and uses synthetic data. The default password is for local practice only; never expose this service or reuse the password in production.</div>
+</section>
+
+<section class="view" id="view-production-validation-v533">
+  <div class="page-heading"><div><p class="eyebrow">VOLUME 8 · PRODUCTION READINESS</p><h1>Production Validation & Portfolio Deployment</h1><p>Validate the v5.32 practicum across data quality, SQL, BI, security, performance and client delivery.</p></div></div>
+  <div class="card-grid">
+    <article class="lab-card"><h2>Run validation</h2><p>Check source-to-curated reconciliation, exceptions, KPI extracts and provenance.</p><code>python scripts/validate_practicum.py</code><a href="healthcare_analytics_production_validation_v533/README.md">Module guide</a></article>
+    <article class="lab-card"><h2>Power BI implementation</h2><p>Star schema, DAX measures, Power Query patterns and report QA. PBIX execution must be completed in Power BI Desktop.</p><a href="healthcare_analytics_production_validation_v533/powerbi/STAR_SCHEMA_AND_MODEL.md">Model specification</a></article>
+    <article class="lab-card"><h2>PostgreSQL validation</h2><p>Reference DDL, migration template, reconciliation queries and least-privilege execution guide.</p><a href="healthcare_analytics_production_validation_v533/docs/POSTGRESQL_EXECUTION_GUIDE.md">Execution guide</a></article>
+    <article class="lab-card"><h2>Portfolio publication</h2><p>Review synthetic-data restrictions, secrets, Git history and reproducibility before publication.</p><a href="healthcare_analytics_production_validation_v533/portfolio/GITHUB_PUBLICATION_GUIDE.md">GitHub guide</a></article>
+    <article class="lab-card"><h2>Client presentation</h2><p>Present descriptive findings, limitations, exceptions and acceptance evidence.</p><a href="healthcare_analytics_production_validation_v533/assessment/CLIENT_PRESENTATION_BRIEF.md">Presentation brief</a></article>
+    <article class="lab-card"><h2>Interactive roadmap</h2><p>Track completion of all 13 production-readiness tasks in this browser.</p><a href="healthcare_analytics_production_validation_v533/roadmap/interactive_roadmap.html">Open roadmap</a></article>
+  </div>
+  <div class="notice"><strong>Validation boundary:</strong> Python/SQLite assets can be tested locally. PostgreSQL and Power BI require their respective runtimes; GitHub publication requires your account and repository. Do not claim those steps complete until evidence exists.</div>
+</section>
+
+<section class="view" id="view-real-world-practicum-v532">
+  <div class="page-heading"><div><p class="eyebrow">VOLUME 8 · PRACTICUM</p><h1>Healthcare Analytics Real-World Practicum</h1><p>Take a fictional hospital client request through requirements, data engineering, analysis, reporting, QA and acceptance.</p></div></div>
+  <div class="card-grid">
+    <article class="lab-card"><h2>Client brief</h2><p>Understand the business questions, scope, exclusions and acceptance criteria.</p><a href="healthcare_analytics_real_world_practicum_v532/docs/CLIENT_BRIEF.md">Open client brief</a></article>
+    <article class="lab-card"><h2>Run the pipeline</h2><p>Profile four synthetic source files, curate a SQLite warehouse and generate KPI/quality outputs.</p><code>python src/run_project.py</code></article>
+    <article class="lab-card"><h2>SQL analysis</h2><p>Explore monthly operations, medication orders, descriptive observations and rejected records.</p><a href="healthcare_analytics_real_world_practicum_v532/sql/client_analysis.sql">Open SQL queries</a></article>
+    <article class="lab-card"><h2>Client deliverables</h2><p>Use the KPI dictionary, report template, data dictionary and final handover checklist.</p><a href="healthcare_analytics_real_world_practicum_v532/docs/DELIVERY_CHECKLIST.md">Open delivery checklist</a></article>
+  </div>
+  <div class="lab-card"><h2>Simulated client feedback</h2><p>Revise the deliverable in response to operations, pharmacy and data-quality stakeholders.</p><a href="healthcare_analytics_real_world_practicum_v532/docs/CLIENT_FEEDBACK_SIMULATION.md">Open change requests</a></div>
+  <div class="lab-card"><h2>Interactive Academy roadmap</h2><p>Review completed releases, pending work and risks with corrective actions. Tick off pending tasks as you complete them.</p><a href="healthcare_analytics_real_world_practicum_v532/roadmap/interactive_roadmap.html" target="_blank" rel="noopener">Open interactive roadmap</a></div>
+  <div class="notice"><strong>Training boundary:</strong> The hospital, people and records are fictional. This is not a clinical decision-support or production reporting system. Medication orders do not establish dispensing or adherence; BP summaries are descriptive only.</div>
+</section>
+</main>
+
+      <section class="view" id="view-portfolio-delivery-v529"><div class="section-heading"><div><div class="eyebrow">RELEASE 5.29.0</div><h2>Healthcare BI portfolio & client reporting</h2></div></div><p>Open the standalone project guide and run its local Python pipeline.</p><p><a href="healthcare_bi_portfolio_delivery_v529/index.html" target="_blank" rel="noopener">Open v5.29 portfolio module ↗</a></p></section>
+    </div>
+<script src="assets/app.js"></script>
+<script src="assets/competency-engine.js"></script>
+<script src="assets/practicum-v43.js"></script>
+<script src="assets/employment-pipeline-v44.js"></script>
+<script src="assets/hiring-assessment-v45.js"></script>
+<script src="assets/earning-system-v46.js"></script>
+<script src="assets/technical-environment-v47.js"></script>
+<script src="assets/project-execution-v48.js"></script>
+<script src="assets/portfolio-builder-v49.js"></script>
+<script src="assets/professional-simulation-v50.js"></script>
+<script src="assets/project-simulator-v51.js"></script>
+<script src="assets/interactive-workbench-v52.js"></script>
+<script src="assets/dashboard-studio-v53.js"></script><script src="assets/report-generator-v54.js"></script><script src="assets/client-delivery-v55.js"></script><script src="assets/data-governance-v56.js"></script><script src="assets/etl-orchestration-v57.js"></script><script src="assets/database-engineering-v58.js"></script><script src="assets/bi-engineering-v59.js"></script><script src="assets/production-ops-v510.js"></script><script src="assets/platform-roadmap-v511.js"></script><script src="assets/study-workspace-v512.js"></script><script src="assets/data-validation-v513.js"></script>
+<script src="assets/statistical-engine-v514.js"></script>
+<script src="assets/clinical-evidence-v515.js"></script>
+<script src="assets/visualization-studio-v516.js"></script>
+<script src="assets/publication-workbench-v517.js"></script>
+    <script src="assets/portfolio-delivery-v518.js"></script>
+    <script src="assets/project-execution-v519.js"></script>
+    <script src="assets/execution-engine-v520.js"></script>
+    <script src="assets/statistical-execution-v521.js"></script>
+<script src="assets/integrated-reporting-v522.js"></script>
+<script src="assets/statistical-validation-v523.js"></script>
+<script src="assets/clinical-methods-v524.js"></script>
+<script src="assets/healthcare-data-engineering-v525.js"></script>
+<script src="assets/clinical-warehouse-v526.js"></script>
+<script src="assets/postgresql-operations-v527.js"></script>
+
+
+
+
+<script src="assets/academy-upgrade.js"></script>
+<script src="assets/excel-mastery.js"></script>
+<script src="assets/powerbi-mastery.js"></script>
+<script src="assets/etl-mastery.js"></script>
+<script src="assets/postgresql-mastery.js"></script>\n<script src="assets/statistics-mastery.js"></script>\n<script src="assets/interoperability-mastery.js"></script>
+<script src="assets/clinical-research-mastery.js"></script>
+<script src="assets/portfolio-career-mastery.js"></script>
+<script src="assets/career-launch.js"></script>
+<script src="assets/employer-assessments.js"></script>
+<script src="assets/advanced-sql-cases.js"></script>
+<script src="assets/professional-practicum.js"></script>
+<script src="assets/portfolio-engineering.js"></script>
+<script src="assets/career-command.js"></script>
+<script src="assets/portfolio-quality.js"></script>
+<script src="assets/professional-simulations.js"></script>
+<script src="assets/advanced-mastery.js"></script>\n<script src="assets/real-world-studio.js"></script>\n<script src="assets/portfolio-publication.js"></script>\n<script src="assets/interactive-workbench.js"></script>
+<section class="module-link"><h3>v5.46 Clinical Medication Utilization Case Study</h3><p>Python, SQL, synthetic antihypertensive data, data quality and clinical interpretation.</p><a href="clinical_medication_utilization_case_study_v546/README.md">Open module</a></section><section class="module-link"><h3>v5.47 Clinical Analytics Reporting &amp; BI Pack</h3><p>Stakeholder report, statistics, figures, Power BI specification and project defense.</p><a href="clinical_analytics_reporting_pack_v547/docs/README.md">Open module</a></section><section class="module-link"><h3>v5.48 Interactive Clinical BI Dashboard</h3><p>Local interactive dashboard with filters, charts, KPIs and CSV export.</p><a href="interactive_clinical_bi_dashboard_v548/dashboard/">Open dashboard</a></section><section class="module-link"><h3>v5.56 Application Intelligence &amp; Job Search Execution</h3><p>Explainable job-description fit assessment, skills and experience gaps, role-family detection and textual risk prompts. Advisory only; no live jobs or applications.</p><a href="application_intelligence_v556/README.md">Open module</a></section></body></html>

@@ -1,0 +1,74 @@
+[
+  {
+    "id": "q1",
+    "q": "For production analytics handoff, what should be defined before implementation?",
+    "options": [
+      "The decision, grain, definitions, ownership and controls",
+      "Only the colour palette",
+      "Only the tool licence",
+      "The largest possible dataset"
+    ],
+    "correct": 0,
+    "why": "A governed BI/data engineering solution begins with the decision and explicit operational/data definitions."
+  },
+  {
+    "id": "q2",
+    "q": "A one-to-many join is performed before aggregation. What risk must be checked?",
+    "options": [
+      "Rows may multiply and inflate counts or sums",
+      "The database will always reject it",
+      "All null values disappear",
+      "It automatically improves accuracy"
+    ],
+    "correct": 0,
+    "why": "Join cardinality can multiply fact rows; validate grain and aggregate appropriately."
+  },
+  {
+    "id": "q3",
+    "q": "Which practice is essential for healthcare data security?",
+    "options": [
+      "Put credentials in source code for convenience",
+      "Use least privilege, approved purpose and auditability",
+      "Share a public link for easy review",
+      "Assume a hidden report page protects data"
+    ],
+    "correct": 1,
+    "why": "Security requires controlled identity, permissions, data minimisation and monitoring."
+  },
+  {
+    "id": "q4",
+    "q": "What makes a data pipeline safely rerunnable?",
+    "options": [
+      "Manual edits to outputs",
+      "Idempotent logic, stable keys and run metadata",
+      "Deleting logs after each run",
+      "Retry every error indefinitely"
+    ],
+    "correct": 1,
+    "why": "Idempotency and controlled retries prevent duplicate or inconsistent side effects."
+  },
+  {
+    "id": "q5",
+    "q": "A successful refresh indicator proves that:",
+    "options": [
+      "Every clinical metric is correct",
+      "The source is complete and unbiased",
+      "The refresh operation reported success, but data quality still needs validation",
+      "The report is clinically approved"
+    ],
+    "correct": 2,
+    "why": "Technical refresh success is distinct from data completeness, semantic correctness and clinical approval."
+  },
+  {
+    "id": "q6",
+    "q": "Which item belongs in a production handoff?",
+    "options": [
+      "Only a screenshot",
+      "A runbook, metric definitions, tests, owners and access model",
+      "A personal password",
+      "An undocumented local path"
+    ],
+    "correct": 1,
+    "why": "A supportable asset needs reproducibility, ownership, validation, access and operational documentation."
+  }
+]

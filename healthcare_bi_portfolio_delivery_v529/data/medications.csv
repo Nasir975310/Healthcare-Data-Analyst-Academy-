@@ -1,0 +1,17 @@
+MedicationID,EncounterID,Medication,DrugClass,IsActive
+M001,E001,Amlodipine,Calcium channel blocker,1
+M002,E002,Losartan,ARB,1
+M003,E002,Amlodipine,Calcium channel blocker,1
+M004,E003,Telmisartan,ARB,1
+M005,E004,Amlodipine,Calcium channel blocker,1
+M006,E005,Amlodipine,Calcium channel blocker,1
+M007,E005,Telmisartan,ARB,1
+M008,E006,Metoprolol,Beta blocker,1
+M009,E007,Losartan,ARB,1
+M010,E007,Hydrochlorothiazide,Thiazide,1
+M011,E008,Telmisartan,ARB,1
+M012,E009,Amlodipine,Calcium channel blocker,1
+M013,E010,Losartan,ARB,1
+M014,E010,Amlodipine,Calcium channel blocker,1
+M015,E011,Telmisartan,ARB,1
+M016,E012,Metoprolol,Beta blocker,1

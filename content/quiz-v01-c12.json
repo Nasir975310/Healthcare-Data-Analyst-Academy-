@@ -1,0 +1,62 @@
+[
+  {
+    "id": "q1",
+    "q": "Data quality is best described as:",
+    "options": [
+      "One universal score",
+      "Fitness for a defined purpose",
+      "The absence of all missing values",
+      "A high row count"
+    ],
+    "correct": 1,
+    "why": "Fitness-for-purpose depends on intended use and known limitations."
+  },
+  {
+    "id": "q2",
+    "q": "A blank value is replaced with zero. The main concern is:",
+    "options": [
+      "It improves completeness",
+      "Zero and missing have different meanings",
+      "It removes duplicates",
+      "It guarantees accuracy"
+    ],
+    "correct": 1,
+    "why": "Zero is an observed numeric value; missing is not the same state."
+  },
+  {
+    "id": "q3",
+    "q": "A patient ID repeats in an encounter-level table. What should happen first?",
+    "options": [
+      "Delete all repeated IDs",
+      "Assume duplicate records",
+      "Check the declared grain and encounter key",
+      "Average the patient IDs"
+    ],
+    "correct": 2,
+    "why": "One patient can legitimately have multiple encounters."
+  },
+  {
+    "id": "q4",
+    "q": "Which is a referential-integrity check?",
+    "options": [
+      "All ages are integers",
+      "Every encounter patient key exists in the patient table",
+      "All monthly totals increase",
+      "Every value is unique"
+    ],
+    "correct": 1,
+    "why": "A foreign key should match a valid parent record."
+  },
+  {
+    "id": "q5",
+    "q": "An extreme value outside an exploratory range should be:",
+    "options": [
+      "Automatically deleted",
+      "Replaced by the mean",
+      "Flagged and investigated against source and context",
+      "Converted to zero"
+    ],
+    "correct": 2,
+    "why": "Extreme observations may be valid; investigate before changing them."
+  }
+]

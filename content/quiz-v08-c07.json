@@ -1,0 +1,74 @@
+[
+  {
+    "id": "q1",
+    "q": "What makes asynchronous communication effective?",
+    "options": [
+      "Long unstructured messages",
+      "Status, next action, blocker and decision needed",
+      "No written updates",
+      "Repeated pings"
+    ],
+    "correct": 1,
+    "why": "Structured updates reduce ambiguity across time zones."
+  },
+  {
+    "id": "q2",
+    "q": "Which is appropriate security practice?",
+    "options": [
+      "Personal email for patient files",
+      "MFA and approved encrypted storage",
+      "Shared passwords",
+      "Public AI upload"
+    ],
+    "correct": 1,
+    "why": "Use approved security controls and systems."
+  },
+  {
+    "id": "q3",
+    "q": "What should a handoff include?",
+    "options": [
+      "Only a verbal message",
+      "Decision, owner, due date and relevant context",
+      "Untracked assumptions",
+      "Passwords"
+    ],
+    "correct": 1,
+    "why": "Written handoffs support continuity."
+  },
+  {
+    "id": "q4",
+    "q": "Remote work means:",
+    "options": [
+      "Always available",
+      "Clear deliverables, communication and boundaries",
+      "No documentation",
+      "No meetings ever"
+    ],
+    "correct": 1,
+    "why": "Distributed work needs deliberate coordination and sustainable boundaries."
+  },
+  {
+    "id": "q5",
+    "q": "What is a key principle in 'Remote work operations'?",
+    "options": [
+      "Prioritise appearance over accuracy",
+      "Use evidence, clear scope and honest limitations",
+      "Invent achievements",
+      "Ignore privacy"
+    ],
+    "correct": 1,
+    "why": "Professional practice depends on evidence, scope and integrity."
+  },
+  {
+    "id": "q6",
+    "q": "How should practical work be completed across operating systems?",
+    "options": [
+      "Assume all commands are identical",
+      "Use separate Linux and PowerShell instructions and verify equivalent outcomes",
+      "Skip one OS",
+      "Copy absolute paths between systems"
+    ],
+    "correct": 1,
+    "why": "OS-specific instructions are required for reproducibility."
+  }
+]

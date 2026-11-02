@@ -1,0 +1,26 @@
+{
+  "dataset": "synthetic_hospital_encounters.csv",
+  "synthetic_data": true,
+  "raw_rows": 241,
+  "accepted_rows": 231,
+  "quarantined_rows": 10,
+  "acceptance_rate_pct": 95.85,
+  "issue_counts_nonexclusive": {
+    "missing_encounter_id": 0,
+    "duplicate_encounter_id": 1,
+    "missing_patient_token": 1,
+    "invalid_date": 2,
+    "invalid_department": 2,
+    "invalid_length_of_stay": 2,
+    "invalid_disposition": 1,
+    "invalid_age_band": 1
+  },
+  "unique_encounter_ids_after_cleaning": 231,
+  "rules": {
+    "los_days": "1\u201360 inclusive",
+    "date": "valid ISO calendar date",
+    "department": "approved training list",
+    "disposition": "approved training list",
+    "age_band": "approved training list"
+  }
+}

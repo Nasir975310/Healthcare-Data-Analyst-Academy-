@@ -1,0 +1,51 @@
+{
+  "assessment": "v5.35 machine-checkable core",
+  "automated_points": 40,
+  "automated_possible": 40,
+  "checks": [
+    {
+      "item": "warehouse_tables",
+      "pass": true,
+      "points_awarded": 5,
+      "points_possible": 5,
+      "detail": "tables=['dim_patient', 'fact_encounter', 'fact_medication', 'fact_observation', 'stg_encounter']"
+    },
+    {
+      "item": "raw_accepted_rejected",
+      "pass": true,
+      "points_awarded": 10,
+      "points_possible": 10,
+      "detail": "raw=91, accepted=90, rejected=1"
+    },
+    {
+      "item": "orphan_detection",
+      "pass": true,
+      "points_awarded": 10,
+      "points_possible": 10,
+      "detail": "orphan_rows=1"
+    },
+    {
+      "item": "warehouse_integrity",
+      "pass": true,
+      "points_awarded": 5,
+      "points_possible": 5,
+      "detail": "integrity=ok; fk_violations=0"
+    },
+    {
+      "item": "encounter_patient_distinction",
+      "pass": true,
+      "points_awarded": 5,
+      "points_possible": 5,
+      "detail": "encounters=90, unique_patients=29"
+    },
+    {
+      "item": "medication_order_scope",
+      "pass": true,
+      "points_awarded": 5,
+      "points_possible": 5,
+      "detail": "medication_order_rows=129"
+    }
+  ],
+  "manual_review_required": true,
+  "full_rubric": "assessments/SCORING_RUBRIC.md"
+}

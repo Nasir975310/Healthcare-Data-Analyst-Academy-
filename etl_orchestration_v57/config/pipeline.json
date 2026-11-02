@@ -1,0 +1,38 @@
+{
+  "schema_version": "1.0",
+  "primary_key": "encounter_id",
+  "required": [
+    "encounter_id",
+    "patient_id",
+    "admit_date",
+    "department",
+    "los_days",
+    "order_count",
+    "sbp",
+    "disposition"
+  ],
+  "date_fields": [
+    "admit_date"
+  ],
+  "numeric_rules": {
+    "los_days": {
+      "min": 0
+    },
+    "order_count": {
+      "min": 0
+    },
+    "sbp": {
+      "min": 40,
+      "max": 300
+    }
+  },
+  "allowed_values": {
+    "disposition": [
+      "Discharged",
+      "Admitted",
+      "Transferred"
+    ]
+  },
+  "schema_policy": "warn",
+  "incremental": true
+}

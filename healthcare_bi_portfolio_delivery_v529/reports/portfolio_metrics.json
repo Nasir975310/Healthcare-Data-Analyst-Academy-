@@ -1,0 +1,26 @@
+{
+  "patients": 6,
+  "encounters": 12,
+  "completed_encounters": 12,
+  "observations": 24,
+  "medication_orders": 16,
+  "mean_systolic_bp": 141.67,
+  "mean_diastolic_bp": 88.33,
+  "encounters_by_month": {
+    "2026-01": 3,
+    "2026-02": 3,
+    "2026-03": 6
+  },
+  "encounters_by_type": {
+    "Emergency": 2,
+    "Inpatient": 3,
+    "Outpatient": 7
+  },
+  "medication_orders_by_class": {
+    "ARB": 7,
+    "Beta blocker": 2,
+    "Calcium channel blocker": 6,
+    "Thiazide": 1
+  },
+  "synthetic_only": true
+}

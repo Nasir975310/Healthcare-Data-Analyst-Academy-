@@ -1,0 +1,41 @@
+{
+  "status": "PASS",
+  "checks": {
+    "unique_primary_keys": true,
+    "encounter_patient_references": true,
+    "fact_encounter_references": true,
+    "synthetic_data_only": true
+  },
+  "metrics": {
+    "patients": 6,
+    "encounters": 12,
+    "completed_encounters": 12,
+    "observations": 24,
+    "medication_orders": 16,
+    "mean_systolic_bp": 141.67,
+    "mean_diastolic_bp": 88.33,
+    "encounters_by_month": {
+      "2026-01": 3,
+      "2026-02": 3,
+      "2026-03": 6
+    },
+    "encounters_by_type": {
+      "Emergency": 2,
+      "Inpatient": 3,
+      "Outpatient": 7
+    },
+    "medication_orders_by_class": {
+      "ARB": 7,
+      "Beta blocker": 2,
+      "Calcium channel blocker": 6,
+      "Thiazide": 1
+    },
+    "synthetic_only": true
+  },
+  "source_sha256": {
+    "encounters.csv": "81cd261d88fd5757155db250861d4179f8e294340f72637d928e6c1907a305e0",
+    "medications.csv": "c0b7d593738f4018a214e10b10c60cba5480b2d5e4e9bc21177d6272b388e85a",
+    "observations.csv": "fda3236a2ff2c7b4564385197093ac8881edb732425ac798fd44865bfeaa96be",
+    "patients.csv": "8e7f83ebc20cdafc54689dbfa1f884b9919dd04d539fa1d0109ae3e1c8432794"
+  }
+}

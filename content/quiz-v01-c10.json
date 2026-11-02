@@ -1,0 +1,62 @@
+[
+  {
+    "id": "q1",
+    "q": "Point prevalence measures:",
+    "options": [
+      "New cases per person-time",
+      "Existing cases in a defined population at a specified point",
+      "Deaths among cases only",
+      "Odds of exposure"
+    ],
+    "correct": 1,
+    "why": "Point prevalence is existing cases divided by the population at that point."
+  },
+  {
+    "id": "q2",
+    "q": "Cumulative incidence is best interpreted as:",
+    "options": [
+      "A rate per person-year",
+      "Risk over a specified follow-up period",
+      "The odds of disease",
+      "The number of existing cases"
+    ],
+    "correct": 1,
+    "why": "It is the proportion of initially at-risk people who develop the outcome over the stated period."
+  },
+  {
+    "id": "q3",
+    "q": "Fifteen new cases occur over 1,500 person-years. The rate per 1,000 person-years is:",
+    "options": [
+      "1",
+      "10",
+      "15",
+      "100"
+    ],
+    "correct": 1,
+    "why": "15/1,500 × 1,000 = 10 per 1,000 person-years."
+  },
+  {
+    "id": "q4",
+    "q": "Which measure depends strongly on prevalence?",
+    "options": [
+      "Sensitivity",
+      "Specificity",
+      "Positive predictive value",
+      "Test instrument serial number"
+    ],
+    "correct": 2,
+    "why": "PPV is affected by prevalence in the tested population."
+  },
+  {
+    "id": "q5",
+    "q": "A variable associated with both treatment selection and outcome may be:",
+    "options": [
+      "A confounder",
+      "Always a mediator",
+      "A denominator",
+      "A confidence interval"
+    ],
+    "correct": 0,
+    "why": "A confounder can distort the exposure-outcome association; causal reasoning is needed."
+  }
+]

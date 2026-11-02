@@ -1,0 +1,144 @@
+[
+  {
+    "role": "Clinical Data Analyst / Clinical Data Coordinator",
+    "fit": "High-priority adjacent entry route for a Pharm.D graduate",
+    "core": [
+      "Clinical data review",
+      "Query management",
+      "Excel",
+      "EDC concepts",
+      "ICH-GCP awareness",
+      "Data cleaning and reconciliation",
+      "Documentation and quality"
+    ],
+    "proof": [
+      "Synthetic trial data dictionary and edit-check plan",
+      "Clinical query log and database-lock checklist",
+      "CDM capstone report"
+    ],
+    "gaps": [
+      "Hands-on EDC platform exposure",
+      "Study-specific SOPs and validated workflow experience"
+    ],
+    "search_terms": [
+      "Trainee Clinical Data Analyst",
+      "Clinical Data Coordinator",
+      "Clinical Data Associate",
+      "Clinical Data Reviewer"
+    ]
+  },
+  {
+    "role": "Healthcare / Hospital Data Analyst",
+    "fit": "Primary target aligned to healthcare analytics goal",
+    "core": [
+      "SQL",
+      "Advanced Excel",
+      "Power BI or equivalent BI",
+      "Healthcare KPIs",
+      "Data quality",
+      "Python/pandas",
+      "Stakeholder reporting"
+    ],
+    "proof": [
+      "Hospital operations capstone",
+      "SQL and Power BI modules",
+      "Reproducible Python outputs and QA"
+    ],
+    "gaps": [
+      "Employer-specific EHR/claims systems",
+      "Power BI Desktop hands-on project if applying to Microsoft BI roles"
+    ],
+    "search_terms": [
+      "Healthcare Data Analyst",
+      "Hospital Data Analyst",
+      "Clinical Operations Analyst",
+      "Healthcare Reporting Analyst"
+    ]
+  },
+  {
+    "role": "Pharmacovigilance Data Associate / Safety Data Analyst",
+    "fit": "Strong Pharm.D domain-adjacent entry route",
+    "core": [
+      "ICSR data quality",
+      "Case processing concepts",
+      "MedDRA awareness",
+      "Seriousness/severity distinction",
+      "Duplicate review",
+      "Safety database workflow",
+      "Regulatory timelines and SOP awareness"
+    ],
+    "proof": [
+      "Synthetic ICSR data model",
+      "Case processing checklist",
+      "Signal-screening limitations report"
+    ],
+    "gaps": [
+      "Licensed MedDRA access/training",
+      "Validated safety database experience",
+      "Company SOP and regulatory workflow experience"
+    ],
+    "search_terms": [
+      "Drug Safety Associate",
+      "PV Associate",
+      "Safety Data Associate",
+      "Pharmacovigilance Data Analyst"
+    ]
+  },
+  {
+    "role": "RWE / HEOR / Clinical Research Analyst",
+    "fit": "Target after stronger statistics, SQL and study-design evidence",
+    "core": [
+      "Epidemiology",
+      "Cohort design",
+      "SQL/Python/R",
+      "Confounding and bias",
+      "Claims/EHR data",
+      "Propensity scores",
+      "Clinical interpretation"
+    ],
+    "proof": [
+      "RWE protocol synopsis",
+      "Cohort attrition and bias checklist",
+      "Statistics and epidemiology capstone"
+    ],
+    "gaps": [
+      "Real-world claims datasets",
+      "Advanced causal inference",
+      "Domain-specific data model exposure"
+    ],
+    "search_terms": [
+      "RWE Analyst",
+      "HEOR Analyst",
+      "Real World Evidence Associate",
+      "Clinical Research Analyst"
+    ]
+  },
+  {
+    "role": "General Data Analyst in healthcare vendor / CRO",
+    "fit": "Practical bridge into analytics employment",
+    "core": [
+      "SQL",
+      "Excel",
+      "BI reporting",
+      "Data validation",
+      "Ticket/SLA tracking",
+      "Written communication",
+      "Remote collaboration"
+    ],
+    "proof": [
+      "Client request-to-handoff simulation",
+      "Service delivery dataset analysis",
+      "Portfolio README and QA evidence"
+    ],
+    "gaps": [
+      "Production workflows and employer tools",
+      "Work experience and references"
+    ],
+    "search_terms": [
+      "Data Analyst Healthcare",
+      "Reporting Analyst",
+      "MIS Analyst Healthcare",
+      "Data Quality Analyst"
+    ]
+  }
+]

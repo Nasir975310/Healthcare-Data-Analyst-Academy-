@@ -1,0 +1,62 @@
+[
+  {
+    "id": "q1",
+    "q": "What is the key difference between GROUP BY and window functions?",
+    "options": [
+      "Window functions retain individual rows",
+      "GROUP BY always retains all rows",
+      "Window functions delete rows",
+      "They are identical"
+    ],
+    "correct": 0,
+    "why": "Window functions calculate over partitions without collapsing rows."
+  },
+  {
+    "id": "q2",
+    "q": "Which function assigns a sequential number within each partition?",
+    "options": [
+      "ROW_NUMBER()",
+      "COUNT(*)",
+      "AVG()",
+      "COALESCE()"
+    ],
+    "correct": 0,
+    "why": "ROW_NUMBER assigns a unique sequence."
+  },
+  {
+    "id": "q3",
+    "q": "What defines groups for a window function?",
+    "options": [
+      "PARTITION BY",
+      "HAVING",
+      "LIMIT",
+      "UNION"
+    ],
+    "correct": 0,
+    "why": "PARTITION BY divides rows into independent windows."
+  },
+  {
+    "id": "q4",
+    "q": "Why add a tie-breaker when selecting the latest row?",
+    "options": [
+      "To make the selected row deterministic",
+      "To create more rows",
+      "To remove NULLs",
+      "To avoid aliases"
+    ],
+    "correct": 0,
+    "why": "A stable unique key resolves timestamp ties."
+  },
+  {
+    "id": "q5",
+    "q": "What is a CTE?",
+    "options": [
+      "A named temporary result set within a statement",
+      "A permanent table by default",
+      "A database user",
+      "A chart type"
+    ],
+    "correct": 0,
+    "why": "WITH defines a CTE for the statement."
+  }
+]

@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Healthcare Data Analyst Academy — Interactive Roadmap</title>
+<style>
+:root{--bg:#0b1220;--panel:#121d30;--panel2:#18263d;--ink:#e8eef8;--muted:#a8b7ce;--line:#30415d;--blue:#70b7ff;--green:#58d6a1;--amber:#f4c36a;--red:#ff8585}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 15% 0%,#19345a 0,transparent 35%),var(--bg);color:var(--ink);font:15px/1.5 system-ui,-apple-system,Segoe UI,sans-serif}
+.wrap{max-width:1180px;margin:auto;padding:26px 18px 60px}.eyebrow{color:var(--blue);font-size:12px;letter-spacing:.14em;font-weight:700}
+h1{font-size:clamp(28px,4vw,44px);line-height:1.12;margin:8px 0 10px}.lead{color:var(--muted);max-width:850px}
+.metrics{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin:24px 0}
+.metric,.panel,.phase,.risk{background:linear-gradient(160deg,var(--panel2),var(--panel));border:1px solid var(--line);border-radius:16px;padding:16px}
+.metric strong{font-size:28px;display:block}.metric span{color:var(--muted);font-size:12px}
+.progress{height:9px;background:#263750;border-radius:99px;overflow:hidden;margin-top:10px}.progress i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--blue),var(--green));transition:width .25s}
+.toolbar{display:flex;gap:8px;flex-wrap:wrap;margin:20px 0}.toolbar button,.reset{border:1px solid var(--line);background:#14243a;color:var(--ink);padding:9px 13px;border-radius:999px;cursor:pointer}.toolbar button.active{background:#244b72;border-color:var(--blue)}
+h2{font-size:21px;margin:24px 0 12px}.timeline{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px}
+.phase h3{margin:0 0 4px;font-size:17px}.phase .sub{color:var(--muted);font-size:12px;margin-bottom:10px}.phase ul{list-style:none;padding:0;margin:0}
+.task{display:flex;gap:10px;align-items:flex-start;border-top:1px solid #2a3a53;padding:10px 0}.task input{margin-top:5px;accent-color:var(--green);width:17px;height:17px;flex:none}.task label{cursor:pointer;flex:1}.task small{display:block;color:var(--muted);font-size:12px}.tag{font-size:10px;border:1px solid var(--line);border-radius:99px;padding:2px 7px;color:var(--muted);white-space:nowrap}
+.status-complete{color:var(--green)}.status-pending{color:var(--amber)}.status-risk{color:var(--red)}
+.risks{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.risk h3{margin:0 0 7px;font-size:16px}.risk p{color:var(--muted);margin:5px 0}.risk b{color:var(--green)}
+.note{border-left:3px solid var(--amber);padding:10px 14px;background:#2a2419;border-radius:8px;color:#f7e5c3;margin-top:18px}
+footer{color:var(--muted);font-size:12px;margin-top:26px;border-top:1px solid var(--line);padding-top:14px}
+@media(max-width:760px){.metrics{grid-template-columns:repeat(2,minmax(0,1fr))}.timeline,.risks{grid-template-columns:1fr}.wrap{padding:20px 13px 40px}}
+</style></head>
+<body><main class="wrap">
+<div class="eyebrow">HEALTHCARE DATA ANALYST ACADEMY · MASTER ROADMAP</div>
+<h1>From Pharm.D to Remote Healthcare Data Analyst</h1>
+<p class="lead">A cumulative view of what has been built, what remains, and where the project can fail. Completed milestones refer to packaged Academy releases and their documented QA; they do not mean every external platform skill has been mastered.</p>
+<section class="metrics">
+<div class="metric"><strong id="doneCount">0</strong><span>Completed release milestones</span></div>
+<div class="metric"><strong id="pendingCount">0</strong><span>Pending deliverables</span></div>
+<div class="metric"><strong id="riskCount">0</strong><span>Risks with mitigations</span></div>
+<div class="metric"><strong id="pct">0%</strong><span>Overall roadmap progress</span><div class="progress"><i id="bar"></i></div></div>
+</section>
+<div class="toolbar" role="group" aria-label="Filter roadmap">
+<button class="active" data-filter="all">All tasks</button><button data-filter="completed">Completed</button><button data-filter="pending">Pending</button><button data-filter="risk">Risk review</button>
+</div>
+<h2>Roadmap timeline</h2>
+<div id="timeline" class="timeline"></div>
+<h2 id="riskHeading">Potential errors, mistakes and corrective actions</h2>
+<div class="risks" id="risks"></div>
+<div class="note"><b>Important status distinction:</b> Academy content and code may be complete while external validation, skill proficiency, portfolio publication and employment outcomes remain pending. Power BI Desktop execution, live PostgreSQL testing, real client data governance and employer acceptance must not be claimed without evidence.</div>
+<button class="reset" id="reset" style="margin-top:16px">Reset my pending-task checkmarks</button>
+<footer>Interactive progress is saved locally in this browser when local storage is available. This roadmap is a planning aid, not an employment guarantee. Data examples in the Academy are synthetic.</footer>
+</main>
+<script>
+const phases=[
+{title:"Foundation & core analytics · v1.8–v5.20",sub:"Curriculum, practical tools and execution foundations",status:"completed",tasks:[
+["Curriculum volumes, chapters, glossary and learning roadmap","Core learning architecture."],
+["Excel, SQL, Python, statistics and BI foundations","Core technical learning path."],
+["Validation, study workspace, portfolio and client delivery","Project workflow and documentation."],
+["Local execution and statistical analysis modules","Python/SQLite execution, statistical methods and reporting."]]},
+{title:"Advanced healthcare data engineering · v5.21–v5.27",sub:"Analytics, clinical interoperability and warehouse engineering",status:"completed",tasks:[
+["Advanced statistics, validation and visualization","Methods and diagnostics with documented boundaries."],
+["FHIR R4 interoperability and clinical warehouse","Synthetic FHIR ingestion and warehouse workflows."],
+["PostgreSQL operations reference module","SQL reference workflow; not a live PostgreSQL deployment."]]},
+{title:"Healthcare BI & portfolio · v5.28–v5.30",sub:"Semantic models, client reporting and capstone",status:"completed",tasks:[
+["Power BI semantic model, DAX and Power Query templates","Templates and model specification; external runtime validation remains open."],
+["Synthetic hospital BI portfolio and reporting pipeline","Reproducible project outputs and QA."],
+["End-to-end healthcare analytics capstone","Synthetic ETL, SQLite warehouse, SQL analysis and employer-style rubric."]]},
+{title:"Employment readiness · v5.31",sub:"Role targeting and job-search preparation",status:"completed",tasks:[
+["Healthcare analyst role profiles and practice job descriptions","Fictional training vacancies, not live job listings."],
+["Technical question bank and structured interview practice","Excel, SQL, Python, Power BI and healthcare domain."],
+["Portfolio, resume, client workflow and 90-day plan","Self-assessment scoring engine and readiness framework."]]},
+{title:"Real-world delivery practicum · v5.32",sub:"Current release — complete the workflow from brief to acceptance",status:"pending",tasks:[
+["Gather requirements and define scope","Document stakeholder, business question, exclusions, timeline and acceptance criteria."],
+["Profile raw data and resolve quality issues","Use source manifest, staging, data-quality report and exception log."],
+["Build reproducible ETL and analytical warehouse","Run Python pipeline, validate keys, preserve grain and reconcile totals."],
+["Create KPI definitions and BI dashboard","Implement measures in Power BI Desktop or document a reproducible alternative."],
+["Prepare client report, presentation and handover","Explain results, caveats, QA, refresh process and next steps."],
+["Complete simulated client review and revisions","Record feedback, change log and acceptance decision."]]},
+{title:"External validation & employment execution · v5.33+",sub:"Pending real-world evidence — do not mark complete from study alone",status:"pending",tasks:[
+["Validate DAX and Power Query in Power BI Desktop","Record screenshots, version, test cases and results."],
+["Execute PostgreSQL scripts on a real PostgreSQL instance","Capture database version, migration result and automated tests."],
+["Publish sanitized GitHub portfolio projects","Remove private data, secrets and patient identifiers; include reproducibility."],
+["Complete timed technical assessments and mock interviews","Track baseline and repeat scores with dated evidence."],
+["Apply to suitable roles and track employer feedback","Use current vacancies and truthful resume claims."],
+["Complete a supervised or authorized client project","Only with approved access, privacy controls and documented scope."]]}
+];
+const risks=[
+["Power BI examples mistaken for executed work","DAX and M snippets are not proof of a working PBIX.","Run in Power BI Desktop; save PBIX, screenshots, refresh tests and RLS evidence."],
+["PostgreSQL reference SQL not tested on a server","Syntax, extensions, permissions and version behavior can differ.","Run migrations on a disposable PostgreSQL instance; capture version, logs and automated tests."],
+["Synthetic datasets too small or clean","Small training data cannot represent hospital production complexity.","Add larger edge-case datasets, missingness, duplicates, late arrivals and drift tests; label all data synthetic."],
+["Clinical metrics over-interpreted","A single BP reading or medication order cannot establish diagnosis, control or adherence.","Use explicit metric definitions, units, provenance and clinical review; separate orders, dispensing and administration."],
+["Fact-to-fact joins inflate totals","Joining one-to-many observations and medications can create fanout.","Keep separate facts or aggregate each to encounter grain before combining; add reconciliation tests."],
+["Portfolio exposes sensitive data or secrets","A public repo may accidentally disclose patient data, tokens or client information.","Use synthetic/public licensed data; scan files and Git history; rotate leaked secrets; use approved environments."],
+["Roadmap progress confused with job readiness","Completed course releases do not prove independent proficiency or employment.","Require practical demonstrations, timed assessments, peer review and honest evidence labels."],
+["Toolchain/environment mismatch","Power BI Desktop is Windows-first; local Linux compatibility and versions vary.","Use a supported Windows VM/remote desktop for Power BI; pin Python dependencies and document OS versions."],
+["Release packaging or navigation regressions","Incremental updates can break links, IDs, assets or ZIP contents.","Run archive integrity, missing-asset, duplicate-ID, navigation and prior-release regression checks."],
+["Job market assumptions become stale","Practice role descriptions and salary expectations may not reflect current vacancies.","Verify live postings and employer requirements before applying; record source and date."]
+];
+const KEY="hda_roadmap_v532_state";
+let state={};
+try{state=JSON.parse(localStorage.getItem(KEY)||"{}")}catch(e){state={}}
+function taskKey(pi,ti){return pi+"-"+ti}
+function allTasks(){return phases.flatMap((p,pi)=>p.tasks.map((t,ti)=>({pi,ti,key:taskKey(pi,ti),phase:p,task:t,done:p.status==="completed"||!!state[taskKey(pi,ti)]})))}
+function render(filter="all"){
+ const timeline=document.getElementById("timeline");timeline.innerHTML="";
+ phases.forEach((p,pi)=>{
+  const visible=p.tasks.map((t,ti)=>({t,ti,done:p.status==="completed"||!!state[taskKey(pi,ti)]})).filter(x=>filter==="all"||(filter==="completed"&&x.done)||(filter==="pending"&&!x.done));
+  if(!visible.length)return;
+  const el=document.createElement("article");el.className="phase";
+  el.innerHTML=`<h3>${p.title}</h3><div class="sub">${p.sub}</div><ul></ul>`;
+  const ul=el.querySelector("ul");
+  visible.forEach(({t,ti,done})=>{
+   const li=document.createElement("li");li.className="task";
+   const disabled=p.status==="completed";
+   li.innerHTML=`<input type="checkbox" ${done?"checked":""} ${disabled?"disabled":""} id="task-${pi}-${ti}"><label for="task-${pi}-${ti}"><span class="${done?"status-complete":"status-pending"}">${t[0]}</span><small>${t[1]}</small></label><span class="tag">${disabled?"RELEASED":done?"DONE":"PENDING"}</span>`;
+   const cb=li.querySelector("input");if(!disabled)cb.addEventListener("change",()=>{state[taskKey(pi,ti)]=cb.checked;try{localStorage.setItem(KEY,JSON.stringify(state))}catch(e){};render(filter)});
+   ul.appendChild(li);
+  });
+  timeline.appendChild(el);
+ });
+ document.getElementById("riskHeading").style.display=filter==="completed"||filter==="pending"?"none":"";
+ document.getElementById("risks").style.display=filter==="completed"||filter==="pending"?"none":"";
+ const tasks=allTasks(), done=tasks.filter(t=>t.done).length, pending=tasks.length-done;
+ document.getElementById("doneCount").textContent=phases.filter(p=>p.status==="completed").reduce((n,p)=>n+p.tasks.length,0);
+ document.getElementById("pendingCount").textContent=pending;
+ document.getElementById("riskCount").textContent=risks.length;
+ const pct=tasks.length?Math.round(done/tasks.length*100):0;
+ document.getElementById("pct").textContent=pct+"%";document.getElementById("bar").style.width=pct+"%";
+}
+function renderRisks(){
+ const box=document.getElementById("risks");box.innerHTML="";
+ risks.forEach((r,i)=>{const el=document.createElement("article");el.className="risk";el.innerHTML=`<h3>${i+1}. ${r[0]}</h3><p><b>Risk:</b> ${r[1]}</p><p><b>Solution:</b> ${r[2]}</p>`;box.appendChild(el)});
+}
+document.querySelectorAll("[data-filter]").forEach(b=>b.addEventListener("click",()=>{document.querySelectorAll("[data-filter]").forEach(x=>x.classList.remove("active"));b.classList.add("active");render(b.dataset.filter)}));
+document.getElementById("reset").addEventListener("click",()=>{state={};try{localStorage.removeItem(KEY)}catch(e){};render(document.querySelector("[data-filter].active").dataset.filter)});
+renderRisks();render();
+</script></body></html>

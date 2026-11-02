@@ -1,0 +1,74 @@
+[
+  {
+    "id": "q1",
+    "q": "Which resume bullet is strongest?",
+    "options": [
+      "Expert in everything",
+      "Cleaned and validated a synthetic medication dataset using pandas; documented missingness and duplicate checks",
+      "Responsible for many tasks",
+      "Hard-working team player"
+    ],
+    "correct": 1,
+    "why": "It names the task, method and verifiable evidence."
+  },
+  {
+    "id": "q2",
+    "q": "What should not be claimed?",
+    "options": [
+      "A course certificate accurately labelled",
+      "A tool proficiency never demonstrated",
+      "A verified project result",
+      "A degree actually earned"
+    ],
+    "correct": 1,
+    "why": "Never misrepresent skills or credentials."
+  },
+  {
+    "id": "q3",
+    "q": "What improves ATS readability?",
+    "options": [
+      "Complex text embedded in images",
+      "Conventional headings and simple formatting",
+      "Decorative skill bars",
+      "Unusual section labels"
+    ],
+    "correct": 1,
+    "why": "Simple structure is easier for parsers and reviewers."
+  },
+  {
+    "id": "q4",
+    "q": "How should Pharm.D project work be represented?",
+    "options": [
+      "Claim hospital-wide impact without evidence",
+      "State personal contribution, methods and limitations",
+      "Hide supervisor involvement",
+      "Invent patient outcomes"
+    ],
+    "correct": 1,
+    "why": "Describe your own work and supported results."
+  },
+  {
+    "id": "q5",
+    "q": "What is a key principle in 'Resume and LinkedIn'?",
+    "options": [
+      "Prioritise appearance over accuracy",
+      "Use evidence, clear scope and honest limitations",
+      "Invent achievements",
+      "Ignore privacy"
+    ],
+    "correct": 1,
+    "why": "Professional practice depends on evidence, scope and integrity."
+  },
+  {
+    "id": "q6",
+    "q": "How should practical work be completed across operating systems?",
+    "options": [
+      "Assume all commands are identical",
+      "Use separate Linux and PowerShell instructions and verify equivalent outcomes",
+      "Skip one OS",
+      "Copy absolute paths between systems"
+    ],
+    "correct": 1,
+    "why": "OS-specific instructions are required for reproducibility."
+  }
+]

@@ -1,0 +1,309 @@
+{
+  "resource": "MedicationOrder",
+  "page": 1,
+  "page_size": 30,
+  "total_records": 150,
+  "next_page": 2,
+  "results": [
+    {
+      "order_id": "ORD0001",
+      "encounter_id": "ENC0013",
+      "order_date": "2026-03-05",
+      "drug_name": "Metoprolol",
+      "therapeutic_class": "Beta blocker",
+      "route": "IV",
+      "order_status": "Discontinued",
+      "quantity": 30
+    },
+    {
+      "order_id": "ORD0002",
+      "encounter_id": "ENC0046",
+      "order_date": "2026-02-20",
+      "drug_name": "Ramipril",
+      "therapeutic_class": "ACE inhibitor",
+      "route": "IV",
+      "order_status": "Active",
+      "quantity": 7
+    },
+    {
+      "order_id": "ORD0003",
+      "encounter_id": "ENC0057",
+      "order_date": "2026-01-19",
+      "drug_name": "Amlodipine",
+      "therapeutic_class": "Calcium-channel blocker",
+      "route": "Oral",
+      "order_status": "Active",
+      "quantity": 7
+    },
+    {
+      "order_id": "ORD0004",
+      "encounter_id": "ENC0064",
+      "order_date": "2026-03-23",
+      "drug_name": "Enalapril",
+      "therapeutic_class": "ACE inhibitor",
+      "route": "Oral",
+      "order_status": "Completed",
+      "quantity": 14
+    },
+    {
+      "order_id": "ORD0005",
+      "encounter_id": "ENC0059",
+      "order_date": "2026-01-29",
+      "drug_name": "Chlorthalidone",
+      "therapeutic_class": "Diuretic",
+      "route": "IV",
+      "order_status": "Active",
+      "quantity": 30
+    },
+    {
+      "order_id": "ORD0006",
+      "encounter_id": "ENC0049",
+      "order_date": "2026-02-04",
+      "drug_name": "Telmisartan",
+      "therapeutic_class": "ARB",
+      "route": "IV",
+      "order_status": "Completed",
+      "quantity": 7
+    },
+    {
+      "order_id": "ORD0007",
+      "encounter_id": "ENC0037",
+      "order_date": "2026-02-17",
+      "drug_name": "Amlodipine",
+      "therapeutic_class": "Calcium-channel blocker",
+      "route": "Oral",
+      "order_status": "Discontinued",
+      "quantity": 30
+    },
+    {
+      "order_id": "ORD0008",
+      "encounter_id": "ENC0043",
+      "order_date": "2026-01-26",
+      "drug_name": "Losartan",
+      "therapeutic_class": "ARB",
+      "route": "Oral",
+      "order_status": "Discontinued",
+      "quantity": 28
+    },
+    {
+      "order_id": "ORD0009",
+      "encounter_id": "ENC0079",
+      "order_date": "2026-02-14",
+      "drug_name": "Enalapril",
+      "therapeutic_class": "ACE inhibitor",
+      "route": "IV",
+      "order_status": "Discontinued",
+      "quantity": 28
+    },
+    {
+      "order_id": "ORD0010",
+      "encounter_id": "ENC0055",
+      "order_date": "2026-03-13",
+      "drug_name": "Cilnidipine",
+      "therapeutic_class": "Calcium-channel blocker",
+      "route": "IV",
+      "order_status": "Discontinued",
+      "quantity": 28
+    },
+    {
+      "order_id": "ORD0011",
+      "encounter_id": "ENC0079",
+      "order_date": "2026-02-13",
+      "drug_name": "Ramipril",
+      "therapeutic_class": "ACE inhibitor",
+      "route": "IV",
+      "order_status": "Active",
+      "quantity": 30
+    },
+    {
+      "order_id": "ORD0012",
+      "encounter_id": "ENC0068",
+      "order_date": "2026-03-02",
+      "drug_name": "Chlorthalidone",
+      "therapeutic_class": "Diuretic",
+      "route": "IV",
+      "order_status": "Active",
+      "quantity": 28
+    },
+    {
+      "order_id": "ORD0013",
+      "encounter_id": "ENC0073",
+      "order_date": "2026-03-29",
+      "drug_name": "Chlorthalidone",
+      "therapeutic_class": "Diuretic",
+      "route": "Oral",
+      "order_status": "Active",
+      "quantity": 7
+    },
+    {
+      "order_id": "ORD0014",
+      "encounter_id": "ENC0080",
+      "order_date": "2026-01-18",
+      "drug_name": "Sitagliptin",
+      "therapeutic_class": "Antidiabetic",
+      "route": "IV",
+      "order_status": "Active",
+      "quantity": 7
+    },
+    {
+      "order_id": "ORD0015",
+      "encounter_id": "ENC0026",
+      "order_date": "2026-03-22",
+      "drug_name": "Sitagliptin",
+      "therapeutic_class": "Antidiabetic",
+      "route": "Oral",
+      "order_status": "Completed",
+      "quantity": 30
+    },
+    {
+      "order_id": "ORD0016",
+      "encounter_id": "ENC0072",
+      "order_date": "2026-03-04",
+      "drug_name": "Chlorthalidone",
+      "therapeutic_class": "Diuretic",
+      "route": "Oral",
+      "order_status": "Active",
+      "quantity": 28
+    },
+    {
+      "order_id": "ORD0017",
+      "encounter_id": "ENC0034",
+      "order_date": "2026-03-30",
+      "drug_name": "Furosemide",
+      "therapeutic_class": "Diuretic",
+      "route": "IV",
+      "order_status": "Completed",
+      "quantity": 28
+    },
+    {
+      "order_id": "ORD0018",
+      "encounter_id": "ENC0029",
+      "order_date": "2026-03-22",
+      "drug_name": "Losartan",
+      "therapeutic_class": "ARB",
+      "route": "Oral",
+      "order_status": "Completed",
+      "quantity": 7
+    },
+    {
+      "order_id": "ORD0019",
+      "encounter_id": "ENC0022",
+      "order_date": "2026-03-27",
+      "drug_name": "Metoprolol",
+      "therapeutic_class": "Beta blocker",
+      "route": "Oral",
+      "order_status": "Completed",
+      "quantity": 14
+    },
+    {
+      "order_id": "ORD0020",
+      "encounter_id": "ENC0076",
+      "order_date": "2026-03-17",
+      "drug_name": "Telmisartan",
+      "therapeutic_class": "ARB",
+      "route": "IV",
+      "order_status": "Completed",
+      "quantity": 28
+    },
+    {
+      "order_id": "ORD0021",
+      "encounter_id": "ENC0046",
+      "order_date": "2026-02-21",
+      "drug_name": "Ramipril",
+      "therapeutic_class": "ACE inhibitor",
+      "route": "Oral",
+      "order_status": "Completed",
+      "quantity": 28
+    },
+    {
+      "order_id": "ORD0022",
+      "encounter_id": "ENC0059",
+      "order_date": "2026-01-30",
+      "drug_name": "Sitagliptin",
+      "therapeutic_class": "Antidiabetic",
+      "route": "Oral",
+      "order_status": "Discontinued",
+      "quantity": 7
+    },
+    {
+      "order_id": "ORD0023",
+      "encounter_id": "ENC0005",
+      "order_date": "2026-01-10",
+      "drug_name": "Telmisartan",
+      "therapeutic_class": "ARB",
+      "route": "Oral",
+      "order_status": "Active",
+      "quantity": 7
+    },
+    {
+      "order_id": "ORD0024",
+      "encounter_id": "ENC0046",
+      "order_date": "2026-02-18",
+      "drug_name": "Atorvastatin",
+      "therapeutic_class": "Statin",
+      "route": "IV",
+      "order_status": "Discontinued",
+      "quantity": 7
+    },
+    {
+      "order_id": "ORD0025",
+      "encounter_id": "ENC0007",
+      "order_date": "2026-03-30",
+      "drug_name": "Enalapril",
+      "therapeutic_class": "ACE inhibitor",
+      "route": "Oral",
+      "order_status": "Active",
+      "quantity": 30
+    },
+    {
+      "order_id": "ORD0026",
+      "encounter_id": "ENC0019",
+      "order_date": "2026-02-13",
+      "drug_name": "Rosuvastatin",
+      "therapeutic_class": "Statin",
+      "route": "Oral",
+      "order_status": "Completed",
+      "quantity": 28
+    },
+    {
+      "order_id": "ORD0027",
+      "encounter_id": "ENC0018",
+      "order_date": "2026-01-12",
+      "drug_name": "Amlodipine",
+      "therapeutic_class": "Calcium-channel blocker",
+      "route": "IV",
+      "order_status": "Discontinued",
+      "quantity": 28
+    },
+    {
+      "order_id": "ORD0028",
+      "encounter_id": "ENC0010",
+      "order_date": "2026-02-14",
+      "drug_name": "Ramipril",
+      "therapeutic_class": "ACE inhibitor",
+      "route": "Oral",
+      "order_status": "Active",
+      "quantity": 28
+    },
+    {
+      "order_id": "ORD0029",
+      "encounter_id": "ENC0026",
+      "order_date": "2026-03-24",
+      "drug_name": "Losartan",
+      "therapeutic_class": "ARB",
+      "route": "IV",
+      "order_status": "Active",
+      "quantity": 7
+    },
+    {
+      "order_id": "ORD0030",
+      "encounter_id": "ENC0056",
+      "order_date": "2026-02-15",
+      "drug_name": "Losartan",
+      "therapeutic_class": "ARB",
+      "route": "IV",
+      "order_status": "Completed",
+      "quantity": 14
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "version": "1.0",
+  "rules": [
+    {
+      "id": "DQ001",
+      "name": "Required encounter identifier",
+      "field": "encounter_id",
+      "type": "not_blank",
+      "severity": "critical",
+      "description": "Identifier must be present."
+    },
+    {
+      "id": "DQ002",
+      "name": "Unique encounter identifier",
+      "field": "encounter_id",
+      "type": "unique",
+      "severity": "critical",
+      "description": "Encounter identifier must be unique."
+    },
+    {
+      "id": "DQ003",
+      "name": "Valid admission date",
+      "field": "admit_date",
+      "type": "valid_date",
+      "severity": "high",
+      "description": "Admission date must parse as a date."
+    },
+    {
+      "id": "DQ004",
+      "name": "Nonnegative length of stay",
+      "field": "los_days",
+      "type": "numeric_min",
+      "min": 0,
+      "severity": "high",
+      "description": "Length of stay cannot be negative."
+    },
+    {
+      "id": "DQ005",
+      "name": "Nonnegative order count",
+      "field": "order_count",
+      "type": "numeric_min",
+      "min": 0,
+      "severity": "medium",
+      "description": "Order count cannot be negative."
+    },
+    {
+      "id": "DQ006",
+      "name": "Systolic BP plausible range check",
+      "field": "sbp",
+      "type": "numeric_range",
+      "min": 40,
+      "max": 300,
+      "severity": "medium",
+      "description": "Broad technical plausibility screen only; not a clinical reference interval."
+    }
+  ]
+}

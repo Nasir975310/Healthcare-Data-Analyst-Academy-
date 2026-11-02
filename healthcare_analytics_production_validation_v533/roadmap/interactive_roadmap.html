@@ -1,0 +1,31 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Academy v5.33 Roadmap</title>
+<style>
+:root{color-scheme:dark;--bg:#101827;--panel:#1b2940;--text:#edf3fc;--muted:#a9b8cc;--line:#34465f;--accent:#71b7ff}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.5 system-ui}main{max-width:1050px;margin:auto;padding:24px}h1{line-height:1.15}p{color:var(--muted)}.stats,.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:12px}.card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:16px}.stat{font-size:2rem;font-weight:700}.task{display:flex;gap:10px;align-items:flex-start;padding:10px 0;border-bottom:1px solid var(--line)}input{margin-top:5px;accent-color:var(--accent)}button{background:#263c58;color:var(--text);border:1px solid var(--line);padding:9px 12px;border-radius:8px;margin:4px;cursor:pointer}.bar{height:10px;background:#34465f;border-radius:9px;overflow:hidden}.bar span{display:block;height:100%;background:var(--accent);width:0}.tag{color:#b8d9ff;font-size:.8rem}a{color:#9bcaff}
+</style></head><body><main><div class="tag">HEALTHCARE DATA ANALYST ACADEMY · RELEASE 5.33.0</div><h1>Production validation & portfolio deployment</h1><p>Interactive checklist. Progress is stored in this browser only. It is not synchronized with the Academy dashboard or other devices.</p>
+<div class="stats"><div class="card"><div class="stat" id="done">0</div>Completed tasks</div><div class="card"><div class="stat" id="left">0</div>Pending tasks</div><div class="card"><div class="stat" id="pct">0%</div>Overall progress</div></div><div class="card"><div class="bar"><span id="fill"></span></div><p id="summary"></p></div>
+<div><button data-filter="all">All</button><button data-filter="pending">Pending</button><button data-filter="done">Completed</button></div><div class="grid" id="tasks"></div>
+<h2>Known external validation requirements</h2><div class="card"><ul><li>Power BI Desktop/PBIX execution on Windows or compatible VM/remote environment.</li><li>PostgreSQL scripts must be executed against a real PostgreSQL server.</li><li>GitHub push requires your repository credentials and explicit action.</li><li>Do not publish patient data, secrets or unverified clinical claims.</li></ul></div>
+<button id="reset">Reset this roadmap</button></main>
+<script>
+const items=[
+["Run v5.32 pipeline and preserve source manifest","Python / ETL"],
+["Run v5.33 validation script; resolve all critical failures","Data quality"],
+["Benchmark SQLite queries and record hardware/runtime","Performance"],
+["Create PostgreSQL database and least-privilege role","PostgreSQL"],
+["Load synthetic source data and execute validation SQL","PostgreSQL"],
+["Capture EXPLAIN ANALYZE evidence and reconcile counts","PostgreSQL"],
+["Build star schema and measures in Power BI Desktop","Power BI"],
+["Reconcile each DAX KPI to SQL under identical filters","Power BI"],
+["Run accessibility, refresh and Performance Analyzer checks","Power BI"],
+["Review repository for PHI, secrets, databases and caches","Security"],
+["Publish README, data dictionary, limitations and evidence","GitHub"],
+["Deliver 8–10 minute client-style presentation","Communication"],
+["Complete 100-point rubric and remediate weak domains","Assessment"]
+];
+const key="hda-v533-roadmap";let state={};try{state=JSON.parse(localStorage.getItem(key)||"{}")}catch(e){}
+let filter="all";
+function render(){let done=items.filter((x,i)=>state[i]).length;document.getElementById("done").textContent=done;document.getElementById("left").textContent=items.length-done;let p=Math.round(done/items.length*100);document.getElementById("pct").textContent=p+"%";document.getElementById("fill").style.width=p+"%";document.getElementById("summary").textContent=done+" of "+items.length+" tasks complete.";
+let host=document.getElementById("tasks");host.innerHTML="";items.forEach((x,i)=>{if(filter==="done"&&!state[i]||filter==="pending"&&state[i])return;let c=document.createElement("div");c.className="card";let l=document.createElement("label");l.className="task";let cb=document.createElement("input");cb.type="checkbox";cb.checked=!!state[i];cb.addEventListener("change",()=>{state[i]=cb.checked;localStorage.setItem(key,JSON.stringify(state));render()});let t=document.createElement("span");t.textContent=x[0];let d=document.createElement("div");d.className="tag";d.textContent=x[1];l.append(cb,t);c.append(l,d);host.append(c)})}
+document.querySelectorAll("[data-filter]").forEach(b=>b.addEventListener("click",()=>{filter=b.dataset.filter;render()}));document.getElementById("reset").addEventListener("click",()=>{if(confirm("Reset all v5.33 checklist progress?")){state={};localStorage.removeItem(key);render()}});render();
+</script></body></html>

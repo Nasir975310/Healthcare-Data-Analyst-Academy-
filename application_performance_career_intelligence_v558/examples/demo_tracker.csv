@@ -1,0 +1,7 @@
+application_id,employer,role,applied_date,source,stage,outcome,rejection_reason,cv_version,remote_type,follow_up_due,notes
+DEMO-001,Example Health Analytics,Junior Healthcare Data Analyst,2026-10-02,Employer site,screening,,,CV-A,Remote India,,FICTIONAL DEMO ONLY
+DEMO-002,Example Clinical Research,Clinical Data Coordinator,2026-10-04,Job board,rejected,Rejected,Experience requirement,CV-A,Hybrid,,FICTIONAL DEMO ONLY
+DEMO-003,Example Hospital Group,Healthcare Reporting Analyst,2026-10-08,Employer site,interview,,,CV-B,On-site,,FICTIONAL DEMO ONLY
+DEMO-004,Example Data Services,Junior Data Analyst,2026-10-11,Referral,applied,,,CV-B,Remote India,,FICTIONAL DEMO ONLY
+DEMO-005,Example Pharma Safety,Drug Safety Associate,2026-10-14,Employer site,offer,Offer,,CV-B,Hybrid,,FICTIONAL DEMO ONLY
+DEMO-006,Example Health Tech,Clinical Data Analyst,2026-10-18,Job board,rejected,Rejected,Role filled,CV-C,Remote India,,FICTIONAL DEMO ONLY

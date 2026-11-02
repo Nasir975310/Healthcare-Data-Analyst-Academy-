@@ -1,0 +1,1 @@
+# Changelog\n\n## 5.16.0\n- Added reproducible Python visualization and report generation.\n- Added histograms, group box plots, ROC curve, Kaplan–Meier and forest plot.\n- Added source SHA-256, descriptive CSV and Markdown/HTML reports.\n- Added interactive browser figure explorer and publication methodology guide.\n- Added tests and synthetic study data.\n

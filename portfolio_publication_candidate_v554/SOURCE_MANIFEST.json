@@ -1,0 +1,110 @@
+{
+  "algorithm": "sha256",
+  "files": [
+    {
+      "path": ".github/ISSUE_TEMPLATE/bug_report.md",
+      "sha256": "35af06dc79a03f9c3c3fcaa873e7d36e8da1cd907c3469eb7c7f837cd1ef57bc",
+      "size_bytes": 304
+    },
+    {
+      "path": ".github/pull_request_template.md",
+      "sha256": "e3e24dfcfb72c11994b02d2e95752083fdf998c404b795afc2809169b6f21fee",
+      "size_bytes": 337
+    },
+    {
+      "path": ".github/workflows/python-tests.yml",
+      "sha256": "d55c0fbeaf72b789cad1c520fb8dd516721532e4ec8b26812b0a14664e567edd",
+      "size_bytes": 714
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "2afc522b80034f5ed67713608f3c9832e808b0a4122676ad92e5f2b0b7a6235b",
+      "size_bytes": 71
+    },
+    {
+      "path": "CASE_STUDY.md",
+      "sha256": "30a8eb72cd53cfcc5718abc5f4560066264fd8325c20e9c5559b37ec6b94a240",
+      "size_bytes": 6084
+    },
+    {
+      "path": "PUBLICATION_REVIEW.md",
+      "sha256": "53a38d08655a95059f6f320e84ea6bc8dd1511eafdbe35a127002ded734aa041",
+      "size_bytes": 1761
+    },
+    {
+      "path": "PUBLICATION_STATUS.json",
+      "sha256": "82071bc3929fe768c953d01a562cb3d5fe22cb7c046c563aa8518105dcf1f535",
+      "size_bytes": 648
+    },
+    {
+      "path": "QA_REPORT.md",
+      "sha256": "3ed4fb12434d951953f2e6a4a6bb6da5933c14923d96ba5ac24bde64e9c208c1",
+      "size_bytes": 1266
+    },
+    {
+      "path": "README.md",
+      "sha256": "392a5d805d6d3b80b513a683511dba610067704656d25084e65d7694c945c78c",
+      "size_bytes": 3683
+    },
+    {
+      "path": "data/synthetic_outpatient_encounters.csv",
+      "sha256": "1c2070ab069d114186fb592ab963340d83179a47bee364e2125b53497d2b86a2",
+      "size_bytes": 1395
+    },
+    {
+      "path": "docs/data_dictionary.md",
+      "sha256": "e71de507d774bfcf0496f0b179e11947515661c7b576147635c319473095e426",
+      "size_bytes": 923
+    },
+    {
+      "path": "docs/metric_contract.md",
+      "sha256": "75171c0fc6b4cc063b6b21fa99c7e9b298f9d2bc0fba5a6583eacb7647a9e250",
+      "size_bytes": 1094
+    },
+    {
+      "path": "docs/reference_results.md",
+      "sha256": "2b59d223cb50e0f38af22f362823b1280b35f5e40393f60d05e689dfa95f0fdf",
+      "size_bytes": 683
+    },
+    {
+      "path": "docs/reproduction_and_review.md",
+      "sha256": "9ab69c4bdd83dbeea6bc9941dd40ea1c18e95e60ad2aad2aa7ada8d3c2b5b2c7",
+      "size_bytes": 1288
+    },
+    {
+      "path": "outputs/department_summary.csv",
+      "sha256": "52ca093aa6793e7e7862582944db7d265c96fc55501eea5b3563cef9e6266d3a",
+      "size_bytes": 137
+    },
+    {
+      "path": "outputs/quality_report.json",
+      "sha256": "7745d194bfb21789c599e849c5c561073b45d918ecc03ff09b5ee575523cb2ce",
+      "size_bytes": 1823
+    },
+    {
+      "path": "outputs/sha256_manifest.json",
+      "sha256": "3810e2df012118fd0cc3a99430bf266e6c380eb0b8f6a7a4bd3596d5077f6492",
+      "size_bytes": 282
+    },
+    {
+      "path": "scripts/repository_preflight.py",
+      "sha256": "a4cd541de0a7613f1ef93a303311494ac8be3486861260d02b40e9cd7496975b",
+      "size_bytes": 1918
+    },
+    {
+      "path": "sql/analysis.sql",
+      "sha256": "ef56a66da603475aecaa6353fdf8f7c1b58e1d7cdbc263d1c34674d7d486da2f",
+      "size_bytes": 759
+    },
+    {
+      "path": "src/run_project.py",
+      "sha256": "7269af1911c540ee12e33f5023e8a37f9614b780a10315ece97e961e933e4943",
+      "size_bytes": 5847
+    },
+    {
+      "path": "tests/test_project.py",
+      "sha256": "49a39c6de000b057010c981c18b8a99cfe66119bd59ec27cf9723c0882e5ee4c",
+      "size_bytes": 3003
+    }
+  ]
+}

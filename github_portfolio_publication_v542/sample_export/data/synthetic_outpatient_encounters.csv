@@ -1,0 +1,25 @@
+encounter_id,patient_id,department,encounter_date,status,wait_minutes,source_system
+C001,PT001,Cardiology,2026-09-01,completed,21,SYS-A
+C002,PT002,General Medicine,2026-09-01,completed,34,SYS-A
+C003,PT003,Orthopaedics,2026-09-02,completed,42,SYS-B
+C004,PT004,Cardiology,2026-09-02,cancelled,,SYS-A
+C005,PT005,General Medicine,2026-09-03,completed,29,SYS-A
+C006,PT006,Orthopaedics,2026-09-03,no_show,,SYS-B
+C007,PT007,Cardiology,2026-09-04,completed,18,SYS-A
+C008,PT008,General Medicine,2026-09-04,completed,,SYS-A
+C009,PT009,Orthopaedics,2026-09-07,completed,37,SYS-B
+C010,PT010,Cardiology,2026-09-07,completed,24,SYS-A
+C011,PT011,General Medicine,2026-09-08,completed,31,SYS-A
+C012,PT012,Orthopaedics,2026-09-08,completed,26,SYS-B
+C013,PT013,Cardiology,2026-09-09,completed,20,SYS-A
+C014,PT014,General Medicine,2026-09-09,completed,-3,SYS-A
+C015,PT015,Orthopaedics,2026-09-10,completed,39,SYS-B
+C016,PT016,,2026-09-10,completed,27,SYS-B
+C017,PT017,Cardiology,2026-09-11,completed,22,SYS-A
+C018,PT018,General Medicine,2026-09-11,completed,33,SYS-A
+C019,PT019,Orthopaedics,2026-09-14,completed,28,SYS-B
+C020,PT020,Cardiology,2026-09-14,completed,19,SYS-A
+C021,PT021,General Medicine,2026-09-15,completed,36,SYS-A
+C022,PT022,Orthopaedics,2026-09-15,completed,30,SYS-B
+C023,PT023,Cardiology,2026-09-16,completed,25,SYS-A
+C023,PT023,Cardiology,2026-09-16,completed,25,SYS-A

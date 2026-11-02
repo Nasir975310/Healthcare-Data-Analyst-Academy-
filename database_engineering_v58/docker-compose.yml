@@ -1,0 +1,19 @@
+services:
+  postgres:
+    image: postgres:16
+    container_name: hda-postgres-lab
+    environment:
+      POSTGRES_DB: healthcare_analytics
+      POSTGRES_USER: hda_lab
+      POSTGRES_PASSWORD: change_this_local_password
+    ports:
+      - "127.0.0.1:54329:5432"
+    volumes:
+      - hda_pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U hda_lab -d healthcare_analytics"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+volumes:
+  hda_pgdata:

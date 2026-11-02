@@ -1,0 +1,67 @@
+[
+  {
+    "path": "README.md",
+    "sha256": "c3194c6044a270f1a9e98b87c7612ff67b7b76c9f15ef73ccc9cecd81c45be37",
+    "bytes": 2164
+  },
+  {
+    "path": "RELEASE_NOTES.md",
+    "sha256": "cb6fb5ba5f9c3c0ae9d6803fc8d664ec8d199a16870c3cf9d8b2ea980388558d",
+    "bytes": 410
+  },
+  {
+    "path": "data/synthetic_hypertension_records.csv",
+    "sha256": "799f8a74c56734d60e16783c7c3b8f1d1a9c394a30e554630a21cc9494e8bf89",
+    "bytes": 27581
+  },
+  {
+    "path": "docs/ASSIGNMENT.md",
+    "sha256": "4bef06db7e7f1fe0615f6a178bd616ef1c9d9f6e3767884a03faf193245e9ad5",
+    "bytes": 1336
+  },
+  {
+    "path": "docs/DATA_DICTIONARY.md",
+    "sha256": "20325467ff8cb29d9dc547410628e3aca4ee413cdcd34887af860349e1b8dd86",
+    "bytes": 927
+  },
+  {
+    "path": "docs/INTERPRETATION_GUIDE.md",
+    "sha256": "a394365c2995e09900fe1b37ae7ebcac587caa1d375f428348aa5b52cb93e7f5",
+    "bytes": 696
+  },
+  {
+    "path": "docs/METRIC_CONTRACT.md",
+    "sha256": "c454b372c9c52dc9082d3ddd51e66222264728f92575528288d1d45e850f4ddb",
+    "bytes": 906
+  },
+  {
+    "path": "sql/analysis_queries.sql",
+    "sha256": "0408696f6e8b74d2a5efa1f52234ceae07480e5643d3d92685a166d48cdf1c30",
+    "bytes": 1127
+  },
+  {
+    "path": "sql/schema.sql",
+    "sha256": "83bb87df48da75ab6e10cbdd4bc2298e2d5cb53f9a79f1a8469c5de978b75d9f",
+    "bytes": 603
+  },
+  {
+    "path": "src/__pycache__/run_analysis.cpython-313.pyc",
+    "sha256": "ef66b2f6a776b41c690c2b3891377a404900b6376aad69161151ddb798f03fd3",
+    "bytes": 7569
+  },
+  {
+    "path": "src/run_analysis.py",
+    "sha256": "9f2834d694f3c10361ef4ac02a28752d11af1e792094d656abf1a34d2d26d382",
+    "bytes": 3885
+  },
+  {
+    "path": "tests/__pycache__/test_analysis.cpython-313.pyc",
+    "sha256": "129c69ca3b065da0f96c81052fe30429886db356c668ba51e27a9b7514bfc0e3",
+    "bytes": 3764
+  },
+  {
+    "path": "tests/test_analysis.py",
+    "sha256": "d06bd1d1785285526d0e9e5d0dcc2866a1d304ccaf15881d1b6ef02b5b3b4018",
+    "bytes": 1240
+  }
+]

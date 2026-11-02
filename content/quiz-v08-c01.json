@@ -1,0 +1,74 @@
+[
+  {
+    "id": "q1",
+    "q": "Which factor best distinguishes healthcare analytics roles?",
+    "options": [
+      "Only job title",
+      "Tasks, data, decisions and accountability",
+      "Office location alone",
+      "Number of certificates"
+    ],
+    "correct": 1,
+    "why": "Role titles vary; inspect the actual work and decision context."
+  },
+  {
+    "id": "q2",
+    "q": "What is a credible use of Pharm.D domain knowledge?",
+    "options": [
+      "Claim expertise in every analytics tool",
+      "Explain medication context while honestly stating technical skill level",
+      "Replace statistical validation",
+      "Make unauthorised clinical decisions"
+    ],
+    "correct": 1,
+    "why": "Domain knowledge is valuable but does not replace technical competence."
+  },
+  {
+    "id": "q3",
+    "q": "Which is strongest entry-level evidence?",
+    "options": [
+      "A list of watched courses",
+      "A reproducible project with validation and documented limitations",
+      "A long list of tools",
+      "An unsupported impact claim"
+    ],
+    "correct": 1,
+    "why": "Demonstrable work is stronger evidence than passive course completion."
+  },
+  {
+    "id": "q4",
+    "q": "Which task may require specialist escalation?",
+    "options": [
+      "Formatting a chart title",
+      "Complex causal inference design",
+      "Sorting a CSV",
+      "Writing a README"
+    ],
+    "correct": 1,
+    "why": "Causal design may require specialist statistical expertise and governance."
+  },
+  {
+    "id": "q5",
+    "q": "What is a key principle in 'Healthcare analytics roles and pathways'?",
+    "options": [
+      "Prioritise appearance over accuracy",
+      "Use evidence, clear scope and honest limitations",
+      "Invent achievements",
+      "Ignore privacy"
+    ],
+    "correct": 1,
+    "why": "Professional practice depends on evidence, scope and integrity."
+  },
+  {
+    "id": "q6",
+    "q": "How should practical work be completed across operating systems?",
+    "options": [
+      "Assume all commands are identical",
+      "Use separate Linux and PowerShell instructions and verify equivalent outcomes",
+      "Skip one OS",
+      "Copy absolute paths between systems"
+    ],
+    "correct": 1,
+    "why": "OS-specific instructions are required for reproducibility."
+  }
+]

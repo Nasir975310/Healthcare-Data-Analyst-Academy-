@@ -1,0 +1,144 @@
+[
+  {
+    "id": "INT-01",
+    "track": "SQL",
+    "question": "A join increases 600 encounter rows to 1,540 rows. What do you investigate?",
+    "strong_answer": [
+      "Check grain and one-to-many relationship.",
+      "Compare row counts and distinct encounter keys before/after.",
+      "Aggregate orders to encounter grain or use appropriate distinct metrics.",
+      "Check orphan and duplicate keys; never use DISTINCT as a blind repair."
+    ],
+    "red_flags": [
+      "Assume SQL engine is wrong.",
+      "Add DISTINCT without understanding fan-out."
+    ]
+  },
+  {
+    "id": "INT-02",
+    "track": "SQL",
+    "question": "How do you calculate monthly readmission rate when the supplied flag definition is undocumented?",
+    "strong_answer": [
+      "Clarify index encounter eligibility, unplanned status, transfer handling, time window and exclusions.",
+      "Label as supplied flag proportion until definition validated.",
+      "Show numerator, denominator, period and missingness.",
+      "Avoid performance or preventability conclusions."
+    ],
+    "red_flags": [
+      "Call it a validated readmission rate.",
+      "Change denominator silently."
+    ]
+  },
+  {
+    "id": "INT-03",
+    "track": "Python",
+    "question": "A pandas merge unexpectedly increases row count. How do you debug it?",
+    "strong_answer": [
+      "Inspect key uniqueness on both sides and relationship cardinality.",
+      "Use merge(validate='many_to_one') where expected.",
+      "Compare pre/post counts and unmatched keys via indicator=True.",
+      "Resolve data contract issue, not by arbitrary deduplication."
+    ],
+    "red_flags": [
+      "Drop duplicates without audit."
+    ]
+  },
+  {
+    "id": "INT-04",
+    "track": "Statistics",
+    "question": "A model has AUC 0.74 but poor calibration. How would you explain it?",
+    "strong_answer": [
+      "AUC describes ranking discrimination, not probability accuracy.",
+      "Inspect calibration curve, Brier score and calibration intercept/slope.",
+      "Consider recalibration on appropriate validation data.",
+      "Assess prevalence, threshold, decision consequences and external validation."
+    ],
+    "red_flags": [
+      "Claim model is clinically ready from AUC alone."
+    ]
+  },
+  {
+    "id": "INT-05",
+    "track": "Healthcare",
+    "question": "What is the difference between medication order, dispensing, administration and adherence?",
+    "strong_answer": [
+      "Order is a prescribing instruction/record.",
+      "Dispensing is supply from pharmacy.",
+      "Administration is documented delivery to patient.",
+      "Adherence concerns actual medication-taking behaviour; each requires different data."
+    ],
+    "red_flags": [
+      "Treat order count as adherence."
+    ]
+  },
+  {
+    "id": "INT-06",
+    "track": "Excel/BI",
+    "question": "A dashboard's total differs from the source workbook. How do you reconcile?",
+    "strong_answer": [
+      "Align filters, date ranges, grain, exclusions, refresh time and aggregation.",
+      "Check relationships and filter direction, duplicate keys and NULLs.",
+      "Build a control total and trace a small sample end-to-end.",
+      "Document the resolved definition."
+    ],
+    "red_flags": [
+      "Change visual until totals match without tracing."
+    ]
+  },
+  {
+    "id": "INT-07",
+    "track": "ETL",
+    "question": "How would you make a daily ingestion job idempotent?",
+    "strong_answer": [
+      "Define business key and source update semantics.",
+      "Use deterministic transformations and upsert/merge transactionally.",
+      "Persist watermark and handle late-arriving updates with overlap/reconciliation.",
+      "Log source hashes, row counts, rejects and run ID."
+    ],
+    "red_flags": [
+      "Append all records each run."
+    ]
+  },
+  {
+    "id": "INT-08",
+    "track": "Privacy",
+    "question": "A client emails an identifiable patient extract to your personal account. What do you do?",
+    "strong_answer": [
+      "Do not download/process in unapproved environment.",
+      "Notify client using approved channel and request approved secure transfer/environment.",
+      "Follow incident and retention policies; avoid forwarding or uploading to personal cloud/AI.",
+      "Record decision and access controls."
+    ],
+    "red_flags": [
+      "Remove names and proceed without authorisation."
+    ]
+  },
+  {
+    "id": "INT-09",
+    "track": "Client communication",
+    "question": "A client asks for a dashboard tomorrow but metric definitions are unclear. How do you respond?",
+    "strong_answer": [
+      "Identify decisions and critical unknowns immediately.",
+      "Offer a scoped provisional deliverable with clearly labelled assumptions, or request confirmation before final KPI claims.",
+      "Set milestones, risks and acceptance criteria.",
+      "Do not silently invent definitions."
+    ],
+    "red_flags": [
+      "Promise final accuracy with unknown definitions."
+    ]
+  },
+  {
+    "id": "INT-10",
+    "track": "Portfolio",
+    "question": "How do you prove a project is your work and reproducible?",
+    "strong_answer": [
+      "Show versioned commits, README, scripts, data dictionary and tests.",
+      "Demonstrate clean-run instructions and validation outputs.",
+      "Explain decisions, trade-offs, limitations and what feedback changed.",
+      "Clearly label synthetic datasets and personal contribution."
+    ],
+    "red_flags": [
+      "Show dashboard screenshot only."
+    ]
+  }
+]

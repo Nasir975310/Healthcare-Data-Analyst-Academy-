@@ -1,0 +1,98 @@
+{
+  "version": "1.0.0",
+  "title": "Advanced SQL and Database Engineering Laboratory",
+  "description": "PostgreSQL-focused progression from relational design to advanced healthcare analytics, performance, security and operational handoff.",
+  "dialect": "PostgreSQL 15+ recommended",
+  "challenges": [
+    {
+      "id": "PG-01",
+      "title": "PostgreSQL setup and connection",
+      "scenario": "Install or start PostgreSQL, create a dedicated training database, connect with DBeaver or psql, and inspect server/database versions.",
+      "tasks": "Install PostgreSQL using the platform guide. Create database hda_training. Connect using a dedicated role, not the postgres superuser for routine work. Record server_version, current_database(), current_user and connection settings.",
+      "starter": "SELECT version();\nSELECT current_database(), current_user;\nSHOW search_path;",
+      "acceptance": "A successful connection returns the server version, hda_training as the database, and the intended least-privilege role.",
+      "safety": "Do not expose a database port publicly. Use localhost for training."
+    },
+    {
+      "id": "PG-02",
+      "title": "Relational design and normalisation",
+      "scenario": "Convert a denormalised medication-order sheet into encounter, department, drug and order entities. Explain 1NF, 2NF and 3NF.",
+      "tasks": "Identify repeating groups and update anomalies. Define primary keys, foreign keys, unique constraints, NOT NULL and CHECK constraints. Explain why encounter facts and order facts have different grains.",
+      "starter": "See schema.sql and normalisation-exercise.md. Build the four core tables and document each table's grain.",
+      "acceptance": "Four tables have stable primary keys; each medication order references one encounter and one drug; department is not duplicated as free text in every order.",
+      "safety": "A normalised design reduces update anomalies; it does not automatically make every analytical query faster."
+    },
+    {
+      "id": "PG-03",
+      "title": "Types, constraints and safe schema creation",
+      "scenario": "Create a PostgreSQL schema with appropriate data types and defensible constraints.",
+      "tasks": "Run schema.sql then seed.sql. Inspect information_schema.columns and pg_constraint. Explain DATE vs TIMESTAMP, NUMERIC vs FLOAT, BOOLEAN and generated identity keys.",
+      "starter": "SELECT table_name, column_name, data_type\nFROM information_schema.columns\nWHERE table_schema='hda'\nORDER BY table_name, ordinal_position;",
+      "acceptance": "All tables exist in schema hda; constraints reject invalid values such as negative quantity and invalid length of stay.",
+      "safety": "Use NUMERIC for currency-like values. Avoid storing dates as formatted text."
+    },
+    {
+      "id": "PG-04",
+      "title": "Advanced SQL patterns",
+      "scenario": "Use joins, anti-joins, correlated subqueries, CTEs, window functions and set operations to answer healthcare questions.",
+      "tasks": "Calculate department activity, identify encounters with no orders, rank drug classes, compare each department with the overall average and combine two compatible cohorts.",
+      "starter": "Run challenges.sql sections 04A\u201304E and compare with solutions.sql.",
+      "acceptance": "Results preserve declared grain. LEFT JOIN retains encounters without orders. Window calculations do not accidentally multiply encounter counts.",
+      "safety": "Always state the denominator and grain before writing a query."
+    },
+    {
+      "id": "PG-05",
+      "title": "Healthcare cohort and medication utilisation",
+      "scenario": "Create a reproducible cohort and calculate medication-order utilisation metrics.",
+      "tasks": "Define inclusion dates and encounter types. Calculate orders per encounter, distinct drugs, therapeutic-class mix, department variation and a supplied readmission-flag proportion. State that order records do not prove administration or adherence.",
+      "starter": "Run solutions.sql section PG-05. Reconcile counts against the data dictionary.",
+      "acceptance": "80 encounters and 150 orders in the packaged seed data; 70 encounters have at least one order and 10 have none; supplied readmission flag 7/80 = 8.75%.",
+      "safety": "The readmission flag is synthetic and unvalidated. It is not a clinically validated outcome."
+    },
+    {
+      "id": "PG-06",
+      "title": "Indexes and query performance",
+      "scenario": "Use EXPLAIN (ANALYZE, BUFFERS), understand B-tree indexes and evaluate composite and partial indexes.",
+      "tasks": "Capture a baseline plan, create an index, rerun the query and compare estimated/actual rows and execution time. Explain why small synthetic tables may still use sequential scans.",
+      "starter": "Run performance-lab.sql. Test a selective predicate on medication_orders and inspect pg_indexes.",
+      "acceptance": "You can explain plan nodes, estimated vs actual rows, scan choice and index selectivity without claiming an index always improves performance.",
+      "safety": "EXPLAIN ANALYZE executes the query. Do not use it casually on expensive production statements."
+    },
+    {
+      "id": "PG-07",
+      "title": "Views, functions, triggers and transactions",
+      "scenario": "Create a reporting view, a materialized view, a safe PL/pgSQL function, a validation trigger and transaction examples.",
+      "tasks": "Create view v_department_summary. Refresh the materialized view after seed changes. Test a function and trigger in a transaction, then ROLLBACK. Explain ACID, isolation and locking at a conceptual level.",
+      "starter": "Run objects-and-transactions.sql in a disposable training database. Inspect pg_views and pg_matviews.",
+      "acceptance": "View definitions are queryable; materialized view refresh works; trigger rejects invalid order quantity; rollback leaves no test row.",
+      "safety": "Do not use triggers to hide business logic or silently rewrite clinical data."
+    },
+    {
+      "id": "PG-08",
+      "title": "Security, backup, restore and migrations",
+      "scenario": "Apply least privilege, create a read-only analyst role, use pg_dump/pg_restore, and plan a controlled schema migration.",
+      "tasks": "Create analyst_readonly with SELECT-only grants. Verify write denial. Export a custom-format backup, restore to a new database and compare row counts. Write a migration with forward and rollback notes.",
+      "starter": "Follow security-backup-lab.md and platform commands. Use local-only credentials via environment variables or a password manager.",
+      "acceptance": "Read-only role can SELECT but cannot INSERT/UPDATE/DELETE. Backup restores into a clean database and row counts reconcile.",
+      "safety": "Never commit passwords, connection strings with secrets, or identifiable patient data."
+    },
+    {
+      "id": "PG-09",
+      "title": "Python application access and parameterised queries",
+      "scenario": "Connect Python to PostgreSQL with psycopg and use bound parameters, transactions and safe error handling.",
+      "tasks": "Create a virtual environment, install requirements-postgresql.txt, configure environment variables and run postgres_connection_demo.py. Compare safe parameter binding with unsafe string concatenation.",
+      "starter": "Run the Python demo against the local hda_training database.",
+      "acceptance": "Connection succeeds; parameterised query returns a bounded result; no password is embedded in source code.",
+      "safety": "Parameterisation prevents SQL injection in values. Identifiers need safe allow-listing or psycopg SQL composition."
+    },
+    {
+      "id": "PG-10",
+      "title": "Timed client database assignment",
+      "scenario": "Complete a client request from requirements to query, validation, interpretation and handoff.",
+      "tasks": "In 90 minutes, build a department medication-utilisation summary, a no-order encounter exception list, a data-quality report and a concise handoff. Include SQL, result exports, assumptions and limitations.",
+      "starter": "Use client-brief.md, rubric.json and synthetic seed data. Submit your own query file and evidence screenshots or CSV outputs.",
+      "acceptance": "Minimum 80/100 rubric score, no critical grain/denominator errors, and all key counts reconcile.",
+      "safety": "A technically correct query with misleading interpretation is not a successful deliverable."
+    }
+  ]
+}

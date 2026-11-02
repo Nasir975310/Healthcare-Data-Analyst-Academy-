@@ -1,0 +1,242 @@
+[
+  {
+    "id": "CDM-01",
+    "title": "Clinical trial lifecycle and EDC",
+    "scenario": "Map protocol, site activation, screening, enrolment, visits, data entry, edit checks, query resolution, database lock and analysis handoff. Distinguish source records, eCRF and analysis datasets.",
+    "task": "Deliver a one-page lifecycle swimlane and identify who owns each control.",
+    "acceptance": [
+      "State the unit of analysis and denominator.",
+      "Show reproducible code/query or an auditable specification.",
+      "Document data-quality checks and exclusions.",
+      "Interpret results without causal overclaiming.",
+      "Record limitations and provenance."
+    ],
+    "hint": "Start by writing the question, population, unit of analysis, time window and denominator. Then profile the data before calculating metrics.",
+    "solution": "Use the supplied synthetic files and the accompanying Python script as a reproducible starting point. Build a separate issue/query log, retain source values, and validate every derived measure. For standards work, provide a mapping specification and conformance caveat rather than claiming certification.",
+    "portfolio": "Include the brief, data dictionary, code, outputs, QA log, interpretation and limitations. Use synthetic data only."
+  },
+  {
+    "id": "CDM-02",
+    "title": "Trial data model and grain",
+    "scenario": "Inspect synthetic_trial_subjects.csv. State its grain, primary key, visit structure limitation and why one row per subject cannot represent longitudinal visits.",
+    "task": "Document table grain, key, missing entities and a normalised extension.",
+    "acceptance": [
+      "State the unit of analysis and denominator.",
+      "Show reproducible code/query or an auditable specification.",
+      "Document data-quality checks and exclusions.",
+      "Interpret results without causal overclaiming.",
+      "Record limitations and provenance."
+    ],
+    "hint": "Start by writing the question, population, unit of analysis, time window and denominator. Then profile the data before calculating metrics.",
+    "solution": "Use the supplied synthetic files and the accompanying Python script as a reproducible starting point. Build a separate issue/query log, retain source values, and validate every derived measure. For standards work, provide a mapping specification and conformance caveat rather than claiming certification.",
+    "portfolio": "Include the brief, data dictionary, code, outputs, QA log, interpretation and limitations. Use synthetic data only."
+  },
+  {
+    "id": "CDM-03",
+    "title": "Data cleaning and edit checks",
+    "scenario": "Profile missingness, impossible ranges, duplicate subject IDs, invalid categories and visit-window deviations. Never silently overwrite source values.",
+    "task": "Produce a data-cleaning log with issue, rule, count, disposition and reviewer.",
+    "acceptance": [
+      "State the unit of analysis and denominator.",
+      "Show reproducible code/query or an auditable specification.",
+      "Document data-quality checks and exclusions.",
+      "Interpret results without causal overclaiming.",
+      "Record limitations and provenance."
+    ],
+    "hint": "Start by writing the question, population, unit of analysis, time window and denominator. Then profile the data before calculating metrics.",
+    "solution": "Use the supplied synthetic files and the accompanying Python script as a reproducible starting point. Build a separate issue/query log, retain source values, and validate every derived measure. For standards work, provide a mapping specification and conformance caveat rather than claiming certification.",
+    "portfolio": "Include the brief, data dictionary, code, outputs, QA log, interpretation and limitations. Use synthetic data only."
+  },
+  {
+    "id": "CDM-04",
+    "title": "Query management and database lock",
+    "scenario": "Write neutral, evidence-based site queries. Track open/answered/closed status, ageing, ownership and impact on lock readiness.",
+    "task": "Create a query log and database-lock checklist.",
+    "acceptance": [
+      "State the unit of analysis and denominator.",
+      "Show reproducible code/query or an auditable specification.",
+      "Document data-quality checks and exclusions.",
+      "Interpret results without causal overclaiming.",
+      "Record limitations and provenance."
+    ],
+    "hint": "Start by writing the question, population, unit of analysis, time window and denominator. Then profile the data before calculating metrics.",
+    "solution": "Use the supplied synthetic files and the accompanying Python script as a reproducible starting point. Build a separate issue/query log, retain source values, and validate every derived measure. For standards work, provide a mapping specification and conformance caveat rather than claiming certification.",
+    "portfolio": "Include the brief, data dictionary, code, outputs, QA log, interpretation and limitations. Use synthetic data only."
+  },
+  {
+    "id": "CDM-05",
+    "title": "CDISC SDTM concepts",
+    "scenario": "Map subject, demographics, exposure, adverse events and vital signs to SDTM domain concepts (DM, EX, AE, VS). Explain identifiers and controlled terminology.",
+    "task": "Create a source-to-SDTM mapping specification; do not claim conformance.",
+    "acceptance": [
+      "State the unit of analysis and denominator.",
+      "Show reproducible code/query or an auditable specification.",
+      "Document data-quality checks and exclusions.",
+      "Interpret results without causal overclaiming.",
+      "Record limitations and provenance."
+    ],
+    "hint": "Start by writing the question, population, unit of analysis, time window and denominator. Then profile the data before calculating metrics.",
+    "solution": "Use the supplied synthetic files and the accompanying Python script as a reproducible starting point. Build a separate issue/query log, retain source values, and validate every derived measure. For standards work, provide a mapping specification and conformance caveat rather than claiming certification.",
+    "portfolio": "Include the brief, data dictionary, code, outputs, QA log, interpretation and limitations. Use synthetic data only."
+  },
+  {
+    "id": "CDM-06",
+    "title": "ADaM and analysis traceability",
+    "scenario": "Explain ADSL and BDS-style analysis structures, analysis flags, baseline selection, parameter values and traceability to SDTM/source.",
+    "task": "Create an ADaM mock specification for change in systolic BP.",
+    "acceptance": [
+      "State the unit of analysis and denominator.",
+      "Show reproducible code/query or an auditable specification.",
+      "Document data-quality checks and exclusions.",
+      "Interpret results without causal overclaiming.",
+      "Record limitations and provenance."
+    ],
+    "hint": "Start by writing the question, population, unit of analysis, time window and denominator. Then profile the data before calculating metrics.",
+    "solution": "Use the supplied synthetic files and the accompanying Python script as a reproducible starting point. Build a separate issue/query log, retain source values, and validate every derived measure. For standards work, provide a mapping specification and conformance caveat rather than claiming certification.",
+    "portfolio": "Include the brief, data dictionary, code, outputs, QA log, interpretation and limitations. Use synthetic data only."
+  },
+  {
+    "id": "PV-01",
+    "title": "ICSR case processing",
+    "scenario": "Separate case-level and event-level grain. Capture reporter, patient, suspect product, event, dates, outcome and source documents.",
+    "task": "Draw an ICSR data model and case intake checklist.",
+    "acceptance": [
+      "State the unit of analysis and denominator.",
+      "Show reproducible code/query or an auditable specification.",
+      "Document data-quality checks and exclusions.",
+      "Interpret results without causal overclaiming.",
+      "Record limitations and provenance."
+    ],
+    "hint": "Start by writing the question, population, unit of analysis, time window and denominator. Then profile the data before calculating metrics.",
+    "solution": "Use the supplied synthetic files and the accompanying Python script as a reproducible starting point. Build a separate issue/query log, retain source values, and validate every derived measure. For standards work, provide a mapping specification and conformance caveat rather than claiming certification.",
+    "portfolio": "Include the brief, data dictionary, code, outputs, QA log, interpretation and limitations. Use synthetic data only."
+  },
+  {
+    "id": "PV-02",
+    "title": "Seriousness, severity and expectedness",
+    "scenario": "Seriousness is regulatory outcome-based (e.g. death, life-threatening, hospitalisation, disability, congenital anomaly or other medically important condition); severity is intensity. Expectedness is reference-document dependent.",
+    "task": "Classify 10 hypothetical cases and justify each dimension independently.",
+    "acceptance": [
+      "State the unit of analysis and denominator.",
+      "Show reproducible code/query or an auditable specification.",
+      "Document data-quality checks and exclusions.",
+      "Interpret results without causal overclaiming.",
+      "Record limitations and provenance."
+    ],
+    "hint": "Start by writing the question, population, unit of analysis, time window and denominator. Then profile the data before calculating metrics.",
+    "solution": "Use the supplied synthetic files and the accompanying Python script as a reproducible starting point. Build a separate issue/query log, retain source values, and validate every derived measure. For standards work, provide a mapping specification and conformance caveat rather than claiming certification.",
+    "portfolio": "Include the brief, data dictionary, code, outputs, QA log, interpretation and limitations. Use synthetic data only."
+  },
+  {
+    "id": "PV-03",
+    "title": "Causality and duplicate detection",
+    "scenario": "Record reporter and company causality separately. Use patient, product, event, dates and narrative similarity for duplicate review; never auto-merge solely on fuzzy similarity.",
+    "task": "Build a duplicate-candidate review queue with human adjudication.",
+    "acceptance": [
+      "State the unit of analysis and denominator.",
+      "Show reproducible code/query or an auditable specification.",
+      "Document data-quality checks and exclusions.",
+      "Interpret results without causal overclaiming.",
+      "Record limitations and provenance."
+    ],
+    "hint": "Start by writing the question, population, unit of analysis, time window and denominator. Then profile the data before calculating metrics.",
+    "solution": "Use the supplied synthetic files and the accompanying Python script as a reproducible starting point. Build a separate issue/query log, retain source values, and validate every derived measure. For standards work, provide a mapping specification and conformance caveat rather than claiming certification.",
+    "portfolio": "Include the brief, data dictionary, code, outputs, QA log, interpretation and limitations. Use synthetic data only."
+  },
+  {
+    "id": "PV-04",
+    "title": "MedDRA coding concepts",
+    "scenario": "Understand LLT-to-PT-to-HLT-to-HLGT-to-SOC hierarchy, primary SOC and version control. Use only generic event codes in this training pack; licensed MedDRA content is not included.",
+    "task": "Map generic verbatim concepts to placeholder PT identifiers and document coding rationale.",
+    "acceptance": [
+      "State the unit of analysis and denominator.",
+      "Show reproducible code/query or an auditable specification.",
+      "Document data-quality checks and exclusions.",
+      "Interpret results without causal overclaiming.",
+      "Record limitations and provenance."
+    ],
+    "hint": "Start by writing the question, population, unit of analysis, time window and denominator. Then profile the data before calculating metrics.",
+    "solution": "Use the supplied synthetic files and the accompanying Python script as a reproducible starting point. Build a separate issue/query log, retain source values, and validate every derived measure. For standards work, provide a mapping specification and conformance caveat rather than claiming certification.",
+    "portfolio": "Include the brief, data dictionary, code, outputs, QA log, interpretation and limitations. Use synthetic data only."
+  },
+  {
+    "id": "PV-05",
+    "title": "Signal detection screening",
+    "scenario": "Calculate crude reporting proportions and explain ROR/PRR 2x2 tables, confidence intervals, minimum counts and multiple-testing risks. A disproportionality signal is a screening flag, not proof of causation.",
+    "task": "Create product-event screening table and write a cautious interpretation.",
+    "acceptance": [
+      "State the unit of analysis and denominator.",
+      "Show reproducible code/query or an auditable specification.",
+      "Document data-quality checks and exclusions.",
+      "Interpret results without causal overclaiming.",
+      "Record limitations and provenance."
+    ],
+    "hint": "Start by writing the question, population, unit of analysis, time window and denominator. Then profile the data before calculating metrics.",
+    "solution": "Use the supplied synthetic files and the accompanying Python script as a reproducible starting point. Build a separate issue/query log, retain source values, and validate every derived measure. For standards work, provide a mapping specification and conformance caveat rather than claiming certification.",
+    "portfolio": "Include the brief, data dictionary, code, outputs, QA log, interpretation and limitations. Use synthetic data only."
+  },
+  {
+    "id": "RWE-01",
+    "title": "RWD sources and fitness for purpose",
+    "scenario": "Compare EHR, claims, registries and pharmacy data. Assess capture, coding, coverage, latency, linkage, missingness and outcome validity.",
+    "task": "Write a data-source fitness-for-purpose assessment.",
+    "acceptance": [
+      "State the unit of analysis and denominator.",
+      "Show reproducible code/query or an auditable specification.",
+      "Document data-quality checks and exclusions.",
+      "Interpret results without causal overclaiming.",
+      "Record limitations and provenance."
+    ],
+    "hint": "Start by writing the question, population, unit of analysis, time window and denominator. Then profile the data before calculating metrics.",
+    "solution": "Use the supplied synthetic files and the accompanying Python script as a reproducible starting point. Build a separate issue/query log, retain source values, and validate every derived measure. For standards work, provide a mapping specification and conformance caveat rather than claiming certification.",
+    "portfolio": "Include the brief, data dictionary, code, outputs, QA log, interpretation and limitations. Use synthetic data only."
+  },
+  {
+    "id": "RWE-02",
+    "title": "Cohort design and time zero",
+    "scenario": "Specify target population, new-user active-comparator design, eligibility, index date, exposure, follow-up, censoring and outcomes. Address confounding and immortal-time bias.",
+    "task": "Produce a protocol synopsis and cohort attrition flow.",
+    "acceptance": [
+      "State the unit of analysis and denominator.",
+      "Show reproducible code/query or an auditable specification.",
+      "Document data-quality checks and exclusions.",
+      "Interpret results without causal overclaiming.",
+      "Record limitations and provenance."
+    ],
+    "hint": "Start by writing the question, population, unit of analysis, time window and denominator. Then profile the data before calculating metrics.",
+    "solution": "Use the supplied synthetic files and the accompanying Python script as a reproducible starting point. Build a separate issue/query log, retain source values, and validate every derived measure. For standards work, provide a mapping specification and conformance caveat rather than claiming certification.",
+    "portfolio": "Include the brief, data dictionary, code, outputs, QA log, interpretation and limitations. Use synthetic data only."
+  },
+  {
+    "id": "RWE-03",
+    "title": "Persistence, adherence and treatment patterns",
+    "scenario": "Calculate PDC and MPR from dispensing claims with explicit days-supply and overlap rules. These are dispensing-based proxies, not proof of ingestion.",
+    "task": "Create patient-level PDC/MPR metrics and sensitivity definitions.",
+    "acceptance": [
+      "State the unit of analysis and denominator.",
+      "Show reproducible code/query or an auditable specification.",
+      "Document data-quality checks and exclusions.",
+      "Interpret results without causal overclaiming.",
+      "Record limitations and provenance."
+    ],
+    "hint": "Start by writing the question, population, unit of analysis, time window and denominator. Then profile the data before calculating metrics.",
+    "solution": "Use the supplied synthetic files and the accompanying Python script as a reproducible starting point. Build a separate issue/query log, retain source values, and validate every derived measure. For standards work, provide a mapping specification and conformance caveat rather than claiming certification.",
+    "portfolio": "Include the brief, data dictionary, code, outputs, QA log, interpretation and limitations. Use synthetic data only."
+  },
+  {
+    "id": "RWE-04",
+    "title": "Propensity scores and final client project",
+    "scenario": "Explain propensity-score estimation, overlap, balance diagnostics (standardised mean differences), weighting/matching and residual confounding. Do not treat a propensity score as a cure for bias.",
+    "task": "Deliver a reproducible trial/PV/RWE portfolio report with methods, QA, limitations and a 100-point rubric.",
+    "acceptance": [
+      "State the unit of analysis and denominator.",
+      "Show reproducible code/query or an auditable specification.",
+      "Document data-quality checks and exclusions.",
+      "Interpret results without causal overclaiming.",
+      "Record limitations and provenance."
+    ],
+    "hint": "Start by writing the question, population, unit of analysis, time window and denominator. Then profile the data before calculating metrics.",
+    "solution": "Use the supplied synthetic files and the accompanying Python script as a reproducible starting point. Build a separate issue/query log, retain source values, and validate every derived measure. For standards work, provide a mapping specification and conformance caveat rather than claiming certification.",
+    "portfolio": "Include the brief, data dictionary, code, outputs, QA log, interpretation and limitations. Use synthetic data only."
+  }
+]

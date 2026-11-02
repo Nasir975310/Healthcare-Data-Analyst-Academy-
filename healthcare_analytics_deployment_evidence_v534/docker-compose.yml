@@ -1,0 +1,22 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: hda-v534-postgres
+    environment:
+      POSTGRES_DB: hda_practicum
+      POSTGRES_USER: hda_analyst
+      POSTGRES_PASSWORD: ${HDA_POSTGRES_PASSWORD:-local_practice_only_change_me}
+    ports:
+      - "127.0.0.1:55432:5432"
+    volumes:
+      - hda_pgdata:/var/lib/postgresql/data
+      - ./docker/postgres/init:/docker-entrypoint-initdb.d:ro
+      - ../healthcare_analytics_real_world_practicum_v532/data/raw:/seed:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U hda_analyst -d hda_practicum"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+    restart: unless-stopped
+volumes:
+  hda_pgdata:

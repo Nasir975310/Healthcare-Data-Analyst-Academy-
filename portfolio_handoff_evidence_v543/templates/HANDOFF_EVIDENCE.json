@@ -1,0 +1,7 @@
+{
+  "repository": {"url": "", "default_branch": "main", "commit_sha": "", "visibility": ""},
+  "publication": {"published_at": "", "release_tag": "", "release_url": ""},
+  "clean_clone": {"clone_url": "", "clone_commit_sha": "", "clone_test_command": "", "clone_test_exit_code": null, "clone_test_log_sha256": ""},
+  "ci": {"workflow_url": "", "run_id": "", "conclusion": "", "run_commit_sha": ""},
+  "review": {"reviewer": "", "reviewed_at": "", "privacy_review": false, "provenance_review": false, "limitations_acknowledged": false}
+}

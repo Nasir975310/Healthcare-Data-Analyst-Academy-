@@ -1,0 +1,62 @@
+[
+  {
+    "id": "q1",
+    "q": "Which architecture best describes SQLite?",
+    "options": [
+      "Embedded file-based database",
+      "Client-server database only",
+      "Spreadsheet workbook",
+      "Distributed cache"
+    ],
+    "correct": 0,
+    "why": "SQLite is an embedded database engine commonly stored in a single file."
+  },
+  {
+    "id": "q2",
+    "q": "Which database is designed for concurrent client/server workloads?",
+    "options": [
+      "PostgreSQL",
+      "CSV",
+      "SQLite only",
+      "XLSX"
+    ],
+    "correct": 0,
+    "why": "PostgreSQL is a client-server relational DBMS."
+  },
+  {
+    "id": "q3",
+    "q": "Why import parent tables before child tables?",
+    "options": [
+      "To satisfy foreign-key references",
+      "To sort CSV files",
+      "To create charts",
+      "To avoid NULL values"
+    ],
+    "correct": 0,
+    "why": "Child records reference parent keys."
+  },
+  {
+    "id": "q4",
+    "q": "What is a view?",
+    "options": [
+      "A saved query definition",
+      "A database backup",
+      "A primary key",
+      "A CSV delimiter"
+    ],
+    "correct": 0,
+    "why": "A view exposes a query as a database object."
+  },
+  {
+    "id": "q5",
+    "q": "What should be tested after creating a backup?",
+    "options": [
+      "Whether restoration succeeds",
+      "Whether the filename looks correct",
+      "Whether it is compressed",
+      "Whether it is stored on desktop"
+    ],
+    "correct": 0,
+    "why": "A backup is useful only if it can be recovered."
+  }
+]

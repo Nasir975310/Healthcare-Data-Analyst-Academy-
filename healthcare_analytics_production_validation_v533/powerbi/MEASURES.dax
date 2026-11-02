@@ -1,0 +1,22 @@
+-- FactEncounter grain: one row per encounter_id.
+Encounter Count = COUNTROWS(FactEncounter)
+
+Unique Patients = DISTINCTCOUNT(FactEncounter[patient_id])
+
+Average Encounters per Patient =
+DIVIDE([Encounter Count], [Unique Patients])
+
+Rejected Encounter Count =
+COUNTROWS(EncounterExceptions)
+
+Accepted Encounter Count =
+[Encounter Count]
+
+Encounter Acceptance Rate =
+DIVIDE([Accepted Encounter Count],
+       [Accepted Encounter Count] + [Rejected Encounter Count])
+
+-- Medication order grain: one row per order_id.
+Medication Order Count = COUNTROWS(FactMedicationOrder)
+
+-- Do not call this adherence, dispensing, persistence or treatment exposure.

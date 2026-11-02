@@ -1,0 +1,26 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>v5.35 Employer Evaluation Roadmap</title>
+<style>
+:root{color-scheme:dark;--bg:#101827;--panel:#1b2940;--text:#edf3fc;--muted:#a9b8cc;--line:#34465f;--accent:#71b7ff}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.5 system-ui}main{max-width:1000px;margin:auto;padding:24px}p{color:var(--muted)}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px}.card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:16px}.task{display:flex;gap:10px;padding:10px 0;border-bottom:1px solid var(--line)}button{background:#263c58;color:var(--text);border:1px solid var(--line);padding:9px 12px;border-radius:8px;margin:4px;cursor:pointer}.stat{font-size:2rem;font-weight:700}.bar{height:10px;background:#34465f;border-radius:9px;overflow:hidden}.bar span{display:block;height:100%;background:var(--accent);width:0}.tag{font-size:.8rem;color:#b8d9ff}input{accent-color:var(--accent);margin-top:5px}
+</style></head><body><main><div class="tag">HEALTHCARE DATA ANALYST ACADEMY · V5.35.0</div><h1>Portfolio completion & employer evaluation</h1><p>Browser-local tracker. Checking an item is self-reported progress, not independent proof.</p>
+<div class="grid"><div class="card"><div class="stat" id="done">0</div>Completed</div><div class="card"><div class="stat" id="pending">0</div>Pending</div><div class="card"><div class="stat" id="pct">0%</div>Progress</div></div><div class="card"><div class="bar"><span id="fill"></span></div><p id="summary"></p></div>
+<div><button data-filter="all">All</button><button data-filter="pending">Pending</button><button data-filter="done">Completed</button></div><div class="grid" id="list"></div>
+<div class="card"><h2>Assessment constraints</h2><ul><li>Self-directed synthetic-data project, not employment.</li><li>Automated score covers only machine-checkable items; manual review remains essential.</li><li>Power BI, PostgreSQL and GitHub claims require actual execution evidence.</li><li>Any privacy breach, fabricated experience or misleading clinical claim is a hard fail.</li></ul></div>
+<button id="reset">Reset tracker</button></main><script>
+const tasks=[
+["Run 120-minute technical challenge without answer key","Assessment"],
+["Complete SQL and relational reasoning section","SQL"],
+["Complete Python and data-quality section","Python"],
+["Complete BI/KPI and reconciliation section","BI"],
+["Write one-page findings memo with limitations","Communication"],
+["Run machine-checkable assessment and inspect results","Scoring"],
+["Complete manual 100-point rubric with evidence","Scoring"],
+["Prepare five-minute portfolio walkthrough","Interview"],
+["Practice all 28 interview questions aloud","Interview"],
+["Complete portfolio hygiene audit and human review","Security"],
+["Prepare truthful role-targeted resume and profile","Career"],
+["Start application tracker and tailor applications","Job search"]
+];const key="hda-v535-roadmap";let state={};try{state=JSON.parse(localStorage.getItem(key)||"{}")}catch(e){}let filter="all";
+function render(){let d=tasks.filter((x,i)=>state[i]).length,p=Math.round(d/tasks.length*100);document.getElementById("done").textContent=d;document.getElementById("pending").textContent=tasks.length-d;document.getElementById("pct").textContent=p+"%";document.getElementById("fill").style.width=p+"%";document.getElementById("summary").textContent=d+" of "+tasks.length+" tasks checked.";let host=document.getElementById("list");host.innerHTML="";tasks.forEach((x,i)=>{if(filter==="done"&&!state[i]||filter==="pending"&&state[i])return;let c=document.createElement("div");c.className="card";let l=document.createElement("label");l.className="task";let cb=document.createElement("input");cb.type="checkbox";cb.checked=!!state[i];cb.addEventListener("change",()=>{state[i]=cb.checked;localStorage.setItem(key,JSON.stringify(state));render()});let t=document.createElement("span");t.textContent=x[0];l.append(cb,t);let tag=document.createElement("div");tag.className="tag";tag.textContent=x[1];c.append(l,tag);host.append(c)})}
+document.querySelectorAll("[data-filter]").forEach(b=>b.addEventListener("click",()=>{filter=b.dataset.filter;render()}));document.getElementById("reset").addEventListener("click",()=>{if(confirm("Reset v5.35 tracker?")){state={};localStorage.removeItem(key);render()}});render();
+</script></body></html>

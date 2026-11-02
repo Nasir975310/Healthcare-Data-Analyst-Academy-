@@ -1,0 +1,162 @@
+[
+  {
+    "id": "SQLX-01",
+    "title": "Safe encounter-to-order join",
+    "scenario": "Join encounter and order tables without inflating encounter counts.",
+    "task": "Use pre-aggregation or count distinct encounter IDs. Explain why raw row counts differ.",
+    "solution": "SELECT COUNT(*) AS joined_rows, COUNT(DISTINCT e.encounter_id) AS encounters FROM encounters e LEFT JOIN medication_orders o ON o.encounter_id=e.encounter_id;",
+    "expected": "Joined rows exceed encounter count when encounters have multiple orders; distinct encounters remain 300."
+  },
+  {
+    "id": "SQLX-02",
+    "title": "Window ranking",
+    "scenario": "Rank departments by mean length of stay, retaining ties.",
+    "task": "Use DENSE_RANK over department-level means.",
+    "solution": "WITH d AS (SELECT department, AVG(length_of_stay_days) mean_los FROM encounters GROUP BY department) SELECT department, ROUND(mean_los,2), DENSE_RANK() OVER(ORDER BY mean_los DESC) AS rnk FROM d ORDER BY rnk,department;",
+    "expected": "Five departments ranked; tied means share rank."
+  },
+  {
+    "id": "SQLX-03",
+    "title": "30-day readmission proxy",
+    "scenario": "Calculate supplied readmission-flag rate by department.",
+    "task": "Denominator is eligible index encounters; do not infer causal quality.",
+    "solution": "SELECT department, COUNT(*) AS n, SUM(readmission_30d_flag) AS flagged, ROUND(100.0*SUM(readmission_30d_flag)/COUNT(*),2) AS pct FROM encounters GROUP BY department;",
+    "expected": "Rates vary by department; all records are synthetic."
+  },
+  {
+    "id": "SQLX-04",
+    "title": "Latest record per patient",
+    "scenario": "Select the most recent encounter per patient.",
+    "task": "Use ROW_NUMBER partitioned by patient and deterministic tie-break.",
+    "solution": "WITH x AS (SELECT *, ROW_NUMBER() OVER(PARTITION BY patient_id ORDER BY admission_date DESC, encounter_id DESC) rn FROM encounters) SELECT * FROM x WHERE rn=1;",
+    "expected": "At most one row per patient."
+  },
+  {
+    "id": "SQLX-05",
+    "title": "Anti-join orphan audit",
+    "scenario": "Find medication orders with no encounter.",
+    "task": "Use NOT EXISTS; compare with LEFT JOIN IS NULL.",
+    "solution": "SELECT o.* FROM medication_orders o WHERE NOT EXISTS (SELECT 1 FROM encounters e WHERE e.encounter_id=o.encounter_id);",
+    "expected": "41 intentional orphan order rows in this training dataset."
+  },
+  {
+    "id": "SQLX-06",
+    "title": "NULL-safe cost analysis",
+    "scenario": "Calculate order value without treating missing unit cost as zero.",
+    "task": "Report missing-cost count separately; sum only known values.",
+    "solution": "SELECT COUNT(*) total_rows, SUM(CASE WHEN unit_cost_inr IS NULL THEN 1 ELSE 0 END) missing_cost_rows, SUM(quantity*unit_cost_inr) known_value_inr FROM medication_orders;",
+    "expected": "Missing costs remain unknown; aggregate is partial known value."
+  },
+  {
+    "id": "SQLX-07",
+    "title": "Rolling 7-day volume",
+    "scenario": "Create a daily order count and seven-calendar-day rolling total.",
+    "task": "Aggregate to date first; use ROWS frame and note missing dates limitation.",
+    "solution": "WITH daily AS (SELECT order_date, COUNT(*) n FROM medication_orders GROUP BY order_date) SELECT order_date,n,SUM(n) OVER(ORDER BY order_date ROWS BETWEEN 6 PRECEDING AND CURRENT ROW) rolling_7_rows FROM daily;",
+    "expected": "Seven rows, not necessarily seven calendar days if dates are absent."
+  },
+  {
+    "id": "SQLX-08",
+    "title": "Cohort entry and follow-up",
+    "scenario": "Define index encounter and subsequent encounter within 30 days.",
+    "task": "State date boundaries and patient-level grain.",
+    "solution": "WITH x AS (SELECT patient_id, admission_date, encounter_id, LEAD(admission_date) OVER(PARTITION BY patient_id ORDER BY admission_date) next_date FROM encounters) SELECT *, CASE WHEN julianday(next_date)-julianday(admission_date) BETWEEN 1 AND 30 THEN 1 ELSE 0 END subsequent_30d FROM x;",
+    "expected": "A subsequent encounter is not automatically an unplanned readmission."
+  },
+  {
+    "id": "SQLX-09",
+    "title": "Deduplicate business records",
+    "scenario": "Identify duplicate-like order rows without deleting automatically.",
+    "task": "Use business key candidates and ROW_NUMBER; preserve audit trail.",
+    "solution": "SELECT encounter_id,therapeutic_class,order_date,COUNT(*) candidate_rows FROM medication_orders GROUP BY encounter_id,therapeutic_class,order_date HAVING COUNT(*)>1;",
+    "expected": "Candidates require review; repeated same-class orders can be legitimate."
+  },
+  {
+    "id": "SQLX-10",
+    "title": "Conditional aggregation",
+    "scenario": "Produce order count and known cost by department.",
+    "task": "Join department at encounter grain after order aggregation.",
+    "solution": "WITH o AS (SELECT encounter_id,COUNT(*) order_lines,SUM(quantity*unit_cost_inr) known_cost FROM medication_orders GROUP BY encounter_id) SELECT e.department,SUM(COALESCE(o.order_lines,0)) lines,SUM(o.known_cost) known_cost FROM encounters e LEFT JOIN o ON o.encounter_id=e.encounter_id GROUP BY e.department;",
+    "expected": "No fan-out; missing unit costs remain excluded from known cost."
+  },
+  {
+    "id": "SQLX-11",
+    "title": "Percentile and median portability",
+    "scenario": "Compute median LOS with portable strategy.",
+    "task": "Explain SQLite lacks built-in percentile_cont in common builds; provide sorted extraction or extension-specific syntax.",
+    "solution": "SELECT department,length_of_stay_days FROM encounters WHERE length_of_stay_days IS NOT NULL ORDER BY department,length_of_stay_days;",
+    "expected": "Calculate median per department in client/Python or PostgreSQL percentile_cont."
+  },
+  {
+    "id": "SQLX-12",
+    "title": "Query plan and indexing",
+    "scenario": "Inspect a date-filter query and justify an index.",
+    "task": "Use EXPLAIN QUERY PLAN in SQLite; avoid index proliferation.",
+    "solution": "EXPLAIN QUERY PLAN SELECT * FROM medication_orders WHERE order_date BETWEEN '2026-01-01' AND '2026-03-31';",
+    "expected": "Compare plan before/after a suitable index; document measured context."
+  },
+  {
+    "id": "SQLX-13",
+    "title": "Cohort denominator integrity",
+    "scenario": "Compare patient count, encounter count and order count.",
+    "task": "Never mix grains in one denominator.",
+    "solution": "SELECT 'encounters' entity,COUNT(DISTINCT patient_id) distinct_people,COUNT(*) rows FROM encounters UNION ALL SELECT 'orders',COUNT(DISTINCT encounter_id),COUNT(*) FROM medication_orders;",
+    "expected": "Different grains should produce different counts; order encounter count includes orphan keys."
+  },
+  {
+    "id": "SQLX-14",
+    "title": "Pivot-style aggregation",
+    "scenario": "Create department-by-drug-class summary.",
+    "task": "Use conditional aggregation; include unknown class bucket.",
+    "solution": "SELECT department,SUM(CASE WHEN therapeutic_class='Antihypertensive' THEN 1 ELSE 0 END) antihypertensive_lines,SUM(CASE WHEN therapeutic_class IS NULL OR therapeutic_class='' THEN 1 ELSE 0 END) unknown_class_lines FROM medication_orders o LEFT JOIN encounters e ON e.encounter_id=o.encounter_id GROUP BY department;",
+    "expected": "Orphan orders may have NULL department; retain or report separately."
+  },
+  {
+    "id": "SQLX-15",
+    "title": "Date boundary correctness",
+    "scenario": "Filter all orders in a month safely.",
+    "task": "Prefer half-open interval over timestamp end-of-day literals.",
+    "solution": "SELECT COUNT(*) FROM medication_orders WHERE order_date >= '2026-01-01' AND order_date < '2026-02-01';",
+    "expected": "Includes all January timestamps if column stores ISO date/time."
+  },
+  {
+    "id": "SQLX-16",
+    "title": "CTE cohort with exclusion",
+    "scenario": "Build a CKD cohort excluding missing baseline SBP.",
+    "task": "Define missingness and exclusion count explicitly.",
+    "solution": "SELECT COUNT(*) eligible FROM encounters WHERE ckd_flag=1 AND baseline_sbp IS NOT NULL;",
+    "expected": "Report CKD records excluded for missing SBP separately."
+  },
+  {
+    "id": "SQLX-17",
+    "title": "Medication utilisation intensity",
+    "scenario": "Calculate order lines per encounter by department.",
+    "task": "Use encounter denominator and state that order lines are not administrations.",
+    "solution": "WITH o AS (SELECT encounter_id,COUNT(*) n FROM medication_orders GROUP BY encounter_id) SELECT e.department,COUNT(*) encounters, SUM(COALESCE(o.n,0)) lines,ROUND(1.0*SUM(COALESCE(o.n,0))/COUNT(*),2) lines_per_encounter FROM encounters e LEFT JOIN o ON o.encounter_id=e.encounter_id GROUP BY e.department;",
+    "expected": "Metric measures order-line intensity only."
+  },
+  {
+    "id": "SQLX-18",
+    "title": "Incremental load watermark",
+    "scenario": "Select records changed after a stored watermark.",
+    "task": "Discuss late-arriving records, inclusive/exclusive boundary and idempotent merge.",
+    "solution": "SELECT * FROM medication_orders WHERE updated_at > '2026-03-01T00:00:00';",
+    "expected": "Production pipeline also needs overlap/reconciliation or CDC guarantees."
+  },
+  {
+    "id": "SQLX-19",
+    "title": "Case-mix stratification",
+    "scenario": "Compare LOS within age bands and diabetes status.",
+    "task": "Stratification is descriptive; small cells require suppression.",
+    "solution": "SELECT CASE WHEN age<40 THEN '<40' WHEN age<65 THEN '40-64' ELSE '65+' END age_band,diabetes_flag,COUNT(*) n,AVG(length_of_stay_days) mean_los FROM encounters GROUP BY age_band,diabetes_flag;",
+    "expected": "Interpret cell sizes and confounding."
+  },
+  {
+    "id": "SQLX-20",
+    "title": "Data quality exception rate",
+    "scenario": "Calculate missing SBP and impossible LOS checks.",
+    "task": "Return numerator and denominator, not just percentages.",
+    "solution": "SELECT SUM(CASE WHEN baseline_sbp IS NULL THEN 1 ELSE 0 END) missing_sbp, SUM(CASE WHEN length_of_stay_days<0 THEN 1 ELSE 0 END) negative_los,COUNT(*) denominator FROM encounters;",
+    "expected": "Explicitly state validation rules and exceptions."
+  }
+]

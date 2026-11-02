@@ -1,0 +1,8 @@
+patients=150
+encounters=500
+orders=900
+unmatched_encounter_patients=0
+unmatched_order_encounters=0
+department_encounters_reconciled=500
+medication_order_lines_reconciled=900
+All records are synthetic; no clinical or hospital performance inference is supported.

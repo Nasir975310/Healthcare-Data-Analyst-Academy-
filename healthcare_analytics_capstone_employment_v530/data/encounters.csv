@@ -1,0 +1,14 @@
+encounter_id,patient_id,encounter_date,encounter_type,status
+EN001,PT001,2026-01-04,Outpatient,Completed
+EN002,PT002,2026-01-09,Inpatient,Completed
+EN003,PT003,2026-01-15,Outpatient,Completed
+EN004,PT001,2026-02-02,Outpatient,Completed
+EN005,PT004,2026-02-11,Emergency,Completed
+EN006,PT005,2026-02-19,Outpatient,Completed
+EN007,PT006,2026-03-03,Inpatient,Completed
+EN008,PT002,2026-03-08,Outpatient,Completed
+EN009,PT007,2026-03-16,Outpatient,Completed
+EN010,PT008,2026-03-24,Emergency,Completed
+EN011,PT003,2026-04-01,Outpatient,Completed
+EN012,PT005,2026-04-12,Outpatient,Cancelled
+EN013,PT999,2026-04-18,Outpatient,Completed

@@ -1,0 +1,11 @@
+# Portfolio release checklist
+- [ ] Re-run source pipeline from clean inputs.
+- [ ] Run v5.33 validator and v5.34 local evidence capture.
+- [ ] Run PostgreSQL workflow and retain generated evidence if Docker is available.
+- [ ] Build PBIX and reconcile every KPI to SQL; otherwise label BI asset as specification.
+- [ ] Review `.gitignore`, staged diff and history for secrets/PHI.
+- [ ] Confirm synthetic data and asset licensing.
+- [ ] Add README, architecture, KPI dictionary, data dictionary and limitations.
+- [ ] Push to repository and record commit SHA.
+- [ ] Clone cleanly and reproduce the pipeline.
+- [ ] Complete practical rubric and interview walkthrough.

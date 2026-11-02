@@ -1,0 +1,13 @@
+{
+  "local_sample_export_built": true,
+  "sample_export_tests": "5/5 passed",
+  "sample_pipeline_exit_code": 0,
+  "sample_preflight_findings": 0,
+  "final_publication_scanner_findings": 0,
+  "manual_privacy_review": false,
+  "license_selected": false,
+  "github_repo_created": false,
+  "github_push_performed": false,
+  "live_github_actions": false,
+  "github_clean_clone_test": false
+}

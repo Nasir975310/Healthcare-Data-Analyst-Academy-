@@ -1,0 +1,60 @@
+[
+  {
+    "id": "q1",
+    "q": "Which project layer should generally preserve source extracts unchanged?",
+    "options": [
+      "Raw data",
+      "Final dashboard",
+      "Presentation theme",
+      "Temporary chart"
+    ],
+    "correct": 0,
+    "why": "Preserving raw input supports traceability and reproducibility."
+  },
+  {
+    "id": "q2",
+    "q": "A reproducible notebook should be checked by:",
+    "options": [
+      "Running random cells only",
+      "Restarting the kernel and running all cells in order",
+      "Deleting all markdown",
+      "Hiding outputs without checking"
+    ],
+    "correct": 1,
+    "why": "This reveals hidden state and stale outputs."
+  },
+  {
+    "id": "q3",
+    "q": "A commit in Git is:",
+    "options": [
+      "A database password",
+      "A recorded snapshot/change set in version history",
+      "A chart type",
+      "A clinical approval"
+    ],
+    "correct": 1,
+    "why": "A commit records a coherent set of changes."
+  },
+  {
+    "id": "q4",
+    "q": "A private repository automatically makes patient data safe to upload:",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct": 1,
+    "why": "Privacy settings do not establish governance or security approval."
+  },
+  {
+    "id": "q5",
+    "q": "A strong analytical handoff includes:",
+    "options": [
+      "Only the final chart",
+      "Only a verbal explanation",
+      "Definitions, inputs, code, QA, limitations and next actions",
+      "A screenshot without context"
+    ],
+    "correct": 2,
+    "why": "A handoff should let an authorized colleague inspect and continue the work."
+  }
+]

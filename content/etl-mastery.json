@@ -1,0 +1,207 @@
+{
+  "version": "2.4.0",
+  "title": "Healthcare Data Engineering and ETL Laboratory",
+  "description": "Eight practical ETL challenges covering batch ingestion, paginated APIs, data contracts, quality controls, database loading, idempotency, scheduling and client handoff.",
+  "challenges": [
+    {
+      "id": "ETL01",
+      "title": "ETL architecture, source inventory and data contracts",
+      "level": "Foundation",
+      "time": "30\u201340 min",
+      "scenario": "A hospital analytics team receives encounter and medication-order extracts from two systems. Before coding, define what enters the pipeline and what each record means.",
+      "tasks": [
+        "Document source owner, format, refresh frequency, primary key, grain and expected row count.",
+        "Define required fields, data types, allowed nulls and key constraints.",
+        "Draw Extract \u2192 Raw \u2192 Validate \u2192 Transform \u2192 Curated Mart \u2192 Report.",
+        "Write a data contract for encounter and medication-order records.",
+        "State why a medication order is not proof of administration or dispensing."
+      ],
+      "starter": "Encounter grain: one row per encounter_id.\nMedication-order grain: one row per order_id.\nRequired encounter key: encounter_id.\nRequired order key: order_id; encounter_id is a foreign reference.",
+      "hint": "Do not design a table before defining its grain. One patient may have multiple encounters; one encounter may have multiple orders.",
+      "solution": "Use `etl/DATA_CONTRACTS.md` and `etl/PIPELINE_ARCHITECTURE.md`. Define keys and required types, then map each transformation to a test and an owner. Record the synthetic-only restriction and data lineage.",
+      "expected": "A one-page source inventory, two data contracts and a pipeline diagram with clear grains and failure paths.",
+      "acceptance": [
+        "Grain and keys explicitly stated.",
+        "Null and duplicate rules defined.",
+        "Source and refresh assumptions documented.",
+        "Clinical meaning limitations included."
+      ]
+    },
+    {
+      "id": "ETL02",
+      "title": "Batch ingestion from CSV with reproducible manifests",
+      "level": "Foundation",
+      "time": "35\u201345 min",
+      "scenario": "A weekly batch of encounter and order files must be ingested reproducibly, with proof of which files were processed.",
+      "tasks": [
+        "Create a virtual environment and install requirements-etl.txt.",
+        "Run the ETL script in CSV mode.",
+        "Inspect raw tables, curated marts, ETL run log, quality report and manifest.",
+        "Record source checksums and row counts.",
+        "Run the pipeline a second time and confirm the mart row counts do not grow."
+      ],
+      "starter": "Linux / Fish:\npython -m venv .venv\nsource .venv/bin/activate.fish\npip install -r requirements-etl.txt\npython scripts/healthcare_etl_pipeline.py --source csv\n\nWindows PowerShell:\npy -m venv .venv\n.\\.venv\\Scripts\\Activate.ps1\npy -m pip install -r requirements-etl.txt\npy scripts\\healthcare_etl_pipeline.py --source csv",
+      "hint": "Raw tables preserve source payloads; curated marts apply validation and normalisation. INSERT OR REPLACE makes the supplied key-based load repeatable for this training case.",
+      "solution": "Run the commands above from the Academy root. Open `assignments/outputs/healthcare_etl_training.db` in DBeaver or SQLite. Inspect `etl_run_log`, `data_quality_results` and the manifest JSON. Run the same command again and compare table counts.",
+      "expected": "80 encounter records and 150 medication-order records in the supplied source. This source does not include unit cost, so the pipeline reports the field as not supplied rather than treating all rows as missing-cost exceptions.",
+      "acceptance": [
+        "Pipeline exits successfully.",
+        "Manifest includes file hashes and counts.",
+        "Raw and curated tables populated.",
+        "Repeat run does not duplicate mart keys.",
+        "Logs and quality output retained."
+      ]
+    },
+    {
+      "id": "ETL03",
+      "title": "Paginated API extraction and resilient request design",
+      "level": "Intermediate",
+      "time": "40\u201355 min",
+      "scenario": "A source API returns records in pages. A robust extractor must detect missing pages and avoid leaking credentials.",
+      "tasks": [
+        "Inspect the mock API JSON pages and identify the pagination metadata.",
+        "Run the pipeline with --source mock-api.",
+        "Review the generic REST extractor template and document its expected `results` and `next` response contract.",
+        "Explain HTTPS, bearer-token environment variables, timeouts, retry/backoff, rate limits and pagination safety.",
+        "Do not call a real clinical API or put tokens in source code."
+      ],
+      "starter": "python scripts/healthcare_etl_pipeline.py --source mock-api\n\nGeneric REST environment variables:\nHDA_API_BASE_URL=https://approved.example\nHDA_API_ENDPOINT=/v1/encounters\nHDA_API_TOKEN=<set in environment, never commit>",
+      "hint": "The mock API path reads local fixture files and tests pagination completeness. The generic REST extractor is a template only; real APIs differ in authentication, paging, schemas and rate limits.",
+      "solution": "Use `etl/mock_api/` to inspect page numbers, total_records and next_page. The pipeline verifies page order and total record count. `scripts/healthcare_api_extractor_template.py` demonstrates a separate full-next-URL pattern with HTTPS enforcement, environment-based bearer token, timeouts and retries. Adapt only after confirming the real API contract.",
+      "expected": "Mock API route extracts 80 encounters and 150 orders. No network request is required or performed by the Academy pipeline.",
+      "acceptance": [
+        "All pages accounted for.",
+        "Record total matches advertised total.",
+        "Credentials absent from source and logs.",
+        "Retry, timeout and rate-limit behaviour explained.",
+        "No unapproved live data access."
+      ]
+    },
+    {
+      "id": "ETL04",
+      "title": "Data quality rules, quarantine and failure handling",
+      "level": "Intermediate",
+      "time": "45\u201360 min",
+      "scenario": "A medication-order record references an encounter that does not exist. The pipeline must retain evidence and prevent it from silently entering the curated mart.",
+      "tasks": [
+        "Review required-key, uniqueness, date, quantity and foreign-reference rules.",
+        "Inject a deliberately invalid encounter reference into a copy of the source file.",
+        "Run the pipeline and inspect quarantine_orders.",
+        "Compare raw row count, curated row count and quarantined count.",
+        "Decide which issues are fatal errors versus warnings."
+      ],
+      "starter": "Validation dimensions:\nCompleteness: required fields present\nUniqueness: primary key unique\nValidity: dates parse; quantity > 0\nReferential integrity: order.encounter_id exists in encounters\nTimeliness: source extract timestamp is current",
+      "hint": "Do not delete a bad row without retaining its source payload and rejection reason. A warning does not necessarily block the whole batch; a broken primary key or invalid date may.",
+      "solution": "Use the ETL01 invalid-reference scenario. The supplied script preserves raw data and quarantines orphan orders with reason `orphan_encounter_reference`. It does not load them into the curated order mart. `--fail-on-errors` blocks the run when ERROR-severity rules are violated.",
+      "expected": "In the supplied clean source: 80 encounters, 150 orders, no orphan records. In the injected test: 1 order quarantined and 149 orders loaded to the mart.",
+      "acceptance": [
+        "Invalid record retained in raw or quarantine.",
+        "Reason is queryable.",
+        "Mart excludes the orphan.",
+        "Source and curated counts reconcile.",
+        "Fatal and nonfatal rules documented."
+      ]
+    },
+    {
+      "id": "ETL05",
+      "title": "Transformations, dimensional loading and SQL validation",
+      "level": "Intermediate",
+      "time": "45\u201360 min",
+      "scenario": "Raw extracts need consistent labels, parsed dates and analytics-ready tables.",
+      "tasks": [
+        "Inspect the normalisation logic in healthcare_etl_pipeline.py.",
+        "Review raw_encounters, raw_medication_orders, mart_encounters and mart_medication_orders.",
+        "Run the SQL audit queries.",
+        "Check uniqueness and referential integrity at the curated grain.",
+        "Document why missing costs are not replaced with zero."
+      ],
+      "starter": "sqlite3 assignments/outputs/healthcare_etl_training.db\n\nThen execute sql/healthcare_etl/etl_audit_queries.sql in SQLite or DBeaver.",
+      "hint": "A missing cost is unknown, not zero. Preserve NULL and exclude it from monetary totals unless an explicit imputation policy is approved.",
+      "solution": "Use the SQL audit file to inspect run logs, mart grain, quality findings and left-join coverage. Confirm the encounter count and order count at their own grains. Never join raw order rows to encounter rows and then sum encounter-level metrics without deduplication.",
+      "expected": "Curated encounter/order tables match source row counts when no records fail validation; foreign-reference exceptions are separated into quarantine.",
+      "acceptance": [
+        "Dates and text are normalised.",
+        "Primary keys remain unique.",
+        "SQL totals reconcile to the ETL manifest.",
+        "No silent NULL-to-zero conversion.",
+        "Grain preserved across joins."
+      ]
+    },
+    {
+      "id": "ETL06",
+      "title": "Incremental loading, idempotency and run observability",
+      "level": "Advanced",
+      "time": "50\u201365 min",
+      "scenario": "The pipeline runs repeatedly. It must avoid duplicate records and provide a run history that helps an analyst troubleshoot failures.",
+      "tasks": [
+        "Run the same source twice against the same SQLite database.",
+        "Compare mart counts and run log entries.",
+        "Explain the difference between append-only, replace/upsert and watermark-based incremental loads.",
+        "Identify why a timestamp watermark needs late-arriving data handling.",
+        "Propose run-level metrics: source rows, loaded rows, rejected rows, duration, status and checksum."
+      ],
+      "starter": "Current training pattern: INSERT OR REPLACE by primary key.\nProduction design considerations: updated_at watermark, overlap window, deduplication key, late-arriving events, transaction boundary and retry policy.",
+      "hint": "Idempotency means repeating the same load does not create duplicate business records. It does not automatically solve changed records, deletes or late-arriving updates.",
+      "solution": "Execute the pipeline twice. Mart counts should remain stable while `etl_run_log` records two distinct runs. Document a watermark design using a stable source `updated_at`, overlap window and deterministic upsert; do not implement a watermark on order_date alone if records can be corrected later.",
+      "expected": "Stable curated counts across repeated identical runs and a distinct audit record per run.",
+      "acceptance": [
+        "Repeat run tested.",
+        "Stable primary-key counts.",
+        "Run log captures both executions.",
+        "Late-arriving update strategy documented.",
+        "No claim that full CDC is implemented."
+      ]
+    },
+    {
+      "id": "ETL07",
+      "title": "Scheduling, monitoring and operational handoff",
+      "level": "Advanced",
+      "time": "45\u201360 min",
+      "scenario": "A small analytics team needs a scheduled daily refresh and an understandable recovery procedure.",
+      "tasks": [
+        "Review Linux systemd user timer and Windows Task Scheduler examples.",
+        "Configure a local schedule only after a successful manual run.",
+        "Inspect logs and manifests after scheduled execution.",
+        "Document failure alert, rerun, backup and retention steps.",
+        "Explain why a desktop user timer is not production orchestration."
+      ],
+      "starter": "Linux:\nsystemctl --user daemon-reload\nsystemctl --user enable --now hda-etl.timer\nsystemctl --user list-timers\n\nWindows: use the supplied `etl/windows` PowerShell instructions.",
+      "hint": "First verify the script works manually. Scheduled tasks run with a different working directory and environment; use absolute paths and explicit interpreters.",
+      "solution": "Follow `etl/systemd/README.md` on Linux or `etl/windows/README.md` on Windows. Confirm the timer points to the correct extracted folder. Inspect service logs and output manifests. Disable the timer when the exercise is complete.",
+      "expected": "A documented local schedule with a successful run, visible logs and a tested disable procedure.",
+      "acceptance": [
+        "Manual run succeeds before scheduling.",
+        "Paths and environment explicit.",
+        "Logs and run manifest retained.",
+        "Disable and recovery steps documented.",
+        "No production-grade reliability claim."
+      ]
+    },
+    {
+      "id": "ETL08",
+      "title": "Timed end-to-end data pipeline assignment",
+      "level": "Professional",
+      "time": "90 min timed + 30 min review",
+      "scenario": "A remote healthcare client requests a reproducible pipeline that loads a weekly encounter and medication-order extract into an analytics database and provides a concise quality report.",
+      "tasks": [
+        "Create source inventory and data contracts.",
+        "Run CSV or mock API ingestion.",
+        "Validate keys, dates, quantities and references.",
+        "Transform and load curated tables.",
+        "Produce quality findings, manifest and SQL validation evidence.",
+        "Write a concise handoff with limitations and recovery steps."
+      ],
+      "starter": "100-point rubric:\nExtraction and completeness 15\nData contracts and validation 20\nTransformation and grain 15\nDatabase load and idempotency 15\nLogging, manifest and QA evidence 15\nSecurity/privacy and limitations 10\nHandoff and reproducibility 10",
+      "hint": "A strong submission makes failure visible and traceable. Do not equate medication orders with dispensing or administration, and do not use real patient data in the exercise.",
+      "solution": "Use the provided pipeline and audit SQL as the baseline. Include the run manifest, quality report, ETL run log, curated SQLite database, source checksums, a short README and a client handoff. Target \u226580/100; any silent row loss, duplicate key or untraceable failure requires remediation.",
+      "expected": "A reproducible local pipeline with a complete audit trail and explicit synthetic-data caveats.",
+      "acceptance": [
+        "Pipeline runs from documented commands.",
+        "Raw and curated layers are distinct.",
+        "Data-quality exceptions are traceable.",
+        "Repeated run does not duplicate marts.",
+        "Manifest, logs and handoff included."
+      ]
+    }
+  ]
+}

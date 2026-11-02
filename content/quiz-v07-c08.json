@@ -1,0 +1,74 @@
+[
+  {
+    "id": "q1",
+    "q": "Which practice best fits this chapter's core topic?",
+    "options": [
+      "Use a random split regardless of data structure",
+      "Define the task and validate methods against the intended use",
+      "Optimise accuracy only",
+      "Skip documentation if code runs"
+    ],
+    "correct": 1,
+    "why": "Method selection and validation must follow the question, data structure and intended use."
+  },
+  {
+    "id": "q2",
+    "q": "Which metric or check is most relevant to the chapter?",
+    "options": [
+      "A single aggregate accuracy score for every problem",
+      "A set of metrics aligned with outcome prevalence and operational harms",
+      "Training score alone",
+      "A chart without denominators"
+    ],
+    "correct": 1,
+    "why": "Evaluation should be fit for purpose and include uncertainty and operational context."
+  },
+  {
+    "id": "q3",
+    "q": "What is the safest interpretation of an exploratory model output?",
+    "options": [
+      "It is a diagnosis",
+      "It is proof of causality",
+      "It is a result requiring validation and domain review",
+      "It is ready for deployment"
+    ],
+    "correct": 2,
+    "why": "Exploratory outputs are not clinical truth and require validation and review."
+  },
+  {
+    "id": "q4",
+    "q": "What should a reproducible handoff include?",
+    "options": [
+      "Only a screenshot",
+      "Code, dependencies, data definitions, validation evidence and limitations",
+      "A private access token",
+      "Unlabelled commands"
+    ],
+    "correct": 1,
+    "why": "A handoff must allow another analyst to reproduce and assess the work."
+  },
+  {
+    "id": "q5",
+    "q": "What is the central practical safeguard in 'Time series and forecasting'?",
+    "options": [
+      "Ignore platform differences",
+      "Use explicit assumptions, validation and a reproducible workflow",
+      "Use real patient data on a personal device",
+      "Treat output as clinical advice"
+    ],
+    "correct": 1,
+    "why": "The chapter's workflow must be reproducible, validated and appropriately bounded."
+  },
+  {
+    "id": "q6",
+    "q": "How should the Linux and Windows routes be handled?",
+    "options": [
+      "Run Linux commands in CMD unchanged",
+      "Run PowerShell commands in Fish unchanged",
+      "Use shell-specific instructions and verify equivalent outcomes",
+      "Skip Windows verification"
+    ],
+    "correct": 2,
+    "why": "Shell syntax, paths, permissions and service management differ by OS."
+  }
+]

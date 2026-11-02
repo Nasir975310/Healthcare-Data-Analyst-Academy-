@@ -1,0 +1,21 @@
+{
+  "warehouse": "synthetic_hospital_analytics",
+  "engine": "SQLite",
+  "source_pipeline": "v5.25 FHIR ETL",
+  "cohort_status": "finished",
+  "dimensions": [
+    "date",
+    "patient",
+    "encounter",
+    "terminology"
+  ],
+  "facts": {
+    "fact_observation": "one row per Observation",
+    "fact_medication_request": "one row per MedicationRequest"
+  },
+  "marts": {
+    "mart_encounter_summary": "one row per Encounter",
+    "mart_patient_cohort": "one row per qualifying Patient"
+  },
+  "patient_dimension_strategy": "Type 1 in this demo; version columns included to prepare for Type 2 history. No historical snapshots are supplied."
+}

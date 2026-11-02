@@ -1,0 +1,62 @@
+[
+  {
+    "id": "q1",
+    "q": "Power Query follows which broad workflow?",
+    "options": [
+      "Extract, transform, load",
+      "Predict, classify, deploy",
+      "Sort, print, archive",
+      "Design, diagnose, prescribe"
+    ],
+    "correct": 0,
+    "why": "Power Query connects to sources, transforms data and loads outputs."
+  },
+  {
+    "id": "q2",
+    "q": "Merge in Power Query is most similar to:",
+    "options": [
+      "Appending rows",
+      "Joining tables by keys",
+      "Deleting columns",
+      "Sorting"
+    ],
+    "correct": 1,
+    "why": "Merge joins columns from related tables using key fields."
+  },
+  {
+    "id": "q3",
+    "q": "Append is used to:",
+    "options": [
+      "Stack compatible tables vertically",
+      "Match a key and add lookup columns",
+      "Create a chart",
+      "Remove nulls"
+    ],
+    "correct": 0,
+    "why": "Append adds rows from compatible tables."
+  },
+  {
+    "id": "q4",
+    "q": "A merge increases row count unexpectedly. What should be checked?",
+    "options": [
+      "Font size",
+      "Duplicate keys and join cardinality",
+      "Worksheet color",
+      "File name"
+    ],
+    "correct": 1,
+    "why": "One-to-many or many-to-many matches can multiply rows."
+  },
+  {
+    "id": "q5",
+    "q": "Why preserve raw source files?",
+    "options": [
+      "To avoid all validation",
+      "To maintain traceability and rerun transformations",
+      "To make files larger",
+      "To hide changes"
+    ],
+    "correct": 1,
+    "why": "Raw inputs support auditability and reproducible transformation."
+  }
+]

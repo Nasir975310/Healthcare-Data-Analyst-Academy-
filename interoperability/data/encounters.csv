@@ -1,0 +1,121 @@
+source_encounter_id,source_patient_id,class_code,status,start_date,end_date,department
+ENC-00001,PT-0002,IMP,finished,2025-01-04,2025-01-05,General Medicine
+ENC-00002,PT-0003,AMB,finished,2025-01-07,2025-01-09,Endocrinology
+ENC-00003,PT-0004,EMER,finished,2025-01-10,2025-01-13,Endocrinology
+ENC-00004,PT-0005,EMER,cancelled,2025-01-13,2025-01-17,Emergency
+ENC-00005,PT-0006,IMP,finished,2025-01-16,2025-01-21,General Medicine
+ENC-00006,PT-0007,IMP,cancelled,2025-01-19,2025-01-25,Cardiology
+ENC-00007,PT-0008,EMER,cancelled,2025-01-22,2025-01-29,General Medicine
+ENC-00008,PT-0009,EMER,in-progress,2025-01-25,2025-01-25,Endocrinology
+ENC-00009,PT-0010,EMER,finished,2025-01-28,2025-01-29,Emergency
+ENC-00010,PT-0011,IMP,finished,2025-01-31,2025-02-02,Emergency
+ENC-00011,PT-0012,AMB,finished,2025-02-03,2025-02-06,Endocrinology
+ENC-00012,PT-0013,AMB,in-progress,2025-02-06,2025-02-10,General Medicine
+ENC-00013,PT-0014,AMB,cancelled,2025-02-09,2025-02-14,Emergency
+ENC-00014,PT-0015,EMER,finished,2025-02-12,2025-02-18,Cardiology
+ENC-00015,PT-0016,EMER,finished,2025-02-15,2025-02-22,Cardiology
+ENC-00016,PT-0017,IMP,cancelled,2025-02-18,2025-02-18,Emergency
+ENC-00017,PT-0018,EMER,finished,2025-02-21,2025-02-22,Endocrinology
+ENC-00018,PT-0019,AMB,cancelled,2025-02-24,2025-02-26,General Medicine
+ENC-00019,PT-0020,AMB,finished,2025-02-27,2025-03-02,General Medicine
+ENC-00020,PT-0021,IMP,cancelled,2025-03-02,2025-03-06,Endocrinology
+ENC-00021,PT-0022,AMB,finished,2025-03-05,2025-03-10,Nephrology
+ENC-00022,PT-0023,AMB,cancelled,2025-03-08,2025-03-14,Nephrology
+ENC-00023,PT-0024,IMP,finished,2025-03-11,2025-03-18,Nephrology
+ENC-00024,PT-0025,IMP,cancelled,2025-03-14,2025-03-14,Endocrinology
+ENC-00025,PT-0026,EMER,cancelled,2025-03-17,2025-03-18,General Medicine
+ENC-00026,PT-0027,IMP,cancelled,2025-03-20,2025-03-22,Nephrology
+ENC-00027,PT-0028,EMER,finished,2025-03-23,2025-03-26,Emergency
+ENC-00028,PT-0029,AMB,in-progress,2025-03-26,2025-03-30,Nephrology
+ENC-00029,PT-0030,EMER,cancelled,2025-03-29,2025-04-03,Endocrinology
+ENC-00030,PT-0031,IMP,finished,2025-04-01,2025-04-07,Emergency
+ENC-00031,PT-0032,IMP,cancelled,2025-04-04,2025-04-11,Nephrology
+ENC-00032,PT-0033,AMB,in-progress,2025-04-07,2025-04-07,Endocrinology
+ENC-00033,PT-0034,IMP,finished,2025-04-10,2025-04-11,General Medicine
+ENC-00034,PT-0035,IMP,cancelled,2025-04-13,2025-04-15,Cardiology
+ENC-00035,PT-0036,IMP,in-progress,2025-04-16,2025-04-19,Cardiology
+ENC-00036,PT-0037,AMB,finished,2025-04-19,2025-04-23,Cardiology
+ENC-00037,PT-0038,AMB,in-progress,2025-04-22,2025-04-27,Cardiology
+ENC-00038,PT-0039,IMP,cancelled,2025-04-25,2025-05-01,Endocrinology
+ENC-00039,PT-0040,AMB,cancelled,2025-04-28,2025-05-05,Cardiology
+ENC-00040,PT-0041,AMB,finished,2025-05-01,2025-05-01,Emergency
+ENC-00041,PT-0042,AMB,cancelled,2025-05-04,2025-05-05,Endocrinology
+ENC-00042,PT-0043,IMP,in-progress,2025-05-07,2025-05-09,Emergency
+ENC-00043,PT-0044,IMP,cancelled,2025-05-10,2025-05-13,Endocrinology
+ENC-00044,PT-0045,EMER,finished,2025-05-13,2025-05-17,Endocrinology
+ENC-00045,PT-0046,AMB,in-progress,2025-05-16,2025-05-21,Emergency
+ENC-00046,PT-0047,EMER,in-progress,2025-05-19,2025-05-25,General Medicine
+ENC-00047,PT-0048,IMP,cancelled,2025-05-22,2025-05-29,Emergency
+ENC-00048,PT-0049,EMER,in-progress,2025-05-25,2025-05-25,Cardiology
+ENC-00049,PT-0050,AMB,finished,2025-05-28,2025-05-29,Emergency
+ENC-00050,PT-0051,IMP,finished,2025-05-31,2025-06-02,Endocrinology
+ENC-00051,PT-0052,IMP,in-progress,2025-06-03,2025-06-06,General Medicine
+ENC-00052,PT-0053,AMB,finished,2025-06-06,2025-06-10,General Medicine
+ENC-00053,PT-0054,IMP,cancelled,2025-06-09,2025-06-14,Nephrology
+ENC-00054,PT-0055,EMER,cancelled,2025-06-12,2025-06-18,Emergency
+ENC-00055,PT-0056,EMER,finished,2025-06-15,2025-06-22,Nephrology
+ENC-00056,PT-0057,IMP,finished,2025-06-18,2025-06-18,General Medicine
+ENC-00057,PT-0058,EMER,in-progress,2025-06-21,2025-06-22,Emergency
+ENC-00058,PT-0059,EMER,in-progress,2025-06-24,2025-06-26,Cardiology
+ENC-00059,PT-0060,EMER,finished,2025-06-27,2025-06-30,Endocrinology
+ENC-00060,PT-0061,AMB,in-progress,2025-06-30,2025-07-04,General Medicine
+ENC-00061,PT-0062,IMP,cancelled,2025-07-03,2025-07-08,Emergency
+ENC-00062,PT-0063,IMP,in-progress,2025-07-06,2025-07-12,General Medicine
+ENC-00063,PT-0064,EMER,in-progress,2025-07-09,2025-07-16,Endocrinology
+ENC-00064,PT-0065,EMER,in-progress,2025-07-12,2025-07-12,Cardiology
+ENC-00065,PT-0066,IMP,in-progress,2025-07-15,2025-07-16,Endocrinology
+ENC-00066,PT-0067,IMP,finished,2025-07-18,2025-07-20,Nephrology
+ENC-00067,PT-0068,EMER,finished,2025-07-21,2025-07-24,Cardiology
+ENC-00068,PT-0069,EMER,in-progress,2025-07-24,2025-07-28,Endocrinology
+ENC-00069,PT-0070,AMB,finished,2025-07-27,2025-08-01,Emergency
+ENC-00070,PT-0071,IMP,finished,2025-07-30,2025-08-05,Emergency
+ENC-00071,PT-0072,EMER,cancelled,2025-08-02,2025-08-09,Cardiology
+ENC-00072,PT-0073,IMP,in-progress,2025-08-05,2025-08-05,Nephrology
+ENC-00073,PT-0074,EMER,finished,2025-08-08,2025-08-09,Emergency
+ENC-00074,PT-0075,IMP,finished,2025-08-11,2025-08-13,Cardiology
+ENC-00075,PT-0076,AMB,cancelled,2025-08-14,2025-08-17,Endocrinology
+ENC-00076,PT-0077,AMB,in-progress,2025-08-17,2025-08-21,Nephrology
+ENC-00077,PT-0078,IMP,finished,2025-08-20,2025-08-25,General Medicine
+ENC-00078,PT-0079,IMP,cancelled,2025-08-23,2025-08-29,Endocrinology
+ENC-00079,PT-0080,IMP,cancelled,2025-08-26,2025-09-02,Nephrology
+ENC-00080,PT-0001,EMER,finished,2025-08-29,2025-08-29,Emergency
+ENC-00081,PT-0002,IMP,in-progress,2025-09-01,2025-09-02,General Medicine
+ENC-00082,PT-0003,EMER,cancelled,2025-09-04,2025-09-06,Nephrology
+ENC-00083,PT-0004,AMB,in-progress,2025-09-07,2025-09-10,Endocrinology
+ENC-00084,PT-0005,AMB,in-progress,2025-09-10,2025-09-14,Cardiology
+ENC-00085,PT-0006,AMB,cancelled,2025-09-13,2025-09-18,Endocrinology
+ENC-00086,PT-0007,IMP,in-progress,2025-09-16,2025-09-22,Endocrinology
+ENC-00087,PT-0008,IMP,in-progress,2025-09-19,2025-09-26,Endocrinology
+ENC-00088,PT-0009,AMB,in-progress,2025-09-22,2025-09-22,Endocrinology
+ENC-00089,PT-0010,EMER,in-progress,2025-09-25,2025-09-26,Endocrinology
+ENC-00090,PT-0011,EMER,finished,2025-09-28,2025-09-30,Emergency
+ENC-00091,PT-0012,EMER,in-progress,2025-10-01,2025-10-04,Endocrinology
+ENC-00092,PT-0013,IMP,in-progress,2025-10-04,2025-10-08,Endocrinology
+ENC-00093,PT-0014,EMER,cancelled,2025-10-07,2025-10-12,Endocrinology
+ENC-00094,PT-0015,AMB,finished,2025-10-10,2025-10-16,Nephrology
+ENC-00095,PT-0016,AMB,cancelled,2025-10-13,2025-10-20,Emergency
+ENC-00096,PT-0017,EMER,finished,2025-10-16,2025-10-16,Cardiology
+ENC-00097,PT-0018,EMER,finished,2025-10-19,2025-10-20,Emergency
+ENC-00098,PT-0019,IMP,finished,2025-10-22,2025-10-24,Emergency
+ENC-00099,PT-0020,EMER,finished,2025-10-25,2025-10-28,Endocrinology
+ENC-00100,PT-0021,IMP,in-progress,2025-10-28,2025-11-01,Cardiology
+ENC-00101,PT-0022,AMB,in-progress,2025-10-31,2025-11-05,General Medicine
+ENC-00102,PT-0023,EMER,cancelled,2025-11-03,2025-11-09,Nephrology
+ENC-00103,PT-0024,AMB,cancelled,2025-11-06,2025-11-13,Cardiology
+ENC-00104,PT-0025,IMP,cancelled,2025-11-09,2025-11-09,Nephrology
+ENC-00105,PT-0026,EMER,cancelled,2025-11-12,2025-11-13,General Medicine
+ENC-00106,PT-0027,AMB,in-progress,2025-11-15,2025-11-17,General Medicine
+ENC-00107,PT-0028,AMB,in-progress,2025-11-18,2025-11-21,Endocrinology
+ENC-00108,PT-0029,IMP,cancelled,2025-11-21,2025-11-25,Cardiology
+ENC-00109,PT-0030,EMER,in-progress,2025-11-24,2025-11-29,General Medicine
+ENC-00110,PT-0031,AMB,in-progress,2025-01-01,2025-01-07,Emergency
+ENC-00111,PT-0032,IMP,finished,2025-01-04,2025-01-11,Nephrology
+ENC-00112,PT-0033,AMB,cancelled,2025-01-07,2025-01-07,Nephrology
+ENC-00113,PT-0034,IMP,cancelled,2025-01-10,2025-01-11,General Medicine
+ENC-00114,PT-0035,EMER,in-progress,2025-01-13,2025-01-15,Nephrology
+ENC-00115,PT-0036,IMP,finished,2025-01-16,2025-01-19,Cardiology
+ENC-00116,PT-0037,IMP,finished,2025-01-19,2025-01-23,Emergency
+ENC-00117,PT-0038,AMB,in-progress,2025-01-22,2025-01-27,Endocrinology
+ENC-00118,PT-0039,IMP,cancelled,2025-01-25,2025-01-31,Nephrology
+ENC-00119,PT-0040,AMB,cancelled,2025-01-28,2025-02-04,General Medicine
+ENC-00120,PT-0041,IMP,finished,2025-01-31,2025-01-31,Nephrology

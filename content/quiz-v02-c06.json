@@ -1,0 +1,62 @@
+[
+  {
+    "id": "q1",
+    "q": "What is the grain of a table?",
+    "options": [
+      "The meaning of one row",
+      "The database file size",
+      "The number of columns",
+      "The storage engine"
+    ],
+    "correct": 0,
+    "why": "Grain defines what one record represents."
+  },
+  {
+    "id": "q2",
+    "q": "Which key uniquely identifies a row?",
+    "options": [
+      "Primary key",
+      "Foreign key",
+      "Index only",
+      "Alias"
+    ],
+    "correct": 0,
+    "why": "A primary key provides row identity."
+  },
+  {
+    "id": "q3",
+    "q": "A patient with several encounters is which relationship?",
+    "options": [
+      "One-to-many",
+      "One-to-one",
+      "Many-to-many only",
+      "No relationship"
+    ],
+    "correct": 0,
+    "why": "One patient can be related to multiple encounters."
+  },
+  {
+    "id": "q4",
+    "q": "How should SQL test a missing SBP value?",
+    "options": [
+      "IS NULL",
+      "= NULL",
+      "= 0",
+      "IS EMPTY"
+    ],
+    "correct": 0,
+    "why": "NULL requires IS NULL or IS NOT NULL."
+  },
+  {
+    "id": "q5",
+    "q": "Which property means a transaction is all-or-nothing?",
+    "options": [
+      "Atomicity",
+      "Durability",
+      "Isolation",
+      "Availability"
+    ],
+    "correct": 0,
+    "why": "Atomicity is the all-or-nothing property."
+  }
+]

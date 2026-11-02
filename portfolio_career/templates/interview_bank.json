@@ -1,0 +1,62 @@
+[
+  {
+    "question": "Walk me through a healthcare analytics project from request to handoff.",
+    "strong_answer": "Explain stakeholder question, scope, source/grain, data quality, method, validation, finding, limitation, decision and handoff. Quantify your contribution and distinguish synthetic academic work from employment experience.",
+    "avoid": "Listing tools without explaining the decision or QA."
+  },
+  {
+    "question": "How do you prevent double counting after joining encounters to medication orders?",
+    "strong_answer": "State each table's grain, inspect key cardinality, aggregate order lines to encounter first when the output is encounter-grain, use explicit join keys, compare row counts and reconcile totals before/after.",
+    "avoid": "Using DISTINCT as a blind fix."
+  },
+  {
+    "question": "A stakeholder asks for a readmission rate. What do you clarify?",
+    "strong_answer": "Define index admission, eligible discharge cohort, readmission window, planned/unplanned rules, exclusions, transfer handling, competing outcomes, follow-up completeness, numerator and denominator.",
+    "avoid": "Dividing a supplied flag count by all rows without validating its definition."
+  },
+  {
+    "question": "How do you handle missing or invalid data?",
+    "strong_answer": "Profile by field and segment, distinguish structurally not applicable from missing, quantify impact, retain raw values, log rules and disposition, obtain owner decisions for material issues, and report sensitivity where appropriate.",
+    "avoid": "Deleting or imputing without documentation."
+  },
+  {
+    "question": "Explain PDC and MPR. Do they prove adherence?",
+    "strong_answer": "Define days covered and days supplied over a specified observation window, describe overlap/stockpiling rules and denominator, and state these claims-based measures proxy medication availability, not ingestion.",
+    "avoid": "Calling a refill metric proof of taking medication."
+  },
+  {
+    "question": "What is the difference between statistical significance and clinical significance?",
+    "strong_answer": "Statistical significance concerns compatibility with a null model under assumptions; clinical significance concerns magnitude, patient relevance, harms, uncertainty and context. Report effect sizes and intervals, not p-values alone.",
+    "avoid": "Treating p<0.05 as proof of importance or causality."
+  },
+  {
+    "question": "What would you do if a dashboard KPI differs from a SQL extract?",
+    "strong_answer": "Freeze versions, compare filters, date boundaries, grain, joins, refresh timestamps, null handling and measure definitions; reproduce a small cohort manually; document root cause and reconcile before release.",
+    "avoid": "Changing whichever number looks wrong."
+  },
+  {
+    "question": "How do you protect patient data while building a portfolio?",
+    "strong_answer": "Use generated synthetic datasets, remove PHI from screenshots/logs, keep credentials in environment variables, follow data-use approvals and avoid public upload of real or confidential data.",
+    "avoid": "Assuming pseudonymised data are automatically safe to publish."
+  },
+  {
+    "question": "How would you design a new-user active-comparator RWE cohort?",
+    "strong_answer": "Specify target population, eligibility, treatment initiation/index date, comparator, baseline covariate window, follow-up, outcome, censoring and estimand; assess overlap/balance and immortal-time and residual confounding.",
+    "avoid": "Choosing index date after treatment initiation or adjusting for post-index variables without a causal rationale."
+  },
+  {
+    "question": "You discover 36 orphan medication orders in a report. What next?",
+    "strong_answer": "Retain and quantify unmatched rows, inspect key format/source timing, check legitimate late-arriving records and mapping errors, contact the data owner, document disposition and show impact on results.",
+    "avoid": "Dropping or force-matching them without evidence."
+  },
+  {
+    "question": "How do you work asynchronously with a remote client?",
+    "strong_answer": "Confirm scope and acceptance criteria in writing, communicate risks early, share progress at agreed checkpoints, version outputs, document decisions and deliver a reproducible handoff with concise next steps.",
+    "avoid": "Waiting until the deadline to reveal blockers."
+  },
+  {
+    "question": "What if you do not know a tool or domain-specific standard?",
+    "strong_answer": "State the boundary, identify authoritative documentation and version, build a small test, validate against expected behaviour, ask a domain expert where required and avoid claiming expertise or conformance prematurely.",
+    "avoid": "Bluffing or presenting unvalidated examples as production-ready."
+  }
+]

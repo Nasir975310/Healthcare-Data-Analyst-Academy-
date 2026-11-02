@@ -1,0 +1,244 @@
+result_id,encounter_id,test_code,test_name,result_value,unit,result_date,abnormal_flag
+1,1,CREAT,Serum creatinine,0.88,mg/dL,2026-01-15,0
+2,1,GLU,Random glucose,55.19,mg/dL,2026-01-15,0
+3,1,HB,Haemoglobin,7.01,g/dL,2026-01-15,0
+4,2,GLU,Random glucose,0.1,mg/dL,2026-01-23,1
+5,2,HB,Haemoglobin,17.48,g/dL,2026-01-23,1
+6,3,CREAT,Serum creatinine,0.13,mg/dL,2026-02-27,1
+7,3,GLU,Random glucose,234.74,mg/dL,2026-02-27,0
+8,3,HB,Haemoglobin,17.58,g/dL,2026-02-27,1
+9,4,CREAT,Serum creatinine,1.41,mg/dL,2026-01-17,0
+10,4,GLU,Random glucose,137.21,mg/dL,2026-01-17,0
+11,4,HB,Haemoglobin,5.1,g/dL,2026-01-17,0
+12,5,CREAT,Serum creatinine,0.95,mg/dL,2026-01-25,0
+13,5,GLU,Random glucose,189.07,mg/dL,2026-01-25,0
+14,5,HB,Haemoglobin,0.1,g/dL,2026-01-25,1
+15,6,CREAT,Serum creatinine,1.64,mg/dL,2026-01-21,0
+16,6,GLU,Random glucose,198.27,mg/dL,2026-01-21,0
+17,6,HB,Haemoglobin,8.47,g/dL,2026-01-21,0
+18,7,CREAT,Serum creatinine,0.89,mg/dL,2026-01-25,0
+19,7,GLU,Random glucose,51.25,mg/dL,2026-01-25,0
+20,7,HB,Haemoglobin,9.8,g/dL,2026-01-25,0
+21,8,GLU,Random glucose,184.04,mg/dL,2026-01-27,0
+22,8,HB,Haemoglobin,1.99,g/dL,2026-01-27,1
+23,9,CREAT,Serum creatinine,1.06,mg/dL,2026-01-13,0
+24,9,GLU,Random glucose,129.62,mg/dL,2026-01-13,0
+25,9,HB,Haemoglobin,12.61,g/dL,2026-01-13,0
+26,10,CREAT,Serum creatinine,1.16,mg/dL,2026-01-21,0
+27,10,GLU,Random glucose,197.45,mg/dL,2026-01-21,0
+28,11,CREAT,Serum creatinine,0.53,mg/dL,2026-02-27,0
+29,11,GLU,Random glucose,48.85,mg/dL,2026-02-27,0
+30,12,CREAT,Serum creatinine,2.15,mg/dL,2026-01-14,0
+31,12,GLU,Random glucose,206.03,mg/dL,2026-01-14,0
+32,12,HB,Haemoglobin,13.13,g/dL,2026-01-14,0
+33,13,GLU,Random glucose,219.94,mg/dL,2026-01-22,0
+34,13,HB,Haemoglobin,26.78,g/dL,2026-01-22,1
+35,14,GLU,Random glucose,183.67,mg/dL,2026-02-27,0
+36,14,HB,Haemoglobin,1.62,g/dL,2026-02-27,1
+37,15,CREAT,Serum creatinine,0.6,mg/dL,2026-01-19,0
+38,15,HB,Haemoglobin,5.95,g/dL,2026-01-19,0
+39,16,CREAT,Serum creatinine,1.65,mg/dL,2026-01-27,0
+40,16,GLU,Random glucose,77.98,mg/dL,2026-01-27,0
+41,16,HB,Haemoglobin,24.05,g/dL,2026-01-27,1
+42,17,GLU,Random glucose,77.87,mg/dL,2026-02-27,0
+43,17,HB,Haemoglobin,2.23,g/dL,2026-02-27,1
+44,18,CREAT,Serum creatinine,1.71,mg/dL,2026-01-05,0
+45,18,GLU,Random glucose,77.94,mg/dL,2026-01-05,0
+46,19,CREAT,Serum creatinine,0.45,mg/dL,2026-01-20,0
+47,19,GLU,Random glucose,232.29,mg/dL,2026-01-20,0
+48,19,HB,Haemoglobin,4.09,g/dL,2026-01-20,1
+49,21,GLU,Random glucose,174.45,mg/dL,2026-01-24,0
+50,21,HB,Haemoglobin,13.35,g/dL,2026-01-24,0
+51,22,GLU,Random glucose,167.77,mg/dL,2026-01-27,0
+52,22,HB,Haemoglobin,7.74,g/dL,2026-01-27,0
+53,23,CREAT,Serum creatinine,0.9,mg/dL,2026-01-02,0
+54,23,GLU,Random glucose,119.91,mg/dL,2026-01-02,0
+55,23,HB,Haemoglobin,15.2,g/dL,2026-01-02,0
+56,24,GLU,Random glucose,89.38,mg/dL,2026-01-10,0
+57,24,HB,Haemoglobin,10.34,g/dL,2026-01-10,0
+58,25,CREAT,Serum creatinine,0.87,mg/dL,2026-01-12,0
+59,25,GLU,Random glucose,169.54,mg/dL,2026-01-12,0
+60,26,CREAT,Serum creatinine,0.99,mg/dL,2026-01-04,0
+61,26,GLU,Random glucose,90.86,mg/dL,2026-01-04,0
+62,26,HB,Haemoglobin,17.52,g/dL,2026-01-04,1
+63,27,CREAT,Serum creatinine,1.44,mg/dL,2026-01-15,0
+64,27,GLU,Random glucose,18.23,mg/dL,2026-01-15,1
+65,28,CREAT,Serum creatinine,1.42,mg/dL,2026-01-08,0
+66,28,GLU,Random glucose,177.44,mg/dL,2026-01-08,0
+67,28,HB,Haemoglobin,15.03,g/dL,2026-01-08,0
+68,29,CREAT,Serum creatinine,1.71,mg/dL,2026-01-04,0
+69,29,GLU,Random glucose,170.4,mg/dL,2026-01-04,0
+70,31,CREAT,Serum creatinine,0.16,mg/dL,2026-01-24,1
+71,31,GLU,Random glucose,167.32,mg/dL,2026-01-24,0
+72,31,HB,Haemoglobin,9.05,g/dL,2026-01-24,0
+73,32,CREAT,Serum creatinine,0.25,mg/dL,2026-01-08,1
+74,32,GLU,Random glucose,96.78,mg/dL,2026-01-08,0
+75,32,HB,Haemoglobin,7.31,g/dL,2026-01-08,0
+76,33,CREAT,Serum creatinine,0.99,mg/dL,2026-01-02,0
+77,33,GLU,Random glucose,199.62,mg/dL,2026-01-02,0
+78,33,HB,Haemoglobin,0.1,g/dL,2026-01-02,1
+79,34,CREAT,Serum creatinine,1.05,mg/dL,2026-01-21,0
+80,34,GLU,Random glucose,296.07,mg/dL,2026-01-21,1
+81,34,HB,Haemoglobin,10.68,g/dL,2026-01-21,0
+82,35,CREAT,Serum creatinine,0.86,mg/dL,2026-01-10,0
+83,35,GLU,Random glucose,244.83,mg/dL,2026-01-10,0
+84,35,HB,Haemoglobin,14.21,g/dL,2026-01-10,0
+85,36,CREAT,Serum creatinine,0.64,mg/dL,2026-01-04,0
+86,36,HB,Haemoglobin,2.69,g/dL,2026-01-04,1
+87,37,CREAT,Serum creatinine,1.35,mg/dL,2026-01-02,0
+88,37,GLU,Random glucose,91.83,mg/dL,2026-01-02,0
+89,37,HB,Haemoglobin,10.26,g/dL,2026-01-02,0
+90,38,CREAT,Serum creatinine,1.1,mg/dL,2026-01-10,0
+91,38,GLU,Random glucose,277.2,mg/dL,2026-01-10,0
+92,38,HB,Haemoglobin,16.7,g/dL,2026-01-10,0
+93,39,CREAT,Serum creatinine,0.13,mg/dL,2026-02-18,1
+94,40,GLU,Random glucose,113.53,mg/dL,2026-01-13,0
+95,40,HB,Haemoglobin,12.78,g/dL,2026-01-13,0
+96,41,CREAT,Serum creatinine,1.16,mg/dL,2026-01-21,0
+97,41,GLU,Random glucose,178.24,mg/dL,2026-01-21,0
+98,41,HB,Haemoglobin,15.14,g/dL,2026-01-21,0
+99,42,CREAT,Serum creatinine,0.94,mg/dL,2026-01-04,0
+100,42,GLU,Random glucose,68.78,mg/dL,2026-01-04,0
+101,43,GLU,Random glucose,195.18,mg/dL,2026-01-12,0
+102,43,HB,Haemoglobin,8.01,g/dL,2026-01-12,0
+103,44,CREAT,Serum creatinine,0.15,mg/dL,2026-01-25,1
+104,44,GLU,Random glucose,71.85,mg/dL,2026-01-25,0
+105,44,HB,Haemoglobin,12.97,g/dL,2026-01-25,0
+106,45,CREAT,Serum creatinine,0.5,mg/dL,2026-01-05,0
+107,45,HB,Haemoglobin,18.96,g/dL,2026-01-05,1
+108,47,HB,Haemoglobin,2.66,g/dL,2026-01-17,1
+109,48,CREAT,Serum creatinine,0.16,mg/dL,2026-02-25,1
+110,48,GLU,Random glucose,191.71,mg/dL,2026-02-25,0
+111,48,HB,Haemoglobin,11.1,g/dL,2026-02-25,0
+112,49,CREAT,Serum creatinine,0.62,mg/dL,2026-01-03,0
+113,49,GLU,Random glucose,101.43,mg/dL,2026-01-03,0
+114,50,CREAT,Serum creatinine,0.77,mg/dL,2026-01-11,0
+115,50,HB,Haemoglobin,7.09,g/dL,2026-01-11,0
+116,51,CREAT,Serum creatinine,1.32,mg/dL,2026-01-06,0
+117,51,GLU,Random glucose,169.48,mg/dL,2026-01-06,0
+118,52,CREAT,Serum creatinine,0.6,mg/dL,2026-01-14,0
+119,52,GLU,Random glucose,154.51,mg/dL,2026-01-14,0
+120,52,HB,Haemoglobin,10.76,g/dL,2026-01-14,0
+121,53,CREAT,Serum creatinine,0.56,mg/dL,2026-02-22,0
+122,53,GLU,Random glucose,120.43,mg/dL,2026-02-22,0
+123,53,HB,Haemoglobin,12.44,g/dL,2026-02-22,0
+124,54,CREAT,Serum creatinine,0.75,mg/dL,2026-01-22,0
+125,54,GLU,Random glucose,211.41,mg/dL,2026-01-22,0
+126,54,HB,Haemoglobin,15.07,g/dL,2026-01-22,0
+127,55,CREAT,Serum creatinine,1.26,mg/dL,2026-01-27,0
+128,55,GLU,Random glucose,116.85,mg/dL,2026-01-27,0
+129,55,HB,Haemoglobin,13.52,g/dL,2026-01-27,0
+130,56,CREAT,Serum creatinine,0.62,mg/dL,2026-01-02,0
+131,56,GLU,Random glucose,115.43,mg/dL,2026-01-02,0
+132,56,HB,Haemoglobin,18.73,g/dL,2026-01-02,1
+133,57,GLU,Random glucose,167.54,mg/dL,2026-01-10,0
+134,57,HB,Haemoglobin,17.6,g/dL,2026-01-10,1
+135,58,CREAT,Serum creatinine,0.64,mg/dL,2026-01-10,0
+136,59,CREAT,Serum creatinine,0.96,mg/dL,2026-01-18,0
+137,59,GLU,Random glucose,124.71,mg/dL,2026-01-18,0
+138,59,HB,Haemoglobin,15.08,g/dL,2026-01-18,0
+139,60,CREAT,Serum creatinine,1.03,mg/dL,2026-02-26,0
+140,60,GLU,Random glucose,70.11,mg/dL,2026-02-26,0
+141,61,GLU,Random glucose,153.9,mg/dL,2026-01-17,0
+142,61,HB,Haemoglobin,8.66,g/dL,2026-01-17,0
+143,62,GLU,Random glucose,159.93,mg/dL,2026-01-14,0
+144,62,HB,Haemoglobin,5.69,g/dL,2026-01-14,0
+145,64,CREAT,Serum creatinine,1.82,mg/dL,2026-01-22,0
+146,64,GLU,Random glucose,135.15,mg/dL,2026-01-22,0
+147,65,CREAT,Serum creatinine,1.25,mg/dL,2026-01-17,0
+148,65,HB,Haemoglobin,20.93,g/dL,2026-01-17,1
+149,66,CREAT,Serum creatinine,1.57,mg/dL,2026-01-24,0
+150,66,GLU,Random glucose,230.75,mg/dL,2026-01-24,0
+151,66,HB,Haemoglobin,7.75,g/dL,2026-01-24,0
+152,67,GLU,Random glucose,271.93,mg/dL,2026-01-27,0
+153,67,HB,Haemoglobin,19.19,g/dL,2026-01-27,1
+154,68,GLU,Random glucose,0.1,mg/dL,2026-01-10,1
+155,68,HB,Haemoglobin,8.82,g/dL,2026-01-10,0
+156,69,CREAT,Serum creatinine,0.92,mg/dL,2026-01-18,0
+157,69,HB,Haemoglobin,21.63,g/dL,2026-01-18,1
+158,70,CREAT,Serum creatinine,1.16,mg/dL,2026-01-10,0
+159,70,GLU,Random glucose,119.46,mg/dL,2026-01-10,0
+160,70,HB,Haemoglobin,17.09,g/dL,2026-01-10,1
+161,71,CREAT,Serum creatinine,0.25,mg/dL,2026-01-18,1
+162,71,GLU,Random glucose,181.77,mg/dL,2026-01-18,0
+163,71,HB,Haemoglobin,12.14,g/dL,2026-01-18,0
+164,72,CREAT,Serum creatinine,0.13,mg/dL,2026-01-07,1
+165,72,HB,Haemoglobin,19.7,g/dL,2026-01-07,1
+166,73,CREAT,Serum creatinine,0.82,mg/dL,2026-01-15,0
+167,73,GLU,Random glucose,123.33,mg/dL,2026-01-15,0
+168,73,HB,Haemoglobin,6.82,g/dL,2026-01-15,0
+169,74,GLU,Random glucose,190.61,mg/dL,2026-01-04,0
+170,74,HB,Haemoglobin,21.22,g/dL,2026-01-04,1
+171,75,CREAT,Serum creatinine,1.49,mg/dL,2026-01-24,0
+172,75,GLU,Random glucose,161.67,mg/dL,2026-01-24,0
+173,76,CREAT,Serum creatinine,1.76,mg/dL,2026-01-27,0
+174,76,GLU,Random glucose,256.4,mg/dL,2026-01-27,0
+175,77,CREAT,Serum creatinine,0.9,mg/dL,2026-02-27,0
+176,77,HB,Haemoglobin,17.0,g/dL,2026-02-27,0
+177,79,CREAT,Serum creatinine,1.09,mg/dL,2026-01-18,0
+178,79,GLU,Random glucose,7.57,mg/dL,2026-01-18,1
+179,79,HB,Haemoglobin,8.99,g/dL,2026-01-18,0
+180,80,CREAT,Serum creatinine,1.12,mg/dL,2026-01-04,0
+181,80,HB,Haemoglobin,18.66,g/dL,2026-01-04,1
+182,81,CREAT,Serum creatinine,0.53,mg/dL,2026-01-15,0
+183,81,GLU,Random glucose,137.58,mg/dL,2026-01-15,0
+184,81,HB,Haemoglobin,22.0,g/dL,2026-01-15,1
+185,82,CREAT,Serum creatinine,0.2,mg/dL,2026-01-23,1
+186,82,GLU,Random glucose,19.69,mg/dL,2026-01-23,1
+187,82,HB,Haemoglobin,10.17,g/dL,2026-01-23,0
+188,83,CREAT,Serum creatinine,0.1,mg/dL,2026-01-02,1
+189,83,GLU,Random glucose,138.24,mg/dL,2026-01-02,0
+190,83,HB,Haemoglobin,12.0,g/dL,2026-01-02,0
+191,84,CREAT,Serum creatinine,1.21,mg/dL,2026-01-10,0
+192,84,GLU,Random glucose,210.13,mg/dL,2026-01-10,0
+193,84,HB,Haemoglobin,16.63,g/dL,2026-01-10,0
+194,85,CREAT,Serum creatinine,1.32,mg/dL,2026-01-08,0
+195,85,GLU,Random glucose,45.85,mg/dL,2026-01-08,0
+196,85,HB,Haemoglobin,15.92,g/dL,2026-01-08,0
+197,86,GLU,Random glucose,37.38,mg/dL,2026-01-10,1
+198,86,HB,Haemoglobin,0.1,g/dL,2026-01-10,1
+199,87,CREAT,Serum creatinine,1.82,mg/dL,2026-01-20,0
+200,87,GLU,Random glucose,158.26,mg/dL,2026-01-20,0
+201,87,HB,Haemoglobin,11.83,g/dL,2026-01-20,0
+202,88,CREAT,Serum creatinine,1.35,mg/dL,2026-01-27,0
+203,88,GLU,Random glucose,92.8,mg/dL,2026-01-27,0
+204,88,HB,Haemoglobin,11.07,g/dL,2026-01-27,0
+205,89,GLU,Random glucose,177.48,mg/dL,2026-01-02,0
+206,89,HB,Haemoglobin,11.28,g/dL,2026-01-02,0
+207,90,CREAT,Serum creatinine,1.03,mg/dL,2026-01-10,0
+208,90,GLU,Random glucose,182.51,mg/dL,2026-01-10,0
+209,90,HB,Haemoglobin,11.51,g/dL,2026-01-10,0
+210,91,GLU,Random glucose,84.76,mg/dL,2026-01-02,0
+211,91,HB,Haemoglobin,4.25,g/dL,2026-01-02,1
+212,92,HB,Haemoglobin,10.74,g/dL,2026-01-10,0
+213,93,CREAT,Serum creatinine,1.16,mg/dL,2026-01-13,0
+214,93,GLU,Random glucose,175.71,mg/dL,2026-01-13,0
+215,93,HB,Haemoglobin,15.05,g/dL,2026-01-13,0
+216,94,CREAT,Serum creatinine,0.76,mg/dL,2026-01-04,0
+217,94,GLU,Random glucose,214.69,mg/dL,2026-01-04,0
+218,94,HB,Haemoglobin,17.53,g/dL,2026-01-04,1
+219,95,CREAT,Serum creatinine,0.33,mg/dL,2026-01-12,0
+220,95,GLU,Random glucose,40.29,mg/dL,2026-01-12,1
+221,95,HB,Haemoglobin,5.89,g/dL,2026-01-12,0
+222,96,CREAT,Serum creatinine,1.05,mg/dL,2026-01-21,0
+223,96,GLU,Random glucose,162.87,mg/dL,2026-01-21,0
+224,96,HB,Haemoglobin,16.0,g/dL,2026-01-21,0
+225,97,CREAT,Serum creatinine,0.96,mg/dL,2026-01-27,0
+226,97,GLU,Random glucose,98.83,mg/dL,2026-01-27,0
+227,97,HB,Haemoglobin,20.0,g/dL,2026-01-27,1
+228,98,CREAT,Serum creatinine,0.57,mg/dL,2026-02-27,0
+229,98,GLU,Random glucose,133.77,mg/dL,2026-02-27,0
+230,98,HB,Haemoglobin,7.63,g/dL,2026-02-27,0
+231,99,CREAT,Serum creatinine,1.06,mg/dL,2026-01-22,0
+232,99,GLU,Random glucose,227.96,mg/dL,2026-01-22,0
+233,99,HB,Haemoglobin,8.03,g/dL,2026-01-22,0
+234,100,HB,Haemoglobin,16.41,g/dL,2026-01-17,0
+235,101,CREAT,Serum creatinine,0.16,mg/dL,2026-01-25,1
+236,101,HB,Haemoglobin,4.92,g/dL,2026-01-25,0
+237,102,CREAT,Serum creatinine,0.52,mg/dL,2026-01-02,0
+238,102,GLU,Random glucose,180.49,mg/dL,2026-01-02,0
+239,102,HB,Haemoglobin,5.56,g/dL,2026-01-02,0
+240,103,HB,Haemoglobin,16.1,g/dL,2026-01-10,0
+241,104,CREAT,Serum creatinine,0.25,mg/dL,2026-01-01,1
+242,104,GLU,Random glucose,61.43,mg/dL,2026-01-01,0
+243,104,HB,Haemoglobin,27.07,g/dL,2026-01-01,1

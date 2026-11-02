@@ -1,0 +1,8 @@
+[Unit]
+Description=Healthcare Data Analyst Academy synthetic ETL
+After=network-online.target
+
+[Service]
+Type=oneshot
+WorkingDirectory=%h/healthcare_data_analyst_academy
+ExecStart=%h/healthcare_data_analyst_academy/scripts/run_healthcare_etl.sh

@@ -1,0 +1,60 @@
+[
+  {
+    "id": "q1",
+    "q": "A process measure assesses:",
+    "options": [
+      "Resources available",
+      "Whether a care activity was performed",
+      "Patient outcome only",
+      "Unintended consequences only"
+    ],
+    "correct": 1,
+    "why": "Process measures assess whether an activity or care process occurred."
+  },
+  {
+    "id": "q2",
+    "q": "Medication reconciliation completed ÷ eligible discharges is an example of:",
+    "options": [
+      "A process indicator",
+      "A mortality rate",
+      "A prevalence estimate",
+      "A case-control odds ratio"
+    ],
+    "correct": 0,
+    "why": "It measures completion of a defined care process among eligible discharges."
+  },
+  {
+    "id": "q3",
+    "q": "Why report numerator and denominator with a percentage?",
+    "options": [
+      "To make the chart longer",
+      "To show the scale and stability of the result",
+      "To avoid defining the measure",
+      "To hide small counts"
+    ],
+    "correct": 1,
+    "why": "Counts help interpret the percentage, especially with small denominators."
+  },
+  {
+    "id": "q4",
+    "q": "A target line in a control chart is:",
+    "options": [
+      "The same as a control limit",
+      "A clinical reference range",
+      "A performance goal, not a statistical control limit",
+      "A confidence interval"
+    ],
+    "correct": 2,
+    "why": "Targets and control limits have different meanings."
+  },
+  {
+    "id": "q5",
+    "q": "A rise in medication error reports necessarily means actual errors increased:",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct": 1,
+    "why": "Reporting volume is influenced by reporting culture and capture, and may not equal true incidence."
+  }
+]

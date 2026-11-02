@@ -1,0 +1,74 @@
+[
+  {
+    "id": "q1",
+    "q": "Does HIPAA automatically apply to every health dataset worldwide?",
+    "options": [
+      "Yes",
+      "No; it applies in defined US contexts to covered entities and business associates",
+      "Only in India",
+      "Only to synthetic data"
+    ],
+    "correct": 1,
+    "why": "HIPAA has a defined US scope; other laws may apply elsewhere."
+  },
+  {
+    "id": "q2",
+    "q": "Is pseudonymised data always anonymous?",
+    "options": [
+      "Yes",
+      "No; it may remain personal data and be re-identifiable",
+      "Only in spreadsheets",
+      "Only after removing names"
+    ],
+    "correct": 1,
+    "why": "Linkable or indirect identifiers can still create risk."
+  },
+  {
+    "id": "q3",
+    "q": "What should you do after a suspected data exposure?",
+    "options": [
+      "Delete all evidence",
+      "Stop further sharing and notify the designated privacy/security contact",
+      "Post details publicly",
+      "Ignore it"
+    ],
+    "correct": 1,
+    "why": "Follow incident response procedures promptly."
+  },
+  {
+    "id": "q4",
+    "q": "What is data minimisation?",
+    "options": [
+      "Collect every field available",
+      "Collect only what is necessary for a defined purpose",
+      "Keep data forever",
+      "Share data widely"
+    ],
+    "correct": 1,
+    "why": "Minimisation reduces unnecessary exposure."
+  },
+  {
+    "id": "q5",
+    "q": "What is a key principle in 'Professional ethics and regulation'?",
+    "options": [
+      "Prioritise appearance over accuracy",
+      "Use evidence, clear scope and honest limitations",
+      "Invent achievements",
+      "Ignore privacy"
+    ],
+    "correct": 1,
+    "why": "Professional practice depends on evidence, scope and integrity."
+  },
+  {
+    "id": "q6",
+    "q": "How should practical work be completed across operating systems?",
+    "options": [
+      "Assume all commands are identical",
+      "Use separate Linux and PowerShell instructions and verify equivalent outcomes",
+      "Skip one OS",
+      "Copy absolute paths between systems"
+    ],
+    "correct": 1,
+    "why": "OS-specific instructions are required for reproducibility."
+  }
+]

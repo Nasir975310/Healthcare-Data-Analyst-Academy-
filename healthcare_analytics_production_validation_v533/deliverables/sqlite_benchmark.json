@@ -1,0 +1,23 @@
+{
+  "database": "hospital_analytics.sqlite",
+  "results": [
+    {
+      "test": "table_counts",
+      "seconds": 0.000396,
+      "rows": 5,
+      "error": null
+    },
+    {
+      "test": "integrity",
+      "seconds": 0.000225,
+      "rows": 1,
+      "error": null
+    },
+    {
+      "test": "encounter_aggregation",
+      "seconds": 1.7e-05,
+      "rows": 1,
+      "error": null
+    }
+  ]
+}

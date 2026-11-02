@@ -1,0 +1,127 @@
+{
+  "release": "3.2.0",
+  "checks": {
+    "json_files_parsed": 166,
+    "new_js_syntax": "PASS",
+    "html_static_parse": "PASS",
+    "encounters": 300,
+    "distinct_patients": 150,
+    "medication_orders": 800,
+    "orphan_orders": 41,
+    "sql_reference_passed": 20,
+    "sql_reference_total": 20,
+    "case_studies": 8,
+    "exam_questions": 15,
+    "exam_mcq_count": 10,
+    "exam_written_count": 5
+  },
+  "sql": [
+    {
+      "id": "SQLX-01",
+      "status": "PASS",
+      "rows": 1
+    },
+    {
+      "id": "SQLX-02",
+      "status": "PASS",
+      "rows": 5
+    },
+    {
+      "id": "SQLX-03",
+      "status": "PASS",
+      "rows": 5
+    },
+    {
+      "id": "SQLX-04",
+      "status": "PASS",
+      "rows": 150
+    },
+    {
+      "id": "SQLX-05",
+      "status": "PASS",
+      "rows": 41
+    },
+    {
+      "id": "SQLX-06",
+      "status": "PASS",
+      "rows": 1
+    },
+    {
+      "id": "SQLX-07",
+      "status": "PASS",
+      "rows": 90
+    },
+    {
+      "id": "SQLX-08",
+      "status": "PASS",
+      "rows": 300
+    },
+    {
+      "id": "SQLX-09",
+      "status": "PASS",
+      "rows": 0
+    },
+    {
+      "id": "SQLX-10",
+      "status": "PASS",
+      "rows": 5
+    },
+    {
+      "id": "SQLX-11",
+      "status": "PASS",
+      "rows": 300
+    },
+    {
+      "id": "SQLX-12",
+      "status": "PASS",
+      "rows": 1
+    },
+    {
+      "id": "SQLX-13",
+      "status": "PASS",
+      "rows": 2
+    },
+    {
+      "id": "SQLX-14",
+      "status": "PASS",
+      "rows": 6
+    },
+    {
+      "id": "SQLX-15",
+      "status": "PASS",
+      "rows": 1
+    },
+    {
+      "id": "SQLX-16",
+      "status": "PASS",
+      "rows": 1
+    },
+    {
+      "id": "SQLX-17",
+      "status": "PASS",
+      "rows": 5
+    },
+    {
+      "id": "SQLX-18",
+      "status": "PASS",
+      "rows": 243
+    },
+    {
+      "id": "SQLX-19",
+      "status": "PASS",
+      "rows": 6
+    },
+    {
+      "id": "SQLX-20",
+      "status": "PASS",
+      "rows": 1
+    }
+  ],
+  "limitations": [
+    "No browser automation or cross-device QA",
+    "No Windows execution",
+    "No independent clinical peer review",
+    "No official standards validator"
+  ],
+  "data_notice": "Synthetic training data only"
+}

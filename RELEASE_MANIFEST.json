@@ -1,0 +1,30 @@
+{
+  "release": "5.60.3",
+  "release_type": "maintenance",
+  "feature_baseline": "5.60.0",
+  "file_count_excluding_manifest": 1654,
+  "test_directories_discovered": 69,
+  "historical_test_status": "not_run_in_build_environment; see FULL_TEST_REPORT.json",
+  "maintained_suite": {
+    "status": "passed",
+    "tests": 36,
+    "unittest_subtests": 11,
+    "command": "python -B -m pytest -q"
+  },
+  "python_ast": {
+    "status": "passed",
+    "files": 208
+  },
+  "changelog_validation": {
+    "status": "passed",
+    "unique_version_headers": 34
+  },
+  "sensitive_pattern_scan": {
+    "status": "passed_with_heuristic_limits",
+    "note": "not a PHI/privacy certification"
+  },
+  "browser_uat": "pending_target_workstation",
+  "license": "not_selected; no license granted",
+  "external_publication": "not_performed",
+  "root_html_local_link_validation": "passed"
+}

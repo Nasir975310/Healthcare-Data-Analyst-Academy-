@@ -1,0 +1,1499 @@
+{
+  "release": "5.49.0",
+  "dataset": "synthetic",
+  "source_rows": 301,
+  "cases": [
+    {
+      "label": "all",
+      "filters": {},
+      "metrics": {
+        "filtered_records": 301,
+        "unique_record_ids": 300,
+        "paired_sbp_records": 297,
+        "mean_baseline_sbp": 155.4814814814815,
+        "mean_followup_sbp": 142.2794612794613,
+        "mean_paired_sbp_change": 13.202020202020202,
+        "duplicate_excess": 1,
+        "missing_followup_sbp": 2,
+        "implausible_followup_sbp": 1,
+        "missing_primary_class": 1
+      }
+    },
+    {
+      "label": "drug=ACE inhibitor",
+      "filters": {
+        "drug": "ACE inhibitor"
+      },
+      "metrics": {
+        "filtered_records": 58,
+        "unique_record_ids": 57,
+        "paired_sbp_records": 58,
+        "mean_baseline_sbp": 155.68965517241378,
+        "mean_followup_sbp": 140.91379310344828,
+        "mean_paired_sbp_change": 14.775862068965518,
+        "duplicate_excess": 1,
+        "missing_followup_sbp": 0,
+        "implausible_followup_sbp": 0,
+        "missing_primary_class": 0
+      }
+    },
+    {
+      "label": "drug=ARB",
+      "filters": {
+        "drug": "ARB"
+      },
+      "metrics": {
+        "filtered_records": 87,
+        "unique_record_ids": 87,
+        "paired_sbp_records": 85,
+        "mean_baseline_sbp": 154.74117647058824,
+        "mean_followup_sbp": 140.83529411764707,
+        "mean_paired_sbp_change": 13.905882352941177,
+        "duplicate_excess": 0,
+        "missing_followup_sbp": 2,
+        "implausible_followup_sbp": 0,
+        "missing_primary_class": 0
+      }
+    },
+    {
+      "label": "drug=Beta blocker",
+      "filters": {
+        "drug": "Beta blocker"
+      },
+      "metrics": {
+        "filtered_records": 32,
+        "unique_record_ids": 32,
+        "paired_sbp_records": 31,
+        "mean_baseline_sbp": 154.19354838709677,
+        "mean_followup_sbp": 143.38709677419354,
+        "mean_paired_sbp_change": 10.806451612903226,
+        "duplicate_excess": 0,
+        "missing_followup_sbp": 0,
+        "implausible_followup_sbp": 1,
+        "missing_primary_class": 0
+      }
+    },
+    {
+      "label": "drug=Calcium channel blocker",
+      "filters": {
+        "drug": "Calcium channel blocker"
+      },
+      "metrics": {
+        "filtered_records": 75,
+        "unique_record_ids": 75,
+        "paired_sbp_records": 75,
+        "mean_baseline_sbp": 156.33333333333334,
+        "mean_followup_sbp": 142.50666666666666,
+        "mean_paired_sbp_change": 13.826666666666666,
+        "duplicate_excess": 0,
+        "missing_followup_sbp": 0,
+        "implausible_followup_sbp": 0,
+        "missing_primary_class": 0
+      }
+    },
+    {
+      "label": "drug=Thiazide-like diuretic",
+      "filters": {
+        "drug": "Thiazide-like diuretic"
+      },
+      "metrics": {
+        "filtered_records": 48,
+        "unique_record_ids": 48,
+        "paired_sbp_records": 48,
+        "mean_baseline_sbp": 156.04166666666666,
+        "mean_followup_sbp": 145.41666666666666,
+        "mean_paired_sbp_change": 10.625,
+        "duplicate_excess": 0,
+        "missing_followup_sbp": 0,
+        "implausible_followup_sbp": 0,
+        "missing_primary_class": 0
+      }
+    },
+    {
+      "label": "sex=Female",
+      "filters": {
+        "sex": "Female"
+      },
+      "metrics": {
+        "filtered_records": 140,
+        "unique_record_ids": 140,
+        "paired_sbp_records": 137,
+        "mean_baseline_sbp": 154.64233576642334,
+        "mean_followup_sbp": 141.5839416058394,
+        "mean_paired_sbp_change": 13.058394160583942,
+        "duplicate_excess": 0,
+        "missing_followup_sbp": 2,
+        "implausible_followup_sbp": 0,
+        "missing_primary_class": 1
+      }
+    },
+    {
+      "label": "sex=Male",
+      "filters": {
+        "sex": "Male"
+      },
+      "metrics": {
+        "filtered_records": 161,
+        "unique_record_ids": 160,
+        "paired_sbp_records": 160,
+        "mean_baseline_sbp": 156.2,
+        "mean_followup_sbp": 142.875,
+        "mean_paired_sbp_change": 13.325,
+        "duplicate_excess": 1,
+        "missing_followup_sbp": 0,
+        "implausible_followup_sbp": 1,
+        "missing_primary_class": 0
+      }
+    },
+    {
+      "label": "age=18–39",
+      "filters": {
+        "age": "18–39"
+      },
+      "metrics": {
+        "filtered_records": 8,
+        "unique_record_ids": 8,
+        "paired_sbp_records": 8,
+        "mean_baseline_sbp": 159.875,
+        "mean_followup_sbp": 145.5,
+        "mean_paired_sbp_change": 14.375,
+        "duplicate_excess": 0,
+        "missing_followup_sbp": 0,
+        "implausible_followup_sbp": 0,
+        "missing_primary_class": 0
+      }
+    },
+    {
+      "label": "age=40–59",
+      "filters": {
+        "age": "40–59"
+      },
+      "metrics": {
+        "filtered_records": 118,
+        "unique_record_ids": 118,
+        "paired_sbp_records": 114,
+        "mean_baseline_sbp": 154.51754385964912,
+        "mean_followup_sbp": 140.55263157894737,
+        "mean_paired_sbp_change": 13.964912280701755,
+        "duplicate_excess": 0,
+        "missing_followup_sbp": 2,
+        "implausible_followup_sbp": 1,
+        "missing_primary_class": 1
+      }
+    },
+    {
+      "label": "age=60+",
+      "filters": {
+        "age": "60+"
+      },
+      "metrics": {
+        "filtered_records": 175,
+        "unique_record_ids": 174,
+        "paired_sbp_records": 175,
+        "mean_baseline_sbp": 155.90857142857143,
+        "mean_followup_sbp": 143.25714285714287,
+        "mean_paired_sbp_change": 12.651428571428571,
+        "duplicate_excess": 1,
+        "missing_followup_sbp": 0,
+        "implausible_followup_sbp": 0,
+        "missing_primary_class": 0
+      }
+    },
+    {
+      "label": "comorbidity=yes",
+      "filters": {
+        "co": "yes"
+      },
+      "metrics": {
+        "filtered_records": 139,
+        "unique_record_ids": 139,
+        "paired_sbp_records": 138,
+        "mean_baseline_sbp": 158.1014492753623,
+        "mean_followup_sbp": 144.64492753623188,
+        "mean_paired_sbp_change": 13.456521739130435,
+        "duplicate_excess": 0,
+        "missing_followup_sbp": 1,
+        "implausible_followup_sbp": 0,
+        "missing_primary_class": 0
+      }
+    },
+    {
+      "label": "comorbidity=no",
+      "filters": {
+        "co": "no"
+      },
+      "metrics": {
+        "filtered_records": 162,
+        "unique_record_ids": 161,
+        "paired_sbp_records": 159,
+        "mean_baseline_sbp": 153.20754716981133,
+        "mean_followup_sbp": 140.22641509433961,
+        "mean_paired_sbp_change": 12.981132075471699,
+        "duplicate_excess": 1,
+        "missing_followup_sbp": 1,
+        "implausible_followup_sbp": 1,
+        "missing_primary_class": 1
+      }
+    },
+    {
+      "label": "ACE inhibitor|Female|18–39|yes",
+      "filters": {
+        "drug": "ACE inhibitor",
+        "sex": "Female",
+        "age": "18–39",
+        "co": "yes"
+      },
+      "metrics": {
+        "filtered_records": 0,
+        "unique_record_ids": 0,
+        "paired_sbp_records": 0,
+        "mean_baseline_sbp": null,
+        "mean_followup_sbp": null,
+        "mean_paired_sbp_change": null,
+        "duplicate_excess": 0,
+        "missing_followup_sbp": 0,
+        "implausible_followup_sbp": 0,
+        "missing_primary_class": 0
+      }
+    },
+    {
+      "label": "ACE inhibitor|Female|18–39|no",
+      "filters": {
+        "drug": "ACE inhibitor",
+        "sex": "Female",
+        "age": "18–39",
+        "co": "no"
+      },
+      "metrics": {
+        "filtered_records": 0,
+        "unique_record_ids": 0,
+        "paired_sbp_records": 0,
+        "mean_baseline_sbp": null,
+        "mean_followup_sbp": null,
+        "mean_paired_sbp_change": null,
+        "duplicate_excess": 0,
+        "missing_followup_sbp": 0,
+        "implausible_followup_sbp": 0,
+        "missing_primary_class": 0
+      }
+    },
+    {
+      "label": "ACE inhibitor|Female|40–59|yes",
+      "filters": {
+        "drug": "ACE inhibitor",
+        "sex": "Female",
+        "age": "40–59",
+        "co": "yes"
+      },
+      "metrics": {
+        "filtered_records": 3,
+        "unique_record_ids": 3,
+        "paired_sbp_records": 3,
+        "mean_baseline_sbp": 152.0,
+        "mean_followup_sbp": 130.33333333333334,
+        "mean_paired_sbp_change": 21.666666666666668,
+        "duplicate_excess": 0,
+        "missing_followup_sbp": 0,
+        "implausible_followup_sbp": 0,
+        "missing_primary_class": 0
+      }
+    },
+    {
+      "label": "ACE inhibitor|Female|40–59|no",
+      "filters": {
+        "drug": "ACE inhibitor",
+        "sex": "Female",
+        "age": "40–59",
+        "co": "no"
+      },
+      "metrics": {
+        "filtered_records": 7,
+        "unique_record_ids": 7,
+        "paired_sbp_records": 7,
+        "mean_baseline_sbp": 148.85714285714286,
+        "mean_followup_sbp": 139.42857142857142,
+        "mean_paired_sbp_change": 9.428571428571429,
+        "duplicate_excess": 0,
+        "missing_followup_sbp": 0,
+        "implausible_followup_sbp": 0,
+        "missing_primary_class": 0
+      }
+    },
+    {
+      "label": "ACE inhibitor|Female|60+|yes",
+      "filters": {
+        "drug": "ACE inhibitor",
+        "sex": "Female",
+        "age": "60+",
+        "co": "yes"
+      },
+      "metrics": {
+        "filtered_records": 2,
+        "unique_record_ids": 2,
+        "paired_sbp_records": 2,
+        "mean_baseline_sbp": 143.0,
+        "mean_followup_sbp": 131.0,
+        "mean_paired_sbp_change": 12.0,
+        "duplicate_excess": 0,
+        "missing_followup_sbp": 0,
+        "implausible_followup_sbp": 0,
+        "missing_primary_class": 0
+      }
+    },
+    {
+      "label": "ACE inhibitor|Female|60+|no",
+      "filters": {
+        "drug": "ACE inhibitor",
+        "sex": "Female",
+        "age": "60+",
+        "co": "no"
+      },
+      "metrics": {
+        "filtered_records": 8,
+        "unique_record_ids": 8,
+        "paired_sbp_records": 8,
+        "mean_baseline_sbp": 153.875,
+        "mean_followup_sbp": 143.375,
+        "mean_paired_sbp_change": 10.5,
+        "duplicate_excess": 0,
+        "missing_followup_sbp": 0,
+        "implausible_followup_sbp": 0,
+        "missing_primary_class": 0
+      }
+    },
+    {
+      "label": "ACE inhibitor|Male|18–39|yes",
+      "filters": {
+        "drug": "ACE inhibitor",
+        "sex": "Male",
+        "age": "18–39",
+        "co": "yes"
+      },
+      "metrics": {
+        "filtered_records": 1,
+        "unique_record_ids": 1,
+        "paired_sbp_records": 1,
+        "mean_baseline_sbp": 176.0,
+        "mean_followup_sbp": 146.0,
+        "mean_paired_sbp_change": 30.0,
+        "duplicate_excess": 0,
+        "missing_followup_sbp": 0,
+        "implausible_followup_sbp": 0,
+        "missing_primary_class": 0
+      }
+    },
+    {
+      "label": "ACE inhibitor|Male|18–39|no",
+      "filters": {
+        "drug": "ACE inhibitor",
+        "sex": "Male",
+        "age": "18–39",
+        "co": "no"
+      },
+      "metrics": {
+        "filtered_records": 2,
+        "unique_record_ids": 2,
+        "paired_sbp_records": 2,
+        "mean_baseline_sbp": 152.5,
+        "mean_followup_sbp": 144.0,
+        "mean_paired_sbp_change": 8.5,
+        "duplicate_excess": 0,
+        "missing_followup_sbp": 0,
+        "implausible_followup_sbp": 0,
+        "missing_primary_class": 0
+      }
+    },
+    {
+      "label": "ACE inhibitor|Male|40–59|yes",
+      "filters": {
+        "drug": "ACE inhibitor",
+        "sex": "Male",
+        "age": "40–59",
+        "co": "yes"
+      },
+      "metrics": {
+        "filtered_records": 3,
+        "unique_record_ids": 3,
+        "paired_sbp_records": 3,
+        "mean_baseline_sbp": 168.33333333333334,
+        "mean_followup_sbp": 148.33333333333334,
+        "mean_paired_sbp_change": 20.0,
+        "duplicate_excess": 0,
+        "missing_followup_sbp": 0,
+        "implausible_followup_sbp": 0,
+        "missing_primary_class": 0
+      }
+    },
+    {
+      "label": "ACE inhibitor|Male|40–59|no",
+      "filters": {
+        "drug": "ACE inhibitor",
+        "sex": "Male",
+        "age": "40–59",
+        "co": "no"
+      },
+      "metrics": {
+        "filtered_records": 3,
+        "unique_record_ids": 3,
+        "paired_sbp_records": 3,
+        "mean_baseline_sbp": 155.33333333333334,
+        "mean_followup_sbp": 140.66666666666666,
+        "mean_paired_sbp_change": 14.666666666666666,
+        "duplicate_excess": 0,
+        "missing_followup_sbp": 0,
+        "implausible_followup_sbp": 0,
+        "missing_primary_class": 0
+      }
+    },
+    {
+      "label": "ACE inhibitor|Male|60+|yes",
+      "filters": {
+        "drug": "ACE inhibitor",
+        "sex": "Male",
+        "age": "60+",
+        "co": "yes"
+      },
+      "metrics": {
+        "filtered_records": 16,
+        "unique_record_ids": 16,
+        "paired_sbp_records": 16,
+        "mean_baseline_sbp": 157.5,
+        "mean_followup_sbp": 140.1875,
+        "mean_paired_sbp_change": 17.3125,
+        "duplicate_excess": 0,
+        "missing_followup_sbp": 0,
+        "implausible_followup_sbp": 0,
+        "missing_primary_class": 0
+      }
+    },
+    {
+      "label": "ACE inhibitor|Male|60+|no",
+      "filters": {
+        "drug": "ACE inhibitor",
+        "sex": "Male",
+        "age": "60+",
+        "co": "no"
+      },
+      "metrics": {
+        "filtered_records": 13,
+        "unique_record_ids": 12,
+        "paired_sbp_records": 13,
+        "mean_baseline_sbp": 157.15384615384616,
+        "mean_followup_sbp": 142.53846153846155,
+        "mean_paired_sbp_change": 14.615384615384615,
+        "duplicate_excess": 1,
+        "missing_followup_sbp": 0,
+        "implausible_followup_sbp": 0,
+        "missing_primary_class": 0
+      }
+    },
+    {
+      "label": "ARB|Female|18–39|yes",
+      "filters": {
+        "drug": "ARB",
+        "sex": "Female",
+        "age": "18–39",
+        "co": "yes"
+      },
+      "metrics": {
+        "filtered_records": 1,
+        "unique_record_ids": 1,
+        "paired_sbp_records": 1,
+        "mean_baseline_sbp": 154.0,
+        "mean_followup_sbp": 138.0,
+        "mean_paired_sbp_change": 16.0,
+        "duplicate_excess": 0,
+        "missing_followup_sbp": 0,
+        "implausible_followup_sbp": 0,
+        "missing_primary_class": 0
+      }
+    },
+    {
+      "label": "ARB|Female|18–39|no",
+      "filters": {
+        "drug": "ARB",
+        "sex": "Female",
+        "age": "18–39",
+        "co": "no"
+      },
+      "metrics": {
+        "filtered_records": 0,
+        "unique_record_ids": 0,
+        "paired_sbp_records": 0,
+        "mean_baseline_sbp": null,
+        "mean_followup_sbp": null,
+        "mean_paired_sbp_change": null,
+        "duplicate_excess": 0,
+        "missing_followup_sbp": 0,
+        "implausible_followup_sbp": 0,
+        "missing_primary_class": 0
+      }
+    },
+    {
+      "label": "ARB|Female|40–59|yes",
+      "filters": {
+        "drug": "ARB",
+        "sex": "Female",
+        "age": "40–59",
+        "co": "yes"
+      },
+      "metrics": {
+        "filtered_records": 12,
+        "unique_record_ids": 12,
+        "paired_sbp_records": 11,
+        "mean_baseline_sbp": 160.0909090909091,
+        "mean_followup_sbp": 140.54545454545453,
+        "mean_paired_sbp_change": 19.545454545454547,
+        "duplicate_excess": 0,
+        "missing_followup_sbp": 1,
+        "implausible_followup_sbp": 0,
+        "missing_primary_class": 0
+      }
+    },
+    {
+      "label": "ARB|Female|40–59|no",
+      "filters": {
+        "drug": "ARB",
+        "sex": "Female",
+        "age": "40–59",
+        "co": "no"
+      },
+      "metrics": {
+        "filtered_records": 8,
+        "unique_record_ids": 8,
+        "paired_sbp_records": 7,
+        "mean_baseline_sbp": 140.28571428571428,
+        "mean_followup_sbp": 136.14285714285714,
+        "mean_paired_sbp_change": 4.142857142857143,
+        "duplicate_excess": 0,
+        "missing_followup_sbp": 1,
+        "implausible_followup_sbp": 0,
+        "missing_primary_class": 0
+      }
+    },
+    {
+      "label": "ARB|Female|60+|yes",
+      "filters": {
+        "drug": "ARB",
+        "sex": "Female",
+        "age": "60+",
+        "co": "yes"
+      },
+      "metrics": {
+        "filtered_records": 10,
+        "unique_record_ids": 10,
+        "paired_sbp_records": 10,
+        "mean_baseline_sbp": 163.3,
+        "mean_followup_sbp": 156.0,
+        "mean_paired_sbp_change": 7.3,
+        "duplicate_excess": 0,
+        "missing_followup_sbp": 0,
+        "implausible_followup_sbp": 0,
+        "missing_primary_class": 0
+      }
+    },
+    {
+      "label": "ARB|Female|60+|no",
+      "filters": {
+        "drug": "ARB",
+        "sex": "Female",
+        "age": "60+",
+        "co": "no"
+      },
+      "metrics": {
+        "filtered_records": 12,
+        "unique_record_ids": 12,
+        "paired_sbp_records": 12,
+        "mean_baseline_sbp": 153.75,
+        "mean_followup_sbp": 135.0,
+        "mean_paired_sbp_change": 18.75,
+        "duplicate_excess": 0,
+        "missing_followup_sbp": 0,
+        "implausible_followup_sbp": 0,
+        "missing_primary_class": 0
+      }
+    },
+    {
+      "label": "ARB|Male|18–39|yes",
+      "filters": {
+        "drug": "ARB",
+        "sex": "Male",
+        "age": "18–39",
+        "co": "yes"
+      },
+      "metrics": {
+        "filtered_records": 1,
+        "unique_record_ids": 1,
+        "paired_sbp_records": 1,
+        "mean_baseline_sbp": 165.0,
+        "mean_followup_sbp": 142.0,
+        "mean_paired_sbp_change": 23.0,
+        "duplicate_excess": 0,
+        "missing_followup_sbp": 0,
+        "implausible_followup_sbp": 0,
+        "missing_primary_class": 0
+      }
+    },
+    {
+      "label": "ARB|Male|18–39|no",
+      "filters": {
+        "drug": "ARB",
+        "sex": "Male",
+        "age": "18–39",
+        "co": "no"
+      },
+      "metrics": {
+        "filtered_records": 1,
+        "unique_record_ids": 1,
+        "paired_sbp_records": 1,
+        "mean_baseline_sbp": 150.0,
+        "mean_followup_sbp": 145.0,
+        "mean_paired_sbp_change": 5.0,
+        "duplicate_excess": 0,
+        "missing_followup_sbp": 0,
+        "implausible_followup_sbp": 0,
+        "missing_primary_class": 0
+      }
+    },
+    {
+      "label": "ARB|Male|40–59|yes",
+      "filters": {
+        "drug": "ARB",
+        "sex": "Male",
+        "age": "40–59",
+        "co": "yes"
+      },
+      "metrics": {
+        "filtered_records": 7,
+        "unique_record_ids": 7,
+        "paired_sbp_records": 7,
+        "mean_baseline_sbp": 156.42857142857142,
+        "mean_followup_sbp": 141.71428571428572,
+        "mean_paired_sbp_change": 14.714285714285714,
+        "duplicate_excess": 0,
+        "missing_followup_sbp": 0,
+        "implausible_followup_sbp": 0,
+        "missing_primary_class": 0
+      }
+    },
+    {
+      "label": "ARB|Male|40–59|no",
+      "filters": {
+        "drug": "ARB",
+        "sex": "Male",
+        "age": "40–59",
+        "co": "no"
+      },
+      "metrics": {
+        "filtered_records": 9,
+        "unique_record_ids": 9,
+        "paired_sbp_records": 9,
+        "mean_baseline_sbp": 151.88888888888889,
+        "mean_followup_sbp": 137.11111111111111,
+        "mean_paired_sbp_change": 14.777777777777779,
+        "duplicate_excess": 0,
+        "missing_followup_sbp": 0,
+        "implausible_followup_sbp": 0,
+        "missing_primary_class": 0
+      }
+    },
+    {
+      "label": "ARB|Male|60+|yes",
+      "filters": {
+        "drug": "ARB",
+        "sex": "Male",
+        "age": "60+",
+        "co": "yes"
+      },
+      "metrics": {
+        "filtered_records": 11,
+        "unique_record_ids": 11,
+        "paired_sbp_records": 11,
+        "mean_baseline_sbp": 152.36363636363637,
+        "mean_followup_sbp": 139.0,
+        "mean_paired_sbp_change": 13.363636363636363,
+        "duplicate_excess": 0,
+        "missing_followup_sbp": 0,
+        "implausible_followup_sbp": 0,
+        "missing_primary_class": 0
+      }
+    },
+    {
+      "label": "ARB|Male|60+|no",
+      "filters": {
+        "drug": "ARB",
+        "sex": "Male",
+        "age": "60+",
+        "co": "no"
+      },
+      "metrics": {
+        "filtered_records": 15,
+        "unique_record_ids": 15,
+        "paired_sbp_records": 15,
+        "mean_baseline_sbp": 155.0,
+        "mean_followup_sbp": 140.8,
+        "mean_paired_sbp_change": 14.2,
+        "duplicate_excess": 0,
+        "missing_followup_sbp": 0,
+        "implausible_followup_sbp": 0,
+        "missing_primary_class": 0
+      }
+    },
+    {
+      "label": "Beta blocker|Female|18–39|yes",
+      "filters": {
+        "drug": "Beta blocker",
+        "sex": "Female",
+        "age": "18–39",
+        "co": "yes"
+      },
+      "metrics": {
+        "filtered_records": 0,
+        "unique_record_ids": 0,
+        "paired_sbp_records": 0,
+        "mean_baseline_sbp": null,
+        "mean_followup_sbp": null,
+        "mean_paired_sbp_change": null,
+        "duplicate_excess": 0,
+        "missing_followup_sbp": 0,
+        "implausible_followup_sbp": 0,
+        "missing_primary_class": 0
+      }
+    },
+    {
+      "label": "Beta blocker|Female|18–39|no",
+      "filters": {
+        "drug": "Beta blocker",
+        "sex": "Female",
+        "age": "18–39",
+        "co": "no"
+      },
+      "metrics": {
+        "filtered_records": 0,
+        "unique_record_ids": 0,
+        "paired_sbp_records": 0,
+        "mean_baseline_sbp": null,
+        "mean_followup_sbp": null,
+        "mean_paired_sbp_change": null,
+        "duplicate_excess": 0,
+        "missing_followup_sbp": 0,
+        "implausible_followup_sbp": 0,
+        "missing_primary_class": 0
+      }
+    },
+    {
+      "label": "Beta blocker|Female|40–59|yes",
+      "filters": {
+        "drug": "Beta blocker",
+        "sex": "Female",
+        "age": "40–59",
+        "co": "yes"
+      },
+      "metrics": {
+        "filtered_records": 2,
+        "unique_record_ids": 2,
+        "paired_sbp_records": 2,
+        "mean_baseline_sbp": 155.0,
+        "mean_followup_sbp": 146.5,
+        "mean_paired_sbp_change": 8.5,
+        "duplicate_excess": 0,
+        "missing_followup_sbp": 0,
+        "implausible_followup_sbp": 0,
+        "missing_primary_class": 0
+      }
+    },
+    {
+      "label": "Beta blocker|Female|40–59|no",
+      "filters": {
+        "drug": "Beta blocker",
+        "sex": "Female",
+        "age": "40–59",
+        "co": "no"
+      },
+      "metrics": {
+        "filtered_records": 4,
+        "unique_record_ids": 4,
+        "paired_sbp_records": 4,
+        "mean_baseline_sbp": 151.5,
+        "mean_followup_sbp": 139.75,
+        "mean_paired_sbp_change": 11.75,
+        "duplicate_excess": 0,
+        "missing_followup_sbp": 0,
+        "implausible_followup_sbp": 0,
+        "missing_primary_class": 0
+      }
+    },
+    {
+      "label": "Beta blocker|Female|60+|yes",
+      "filters": {
+        "drug": "Beta blocker",
+        "sex": "Female",
+        "age": "60+",
+        "co": "yes"
+      },
+      "metrics": {
+        "filtered_records": 4,
+        "unique_record_ids": 4,
+        "paired_sbp_records": 4,
+        "mean_baseline_sbp": 164.0,
+        "mean_followup_sbp": 157.75,
+        "mean_paired_sbp_change": 6.25,
+        "duplicate_excess": 0,
+        "missing_followup_sbp": 0,
+        "implausible_followup_sbp": 0,
+        "missing_primary_class": 0
+      }
+    },
+    {
+      "label": "Beta blocker|Female|60+|no",
+      "filters": {
+        "drug": "Beta blocker",
+        "sex": "Female",
+        "age": "60+",
+        "co": "no"
+      },
+      "metrics": {
+        "filtered_records": 3,
+        "unique_record_ids": 3,
+        "paired_sbp_records": 3,
+        "mean_baseline_sbp": 158.66666666666666,
+        "mean_followup_sbp": 141.33333333333334,
+        "mean_paired_sbp_change": 17.333333333333332,
+        "duplicate_excess": 0,
+        "missing_followup_sbp": 0,
+        "implausible_followup_sbp": 0,
+        "missing_primary_class": 0
+      }
+    },
+    {
+      "label": "Beta blocker|Male|18–39|yes",
+      "filters": {
+        "drug": "Beta blocker",
+        "sex": "Male",
+        "age": "18–39",
+        "co": "yes"
+      },
+      "metrics": {
+        "filtered_records": 0,
+        "unique_record_ids": 0,
+        "paired_sbp_records": 0,
+        "mean_baseline_sbp": null,
+        "mean_followup_sbp": null,
+        "mean_paired_sbp_change": null,
+        "duplicate_excess": 0,
+        "missing_followup_sbp": 0,
+        "implausible_followup_sbp": 0,
+        "missing_primary_class": 0
+      }
+    },
+    {
+      "label": "Beta blocker|Male|18–39|no",
+      "filters": {
+        "drug": "Beta blocker",
+        "sex": "Male",
+        "age": "18–39",
+        "co": "no"
+      },
+      "metrics": {
+        "filtered_records": 0,
+        "unique_record_ids": 0,
+        "paired_sbp_records": 0,
+        "mean_baseline_sbp": null,
+        "mean_followup_sbp": null,
+        "mean_paired_sbp_change": null,
+        "duplicate_excess": 0,
+        "missing_followup_sbp": 0,
+        "implausible_followup_sbp": 0,
+        "missing_primary_class": 0
+      }
+    },
+    {
+      "label": "Beta blocker|Male|40–59|yes",
+      "filters": {
+        "drug": "Beta blocker",
+        "sex": "Male",
+        "age": "40–59",
+        "co": "yes"
+      },
+      "metrics": {
+        "filtered_records": 6,
+        "unique_record_ids": 6,
+        "paired_sbp_records": 6,
+        "mean_baseline_sbp": 153.33333333333334,
+        "mean_followup_sbp": 141.83333333333334,
+        "mean_paired_sbp_change": 11.5,
+        "duplicate_excess": 0,
+        "missing_followup_sbp": 0,
+        "implausible_followup_sbp": 0,
+        "missing_primary_class": 0
+      }
+    },
+    {
+      "label": "Beta blocker|Male|40–59|no",
+      "filters": {
+        "drug": "Beta blocker",
+        "sex": "Male",
+        "age": "40–59",
+        "co": "no"
+      },
+      "metrics": {
+        "filtered_records": 4,
+        "unique_record_ids": 4,
+        "paired_sbp_records": 3,
+        "mean_baseline_sbp": 152.66666666666666,
+        "mean_followup_sbp": 137.33333333333334,
+        "mean_paired_sbp_change": 15.333333333333334,
+        "duplicate_excess": 0,
+        "missing_followup_sbp": 0,
+        "implausible_followup_sbp": 1,
+        "missing_primary_class": 0
+      }
+    },
+    {
+      "label": "Beta blocker|Male|60+|yes",
+      "filters": {
+        "drug": "Beta blocker",
+        "sex": "Male",
+        "age": "60+",
+        "co": "yes"
+      },
+      "metrics": {
+        "filtered_records": 6,
+        "unique_record_ids": 6,
+        "paired_sbp_records": 6,
+        "mean_baseline_sbp": 155.16666666666666,
+        "mean_followup_sbp": 148.83333333333334,
+        "mean_paired_sbp_change": 6.333333333333333,
+        "duplicate_excess": 0,
+        "missing_followup_sbp": 0,
+        "implausible_followup_sbp": 0,
+        "missing_primary_class": 0
+      }
+    },
+    {
+      "label": "Beta blocker|Male|60+|no",
+      "filters": {
+        "drug": "Beta blocker",
+        "sex": "Male",
+        "age": "60+",
+        "co": "no"
+      },
+      "metrics": {
+        "filtered_records": 3,
+        "unique_record_ids": 3,
+        "paired_sbp_records": 3,
+        "mean_baseline_sbp": 141.0,
+        "mean_followup_sbp": 127.33333333333333,
+        "mean_paired_sbp_change": 13.666666666666666,
+        "duplicate_excess": 0,
+        "missing_followup_sbp": 0,
+        "implausible_followup_sbp": 0,
+        "missing_primary_class": 0
+      }
+    },
+    {
+      "label": "Calcium channel blocker|Female|18–39|yes",
+      "filters": {
+        "drug": "Calcium channel blocker",
+        "sex": "Female",
+        "age": "18–39",
+        "co": "yes"
+      },
+      "metrics": {
+        "filtered_records": 0,
+        "unique_record_ids": 0,
+        "paired_sbp_records": 0,
+        "mean_baseline_sbp": null,
+        "mean_followup_sbp": null,
+        "mean_paired_sbp_change": null,
+        "duplicate_excess": 0,
+        "missing_followup_sbp": 0,
+        "implausible_followup_sbp": 0,
+        "missing_primary_class": 0
+      }
+    },
+    {
+      "label": "Calcium channel blocker|Female|18–39|no",
+      "filters": {
+        "drug": "Calcium channel blocker",
+        "sex": "Female",
+        "age": "18–39",
+        "co": "no"
+      },
+      "metrics": {
+        "filtered_records": 0,
+        "unique_record_ids": 0,
+        "paired_sbp_records": 0,
+        "mean_baseline_sbp": null,
+        "mean_followup_sbp": null,
+        "mean_paired_sbp_change": null,
+        "duplicate_excess": 0,
+        "missing_followup_sbp": 0,
+        "implausible_followup_sbp": 0,
+        "missing_primary_class": 0
+      }
+    },
+    {
+      "label": "Calcium channel blocker|Female|40–59|yes",
+      "filters": {
+        "drug": "Calcium channel blocker",
+        "sex": "Female",
+        "age": "40–59",
+        "co": "yes"
+      },
+      "metrics": {
+        "filtered_records": 7,
+        "unique_record_ids": 7,
+        "paired_sbp_records": 7,
+        "mean_baseline_sbp": 155.0,
+        "mean_followup_sbp": 137.71428571428572,
+        "mean_paired_sbp_change": 17.285714285714285,
+        "duplicate_excess": 0,
+        "missing_followup_sbp": 0,
+        "implausible_followup_sbp": 0,
+        "missing_primary_class": 0
+      }
+    },
+    {
+      "label": "Calcium channel blocker|Female|40–59|no",
+      "filters": {
+        "drug": "Calcium channel blocker",
+        "sex": "Female",
+        "age": "40–59",
+        "co": "no"
+      },
+      "metrics": {
+        "filtered_records": 16,
+        "unique_record_ids": 16,
+        "paired_sbp_records": 16,
+        "mean_baseline_sbp": 154.375,
+        "mean_followup_sbp": 139.1875,
+        "mean_paired_sbp_change": 15.1875,
+        "duplicate_excess": 0,
+        "missing_followup_sbp": 0,
+        "implausible_followup_sbp": 0,
+        "missing_primary_class": 0
+      }
+    },
+    {
+      "label": "Calcium channel blocker|Female|60+|yes",
+      "filters": {
+        "drug": "Calcium channel blocker",
+        "sex": "Female",
+        "age": "60+",
+        "co": "yes"
+      },
+      "metrics": {
+        "filtered_records": 11,
+        "unique_record_ids": 11,
+        "paired_sbp_records": 11,
+        "mean_baseline_sbp": 160.36363636363637,
+        "mean_followup_sbp": 148.27272727272728,
+        "mean_paired_sbp_change": 12.090909090909092,
+        "duplicate_excess": 0,
+        "missing_followup_sbp": 0,
+        "implausible_followup_sbp": 0,
+        "missing_primary_class": 0
+      }
+    },
+    {
+      "label": "Calcium channel blocker|Female|60+|no",
+      "filters": {
+        "drug": "Calcium channel blocker",
+        "sex": "Female",
+        "age": "60+",
+        "co": "no"
+      },
+      "metrics": {
+        "filtered_records": 9,
+        "unique_record_ids": 9,
+        "paired_sbp_records": 9,
+        "mean_baseline_sbp": 152.22222222222223,
+        "mean_followup_sbp": 138.44444444444446,
+        "mean_paired_sbp_change": 13.777777777777779,
+        "duplicate_excess": 0,
+        "missing_followup_sbp": 0,
+        "implausible_followup_sbp": 0,
+        "missing_primary_class": 0
+      }
+    },
+    {
+      "label": "Calcium channel blocker|Male|18–39|yes",
+      "filters": {
+        "drug": "Calcium channel blocker",
+        "sex": "Male",
+        "age": "18–39",
+        "co": "yes"
+      },
+      "metrics": {
+        "filtered_records": 0,
+        "unique_record_ids": 0,
+        "paired_sbp_records": 0,
+        "mean_baseline_sbp": null,
+        "mean_followup_sbp": null,
+        "mean_paired_sbp_change": null,
+        "duplicate_excess": 0,
+        "missing_followup_sbp": 0,
+        "implausible_followup_sbp": 0,
+        "missing_primary_class": 0
+      }
+    },
+    {
+      "label": "Calcium channel blocker|Male|18–39|no",
+      "filters": {
+        "drug": "Calcium channel blocker",
+        "sex": "Male",
+        "age": "18–39",
+        "co": "no"
+      },
+      "metrics": {
+        "filtered_records": 1,
+        "unique_record_ids": 1,
+        "paired_sbp_records": 1,
+        "mean_baseline_sbp": 172.0,
+        "mean_followup_sbp": 157.0,
+        "mean_paired_sbp_change": 15.0,
+        "duplicate_excess": 0,
+        "missing_followup_sbp": 0,
+        "implausible_followup_sbp": 0,
+        "missing_primary_class": 0
+      }
+    },
+    {
+      "label": "Calcium channel blocker|Male|40–59|yes",
+      "filters": {
+        "drug": "Calcium channel blocker",
+        "sex": "Male",
+        "age": "40–59",
+        "co": "yes"
+      },
+      "metrics": {
+        "filtered_records": 2,
+        "unique_record_ids": 2,
+        "paired_sbp_records": 2,
+        "mean_baseline_sbp": 156.5,
+        "mean_followup_sbp": 147.0,
+        "mean_paired_sbp_change": 9.5,
+        "duplicate_excess": 0,
+        "missing_followup_sbp": 0,
+        "implausible_followup_sbp": 0,
+        "missing_primary_class": 0
+      }
+    },
+    {
+      "label": "Calcium channel blocker|Male|40–59|no",
+      "filters": {
+        "drug": "Calcium channel blocker",
+        "sex": "Male",
+        "age": "40–59",
+        "co": "no"
+      },
+      "metrics": {
+        "filtered_records": 5,
+        "unique_record_ids": 5,
+        "paired_sbp_records": 5,
+        "mean_baseline_sbp": 157.2,
+        "mean_followup_sbp": 140.6,
+        "mean_paired_sbp_change": 16.6,
+        "duplicate_excess": 0,
+        "missing_followup_sbp": 0,
+        "implausible_followup_sbp": 0,
+        "missing_primary_class": 0
+      }
+    },
+    {
+      "label": "Calcium channel blocker|Male|60+|yes",
+      "filters": {
+        "drug": "Calcium channel blocker",
+        "sex": "Male",
+        "age": "60+",
+        "co": "yes"
+      },
+      "metrics": {
+        "filtered_records": 15,
+        "unique_record_ids": 15,
+        "paired_sbp_records": 15,
+        "mean_baseline_sbp": 158.0,
+        "mean_followup_sbp": 145.73333333333332,
+        "mean_paired_sbp_change": 12.266666666666667,
+        "duplicate_excess": 0,
+        "missing_followup_sbp": 0,
+        "implausible_followup_sbp": 0,
+        "missing_primary_class": 0
+      }
+    },
+    {
+      "label": "Calcium channel blocker|Male|60+|no",
+      "filters": {
+        "drug": "Calcium channel blocker",
+        "sex": "Male",
+        "age": "60+",
+        "co": "no"
+      },
+      "metrics": {
+        "filtered_records": 9,
+        "unique_record_ids": 9,
+        "paired_sbp_records": 9,
+        "mean_baseline_sbp": 155.0,
+        "mean_followup_sbp": 142.22222222222223,
+        "mean_paired_sbp_change": 12.777777777777779,
+        "duplicate_excess": 0,
+        "missing_followup_sbp": 0,
+        "implausible_followup_sbp": 0,
+        "missing_primary_class": 0
+      }
+    },
+    {
+      "label": "Thiazide-like diuretic|Female|18–39|yes",
+      "filters": {
+        "drug": "Thiazide-like diuretic",
+        "sex": "Female",
+        "age": "18–39",
+        "co": "yes"
+      },
+      "metrics": {
+        "filtered_records": 0,
+        "unique_record_ids": 0,
+        "paired_sbp_records": 0,
+        "mean_baseline_sbp": null,
+        "mean_followup_sbp": null,
+        "mean_paired_sbp_change": null,
+        "duplicate_excess": 0,
+        "missing_followup_sbp": 0,
+        "implausible_followup_sbp": 0,
+        "missing_primary_class": 0
+      }
+    },
+    {
+      "label": "Thiazide-like diuretic|Female|18–39|no",
+      "filters": {
+        "drug": "Thiazide-like diuretic",
+        "sex": "Female",
+        "age": "18–39",
+        "co": "no"
+      },
+      "metrics": {
+        "filtered_records": 0,
+        "unique_record_ids": 0,
+        "paired_sbp_records": 0,
+        "mean_baseline_sbp": null,
+        "mean_followup_sbp": null,
+        "mean_paired_sbp_change": null,
+        "duplicate_excess": 0,
+        "missing_followup_sbp": 0,
+        "implausible_followup_sbp": 0,
+        "missing_primary_class": 0
+      }
+    },
+    {
+      "label": "Thiazide-like diuretic|Female|40–59|yes",
+      "filters": {
+        "drug": "Thiazide-like diuretic",
+        "sex": "Female",
+        "age": "40–59",
+        "co": "yes"
+      },
+      "metrics": {
+        "filtered_records": 5,
+        "unique_record_ids": 5,
+        "paired_sbp_records": 5,
+        "mean_baseline_sbp": 162.8,
+        "mean_followup_sbp": 147.2,
+        "mean_paired_sbp_change": 15.6,
+        "duplicate_excess": 0,
+        "missing_followup_sbp": 0,
+        "implausible_followup_sbp": 0,
+        "missing_primary_class": 0
+      }
+    },
+    {
+      "label": "Thiazide-like diuretic|Female|40–59|no",
+      "filters": {
+        "drug": "Thiazide-like diuretic",
+        "sex": "Female",
+        "age": "40–59",
+        "co": "no"
+      },
+      "metrics": {
+        "filtered_records": 6,
+        "unique_record_ids": 6,
+        "paired_sbp_records": 6,
+        "mean_baseline_sbp": 147.16666666666666,
+        "mean_followup_sbp": 137.0,
+        "mean_paired_sbp_change": 10.166666666666666,
+        "duplicate_excess": 0,
+        "missing_followup_sbp": 0,
+        "implausible_followup_sbp": 0,
+        "missing_primary_class": 0
+      }
+    },
+    {
+      "label": "Thiazide-like diuretic|Female|60+|yes",
+      "filters": {
+        "drug": "Thiazide-like diuretic",
+        "sex": "Female",
+        "age": "60+",
+        "co": "yes"
+      },
+      "metrics": {
+        "filtered_records": 2,
+        "unique_record_ids": 2,
+        "paired_sbp_records": 2,
+        "mean_baseline_sbp": 150.0,
+        "mean_followup_sbp": 150.5,
+        "mean_paired_sbp_change": -0.5,
+        "duplicate_excess": 0,
+        "missing_followup_sbp": 0,
+        "implausible_followup_sbp": 0,
+        "missing_primary_class": 0
+      }
+    },
+    {
+      "label": "Thiazide-like diuretic|Female|60+|no",
+      "filters": {
+        "drug": "Thiazide-like diuretic",
+        "sex": "Female",
+        "age": "60+",
+        "co": "no"
+      },
+      "metrics": {
+        "filtered_records": 7,
+        "unique_record_ids": 7,
+        "paired_sbp_records": 7,
+        "mean_baseline_sbp": 151.71428571428572,
+        "mean_followup_sbp": 138.57142857142858,
+        "mean_paired_sbp_change": 13.142857142857142,
+        "duplicate_excess": 0,
+        "missing_followup_sbp": 0,
+        "implausible_followup_sbp": 0,
+        "missing_primary_class": 0
+      }
+    },
+    {
+      "label": "Thiazide-like diuretic|Male|18–39|yes",
+      "filters": {
+        "drug": "Thiazide-like diuretic",
+        "sex": "Male",
+        "age": "18–39",
+        "co": "yes"
+      },
+      "metrics": {
+        "filtered_records": 0,
+        "unique_record_ids": 0,
+        "paired_sbp_records": 0,
+        "mean_baseline_sbp": null,
+        "mean_followup_sbp": null,
+        "mean_paired_sbp_change": null,
+        "duplicate_excess": 0,
+        "missing_followup_sbp": 0,
+        "implausible_followup_sbp": 0,
+        "missing_primary_class": 0
+      }
+    },
+    {
+      "label": "Thiazide-like diuretic|Male|18–39|no",
+      "filters": {
+        "drug": "Thiazide-like diuretic",
+        "sex": "Male",
+        "age": "18–39",
+        "co": "no"
+      },
+      "metrics": {
+        "filtered_records": 1,
+        "unique_record_ids": 1,
+        "paired_sbp_records": 1,
+        "mean_baseline_sbp": 157.0,
+        "mean_followup_sbp": 148.0,
+        "mean_paired_sbp_change": 9.0,
+        "duplicate_excess": 0,
+        "missing_followup_sbp": 0,
+        "implausible_followup_sbp": 0,
+        "missing_primary_class": 0
+      }
+    },
+    {
+      "label": "Thiazide-like diuretic|Male|40–59|yes",
+      "filters": {
+        "drug": "Thiazide-like diuretic",
+        "sex": "Male",
+        "age": "40–59",
+        "co": "yes"
+      },
+      "metrics": {
+        "filtered_records": 4,
+        "unique_record_ids": 4,
+        "paired_sbp_records": 4,
+        "mean_baseline_sbp": 161.5,
+        "mean_followup_sbp": 154.75,
+        "mean_paired_sbp_change": 6.75,
+        "duplicate_excess": 0,
+        "missing_followup_sbp": 0,
+        "implausible_followup_sbp": 0,
+        "missing_primary_class": 0
+      }
+    },
+    {
+      "label": "Thiazide-like diuretic|Male|40–59|no",
+      "filters": {
+        "drug": "Thiazide-like diuretic",
+        "sex": "Male",
+        "age": "40–59",
+        "co": "no"
+      },
+      "metrics": {
+        "filtered_records": 4,
+        "unique_record_ids": 4,
+        "paired_sbp_records": 4,
+        "mean_baseline_sbp": 162.5,
+        "mean_followup_sbp": 146.0,
+        "mean_paired_sbp_change": 16.5,
+        "duplicate_excess": 0,
+        "missing_followup_sbp": 0,
+        "implausible_followup_sbp": 0,
+        "missing_primary_class": 0
+      }
+    },
+    {
+      "label": "Thiazide-like diuretic|Male|60+|yes",
+      "filters": {
+        "drug": "Thiazide-like diuretic",
+        "sex": "Male",
+        "age": "60+",
+        "co": "yes"
+      },
+      "metrics": {
+        "filtered_records": 8,
+        "unique_record_ids": 8,
+        "paired_sbp_records": 8,
+        "mean_baseline_sbp": 160.25,
+        "mean_followup_sbp": 146.0,
+        "mean_paired_sbp_change": 14.25,
+        "duplicate_excess": 0,
+        "missing_followup_sbp": 0,
+        "implausible_followup_sbp": 0,
+        "missing_primary_class": 0
+      }
+    },
+    {
+      "label": "Thiazide-like diuretic|Male|60+|no",
+      "filters": {
+        "drug": "Thiazide-like diuretic",
+        "sex": "Male",
+        "age": "60+",
+        "co": "no"
+      },
+      "metrics": {
+        "filtered_records": 11,
+        "unique_record_ids": 11,
+        "paired_sbp_records": 11,
+        "mean_baseline_sbp": 154.1818181818182,
+        "mean_followup_sbp": 148.36363636363637,
+        "mean_paired_sbp_change": 5.818181818181818,
+        "duplicate_excess": 0,
+        "missing_followup_sbp": 0,
+        "implausible_followup_sbp": 0,
+        "missing_primary_class": 0
+      }
+    }
+  ]
+}

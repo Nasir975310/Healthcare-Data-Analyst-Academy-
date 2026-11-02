@@ -1,0 +1,74 @@
+[
+  {
+    "id": "q1",
+    "q": "What should happen before cleaning?",
+    "options": [
+      "Profile and understand the source data",
+      "Delete all missing rows",
+      "Replace all zeros",
+      "Standardize every code"
+    ],
+    "correct": 0,
+    "why": "Profiling informs safe and documented cleaning."
+  },
+  {
+    "id": "q2",
+    "q": "Does a duplicate patient_id in encounters always indicate an error?",
+    "options": [
+      "No, a patient can have multiple encounters",
+      "Yes, patient IDs must be unique per encounter table",
+      "Only if SBP is missing",
+      "Only in CSV"
+    ],
+    "correct": 0,
+    "why": "The grain is one row per encounter, not one row per patient."
+  },
+  {
+    "id": "q3",
+    "q": "What does errors='coerce' do in pandas parsing?",
+    "options": [
+      "Converts unparseable values to missing markers",
+      "Fixes all invalid values",
+      "Deletes rows automatically",
+      "Writes an error log"
+    ],
+    "correct": 0,
+    "why": "Coercion must be audited so invalid values are not hidden."
+  },
+  {
+    "id": "q4",
+    "q": "Should an unusual SBP value automatically be deleted?",
+    "options": [
+      "No, investigate source, units and context",
+      "Yes, all outliers are errors",
+      "Only if above the mean",
+      "Only if the row is complete"
+    ],
+    "correct": 0,
+    "why": "Outliers may be valid observations."
+  },
+  {
+    "id": "q5",
+    "q": "What is a validation assertion useful for?",
+    "options": [
+      "Checking a required invariant such as unique encounter IDs",
+      "Creating a chart",
+      "Encrypting CSV",
+      "Installing packages"
+    ],
+    "correct": 0,
+    "why": "Assertions can enforce hard checks in controlled workflows."
+  },
+  {
+    "id": "q6",
+    "q": "What must a cleaning log record?",
+    "options": [
+      "Rules, affected counts and dispositions",
+      "Only final row count",
+      "Only script filename",
+      "Only chart title"
+    ],
+    "correct": 0,
+    "why": "Traceability requires the transformation and its impact."
+  }
+]

@@ -1,0 +1,12 @@
+{
+  "candidate_stage": "Pharm.D final year / completing; verify exact status before use",
+  "years_experience": 0,
+  "skills": ["Excel", "Statistics", "Healthcare", "Research"],
+  "projects": ["Prospective observational Pharm.D thesis: antihypertensive drug utilisation evaluation, N=153", "Synthetic antihypertensive utilisation analytics case study; fictional"],
+  "evidence": {
+    "Research": {"status": "ACADEMIC_PROJECT", "reference": "Pharm.D thesis; verify submitted version"},
+    "Healthcare": {"status": "ACADEMIC_TRAINING", "reference": "Pharm.D coursework and clinical training"},
+    "Excel": {"status": "SELF_REPORTED_TOOL_USE", "reference": "Attach reproducible project evidence"},
+    "Statistics": {"status": "ACADEMIC_ANALYSIS", "reference": "Verify exact methods and results"}
+  }
+}

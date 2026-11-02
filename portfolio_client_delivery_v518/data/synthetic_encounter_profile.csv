@@ -1,0 +1,11 @@
+record_id,age,sex,service_line,encounter_month,readmission_30d,los_days
+SYN001,62,F,Cardiology,2026-01,false,3
+SYN002,71,M,Medicine,2026-01,true,8
+SYN003,55,F,Medicine,2026-02,false,2
+SYN004,68,M,Cardiology,2026-02,false,5
+SYN005,49,F,Orthopedics,2026-03,false,1
+SYN006,83,M,Medicine,2026-03,true,11
+SYN007,59,F,Cardiology,2026-04,false,4
+SYN008,74,M,Orthopedics,2026-04,false,6
+SYN009,66,F,Medicine,2026-05,true,7
+SYN010,52,M,Cardiology,2026-05,false,2

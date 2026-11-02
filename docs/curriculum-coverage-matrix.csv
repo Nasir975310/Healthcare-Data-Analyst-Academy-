@@ -1,0 +1,112 @@
+volume_id,volume_title,chapter_number,chapter_title,status,lesson_file,assessment_file,solution_included
+V01,Foundations of Healthcare Data Analytics,01,Orientation: what healthcare analytics is,Authored — release 0.5.0,content/lessons.json,content/quiz-v01-c01.json,Yes
+V01,Foundations of Healthcare Data Analytics,02,"Computers, files and digital work",Authored — release 0.5.0,content/lessons.json,content/quiz-v01-c02.json,Yes
+V01,Foundations of Healthcare Data Analytics,03,Data literacy and analytical thinking,Authored — release 0.5.0,content/lessons.json,content/quiz-v01-c03.json,Yes
+V01,Foundations of Healthcare Data Analytics,04,Healthcare systems and data generation,Authored — release 0.5.0,content/lessons.json,content/quiz-v01-c04.json,Yes
+V01,Foundations of Healthcare Data Analytics,05,"Data types, structures and measurement",Authored — release 0.5.0,content/lessons.json,content/quiz-v01-c05.json,Yes
+V01,Foundations of Healthcare Data Analytics,06,Mathematics for analysts,Authored — release 0.5.0,content/lessons.json,content/quiz-v01-c06.json,Yes
+V01,Foundations of Healthcare Data Analytics,07,Statistics I: describing data,Authored — release 0.5.0,content/lessons.json,content/quiz-v01-c07.json,Yes
+V01,Foundations of Healthcare Data Analytics,08,Statistics II: probability and sampling,Authored — release 0.5.0,content/lessons.json,content/quiz-v01-c08.json,Yes
+V01,Foundations of Healthcare Data Analytics,09,Statistics III: inference,Authored — release 0.5.0,content/lessons.json,content/quiz-v01-c09.json,Yes
+V01,Foundations of Healthcare Data Analytics,10,Epidemiology and population health foundations,Authored — release 0.5.0,content/lessons.json,content/quiz-v01-c10.json,Yes
+V01,Foundations of Healthcare Data Analytics,11,Research methods and evidence appraisal,Authored — release 0.5.0,content/lessons.json,content/quiz-v01-c11.json,Yes
+V01,Foundations of Healthcare Data Analytics,12,Data quality and validation foundations,Authored — release 0.5.0,content/lessons.json,content/quiz-v01-c12.json,Yes
+V01,Foundations of Healthcare Data Analytics,13,Healthcare metrics and indicators,Authored — release 0.5.0,content/lessons.json,content/quiz-v01-c13.json,Yes
+V01,Foundations of Healthcare Data Analytics,14,Learning workflow and professional habits,Authored — release 0.5.0,content/lessons.json,content/quiz-v01-c14.json,Yes
+V02,"Excel, SQL and Healthcare Databases",01,Spreadsheet fundamentals,Authored — release 0.6.0,content/lessons.json,content/quiz-v02-c01.json,Yes
+V02,"Excel, SQL and Healthcare Databases",02,Excel formulas and functions,Authored — release 0.6.0,content/lessons.json,content/quiz-v02-c02.json,Yes
+V02,"Excel, SQL and Healthcare Databases",03,Analysis with PivotTables and charts,Authored — release 0.6.0,content/lessons.json,content/quiz-v02-c03.json,Yes
+V02,"Excel, SQL and Healthcare Databases",04,Power Query and repeatable preparation,Authored — release 0.6.0,content/lessons.json,content/quiz-v02-c04.json,Yes
+V02,"Excel, SQL and Healthcare Databases",05,Advanced spreadsheet practice,Authored — release 0.6.0,content/lessons.json,content/quiz-v02-c05.json,Yes
+V02,"Excel, SQL and Healthcare Databases",06,Database concepts,Authored — release 0.7.0,,content/quiz-v02-c06.json,Yes
+V02,"Excel, SQL and Healthcare Databases",07,SQL foundations,Authored — release 0.7.0,,content/quiz-v02-c07.json,Yes
+V02,"Excel, SQL and Healthcare Databases",08,SQL aggregation and joins,Authored — release 0.7.0,,content/quiz-v02-c08.json,Yes
+V02,"Excel, SQL and Healthcare Databases",09,Intermediate and advanced SQL,Authored — release 0.7.0,,content/quiz-v02-c09.json,Yes
+V02,"Excel, SQL and Healthcare Databases",10,Database design and normalization,Authored — release 0.7.0,,content/quiz-v02-c10.json,Yes
+V02,"Excel, SQL and Healthcare Databases",11,PostgreSQL and SQLite practice,Authored — release 0.8.0,,content/quiz-v02-c11.json,Yes
+V02,"Excel, SQL and Healthcare Databases",12,Healthcare data modeling,Authored — release 0.8.0,,content/quiz-v02-c12.json,Yes
+V02,"Excel, SQL and Healthcare Databases",13,"Query quality, safety and performance",Authored — release 0.8.0,,content/quiz-v02-c13.json,Yes
+V02,"Excel, SQL and Healthcare Databases",14,Integrated Excel-SQL project,Authored — release 0.8.0,,content/quiz-v02-c14.json,Yes
+V03,"Python, R and Statistical Programming",01,Programming foundations,Authored — release 0.9.0,,content/quiz-v03-c01.json,Yes
+V03,"Python, R and Statistical Programming",02,Python setup and workflow,Authored — release 0.9.0,,content/quiz-v03-c02.json,Yes
+V03,"Python, R and Statistical Programming",03,Python core language,Authored — release 0.9.0,,content/quiz-v03-c03.json,Yes
+V03,"Python, R and Statistical Programming",04,"Files, exceptions and APIs",Authored — release 0.9.0,,content/quiz-v03-c04.json,Yes
+V03,"Python, R and Statistical Programming",05,NumPy foundations,Authored — release 0.9.0,,content/quiz-v03-c05.json,Yes
+V03,"Python, R and Statistical Programming",06,pandas fundamentals,Authored — release 1.0.0,,content/quiz-v03-c06.json,Yes
+V03,"Python, R and Statistical Programming",07,Data cleaning and validation in Python,Authored — release 1.0.0,,content/quiz-v03-c07.json,Yes
+V03,"Python, R and Statistical Programming",08,Visualization with Matplotlib,Authored — release 1.0.0,,content/quiz-v03-c08.json,Yes
+V03,"Python, R and Statistical Programming",09,Statistical analysis in Python,Authored — release 1.0.0,,content/quiz-v03-c09.json,Yes
+V03,"Python, R and Statistical Programming",10,R and RStudio foundations,Authored — release 1.0.0,,content/quiz-v03-c10.json,Yes
+V03,"Python, R and Statistical Programming",11,R for data analysis and visualization,Authored — release 1.1.0,,content/quiz-v03-c11.json,Yes
+V03,"Python, R and Statistical Programming",12,Reproducible analytical reporting,Authored — release 1.1.0,,content/quiz-v03-c12.json,Yes
+V03,"Python, R and Statistical Programming",13,Automation and reusable code,Authored — release 1.1.0,,content/quiz-v03-c13.json,Yes
+V03,"Python, R and Statistical Programming",14,Python/R integrated portfolio project,Authored — release 1.1.0,,content/quiz-v03-c14.json,Yes
+V04,"Biostatistics, Epidemiology and Clinical Research Analytics",01,Research question frameworks,Authored,,content/quiz-v04-c01.json,Yes
+V04,"Biostatistics, Epidemiology and Clinical Research Analytics",02,Study designs in depth,Authored,,content/quiz-v04-c02.json,Yes
+V04,"Biostatistics, Epidemiology and Clinical Research Analytics",03,"Sampling, sample size and power",Authored,,content/quiz-v04-c03.json,Yes
+V04,"Biostatistics, Epidemiology and Clinical Research Analytics",04,Comparative statistical methods,Authored,,content/quiz-v04-c04.json,Yes
+V04,"Biostatistics, Epidemiology and Clinical Research Analytics",05,Regression methods,Authored,,content/quiz-v04-c05.json,Yes
+V04,"Biostatistics, Epidemiology and Clinical Research Analytics",06,Survival and time-to-event analysis,Authored,,content/quiz-v04-c06.json,Yes
+V04,"Biostatistics, Epidemiology and Clinical Research Analytics",07,Diagnostic and screening analytics,Authored,,content/quiz-v04-c07.json,Yes
+V04,"Biostatistics, Epidemiology and Clinical Research Analytics",08,Missing data and sensitivity analysis,Authored,,content/quiz-v04-c08.json,Yes
+V04,"Biostatistics, Epidemiology and Clinical Research Analytics",09,"Bias, confounding and causal reasoning",Authored,,content/quiz-v04-c09.json,Yes
+V04,"Biostatistics, Epidemiology and Clinical Research Analytics",10,Systematic reviews and meta-analysis,Authored,,content/quiz-v04-c10.json,Yes
+V04,"Biostatistics, Epidemiology and Clinical Research Analytics",11,Clinical trial data workflows,Authored,,content/quiz-v04-c11.json,Yes
+V04,"Biostatistics, Epidemiology and Clinical Research Analytics",12,Evidence interpretation and communication,Authored,,content/quiz-v04-c12.json,Yes
+V04,"Biostatistics, Epidemiology and Clinical Research Analytics",13,Reproducible research project,Authored,,content/quiz-v04-c13.json,Yes
+V05,"Clinical, Pharmacy and Healthcare Analytics",01,Clinical data and EHR architecture,Authored,,content/quiz-v05-c01.json,Yes
+V05,"Clinical, Pharmacy and Healthcare Analytics",02,Clinical terminology and coding,Authored,,content/quiz-v05-c02.json,Yes
+V05,"Clinical, Pharmacy and Healthcare Analytics",03,Clinical measurements and laboratory data,Authored,,content/quiz-v05-c03.json,Yes
+V05,"Clinical, Pharmacy and Healthcare Analytics",04,Medication and pharmacy data,Authored,,content/quiz-v05-c04.json,Yes
+V05,"Clinical, Pharmacy and Healthcare Analytics",05,Drug utilization research,Authored,,content/quiz-v05-c05.json,Yes
+V05,"Clinical, Pharmacy and Healthcare Analytics",06,Pharmacovigilance analytics,Authored,,content/quiz-v05-c06.json,Yes
+V05,"Clinical, Pharmacy and Healthcare Analytics",07,Clinical outcomes and quality analytics,Authored,,content/quiz-v05-c07.json,Yes
+V05,"Clinical, Pharmacy and Healthcare Analytics",08,Hospital operations analytics,Authored,,content/quiz-v05-c08.json,Yes
+V05,"Clinical, Pharmacy and Healthcare Analytics",09,Population health and chronic disease,Authored,,content/quiz-v05-c09.json,Yes
+V05,"Clinical, Pharmacy and Healthcare Analytics",10,Real-world data and evidence,Authored,,content/quiz-v05-c10.json,Yes
+V05,"Clinical, Pharmacy and Healthcare Analytics",11,Healthcare interoperability,Authored,,content/quiz-v05-c11.json,Yes
+V05,"Clinical, Pharmacy and Healthcare Analytics",12,OMOP Common Data Model,Authored,,content/quiz-v05-c12.json,Yes
+V05,"Clinical, Pharmacy and Healthcare Analytics",13,Clinical decision support and safety,Authored,,content/quiz-v05-c13.json,Yes
+V05,"Clinical, Pharmacy and Healthcare Analytics",14,Indian healthcare context,Authored,,content/quiz-v05-c14.json,Yes
+V05,"Clinical, Pharmacy and Healthcare Analytics",15,Integrated clinical analytics capstone,Authored,,content/quiz-v05-c15.json,Yes
+V06,"Business Intelligence, Data Engineering and Cloud",01,BI and decision support fundamentals,Authored,,content/quiz-v06-c01.json,Yes
+V06,"Business Intelligence, Data Engineering and Cloud",02,Power BI foundations,Authored,,content/quiz-v06-c02.json,Yes
+V06,"Business Intelligence, Data Engineering and Cloud",03,Data modeling and DAX,Authored,,content/quiz-v06-c03.json,Yes
+V06,"Business Intelligence, Data Engineering and Cloud",04,Dashboard design and governance,Authored,,content/quiz-v06-c04.json,Yes
+V06,"Business Intelligence, Data Engineering and Cloud",05,Tableau and BI alternatives,Authored,,content/quiz-v06-c05.json,Yes
+V06,"Business Intelligence, Data Engineering and Cloud",06,ETL and ELT pipelines,Authored,,content/quiz-v06-c06.json,Yes
+V06,"Business Intelligence, Data Engineering and Cloud",07,"Warehouses, lakes and lakehouses",Authored,,content/quiz-v06-c07.json,Yes
+V06,"Business Intelligence, Data Engineering and Cloud",08,Git and collaborative development,Authored,,content/quiz-v06-c08.json,Yes
+V06,"Business Intelligence, Data Engineering and Cloud",09,Linux and command-line workflows,Authored,,content/quiz-v06-c09.json,Yes
+V06,"Business Intelligence, Data Engineering and Cloud",10,APIs and data integration,Authored,,content/quiz-v06-c10.json,Yes
+V06,"Business Intelligence, Data Engineering and Cloud",11,Docker and reproducible environments,Authored,,content/quiz-v06-c11.json,Yes
+V06,"Business Intelligence, Data Engineering and Cloud",12,Cloud fundamentals,Authored,,content/quiz-v06-c12.json,Yes
+V06,"Business Intelligence, Data Engineering and Cloud",13,Data governance and observability,Authored,,content/quiz-v06-c13.json,Yes
+V06,"Business Intelligence, Data Engineering and Cloud",14,Production analytics handoff,Authored,,content/quiz-v06-c14.json,Yes
+V07,"Advanced Analytics, Machine Learning and Responsible AI",01,Advanced analytical problem framing,Authored — release 1.5.0; Linux + Windows,content/lessons.json,content/quiz-v07-c01.json,Yes — worked exercise guidance
+V07,"Advanced Analytics, Machine Learning and Responsible AI",02,Machine learning foundations,Authored — release 1.5.0; Linux + Windows,content/lessons.json,content/quiz-v07-c02.json,Yes — worked exercise guidance
+V07,"Advanced Analytics, Machine Learning and Responsible AI",03,Classification and regression,Authored — release 1.5.0; Linux + Windows,content/lessons.json,content/quiz-v07-c03.json,Yes — worked exercise guidance
+V07,"Advanced Analytics, Machine Learning and Responsible AI",04,Unsupervised learning,Authored — release 1.5.0; Linux + Windows,content/lessons.json,content/quiz-v07-c04.json,Yes — worked exercise guidance
+V07,"Advanced Analytics, Machine Learning and Responsible AI",05,Model evaluation and validation,Authored — release 1.5.0; Linux + Windows,content/lessons.json,content/quiz-v07-c05.json,Yes — worked exercise guidance
+V07,"Advanced Analytics, Machine Learning and Responsible AI",06,Healthcare prediction use cases,Authored — release 1.5.0; Linux + Windows,content/lessons.json,content/quiz-v07-c06.json,Yes — worked exercise guidance
+V07,"Advanced Analytics, Machine Learning and Responsible AI",07,Imbalanced data and fairness,Authored — release 1.5.0; Linux + Windows,content/lessons.json,content/quiz-v07-c07.json,Yes — worked exercise guidance
+V07,"Advanced Analytics, Machine Learning and Responsible AI",08,Time series and forecasting,Authored — release 1.5.0; Linux + Windows,content/lessons.json,content/quiz-v07-c08.json,Yes — worked exercise guidance
+V07,"Advanced Analytics, Machine Learning and Responsible AI",09,NLP and clinical text,Authored — release 1.5.0; Linux + Windows,content/lessons.json,content/quiz-v07-c09.json,Yes — worked exercise guidance
+V07,"Advanced Analytics, Machine Learning and Responsible AI",10,Generative AI and LLMs in healthcare,Authored — release 1.5.0; Linux + Windows,content/lessons.json,content/quiz-v07-c10.json,Yes — worked exercise guidance
+V07,"Advanced Analytics, Machine Learning and Responsible AI",11,AI governance and clinical safety,Authored — release 1.5.0; Linux + Windows,content/lessons.json,content/quiz-v07-c11.json,Yes — worked exercise guidance
+V07,"Advanced Analytics, Machine Learning and Responsible AI",12,MLOps foundations,Authored — release 1.5.0; Linux + Windows,content/lessons.json,content/quiz-v07-c12.json,Yes — worked exercise guidance
+V07,"Advanced Analytics, Machine Learning and Responsible AI",13,Advanced specialist capstone,Authored — release 1.5.0; Linux + Windows,content/lessons.json,content/quiz-v07-c13.json,Yes — worked exercise guidance
+V08,"Professional Practice, Remote Work and Career Launch",01,Healthcare analytics roles and pathways,Authored — release 1.6.0; Linux + Windows,content/lessons.json,content/quiz-v08-c01.json,Yes — worked exercise guidance
+V08,"Professional Practice, Remote Work and Career Launch",02,Job-market literacy,Authored — release 1.6.0; Linux + Windows,content/lessons.json,content/quiz-v08-c02.json,Yes — worked exercise guidance
+V08,"Professional Practice, Remote Work and Career Launch",03,Portfolio architecture,Authored — release 1.6.0; Linux + Windows,content/lessons.json,content/quiz-v08-c03.json,Yes — worked exercise guidance
+V08,"Professional Practice, Remote Work and Career Launch",04,Resume and LinkedIn,Authored — release 1.6.0; Linux + Windows,content/lessons.json,content/quiz-v08-c04.json,Yes — worked exercise guidance
+V08,"Professional Practice, Remote Work and Career Launch",05,Technical interview preparation,Authored — release 1.6.0; Linux + Windows,content/lessons.json,content/quiz-v08-c05.json,Yes — worked exercise guidance
+V08,"Professional Practice, Remote Work and Career Launch",06,Behavioral and case interviews,Authored — release 1.6.0; Linux + Windows,content/lessons.json,content/quiz-v08-c06.json,Yes — worked exercise guidance
+V08,"Professional Practice, Remote Work and Career Launch",07,Remote work operations,Authored — release 1.6.0; Linux + Windows,content/lessons.json,content/quiz-v08-c07.json,Yes — worked exercise guidance
+V08,"Professional Practice, Remote Work and Career Launch",08,Freelancing and consulting,Authored — release 1.6.0; Linux + Windows,content/lessons.json,content/quiz-v08-c08.json,Yes — worked exercise guidance
+V08,"Professional Practice, Remote Work and Career Launch",09,Certifications and credentials,Authored — release 1.6.0; Linux + Windows,content/lessons.json,content/quiz-v08-c09.json,Yes — worked exercise guidance
+V08,"Professional Practice, Remote Work and Career Launch",10,Job search system,Authored — release 1.6.0; Linux + Windows,content/lessons.json,content/quiz-v08-c10.json,Yes — worked exercise guidance
+V08,"Professional Practice, Remote Work and Career Launch",11,First 30/60/90 days,Authored — release 1.6.0; Linux + Windows,content/lessons.json,content/quiz-v08-c11.json,Yes — worked exercise guidance
+V08,"Professional Practice, Remote Work and Career Launch",12,Professional ethics and regulation,Authored — release 1.6.0; Linux + Windows,content/lessons.json,content/quiz-v08-c12.json,Yes — worked exercise guidance
+V08,"Professional Practice, Remote Work and Career Launch",13,Career progression and specialization,Authored — release 1.6.0; Linux + Windows,content/lessons.json,content/quiz-v08-c13.json,Yes — worked exercise guidance
+V08,"Professional Practice, Remote Work and Career Launch",14,Final professional readiness assessment,Authored — release 1.6.0; Linux + Windows,content/lessons.json,content/quiz-v08-c14.json,Yes — worked exercise guidance

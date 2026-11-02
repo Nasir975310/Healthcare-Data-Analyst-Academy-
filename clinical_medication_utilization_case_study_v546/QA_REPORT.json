@@ -1,0 +1,13 @@
+{
+  "version": "5.46.0",
+  "unit_tests": "6/6 passed",
+  "pipeline": "passed",
+  "raw_rows": 301,
+  "unique_record_ids": 300,
+  "clean_rows": 299,
+  "paired_sbp_rows": 296,
+  "source_manifest_files": 13,
+  "real_patient_data": false,
+  "thesis_dataset_used": false,
+  "quality_issue_count": 6
+}

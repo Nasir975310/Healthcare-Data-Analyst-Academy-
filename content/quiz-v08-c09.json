@@ -1,0 +1,74 @@
+[
+  {
+    "id": "q1",
+    "q": "What is a vendor certification?",
+    "options": [
+      "A university degree",
+      "A credential issued by a technology vendor under its exam rules",
+      "Any video completion",
+      "A professional licence automatically"
+    ],
+    "correct": 1,
+    "why": "Credential types have different issuers and meanings."
+  },
+  {
+    "id": "q2",
+    "q": "What should be checked before paying for an exam?",
+    "options": [
+      "Only influencer review",
+      "Official syllabus, fee, eligibility, format and renewal",
+      "An old blog post only",
+      "A coupon alone"
+    ],
+    "correct": 1,
+    "why": "Credential terms change; use the issuer's current official information."
+  },
+  {
+    "id": "q3",
+    "q": "What is a poor credential strategy?",
+    "options": [
+      "Selecting based on target role",
+      "Collecting certificates without practical evidence or career purpose",
+      "Doing labs",
+      "Checking renewal requirements"
+    ],
+    "correct": 1,
+    "why": "Credentials should support a defined skill or role objective."
+  },
+  {
+    "id": "q4",
+    "q": "How should a course certificate be listed?",
+    "options": [
+      "As a professional licence",
+      "As a course-completion certificate",
+      "As a degree",
+      "As a vendor certification if it is not"
+    ],
+    "correct": 1,
+    "why": "Represent the credential accurately."
+  },
+  {
+    "id": "q5",
+    "q": "What is a key principle in 'Certifications and credentials'?",
+    "options": [
+      "Prioritise appearance over accuracy",
+      "Use evidence, clear scope and honest limitations",
+      "Invent achievements",
+      "Ignore privacy"
+    ],
+    "correct": 1,
+    "why": "Professional practice depends on evidence, scope and integrity."
+  },
+  {
+    "id": "q6",
+    "q": "How should practical work be completed across operating systems?",
+    "options": [
+      "Assume all commands are identical",
+      "Use separate Linux and PowerShell instructions and verify equivalent outcomes",
+      "Skip one OS",
+      "Copy absolute paths between systems"
+    ],
+    "correct": 1,
+    "why": "OS-specific instructions are required for reproducibility."
+  }
+]

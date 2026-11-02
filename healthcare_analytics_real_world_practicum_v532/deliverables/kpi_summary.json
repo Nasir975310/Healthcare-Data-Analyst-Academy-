@@ -1,0 +1,11 @@
+{
+  "patients": 30,
+  "source_encounters": 91,
+  "curated_encounters": 90,
+  "completed_encounters": 75,
+  "cancelled_encounters": 5,
+  "scheduled_encounters": 10,
+  "medication_orders": 129,
+  "mean_systolic_bp": 141.05,
+  "mean_diastolic_bp": 85.55
+}

@@ -1,0 +1,2 @@
+field_name,data_type,unit,definition,allowed_values,null_meaning,source_table,sensitivity
+encounter_id,string,none,Synthetic encounter key,unique,not null,encounters,synthetic

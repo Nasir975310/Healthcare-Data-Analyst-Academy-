@@ -1,0 +1,55 @@
+{
+  "release": "4.1.0",
+  "created": "2026-11-02",
+  "studio": {
+    "projects": 3,
+    "synthetic_records": {
+      "operations_encounters": 1200,
+      "antihypertensive_due_cohort": 500,
+      "pharmacovigilance_cases": 240
+    },
+    "sqlite_database": "real_world_project_studio/data/real_world_projects.db"
+  },
+  "reference_execution": {
+    "run_all_exit_code": 0,
+    "scripts": [
+      "operations_analysis.py",
+      "due_analysis.py",
+      "pv_quality_review.py"
+    ]
+  },
+  "limitations": [
+    "No browser automation or cross-browser test",
+    "No Windows execution",
+    "No independent clinical or PV regulatory review",
+    "Synthetic data only; not suitable for clinical decisions",
+    "Dashboards are static HTML, not live BI connections",
+    "No GitHub publishing or remote repository action performed",
+    "Workbench computations are exploratory browser-side calculations and have not undergone independent clinical validation"
+  ],
+  "portfolio_publication": {
+    "dashboards": [
+      "hospital_operations_dashboard.html",
+      "antihypertensive_due_dashboard.html",
+      "pharmacovigilance_quality_dashboard.html"
+    ],
+    "case_studies": 3,
+    "automated_tests": 6,
+    "publication_gate_checks": 12,
+    "tests_exit_code": 0,
+    "dashboard_build_exit_code": 0
+  },
+  "interactive_workbench": {
+    "datasets": 3,
+    "features": [
+      "search",
+      "categorical_filter",
+      "KPI_selection",
+      "group_comparison",
+      "quality_checks",
+      "CSV_export",
+      "local_notes"
+    ],
+    "data_upload": false
+  }
+}

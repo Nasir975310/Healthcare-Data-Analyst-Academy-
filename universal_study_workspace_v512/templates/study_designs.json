@@ -1,0 +1,137 @@
+{
+  "observational_cohort": {
+    "label": "Observational cohort",
+    "question": "Among a defined population, how does exposure relate to a subsequent outcome?",
+    "required": [
+      "population",
+      "index_date",
+      "exposure",
+      "comparator",
+      "outcome",
+      "follow_up",
+      "confounders"
+    ],
+    "workflow": [
+      "Define eligibility and source population",
+      "Set index date and exposure window",
+      "Define comparator strategy",
+      "Specify baseline look-back and covariates",
+      "Define outcome and follow-up",
+      "Specify censoring and analysis"
+    ]
+  },
+  "case_control": {
+    "label": "Case-control",
+    "question": "Are prior exposures associated with case status?",
+    "required": [
+      "case_definition",
+      "control_selection",
+      "index_date",
+      "exposure_window",
+      "matching_or_adjustment"
+    ],
+    "workflow": [
+      "Define case rule",
+      "Specify control source and sampling",
+      "Set index date",
+      "Define exposure window",
+      "Specify matching and adjustment"
+    ]
+  },
+  "cross_sectional": {
+    "label": "Cross-sectional",
+    "question": "What is the prevalence or distribution of a characteristic at a defined time?",
+    "required": [
+      "target_population",
+      "sampling_frame",
+      "measurement_period",
+      "outcome_definition",
+      "sampling_method"
+    ],
+    "workflow": [
+      "Define target population and sampling frame",
+      "Specify measurement period",
+      "Define outcome and instrument",
+      "Specify sampling and non-response",
+      "Plan prevalence estimates"
+    ]
+  },
+  "randomized_trial": {
+    "label": "Randomized controlled trial",
+    "question": "What is the effect of assignment to an intervention versus comparator?",
+    "required": [
+      "eligibility",
+      "intervention",
+      "comparator",
+      "randomization",
+      "primary_outcome",
+      "follow_up",
+      "analysis_population"
+    ],
+    "workflow": [
+      "Specify eligibility",
+      "Define intervention and comparator",
+      "Specify randomisation and concealment",
+      "Define primary endpoint and time point",
+      "Prespecify analysis population",
+      "Specify safety monitoring"
+    ]
+  },
+  "diagnostic_accuracy": {
+    "label": "Diagnostic accuracy",
+    "question": "How accurately does an index test classify a target condition against a reference standard?",
+    "required": [
+      "target_condition",
+      "index_test",
+      "reference_standard",
+      "participant_spectrum",
+      "threshold",
+      "blinding"
+    ],
+    "workflow": [
+      "Define target condition",
+      "Specify index test and threshold",
+      "Specify reference standard",
+      "Define participant spectrum",
+      "Plan diagnostic metrics",
+      "Address indeterminate results"
+    ]
+  },
+  "case_series": {
+    "label": "Case series",
+    "question": "What characteristics are observed in a defined series?",
+    "required": [
+      "case_definition",
+      "case_ascertainment",
+      "observation_period",
+      "variables",
+      "descriptive_plan"
+    ],
+    "workflow": [
+      "Define case and inclusion criteria",
+      "Specify ascertainment and setting",
+      "Set observation period",
+      "Define variables and missingness",
+      "Prespecify descriptive summaries"
+    ]
+  },
+  "registry_longitudinal": {
+    "label": "Registry / longitudinal",
+    "question": "How do characteristics, exposures or outcomes evolve over repeated observations?",
+    "required": [
+      "registry_population",
+      "enrolment_rule",
+      "time_origin",
+      "visit_schedule",
+      "outcome",
+      "loss_to_follow_up"
+    ],
+    "workflow": [
+      "Define registry population",
+      "Specify time origin and repeated measures",
+      "Define visit schedule",
+      "Specify outcome and event capture",
+      "Plan missing visits and loss-to-follow-up"
+    ]
+  }
+}

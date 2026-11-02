@@ -1,0 +1,107 @@
+{
+  "assessment": "v5.31.0",
+  "weighted_score": 67.5,
+  "band": "Foundational; targeted practice required",
+  "privacy_or_integrity_breach": false,
+  "section_results": [
+    {
+      "id": "excel",
+      "name": "Excel & data handling",
+      "raw_score": 65,
+      "weight": 15,
+      "weighted_points": 9.75,
+      "action": "Practice cleaning, pivots, lookups and reconciliation on a fresh workbook."
+    },
+    {
+      "id": "sql",
+      "name": "SQL & databases",
+      "raw_score": 70,
+      "weight": 20,
+      "weighted_points": 14.0,
+      "action": "Write joins, CTEs, window functions and orphan/duplicate checks; explain table grain."
+    },
+    {
+      "id": "python",
+      "name": "Python analytics",
+      "raw_score": 60,
+      "weight": 15,
+      "weighted_points": 9.0,
+      "action": "Build a pandas ingestion-to-validation script with logged exceptions and reproducible outputs."
+    },
+    {
+      "id": "bi",
+      "name": "Power BI & reporting",
+      "raw_score": 55,
+      "weight": 15,
+      "weighted_points": 8.25,
+      "action": "Model a star schema, write explicit DAX measures, test filter context and document RLS."
+    },
+    {
+      "id": "clinical",
+      "name": "Healthcare domain literacy",
+      "raw_score": 85,
+      "weight": 10,
+      "weighted_points": 8.5,
+      "action": "Maintain proficiency with a timed practical task."
+    },
+    {
+      "id": "statistics",
+      "name": "Statistics & research methods",
+      "raw_score": 65,
+      "weight": 10,
+      "weighted_points": 6.5,
+      "action": "Practice test selection, assumptions, effect sizes, confidence intervals and confounding."
+    },
+    {
+      "id": "communication",
+      "name": "Communication & client delivery",
+      "raw_score": 75,
+      "weight": 10,
+      "weighted_points": 7.5,
+      "action": "Maintain proficiency with a timed practical task."
+    },
+    {
+      "id": "professional",
+      "name": "Remote-work professionalism",
+      "raw_score": 80,
+      "weight": 5,
+      "weighted_points": 4.0,
+      "action": "Maintain proficiency with a timed practical task."
+    }
+  ],
+  "priority_gaps": [
+    {
+      "id": "excel",
+      "name": "Excel & data handling",
+      "raw_score": 65,
+      "weight": 15,
+      "weighted_points": 9.75,
+      "action": "Practice cleaning, pivots, lookups and reconciliation on a fresh workbook."
+    },
+    {
+      "id": "python",
+      "name": "Python analytics",
+      "raw_score": 60,
+      "weight": 15,
+      "weighted_points": 9.0,
+      "action": "Build a pandas ingestion-to-validation script with logged exceptions and reproducible outputs."
+    },
+    {
+      "id": "bi",
+      "name": "Power BI & reporting",
+      "raw_score": 55,
+      "weight": 15,
+      "weighted_points": 8.25,
+      "action": "Model a star schema, write explicit DAX measures, test filter context and document RLS."
+    },
+    {
+      "id": "statistics",
+      "name": "Statistics & research methods",
+      "raw_score": 65,
+      "weight": 10,
+      "weighted_points": 6.5,
+      "action": "Practice test selection, assumptions, effect sizes, confidence intervals and confounding."
+    }
+  ],
+  "interpretation": "Self-assessment only; not a hiring prediction, credential or proof of independent competence."
+}

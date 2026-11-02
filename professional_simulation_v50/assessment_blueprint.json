@@ -1,0 +1,75 @@
+{
+  "release": "5.0.0",
+  "title": "Healthcare Analytics Professional Simulation",
+  "note": "Formative assessment; not psychometrically validated or an employer credential.",
+  "assessments": [
+    {
+      "id": "DQ-01",
+      "domain": "Data quality",
+      "title": "Investigate an encounter extract",
+      "minutes": 25,
+      "points": 20,
+      "type": "written",
+      "prompt": "A monthly extract contains 1,000 rows. Checks find 12 duplicate encounter IDs, 8 missing department values, 5 discharge dates before admission, and 15 negative length-of-stay values. Some rows may have more than one issue. The dashboard total is 1,000. Specify the investigation sequence, quarantine policy, reconciliation, and what you would tell the operations lead.",
+      "rubric": [
+        "Distinguishes row count from unique encounter count",
+        "Profiles each issue and checks overlap before summing",
+        "Defines rule-based accept/quarantine with reason codes",
+        "Reconciles raw = accepted + quarantined and records exclusions",
+        "Explains impact on denominator and dashboard caveat"
+      ],
+      "model": "Preserve an immutable raw copy and profile row count, key uniqueness, nulls, date order and LOS bounds. Investigate overlaps at row level: issue counts cannot be summed to estimate affected rows. Quarantine records failing critical rules with stable reason codes; do not silently delete or impute. Produce accepted and quarantine tables plus row-level audit log. Reconcile raw rows = accepted + quarantined and verify unique encounter IDs in accepted data. Recompute dashboard totals from accepted records, state the excluded count and issue mix, and obtain data-owner confirmation for ambiguous rules."
+    },
+    {
+      "id": "KPI-02",
+      "domain": "Healthcare KPI interpretation",
+      "title": "Interpret a bed occupancy change",
+      "minutes": 20,
+      "points": 15,
+      "type": "written",
+      "prompt": "A hospital reports 92% bed occupancy this month versus 84% last month. Available staffed bed-days fell from 3,000 to 2,500; occupied bed-days rose from 2,520 to 2,300? The report may contain inconsistent values. Identify the arithmetic issue, calculate the correct rates, and explain what should be checked before operational conclusions.",
+      "rubric": [
+        "Checks numerator/denominator arithmetic",
+        "Calculates rates correctly",
+        "Flags inconsistent trend narrative",
+        "Checks staffed-bed definition and period comparability",
+        "Avoids causal or quality claims from occupancy alone"
+      ],
+      "model": "Last month: 2,520 / 3,000 = 84%. This month: 2,300 / 2,500 = 92%. Occupied bed-days actually decreased by 220 while available staffed bed-days decreased by 500; the occupancy rate rose because the denominator contracted faster. Confirm bed-day definitions, staffed versus licensed beds, closures, reporting period, and whether occupied bed-days include observation/overflow. Occupancy alone does not establish efficiency or quality."
+    },
+    {
+      "id": "DASH-03",
+      "domain": "Dashboard critique",
+      "title": "Review a prescribing dashboard",
+      "minutes": 20,
+      "points": 15,
+      "type": "written",
+      "prompt": "A dashboard ranks departments by antihypertensive use. It shows raw prescription counts without patient or encounter denominators, combines inpatient and outpatient orders, includes discontinued orders, and has no date filter or missing-data indicator. List the critical defects and propose a safer redesign.",
+      "rubric": [
+        "Identifies denominator and exposure mismatch",
+        "Separates care settings and order statuses",
+        "Defines valid time window and filters",
+        "Adds missingness/data freshness/context",
+        "Uses normalized rates and cautious interpretation"
+      ],
+      "model": "Do not rank departments using raw counts when patient volume differs. Separate inpatient and outpatient populations, define order grain, include only valid order statuses for the stated question, and distinguish orders from unique patients. Add a reporting period, department and setting filters, data freshness, missingness and exclusions. Consider orders per 100 encounters or proportion of eligible patients receiving therapy, with explicit denominator and confidence/context. Avoid implying appropriateness or effectiveness from utilization counts."
+    },
+    {
+      "id": "SQL-04",
+      "domain": "SQL reasoning",
+      "title": "Specify a safe patient-level aggregation",
+      "minutes": 20,
+      "points": 15,
+      "type": "written",
+      "prompt": "An orders table has multiple medication orders per encounter and an encounters table has one row per encounter. A join followed by COUNT(*) is described as the number of patients treated. Explain why this may be wrong and provide a defensible SQL pattern for unique patients with at least one active antihypertensive order.",
+      "rubric": [
+        "Recognizes one-to-many join multiplication",
+        "Uses explicit active-order filter",
+        "Counts distinct patient identifiers",
+        "Defines drug-class mapping source",
+        "Checks unmatched keys and date window"
+      ],
+      "model": "COUNT(*) counts joined order rows, not patients. Use COUNT(DISTINCT e.patient_id) after joining on encounter_id and filtering order_status = 'Active', the defined antihypertensive drug-class mapping, and the requested date window. Confirm patient_id is populated and stable, inspect unmatched encounter IDs, and document whether the cohort is encounter-based or patient-based. See the runnable SQLite reference query in sql/reference_queries.sql."
+    }
+  ]
+}

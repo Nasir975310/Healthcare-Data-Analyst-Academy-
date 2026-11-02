@@ -1,0 +1,63 @@
+{
+  "dataset": "synthetic_outpatient_encounters.csv",
+  "grain": "One source row per encounter record; encounter_id is expected to be unique after duplicate removal.",
+  "counts": {
+    "raw_rows": 24,
+    "duplicate_rows_removed": 1,
+    "deduplicated_rows": 23,
+    "eligible_completed_encounters": 20,
+    "completed_encounters_with_valid_wait": 18
+  },
+  "status_counts": {
+    "cancelled": 1,
+    "completed": 21,
+    "no_show": 1
+  },
+  "department_summary": [
+    {
+      "department": "Cardiology",
+      "completed_encounters": 7,
+      "valid_wait_n": 7,
+      "mean_wait_minutes": 21.29
+    },
+    {
+      "department": "General Medicine",
+      "completed_encounters": 7,
+      "valid_wait_n": 5,
+      "mean_wait_minutes": 32.6
+    },
+    {
+      "department": "Orthopaedics",
+      "completed_encounters": 6,
+      "valid_wait_n": 6,
+      "mean_wait_minutes": 33.67
+    }
+  ],
+  "duplicate_encounter_ids": [
+    "C023"
+  ],
+  "exceptions": [
+    {
+      "encounter_id": "C014",
+      "issues": [
+        "negative_wait"
+      ]
+    },
+    {
+      "encounter_id": "C016",
+      "issues": [
+        "missing_department"
+      ]
+    }
+  ],
+  "metric_definitions": {
+    "completed_encounters": "Deduplicated records with status=completed, valid encounter date and nonblank department.",
+    "mean_wait_minutes": "Arithmetic mean among eligible completed encounters with numeric wait_minutes >= 0; denominator shown as valid_wait_n."
+  },
+  "limitations": [
+    "Synthetic teaching data; no real-world generalizability.",
+    "No arrival/departure timestamps or service-level targets.",
+    "First occurrence retained for duplicate IDs; production use requires source-authoritative version rules.",
+    "Mean wait is sensitive to outliers and missingness; no causal or clinical conclusions are supported."
+  ]
+}

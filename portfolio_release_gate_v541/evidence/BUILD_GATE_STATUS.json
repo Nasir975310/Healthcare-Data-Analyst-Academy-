@@ -1,0 +1,6 @@
+{
+  "status": "NOT_RUN",
+  "reason": "No learner-side local_run_report.json was supplied to this release build.",
+  "automated_test_fixtures": "synthetic temporary files only",
+  "does_not_claim": "user workstation reproduction, GitHub publication, clean-clone verification, Power BI execution or independent employer review"
+}

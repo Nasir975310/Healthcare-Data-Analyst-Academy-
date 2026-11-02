@@ -1,0 +1,9 @@
+participant_id,encounter_id,age_years,encounter_date,systolic_bp_mmhg,diastolic_bp_mmhg,exposure_group,primary_outcome
+P001,E001,54,2026-01-03,132,84,exposed,false
+P002,E002,61,2026-01-05,148,92,unexposed,true
+P003,E003,47,2026-01-09,126,80,exposed,false
+P004,E004,72,2026-02-02,158,96,unexposed,true
+P005,E005,39,2026-02-11,118,76,exposed,false
+P006,E006,85,2026-02-14,166,102,unexposed,true
+P007,E007,33,2026-03-01,122,78,exposed,false
+P008,E008,58,2026-03-12,140,88,unexposed,false

@@ -1,0 +1,422 @@
+{
+  "release": "5.11.0",
+  "title": "Healthcare Data Analyst Academy \u2014 Platform Roadmap",
+  "last_updated": "2026-11-02",
+  "legend": {
+    "completed": "Implemented in the cumulative Academy release",
+    "partial": "Some supporting capability exists; full requirement remains",
+    "pending": "Not implemented as a complete capability",
+    "verify": "Requires independent validation or real-environment testing"
+  },
+  "tracks": [
+    {
+      "id": "foundation",
+      "name": "Learning platform foundation",
+      "priority": "P0",
+      "items": [
+        {
+          "id": "f1",
+          "title": "Eight-volume curriculum and 111 mapped chapters",
+          "status": "completed",
+          "detail": "Core curriculum structure spans foundations, tools, statistics, clinical analytics, BI/data engineering, advanced analytics and career practice.",
+          "evidence": "Academy curriculum architecture."
+        },
+        {
+          "id": "f2",
+          "title": "Interactive labs, assessments and job simulations",
+          "status": "completed",
+          "detail": "Multiple SQL, Excel, statistics, practicum, assessment and project modules exist.",
+          "evidence": "Cumulative modules through v5.10."
+        },
+        {
+          "id": "f3",
+          "title": "Responsive offline-first HTML experience",
+          "status": "partial",
+          "detail": "Local HTML/JS modules and responsive patterns exist; exhaustive Android browser/device testing is not evidenced.",
+          "evidence": "Static implementation exists; device QA remains."
+        },
+        {
+          "id": "f4",
+          "title": "Unified progress, backup and restore across every module",
+          "status": "partial",
+          "detail": "Some modules maintain their own browser storage. A single cross-module backup/restore contract is not yet demonstrated.",
+          "evidence": "Independent module storage patterns."
+        }
+      ]
+    },
+    {
+      "id": "universal",
+      "name": "Universal healthcare and research workflows",
+      "priority": "P0",
+      "items": [
+        {
+          "id": "u1",
+          "title": "Disease-agnostic clinical analytics framework",
+          "status": "partial",
+          "detail": "Clinical and pharmacy content exists, but there is no proven universal workflow engine covering arbitrary disease domains.",
+          "evidence": "Clinical, pharmacy, research and RWE modules exist."
+        },
+        {
+          "id": "u2",
+          "title": "Study-design workflow templates",
+          "status": "partial",
+          "detail": "Research and epidemiology learning content exists; reusable operational templates for cohort, case-control, cross-sectional, RCT, diagnostic accuracy, registry and longitudinal studies remain to be consolidated.",
+          "evidence": "Clinical research and statistics modules."
+        },
+        {
+          "id": "u3",
+          "title": "Configurable study protocol and variable dictionary",
+          "status": "pending",
+          "detail": "Create study-specific data dictionaries, eligibility rules, outcome definitions, visit schedules and analysis plans.",
+          "evidence": "No unified protocol builder verified."
+        },
+        {
+          "id": "u4",
+          "title": "Reusable cohort and endpoint definition engine",
+          "status": "pending",
+          "detail": "Represent index date, look-back, follow-up, censoring, competing events and outcome windows as explicit reusable rules.",
+          "evidence": "Future capability."
+        }
+      ]
+    },
+    {
+      "id": "education",
+      "name": "Educational layer and knowledge system",
+      "priority": "P1",
+      "items": [
+        {
+          "id": "e1",
+          "title": "Curriculum, glossary and learning checkpoints",
+          "status": "completed",
+          "detail": "The Academy has mapped chapters, glossary terms and module-specific checkpoints.",
+          "evidence": "Core Academy and module views."
+        },
+        {
+          "id": "e2",
+          "title": "Context-aware on-click dictionary everywhere",
+          "status": "partial",
+          "detail": "A glossary exists, but a universal term resolver across every module, code sample and chart is not demonstrated.",
+          "evidence": "Glossary exists; global inline linking pending."
+        },
+        {
+          "id": "e3",
+          "title": "Concept prerequisites and adaptive explanations",
+          "status": "pending",
+          "detail": "Connect concepts to prerequisites, examples, misconceptions, exercises and mastery checks.",
+          "evidence": "Future capability."
+        },
+        {
+          "id": "e4",
+          "title": "Spaced repetition and knowledge retention",
+          "status": "pending",
+          "detail": "Schedule retrieval practice from mistakes and low-confidence concepts.",
+          "evidence": "Future capability."
+        }
+      ]
+    },
+    {
+      "id": "accuracy",
+      "name": "Accuracy, validation and reproducibility",
+      "priority": "P0",
+      "items": [
+        {
+          "id": "a1",
+          "title": "Executable Python and SQLite learning labs",
+          "status": "completed",
+          "detail": "Multiple local labs and reference pipelines are executable and have tests.",
+          "evidence": "v5.8 database and v5.10 pipeline QA."
+        },
+        {
+          "id": "a2",
+          "title": "Data quality, governance and lineage exercises",
+          "status": "completed",
+          "detail": "Profiling, rule checks, quarantine, checksums, manifests and governance materials are included.",
+          "evidence": "v5.6\u2013v5.10 modules."
+        },
+        {
+          "id": "a3",
+          "title": "Universal study validation engine",
+          "status": "pending",
+          "detail": "Build configurable checks for eligibility, missingness, duplicates, date logic, range plausibility, endpoint derivation and analysis assumptions.",
+          "evidence": "No general-purpose engine verified."
+        },
+        {
+          "id": "a4",
+          "title": "Evidence provenance and clinical reference versioning",
+          "status": "partial",
+          "detail": "Some source and lineage practices exist; a maintained, versioned evidence registry with guideline dates and claim-level citations is not yet demonstrated.",
+          "evidence": "Governance materials exist; registry pending."
+        },
+        {
+          "id": "a5",
+          "title": "Independent statistical and clinical review gates",
+          "status": "pending",
+          "detail": "Add protocol-to-analysis traceability, independent calculation checks and qualified domain review for clinical claims.",
+          "evidence": "Future capability."
+        }
+      ]
+    },
+    {
+      "id": "ai",
+      "name": "AI-ready architecture and integrations",
+      "priority": "P1",
+      "items": [
+        {
+          "id": "i1",
+          "title": "AI integration architecture and provider-neutral interface",
+          "status": "pending",
+          "detail": "Define adapters, capability discovery, model routing, structured outputs, timeouts and provider fallback.",
+          "evidence": "No operational AI connector verified."
+        },
+        {
+          "id": "i2",
+          "title": "Cloud AI provider adapters",
+          "status": "pending",
+          "detail": "Support multiple providers through configurable API adapters; keep keys outside browser storage.",
+          "evidence": "Future capability."
+        },
+        {
+          "id": "i3",
+          "title": "Local AI integration",
+          "status": "pending",
+          "detail": "Support local inference endpoints such as Ollama-compatible APIs, with model and hardware capability checks.",
+          "evidence": "Future capability."
+        },
+        {
+          "id": "i4",
+          "title": "RAG over approved learning and evidence library",
+          "status": "pending",
+          "detail": "Use indexed documents, chunk provenance, source links, versioning and citation checks.",
+          "evidence": "Future capability."
+        },
+        {
+          "id": "i5",
+          "title": "Human approval, audit logs and safety boundaries",
+          "status": "pending",
+          "detail": "Require review for generated analyses, clinical interpretations, external actions and financial records.",
+          "evidence": "Future capability."
+        }
+      ]
+    },
+    {
+      "id": "compat",
+      "name": "Android, web and accessibility",
+      "priority": "P0",
+      "items": [
+        {
+          "id": "c1",
+          "title": "Local HTML application usable without a server",
+          "status": "completed",
+          "detail": "The Academy is distributed as local HTML, CSS and JavaScript assets.",
+          "evidence": "Cumulative ZIP distribution."
+        },
+        {
+          "id": "c2",
+          "title": "Android-first responsive and touch optimisation",
+          "status": "partial",
+          "detail": "Responsive patterns exist; touch targets, small-screen tables, keyboard handling and Android browser QA need a formal test matrix.",
+          "evidence": "No complete device test report."
+        },
+        {
+          "id": "c3",
+          "title": "Cross-browser compatibility suite",
+          "status": "pending",
+          "detail": "Test Chromium, Firefox, Safari/WebKit and Android browser variants with defined acceptance criteria.",
+          "evidence": "Future QA automation."
+        },
+        {
+          "id": "c4",
+          "title": "Accessibility and low-bandwidth performance",
+          "status": "pending",
+          "detail": "Keyboard navigation, screen-reader labels, contrast, reduced motion, lazy loading and performance budgets.",
+          "evidence": "Future capability."
+        }
+      ]
+    },
+    {
+      "id": "github",
+      "name": "GitHub and software engineering",
+      "priority": "P1",
+      "items": [
+        {
+          "id": "g1",
+          "title": "Portfolio and Git/GitHub learning materials",
+          "status": "completed",
+          "detail": "The Academy includes portfolio engineering, publication and career preparation content.",
+          "evidence": "Portfolio and career modules."
+        },
+        {
+          "id": "g2",
+          "title": "Actual repository integration and sync",
+          "status": "pending",
+          "detail": "Implement authenticated GitHub workflows through a safe backend or GitHub App; never embed tokens in client HTML.",
+          "evidence": "Educational content is not a live integration."
+        },
+        {
+          "id": "g3",
+          "title": "Automated CI, tests and release manifests",
+          "status": "partial",
+          "detail": "Local QA and release packaging are performed; a maintained GitHub Actions pipeline is not verified.",
+          "evidence": "Release QA exists; hosted CI pending."
+        },
+        {
+          "id": "g4",
+          "title": "Issue tracking, changelog and rollback policy",
+          "status": "partial",
+          "detail": "Release notes exist in some modules; unified issue and release governance needs formalisation.",
+          "evidence": "Release artifacts."
+        }
+      ]
+    },
+    {
+      "id": "personal",
+      "name": "Personalisation and financial tracking",
+      "priority": "P2",
+      "items": [
+        {
+          "id": "p1",
+          "title": "Career-focused curriculum and portfolio path",
+          "status": "completed",
+          "detail": "Learning architecture is aligned to healthcare analytics skills, projects and remote-work preparation.",
+          "evidence": "Career launch and earning-system modules."
+        },
+        {
+          "id": "p2",
+          "title": "Unified learner profile and adaptive roadmap",
+          "status": "partial",
+          "detail": "Progress and personal workflow elements exist; unified profile, competency graph and adaptive recommendations remain incomplete.",
+          "evidence": "Separate module progress patterns."
+        },
+        {
+          "id": "p3",
+          "title": "Income and expense tracker",
+          "status": "pending",
+          "detail": "Create private local ledger, categories, monthly budgets, project income, recurring expenses and CSV export.",
+          "evidence": "No finance module verified."
+        },
+        {
+          "id": "p4",
+          "title": "Learning-to-earning ROI dashboard",
+          "status": "pending",
+          "detail": "Track hours, project costs, certificates, applications, interviews, paid work and net income without conflating forecasts with actuals.",
+          "evidence": "Future capability."
+        }
+      ]
+    }
+  ],
+  "risks": [
+    {
+      "id": "r1",
+      "severity": "high",
+      "title": "Clinical overgeneralisation",
+      "problem": "A single disease-specific workflow cannot safely represent all diseases and study designs.",
+      "solution": "Use configurable protocol templates and a study-design ontology; require explicit definitions for population, exposure, comparator, outcome, time and analysis."
+    },
+    {
+      "id": "r2",
+      "severity": "high",
+      "title": "AI hallucination and unsupported clinical claims",
+      "problem": "Generated answers may invent references, misread units or overstate causal conclusions.",
+      "solution": "Retrieval with source provenance, claim-level citations, deterministic calculations, schema validation and human sign-off."
+    },
+    {
+      "id": "r3",
+      "severity": "high",
+      "title": "Browser-only secrets exposure",
+      "problem": "Embedding cloud API keys or GitHub tokens in local JavaScript exposes credentials.",
+      "solution": "Use a local companion service or secure backend; OAuth/device flow and OS credential storage; never persist secrets in localStorage."
+    },
+    {
+      "id": "r4",
+      "severity": "high",
+      "title": "False confidence from untested platform claims",
+      "problem": "A passing syntax test does not prove Android, Safari, Power BI, DAX or clinical correctness.",
+      "solution": "Publish a capability matrix distinguishing implemented, locally executed, integration-tested and independently validated."
+    },
+    {
+      "id": "r5",
+      "severity": "medium",
+      "title": "Fragmented progress and local data",
+      "problem": "Independent modules can lose or duplicate progress and financial records.",
+      "solution": "Define versioned shared data contracts, export/import, migrations and explicit backup/restore tests."
+    },
+    {
+      "id": "r6",
+      "severity": "medium",
+      "title": "Privacy and re-identification risk",
+      "problem": "Clinical datasets can contain direct and indirect identifiers even after obvious names are removed.",
+      "solution": "Synthetic fixtures by default, de-identification checks, minimum-necessary access, local-only defaults and privacy review."
+    },
+    {
+      "id": "r7",
+      "severity": "medium",
+      "title": "Mobile performance and dense layouts",
+      "problem": "Large tables, charts and long pages can be difficult on phones.",
+      "solution": "Responsive cards, progressive disclosure, pagination, search, lazy rendering and device-based performance budgets."
+    },
+    {
+      "id": "r8",
+      "severity": "medium",
+      "title": "Financial tracking data integrity",
+      "problem": "Forecasts, unpaid invoices and actual cash receipts can be confused.",
+      "solution": "Separate planned, invoiced, received and refunded states; immutable transaction IDs and reconciliation."
+    },
+    {
+      "id": "r9",
+      "severity": "medium",
+      "title": "GitHub token and repository access",
+      "problem": "Direct browser integration can leak credentials or grant excessive permissions.",
+      "solution": "Least-privilege GitHub App permissions, short-lived tokens, explicit user consent and audit logs."
+    }
+  ],
+  "future": [
+    {
+      "rank": 1,
+      "name": "Universal study workspace",
+      "why": "Make one platform work across disease areas, data types and study designs.",
+      "deliver": "Protocol builder, study-design templates, variable dictionary, cohort rules, outcome definitions and reproducible analysis plan."
+    },
+    {
+      "rank": 2,
+      "name": "Evidence and accuracy engine",
+      "why": "Separate deterministic computation from explanatory AI and make claims auditable.",
+      "deliver": "Reference registry, source versioning, calculation tests, unit checks, statistical assumption checks and review gates."
+    },
+    {
+      "rank": 3,
+      "name": "AI orchestration layer",
+      "why": "Avoid dependence on one model provider or internet connectivity.",
+      "deliver": "Provider adapters, local model endpoint, cloud routing, RAG, structured outputs, evaluation suite and audit trail."
+    },
+    {
+      "rank": 4,
+      "name": "Mobile-first application shell",
+      "why": "Make the Academy comfortable on Android as well as desktop browsers.",
+      "deliver": "PWA/offline cache, installable shell, responsive data views, accessible interactions and cross-browser test suite."
+    },
+    {
+      "rank": 5,
+      "name": "Universal contextual dictionary",
+      "why": "Turn every technical term into an explorable learning moment.",
+      "deliver": "Click/tap definitions, pronunciation, plain-language explanation, formula, example, related terms and source."
+    },
+    {
+      "rank": 6,
+      "name": "GitHub-native development workflow",
+      "why": "Enable real version control and reproducible releases rather than only teaching Git.",
+      "deliver": "Repository connection, branch/commit workflow, issue sync, CI and release artifacts using secure authentication."
+    },
+    {
+      "rank": 7,
+      "name": "Personal command centre",
+      "why": "Connect learning, competencies, projects, career activity and finances.",
+      "deliver": "Profile, goals, adaptive roadmap, application tracker, income/expense ledger and ROI dashboard."
+    },
+    {
+      "rank": 8,
+      "name": "Interoperability and reusable data connectors",
+      "why": "Reduce manual import work and support realistic healthcare datasets.",
+      "deliver": "CSV/XLSX, SQLite/PostgreSQL, FHIR/HL7 learning connectors, terminology mapping and validation adapters."
+    }
+  ]
+}

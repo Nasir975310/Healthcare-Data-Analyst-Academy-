@@ -1,0 +1,502 @@
+encounter_id,patient_key,department,payer,admit_date,discharge_date,length_of_stay_days,readmission_30d_flag,discharge_disposition
+ENC0001,PAT0294,Nephrology,Self-pay,2026-07-25,2026-07-26,1,0,Referred
+ENC0002,PAT0075,Nephrology,Self-pay,2026-09-30,2026-10-10,10,0,Referred
+ENC0003,PAT0269,Medicine,Insurance B,2026-01-08,2026-01-14,6,0,Home
+ENC0004,PAT0125,Nephrology,Government,2026-09-11,2026-09-15,4,0,Home
+ENC0005,PAT0092,Cardiology,Self-pay,2026-08-21,2026-08-29,8,0,Transfer
+ENC0006,PAT0247,Nephrology,Self-pay,2026-06-21,2026-06-22,1,0,Home
+ENC0007,PAT0310,Nephrology,Insurance A,2026-01-08,2026-01-13,5,0,Transfer
+ENC0008,PAT0208,Neurology,Insurance B,2026-04-21,2026-04-22,1,0,Home
+ENC0009,PAT0195,Orthopaedics,Government,2026-09-09,2026-09-12,3,0,Other
+ENC0010,PAT0097,Orthopaedics,Government,2026-04-21,2026-04-24,3,0,Other
+ENC0011,PAT0221,Cardiology,Insurance A,2026-10-19,2026-10-21,2,0,Transfer
+ENC0012,PAT0197,Medicine,Insurance B,2026-03-21,2026-03-24,3,1,Referred
+ENC0013,PAT0144,Orthopaedics,Self-pay,2026-01-04,2026-01-06,2,0,Transfer
+ENC0014,PAT0003,Neurology,Insurance A,2026-02-16,2026-02-19,3,0,Referred
+ENC0015,PAT0208,Neurology,Government,2026-04-10,2026-04-15,5,0,Home
+ENC0016,PAT0088,Medicine,Insurance A,2026-01-20,2026-01-27,7,0,Transfer
+ENC0017,PAT0273,Medicine,Insurance B,2026-10-01,2026-10-09,8,0,Other
+ENC0018,PAT0037,Orthopaedics,Insurance A,2026-09-18,2026-09-25,7,0,Home
+ENC0019,PAT0146,Cardiology,Self-pay,2026-04-13,2026-04-17,4,0,Referred
+ENC0020,PAT0354,Neurology,Self-pay,2026-03-08,2026-03-16,8,1,Transfer
+ENC0021,PAT0344,,Insurance B,2026-01-30,2026-02-05,6,0,Other
+ENC0022,PAT0194,Neurology,Insurance B,2026-01-13,2026-01-19,6,0,Transfer
+ENC0023,PAT0323,Neurology,Insurance A,2026-07-31,2026-08-02,2,1,Other
+ENC0024,PAT0265,Neurology,Government,2026-09-19,2026-09-20,1,1,Other
+ENC0025,PAT0146,Medicine,Insurance A,2026-01-06,2026-01-09,3,0,Other
+ENC0026,PAT0198,Medicine,Insurance B,2026-06-23,2026-06-26,3,0,Referred
+ENC0027,PAT0284,Nephrology,Insurance B,2026-05-16,2026-05-18,2,0,Home
+ENC0028,PAT0036,Orthopaedics,Insurance B,2026-09-23,2026-09-28,5,0,Referred
+ENC0029,PAT0278,Cardiology,Government,2026-07-16,2026-07-19,3,0,Home
+ENC0030,PAT0104,Medicine,Insurance A,2026-04-17,2026-04-20,3,0,Home
+ENC0031,PAT0279,Cardiology,Insurance B,2026-02-06,2026-02-09,3,0,Transfer
+ENC0032,PAT0277,Nephrology,Government,2026-07-05,2026-07-09,4,0,Referred
+ENC0033,PAT0304,Cardiology,Insurance B,2026-07-12,2026-07-18,6,0,Referred
+ENC0034,PAT0242,Cardiology,Insurance B,2026-06-28,2026-07-04,6,0,Transfer
+ENC0035,PAT0245,Orthopaedics,Government,2026-06-29,2026-07-01,2,1,Transfer
+ENC0036,PAT0296,Cardiology,Self-pay,2026-05-18,2026-05-28,10,0,Transfer
+ENC0037,PAT0279,Cardiology,Insurance A,2026-02-03,2026-02-09,6,0,Transfer
+ENC0038,PAT0260,Cardiology,Self-pay,2026-03-17,2026-03-21,4,0,Home
+ENC0039,PAT0086,Orthopaedics,Insurance B,2026-06-25,2026-06-28,3,0,Home
+ENC0040,PAT0357,Neurology,Self-pay,2026-02-15,2026-02-19,4,0,Referred
+ENC0041,PAT0029,Nephrology,Self-pay,2026-09-04,2026-09-07,3,0,Referred
+ENC0042,PAT0323,Nephrology,Insurance B,2026-08-25,2026-08-28,3,0,Home
+ENC0043,PAT0223,Orthopaedics,Self-pay,2026-03-25,2026-03-28,3,0,Other
+ENC0044,PAT0298,Orthopaedics,Government,2026-05-27,2026-05-29,2,0,Referred
+ENC0045,PAT0137,Nephrology,Self-pay,2026-04-01,2026-04-07,6,0,Other
+ENC0046,PAT0271,Medicine,Insurance A,2026-10-13,2026-10-15,-2,0,Transfer
+ENC0047,PAT0275,Medicine,Government,2026-03-12,2026-03-17,5,0,Home
+ENC0048,PAT0279,Nephrology,Insurance B,2026-01-26,2026-01-29,3,0,Home
+ENC0049,PAT0054,Cardiology,Government,2026-04-05,2026-04-12,7,1,Referred
+ENC0050,PAT0192,Medicine,Self-pay,2026-05-20,2026-05-24,4,0,Other
+ENC0051,PAT0351,Neurology,Insurance A,2026-07-18,2026-07-20,2,0,Other
+ENC0052,PAT0070,Cardiology,Government,2026-01-27,2026-02-02,6,0,Home
+ENC0053,PAT0205,Neurology,Insurance A,2026-04-30,2026-05-02,2,0,Other
+ENC0054,PAT0136,Cardiology,Insurance A,2026-01-27,2026-02-01,5,0,Transfer
+ENC0055,PAT0273,Medicine,Insurance A,2026-09-11,2026-09-20,9,1,Home
+ENC0056,PAT0140,Orthopaedics,Self-pay,2026-08-20,2026-08-23,3,0,Transfer
+ENC0057,PAT0202,Orthopaedics,Insurance A,2026-04-16,2026-04-19,3,0,Referred
+ENC0058,PAT0361,Orthopaedics,Insurance B,2026-04-14,2026-04-17,3,0,Referred
+ENC0059,PAT0218,Neurology,Self-pay,2026-08-01,2026-08-05,4,0,Referred
+ENC0060,PAT0140,Nephrology,Self-pay,2026-07-13,2026-07-15,2,0,Transfer
+ENC0061,PAT0086,Neurology,Insurance B,2026-09-01,2026-09-08,7,0,Other
+ENC0062,PAT0189,Medicine,Insurance A,2026-10-19,2026-10-24,5,1,Other
+ENC0063,PAT0012,Nephrology,Government,2026-10-09,2026-10-13,4,0,Referred
+ENC0064,PAT0015,Nephrology,Government,2026-07-11,2026-07-14,3,0,Home
+ENC0065,PAT0135,Neurology,Government,2026-07-28,2026-08-07,10,0,Referred
+ENC0066,PAT0175,Cardiology,Insurance A,2026-09-26,2026-10-01,5,0,Home
+ENC0067,PAT0379,Orthopaedics,Government,2026-03-05,2026-01-01,2,0,Transfer
+ENC0068,PAT0208,Neurology,Insurance A,2026-01-14,2026-01-15,1,0,Home
+ENC0069,PAT0060,Orthopaedics,Insurance A,2026-03-01,2026-03-09,8,1,Home
+ENC0070,PAT0167,Cardiology,Government,2026-07-03,2026-07-10,7,0,Referred
+ENC0071,PAT0041,Nephrology,Government,2026-10-02,2026-10-07,5,0,Referred
+ENC0072,PAT0116,Nephrology,Insurance A,2026-04-15,2026-04-20,5,0,Referred
+ENC0073,PAT0152,Nephrology,Insurance B,2026-08-02,2026-08-07,5,0,Transfer
+ENC0074,PAT0292,Nephrology,Insurance B,2026-05-12,2026-05-13,1,0,Referred
+ENC0075,PAT0321,Neurology,Self-pay,2026-06-29,2026-07-06,7,0,Transfer
+ENC0076,PAT0082,Neurology,Insurance A,2026-02-02,2026-02-04,2,0,Other
+ENC0077,PAT0048,Neurology,Insurance B,2026-04-19,2026-04-20,1,0,Referred
+ENC0078,PAT0344,Cardiology,Government,2026-01-04,2026-01-08,4,0,Home
+ENC0079,PAT0243,Orthopaedics,Self-pay,2026-05-15,2026-05-19,4,0,Referred
+ENC0080,PAT0134,Nephrology,Government,2026-02-03,2026-02-08,5,1,Home
+ENC0081,PAT0196,Neurology,Insurance A,2026-08-04,2026-08-07,3,0,Other
+ENC0082,PAT0245,Medicine,Self-pay,2026-04-10,2026-04-13,3,0,Other
+ENC0083,PAT0123,Neurology,Insurance B,2026-08-26,2026-08-27,1,0,Home
+ENC0084,PAT0197,Nephrology,Government,2026-01-01,2026-01-04,3,0,Home
+ENC0085,PAT0023,Orthopaedics,Insurance A,2026-03-18,2026-03-19,1,0,Referred
+ENC0086,PAT0164,Medicine,Insurance B,2026-04-04,2026-04-06,2,0,Home
+ENC0087,PAT0060,Nephrology,Insurance A,2026-01-28,2026-02-02,5,1,Other
+ENC0088,PAT0009,Cardiology,Insurance A,2026-10-08,2026-10-10,2,0,Home
+ENC0089,PAT0315,Nephrology,Government,2026-06-29,2026-06-30,1,0,Home
+ENC0090,PAT0351,Neurology,Self-pay,2026-01-04,2026-01-09,5,0,Other
+ENC0091,PAT0022,Nephrology,Insurance A,2026-07-27,2026-07-28,1,0,Referred
+ENC0092,PAT0327,Cardiology,Self-pay,2026-07-04,2026-07-07,3,0,Referred
+ENC0093,PAT0153,Cardiology,Self-pay,2026-09-16,2026-09-19,3,1,Referred
+ENC0094,PAT0321,Nephrology,Government,2026-02-24,2026-02-25,1,0,Transfer
+ENC0095,PAT0125,Neurology,Government,2026-01-13,2026-01-15,2,0,Home
+ENC0096,PAT0065,Neurology,Self-pay,2026-04-11,2026-04-20,9,0,Other
+ENC0097,PAT0348,Medicine,Insurance B,2026-08-28,2026-09-03,6,0,Transfer
+ENC0098,PAT0076,Orthopaedics,Insurance B,2026-10-16,2026-10-18,2,0,Transfer
+ENC0099,PAT0202,Orthopaedics,Insurance B,2026-10-01,2026-10-03,2,0,Transfer
+ENC0100,PAT0247,Orthopaedics,Unknown payer,2026-04-20,2026-04-23,3,1,Transfer
+ENC0101,PAT0250,Neurology,Self-pay,2026-10-08,2026-10-10,2,0,Transfer
+ENC0102,PAT0378,Nephrology,Insurance B,2026-10-23,2026-10-25,2,0,Home
+ENC0103,PAT0313,Nephrology,Insurance A,2026-06-07,2026-06-10,3,0,Referred
+ENC0104,PAT0113,Orthopaedics,Insurance A,2026-06-05,2026-06-06,1,0,Transfer
+ENC0105,PAT0272,Cardiology,Self-pay,2026-07-16,2026-07-18,2,1,Home
+ENC0106,PAT0022,Neurology,Insurance A,2026-07-11,2026-07-14,3,0,Home
+ENC0107,PAT0236,Nephrology,Self-pay,2026-10-21,2026-10-24,3,0,Transfer
+ENC0108,PAT0131,Nephrology,Insurance A,2026-07-20,2026-07-21,1,0,Transfer
+ENC0109,PAT0151,Neurology,Self-pay,2026-05-09,2026-05-12,3,1,Referred
+ENC0110,PAT0340,Cardiology,Insurance A,2026-01-31,2026-02-04,4,0,Referred
+ENC0111,PAT0035,Orthopaedics,Insurance B,2026-01-25,2026-01-31,6,0,Transfer
+ENC0112,PAT0068,Medicine,Government,2026-01-31,2026-02-02,2,0,Home
+ENC0113,PAT0105,Orthopaedics,Insurance B,2026-10-25,2026-11-03,9,0,Other
+ENC0114,PAT0288,Neurology,Government,2026-05-11,2026-05-14,3,0,Transfer
+ENC0115,PAT0252,Cardiology,Insurance A,2026-07-29,2026-08-02,4,0,Transfer
+ENC0116,PAT0136,Medicine,Insurance A,2026-10-13,2026-10-17,4,0,Other
+ENC0117,PAT0048,Orthopaedics,Government,2026-01-25,2026-01-29,4,0,Home
+ENC0118,PAT0367,Neurology,Insurance A,2026-08-17,2026-08-21,4,1,Referred
+ENC0119,PAT0259,Neurology,Self-pay,2026-09-18,2026-09-27,9,0,Other
+ENC0120,PAT0123,Medicine,Government,2026-02-12,2026-02-13,1,0,Transfer
+ENC0121,PAT0267,Neurology,Insurance B,2026-02-08,2026-02-12,4,0,Home
+ENC0122,PAT0182,Nephrology,Government,2026-05-21,2026-05-22,1,0,Other
+ENC0123,,Cardiology,Government,2026-05-11,2026-05-14,3,0,Home
+ENC0124,PAT0045,Cardiology,Insurance B,2026-01-12,2026-01-16,4,0,Home
+ENC0125,PAT0023,Nephrology,Government,2026-05-28,2026-05-29,1,0,Home
+ENC0126,PAT0035,Nephrology,Self-pay,2026-03-27,2026-03-29,2,0,Referred
+ENC0127,PAT0003,Nephrology,Insurance A,2026-02-22,2026-02-28,6,1,Transfer
+ENC0128,PAT0162,Neurology,Government,2026-07-18,2026-07-21,3,0,Home
+ENC0129,PAT0270,Medicine,Government,2026-03-19,2026-03-23,4,0,Transfer
+ENC0130,PAT0272,Cardiology,Insurance B,2026-08-29,2026-09-03,5,0,Other
+ENC0131,PAT0092,Medicine,Insurance B,2026-10-01,2026-10-08,7,0,Home
+ENC0132,PAT0051,Cardiology,Self-pay,2026-04-04,2026-04-06,2,0,Referred
+ENC0133,PAT0004,Medicine,Insurance A,2026-04-19,2026-04-20,1,1,Transfer
+ENC0134,PAT0041,Orthopaedics,Government,2026-07-01,2026-07-05,4,1,Other
+ENC0135,PAT0249,Medicine,Insurance B,2026-09-14,2026-09-16,2,0,Referred
+ENC0136,PAT0321,Nephrology,Government,2026-07-06,2026-07-14,8,1,Other
+ENC0137,PAT0137,Nephrology,Government,2026-08-21,2026-08-25,4,0,Transfer
+ENC0138,PAT0045,Medicine,Insurance A,2026-01-28,2026-02-02,5,0,Transfer
+ENC0139,PAT0084,Medicine,Government,2026-05-05,2026-05-07,2,0,Referred
+ENC0140,PAT0172,Orthopaedics,Insurance B,2026-06-28,2026-07-03,5,0,Other
+ENC0141,PAT0077,Orthopaedics,Government,2026-09-14,2026-09-18,4,0,Other
+ENC0142,PAT0033,Cardiology,Insurance B,2026-05-28,2026-05-31,3,0,Other
+ENC0143,PAT0369,Cardiology,Government,2026-06-10,2026-06-18,8,0,Other
+ENC0144,PAT0085,Neurology,Insurance A,2026-03-07,2026-03-08,1,0,Home
+ENC0145,PAT0294,Neurology,Government,2026-05-08,2026-05-11,3,1,Transfer
+ENC0146,PAT0232,Cardiology,Insurance A,2026-10-18,2026-10-27,9,0,Referred
+ENC0147,PAT0018,Nephrology,Insurance A,2026-02-12,2026-02-13,1,0,Home
+ENC0148,PAT0375,Neurology,Insurance B,2026-09-30,2026-10-01,1,1,Referred
+ENC0149,PAT0190,Orthopaedics,Insurance B,2026-07-31,2026-08-02,2,0,Home
+ENC0150,PAT0239,Cardiology,Insurance A,2026-02-08,2026-02-13,5,0,Other
+ENC0151,PAT0151,Orthopaedics,Insurance B,2026-05-14,2026-05-18,4,0,Home
+ENC0152,PAT0233,Nephrology,Government,2026-09-26,2026-10-01,5,0,Home
+ENC0153,PAT0118,Orthopaedics,Insurance B,2026-08-25,2026-08-29,4,0,Referred
+ENC0154,PAT0207,Medicine,Insurance B,2026-02-08,2026-02-14,6,0,Transfer
+ENC0155,PAT0362,Cardiology,Insurance A,2026-10-01,2026-10-05,4,0,Transfer
+ENC0156,PAT0199,Orthopaedics,Insurance A,2026-04-10,2026-04-16,6,0,Transfer
+ENC0157,PAT0217,Nephrology,Insurance A,2026-07-06,2026-07-12,6,0,Other
+ENC0158,PAT0299,Nephrology,Self-pay,2026-02-17,2026-02-18,1,1,Transfer
+ENC0159,PAT0042,Cardiology,Insurance B,2026-10-01,2026-10-06,5,1,Home
+ENC0160,PAT0221,Neurology,Self-pay,2026-02-10,2026-02-18,8,0,Transfer
+ENC0161,PAT0132,Cardiology,Self-pay,2026-03-17,2026-03-23,6,0,Other
+ENC0162,PAT0029,Medicine,Self-pay,2026-07-20,2026-07-23,3,0,Referred
+ENC0163,PAT0046,Cardiology,Self-pay,2026-07-14,2026-07-15,1,0,Home
+ENC0164,PAT0293,Cardiology,Insurance A,2026-03-06,2026-03-09,3,1,Referred
+ENC0165,PAT0195,Medicine,Government,2026-05-06,2026-05-09,3,0,Referred
+ENC0166,PAT0131,Orthopaedics,Insurance A,2026-07-17,2026-07-22,5,0,Other
+ENC0167,PAT0021,Neurology,Insurance B,2026-02-19,2026-02-21,2,0,Other
+ENC0168,PAT0298,Orthopaedics,Government,2026-03-03,2026-03-07,4,0,Referred
+ENC0169,PAT0325,Nephrology,Insurance B,2026-03-19,2026-03-20,1,0,Home
+ENC0170,PAT0133,Neurology,Self-pay,2026-09-03,2026-09-11,8,0,Transfer
+ENC0171,PAT0051,Neurology,Insurance B,2026-01-11,2026-01-16,5,0,Referred
+ENC0172,PAT0230,Orthopaedics,Self-pay,2026-04-14,2026-04-18,4,0,Other
+ENC0173,PAT0025,Cardiology,Government,2026-04-01,2026-04-04,3,0,Transfer
+ENC0174,PAT0245,Cardiology,Insurance B,2026-08-03,2026-08-10,7,0,Home
+ENC0175,PAT0246,Medicine,Insurance B,2026-03-18,2026-03-24,6,0,Transfer
+ENC0176,PAT0006,Neurology,Government,2026-04-21,2026-04-23,2,0,Transfer
+ENC0177,PAT0056,Orthopaedics,Government,2026-07-22,2026-07-23,1,0,Transfer
+ENC0178,PAT0179,Cardiology,Government,2026-06-12,2026-06-13,1,0,Home
+ENC0179,PAT0148,Cardiology,Self-pay,2026-07-06,2026-07-10,4,0,Home
+ENC0180,PAT0054,Orthopaedics,Self-pay,2026-04-09,2026-04-12,3,0,Referred
+ENC0181,PAT0238,Orthopaedics,Insurance A,2026-06-01,2026-06-10,9,0,Referred
+ENC0182,PAT0004,Orthopaedics,Government,2026-07-12,2026-07-19,7,0,Other
+ENC0183,PAT0325,Neurology,Self-pay,2026-04-04,2026-04-08,4,0,Home
+ENC0184,PAT0267,Cardiology,Government,2026-05-28,2026-05-30,2,0,Other
+ENC0185,PAT0050,Cardiology,Insurance A,2026-04-18,2026-04-22,4,0,Referred
+ENC0186,PAT0187,Nephrology,Self-pay,2026-09-06,2026-09-07,1,0,Referred
+ENC0187,PAT0018,Cardiology,Self-pay,2026-05-13,2026-05-14,1,0,Referred
+ENC0188,PAT0047,Neurology,Insurance B,2026-07-01,2026-07-10,9,0,Other
+ENC0189,PAT0218,Cardiology,Self-pay,2026-08-25,2026-08-29,4,0,Transfer
+ENC0190,PAT0015,Medicine,Self-pay,2026-04-22,2026-04-24,2,0,Other
+ENC0191,PAT0204,Cardiology,Self-pay,2026-04-04,2026-04-13,9,0,Home
+ENC0192,PAT0207,Neurology,Government,2026-02-07,2026-02-11,4,0,Referred
+ENC0193,PAT0248,Cardiology,Insurance B,2026-08-22,2026-08-23,1,0,Home
+ENC0194,PAT0014,Nephrology,Insurance B,2026-10-16,2026-10-20,4,0,Referred
+ENC0195,PAT0180,Neurology,Self-pay,2026-06-17,2026-06-22,5,0,Other
+ENC0196,PAT0333,Orthopaedics,Government,2026-05-28,2026-06-04,7,0,Transfer
+ENC0197,PAT0176,Medicine,Insurance A,2026-08-31,2026-09-05,5,0,Other
+ENC0198,PAT0254,Neurology,Insurance B,2026-01-03,2026-01-06,3,0,Home
+ENC0199,PAT0324,Neurology,Government,2026-10-14,2026-10-19,5,0,Transfer
+ENC0200,PAT0051,Neurology,Insurance B,2026-01-17,2026-01-20,3,0,Other
+ENC0201,PAT0093,Nephrology,Insurance A,2026-10-24,2026-10-31,7,0,Home
+ENC0202,PAT0370,Cardiology,Self-pay,2026-07-08,2026-07-13,5,0,Transfer
+ENC0203,PAT0031,Orthopaedics,Insurance B,2026-09-02,2026-09-06,4,0,Transfer
+ENC0204,PAT0261,Cardiology,Self-pay,2026-10-15,2026-10-18,3,0,Referred
+ENC0205,PAT0304,Nephrology,Government,2026-04-04,2026-04-05,1,0,Other
+ENC0206,PAT0247,Medicine,Self-pay,2026-04-26,2026-05-01,5,0,Referred
+ENC0207,PAT0356,Neurology,Government,2026-10-13,2026-10-21,8,0,Other
+ENC0208,PAT0212,Orthopaedics,Government,2026-01-01,2026-01-04,3,0,Referred
+ENC0209,PAT0092,Cardiology,Government,2026-09-29,2026-09-30,1,0,Home
+ENC0210,PAT0380,Cardiology,Government,2026-05-11,2026-05-16,5,0,Referred
+ENC0211,PAT0235,Nephrology,Insurance B,2026-03-17,2026-03-19,2,0,Transfer
+ENC0212,PAT0180,Orthopaedics,Insurance B,2026-05-06,2026-05-14,8,0,Referred
+ENC0213,PAT0264,Orthopaedics,Government,2026-08-05,2026-08-09,4,0,Referred
+ENC0214,PAT0215,Medicine,Insurance A,2026-08-20,2026-08-23,3,0,Transfer
+ENC0215,PAT0338,Neurology,Government,2026-09-30,2026-10-07,7,0,Transfer
+ENC0216,PAT0371,Orthopaedics,Insurance A,2026-03-10,2026-03-17,7,0,Other
+ENC0217,PAT0038,Medicine,Insurance A,2026-07-25,2026-07-26,1,1,Transfer
+ENC0218,PAT0116,Nephrology,Government,2026-07-01,2026-07-04,3,0,Other
+ENC0219,PAT0054,Medicine,Insurance A,2026-07-12,2026-07-13,1,0,Other
+ENC0220,PAT0365,Cardiology,Self-pay,2026-06-02,2026-06-07,5,0,Referred
+ENC0221,PAT0127,Orthopaedics,Government,2026-09-20,2026-09-26,6,0,Referred
+ENC0222,PAT0328,Orthopaedics,Self-pay,2026-01-27,2026-01-31,4,0,Home
+ENC0223,PAT0290,Cardiology,Government,2026-10-13,2026-10-16,3,0,Referred
+ENC0224,PAT0235,Neurology,Insurance A,2026-04-14,2026-04-17,3,0,Transfer
+ENC0225,PAT0295,Orthopaedics,Insurance B,2026-07-18,2026-07-21,3,0,Home
+ENC0226,PAT0301,Neurology,Insurance A,2026-07-06,2026-07-10,4,0,Transfer
+ENC0227,PAT0186,Orthopaedics,Insurance B,2026-02-10,2026-02-15,5,0,Transfer
+ENC0228,PAT0088,Orthopaedics,Government,2026-05-16,2026-05-19,3,1,Other
+ENC0229,PAT0062,Medicine,Self-pay,2026-02-08,2026-02-10,2,0,Home
+ENC0230,PAT0004,Nephrology,Insurance B,2026-09-09,2026-09-17,8,0,Referred
+ENC0231,PAT0276,Orthopaedics,Government,2026-03-13,2026-03-22,9,0,Home
+ENC0232,PAT0073,Medicine,Self-pay,2026-04-17,2026-04-27,10,0,Other
+ENC0233,PAT0026,Medicine,Self-pay,2026-08-01,2026-08-04,3,0,Home
+ENC0234,PAT0344,Cardiology,Government,2026-09-19,2026-09-20,1,0,Other
+ENC0235,PAT0314,Neurology,Insurance A,2026-03-08,2026-03-11,3,0,Transfer
+ENC0236,PAT0234,Medicine,Insurance B,2026-05-04,2026-05-10,6,0,Other
+ENC0237,PAT0285,Cardiology,Self-pay,2026-08-04,2026-08-07,3,0,Referred
+ENC0238,PAT0317,Nephrology,Insurance A,2026-09-19,2026-09-28,9,0,Other
+ENC0239,PAT0208,Medicine,Insurance B,2026-05-26,2026-05-30,4,0,Referred
+ENC0240,PAT0088,Medicine,Government,2026-04-27,2026-04-29,2,0,Transfer
+ENC0241,PAT0060,Orthopaedics,Insurance A,2026-08-13,2026-08-19,6,0,Home
+ENC0242,PAT0377,Nephrology,Government,2026-10-18,2026-10-20,2,0,Home
+ENC0243,PAT0345,Nephrology,Insurance B,2026-02-15,2026-02-18,3,0,Transfer
+ENC0244,PAT0039,Nephrology,Insurance B,2026-10-08,2026-10-13,5,0,Home
+ENC0245,PAT0308,Neurology,Government,2026-01-05,2026-01-06,1,0,Home
+ENC0246,PAT0014,Neurology,Government,2026-05-30,2026-05-31,1,0,Transfer
+ENC0247,PAT0079,Medicine,Insurance A,2026-03-02,2026-03-06,4,0,Home
+ENC0248,PAT0242,Medicine,Self-pay,2026-06-28,2026-07-04,6,0,Other
+ENC0249,PAT0357,Orthopaedics,Self-pay,2026-01-29,2026-02-03,5,0,Home
+ENC0250,PAT0104,Neurology,Insurance B,2026-05-26,2026-05-31,5,0,Transfer
+ENC0251,PAT0290,Orthopaedics,Self-pay,2026-04-11,2026-04-16,5,0,Referred
+ENC0252,PAT0256,Nephrology,Insurance B,2026-06-14,2026-06-19,5,1,Transfer
+ENC0253,PAT0121,Neurology,Insurance B,2026-07-02,2026-07-07,5,0,Other
+ENC0254,PAT0085,Medicine,Insurance B,2026-06-14,2026-06-15,1,0,Home
+ENC0255,PAT0037,Neurology,Government,2026-10-06,2026-10-07,1,0,Home
+ENC0256,PAT0257,Neurology,Insurance A,2026-03-06,2026-03-10,4,0,Home
+ENC0257,PAT0089,Nephrology,Insurance B,2026-02-21,2026-02-23,2,0,Referred
+ENC0258,PAT0092,Medicine,Insurance A,2026-03-01,2026-03-03,2,1,Other
+ENC0259,PAT0151,Medicine,Government,2026-02-06,2026-02-13,7,0,Referred
+ENC0260,PAT0130,Orthopaedics,Insurance B,2026-09-06,2026-09-13,7,0,Referred
+ENC0261,PAT0001,Cardiology,Insurance B,2026-04-03,2026-04-06,3,0,Home
+ENC0262,PAT0351,Orthopaedics,Insurance A,2026-06-26,2026-07-01,5,0,Other
+ENC0263,PAT0033,Cardiology,Insurance B,2026-07-25,2026-07-30,5,1,Transfer
+ENC0264,PAT0302,Medicine,Self-pay,2026-07-16,2026-07-26,10,0,Home
+ENC0265,PAT0290,Orthopaedics,Insurance B,2026-10-24,2026-10-31,7,0,Other
+ENC0266,PAT0251,Neurology,Government,2026-03-21,2026-03-29,8,1,Transfer
+ENC0267,PAT0007,Neurology,Insurance A,2026-05-03,2026-05-10,7,0,Home
+ENC0268,PAT0139,Medicine,Insurance B,2026-02-12,2026-02-13,1,0,Home
+ENC0269,PAT0176,Medicine,Government,2026-07-23,2026-08-02,10,0,Other
+ENC0270,PAT0027,Cardiology,Insurance B,2026-05-04,2026-05-09,5,0,Home
+ENC0271,PAT0242,Medicine,Insurance B,2026-09-11,2026-09-12,1,0,Other
+ENC0272,PAT0093,Orthopaedics,Insurance B,2026-02-23,2026-03-02,7,0,Transfer
+ENC0273,PAT0187,Cardiology,Insurance B,2026-09-17,2026-09-23,6,0,Other
+ENC0274,PAT0189,Cardiology,Self-pay,2026-05-06,2026-05-13,7,0,Transfer
+ENC0275,PAT0231,Medicine,Insurance B,2026-10-05,2026-10-07,2,0,Transfer
+ENC0276,PAT0316,Medicine,Government,2026-07-24,2026-07-27,3,0,Transfer
+ENC0277,PAT0025,Orthopaedics,Insurance B,2026-04-13,2026-04-17,4,0,Home
+ENC0278,PAT0024,Neurology,Insurance B,2026-04-08,2026-04-10,2,0,Home
+ENC0279,PAT0203,Medicine,Self-pay,2026-09-28,2026-10-03,5,0,Transfer
+ENC0280,PAT0181,Orthopaedics,Insurance A,2026-08-10,2026-08-13,3,0,Transfer
+ENC0281,PAT0366,Nephrology,Insurance A,2026-01-14,2026-01-19,5,0,Other
+ENC0282,PAT0175,Orthopaedics,Self-pay,2026-09-24,2026-09-26,2,0,Home
+ENC0283,PAT0132,Cardiology,Self-pay,2026-01-05,2026-01-06,1,0,Transfer
+ENC0284,PAT0174,Orthopaedics,Self-pay,2026-03-10,2026-03-15,5,0,Other
+ENC0285,PAT0374,Orthopaedics,Self-pay,2026-02-06,2026-02-12,6,0,Other
+ENC0286,PAT0057,Orthopaedics,Government,2026-08-28,2026-09-02,5,0,Home
+ENC0287,PAT0271,Medicine,Insurance A,2026-05-18,2026-05-26,8,0,Referred
+ENC0288,PAT0170,Orthopaedics,Insurance B,2026-07-13,2026-07-19,6,0,Other
+ENC0289,PAT0336,Nephrology,Insurance A,2026-05-30,2026-06-03,4,0,Other
+ENC0290,PAT0287,Nephrology,Self-pay,2026-03-10,2026-03-13,3,0,Transfer
+ENC0291,PAT0135,Orthopaedics,Insurance A,2026-08-15,2026-08-19,4,1,Home
+ENC0292,PAT0259,Neurology,Insurance B,2026-06-10,2026-06-15,5,0,Home
+ENC0293,PAT0355,Orthopaedics,Self-pay,2026-09-19,2026-09-20,1,0,Other
+ENC0294,PAT0170,Neurology,Insurance A,2026-07-11,2026-07-17,6,0,Other
+ENC0295,PAT0249,Medicine,Insurance B,2026-02-19,2026-02-23,4,0,Transfer
+ENC0296,PAT0357,Neurology,Government,2026-07-11,2026-07-14,3,0,Referred
+ENC0297,PAT0045,Medicine,Self-pay,2026-09-04,2026-09-12,8,0,Other
+ENC0298,PAT0271,Nephrology,Government,2026-10-06,2026-10-09,3,1,Other
+ENC0299,PAT0302,Neurology,Insurance B,2026-09-20,2026-09-23,3,0,Other
+ENC0300,PAT0248,Medicine,Insurance A,2026-08-07,2026-08-12,5,0,Transfer
+ENC0301,PAT0366,Orthopaedics,Government,2026-08-07,2026-08-12,5,0,Transfer
+ENC0302,PAT0069,Neurology,Insurance A,2026-05-19,2026-05-24,5,0,Home
+ENC0303,PAT0342,Orthopaedics,Insurance B,2026-02-09,2026-02-13,4,0,Transfer
+ENC0304,PAT0337,Orthopaedics,Government,2026-03-20,2026-03-23,3,0,Home
+ENC0305,PAT0012,Neurology,Self-pay,2026-01-14,2026-01-23,9,0,Referred
+ENC0306,PAT0362,Medicine,Government,2026-04-04,2026-04-05,1,0,Transfer
+ENC0307,PAT0016,Cardiology,Government,2026-01-26,2026-01-29,3,0,Transfer
+ENC0308,PAT0116,Nephrology,Government,2026-09-08,2026-09-09,1,0,Other
+ENC0309,PAT0116,Medicine,Insurance A,2026-02-02,2026-02-03,1,0,Referred
+ENC0310,PAT0324,Orthopaedics,Self-pay,2026-05-11,2026-05-14,3,0,Referred
+ENC0311,PAT0283,Medicine,Insurance A,2026-02-24,2026-02-28,4,0,Home
+ENC0312,PAT0373,Orthopaedics,Government,2026-02-02,2026-02-09,7,0,Home
+ENC0313,PAT0086,Medicine,Insurance A,2026-03-13,2026-03-15,2,0,Referred
+ENC0314,PAT0377,Nephrology,Insurance B,2026-07-31,2026-08-09,9,0,Other
+ENC0315,PAT0265,Neurology,Insurance B,2026-06-30,2026-07-01,1,0,Home
+ENC0316,PAT0322,Cardiology,Insurance A,2026-06-28,2026-07-06,8,0,Home
+ENC0317,PAT0270,Orthopaedics,Government,2026-10-25,2026-10-26,1,0,Home
+ENC0318,PAT0132,Cardiology,Insurance B,2026-05-15,2026-05-18,3,0,Referred
+ENC0319,PAT0366,Orthopaedics,Government,2026-05-30,2026-06-02,3,0,Referred
+ENC0320,PAT0043,Neurology,Insurance B,2026-06-14,2026-06-19,5,0,Transfer
+ENC0321,PAT0088,Orthopaedics,Insurance A,2026-10-23,2026-10-29,6,0,Other
+ENC0322,PAT0168,Cardiology,Government,2026-08-10,2026-08-16,6,0,Other
+ENC0323,PAT0193,Orthopaedics,Self-pay,2026-09-11,2026-09-17,6,1,Transfer
+ENC0324,PAT0201,Medicine,Self-pay,2026-08-21,2026-08-26,5,0,Home
+ENC0325,PAT0040,Medicine,Self-pay,2026-10-04,2026-10-14,10,0,Referred
+ENC0326,PAT0053,Cardiology,Government,2026-02-25,2026-02-28,3,1,Home
+ENC0327,PAT0365,Neurology,Insurance A,2026-07-28,2026-07-30,2,0,Home
+ENC0328,PAT0235,Cardiology,Government,2026-01-12,2026-01-13,1,0,Referred
+ENC0329,PAT0003,Cardiology,Insurance B,2026-05-12,2026-05-14,2,0,Transfer
+ENC0330,PAT0333,Neurology,Insurance B,2026-05-02,2026-05-05,3,0,Home
+ENC0331,PAT0043,Nephrology,Government,2026-03-11,2026-03-16,5,0,Referred
+ENC0332,PAT0005,Cardiology,Self-pay,2026-02-08,2026-02-10,2,0,Referred
+ENC0333,PAT0349,Nephrology,Self-pay,2026-07-01,2026-07-02,1,0,Referred
+ENC0334,PAT0121,Cardiology,Self-pay,2026-03-18,2026-03-20,2,0,Other
+ENC0335,PAT0170,Orthopaedics,Government,2026-08-14,2026-08-19,5,0,Other
+ENC0336,PAT0068,Nephrology,Insurance A,2026-10-22,2026-10-25,3,0,Other
+ENC0337,PAT0087,Orthopaedics,Insurance B,2026-05-24,2026-05-27,3,0,Transfer
+ENC0338,PAT0330,Medicine,Insurance A,2026-07-04,2026-07-10,6,0,Home
+ENC0339,PAT0336,Medicine,Government,2026-09-23,2026-09-24,1,0,Referred
+ENC0340,PAT0259,Medicine,Self-pay,2026-05-01,2026-05-09,8,0,Home
+ENC0341,PAT0112,Neurology,Self-pay,2026-02-20,2026-02-27,7,0,Referred
+ENC0342,PAT0338,Cardiology,Self-pay,2026-05-30,2026-06-02,3,1,Other
+ENC0343,PAT0357,Medicine,Government,2026-04-18,2026-04-22,4,0,Transfer
+ENC0344,PAT0026,Nephrology,Government,2026-04-03,2026-04-07,4,0,Other
+ENC0345,PAT0332,Cardiology,Insurance B,2026-06-26,2026-07-06,10,0,Home
+ENC0346,PAT0101,Medicine,Government,2026-05-10,2026-05-14,4,0,Other
+ENC0347,PAT0030,Cardiology,Insurance A,2026-05-02,2026-05-05,3,0,Transfer
+ENC0348,PAT0304,Neurology,Insurance A,2026-07-06,2026-07-07,1,0,Referred
+ENC0349,PAT0220,Orthopaedics,Government,2026-06-15,2026-06-17,2,0,Transfer
+ENC0350,PAT0095,Nephrology,Insurance B,2026-09-27,2026-09-28,1,0,Transfer
+ENC0351,PAT0267,Medicine,Government,2026-06-16,2026-06-21,5,0,Referred
+ENC0352,PAT0194,Cardiology,Insurance A,2026-03-24,2026-03-25,1,0,Transfer
+ENC0353,PAT0340,Nephrology,Insurance A,2026-02-27,2026-03-04,5,0,Transfer
+ENC0354,PAT0279,Nephrology,Government,2026-06-12,2026-06-16,4,0,Referred
+ENC0355,PAT0307,Nephrology,Insurance A,2026-08-29,2026-09-07,9,0,Other
+ENC0356,PAT0085,Cardiology,Insurance B,2026-06-18,2026-06-23,5,0,Referred
+ENC0357,PAT0270,Cardiology,Insurance B,2026-03-26,2026-03-28,2,0,Other
+ENC0358,PAT0310,Nephrology,Insurance A,2026-04-11,2026-04-15,4,0,Transfer
+ENC0359,PAT0332,Nephrology,Government,2026-05-31,2026-06-02,2,0,Referred
+ENC0360,PAT0068,Neurology,Government,2026-06-18,2026-06-25,7,0,Referred
+ENC0361,PAT0018,Cardiology,Insurance A,2026-06-10,2026-06-18,8,0,Other
+ENC0362,PAT0114,Neurology,Insurance B,2026-07-19,2026-07-25,6,0,Referred
+ENC0363,PAT0317,Neurology,Self-pay,2026-03-04,2026-03-14,10,0,Home
+ENC0364,PAT0220,Orthopaedics,Insurance B,2026-04-15,2026-04-18,3,0,Transfer
+ENC0365,PAT0372,Orthopaedics,Government,2026-07-30,2026-08-02,3,0,Other
+ENC0366,PAT0235,Neurology,Insurance B,2026-02-24,2026-02-27,3,0,Transfer
+ENC0367,PAT0249,Medicine,Government,2026-02-05,2026-02-09,4,0,Referred
+ENC0368,PAT0157,Medicine,Self-pay,2026-03-06,2026-03-07,1,0,Transfer
+ENC0369,PAT0253,Nephrology,Insurance A,2026-02-21,2026-02-25,4,0,Referred
+ENC0370,PAT0044,Nephrology,Self-pay,2026-08-23,2026-08-25,2,0,Other
+ENC0371,PAT0182,Orthopaedics,Government,2026-05-15,2026-05-16,1,0,Transfer
+ENC0372,PAT0071,Neurology,Insurance A,2026-01-14,2026-01-16,2,0,Other
+ENC0373,PAT0236,Cardiology,Insurance B,2026-05-06,2026-05-08,2,0,Transfer
+ENC0374,PAT0349,Neurology,Self-pay,2026-10-17,2026-10-20,3,0,Other
+ENC0375,PAT0138,Neurology,Insurance A,2026-04-28,2026-05-08,10,0,Referred
+ENC0376,PAT0210,Orthopaedics,Insurance B,2026-02-28,2026-03-04,4,0,Transfer
+ENC0377,PAT0070,Cardiology,Insurance A,2026-03-21,2026-03-25,4,0,Referred
+ENC0378,PAT0267,Neurology,Insurance B,2026-06-20,2026-06-24,4,0,Referred
+ENC0379,PAT0133,Orthopaedics,Self-pay,2026-08-17,2026-08-22,5,0,Referred
+ENC0380,PAT0349,Neurology,Insurance B,2026-05-13,2026-05-17,4,0,Referred
+ENC0381,PAT0218,Cardiology,Insurance A,2026-05-30,2026-06-02,3,0,Referred
+ENC0382,PAT0334,Neurology,Self-pay,2026-03-12,2026-03-13,1,0,Transfer
+ENC0383,PAT0004,Medicine,Government,2026-04-24,2026-04-29,5,0,Other
+ENC0384,PAT0215,Cardiology,Self-pay,2026-04-05,2026-04-13,8,0,Transfer
+ENC0385,PAT0145,Medicine,Government,2026-10-25,2026-10-31,6,0,Transfer
+ENC0386,PAT0335,Medicine,Insurance B,2026-01-15,2026-01-17,2,0,Home
+ENC0387,PAT0276,Neurology,Insurance B,2026-08-23,2026-08-30,7,0,Transfer
+ENC0388,PAT0130,Medicine,Insurance A,2026-04-19,2026-04-20,1,0,Transfer
+ENC0389,PAT0256,Orthopaedics,Insurance B,2026-02-13,2026-02-14,1,0,Transfer
+ENC0390,PAT0047,Nephrology,Self-pay,2026-08-21,2026-08-26,5,0,Transfer
+ENC0391,PAT0162,Nephrology,Insurance B,2026-07-06,2026-07-09,3,0,Home
+ENC0392,PAT0116,Neurology,Insurance A,2026-05-29,2026-06-02,4,0,Referred
+ENC0393,PAT0031,Orthopaedics,Government,2026-07-15,2026-07-19,4,0,Referred
+ENC0394,PAT0259,Nephrology,Self-pay,2026-01-27,2026-01-29,2,0,Home
+ENC0395,PAT0021,Nephrology,Self-pay,2026-07-22,2026-07-26,4,0,Referred
+ENC0396,PAT0194,Orthopaedics,Insurance B,2026-10-07,2026-10-09,2,0,Transfer
+ENC0397,PAT0189,Orthopaedics,Insurance A,2026-10-19,2026-10-23,4,0,Other
+ENC0398,PAT0323,Medicine,Insurance B,2026-06-06,2026-06-07,1,1,Transfer
+ENC0399,PAT0147,Nephrology,Insurance B,2026-01-29,2026-02-02,4,0,Home
+ENC0400,PAT0169,Cardiology,Government,2026-08-30,2026-09-02,3,0,Other
+ENC0401,PAT0150,Medicine,Self-pay,2026-09-18,2026-09-20,2,0,Referred
+ENC0402,PAT0085,Orthopaedics,Self-pay,2026-07-22,2026-07-24,2,0,Referred
+ENC0403,PAT0238,Neurology,Insurance B,2026-07-24,2026-07-26,2,0,Home
+ENC0404,PAT0259,Neurology,Insurance B,2026-04-22,2026-04-24,2,0,Transfer
+ENC0405,PAT0361,Neurology,Insurance A,2026-06-02,2026-06-03,1,0,Home
+ENC0406,PAT0242,Cardiology,Government,2026-01-14,2026-01-18,4,0,Transfer
+ENC0407,PAT0380,Nephrology,Self-pay,2026-06-03,2026-06-05,2,0,Referred
+ENC0408,PAT0258,Medicine,Insurance A,2026-06-12,2026-06-15,3,0,Transfer
+ENC0409,PAT0179,Neurology,Insurance A,2026-10-25,2026-10-27,2,0,Home
+ENC0410,PAT0273,Neurology,Self-pay,2026-04-07,2026-04-15,8,1,Referred
+ENC0411,PAT0314,Cardiology,Government,2026-04-26,2026-04-30,4,0,Other
+ENC0412,PAT0082,Medicine,Insurance A,2026-05-12,2026-05-16,4,0,Transfer
+ENC0413,PAT0184,Cardiology,Insurance B,2026-10-10,2026-10-12,2,0,Transfer
+ENC0414,PAT0190,Orthopaedics,Insurance B,2026-03-19,2026-03-22,3,0,Referred
+ENC0415,PAT0285,Cardiology,Insurance B,2026-10-16,2026-10-20,4,0,Other
+ENC0416,PAT0058,Nephrology,Insurance A,2026-04-23,2026-04-25,2,0,Home
+ENC0417,PAT0214,Neurology,Self-pay,2026-08-26,2026-09-01,6,0,Referred
+ENC0418,PAT0109,Orthopaedics,Insurance B,2026-06-07,2026-06-11,4,0,Home
+ENC0419,PAT0147,Orthopaedics,Self-pay,2026-07-25,2026-07-30,5,0,Home
+ENC0420,PAT0371,Cardiology,Insurance A,2026-05-15,2026-05-20,5,1,Referred
+ENC0421,PAT0307,Orthopaedics,Self-pay,2026-04-28,2026-05-04,6,0,Referred
+ENC0422,PAT0116,Neurology,Self-pay,2026-02-21,2026-02-27,6,0,Referred
+ENC0423,PAT0095,Nephrology,Insurance A,2026-06-12,2026-06-16,4,0,Other
+ENC0424,PAT0143,Medicine,Government,2026-03-22,2026-03-24,2,0,Transfer
+ENC0425,PAT0356,Nephrology,Government,2026-01-23,2026-01-29,6,0,Other
+ENC0426,PAT0121,Medicine,Insurance A,2026-08-26,2026-08-29,3,0,Other
+ENC0427,PAT0121,Neurology,Insurance A,2026-04-21,2026-04-24,3,0,Other
+ENC0428,PAT0203,Orthopaedics,Insurance B,2026-10-04,2026-10-08,4,0,Other
+ENC0429,PAT0238,Medicine,Government,2026-07-09,2026-07-12,3,0,Other
+ENC0430,PAT0090,Cardiology,Government,2026-01-03,2026-01-04,1,0,Transfer
+ENC0431,PAT0325,Medicine,Government,2026-06-28,2026-06-30,2,0,Other
+ENC0432,PAT0123,Nephrology,Government,2026-10-26,2026-11-03,8,0,Transfer
+ENC0433,PAT0195,Neurology,Self-pay,2026-07-11,2026-07-13,2,0,Transfer
+ENC0434,PAT0229,Nephrology,Insurance B,2026-06-23,2026-06-25,2,0,Referred
+ENC0435,PAT0022,Medicine,Insurance A,2026-06-11,2026-06-12,1,0,Other
+ENC0436,PAT0312,Orthopaedics,Insurance A,2026-09-20,2026-09-30,10,0,Other
+ENC0437,PAT0277,Cardiology,Insurance A,2026-05-18,2026-05-19,1,0,Transfer
+ENC0438,PAT0171,Medicine,Insurance B,2026-10-02,2026-10-06,4,0,Other
+ENC0439,PAT0378,Neurology,Insurance A,2026-07-17,2026-07-24,7,0,Referred
+ENC0440,PAT0292,Neurology,Insurance A,2026-02-07,2026-02-10,3,0,Referred
+ENC0441,PAT0177,Cardiology,Government,2026-04-20,2026-04-26,6,0,Referred
+ENC0442,PAT0060,Neurology,Insurance B,2026-05-01,2026-05-11,10,0,Home
+ENC0443,PAT0137,Neurology,Insurance B,2026-03-04,2026-03-05,1,0,Other
+ENC0444,PAT0333,Cardiology,Insurance B,2026-05-08,2026-05-10,2,0,Other
+ENC0445,PAT0105,Neurology,Self-pay,2026-10-13,2026-10-17,4,0,Transfer
+ENC0446,PAT0159,Orthopaedics,Insurance B,2026-01-27,2026-02-06,10,1,Home
+ENC0447,PAT0209,Nephrology,Government,2026-08-15,2026-08-22,7,0,Other
+ENC0448,PAT0359,Cardiology,Self-pay,2026-07-20,2026-07-22,2,0,Home
+ENC0449,PAT0058,Neurology,Government,2026-04-22,2026-04-28,6,0,Home
+ENC0450,PAT0283,Nephrology,Self-pay,2026-06-27,2026-07-02,5,0,Referred
+ENC0451,PAT0222,Medicine,Insurance B,2026-04-27,2026-05-04,7,0,Home
+ENC0452,PAT0246,Nephrology,Insurance A,2026-01-29,2026-02-04,6,0,Referred
+ENC0453,PAT0029,Medicine,Self-pay,2026-02-08,2026-02-12,4,0,Other
+ENC0454,PAT0373,Orthopaedics,Insurance A,2026-09-15,2026-09-17,2,0,Transfer
+ENC0455,PAT0032,Nephrology,Self-pay,2026-05-14,2026-05-20,6,0,Other
+ENC0456,PAT0282,Neurology,Government,2026-09-06,2026-09-13,7,0,Referred
+ENC0457,PAT0166,Orthopaedics,Insurance A,2026-08-22,2026-08-28,6,0,Transfer
+ENC0458,PAT0075,Neurology,Government,2026-06-23,2026-06-28,5,0,Other
+ENC0459,PAT0316,Neurology,Self-pay,2026-02-12,2026-02-15,3,0,Other
+ENC0460,PAT0292,Medicine,Insurance A,2026-01-14,2026-01-22,8,0,Transfer
+ENC0461,PAT0279,Cardiology,Insurance A,2026-02-05,2026-02-07,2,0,Other
+ENC0462,PAT0074,Cardiology,Insurance A,2026-07-10,2026-07-11,1,0,Transfer
+ENC0463,PAT0062,Medicine,Insurance B,2026-06-08,2026-06-14,6,0,Home
+ENC0464,PAT0255,Nephrology,Self-pay,2026-03-27,2026-03-29,2,0,Other
+ENC0465,PAT0155,Medicine,Self-pay,2026-09-14,2026-09-16,2,1,Referred
+ENC0466,PAT0001,Nephrology,Self-pay,2026-06-22,2026-06-28,6,0,Home
+ENC0467,PAT0257,Cardiology,Insurance A,2026-02-22,2026-02-23,1,0,Referred
+ENC0468,PAT0220,Medicine,Insurance A,2026-03-29,2026-03-31,2,0,Other
+ENC0469,PAT0178,Nephrology,Self-pay,2026-05-10,2026-05-20,10,0,Transfer
+ENC0470,PAT0327,Neurology,Insurance A,2026-05-08,2026-05-15,7,0,Referred
+ENC0471,PAT0157,Medicine,Insurance B,2026-04-08,2026-04-12,4,0,Home
+ENC0472,PAT0198,Neurology,Self-pay,2026-09-13,2026-09-18,5,0,Transfer
+ENC0473,PAT0108,Cardiology,Self-pay,2026-04-07,2026-04-10,3,0,Referred
+ENC0474,PAT0244,Nephrology,Self-pay,2026-10-04,2026-10-08,4,0,Referred
+ENC0475,PAT0245,Orthopaedics,Government,2026-01-16,2026-01-18,2,0,Other
+ENC0476,PAT0370,Neurology,Insurance A,2026-09-05,2026-09-10,5,0,Home
+ENC0477,PAT0193,Orthopaedics,Insurance B,2026-01-18,2026-01-20,2,0,Other
+ENC0478,PAT0149,Cardiology,Insurance B,2026-08-08,2026-08-10,2,1,Transfer
+ENC0479,PAT0372,Nephrology,Insurance A,2026-04-07,2026-04-12,5,0,Transfer
+ENC0480,PAT0119,Orthopaedics,Self-pay,2026-07-25,2026-07-30,5,0,Referred
+ENC0481,PAT0361,Nephrology,Insurance B,2026-08-06,2026-08-13,7,0,Transfer
+ENC0482,PAT0328,Orthopaedics,Insurance B,2026-04-19,2026-04-21,2,0,Referred
+ENC0483,PAT0335,Orthopaedics,Insurance B,2026-10-06,2026-10-16,10,0,Home
+ENC0484,PAT0046,Cardiology,Government,2026-06-12,2026-06-13,1,0,Referred
+ENC0485,PAT0187,Neurology,Insurance B,2026-03-22,2026-03-27,5,0,Home
+ENC0486,PAT0278,Orthopaedics,Insurance B,2026-10-04,2026-10-13,9,1,Transfer
+ENC0487,PAT0196,Cardiology,Insurance A,2026-01-31,2026-02-04,4,0,Referred
+ENC0488,PAT0154,Nephrology,Government,2026-06-28,2026-06-29,1,0,Home
+ENC0489,PAT0154,Medicine,Insurance A,2026-03-17,2026-03-23,6,0,Transfer
+ENC0490,PAT0329,Medicine,Self-pay,2026-04-20,2026-04-21,1,0,Referred
+ENC0491,PAT0027,Orthopaedics,Self-pay,2026-03-18,2026-03-22,4,0,Transfer
+ENC0492,PAT0107,Neurology,Insurance A,2026-02-12,2026-02-15,3,0,Referred
+ENC0493,PAT0316,Neurology,Insurance B,2026-07-27,2026-07-31,4,0,Other
+ENC0494,PAT0098,Medicine,Government,2026-07-05,2026-07-08,3,0,Home
+ENC0495,PAT0356,Orthopaedics,Insurance A,2026-02-14,2026-02-18,4,0,Referred
+ENC0496,PAT0211,Nephrology,Insurance B,2026-03-07,2026-03-11,4,0,Other
+ENC0497,PAT0071,Cardiology,Insurance B,2026-02-04,2026-02-07,3,1,Referred
+ENC0498,PAT0096,Orthopaedics,Insurance B,2026-02-14,2026-02-18,4,0,Home
+ENC0499,PAT0268,Neurology,Self-pay,2026-07-08,2026-07-09,1,0,Home
+ENC0500,PAT0233,Nephrology,Insurance B,2026-08-16,2026-08-23,7,0,Referred
+ENC0011,PAT0221,Cardiology,Insurance A,2026-10-19,2026-10-21,2,0,Transfer

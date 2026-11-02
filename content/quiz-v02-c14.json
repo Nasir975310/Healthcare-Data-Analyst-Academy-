@@ -1,0 +1,62 @@
+[
+  {
+    "id": "q1",
+    "q": "What is the primary grain of the capstone encounter analysis?",
+    "options": [
+      "One row per encounter",
+      "One row per patient",
+      "One row per prescription",
+      "One row per lab result"
+    ],
+    "correct": 0,
+    "why": "The core encounter table has encounter grain."
+  },
+  {
+    "id": "q2",
+    "q": "How should unique patients be counted?",
+    "options": [
+      "COUNT(DISTINCT patient_id)",
+      "COUNT(*)",
+      "SUM(patient_id)",
+      "COUNT(encounter_id)"
+    ],
+    "correct": 0,
+    "why": "Encounter rows can repeat a patient."
+  },
+  {
+    "id": "q3",
+    "q": "Why exclude OPD zero placeholders from mean inpatient LOS?",
+    "options": [
+      "They are not inpatient length-of-stay observations",
+      "Zero is always missing",
+      "OPD is not healthcare",
+      "AVG cannot handle zero"
+    ],
+    "correct": 0,
+    "why": "The metric's eligible population is inpatient encounters."
+  },
+  {
+    "id": "q4",
+    "q": "What does reconciliation test?",
+    "options": [
+      "Whether totals and components agree as expected",
+      "Whether colors match",
+      "Whether the SQL is short",
+      "Whether every cell is filled"
+    ],
+    "correct": 0,
+    "why": "Reconciliation catches missing, duplicated or misclassified records."
+  },
+  {
+    "id": "q5",
+    "q": "Can a synthetic descriptive project prove a hospital intervention caused an outcome?",
+    "options": [
+      "No",
+      "Yes",
+      "Only with a chart",
+      "Only with more SQL"
+    ],
+    "correct": 0,
+    "why": "Descriptive synthetic data does not support causal inference."
+  }
+]

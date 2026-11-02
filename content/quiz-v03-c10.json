@@ -1,0 +1,74 @@
+[
+  {
+    "id": "q1",
+    "q": "What is R commonly used for?",
+    "options": [
+      "Statistical computing and graphics",
+      "Only database administration",
+      "Only web design",
+      "Operating-system boot"
+    ],
+    "correct": 0,
+    "why": "R is widely used in research, biostatistics and analytics."
+  },
+  {
+    "id": "q2",
+    "q": "What does NA represent in R?",
+    "options": [
+      "A missing value",
+      "An empty data frame",
+      "A package",
+      "A function"
+    ],
+    "correct": 0,
+    "why": "NA marks missing observations."
+  },
+  {
+    "id": "q3",
+    "q": "Why preserve patient identifiers as character?",
+    "options": [
+      "They are labels and may contain leading zeros",
+      "They are measured quantities",
+      "R cannot store integers",
+      "They must be sorted numerically"
+    ],
+    "correct": 0,
+    "why": "Identifiers should not be subjected to arithmetic."
+  },
+  {
+    "id": "q4",
+    "q": "What does mean(x, na.rm=TRUE) do?",
+    "options": [
+      "Calculates mean after excluding NA values",
+      "Replaces NA with zero",
+      "Counts NA values",
+      "Removes the entire column"
+    ],
+    "correct": 0,
+    "why": "Report the nonmissing count alongside the mean."
+  },
+  {
+    "id": "q5",
+    "q": "What is RStudio?",
+    "options": [
+      "An IDE for working with R",
+      "The R language itself",
+      "A database engine",
+      "A CSV encoding"
+    ],
+    "correct": 0,
+    "why": "RStudio is an environment that runs an R installation."
+  },
+  {
+    "id": "q6",
+    "q": "What does sessionInfo() help document?",
+    "options": [
+      "R version and attached package/session details",
+      "Patient identifiers",
+      "The chart palette",
+      "Database passwords"
+    ],
+    "correct": 0,
+    "why": "Session metadata supports reproducibility."
+  }
+]

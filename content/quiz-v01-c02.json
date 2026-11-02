@@ -1,0 +1,62 @@
+[
+  {
+    "id": "v01-c02-q1",
+    "q": "Which statement correctly distinguishes RAM from storage?",
+    "options": [
+      "RAM permanently stores files when power is off",
+      "Storage is temporary working memory",
+      "RAM is working memory; storage retains files",
+      "They are interchangeable"
+    ],
+    "correct": 2,
+    "why": "RAM is temporary working memory used by running processes. Storage retains files when the computer is powered off."
+  },
+  {
+    "id": "v01-c02-q2",
+    "q": "A relative path is interpreted from which location?",
+    "options": [
+      "The file-system root every time",
+      "The current working directory",
+      "The computer's BIOS",
+      "The network gateway"
+    ],
+    "correct": 1,
+    "why": "A relative path is resolved from the process or tool's current working directory."
+  },
+  {
+    "id": "v01-c02-q3",
+    "q": "Why should a raw source dataset be kept separate from a working copy?",
+    "options": [
+      "To make the folder larger",
+      "To preserve an unchanged reference and allow transformations to be audited",
+      "Because CSV files cannot be copied",
+      "To hide the file extension"
+    ],
+    "correct": 1,
+    "why": "An unchanged source supports reproducibility and recovery if a transformation is incorrect."
+  },
+  {
+    "id": "v01-c02-q4",
+    "q": "Which statement about synchronization is most accurate?",
+    "options": [
+      "It is always a complete backup",
+      "It prevents accidental deletion",
+      "It may replicate deletion or corruption, so independent versioned backups are important",
+      "It encrypts every file automatically"
+    ],
+    "correct": 2,
+    "why": "Synchronization mirrors changes. A separate recoverable backup with history is needed."
+  },
+  {
+    "id": "v01-c02-q5",
+    "q": "What should you do before running an unfamiliar recursive deletion command?",
+    "options": [
+      "Run it as administrator immediately",
+      "Paste it into the project folder",
+      "Understand the command, inspect the target path and test only on disposable data",
+      "Change the file extension"
+    ],
+    "correct": 2,
+    "why": "Destructive commands can permanently remove data. Verify the command and target before execution."
+  }
+]

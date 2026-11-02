@@ -1,0 +1,23 @@
+{
+  "education": "Pharm.D final year / completing",
+  "skills": [
+    "Excel",
+    "SQL",
+    "Python",
+    "pandas",
+    "NumPy",
+    "Matplotlib",
+    "statistics",
+    "healthcare domain",
+    "clinical research",
+    "data quality"
+  ],
+  "experience_years": 0,
+  "location": "India",
+  "remote_preference": true,
+  "learning_status": ["Power BI: learning; do not present as independently proficient without a demonstrable project"],
+  "evidence": [
+    "Pharm.D thesis: prospective observational antihypertensive drug-utilization evaluation, N=153",
+    "Separate synthetic healthcare analytics portfolio projects"
+  ]
+}

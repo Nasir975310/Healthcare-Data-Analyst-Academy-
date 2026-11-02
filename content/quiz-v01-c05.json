@@ -1,0 +1,62 @@
+[
+  {
+    "id": "v01-c05-q1",
+    "q": "Blood group is generally which measurement scale?",
+    "options": [
+      "Ratio",
+      "Interval",
+      "Nominal",
+      "Ordinal"
+    ],
+    "correct": 2,
+    "why": "Blood group categories have no inherent order."
+  },
+  {
+    "id": "v01-c05-q2",
+    "q": "Celsius temperature is an interval scale because:",
+    "options": [
+      "It has a true zero",
+      "Differences are meaningful but zero is arbitrary",
+      "It cannot be ordered",
+      "It is always categorical"
+    ],
+    "correct": 1,
+    "why": "Celsius has meaningful differences but zero does not represent absence of temperature."
+  },
+  {
+    "id": "v01-c05-q3",
+    "q": "A blank laboratory result should normally be interpreted as:",
+    "options": [
+      "Zero",
+      "Normal",
+      "Not observed in the dataset; investigate why",
+      "Negative"
+    ],
+    "correct": 2,
+    "why": "Missingness is not equivalent to zero, normal or negative."
+  },
+  {
+    "id": "v01-c05-q4",
+    "q": "Which variable is usually discrete?",
+    "options": [
+      "Patient weight",
+      "Serum sodium concentration",
+      "Number of admissions",
+      "Temperature"
+    ],
+    "correct": 2,
+    "why": "A count of admissions takes discrete integer values."
+  },
+  {
+    "id": "v01-c05-q5",
+    "q": "Why must a laboratory value include units and context?",
+    "options": [
+      "To increase the number of columns",
+      "Because the same number can mean different things across units, methods and specimens",
+      "Units are only decorative",
+      "It makes missing data disappear"
+    ],
+    "correct": 1,
+    "why": "A numeric result without analyte, unit and relevant context cannot be interpreted safely."
+  }
+]

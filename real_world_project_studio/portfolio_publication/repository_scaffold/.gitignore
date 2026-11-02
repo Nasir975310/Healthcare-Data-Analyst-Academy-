@@ -1,0 +1,18 @@
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+# Secrets and local configuration
+.env
+.env.*
+*.pem
+*.key
+# Local data extracts (review before force-adding anything)
+private_data/
+restricted_data/
+phi/
+# Generated temporary files
+*.log
+.DS_Store
+Thumbs.db

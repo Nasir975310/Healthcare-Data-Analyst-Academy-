@@ -1,0 +1,44 @@
+[
+  {
+    "id": "T-001",
+    "title": "Confirm scope and analysis question",
+    "status": "todo",
+    "priority": "high",
+    "owner": "HDA Academy training team"
+  },
+  {
+    "id": "T-002",
+    "title": "Approve data source and governance",
+    "status": "todo",
+    "priority": "high",
+    "owner": "HDA Academy training team"
+  },
+  {
+    "id": "T-003",
+    "title": "Define cohort and variables",
+    "status": "todo",
+    "priority": "high",
+    "owner": "HDA Academy training team"
+  },
+  {
+    "id": "T-004",
+    "title": "Implement reproducible analysis",
+    "status": "todo",
+    "priority": "medium",
+    "owner": "HDA Academy training team"
+  },
+  {
+    "id": "T-005",
+    "title": "Validate outputs and peer review",
+    "status": "todo",
+    "priority": "high",
+    "owner": "HDA Academy training team"
+  },
+  {
+    "id": "T-006",
+    "title": "Prepare client handover",
+    "status": "todo",
+    "priority": "medium",
+    "owner": "HDA Academy training team"
+  }
+]

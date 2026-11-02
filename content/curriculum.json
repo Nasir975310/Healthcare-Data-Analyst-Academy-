@@ -1,0 +1,741 @@
+{
+  "title": "Healthcare Data Analyst Academy",
+  "subtitle": "A complete, practice-led pathway from Pharm.D internship to professional healthcare analytics",
+  "version": "1.4.0",
+  "status": "In development",
+  "volumes": [
+    {
+      "id": "V01",
+      "title": "Foundations of Healthcare Data Analytics",
+      "level": "Absolute beginner → beginner",
+      "purpose": "Build the conceptual, mathematical, healthcare, and digital foundations required for every later volume.",
+      "chapters": [
+        {
+          "number": "01",
+          "title": "Orientation: what healthcare analytics is",
+          "scope": "Analytics lifecycle; descriptive, diagnostic, predictive and prescriptive analytics; analyst roles; limits of inference.",
+          "status": "Authored"
+        },
+        {
+          "number": "02",
+          "title": "Computers, files and digital work",
+          "scope": "Operating systems; file systems; extensions; paths; archives; memory and storage; backups; safe workflows.",
+          "status": "Authored"
+        },
+        {
+          "number": "03",
+          "title": "Data literacy and analytical thinking",
+          "scope": "Data, information, metadata; variables; observations; populations; samples; questions; hypotheses; analytical reasoning.",
+          "status": "Authored"
+        },
+        {
+          "number": "04",
+          "title": "Healthcare systems and data generation",
+          "scope": "Care settings; patient journeys; encounters; claims; EHRs; pharmacy systems; laboratories; registries; operational systems.",
+          "status": "Authored"
+        },
+        {
+          "number": "05",
+          "title": "Data types, structures and measurement",
+          "scope": "Categorical, ordinal, discrete, continuous, dates, text; nominal/ordinal/interval/ratio scales; structured and unstructured data.",
+          "status": "Authored"
+        },
+        {
+          "number": "06",
+          "title": "Mathematics for analysts",
+          "scope": "Arithmetic; ratios; percentages; fractions; rates; algebra; logarithms; scientific notation; units; dimensional analysis.",
+          "status": "Authored"
+        },
+        {
+          "number": "07",
+          "title": "Statistics I: describing data",
+          "scope": "Frequency tables; central tendency; dispersion; percentiles; distributions; outliers; visual summaries.",
+          "status": "Authored"
+        },
+        {
+          "number": "08",
+          "title": "Statistics II: probability and sampling",
+          "scope": "Probability; conditional probability; Bayes' theorem; sampling; sampling error; confidence intervals; bias.",
+          "status": "Authored"
+        },
+        {
+          "number": "09",
+          "title": "Statistics III: inference",
+          "scope": "Null and alternative hypotheses; p-values; effect sizes; confidence intervals; power; Type I/II errors; practical significance.",
+          "status": "Authored"
+        },
+        {
+          "number": "10",
+          "title": "Epidemiology and population health foundations",
+          "scope": "Incidence; prevalence; risk; odds; rates; person-time; confounding; bias; screening; diagnostic accuracy.",
+          "status": "Authored"
+        },
+        {
+          "number": "11",
+          "title": "Research methods and evidence appraisal",
+          "scope": "Study designs; protocols; endpoints; inclusion criteria; data collection; evidence hierarchy; critical appraisal.",
+          "status": "Authored"
+        },
+        {
+          "number": "12",
+          "title": "Data quality and validation foundations",
+          "scope": "Accuracy; completeness; validity; consistency; uniqueness; timeliness; provenance; auditability; data-quality plans.",
+          "status": "Authored"
+        },
+        {
+          "number": "13",
+          "title": "Healthcare metrics and indicators",
+          "scope": "Clinical, safety, quality, utilization, operational and financial indicators; numerator/denominator; stratification.",
+          "status": "Authored"
+        },
+        {
+          "number": "14",
+          "title": "Learning workflow and professional habits",
+          "scope": "Documentation; reproducibility; versioning concepts; notebooks; task planning; technical communication.",
+          "status": "Authored"
+        }
+      ]
+    },
+    {
+      "id": "V02",
+      "title": "Excel, SQL and Healthcare Databases",
+      "level": "Beginner → advanced",
+      "purpose": "Develop spreadsheet, relational database, querying, data extraction and data-modeling competence.",
+      "chapters": [
+        {
+          "number": "01",
+          "title": "Spreadsheet fundamentals",
+          "scope": "Workbooks; worksheets; cells; references; formatting; tables; sorting; filtering; validation.",
+          "status": "Authored"
+        },
+        {
+          "number": "02",
+          "title": "Excel formulas and functions",
+          "scope": "Relative/absolute references; logical; text; date; lookup; statistical; conditional aggregation functions.",
+          "status": "Authored"
+        },
+        {
+          "number": "03",
+          "title": "Analysis with PivotTables and charts",
+          "scope": "PivotTables; PivotCharts; slicers; grouping; summaries; chart selection; dashboard principles.",
+          "status": "Authored"
+        },
+        {
+          "number": "04",
+          "title": "Power Query and repeatable preparation",
+          "scope": "Import; profile; clean; transform; merge; append; unpivot; refresh; query documentation.",
+          "status": "Authored"
+        },
+        {
+          "number": "05",
+          "title": "Advanced spreadsheet practice",
+          "scope": "Dynamic arrays; named ranges; error handling; formula auditing; workbook controls; performance.",
+          "status": "Authored"
+        },
+        {
+          "number": "06",
+          "title": "Database concepts",
+          "scope": "Tables; rows; columns; keys; constraints; relationships; transactions; relational principles.",
+          "status": "Authored"
+        },
+        {
+          "number": "07",
+          "title": "SQL foundations",
+          "scope": "SELECT; WHERE; ORDER BY; LIMIT; DISTINCT; aliases; NULL; operators; CASE.",
+          "status": "Authored"
+        },
+        {
+          "number": "08",
+          "title": "SQL aggregation and joins",
+          "scope": "GROUP BY; HAVING; aggregate functions; inner/outer/cross joins; join cardinality; duplicate control.",
+          "status": "Authored"
+        },
+        {
+          "number": "09",
+          "title": "Intermediate and advanced SQL",
+          "scope": "Subqueries; CTEs; window functions; set operations; date/string functions; conditional logic.",
+          "status": "Authored"
+        },
+        {
+          "number": "10",
+          "title": "Database design and normalization",
+          "scope": "ER diagrams; primary/foreign keys; functional dependencies; normalization; controlled denormalization.",
+          "status": "Authored"
+        },
+        {
+          "number": "11",
+          "title": "PostgreSQL and SQLite practice",
+          "scope": "Installation/use; schemas; data types; import/export; indexes; views; constraints; backups.",
+          "status": "Authored"
+        },
+        {
+          "number": "12",
+          "title": "Healthcare data modeling",
+          "scope": "Patient; encounter; diagnosis; medication; procedure; lab; provider; facility; claims; temporal records.",
+          "status": "Authored"
+        },
+        {
+          "number": "13",
+          "title": "Query quality, safety and performance",
+          "scope": "Query plans; indexing basics; safe updates; transactions; access control; reproducible extracts.",
+          "status": "Authored"
+        },
+        {
+          "number": "14",
+          "title": "Integrated Excel-SQL project",
+          "scope": "Specify, extract, clean, reconcile, analyze and report a synthetic hospital dataset.",
+          "status": "Authored"
+        }
+      ]
+    },
+    {
+      "id": "V03",
+      "title": "Python, R and Statistical Programming",
+      "level": "Beginner → advanced",
+      "purpose": "Teach reproducible analytical programming, data wrangling, visualization, statistical computing and automation.",
+      "chapters": [
+        {
+          "number": "01",
+          "title": "Programming foundations",
+          "scope": "Algorithms; syntax; variables; types; operators; control flow; functions; debugging; environments.",
+          "status": "Authored"
+        },
+        {
+          "number": "02",
+          "title": "Python setup and workflow",
+          "scope": "Python versions; virtual environments; packages; VS Code; JupyterLab; notebooks; project structure.",
+          "status": "Authored"
+        },
+        {
+          "number": "03",
+          "title": "Python core language",
+          "scope": "Strings; numbers; booleans; lists; tuples; dictionaries; sets; loops; comprehensions; functions; modules.",
+          "status": "Authored"
+        },
+        {
+          "number": "04",
+          "title": "Files, exceptions and APIs",
+          "scope": "CSV; JSON; Excel; paths; encoding; exceptions; logging; HTTP/API concepts; safe credentials.",
+          "status": "Authored"
+        },
+        {
+          "number": "05",
+          "title": "NumPy foundations",
+          "scope": "Arrays; shapes; dtypes; vectorization; indexing; broadcasting; missing values.",
+          "status": "Authored"
+        },
+        {
+          "number": "06",
+          "title": "pandas fundamentals",
+          "scope": "Series; DataFrames; reading/writing; selection; filtering; sorting; grouping; merging; reshaping.",
+          "status": "Authored"
+        },
+        {
+          "number": "07",
+          "title": "Data cleaning and validation in Python",
+          "scope": "Missingness; duplicates; types; parsing; outliers; validation rules; assertions; audit summaries.",
+          "status": "Authored"
+        },
+        {
+          "number": "08",
+          "title": "Visualization with Matplotlib",
+          "scope": "Chart grammar; distributions; comparisons; time series; labels; uncertainty; accessible chart design.",
+          "status": "Authored"
+        },
+        {
+          "number": "09",
+          "title": "Statistical analysis in Python",
+          "scope": "Descriptive statistics; tests; intervals; regression; assumptions; diagnostics; interpretation.",
+          "status": "Authored"
+        },
+        {
+          "number": "10",
+          "title": "R and RStudio foundations",
+          "scope": "R syntax; vectors; factors; data frames; functions; packages; RStudio projects.",
+          "status": "Authored"
+        },
+        {
+          "number": "11",
+          "title": "R for data analysis and visualization",
+          "scope": "Import; tidy data; transformations; summaries; ggplot2 concepts; reporting.",
+          "status": "Authored"
+        },
+        {
+          "number": "12",
+          "title": "Reproducible analytical reporting",
+          "scope": "Quarto; Markdown; notebooks; environments; seeds; dependency records; rendered reports.",
+          "status": "Authored"
+        },
+        {
+          "number": "13",
+          "title": "Automation and reusable code",
+          "scope": "Functions; scripts; scheduled-task concepts; command line; testing; linting; documentation.",
+          "status": "Authored"
+        },
+        {
+          "number": "14",
+          "title": "Python/R integrated portfolio project",
+          "scope": "Create a reproducible healthcare analysis with validated code, report and handoff notes.",
+          "status": "Authored"
+        }
+      ]
+    },
+    {
+      "id": "V04",
+      "title": "Biostatistics, Epidemiology and Clinical Research Analytics",
+      "level": "Beginner → advanced",
+      "purpose": "Connect statistical methods and research design to valid clinical and population-health conclusions.",
+      "chapters": [
+        {
+          "number": "01",
+          "title": "Research question frameworks",
+          "scope": "PICO/PECO; estimands; endpoints; hypotheses; operational definitions; analysis plans.",
+          "status": "Authored"
+        },
+        {
+          "number": "02",
+          "title": "Study designs in depth",
+          "scope": "Cross-sectional; cohort; case-control; randomized trials; pragmatic trials; diagnostic studies; registries.",
+          "status": "Authored"
+        },
+        {
+          "number": "03",
+          "title": "Sampling, sample size and power",
+          "scope": "Sampling frames; representativeness; precision; power; effect assumptions; attrition; feasibility.",
+          "status": "Authored"
+        },
+        {
+          "number": "04",
+          "title": "Comparative statistical methods",
+          "scope": "t-tests; paired tests; ANOVA; nonparametric alternatives; chi-square; Fisher exact; assumptions.",
+          "status": "Authored"
+        },
+        {
+          "number": "05",
+          "title": "Regression methods",
+          "scope": "Linear; logistic; Poisson; negative binomial; survival models; interpretation; diagnostics.",
+          "status": "Authored"
+        },
+        {
+          "number": "06",
+          "title": "Survival and time-to-event analysis",
+          "scope": "Time origin; censoring; Kaplan-Meier; log-rank; hazard ratios; Cox models; proportional hazards.",
+          "status": "Authored"
+        },
+        {
+          "number": "07",
+          "title": "Diagnostic and screening analytics",
+          "scope": "Sensitivity; specificity; PPV; NPV; likelihood ratios; ROC/AUC; calibration; prevalence dependence.",
+          "status": "Authored"
+        },
+        {
+          "number": "08",
+          "title": "Missing data and sensitivity analysis",
+          "scope": "MCAR/MAR/MNAR; complete-case; imputation concepts; sensitivity analysis; reporting.",
+          "status": "Authored"
+        },
+        {
+          "number": "09",
+          "title": "Bias, confounding and causal reasoning",
+          "scope": "Selection; information bias; confounding; effect modification; DAG concepts; propensity methods overview.",
+          "status": "Authored"
+        },
+        {
+          "number": "10",
+          "title": "Systematic reviews and meta-analysis",
+          "scope": "Search concepts; extraction; effect measures; heterogeneity; fixed/random effects; forest plots; limitations.",
+          "status": "Authored"
+        },
+        {
+          "number": "11",
+          "title": "Clinical trial data workflows",
+          "scope": "CRFs; data dictionaries; queries; protocol deviations; endpoints; analysis populations; safety datasets.",
+          "status": "Authored"
+        },
+        {
+          "number": "12",
+          "title": "Evidence interpretation and communication",
+          "scope": "Statistical versus clinical significance; uncertainty; subgroup caution; transparent conclusions.",
+          "status": "Authored"
+        },
+        {
+          "number": "13",
+          "title": "Reproducible research project",
+          "scope": "Protocol-to-report workflow using synthetic or appropriately licensed data.",
+          "status": "Authored"
+        }
+      ],
+      "status": "Authored"
+    },
+    {
+      "id": "V05",
+      "title": "Clinical, Pharmacy and Healthcare Analytics",
+      "level": "Beginner → professional",
+      "purpose": "Apply analytical methods to clinical pharmacy, hospital care, medication use, safety, outcomes and health services.",
+      "chapters": [
+        {
+          "number": "01",
+          "title": "Clinical data and EHR architecture",
+          "scope": "Patient identity; encounters; notes; orders; results; medication administration; longitudinal records.",
+          "status": "Authored"
+        },
+        {
+          "number": "02",
+          "title": "Clinical terminology and coding",
+          "scope": "ICD-10; SNOMED CT; LOINC; RxNorm; ATC; code sets; mapping; versioning; coding limitations.",
+          "status": "Authored"
+        },
+        {
+          "number": "03",
+          "title": "Clinical measurements and laboratory data",
+          "scope": "Units; reference intervals; flags; temporal trends; specimen context; harmonization; clinical caveats.",
+          "status": "Authored"
+        },
+        {
+          "number": "04",
+          "title": "Medication and pharmacy data",
+          "scope": "Prescriptions; dispensing; administration; adherence proxies; medication reconciliation; drug dictionaries.",
+          "status": "Authored"
+        },
+        {
+          "number": "05",
+          "title": "Drug utilization research",
+          "scope": "DDD; DU90%; prescribing indicators; utilization denominators; appropriateness; study design and limitations.",
+          "status": "Authored"
+        },
+        {
+          "number": "06",
+          "title": "Pharmacovigilance analytics",
+          "scope": "ICSR concepts; MedDRA; signal detection overview; disproportionality; duplicate reports; causality limits.",
+          "status": "Authored"
+        },
+        {
+          "number": "07",
+          "title": "Clinical outcomes and quality analytics",
+          "scope": "Readmission; length of stay; mortality; complications; process/outcome/balancing measures.",
+          "status": "Authored"
+        },
+        {
+          "number": "08",
+          "title": "Hospital operations analytics",
+          "scope": "Bed occupancy; throughput; waiting time; staffing; pharmacy inventory; resource utilization.",
+          "status": "Authored"
+        },
+        {
+          "number": "09",
+          "title": "Population health and chronic disease",
+          "scope": "Cohorts; risk stratification; care gaps; registries; longitudinal monitoring; equity considerations.",
+          "status": "Authored"
+        },
+        {
+          "number": "10",
+          "title": "Real-world data and evidence",
+          "scope": "EHR; claims; registries; data fitness; cohort design; confounding; target-trial concepts.",
+          "status": "Authored"
+        },
+        {
+          "number": "11",
+          "title": "Healthcare interoperability",
+          "scope": "HL7 concepts; FHIR resources; APIs; terminology services; message flow; conformance basics.",
+          "status": "Authored"
+        },
+        {
+          "number": "12",
+          "title": "OMOP Common Data Model",
+          "scope": "Standardized tables; vocabulary; ETL concepts; cohort definitions; OHDSI ecosystem overview.",
+          "status": "Authored"
+        },
+        {
+          "number": "13",
+          "title": "Clinical decision support and safety",
+          "scope": "Rules; alerts; workflow fit; alert fatigue; validation; human oversight.",
+          "status": "Authored"
+        },
+        {
+          "number": "14",
+          "title": "Indian healthcare context",
+          "scope": "Health-system structure; ABDM concepts; ABHA; consent and exchange concepts; public/private settings.",
+          "status": "Authored"
+        },
+        {
+          "number": "15",
+          "title": "Integrated clinical analytics capstone",
+          "scope": "A complete synthetic hospital/pharmacy analytics study with reproducible outputs.",
+          "status": "Authored"
+        }
+      ],
+      "status": "Authored"
+    },
+    {
+      "id": "V06",
+      "title": "Business Intelligence, Data Engineering and Cloud",
+      "level": "Intermediate → professional",
+      "purpose": "Build production-oriented reporting, data pipelines, data models, governance and deployment foundations.",
+      "chapters": [
+        {
+          "number": "01",
+          "title": "BI and decision support fundamentals",
+          "scope": "Stakeholders; requirements; metric definitions; semantic layers; dashboard use cases.",
+          "status": "Authored"
+        },
+        {
+          "number": "02",
+          "title": "Power BI foundations",
+          "scope": "Desktop workflow; data import; Power Query; relationships; visuals; publishing concepts.",
+          "status": "Authored"
+        },
+        {
+          "number": "03",
+          "title": "Data modeling and DAX",
+          "scope": "Star schemas; fact/dimension tables; measures; filter context; time intelligence; validation.",
+          "status": "Authored"
+        },
+        {
+          "number": "04",
+          "title": "Dashboard design and governance",
+          "scope": "Visual hierarchy; accessibility; drill-through; row-level security concepts; refresh; documentation.",
+          "status": "Authored"
+        },
+        {
+          "number": "05",
+          "title": "Tableau and BI alternatives",
+          "scope": "Core concepts; tool selection; licensing; portability; comparison criteria.",
+          "status": "Authored"
+        },
+        {
+          "number": "06",
+          "title": "ETL and ELT pipelines",
+          "scope": "Extraction; staging; transformations; orchestration; incremental loads; retries; idempotency.",
+          "status": "Authored"
+        },
+        {
+          "number": "07",
+          "title": "Warehouses, lakes and lakehouses",
+          "scope": "OLTP/OLAP; dimensional modeling; partitions; file formats; medallion architecture concepts.",
+          "status": "Authored"
+        },
+        {
+          "number": "08",
+          "title": "Git and collaborative development",
+          "scope": "Commits; branches; merges; pull requests; reviews; issues; releases; data/code separation.",
+          "status": "Authored"
+        },
+        {
+          "number": "09",
+          "title": "Linux and command-line workflows",
+          "scope": "Shell basics; paths; permissions; processes; pipes; package management; automation.",
+          "status": "Authored"
+        },
+        {
+          "number": "10",
+          "title": "APIs and data integration",
+          "scope": "REST; authentication concepts; pagination; rate limits; retries; JSON; secure secrets.",
+          "status": "Authored"
+        },
+        {
+          "number": "11",
+          "title": "Docker and reproducible environments",
+          "scope": "Images; containers; volumes; networks; compose; healthcare data isolation considerations.",
+          "status": "Authored"
+        },
+        {
+          "number": "12",
+          "title": "Cloud fundamentals",
+          "scope": "Compute; storage; networking; IAM; managed databases; logging; cost controls; shared responsibility.",
+          "status": "Authored"
+        },
+        {
+          "number": "13",
+          "title": "Data governance and observability",
+          "scope": "Lineage; catalogues; quality checks; monitoring; SLAs; incident handling; access reviews.",
+          "status": "Authored"
+        },
+        {
+          "number": "14",
+          "title": "Production analytics handoff",
+          "scope": "Versioned code; tested transformations; refresh documentation; support runbooks; stakeholder sign-off.",
+          "status": "Authored"
+        }
+      ],
+      "status": "Authored"
+    },
+    {
+      "id": "V07",
+      "title": "Advanced Analytics, Machine Learning and Responsible AI",
+      "level": "Advanced → specialist",
+      "purpose": "Develop sound judgment and practical foundations for predictive analytics and AI in healthcare.",
+      "chapters": [
+        {
+          "number": "01",
+          "title": "Advanced analytical problem framing",
+          "scope": "Prediction versus explanation; leakage; baselines; deployment context; decision thresholds.",
+          "status": "Authored — Linux + Windows practicals"
+        },
+        {
+          "number": "02",
+          "title": "Machine learning foundations",
+          "scope": "Supervised/unsupervised learning; splits; cross-validation; pipelines; preprocessing.",
+          "status": "Authored — Linux + Windows practicals"
+        },
+        {
+          "number": "03",
+          "title": "Classification and regression",
+          "scope": "Linear/logistic models; trees; ensembles; regularization; metrics; calibration.",
+          "status": "Authored — Linux + Windows practicals"
+        },
+        {
+          "number": "04",
+          "title": "Unsupervised learning",
+          "scope": "Clustering; dimensionality reduction; segmentation; stability; clinical interpretation cautions.",
+          "status": "Authored — Linux + Windows practicals"
+        },
+        {
+          "number": "05",
+          "title": "Model evaluation and validation",
+          "scope": "Discrimination; calibration; sensitivity/specificity; PR curves; external validation; drift.",
+          "status": "Authored — Linux + Windows practicals"
+        },
+        {
+          "number": "06",
+          "title": "Healthcare prediction use cases",
+          "scope": "Readmission; deterioration; risk stratification; utilization; label and workflow design.",
+          "status": "Authored — Linux + Windows practicals"
+        },
+        {
+          "number": "07",
+          "title": "Imbalanced data and fairness",
+          "scope": "Class imbalance; resampling; thresholding; subgroup performance; fairness trade-offs.",
+          "status": "Authored — Linux + Windows practicals"
+        },
+        {
+          "number": "08",
+          "title": "Time series and forecasting",
+          "scope": "Trend/seasonality; leakage; temporal validation; forecast error; operational use.",
+          "status": "Authored — Linux + Windows practicals"
+        },
+        {
+          "number": "09",
+          "title": "NLP and clinical text",
+          "scope": "Text preprocessing; terminology; de-identification; information extraction; evaluation.",
+          "status": "Authored — Linux + Windows practicals"
+        },
+        {
+          "number": "10",
+          "title": "Generative AI and LLMs in healthcare",
+          "scope": "Model capabilities; prompting; retrieval; hallucinations; verification; human oversight.",
+          "status": "Authored — Linux + Windows practicals"
+        },
+        {
+          "number": "11",
+          "title": "AI governance and clinical safety",
+          "scope": "Bias; explainability; privacy; accountability; intended use; validation; monitoring.",
+          "status": "Authored — Linux + Windows practicals"
+        },
+        {
+          "number": "12",
+          "title": "MLOps foundations",
+          "scope": "Experiment tracking; model registry concepts; deployment patterns; monitoring; rollback.",
+          "status": "Authored — Linux + Windows practicals"
+        },
+        {
+          "number": "13",
+          "title": "Advanced specialist capstone",
+          "scope": "A carefully scoped, validated model or NLP prototype using synthetic/de-identified data.",
+          "status": "Authored — Linux + Windows practicals"
+        }
+      ]
+    },
+    {
+      "id": "V08",
+      "title": "Professional Practice, Remote Work and Career Launch",
+      "level": "Beginner job search → professional",
+      "purpose": "Translate technical competence into credible work, portfolio evidence, interviews and sustainable career progression.",
+      "chapters": [
+        {
+          "number": "01",
+          "title": "Healthcare analytics roles and pathways",
+          "scope": "Healthcare analyst; clinical analyst; RWE; PV; research; BI; informatics; data engineering.",
+          "status": "Authored — Linux + Windows practicals"
+        },
+        {
+          "number": "02",
+          "title": "Job-market literacy",
+          "scope": "Role requirements; seniority; job descriptions; transferable skills; realistic entry routes.",
+          "status": "Authored — Linux + Windows practicals"
+        },
+        {
+          "number": "03",
+          "title": "Portfolio architecture",
+          "scope": "GitHub; case studies; README; reproducibility; screenshots; project narratives; privacy.",
+          "status": "Authored — Linux + Windows practicals"
+        },
+        {
+          "number": "04",
+          "title": "Resume and LinkedIn",
+          "scope": "ATS-readable resumes; evidence-based bullets; profile; networking; professional positioning.",
+          "status": "Authored — Linux + Windows practicals"
+        },
+        {
+          "number": "05",
+          "title": "Technical interview preparation",
+          "scope": "Excel; SQL; Python; statistics; BI; data quality; clinical scenarios; timed practice.",
+          "status": "Authored — Linux + Windows practicals"
+        },
+        {
+          "number": "06",
+          "title": "Behavioral and case interviews",
+          "scope": "STAR; requirements clarification; ambiguity; stakeholder conflict; analytical storytelling.",
+          "status": "Authored — Linux + Windows practicals"
+        },
+        {
+          "number": "07",
+          "title": "Remote work operations",
+          "scope": "Async communication; time zones; meetings; documentation; security; work planning.",
+          "status": "Authored — Linux + Windows practicals"
+        },
+        {
+          "number": "08",
+          "title": "Freelancing and consulting",
+          "scope": "Scoping; proposals; deliverables; contracts concepts; pricing research; client communication.",
+          "status": "Authored — Linux + Windows practicals"
+        },
+        {
+          "number": "09",
+          "title": "Certifications and credentials",
+          "scope": "Credential types; selection criteria; costs to verify; preparation; renewal; avoiding certificate collecting.",
+          "status": "Authored — Linux + Windows practicals"
+        },
+        {
+          "number": "10",
+          "title": "Job search system",
+          "scope": "Target roles; employer research; application tracking; referrals; follow-up; scam detection.",
+          "status": "Authored — Linux + Windows practicals"
+        },
+        {
+          "number": "11",
+          "title": "First 30/60/90 days",
+          "scope": "Onboarding; access; stakeholder map; data discovery; quick wins; quality; communication.",
+          "status": "Authored — Linux + Windows practicals"
+        },
+        {
+          "number": "12",
+          "title": "Professional ethics and regulation",
+          "scope": "Confidentiality; privacy; DPDP framework; HIPAA; GDPR; governance; jurisdictional distinctions.",
+          "status": "Authored — Linux + Windows practicals"
+        },
+        {
+          "number": "13",
+          "title": "Career progression and specialization",
+          "scope": "Senior analyst; analytics engineer; clinical informatics; RWE; data science; leadership.",
+          "status": "Authored — Linux + Windows practicals"
+        },
+        {
+          "number": "14",
+          "title": "Final professional readiness assessment",
+          "scope": "Portfolio review; practical examination; mock interviews; competency gap plan.",
+          "status": "Authored — Linux + Windows practicals"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+[
+  {
+    "id": "q1",
+    "q": "What does a p-value represent?",
+    "options": [
+      "Tail probability under the null model and assumptions",
+      "Probability null is true",
+      "Probability result is clinically important",
+      "Probability data are correct"
+    ],
+    "correct": 0,
+    "why": "A p-value is conditional on the null model."
+  },
+  {
+    "id": "q2",
+    "q": "What does SD describe?",
+    "options": [
+      "Spread among observations",
+      "Precision of the sample mean only",
+      "The p-value",
+      "The number of patients"
+    ],
+    "correct": 0,
+    "why": "Standard deviation measures variability in observations."
+  },
+  {
+    "id": "q3",
+    "q": "When is a paired test relevant?",
+    "options": [
+      "When observations are paired or matched by design",
+      "Whenever there are two groups",
+      "Only for categorical data",
+      "When groups have unequal sizes"
+    ],
+    "correct": 0,
+    "why": "Pairing changes the dependence structure and analysis."
+  },
+  {
+    "id": "q4",
+    "q": "Why may repeated encounters violate independence?",
+    "options": [
+      "Records from one patient can be correlated",
+      "Rows cannot be sorted",
+      "IDs are always duplicated",
+      "pandas removes duplicates"
+    ],
+    "correct": 0,
+    "why": "Clustered observations require appropriate methods."
+  },
+  {
+    "id": "q5",
+    "q": "What does a linear regression coefficient represent?",
+    "options": [
+      "Conditional modelled association per unit predictor change",
+      "Always a causal effect",
+      "A risk ratio",
+      "The sample size"
+    ],
+    "correct": 0,
+    "why": "Causal interpretation requires additional design assumptions."
+  },
+  {
+    "id": "q6",
+    "q": "Does statistical significance guarantee clinical importance?",
+    "options": [
+      "No",
+      "Yes",
+      "Only if p<0.05",
+      "Only in large samples"
+    ],
+    "correct": 0,
+    "why": "Magnitude, precision, context and bias matter."
+  }
+]

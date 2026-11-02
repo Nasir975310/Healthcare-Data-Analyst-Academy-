@@ -1,0 +1,1 @@
+# Changelog\n\n## 5.17.0\n- Added baseline characteristics Table 1 generation in CSV and HTML.\n- Added CONSORT-style and PRISMA-style participant flow SVG generators with count validation.\n- Added concise CONSORT, STROBE and PRISMA reporting prompts.\n- Added RIS reference import to CSV and BibTeX.\n- Added publication manifest, workflow documentation and automated tests.\n
