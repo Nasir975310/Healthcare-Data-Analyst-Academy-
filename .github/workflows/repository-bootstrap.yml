@@ -20,10 +20,8 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          for file in README.md GETTING_STARTED.md LEARNING_PATHS.md CONTRIBUTING.md SECURITY.md DATA_HANDLING_POLICY.md LICENSE_DECISION_REQUIRED.md; do
+          for file in README.md GETTING_STARTED.md LEARNING_PATHS.md CONTRIBUTING.md SECURITY.md DATA_HANDLING_POLICY.md LICENSE; do
             test -s "$file"
           done
-          grep -qi "incomplete" README.md
-          grep -qi "no license" LICENSE_DECISION_REQUIRED.md
       - name: Check whitespace errors
         run: git diff --check
