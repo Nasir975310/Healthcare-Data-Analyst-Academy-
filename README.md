@@ -57,4 +57,4 @@ No employment, employer review, clinical deployment, live vacancy verification, 
 
 ## Contributing, security and licensing
 
-Read [CONTRIBUTING.md](CONTRIBUTING.md), [SECURITY.md](SECURITY.md), [DATA_HANDLING_POLICY.md](DATA_HANDLING_POLICY.md) and [LICENSE_DECISION_REQUIRED.md](LICENSE_DECISION_REQUIRED.md). A license has not yet been selected; no reuse or redistribution rights should be assumed.
+Read [CONTRIBUTING.md](CONTRIBUTING.md), [SECURITY.md](SECURITY.md), [DATA_HANDLING_POLICY.md](DATA_HANDLING_POLICY.md) and [LICENSE_DECISION_REQUIRED.md](LICENSE_DECISION_REQUIRED.md). The repository includes an MIT License for original material the owner has the right to license. Third-party assets and datasets require separate provenance and license review; see [license guidance](LICENSE_DECISION_REQUIRED.md).
