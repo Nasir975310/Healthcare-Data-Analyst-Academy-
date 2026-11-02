@@ -1,24 +1,12 @@
-# Stabilization report — v5.60.3
+# Stabilization report — v5.60.3 baseline
 
-## Release integrity work recorded
-- Restored the documented full-academy audit utility and machine-readable report format.
-- Preserved six maintained career release-gate suites as the root pytest scope.
-- Added root ignore rules, security/data handling policies and an explicit license decision record.
-- Added module compatibility inventory; dependencies remain module-specific.
-- Consolidated duplicate changelog headings and clarified verification boundaries.
+The packaged release report records the following at the time of that release:
+- Maintained root test suite: 36 passed and 11 unittest subtests passed.
+- Python AST validation: 208/208 files passed.
+- Release documentation and local-link checks passed.
+- Sensitive-pattern heuristic passed; this is not a privacy certification.
+- ZIP integrity: 1,645 entries, CRC check passed.
 
-## Release-time verification record
-- Maintained tests: 36 passed; 11 unittest subtests passed.
-- Python AST: 208/208 files parsed at that release point.
-- Changelog validator: 34 unique version headers.
-- Configured sensitive-pattern scan passed; heuristic only, not PHI/privacy certification.
-- Historical isolated test sweep did not complete in the previous build environment.
-- Browser UAT remains unverified on the target workstation.
+Separate historical audit progress snapshot: 33 passed, 16 timed out, 2 no tests collected and 18 not run out of 69 discovered directories. This is not a complete sweep. Timeouts are inconclusive, not passes.
 
-## Pending work
-- Finish the isolated historical audit with module-specific dependencies available.
-- Execute browser UAT on the target workstation.
-- Select a license after third-party asset review.
-- Complete manual privacy/provenance and clean-clone review.
-
-This is an educational course-pack. It is not a production-ready healthcare platform, clinically validated system or fully tested historical codebase.
+Browser UAT remains pending on the target workstation. The above are historical release-time results, not fresh GitHub Actions results.
