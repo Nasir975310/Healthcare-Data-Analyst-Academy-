@@ -1,0 +1,22 @@
+name: Learning content or module request
+description: Suggest a lesson, exercise, dataset fixture or improvement.
+title: "[Learning request]: "
+labels: [enhancement, learning-content]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Learner problem
+      description: What should a learner be able to do after this change?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed content or change
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: References, assumptions and validation approach
