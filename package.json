@@ -1,0 +1,9 @@
+{
+  "name": "healthcare-data-analyst-academy",
+  "version": "5.60.3",
+  "description": "Healthcare Data Analyst Academy interactive learning portal",
+  "private": true,
+  "scripts": {
+    "build": "echo 'Static web application ready'"
+  }
+}
